@@ -1,0 +1,121 @@
+# How transcripts get compared, and why novel-isoform counts move
+
+Novel-isoform percentages in the literature range from a few per cent to more
+than half of everything detected, sometimes for the same input data. The spread
+is mostly not a disagreement about biology. It comes from how two transcripts get
+compared and what they get compared against. This walkthrough works through the
+comparison itself so that the numbers in the main chapters are readable.
+
+You do not need this to follow the argument anywhere in the book. Read it if you
+want to know why a claim like "37% of detected transcripts were novel" is
+incomplete without its denominator.
+
+## What a transcript model actually is
+
+Strip away the sequence and a transcript model is a short list of coordinates: the
+start, the end, and the positions where introns were removed. For a transcript
+with four exons on one chromosome:
+
+```
+exon    ========        =====      ====        =========
+        1000-1200    1500-1600  1900-1980   2400-2700
+intron          1200-1500   1600-1900  1980-2400
+```
+
+The ordered list of internal intron boundaries, here
+`(1200, 1500), (1600, 1900), (1980, 2400)`, is the **intron chain**. It records
+which splice junctions occurred, and crucially, that they occurred *in the same
+molecule*.
+
+That last point is the whole reason long reads changed this field. A short-read
+experiment can observe all three of those junctions in a sample and still not
+establish that any single molecule used all three. The junctions are seen; their
+combination is inferred.
+
+## Comparing two chains
+
+To ask whether two transcripts are the same, walk their intron chains in parallel
+and compare coordinates pairwise. The comparison is exact. A single base of
+difference at one splice site makes two chains different.
+
+Take an annotated transcript and an observed one:
+
+```
+annotated   (1200,1500)  (1600,1900)  (1980,2400)
+observed    (1200,1500)  (1600,1900)  (1980,2400)      -> same chain
+observed    (1200,1500)  (1600,1900)  (1980,2401)      -> different chain
+observed    (1200,1500)  (1600,1900)                   -> contained in the chain
+observed    (1200,1500)  (1700,1900)  (1980,2400)      -> different chain
+```
+
+The second row is the one worth sitting with. One base at one acceptor site, and
+the transcript is formally novel. Whether that base is biology or an alignment
+artifact is a separate question, and often an unanswerable one for a single read.
+
+The third row is different in kind. Nothing contradicts the annotation; the
+observation is just shorter. A read that stops early because the molecule
+fragmented produces exactly this. So does a genuinely shorter transcript. The
+comparison cannot tell them apart, which is why the categories below exist.
+
+## The categories, and what each one is sensitive to
+
+Transcript comparison tools sort observations into classes. The names vary, but
+the distinctions are consistent:
+
+**Full splice match.** Every internal junction matches an annotated transcript
+exactly. Sensitive to single-base alignment error at splice sites, and to which
+annotation release you used.
+
+**Incomplete splice match.** The observed chain is a contiguous subset of an
+annotated chain, as in row three above. Inflated by anything that truncates
+molecules or reads: RNA degradation, incomplete reverse transcription, internal
+priming on an A-rich stretch, or reads that fail to span the full transcript.
+
+**Novel in catalog.** All junctions individually exist in the annotation, but this
+particular combination does not. This class is where short-read ambiguity used to
+live, and it is the most interesting biologically. It is also the class most
+affected by the denominator question below.
+
+**Novel not in catalog.** At least one junction is itself unannotated. Most
+sensitive to alignment quality, and the class where a single mismapped read can
+manufacture a novel isoform.
+
+Two consequences follow directly. First, a pipeline that aligns slightly
+differently will move transcripts between classes without any change in the data.
+Second, truncation artifacts and real short isoforms land in the same bin, so the
+incomplete-splice-match count is never a clean biological quantity.
+
+## The denominator
+
+Now the part that explains most of the spread in published numbers. "Novel" means
+"not in the thing I compared against", and that thing varies.
+
+Compare the same observed transcripts against:
+
+- a single annotation release, and novelty reflects what that release happened to contain
+- a different release of the same annotation, and the number changes, because releases differ
+- a different annotation project entirely, and it changes again, because projects use different inclusion rules
+- a large population of other long-read transcriptomes, and it collapses
+
+That last case is the sharpest demonstration. Re-scoring one benchmark sample
+against a catalog built from roughly a thousand long-read datasets instead of
+against a reference annotation cut the apparent novel fraction from somewhere in
+the 27 to 52 per cent range down to 2 to 5 per cent. The transcripts did not
+change. The question changed, from "is this in the annotation?" to "has anyone
+else ever seen this?"
+
+A transcript absent from an annotation but present in hundreds of independent
+samples is not novel in any useful sense. It is unannotated, which is a statement
+about the annotation.
+
+## What to take back to the chapters
+
+When you read a novel-isoform percentage anywhere, three things determine it
+before biology gets a say: which annotation was the denominator, what read-support
+threshold was applied, and how the aligner placed splice sites. A number without
+those is not comparable to another number.
+
+This is also why pipeline-to-pipeline agreement is low in benchmarking studies
+while PCR validation rates stay high. Those two findings sound contradictory and
+are not. Pipelines disagree about which novel isoforms to report, and the ones
+they report are frequently real.

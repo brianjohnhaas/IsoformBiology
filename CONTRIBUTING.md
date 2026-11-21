@@ -20,6 +20,13 @@ from papers. This makes close paraphrase structurally unlikely rather than a
 matter of individual discipline, and it means every sentence in the book can be
 traced to the lines it came from.
 
+## Writing
+
+Read [STYLE.md](STYLE.md) before drafting. It covers the voice the book aims
+for, the AI writing patterns to avoid, and the rule that keeps the main text
+readable: explain plainly, trust the reader, and put the patient explanation in
+a collapsible aside or a `walkthroughs/` document rather than in the chapter.
+
 ## Citations
 
 - Every non-obvious factual claim carries a citation. Every number carries one.

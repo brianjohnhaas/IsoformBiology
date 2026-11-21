@@ -40,6 +40,10 @@ book:
       chapters:
         - chapters/09-catalogs.qmd
     - chapters/99-glossary.qmd
+    - part: "Walkthroughs"
+      chapters:
+        - walkthroughs/index.qmd
+        - walkthroughs/intron-chain-comparison.qmd
     - references.qmd
 
 bibliography: references.bib
