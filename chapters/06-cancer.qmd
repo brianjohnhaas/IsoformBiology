@@ -1,0 +1,8 @@
+# Isoforms in cancer
+
+::: {.callout-warning}
+## Draft
+Research in progress. Claim records: `research/06-cancer.yml`
+:::
+
+_Scope:_ Splicing-factor mutations, isoform switches, neoantigens from aberrant splicing, therapeutic angles.

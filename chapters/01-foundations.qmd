@@ -1,0 +1,8 @@
+# Foundations
+
+::: {.callout-warning}
+## Draft
+Research in progress. Claim records: `research/01-foundations.yml`
+:::
+
+_Scope:_ What an isoform is; mechanisms; the vocabulary (PSI, DTU, intron chain, FSM/ISM); how much of the transcriptome is alternatively processed.

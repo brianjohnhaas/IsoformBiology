@@ -1,0 +1,8 @@
+# Cataloging the isoform universe
+
+::: {.callout-warning}
+## Draft
+Research in progress. Claim records: `research/09-catalogs.yml`
+:::
+
+_Scope:_ ENCODE4 long-read transcriptomes, GENCODE, MANE, isopedia, isoform atlases, LRGASP, APPRIS.

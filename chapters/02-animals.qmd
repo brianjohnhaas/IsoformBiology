@@ -1,0 +1,8 @@
+# Animals and humans
+
+::: {.callout-warning}
+## Draft
+Research in progress. Claim records: `research/02-animals.yml`
+:::
+
+_Scope:_ Landmark isoform biology in metazoans: Dscam, sex determination, CD45, Bcl-x, titin, and others.

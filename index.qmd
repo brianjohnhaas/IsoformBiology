@@ -1,0 +1,23 @@
+# Preface {.unnumbered}
+
+A gene is not a transcript. Most human genes produce several, sometimes dozens,
+and the differences between them are often the biology — which protein domain is
+present, which cell type expresses which form, whether a transcript is translated
+at all or routed to decay.
+
+Yet most transcriptomic analysis still collapses this to one number per gene.
+That collapse is sometimes justified and often simply inherited from a time when
+nothing finer was measurable. This book is an argument, built from the primary
+literature, that the finer resolution is where a great deal of the biology lives.
+
+It is organized as a book rather than a tool list because the case is cumulative:
+landmark examples across the tree of life, the technology arc that made them
+visible, the disease biology that depends on isoform-level resolution, and the
+current efforts to catalog the isoform universe outright.
+
+::: {.callout-note}
+## Status
+Early draft under active construction. Chapters are built from line-anchored
+claim records; see [CONTRIBUTING.md](CONTRIBUTING.md) for how, and why that
+matters.
+:::

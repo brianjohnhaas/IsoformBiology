@@ -1,0 +1,51 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Isoform Biology"
+  subtitle: "Why one gene is not one transcript, and why that matters"
+  date: today
+  search: true
+  repo-url: https://github.com/brianjohnhaas/IsoformBiology
+  repo-actions: [edit, issue]
+  sidebar:
+    style: docked
+  chapters:
+    - index.qmd
+    - part: "Foundations"
+      chapters:
+        - chapters/01-foundations.qmd
+    - part: "Isoform biology across the tree of life"
+      chapters:
+        - chapters/02-animals.qmd
+        - chapters/03-plants-fungi-other.qmd
+    - part: "How technology shaped what we could see"
+      chapters:
+        - chapters/04-technology-arc.qmd
+        - chapters/05-long-reads.qmd
+    - part: "Isoforms in disease"
+      chapters:
+        - chapters/06-cancer.qmd
+        - chapters/07-neuro-mendelian.qmd
+    - part: "Resolving cells and tissues"
+      chapters:
+        - chapters/08-singlecell-spatial.qmd
+    - part: "Cataloging the isoform universe"
+      chapters:
+        - chapters/09-catalogs.qmd
+    - chapters/99-glossary.qmd
+    - references.qmd
+
+bibliography: references.bib
+csl: nature.csl
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    number-sections: true
+    toc-depth: 3
+    code-fold: true
+    fig-cap-location: bottom

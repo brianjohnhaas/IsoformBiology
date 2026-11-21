@@ -1,0 +1,8 @@
+# How technology shaped what we could see
+
+::: {.callout-warning}
+## Draft
+Research in progress. Claim records: `research/04-technology-arc.yml`
+:::
+
+_Scope:_ R-loops and EM to cDNA cloning, ESTs, exon arrays, and short-read RNA-seq: each method's blind spots and the biology it let in.

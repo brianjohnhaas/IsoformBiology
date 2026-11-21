@@ -1,0 +1,8 @@
+# Plants, fungi, and other eukaryotes
+
+::: {.callout-warning}
+## Draft
+Research in progress. Claim records: `research/03-plants-fungi-other.yml`
+:::
+
+_Scope:_ Isoform biology beyond metazoans: plant temperature and flowering control, fungal splicing, protists; where the rules differ.

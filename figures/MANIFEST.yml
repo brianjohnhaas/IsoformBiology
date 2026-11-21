@@ -1,0 +1,5 @@
+# Every figure in the book is recorded here with its provenance route.
+#   generated  - produced by a script in scripts/ (ours)
+#   original   - hand-authored SVG (ours); credit the concept if it came from a paper
+#   reused     - openly licensed third-party; licence + attribution REQUIRED
+figures: []

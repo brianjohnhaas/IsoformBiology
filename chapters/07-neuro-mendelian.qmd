@@ -1,0 +1,8 @@
+# Neurodegeneration and Mendelian disease
+
+::: {.callout-warning}
+## Draft
+Research in progress. Claim records: `research/07-neuro-mendelian.yml`
+:::
+
+_Scope:_ MAPT, TDP-43/STMN2, SMN1/2; splice-altering variants; splicing-directed therapeutics.

@@ -1,0 +1,8 @@
+# Long-read isoform sequencing
+
+::: {.callout-warning}
+## Draft
+Research in progress. Claim records: `research/05-long-reads.yml`
+:::
+
+_Scope:_ Full-length transcript sequencing, bulk and single-cell; what becomes measurable when reads span the molecule.
