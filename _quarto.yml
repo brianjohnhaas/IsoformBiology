@@ -40,6 +40,9 @@ book:
       chapters:
         - chapters/09-catalogs.qmd
     - chapters/99-glossary.qmd
+    - part: "Voice comparison (temporary)"
+      chapters:
+        - voice-comparison/02-animals-we.qmd
     - part: "Walkthroughs"
       chapters:
         - walkthroughs/index.qmd
