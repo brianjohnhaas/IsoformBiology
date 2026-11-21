@@ -7,3 +7,7 @@ __pycache__/
 
 /.quarto/
 **/*.quarto_ipynb
+
+# In-progress research file; committed once its agent finishes and its
+# metadata has been resolved against Crossref.
+research/01-foundations.yml
