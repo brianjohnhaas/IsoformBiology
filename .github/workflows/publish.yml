@@ -31,6 +31,9 @@ jobs:
       - name: Check prose against recorded source quotes
         run: python3 scripts/check_overlap.py
 
+      - name: Check bibliography is in sync with claim records
+        run: python3 scripts/build_bib.py --check
+
       - name: Render book
         run: quarto render --to html
 

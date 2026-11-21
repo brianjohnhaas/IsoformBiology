@@ -10,6 +10,23 @@ fog. The resolution here is structural: **the main read trusts the reader, and t
 hand-holding lives in asides nobody is forced to open.** Never dilute a chapter to
 accommodate the reader who needs more. Give that reader a door instead.
 
+## Voice
+
+The book is written impersonally. No narrator, no "we", no "I". Claims are
+attributed to the people who made them, and judgements the book itself makes are
+stated as statements rather than as opinions held by someone.
+
+This keeps a multi-author book consistent as contributors come and go, and it
+puts the weight on the evidence. It also removes the most common hedge: with no
+narrator available to own a claim, a sentence either says the thing or does not.
+
+Attribute by name when the attribution matters, especially where sources
+disagree: "those authors reject a tumour-associated switch" is better than "it
+has been suggested". Prefer the active voice with the researchers as the
+subject.
+
+See `chapters/02-animals.qmd` for the reference implementation.
+
 ## Who is reading
 
 Assume a reader who is expert in some part of biology and not in others, and who
