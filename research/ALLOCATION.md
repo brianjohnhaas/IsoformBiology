@@ -29,13 +29,13 @@ six commits later.
 | EST-era concentration of variation in 5' UTRs | TECH-010 | ch4 | `#sec-est-era` | ch1, ch9 |
 | Start site / splice chain / end site as three axes | LR-021, LR-022, CAT-003 | ch5 | `#sec-three-axes` | ch1, ch8, ch9 |
 | GTEx long-read dataset, as a dataset | LR-023, LR-024 | ch5 | `#sec-gtex-lr` | ch9, ch10 |
-| Single-cell long-read chemistry | LR-002/019/029/030/034/035 | ch5 | `#sec-sc-longread` | ch8 |
+| Single-cell long-read chemistry | LR-002, LR-029, LR-030, LR-034 | ch5 | `#sec-sc-longread` | ch8 |
 | ENCODE4 long-read collection | LR-021/022, CAT-* | ch9 | `#sec-encode4` | ch5 |
 | Catalog per-gene transcript counts | CAT-011/042/051/053 | ch9 | `#sec-per-gene-counts` | ch1, ch5 |
 | Novel-isoform fraction and its denominator | CAT-032, CAT-039 | ch9 | `#sec-what-novel-means` | ch5, walkthrough |
 | TRAILS and single-cell isoform methods | 08-*, CAT-* | ch8 | `#sec-sc-methods` | ch9 |
-| Joglekar 2024 single-cell isoform atlas | LR-*, SCS-* | ch8 | `#sec-brain-atlas` | ch5 |
-| Isoform-level QTLs in B cells | nagura2025longread | ch10 | `#sec-isoform-qtl` | ch5 |
+| Joglekar 2024 single-cell isoform atlas | LR-019, LR-035, SCS-* | ch8 | `#sec-brain-atlas` | ch5 |
+| Isoform-level QTLs in B cells | nagura2025longread | ch5 | `#sec-gtex-lr` | ch10 |
 
 ## Sources recorded in more than one area
 
@@ -61,6 +61,20 @@ wang2008alternative                  01, 02, 04
 preprints. The research records say so, the bibliography emits them as `@misc`,
 and the prose must not describe them as published. Every number taken from
 either one needs re-checking against the peer-reviewed version when it appears.
+
+## Changes made while drafting
+
+Two rows moved once the chapters existed.
+
+The B-cell isoform-QTL result went to chapter 5 rather than chapter 10. It is
+the strongest single demonstration that a long read answers a question a short
+read cannot, so it closes that chapter; chapter 10 refers to it when it reaches
+isoform-level QTLs rather than restating the figures.
+
+The single-cell long-read row was split. Chapter 5 keeps the chemistry and what
+it costs. What was found with it, which is the Joglekar brain atlas and the
+CD8 T cell atlas, belongs to chapter 8 with the rest of the single-cell
+biology.
 
 ## Procedure while drafting
 

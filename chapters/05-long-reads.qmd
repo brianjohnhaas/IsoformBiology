@@ -1,8 +1,235 @@
-# Long-read isoform sequencing
+# Long reads
 
 ::: {.callout-warning}
-## Draft
-Research in progress. Claim records: `research/05-long-reads.yml`
+## First draft
+Written from `research/05-long-reads.yml` and not yet reviewed by a second
+reader.
 :::
 
-_Scope:_ Full-length transcript sequencing, bulk and single-cell; what becomes measurable when reads span the molecule.
+A short read reports a fragment. A long read reports a molecule. Everything in
+this chapter follows from that one difference, including the failures.
+
+The practical consequence is joint observation. Two features that sit far apart
+in a transcript, a start site and a poly(A) site, a splice choice and a chemical
+modification, can be seen on the same molecule or seen to be absent from it.
+Fragmenting the molecule destroys that pairing, which is why a short-read
+protocol cannot substitute for one [@workman2019nanopore]. The same point is
+made bluntly by the authors of an isoform-stability method: isoform-level
+stability cannot be estimated from short reads, because the reads cannot be
+assigned to isoforms in the first place [@maier2020native].
+
+## A six-exon gene with 41 isoforms {#sec-snca}
+
+SNCA is central to Parkinson disease and has six exons. Targeted PacBio
+sequencing resolved 41 distinct full-length isoforms from it. The diversity
+comes from alternative 5' start sites combined with variable 3' UTR lengths,
+on top of the exon-skipping forms already known [@tseng2019landscape].
+
+One of those start sites sits inside intron 4 and had been invisible. It had no
+support in GTEx short-read data and no FANTOM5 CAGE peak. A single transcript
+in a public direct-RNA dataset confirmed it, and the junction joining it to
+exon 5 was separately confirmed by aggregated short-read junction data
+[@tseng2019landscape].
+
+A heavily studied disease gene had most of its transcript structures outside
+the annotation, and they were reachable by reading whole molecules.
+
+## What one molecule asserts {#sec-one-molecule}
+
+An entire complex splice chain can be observed rather than inferred. In
+Arabidopsis, a single uninterrupted nanopore alignment of 12.7 kb spanning 63
+exons matched an annotated isoform exactly [@parker2020nanopore]. No junction
+counting was involved.
+
+Once whole molecules are available, dependence between distant choices becomes
+testable. Each PacBio read of an MCF-7 mRNA reported one complete molecule, so
+pairs of processing choices could be tested for statistical dependence within
+it. More than 60 per cent of multi-exon genes, 6,825 of 11,350, had at least
+one coupled pair of features [@anvar2018fulllength].
+
+Coupling also runs between the two ends of a transcript. Long-read isoform maps
+in *Drosophila* identified promoters whose use biases 3' end choice. Deleting
+one such promoter from the *orb* locus by CRISPR left the proximal 3' end
+expressed while massively depleting the distal one. Those authors conclude that
+a dominant promoter can drive read-through of canonical poly(A) signals toward
+more distal termination [@alfonsogonzalez2023sites].
+
+Where a transcript starts can determine where it stops. That is a statement
+about single molecules, and it is unavailable from fragments.
+
+## One splice chain is not one transcript {#sec-three-axes}
+
+A transcript has three parts that can vary independently: a start site, a
+splice chain, and an end site. Annotation has historically collapsed two of
+them.
+
+In GENCODE v40 a multi-exon splice chain carries at most three annotated start
+or end sites. It is given exactly one start site in 99.7 per cent of cases and
+one end site in 99.4 per cent. Long-read annotation attaches substantially more
+distinct ends to the same chain [@reese2023encode4].
+
+![One intron chain, with the ends an annotation gives it and the ends observed
+on real molecules. The internal structure is identical in every row, which is
+what makes them a single splice chain and several distinct
+transcripts.](../figures/three-axes.svg){#fig-three-axes width=100%}
+
+Scored on all three parts together, 89.8 per cent of human protein-coding genes
+used more than one distinct component across the ENCODE4 long-read samples.
+Long non-coding RNAs and pseudogenes were far less variable
+[@reese2023encode4].
+
+::: {.callout-note collapse="true"}
+## A note on the ENCODE4 and GTEx long-read citations
+
+Both the ENCODE4 long-read collection and the GTEx long-read transcriptome
+appear in this book's corpus only as preprints, and are cited as such. Every
+number taken from either needs re-checking against the peer-reviewed version.
+The claim records say so, and the bibliography emits them as preprints rather
+than as journal articles.
+:::
+
+## Reading the molecule itself {#sec-direct-rna}
+
+Nanopore can sequence the native RNA strand rather than a cDNA copy of it.
+Applied to the GM12878 cell line, that yielded 33,984 isoforms over 10,793
+genes, and 52.6 per cent of them carried an exon junction chain absent from
+GENCODE [@workman2019nanopore].
+
+The native molecule carries more than its sequence. Reading the poly(A) tail as
+part of the same molecule that identified the isoform showed that two isoforms
+of DDX5 carry very different tails. The intron-retaining isoform had a median
+tail of 327 nucleotides, against 125 for the protein-coding one
+[@workman2019nanopore]. Tail length is a per-isoform property, and it had been
+measured per gene.
+
+Stability behaves the same way. Metabolic labelling read out on native nanopore
+molecules showed that individual isoforms do not share a single stability
+response. Under heat shock, the dynamics of individual isoforms varied globally
+relative to the combined RNA of their gene [@maier2020native].
+
+Modifications become locatable on identified transcripts. Mapping m6A from
+basecalling error on native Arabidopsis RNA connected the modification to a
+whole-organism phenotype: the writer mutant had a lengthened circadian period
+alongside altered abundance of oscillator transcripts [@parker2020nanopore].
+
+Accuracy was the other half of the problem. An accuracy-boosting
+nanopore protocol was applied to a human peripheral blood sample. Its authors
+conclude that deep, accurate, full-length cDNA sequencing resolves the hardest
+transcripts in the mammalian genome. They offer it as an unbiased replacement
+for the dedicated HLA typing and immune-repertoire assays such work normally
+requires [@cole2020complete].
+
+Annotation is still catching up, including in genomes that have been available
+for a long time. The Arabidopsis authors note that a genome sequence available
+since 2000 still had annotation left to fix [@parker2020nanopore]. In maize,
+long reads corrected gene models rather than merely adding to them. RGH3 had
+been mis-annotated because of a genome assembly error, and CSR1 was present in
+the reference sequence with no annotation at all [@wang2016unveiling].
+
+## Which chromosome the transcript came from {#sec-phasing}
+
+A read long enough to span a heterozygous site carries its own phase
+information. In a polymorphic mouse cross, one heterozygous site inside a read
+was enough to assign that whole transcript to a parental chromosome
+[@lemoine2025longread]. Phasing is cheap in information terms, and it comes
+free with length.
+
+Assigning native RNA reads to a parental chromosome this way gave allelic
+imbalance for 228 of the testable autosomal genes, which is 6.1 per cent,
+against 23 X-linked genes scored at 95.7 per cent. Of those 23, 22 were
+maternal, and the single paternal one was XIST [@workman2019nanopore].
+
+The same approach measures escape from X inactivation in transcripts rather
+than in junction counts. In a mouse model with skewed inactivation, only 69 of
+12,623 X-linked long reads came from the inactive chromosome, which is 0.54 per
+cent, and 39 of those few were accounted for by Xist plus the two known escape
+genes [@lemoine2025longread].
+
+## Things that look like isoforms and are not {#sec-artifacts}
+
+A long read can report a structure that was never in the cell.
+
+An intron-within-an-exon event in CD19 turned out to be a reverse transcription
+product. On reporter-transfected cells it made up over 25 per cent of PCR-free
+direct-cDNA reads and nearly 30 per cent of PCR-amplified cDNA reads, and it
+was undetectable in direct RNA reads. Those authors generalise the warning:
+any RT-dependent protocol can invent such events [@schulz2021direct].
+
+Spurious 3' ends have a similar explanation. Comparing cDNA and native-RNA
+libraries across two species and three platforms, one group argues that the
+spurious poly(A) sites usually blamed on internal priming are produced by
+template switching instead. Many appeared at sites carrying only three to five
+adenines, too few for an oligo-dT primer to bind [@balazs2019template].
+
+The asymmetry that makes novel structures hard to trust is measurable.
+Quality-control analysis of a PacBio mouse neural transcriptome found that 99.9
+per cent of junctions already in the annotation used canonical dinucleotides,
+against only 69 per cent of the 3,837 novel junctions, leaving 1,188
+non-canonical [@tardaguila2018sqanti]. Novel long-read junctions need filtering
+before they need interpreting.
+
+## Single-cell long reads {#sec-sc-longread}
+
+The barrier to single-cell isoform work was arithmetic, and its authors set it
+out. The work needs reads beyond about 5 kb at depths above twenty million, and
+no platform delivered both. Ligating cDNAs into composite molecules raised
+PacBio output more than fifteenfold, to roughly 40 million reads per run
+[@alkhafaji2024highthroughput].
+
+That is a throughput fix rather than a cost fix. Authors applying the same
+approach to Alzheimer brain state the ceiling directly: even with the gain from
+concatenation, depth per sequencing run remains lower and cost per read higher
+than for short-read sequencing [@shahnaee2026rna].
+
+## What long reads still cost {#sec-longread-cost}
+
+Isoform resolution is bought with depth. In a matched comparison on the same
+cells, PacBio concatenation libraries averaged roughly 21,000 to 97,000 reads
+per cell, where the Illumina libraries averaged roughly 142,000 to 443,000
+[@zajac2025comparison].
+
+The analysis stage removes more. The standard single-cell long-read pipeline in
+that comparison discarded an average of 48 per cent of isoforms and 27 per cent
+of reads as low-coverage or non-canonical, with the loss biased toward longer
+transcripts [@zajac2025comparison]. Filtering novel structures is necessary,
+and it is not free.
+
+Junction sensitivity is the clearest remaining deficit. On matched libraries,
+short-read splicing analysis still recovered about 30 per cent more splice
+junctions than either long-read platform [@han2024contrasting]. Long reads add
+structure at a cost in junction sensitivity.
+
+The proposed explanation is that molecules are not captured end to end. In the
+LRGASP data only 5.4 per cent of ONT reads and 51.6 per cent of PacBio reads
+reached the roughly 3 kb median human transcript length, and events far from
+the poly(A) end were correspondingly harder to quantify [@han2024contrasting].
+A long read is often not long enough.
+
+## What becomes answerable {#sec-gtex-lr}
+
+Transcript structure changes what a variant is predicted to do. Adding
+long-read transcripts to the reference annotation changed the predicted most
+severe consequence for 0.67 per cent of GTEx genome variants, and the
+reassigned variants carried higher average CADD scores than those whose
+annotation was unchanged [@glinos2021transcriptome].
+
+Haplotype resolution collapses ambiguous associations into single statements.
+In GTEx tissues, haplotype-resolved long reads reduced a cluster of overlapping
+splicing associations at DUSP13 to one: in both donors showing allelic
+transcript-structure imbalance, the transcript missing four internal exons was
+the more highly expressed from the risk allele of a body-fat-associated locus
+[@glinos2021transcriptome].
+
+The same logic names candidate effectors at scale. Pairing colocalised splicing
+QTLs with long-read transcripts from a bone-relevant cell model nominated 2,029
+full-length protein isoforms, 643 of them unannotated, across 441 genes, as
+candidate effectors of bone mineral density associations [@abood2024longread].
+
+Nanopore sequencing of B cells from 67 donors mapped 17,119 isoform-level
+expression QTLs touching 5,502 isoforms of 3,958 genes, against only 6,350
+gene-level eQTLs in the same data [@nagura2025longread]. Of those isoform-level
+associations, 70.6 per cent were not detected by a gene-level analysis of the
+same data [@nagura2025longread].
+
+A gene-level scan of that cohort would have reported a result, and would have
+missed most of what was there.
