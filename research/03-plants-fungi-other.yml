@@ -1,0 +1,1098 @@
+area: plants-fungi-other
+researcher: agent-03-plants-fungi-other
+date: 2026-11-21
+corpus: paperclip 0.8.23
+claims:
+- id: PFO-001
+  claim: 'A normalized deep-coverage survey of the Arabidopsis transcriptome put alternative splicing
+    at 61.2 per cent of the genes that contain introns, measured in flower and seedling tissue grown without
+    stress, which the authors treat as a floor rather than a ceiling.
+
+    '
+  topic: Plant AS prevalence
+  source:
+    doc_id: PMC3371709
+    title: Transcriptome survey reveals increased complexity of the alternative splicing landscape in
+      Arabidopsis
+    authors: Marquez, Y.; Brown, J. W.; Simpson, C.; Barta, A.; Kalyna, M.
+    journal: Genome Research
+    year: 2012
+    doi: 10.1101/gr.134106.111
+    bibkey: marquez2012arabidopsis
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L36,L58
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3371709#L36,L58
+    quote: 'Therefore, 61.2% of genes with introns in our sample have evidence of AS
+
+      '
+  confidence: high
+  figure_idea: 'A single bar comparing the same organism''s AS-prevalence estimate as the detection method
+    changes - overlapping-intron counting, assembled-transcript counting, deep RNA-seq - to show that
+    the number is a property of the assay as much as of the plant.
+
+    '
+- id: PFO-002
+  claim: 'In that same Arabidopsis survey intron retention was the single commonest class of splicing
+    event, accounting for roughly two fifths of all the events the transcript assembly detected.
+
+    '
+  topic: Intron retention as the plant default
+  source:
+    doc_id: PMC3371709
+    title: Transcriptome survey reveals increased complexity of the alternative splicing landscape in
+      Arabidopsis
+    authors: Marquez, Y.; Brown, J. W.; Simpson, C.; Barta, A.; Kalyna, M.
+    journal: Genome Research
+    year: 2012
+    doi: 10.1101/gr.134106.111
+    bibkey: marquez2012arabidopsis
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L42
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3371709#L42
+    quote: 'the predominant type of AS event is intron retention, with ∼40% of the total events
+
+      '
+  confidence: high
+  figure_idea: 'A stacked bar per lineage - plant, fungus, mammal - splitting events into intron retention,
+    exon skipping, alternative 5'' and alternative 3'' site, so the reader sees the same four categories
+    reordered.
+
+    '
+- id: PFO-003
+  claim: 'The same authors immediately qualified intron retention''s dominance: most retained introns
+    were supported by far fewer reads than the junction that removes them, with about 73 per cent showing
+    a retention ratio below 1, so counting events overstates how much retained-intron RNA a plant cell
+    actually holds.
+
+    '
+  topic: Intron retention as the plant default
+  source:
+    doc_id: PMC3371709
+    title: Transcriptome survey reveals increased complexity of the alternative splicing landscape in
+      Arabidopsis
+    authors: Marquez, Y.; Brown, J. W.; Simpson, C.; Barta, A.; Kalyna, M.
+    journal: Genome Research
+    year: 2012
+    doi: 10.1101/gr.134106.111
+    bibkey: marquez2012arabidopsis
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L44
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3371709#L44
+    quote: 'Nearly 73% of the retained introns had an IRR of <1 and around 48% had an IRR of <0.2
+
+      '
+  confidence: high
+- id: PFO-004
+  claim: 'CRISPR deletion of FLM exon 2 or exon 3 forced Arabidopsis to make only one of the two major
+    FLM isoforms, and the FLM-delta-only plants flowered early but no earlier than a complete FLM null,
+    which argues against a dominant-negative role for the warm-temperature isoform; the same authors report
+    that FLM-delta driven from a constitutive promoter does flower early, so the effect is dose-dependent.
+
+    '
+  topic: FLM thermosensory splicing
+  source:
+    doc_id: PMC5853260
+    title: Contribution of major FLM isoforms to temperature-dependent flowering in Arabidopsis thaliana
+    authors: Capovilla, G.; Symeonidi, E.; Wu, R.; Schmid, M.
+    journal: Journal of Experimental Botany
+    year: 2017
+    doi: 10.1093/jxb/erx328
+    bibkey: capovilla2017flm
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L44,L47
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5853260#L44,L47
+    quote: 'flowered earlier than Col-0, particularly at 16°C and 23°C, but not earlier than the flm-3
+      mutant
+
+      '
+  confidence: high
+  figure_idea: 'A three-genotype comparison - wild type, isoform-restricted lines, full knockout - plotted
+    against temperature, so the reader can see which model the ordering of flowering times supports.
+
+    '
+- id: PFO-005
+  claim: 'Cloning and sequencing FLM transcripts at three growth temperatures showed that the share of
+    non-canonical FLM isoforms, which the authors note mostly carry premature stop codons, climbed from
+    30 per cent at 16 degrees to over 50 per cent at 27 degrees in wild-type Arabidopsis.
+
+    '
+  topic: FLM thermosensory splicing
+  source:
+    doc_id: PMC5853260
+    title: Contribution of major FLM isoforms to temperature-dependent flowering in Arabidopsis thaliana
+    authors: Capovilla, G.; Symeonidi, E.; Wu, R.; Schmid, M.
+    journal: Journal of Experimental Botany
+    year: 2017
+    doi: 10.1093/jxb/erx328
+    bibkey: capovilla2017flm
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L15,L33
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5853260#L15,L33
+    quote: 'the frequency of non-canonical isoforms also increased in Col-0 from 30% at 16°C to over 50%
+      at 27°C
+
+      '
+  confidence: high
+- id: PFO-006
+  claim: 'MAF2 evolved temperature-dependent splicing independently of FLM: at low temperature the abundant
+    variant encodes a protein that partners SVP to repress flowering, while warming shifts the balance
+    to an intron-retaining variant carrying a premature stop whose product can neither bind SVP nor repress.
+
+    '
+  topic: Independent origins of thermosensory splicing
+  source:
+    doc_id: PMC4425511
+    title: MAF2 Is Regulated by Temperature-Dependent Splicing and Represses Flowering at Low Temperatures
+      in Parallel with FLM
+    authors: Airoldi, C. A.; McKay, M.; Davies, B.
+    journal: PLOS ONE
+    year: 2015
+    doi: 10.1371/journal.pone.0126516
+    bibkey: airoldi2015maf2
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L6
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4425511#L6
+    quote: 'At increased temperature the relative abundance of splice isoforms shifts in favour of an
+      intron-retaining variant that introduces a premature termination codon
+
+      '
+  confidence: high
+  figure_idea: 'Two parallel ladders - FLM and MAF2 - each showing a cold isoform feeding into an SVP
+    complex and a warm isoform that cannot, to make the point that the same trick was invented twice in
+    one gene family.
+
+    '
+- id: PFO-007
+  claim: 'The cold-induced antisense COOLAIR transcripts at the Arabidopsis FLC locus exist as several
+    isoforms distinguished by splicing and polyadenylation choice, and the cold-specific distal class
+    II.ii isoform represses FLC by sequestering the activator FRIGIDA away from the FLC promoter.
+
+    '
+  topic: FLC, vernalization and antisense isoforms
+  source:
+    doc_id: PMC11588071
+    title: Cotranscriptional splicing is required in the cold to produce COOLAIR isoforms that repress
+      Arabidopsis FLC
+    authors: Long, X.; Cai, Y.; Wang, H.; Liu, Y.; Huang, X.; Xuan, H.; Li, W.; Zhang, X.; Zhang, H.;
+      Fang, X.; He, H.; Xu, G.; Dean, C.; Yang, H.
+    journal: Proceedings of the National Academy of Sciences
+    year: 2024
+    doi: 10.1073/pnas.2407628121
+    bibkey: long2024coolair
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L15,L17
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11588071#L15,L17
+    quote: 'COOLAIR class II.ii interacts with FRIGIDA (FRI), a strong FLC activator, and sequesters FRI
+      away from the FLC promoter
+
+      '
+  confidence: high
+  figure_idea: 'The FLC locus drawn once, with the sense gene and the alternative COOLAIR 3'' processing
+    choices stacked beneath it, each annotated with the repressive mechanism it engages - not a picture
+    of the gene but of which isoform does what.
+
+    '
+- id: PFO-008
+  claim: 'A systematic survey of Arabidopsis circadian clock genes found unproductive splicing to be widespread
+    among them - mostly full or partial intron retention generating in-frame premature stop codons - and
+    found the CCA1 and LHY variants conserved between the two paralogues, with the CCA1 event conserved
+    across plant phyla.
+
+    '
+  topic: Circadian clock gene splicing
+  source:
+    doc_id: PMC3403997
+    title: 'Unproductive alternative splicing and nonsense mRNAs: A widespread phenomenon among plant
+      circadian clock genes'
+    authors: Filichkin, S. A.; Mockler, T. C.
+    journal: Biology Direct
+    year: 2012
+    doi: 10.1186/1745-6150-7-20
+    bibkey: filichkin2012clock
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L12
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3403997#L12
+    quote: 'the conservation of alternatively spliced variants between CCA1 and LHY and for CCA1 across
+      phyla
+
+      '
+  confidence: high
+- id: PFO-009
+  claim: 'Temperature-responsive splicing of clock genes is not an Arabidopsis peculiarity: barley seedlings
+    shifted to low temperature change the splicing of core clock genes including the orthologues of Arabidopsis
+    LHY and PRR7, putting the mechanism in a monocot crop.
+
+    '
+  topic: Circadian clock gene splicing
+  source:
+    doc_id: PMC5154542
+    title: Alternative Splicing of Barley Clock Genes in Response to Low Temperature
+    authors: Calixto, C. P. G.; Simpson, C. G.; Waugh, R.; Brown, J. W. S.
+    journal: PLOS ONE
+    year: 2016
+    doi: 10.1371/journal.pone.0168028
+    bibkey: calixto2016barley
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L7
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5154542#L7
+    quote: 'We identify changes in AS of various barley core clock genes including the barley orthologues
+      of Arabidopsis AtLHY and AtPRR7
+
+      '
+  confidence: high
+- id: PFO-010
+  claim: 'An Arabidopsis salt-stress experiment sequenced to roughly 200-fold coverage found about 49
+    per cent of intron-containing genes alternatively spliced under salt, with 10 per cent of those showing
+    a significant stress-driven shift in isoform ratio, and total alternative splicing rising relative
+    to unstressed plants.
+
+    '
+  topic: Stress-responsive splicing
+  source:
+    doc_id: PMC4079960
+    title: Genome-wide analysis of alternative splicing of pre-mRNA under salt stress in Arabidopsis
+    authors: Ding, F.; Cui, P.; Wang, Z.; Zhang, S.; Ali, S.; Xiong, L.
+    journal: BMC Genomics
+    year: 2014
+    doi: 10.1186/1471-2164-15-431
+    bibkey: ding2014salt
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L8
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4079960#L8
+    quote: 'We detected that ~49% of all intron-containing genes were alternatively spliced under salt
+      stress, 10% of which experienced significant differential alternative splicing
+
+      '
+  confidence: high
+- id: PFO-011
+  claim: 'Light changes splicing outcomes in Arabidopsis roots, but not as a direct response to light:
+    the authors trace the signal to sugars made by photosynthesis in the shoot, acting through the TOR
+    kinase pathway, which they describe as a shoot-to-root route coordinating splicing across the whole
+    plant.
+
+    '
+  topic: Light- and energy-responsive splicing
+  source:
+    doc_id: PMC8547716
+    title: Light regulates alternative splicing outcomes via the TOR kinase pathway
+    authors: Riegler, S.; Servi, L.; Scarpin, M. R.; Godoy Herz, M. A.; Kubaczka, M. G.; Venhuizen, P.;
+      Meyer, C.; Brunkard, J. O.; Kalyna, M.; Barta, A.; Petrillo, E.
+    journal: Cell Reports
+    year: 2021
+    doi: 10.1016/j.celrep.2021.109676
+    bibkey: riegler2021light
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L14
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8547716#L14
+    quote: 'we provide evidence that light regulates the expression of a core set of splicing-related
+      factors in roots
+
+      '
+  confidence: high
+  figure_idea: 'A whole-plant schematic tracing the signal from illuminated leaf to root nucleus, with
+    the measured output being an isoform ratio rather than a transcript level.
+
+    '
+- id: PFO-012
+  claim: 'In tropical japonica rice, six SNPs at the OsLG3b locus change how the OsMADS1 transcript is
+    spliced, and the resulting splice variation was associated with grain length in a candidate-region
+    association analysis.
+
+    '
+  topic: Crop traits driven by isoform usage
+  source:
+    doc_id: PMC6097128
+    title: Alternative splicing of OsLG3b controls grain length and yield in japonica rice
+    authors: Yu, J.; Miao, J.; Zhang, Z.; Xiong, H.; Zhu, X.; Sun, X.; Pan, Y.; Liang, Y.; Zhang, Q.;
+      Abdul Rehman, R. M.; Li, J.; Zhang, H.; Li, Z.
+    journal: Plant Biotechnology Journal
+    year: 2018
+    doi: 10.1111/pbi.12903
+    bibkey: yu2018oslg3b
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L6
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6097128#L6
+    quote: 'Six SNPs in the OsLG3b region led to alternative splicing, which were associated with grain
+      length
+
+      '
+  confidence: high
+- id: PFO-013
+  claim: 'A near-isogenic line carrying the large-grain donor allele at the OsLG3b locus in a Nipponbare
+    background produced grains 7.5 per cent longer and 3.5 per cent thicker, which translated into a 7.1
+    per cent gain in grain yield per plant with no significant change in heading date, tiller number or
+    grains per panicle.
+
+    '
+  topic: Crop traits driven by isoform usage
+  source:
+    doc_id: PMC6097128
+    title: Alternative splicing of OsLG3b controls grain length and yield in japonica rice
+    authors: Yu, J.; Miao, J.; Zhang, Z.; Xiong, H.; Zhu, X.; Sun, X.; Pan, Y.; Liang, Y.; Zhang, Q.;
+      Abdul Rehman, R. M.; Li, J.; Zhang, H.; Li, Z.
+    journal: Plant Biotechnology Journal
+    year: 2018
+    doi: 10.1111/pbi.12903
+    bibkey: yu2018oslg3b
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L18
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6097128#L18
+    quote: 'Grains of NIL(SLG) were 7.5% longer, and 3.5% thicker than those of NIP, leading to a 7.1%
+      increase in grain yield per plant
+
+      '
+  confidence: high
+  figure_idea: 'A small effect-size panel for crop isoform alleles - rice OsLG3b, wheat TaGS3 - plotting
+    the percentage change in the agronomic trait against the trait measured, so the reader sees that these
+    are single-digit but breeding-relevant effects.
+
+    '
+- id: PFO-014
+  claim: 'Bread wheat makes five splice variants of the G-protein gamma subunit gene TaGS3 with opposing
+    effects on yield components: overexpressing TaGS3.1 cut grain weight by 5.89 per cent and length by
+    5.04 per cent, while overexpressing TaGS3.5 raised grain weight by 5.70 per cent and length by 4.30
+    per cent.
+
+    '
+  topic: Crop traits driven by isoform usage
+  source:
+    doc_id: PMC8584009
+    title: Alternative Splicing of TaGS3 Differentially Regulates Grain Weight and Size in Bread Wheat
+    authors: Ren, X.; Zhi, L.; Liu, L.; Meng, D.; Su, Q.; Batool, A.; Ji, J.; Song, L.; Zhang, N.; Guo,
+      L.; Liu, X.; Li, J.; Zhang, W.
+    journal: International Journal of Molecular Sciences
+    year: 2021
+    doi: 10.3390/ijms222111692
+    bibkey: ren2021tags3
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L10
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8584009#L10
+    quote: 'TaGS3.1 overexpression significantly reduced grain weight by 5.89% and grain length by 5.04%
+
+      '
+  confidence: high
+- id: PFO-015
+  claim: 'Splicing is required in only about 4 per cent of Saccharomyces cerevisiae protein-coding genes
+    and the genes that do carry an intron are structurally plain, typically two exons and a single intron
+    - yet the same reanalysis reports pervasive use of alternative splice sites within that small set.
+
+    '
+  topic: The intron-poor yeast contrast
+  source:
+    doc_id: PMC4607428
+    title: Alternative Splicing in Next Generation Sequencing Data of Saccharomyces cerevisiae
+    authors: Schreiber, K.; Csaba, G.; Haslbeck, M.; Zimmer, R.
+    journal: PLOS ONE
+    year: 2015
+    doi: 10.1371/journal.pone.0140487
+    bibkey: schreiber2015yeast
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L7,L12
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4607428#L7,L12
+    quote: 'mRNA splicing is required in about 4% of protein coding genes in Saccharomyces cerevisiae.
+      The gene structure of those genes is simple
+
+      '
+  confidence: high
+  figure_idea: 'A one-axis comparison of intron-containing gene fraction across budding yeast, fission
+    yeast, Cryptococcus, Arabidopsis and human, with the same axis reused for isoforms per gene underneath,
+    to show that the two quantities do not rank the same way.
+
+    '
+- id: PFO-016
+  claim: 'Alternative splicing is reported as relatively rare and little studied in budding yeast, and
+    the widely conserved alternatively spliced gene SKI7/HBS1 was replaced in Saccharomyces by a pair
+    of duplicated, intronless genes during whole-genome doubling, converting one isoform choice into two
+    separate loci.
+
+    '
+  topic: Loss of alternative splicing in yeast
+  source:
+    doc_id: PMC7491326
+    title: Origin, conservation, and loss of alternative splicing events that diversify the proteome in
+      Saccharomycotina budding yeasts
+    authors: Hurtig, J. E.; Kim, M.; Orlando-Coronel, L. J.; Ewan, J.; Foreman, M.; Notice, L. A.; Steiger,
+      M. A.; van Hoof, A.
+    journal: RNA
+    year: 2020
+    doi: 10.1261/rna.075655.120
+    bibkey: hurtig2020budding
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L6
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7491326#L6
+    quote: 'replaced this one alternatively spliced gene with a pair of duplicated, unspliced genes as
+      part of a whole genome doubling
+
+      '
+  confidence: high
+  figure_idea: 'A before-and-after pair for one locus: ancestral single gene with two isoforms versus
+    post-duplication pair of single-isoform genes, labelled with the functional output that is preserved
+    either way.
+
+    '
+- id: PFO-017
+  claim: 'Yeast does keep one substantial programme of regulated splicing: the meiotic one, where the
+    activator Mer1 is required to splice four meiosis-specific pre-mRNAs - MER2, MER3, AMA1 and SPO22
+    - whose introns are otherwise poor spliceosome substrates.
+
+    '
+  topic: Meiosis-specific splicing regulation
+  source:
+    doc_id: PMC5570110
+    title: The chromatin remodeling complex Swi/Snf regulates splicing of meiotic transcripts in Saccharomyces
+      cerevisiae
+    authors: Venkataramanan, S.; Douglass, S.; Galivanche, A. R.; Johnson, T. L.
+    journal: Nucleic Acids Research
+    year: 2017
+    doi: 10.1093/nar/gkx373
+    bibkey: venkataramanan2017meiotic
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L11,L12
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5570110#L11,L12
+    quote: 'Mer1, in turn, regulates the splicing of four of the meiotic pre-mRNAs (MER2, MER3, AMA1 and
+      SPO22)
+
+      '
+  confidence: high
+- id: PFO-018
+  claim: 'Fission yeast runs the same logic with the opposite sign. The RNA-binding protein Mmi1 binds
+    primary transcripts of thirty or more meiotic genes in vegetative cells, inhibits splicing of the
+    introns lying near its binding sites while sparing distant ones, and routes the transcript to hyperadenylation-dependent
+    decay, so at least 29 target genes are constitutively transcribed but expressed only in meiosis.
+
+    '
+  topic: Meiosis-specific splicing regulation
+  source:
+    doc_id: PMC3203177
+    title: The Fission Yeast RNA Binding Protein Mmi1 Regulates Meiotic Genes by Controlling Intron Specific
+      Splicing and Polyadenylation Coupled RNA Turnover
+    authors: Chen, H. M.; Futcher, B.; Leatherwood, J.
+    journal: PLoS ONE
+    year: 2011
+    doi: 10.1371/journal.pone.0026804
+    bibkey: chen2011mmi1
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L6
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3203177#L6
+    quote: 'adopts this RNA quality control mechanism to regulate a group of 30 or more meiotic genes
+      at the level of both splicing and RNA turnover
+
+      '
+  confidence: high
+- id: PFO-019
+  claim: 'A comparative study of 23 fungi with sampling-depth correction estimated that on average 6.4
+    per cent of annotated fungal genes are alternatively spliced, with a wide range: Cryptococcus neoformans
+    reached 18 per cent, and Basidiomycota averaged higher (8.6 per cent) than Ascomycota (6.0 per cent),
+    a difference the authors call not significant.
+
+    '
+  topic: Fungal AS prevalence
+  source:
+    doc_id: PMC3925392
+    title: 'Fungal Alternative Splicing is Associated with Multicellular Complexity and Virulence: A Genome-Wide
+      Multi-Species Study'
+    authors: Grutzmann, K.; Szafranski, K.; Pohl, M.; Voigt, K.; Petzold, A.; Schuster, S.
+    journal: DNA Research
+    year: 2014
+    doi: 10.1093/dnares/dst038
+    bibkey: grutzmann2013fungal
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L8
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3925392#L8
+    quote: 'We estimate that on average, 6.4% of the annotated genes are affected by AS, with Cryptococcus
+      neoformans showing an extraordinary rate of 18%
+
+      '
+  confidence: high
+- id: PFO-020
+  claim: 'The introduction to that fungal survey states the categorical contrast, citing earlier work:
+    cassette exons predominate in animals, whereas intron retention is the more frequent event class in
+    other taxa - so the type of alternative splicing, not just its amount, is lineage-specific.
+
+    '
+  topic: Event-type differences across lineages
+  source:
+    doc_id: PMC3925392
+    title: 'Fungal Alternative Splicing is Associated with Multicellular Complexity and Virulence: A Genome-Wide
+      Multi-Species Study'
+    authors: Grutzmann, K.; Szafranski, K.; Pohl, M.; Voigt, K.; Petzold, A.; Schuster, S.
+    journal: DNA Research
+    year: 2014
+    doi: 10.1093/dnares/dst038
+    bibkey: grutzmann2013fungal
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L14
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3925392#L14
+    quote: 'Cassette exons predominantly occur in animals, whereas intron retention is more frequent in
+      other taxa
+
+      '
+  confidence: medium
+- id: PFO-021
+  claim: 'Within fungi, per-gene alternative splicing rate rose in step with how multicellular the group
+    is: 0.26 per cent in the mostly single-celled Saccharomycotina and Taphrinomycotina, 2.3 per cent
+    in Mucoromycotina, 7.2 per cent in the filamentous Pezizomycotina and 8.6 per cent in the fruiting-body-forming
+    Basidiomycota.
+
+    '
+  topic: AS and multicellular complexity
+  source:
+    doc_id: PMC3925392
+    title: 'Fungal Alternative Splicing is Associated with Multicellular Complexity and Virulence: A Genome-Wide
+      Multi-Species Study'
+    authors: Grutzmann, K.; Szafranski, K.; Pohl, M.; Voigt, K.; Petzold, A.; Schuster, S.
+    journal: DNA Research
+    year: 2014
+    doi: 10.1093/dnares/dst038
+    bibkey: grutzmann2013fungal
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L107
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3925392#L107
+    quote: 'Saccharomycotina and Taphrinomycotina (0.26% per-gene AS rate), Mucoro-mycotina (2.3%)
+
+      '
+  confidence: high
+  figure_idea: 'A ladder of fungal taxa ordered by structural complexity with per-gene AS rate on the
+    x-axis, so the correlation (and its exceptions) is visible without claiming causation.
+
+    '
+- id: PFO-022
+  claim: 'Cryptococcus neoformans, which its authors place with other basidiomycetes as the most intron-rich
+    fungi, carries 40,946 introns in its genome, and 99.5 per cent of its expressed genes contain at least
+    one.
+
+    '
+  topic: Intron-rich fungi
+  source:
+    doc_id: PMC3990503
+    title: Analysis of the Genome and Transcriptome of Cryptococcus neoformans var. grubii Reveals Complex
+      RNA Expression and Microevolution Leading to Virulence Attenuation
+    authors: Janbon, G.; Ormerod, K. L.; Paulet, D.; Byrnes, E. J.; Yadav, V.; Chatterjee, G.; Mullapudi,
+      N.; Hon, C. C.; Billmyre, R. B.; Brunel, F.; Bahn, Y. S.; Chen, W.; Chen, Y.; Chow, E. W. L.; Coppée,
+      J. Y.; Floyd-Averette, A.; Gaillardin, C.; Gerik, K. J.; Goldberg, J.; Gonzalez-Hilarion, S.; Gujja,
+      S.; Hamlin, J. L.; Hsueh, Y. P.; Ianiri, G.; Jones, S.; Kodira, C. D.; Kozubowski, L.; Lam, W.;
+      Marra, M.; Mesner, L. D.; Mieczkowski, P. A.; Moyrand, F.; Nielsen, K.; Proux, C.; Rossignol, T.;
+      Schein, J. E.; Sun, S.; Wollschlaeger, C.; Wood, I. A.; Zeng, Q.; Neuvéglise, C.; Newlon, C. S.;
+      Perfect, J. R.; Lodge, J. K.; Idnurm, A.; Stajich, J. E.; Kronstad, J. W.; Sanyal, K.; Heitman,
+      J.; Fraser, J. A.; Cuomo, C. A.; Dietrich, F. S.
+    journal: PLoS Genetics
+    year: 2014
+    doi: 10.1371/journal.pgen.1004261
+    bibkey: janbon2014cryptococcus
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L81
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3990503#L81
+    quote: 'We identified 40,946 introns in the genome, and 99.5% of the expressed genes were found to
+      contain at least one intron
+
+      '
+  confidence: high
+- id: PFO-023
+  claim: 'In the rice blast fungus Magnaporthe oryzae, transcriptome data spanning vegetative growth and
+    five stages of rice infection yielded 4,270 novel mRNA isoforms from 2,413 genes - 18.1 per cent of
+    the gene set - showing that a plant pathogen remodels its isoform repertoire as it invades.
+
+    '
+  topic: Pathogen isoform switching during infection
+  source:
+    doc_id: PMC8942408
+    title: Alternative splicing diversifies the transcriptome and proteome of the rice blast fungus during
+      host infection
+    authors: Jeon, J.; Kim, K. T.; Choi, J.; Cheong, K.; Ko, J.; Choi, G.; Lee, H.; Lee, G. W.; Park,
+      S. Y.; Kim, S.; Kim, S. T.; Min, C. W.; Kang, S.; Lee, Y. H.
+    journal: RNA Biology
+    year: 2022
+    doi: 10.1080/15476286.2022.2043040
+    bibkey: jeon2022riceblast
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L23,L35
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8942408#L23,L35
+    quote: 'we found 4,270 novel mRNA isoforms transcribed from 2,413 genes (18.1% of the total genes)
+
+      '
+  confidence: high
+  figure_idea: 'An infection timeline along the x-axis with the count of stage-specific isoforms on the
+    y-axis, annotated with the lifestyle switch from biotrophy to necrotrophy.
+
+    '
+- id: PFO-024
+  claim: 'Plasmodium falciparum is not an intron-poor parasite: over half its genes carry predicted introns,
+    and gene-model-independent RNA-seq analysis of the blood stages added 977 previously undocumented
+    canonical splice junctions, an 11 per cent increase on the existing annotation.
+
+    '
+  topic: Apicomplexan splicing
+  source:
+    doc_id: PMC3089446
+    title: RNA-Seq analysis of splicing in Plasmodium falciparum uncovers new splice junctions, alternative
+      splicing and splicing of antisense transcripts
+    authors: Sorber, K.; Dimon, M. T.; DeRisi, J. L.
+    journal: Nucleic Acids Research
+    year: 2011
+    doi: 10.1093/nar/gkq1223
+    bibkey: sorber2011plasmodium
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L5,L85
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3089446#L5,L85
+    quote: '977 (12.8%) support new introns, an increase of 11% over the current genome annotation
+
+      '
+  confidence: high
+- id: PFO-025
+  claim: 'In Toxoplasma gondii, junction-level counting that deliberately ignores intron retention put
+    alternative splicing at 22.6 per cent of annotated genes in uninduced parasites, against roughly 5
+    per cent from earlier studies built on reconstructing transcript models; the authors add that detection
+    depends heavily on sequencing depth and that their own data likely captured well under half of all
+    junctions.
+
+    '
+  topic: Method dependence of AS estimates
+  source:
+    doc_id: PMC4482073
+    title: A serine-arginine-rich (SR) splicing factor modulates alternative splicing of over a thousand
+      genes in Toxoplasma gondii
+    authors: Yeoh, L. M.; Goodman, C. D.; Hall, N. E.; van Dooren, G. G.; McFadden, G. I.; Ralph, S. A.
+    journal: Nucleic Acids Research
+    year: 2015
+    doi: 10.1093/nar/gkv311
+    bibkey: yeoh2015toxoplasma
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L93,L106
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4482073#L93,L106
+    quote: 'this is equivalent to 22.6% of tRNA and protein coding genes, which is in stark contrast to
+      the 5% reported in previous
+
+      '
+  confidence: high
+  figure_idea: 'Published alternative-splicing prevalence estimates for the same parasite plotted against
+    the counting method each used, so the reader sees that the spread is in the assay rather than in the
+    organism.
+
+    '
+- id: PFO-026
+  claim: 'Deleting the splicing factor SR2 from Toxoplasma gondii cut the brain cyst burden in infected
+    mice by about 80 per cent, from roughly 216 cysts per brain in wild type to 46 in the knockout, with
+    complementation restoring the wild-type level - a splicing regulator acting as a virulence determinant.
+
+    '
+  topic: Splicing factors as virulence determinants
+  source:
+    doc_id: PMC10701758
+    title: The splicing factor SR2 is an important virulence factor of Toxoplasma gondii
+    authors: Wu, X. J.; Gao, J.; Zheng, X. N.; Elsheikha, H. M.; Li, T. T.; Kou, Y. J.; Wang, M.; Zhu,
+      X. Q.
+    journal: Frontiers in Microbiology
+    year: 2023
+    doi: 10.3389/fmicb.2023.1302512
+    bibkey: wu2023sr2
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L62
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC10701758#L62
+    quote: 'significant reduction of ~80% in the brain cyst burden in mice infected by Pru∆sr2 strain
+      (46 ± 25 cysts/brain)
+
+      '
+  confidence: high
+- id: PFO-027
+  claim: 'Trypanosome messenger RNAs were shown to share an identical 35-nucleotide leader at their 5''
+    ends, present on many and probably all of them judged from cDNA library representation, and carried
+    by transcripts that are variously stage-specific, stage-regulated or constitutive.
+
+    '
+  topic: Trans-splicing as the alternative architecture
+  source:
+    doc_id: PMC7133311
+    title: Trypanosome mRNAs share a common 5' spliced leader sequence
+    authors: Parsons, M.; Nelson, R. G.; Watkins, K. P.; Agabian, N.
+    journal: Cell
+    year: 1984
+    doi: 10.1016/0092-8674(84)90552-X
+    bibkey: parsons1984splicedleader
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L5
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7133311#L5
+    quote: 'A 5′-terminal leader sequence of 35 nucleotides was found to be present on multiple trypanosome
+      RNAs
+
+      '
+  confidence: high
+- id: PFO-028
+  claim: 'In trypanosomes genes are transcribed polycistronically and individual mature mRNAs are carved
+    out of that transcript by spliced-leader trans-splicing, obligatorily coupled to cleavage and polyadenylation
+    within the intergenic regions, so the splicing reaction sets transcript boundaries rather than internal
+    exon content.
+
+    '
+  topic: Trans-splicing as the alternative architecture
+  source:
+    doc_id: bio_bf815ebe4432
+    title: A trans-splicing model for poly(A)-tail addition during VSG mRNA maturation in Trypanosoma
+      brucei
+    authors: Kolev, N. G.; Shi, H.; Tschudi, C.
+    journal: bioRxiv
+    year: 2026
+    doi: 10.64898/2026.10.18.760011
+    bibkey: kolev2026transsplicing
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_bf815ebe4432#L1
+    quote: 'Trypanosomes are characterized by polycistronic transcription and a pre-mRNA processing pathway
+      in which spliced leader (SL) trans-splicing
+
+      '
+  confidence: high
+  figure_idea: 'Two gene-to-mRNA pipelines side by side - mammalian cis-splicing of one pre-mRNA versus
+    trypanosome polycistron resolved by SL addition and polyadenylation - with the same colour marking
+    what the spliceosome does in each.
+
+    '
+- id: PFO-029
+  claim: 'Ciliates run eukaryotic splicing close to its physical minimum: every Paramecium intron falls
+    in the narrow 25 to 45 base pair range, among the shortest known, which the authors read as a functional
+    limit for spliceosomal recognition.
+
+    '
+  topic: Intron architecture limits in protists
+  source:
+    doc_id: PMC5014332
+    title: Evolution of the Exon-Intron Structure in Ciliate Genomes
+    authors: Bondarenko, V. S.; Gelfand, M. S.
+    journal: PLOS ONE
+    year: 2016
+    doi: 10.1371/journal.pone.0161476
+    bibkey: bondarenko2016ciliate
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L16
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5014332#L16
+    quote: 'In Paramecium, the length of all introns lies in an extremely narrow range, 25–45 bp
+
+      '
+  confidence: high
+  figure_idea: 'Intron length distributions overlaid for Paramecium, Tetrahymena, budding yeast, Arabidopsis
+    and human on a log axis, so the reader sees both the shift in mode and the loss of the long tail.
+
+    '
+- id: PFO-030
+  claim: 'The unicellular green alga Chlamydomonas reinhardtii, which split from land plants around a
+    billion years ago, shows alternative splicing at 498 transcriptional units and 611 events, about 3
+    per cent of its total gene count.
+
+    '
+  topic: Algae as the plant lineage baseline
+  source:
+    doc_id: PMC2830987
+    title: Genome-wide analysis of alternative splicing in Chlamydomonas reinhardtii
+    authors: Labadorf, A.; Link, A.; Rogers, M. F.; Thomas, J.; Reddy, A. S.; Ben-Hur, A.
+    journal: BMC Genomics
+    year: 2010
+    doi: 10.1186/1471-2164-11-114
+    bibkey: labadorf2010chlamydomonas
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L7,L9
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2830987#L7,L9
+    quote: 'revealed AS of 498 transcriptional units with 611 events, representing about 3% of the total
+      number of genes
+
+      '
+  confidence: high
+  figure_idea: 'A two-panel figure: total AS prevalence for alga, land plant and mammal in one panel,
+    and the event-type composition for the same three in the other, making the point that amount and flavour
+    evolve separately.
+
+    '
+- id: PFO-031
+  claim: 'The foundational caveat for any cross-species isoform comparison: because detected alternative
+    splicing scales with how deeply a transcriptome has been sampled, and sequence quality and library
+    construction differ between projects, the authors concluded it is impractical to state the exact level
+    of alternative splicing in the organisms they tested.
+
+    '
+  topic: Why AS prevalence estimates are not comparable
+  source:
+    doc_id: PMC1802581
+    title: Different levels of alternative splicing among eukaryotes
+    authors: Kim, E.; Magen, A.; Ast, G.
+    journal: Nucleic Acids Research
+    year: 2007
+    doi: 10.1093/nar/gkl924
+    bibkey: kim2006eukaryotes
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L63
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC1802581#L63
+    quote: 'Hence, it is impractical to determine the exact level of alternative exons and genes in the
+      tested organisms
+
+      '
+  confidence: high
+  figure_idea: 'A saturation curve - AS events detected against transcripts sampled - with several species''
+    published estimates marked as points at different depths, so the reader sees that cross-species bar
+    charts compare positions on different curves.
+
+    '
+- id: PFO-032
+  claim: 'A coverage-corrected index built from over 39 million ESTs across 47 sequenced eukaryotic genomes
+    found alternative splicing rising steadily over roughly 1,400 million years of eukaryotic evolution,
+    with plants scoring higher than both fungi and protists - which the authors read as an independent
+    increase in the plant lineage rather than a shared trend.
+
+    '
+  topic: Does AS complexity track organismal complexity
+  source:
+    doc_id: PMC4032128
+    title: Correcting for Differential Transcript Coverage Reveals a Strong Relationship between Alternative
+      Splicing and Organism Complexity
+    authors: Chen, L.; Bush, S. J.; Tovar-Corona, J. M.; Castillo-Morales, A.; Urrutia, A. O.
+    journal: Molecular Biology and Evolution
+    year: 2014
+    doi: 10.1093/molbev/msu083
+    bibkey: chen2014complexity
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L5,L12,L20
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4032128#L5,L12,L20
+    quote: 'alternative splicing in plant species compared with fungi and protists suggest that AS levels
+      have independently increased in this lineage
+
+      '
+  confidence: high
+- id: PFO-033
+  claim: 'An analysis spanning 1,494 species across the tree of life, using a per-coding-sequence transcript-count
+    metric, found alternative splicing highly uneven between lineages: prokaryotes and unicellular eukaryotes
+    show minimal splicing, mammals and birds the highest levels, and plants only moderate levels despite
+    highly variable genome composition.
+
+    '
+  topic: AS across the tree of life
+  source:
+    doc_id: PMC12534046
+    title: Alternative splicing across the tree of life
+    authors: de la Fuente, R.; Dı́az-Villanueva, W.; Arnau, V.; Moya, A.
+    journal: eLife
+    year: 2025
+    doi: 10.7554/eLife.94802
+    bibkey: delafuente2025treeoflife
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L9,L20
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12534046#L9,L20
+    quote: 'Our findings indicate that alternative splicing is highly variable across lineages. While
+      unicellular eukaryotes and prokaryotes display minimal splicing
+
+      '
+  confidence: high
+- id: PFO-034
+  claim: 'Arbuscular mycorrhizal fungi reach into their host''s splicing machinery to establish symbiosis:
+    the Glomeromycotina-specific SP7-like effector family localizes to nuclear condensates, binds the
+    plant splicing factor SR45 together with core spliceosome proteins U170K and U2AF35, and shifts the
+    host alternative splicing programme when expressed in potato.
+
+    '
+  topic: Isoform control in symbiosis
+  source:
+    doc_id: bio_3530267271b7
+    title: Alternative splicing regulation in plants by effectors of symbiotic arbuscular mycorrhizal
+      fungi
+    authors: Betz, R.; Heidt, S.; Figueira-Galán, D.; Hartmann, M.; Langner, T.; Requena, N.
+    journal: Nature Communications
+    year: 2024
+    doi: 10.1038/s41467-024-51512-5
+    bibkey: betz2024mycorrhizal
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L12
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_3530267271b7#L12
+    quote: 'SP7-like effectors localize at nuclear condensates and interact with the plant mRNA processing
+      machinery, most prominently with the splicing factor SR45
+
+      '
+  confidence: high
+  figure_idea: 'A host nucleus with the fungal effector drawn at the point where it contacts the splicing
+    machinery, and the output drawn as a changed isoform ratio in a host gene rather than as a changed
+    transcript level.
+
+    '
+- id: PFO-035
+  claim: 'Maize grown through realistic daily temperature cycles raised its overall alternative splicing
+    frequency as the maximum daily temperature rose, with retained introns and skipped exons increasing
+    most, and the genes most often affected included the splicing regulators themselves, among them the
+    SR protein gene SR45a.
+
+    '
+  topic: Crop traits driven by isoform usage
+  source:
+    doc_id: PMC8195531
+    title: Daily temperature cycles promote alternative splicing of RNAs encoding SR45a, a splicing regulator
+      in maize
+    authors: Li, Z.; Tang, J.; Bassham, D. C.; Howell, S. H.
+    journal: Plant Physiology
+    year: 2021
+    doi: 10.1093/plphys/kiab110
+    bibkey: li2021maize
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L6
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8195531#L6
+    quote: 'Increases in maximum daily temperature elevated the frequency of the major modes of alternative
+      splices (AS), in particular retained introns and skipped exons
+
+      '
+  confidence: high
+leads:
+- note: 'The corpus record for Parsons et al. 1984 (PMC7133311) is a PMC reprint listing: title, authors,
+    the summary at L5, then the reference list from L7 onward, with no body text. Its header line reads
+    "Cell (2004)" while meta.json carries the original 1984 DOI 10.1016/0092-8674(84)90552-X. The claim
+    drawn from it is marked abstract_only and the bibliography should cite the 1984 Cell paper, not a
+    2004 date.
+
+    '
+  why: A 1984 date on a foundational trans-splicing citation is load-bearing for the chapter's history,
+    and the corpus record disagrees with itself about it.
+- note: 'The symbiosis claim (PFO-034) is anchored on a bioRxiv preprint, bio_3530267271b7, whose meta.json
+    lists only the preprint DOI 10.1101/2023.09.20.558436. The corpus search result reports a 2024 published
+    version at doi 10.1038/s41467-024-51512-5 (Nature Communications), which was not in the corpus as
+    full text. Cite the journal version and re-check the effector-target list against it.
+
+    '
+  why: The claim names specific interaction partners (SR45, U170K, U2AF35) and those are exactly the details
+    a peer-review round changes.
+- note: 'Four different denominators for plant AS prevalence appear across the sources read for this file
+    and they are not interchangeable: 61.2 per cent of intron-containing Arabidopsis genes (PFO-001; 2012
+    deep RNA-seq, flower and seedling only), about 49 per cent of intron-containing genes under salt stress
+    (PFO-010; 2014, ~200x coverage), 60 to 70 per cent of intron-containing genes (bio_3530267271b7 L16,
+    citing a review), and about 70 per cent of multi-exon plant genes against over 95 per cent in animals
+    (PMC13136898 L17, a review statement that was not written up as a claim). Denominator, tissue, stress
+    state and depth all differ.
+
+    '
+  why: Any table putting a plant AS percentage beside a human one will read as an error unless each row
+    states its denominator and its sampling depth.
+- note: 'The claim that intron retention is the dominant plant AS mode needs its own qualifier, and one
+    source states it directly: PMC8195531 L12 says the most frequent AS mode in plants is intron retention,
+    "however that depends on the tissues sampled and growth conditions of the plants". Read alongside
+    PFO-003, this means the plant-versus-mammal event-type contrast is real but condition-dependent.
+
+    '
+  why: The chapter's cleanest contrast with the mammalian picture is the event-type one, so the condition
+    dependence has to be stated or a reviewer will supply it.
+- note: 'The FLM-delta mechanism is genuinely contested, and within one paper. PFO-004 records the CRISPR
+    result arguing against a dominant-negative role at native expression, while the same paper''s L47
+    states that 35S-driven FLM-delta in an flm-3 background does flower significantly earlier than controls
+    at 16 degrees, confirming the earlier Pose and Lee results. Both positions are the same authors''.
+
+    '
+  why: FLM should be presented as a case where the isoform ratio matters and the dominant-negative label
+    is dose-dependent, not as a settled textbook example.
+- note: 'Trypanosome trans-splicing is anchored here on a 1984 Cell paper (PFO-027) and a 2026 bioRxiv
+    preprint (PFO-028, bio_bf815ebe4432, doi 10.64898/2026.10.18.760011). No journal version of the preprint
+    was found in the corpus. Its mechanistic proposal - that polyadenylated SL RNA precursors rather than
+    mature SL RNPs are the trans-splicing substrate - is novel and should be re-checked before the chapter
+    asserts it as established mechanism.
+
+    '
+  why: The architectural contrast (polycistronic transcription resolved by trans-splicing) is safe; the
+    specific substrate model is not yet peer-reviewed.
+- note: 'Chen et al. 2014 is internally inconsistent about its own sample. L5 says over 39 million ESTs
+    for 47 eukaryotic species with fully sequenced genomes; L17 says over 39 million partial transcripts
+    representing 112 eukaryotes (20 protists, 18 plants, 23 fungi, 51 metazoans). PFO-032 cites both lines
+    and states the 47-genome figure, which is the one the abstract uses.
+
+    '
+  why: If the chapter quotes a species count for the largest coverage-corrected AS comparison, the two
+    numbers in the same paper mean different things and the text should say which.
+- note: 'Fission yeast appears here only through Mmi1-mediated meiotic regulation (PFO-018). No genome-wide
+    Schizosaccharomyces pombe AS prevalence figure was anchored, although PFO-019''s source cites earlier
+    work placing S. pombe in the 0 to 5 per cent band alongside S. cerevisiae (PMC3925392 L16). No genome-wide
+    Plasmodium AS percentage was anchored either.
+
+    '
+  why: The intron-poor-to-intron-rich fungal axis is the chapter's cleanest comparative figure and currently
+    has a gap where fission yeast should sit.
+- note: 'Candida and Amoebozoa have no claim in this file. For Candida, a comparative AS study of human
+    fungal pathogens surfaced in search as PMC6176087 (Sieber et al. 2018) and was not opened. For Amoebozoa,
+    precise intron loss counts for Dictyostelium discoideum and D. purpureum are anchorable at PMC4683709
+    L11 (441 and 202 losses), and an alternative-promoter study of the acaA gene sits at PMC2952602, but
+    neither is an alternative splicing prevalence figure or a developmental isoform switch.
+
+    '
+  why: Amoebozoa is a whole eukaryotic supergroup with no isoform example here, and Candida is the fungal
+    pathogen a reader will expect to see named.
+- note: 'Trimmed at the 35-claim cap but anchored and reusable: Arabidopsis isoform-specific peptide evidence
+    (PMC13136898 L14: 32,110 isoform-specific peptides resolved into 2,442 AS events from over 900 LC-MS/MS
+    datasets); yeast reanalysis recovering 170 non-annotated introns out of 447 predicted, 71 of them
+    alternative splice sites at known introns (PMC4607428 L33); weak branch-point and 5'' splice-site
+    consensus in yeast meiotic genes, making them spliceosome-competition substrates (PMC5570110 L12);
+    FLM first-intron insertion polymorphisms as the causal natural variant for cool-temperature flowering
+    (PMC4619661 L8); Chlamydomonas AS being lower than land plants but higher than unicellular heterotrophs
+    (PMC2830987 L11); ciliate introns per gene, 1.6 to 2.3 in Paramecium and Oxytricha versus 4.8 in Tetrahymena
+    (PMC5014332 L15); the coverage-independent finding that vertebrates exceed invertebrates in AS (PMC1802581
+    L5); and alternative splicing peaking in genomes with roughly 50 per cent intergenic content, which
+    plants exceed without gaining isoforms (PMC12534046 L59).
+
+    '
+  why: If the chapter needs more depth in any of these sections the lines are already located and verified.

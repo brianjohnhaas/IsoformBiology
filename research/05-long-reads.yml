@@ -1,0 +1,973 @@
+area: long-reads
+researcher: agent-05-long-reads
+date: 2026-11-21
+corpus: paperclip 0.8.23
+claims:
+- id: LR-001
+  claim: 'Because each PacBio read reported a whole MCF-7 mRNA molecule, pairs of processing choices could
+    be tested for statistical dependence within the same molecule, and more than 60 per cent of multi-exon
+    genes (6,825 of 11,350) turned out to have at least one coupled pair of features.
+
+    '
+  topic: 5' and 3' end coupling resolved on single molecules
+  source:
+    doc_id: PMC5877393
+    title: Full-length mRNA sequencing uncovers a widespread coupling between transcription initiation
+      and mRNA processing
+    authors: Anvar, S. Y.; Allard, G.; Tseng, E.; Sheynkman, G. M.; de Klerk, E.; Vermaat, M.; Yin, R.
+      H.; Johansson, H. E.; Ariyurek, Y.; den Dunnen, J. T.; Turner, S. W.; ‘t Hoen, P. A. C.
+    journal: Genome Biology
+    year: 2018
+    doi: 10.1186/s13059-018-1418-0
+    bibkey: anvar2018fulllength
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L37
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5877393#L37
+    quote: we found coupling between mRNA features in over 60% of all multi-exon genes (6825 out of 11,350
+  confidence: high
+  figure_idea: 'A schematic contrasting what a short read can assert about two distant features of one
+    transcript (nothing) with what a full-length read asserts (joint presence or absence), then the resulting
+    2x2 contingency table that makes coupling testable at all.
+
+    '
+- id: LR-002
+  claim: 'The authors of the cDNA-concatenation method set out the arithmetic that had blocked single-cell
+    isoform work - reads beyond about 5 kb at depths above twenty million, which no platform then delivered
+    together - and report that ligating cDNAs into composite molecules raised PacBio output more than
+    fifteenfold, to roughly 40 million reads per run.
+
+    '
+  topic: single-cell long reads
+  source:
+    doc_id: bio_c1d3d6456d5e
+    title: High-throughput RNA isoform sequencing using programmable cDNA concatenation
+    authors: Al’Khafaji, A. M.; Smith, J. T.; Garimella, K. V.; Babadi, M.; Popic, V.; Sade-Feldman, M.;
+      Gatzen, M.; Sarkizova, S.; Schwartz, M. A.; Blaum, E. M.; Day, A.; Costello, M.; Bowers, T.; Gabriel,
+      S.; Banks, E.; Philippakis, A. A.; Boland, G. M.; Blainey, P. C.; Hacohen, N.
+    journal: Nature Biotechnology
+    year: 2024
+    doi: 10.1038/s41587-023-01815-7
+    bibkey: alkhafaji2024highthroughput
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L24,L34
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_c1d3d6456d5e#L24,L34
+    quote: a cDNA concatemerization method that boosts throughput of the PacBio long-read sequencing platform
+      >15-fold to approximately 40 million reads per run
+  confidence: high
+  figure_idea: 'A two-axis plot of read length against reads per run, with the region required for single-cell
+    isoform analysis shaded, and short-read, unconcatenated long-read and concatenated long-read platforms
+    placed on it - showing which corner each technology occupies.
+
+    '
+- id: LR-003
+  claim: 'Long-read isoform maps in Drosophila identified promoters whose use biases 3'' end choice, and
+    deleting one such promoter from the orb locus by CRISPR left the proximal 3'' end expressed while
+    massively depleting the distal one; the authors conclude that dominant promoters can drive read-through
+    of canonical poly(A) signals toward more distal termination.
+
+    '
+  topic: 5' and 3' end coupling resolved on single molecules
+  source:
+    doc_id: PMC10228280
+    title: Sites of transcription initiation drive mRNA isoform selection
+    authors: Alfonso-Gonzalez, C.; Legnini, I.; Holec, S.; Arrigoni, L.; Ozbulut, H. C.; Mateos, F.; Koppstein,
+      D.; Rybak-Wolf, A.; Bönisch, U.; Rajewsky, N.; Hilgers, V.
+    journal: Cell
+    year: 2023
+    doi: 10.1016/j.cell.2023.04.012
+    bibkey: alfonsogonzalez2023sites
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L49
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC10228280#L49
+    quote: dominant promoters influence PAS selection and can mediate skipping of canonical poly(A) signals
+      to favor more distal sites of transcription termination
+  confidence: high
+- id: LR-004
+  claim: 'Sequencing the native RNA strand of the GM12878 cell line, rather than a cDNA copy of it, yielded
+    33,984 isoforms over 10,793 genes, and 52.6 per cent of them carried an exon junction chain absent
+    from GENCODE.
+
+    '
+  topic: direct RNA sequencing
+  source:
+    doc_id: PMC7768885
+    title: Nanopore native RNA sequencing of a human poly(A) transcriptome
+    authors: Workman, R. E.; Tang, A. D.; Tang, P. S.; Jain, M.; Tyson, J. R.; Razaghi, R.; Zuzarte, P.
+      C.; Gilpatrick, T.; Payne, A.; Quick, J.; Sadowski, N.; Holmes, N.; de Jesus, J. G.; Jones, K. L.;
+      Soulette, C. M.; Snutch, T. P.; Loman, N.; Paten, B.; Loose, M.; Simpson, J. T.; Olsen, H. E.; Brooks,
+      A. N.; Akeson, M.; Timp, W.
+    journal: Nature Methods
+    year: 2019
+    doi: 10.1038/s41592-019-0617-2
+    bibkey: workman2019nanopore
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L40
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7768885#L40
+    quote: Of the 33,984 isoforms representing 10,793 genes (Supplementary Table 9), 52.6% had a splice
+      junction chain that was unannotated in GENCODE
+  confidence: high
+- id: LR-005
+  claim: 'Reading the poly(A) tail as part of the same native molecule that identified the isoform showed
+    that two isoforms of DDX5 carry very different tails: the intron-retaining isoform had a median tail
+    of 327 nucleotides against 125 for the protein-coding one.
+
+    '
+  topic: direct RNA sequencing
+  source:
+    doc_id: PMC7768885
+    title: Nanopore native RNA sequencing of a human poly(A) transcriptome
+    authors: Workman, R. E.; Tang, A. D.; Tang, P. S.; Jain, M.; Tyson, J. R.; Razaghi, R.; Zuzarte, P.
+      C.; Gilpatrick, T.; Payne, A.; Quick, J.; Sadowski, N.; Holmes, N.; de Jesus, J. G.; Jones, K. L.;
+      Soulette, C. M.; Snutch, T. P.; Loman, N.; Paten, B.; Loose, M.; Simpson, J. T.; Olsen, H. E.; Brooks,
+      A. N.; Akeson, M.; Timp, W.
+    journal: Nature Methods
+    year: 2019
+    doi: 10.1038/s41592-019-0617-2
+    bibkey: workman2019nanopore
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L53
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7768885#L53
+    quote: had a median poly(A) tail length of 327nt, compared with the protein-coding isoform
+  confidence: high
+  figure_idea: 'Two overlaid tail-length distributions for one gene''s two isoforms, with the isoform
+    structures drawn above each, to show that the measurement is per-isoform rather than per-gene.
+
+    '
+- id: LR-006
+  claim: 'The authors state the structural reason a short-read protocol cannot substitute: fragmenting
+    the molecule destroys any pairing between a modification and a distant feature such as a splice choice
+    or the tail length.
+
+    '
+  topic: limits of short reads, stated by long-read authors
+  source:
+    doc_id: PMC7768885
+    title: Nanopore native RNA sequencing of a human poly(A) transcriptome
+    authors: Workman, R. E.; Tang, A. D.; Tang, P. S.; Jain, M.; Tyson, J. R.; Razaghi, R.; Zuzarte, P.
+      C.; Gilpatrick, T.; Payne, A.; Quick, J.; Sadowski, N.; Holmes, N.; de Jesus, J. G.; Jones, K. L.;
+      Soulette, C. M.; Snutch, T. P.; Loman, N.; Paten, B.; Loose, M.; Simpson, J. T.; Olsen, H. E.; Brooks,
+      A. N.; Akeson, M.; Timp, W.
+    journal: Nature Methods
+    year: 2019
+    doi: 10.1038/s41592-019-0617-2
+    bibkey: workman2019nanopore
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L68
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7768885#L68
+    quote: The latter precludes analysis of long-distance interactions between modifications, and between
+      modifications and other RNA features such as splicing and poly(A) tail length
+  confidence: high
+- id: LR-007
+  claim: 'Assigning native RNA reads to a parental chromosome via heterozygous sites they contained, the
+    authors report allelic imbalance for 228 of the testable autosomal genes (6.1 per cent) against 23
+    X-linked genes, which they score as 95.7 per cent; 22 of those 23 were maternal and the single paternal
+    one was XIST.
+
+    '
+  topic: allele- and haplotype-resolved isoform expression
+  source:
+    doc_id: PMC7768885
+    title: Nanopore native RNA sequencing of a human poly(A) transcriptome
+    authors: Workman, R. E.; Tang, A. D.; Tang, P. S.; Jain, M.; Tyson, J. R.; Razaghi, R.; Zuzarte, P.
+      C.; Gilpatrick, T.; Payne, A.; Quick, J.; Sadowski, N.; Holmes, N.; de Jesus, J. G.; Jones, K. L.;
+      Soulette, C. M.; Snutch, T. P.; Loman, N.; Paten, B.; Loose, M.; Simpson, J. T.; Olsen, H. E.; Brooks,
+      A. N.; Akeson, M.; Timp, W.
+    journal: Nature Methods
+    year: 2019
+    doi: 10.1038/s41592-019-0617-2
+    bibkey: workman2019nanopore
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L45
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7768885#L45
+    quote: Among autosomal genes, 228 (6.1%) showed significant ASE (binomial test, p<0.001), and among
+      X-chromosome genes, 23 (95.7%) showed significant ASE
+  confidence: high
+- id: LR-008
+  claim: 'The nano-ID authors put the barrier plainly: isoform-level stability cannot be estimated from
+    short reads because the reads cannot be assigned to isoforms in the first place, and tail length likewise
+    cannot be obtained per isoform.
+
+    '
+  topic: limits of short reads, stated by long-read authors
+  source:
+    doc_id: PMC7545145
+    title: Native molecule sequencing by nano-ID reveals synthesis and stability of RNA isoforms
+    authors: Maier, K. C.; Gressel, S.; Cramer, P.; Schwalb, B.
+    journal: Genome Research
+    year: 2020
+    doi: 10.1101/gr.257857.119
+    bibkey: maier2020native
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L9
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7545145#L9
+    quote: the stability of RNA isoforms is essentially impossible with short-read RNA sequencing methods
+      because those reads generally cannot be assigned to RNA isoforms
+  confidence: high
+- id: LR-009
+  claim: 'Metabolic labelling read out on native nanopore molecules showed that individual isoforms do
+    not share a single stability response: under heat shock the authors found that the dynamics of individual
+    isoforms varied globally relative to the combined RNA of their gene.
+
+    '
+  topic: direct RNA sequencing
+  source:
+    doc_id: PMC7545145
+    title: Native molecule sequencing by nano-ID reveals synthesis and stability of RNA isoforms
+    authors: Maier, K. C.; Gressel, S.; Cramer, P.; Schwalb, B.
+    journal: Genome Research
+    year: 2020
+    doi: 10.1101/gr.257857.119
+    bibkey: maier2020native
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L39
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7545145#L39
+    quote: the dynamics of individual RNA isoforms during heat shock varies globally
+  confidence: high
+- id: LR-010
+  claim: 'In Arabidopsis, a single uninterrupted nanopore alignment of 12.7 kb spanning 63 exons matched
+    an annotated isoform exactly, demonstrating that an entire complex splice chain can be observed on
+    one molecule rather than inferred from junction counts.
+
+    '
+  topic: full-structure view on one molecule
+  source:
+    doc_id: PMC6959997
+    title: Nanopore direct RNA sequencing maps the complexity of Arabidopsis mRNA processing and m6A modification
+    authors: Parker, M. T.; Knop, K.; Sherwood, A. V.; Schurch, N. J.; Mackinnon, K.; Gould, P. D.; Hall,
+      A. J.; Barton, G. J.; Simpson, G. G.
+    journal: eLife
+    year: 2020
+    doi: 10.7554/eLife.49658
+    bibkey: parker2020nanopore
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L40
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6959997#L40
+    quote: revealed the splicing pattern of a 12.7 kb read alignment, comprised of 63 exons, agreeing
+      exactly with the AT1G48090.4 isoform
+  confidence: high
+- id: LR-011
+  claim: 'Mapping m6A from basecalling error on native Arabidopsis RNA connected the modification to an
+    organism-level phenotype: the m6A writer mutant had a lengthened circadian clock period alongside
+    altered abundance of oscillator transcripts.
+
+    '
+  topic: direct RNA sequencing
+  source:
+    doc_id: PMC6959997
+    title: Nanopore direct RNA sequencing maps the complexity of Arabidopsis mRNA processing and m6A modification
+    authors: Parker, M. T.; Knop, K.; Sherwood, A. V.; Schurch, N. J.; Mackinnon, K.; Gould, P. D.; Hall,
+      A. J.; Barton, G. J.; Simpson, G. G.
+    journal: eLife
+    year: 2020
+    doi: 10.7554/eLife.49658
+    bibkey: parker2020nanopore
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L54
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6959997#L54
+    quote: the vir-1 mutant had a lengthened clock period
+  confidence: high
+- id: LR-012
+  claim: 'The same authors note that a genome sequence available since 2000 still had annotation left
+    to fix, and claim that native long reads have the potential to refine multiple features of it while
+    producing the clearest m6A map then available for the species.
+
+    '
+  topic: non-human annotation reset
+  source:
+    doc_id: PMC6959997
+    title: Nanopore direct RNA sequencing maps the complexity of Arabidopsis mRNA processing and m6A modification
+    authors: Parker, M. T.; Knop, K.; Sherwood, A. V.; Schurch, N. J.; Mackinnon, K.; Gould, P. D.; Hall,
+      A. J.; Barton, G. J.; Simpson, G. G.
+    journal: eLife
+    year: 2020
+    doi: 10.7554/eLife.49658
+    bibkey: parker2020nanopore
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L70
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6959997#L70
+    quote: nanopore DRS has the potential to refine multiple features of Arabidopsis genome annotation
+      and to generate the clearest map to date of m6A locations
+  confidence: high
+- id: LR-013
+  claim: 'A reported intron-within-an-exon event in CD19 turned out to be a reverse transcription product:
+    on reporter-transfected cells it made up over 25 per cent of PCR-free direct-cDNA reads and nearly
+    30 per cent of PCR-amplified cDNA reads, yet was undetectable in direct RNA reads, and the authors
+    generalise that any RT-dependent protocol can invent such events.
+
+    '
+  topic: library artifacts that masquerade as isoforms
+  source:
+    doc_id: PMC8240250
+    title: Direct long-read RNA sequencing identifies a subset of questionable exitrons likely arising
+      from reverse transcription artifacts
+    authors: Schulz, L.; Torres-Diz, M.; Cortés-López, M.; Hayer, K. E.; Asnani, M.; Tasian, S. K.; Barash,
+      Y.; Sotillo, E.; Zarnack, K.; König, J.; Thomas-Tikhonenko, A.
+    journal: Genome Biology
+    year: 2021
+    doi: 10.1186/s13059-021-02411-1
+    bibkey: schulz2021direct
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L23,L28
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8240250#L23,L28
+    quote: accounted for > 25% of dcDNA-seq and almost 30% of cDNA-seq reads, but was undetectable using
+      dRNA-seq
+  confidence: high
+  figure_idea: 'A decision diagram: the same locus seen in cDNA long reads, in PCR-free direct-cDNA reads
+    and in direct RNA reads, with the junction present in the first two and absent in the third - the
+    pattern that identifies an RT artifact rather than an isoform.
+
+    '
+- id: LR-014
+  claim: 'Comparing cDNA and native-RNA libraries across two species and three platforms, the authors
+    argue that spurious poly(A) sites usually blamed on internal priming are instead produced by template
+    switching, since many appeared at sites with only three to five adenines - too few for an oligo-dT
+    primer to bind.
+
+    '
+  topic: library artifacts that masquerade as isoforms
+  source:
+    doc_id: PMC6839120
+    title: Template-switching artifacts resemble alternative polyadenylation
+    authors: Balázs, Z.; Tombácz, D.; Csabai, Z.; Moldován, N.; Snyder, M.; Boldogkői, Z.
+    journal: BMC Genomics
+    year: 2019
+    doi: 10.1186/s12864-019-6199-7
+    bibkey: balazs2019template
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L25,L30
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6839120#L25,L30
+    quote: we argue that TS is more likely to be responsible for these artifacts as many artifacts were
+      detected in regions with rather few As
+  confidence: high
+- id: LR-015
+  claim: 'Targeted PacBio sequencing of SNCA, a six-exon gene central to Parkinson disease, resolved 41
+    distinct full-length isoforms; the authors attribute the diversity to alternative 5'' start sites
+    combined with variable 3'' UTR lengths alongside the already-known exon-skipping forms.
+
+    '
+  topic: novel isoforms in well-studied genes
+  source:
+    doc_id: PMC6629766
+    title: 'The Landscape of SNCA Transcripts Across Synucleinopathies: New Insights From Long Reads Sequencing
+      Analysis'
+    authors: Tseng, E.; Rowell, W. J.; Glenn, O. C.; Hon, T.; Barrera, J.; Kujawa, S.; Chiba-Falek, O.
+    journal: Frontiers in Genetics
+    year: 2019
+    doi: 10.3389/fgene.2019.00584
+    bibkey: tseng2019landscape
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L64,L94
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6629766#L64,L94
+    quote: we obtained a final set of 41 SNCA isoforms (Figure 3)
+  confidence: high
+- id: LR-016
+  claim: 'A previously unannotated SNCA start site inside intron 4 had no support in GTEx short-read data
+    or FANTOM5 CAGE peaks; the authors found it confirmed by a single transcript in a public direct-RNA
+    dataset, while the junction joining it to exon 5 was separately confirmed by aggregated short-read
+    junction data.
+
+    '
+  topic: novel isoforms in well-studied genes
+  source:
+    doc_id: PMC6629766
+    title: 'The Landscape of SNCA Transcripts Across Synucleinopathies: New Insights From Long Reads Sequencing
+      Analysis'
+    authors: Tseng, E.; Rowell, W. J.; Glenn, O. C.; Hon, T.; Barrera, J.; Kujawa, S.; Chiba-Falek, O.
+    journal: Frontiers in Genetics
+    year: 2019
+    doi: 10.3389/fgene.2019.00584
+    bibkey: tseng2019landscape
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L68
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6629766#L68
+    quote: while publicly downloaded short read data from GTEx and Sandor et al. (2017) and CAGE peak
+      data (FANTOM5) did not support this novel start site
+  confidence: high
+- id: LR-017
+  claim: 'Nanopore sequencing of B cells from 67 donors mapped 17,119 isoform-level expression QTLs touching
+    5,502 isoforms of 3,958 genes, against only 6,350 gene-level eQTLs in the same data.
+
+    '
+  topic: isoform-level eQTLs and sQTLs
+  source:
+    doc_id: PMC12060498
+    title: Long-read sequencing reveals novel isoform-specific eQTLs and regulatory mechanisms of isoform
+      expression in human B cells
+    authors: Nagura, Y.; Shimada, M.; Kuribayashi, R.; Ikemoto, K.; Kiyose, H.; Igarashi, A.; Kaname,
+      T.; Unoki, M.; Fujimoto, A.
+    journal: Genome Biology
+    year: 2025
+    doi: 10.1186/s13059-025-03583-w
+    bibkey: nagura2025longread
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L20,L27
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12060498#L20,L27
+    quote: Our analysis revealed 17,119 ieQTLs affecting 5,502 isoforms (from 3958 genes) and 6350 gene
+      eQTLs (from 1965 genes)
+  confidence: high
+- id: LR-018
+  claim: 'The authors report that 70.6 per cent of those isoform-level eQTLs were not detected by a gene-level
+    analysis of the same data.
+
+    '
+  topic: isoform-level eQTLs and sQTLs
+  source:
+    doc_id: PMC12060498
+    title: Long-read sequencing reveals novel isoform-specific eQTLs and regulatory mechanisms of isoform
+      expression in human B cells
+    authors: Nagura, Y.; Shimada, M.; Kuribayashi, R.; Ikemoto, K.; Kiyose, H.; Igarashi, A.; Kaname,
+      T.; Unoki, M.; Fujimoto, A.
+    journal: Genome Biology
+    year: 2025
+    doi: 10.1186/s13059-025-03583-w
+    bibkey: nagura2025longread
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L9
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12060498#L9
+    quote: Our analysis reveals 17,119 ieQTLs, with 70.6% remaining undetected by a gene-level analysis
+  confidence: high
+  figure_idea: 'A nested proportional diagram of the same cohort''s associations: gene-level eQTLs, isoform-level
+    eQTLs, and the non-overlapping remainder, annotated with what each category can and cannot say about
+    mechanism.
+
+    '
+- id: LR-019
+  claim: 'Single-cell long-read profiling of mouse and human brain found that for 72 per cent of genes
+    the mix of full-length isoforms shifts across at least one of brain region, cell subtype or developmental
+    stage - isoform identity, not just gene expression, tracks cell identity.
+
+    '
+  topic: single-cell long reads
+  source:
+    doc_id: PMC11156538
+    title: Single-cell long-read sequencing-based mapping reveals specialized splicing patterns in developing
+      and adult mouse and human brain
+    authors: Joglekar, A.; Hu, W.; Zhang, B.; Narykov, O.; Diekhans, M.; Marrocco, J.; Balacco, J.; Ndhlovu,
+      L. C.; Milner, T. A.; Fedrigo, O.; Jarvis, E. D.; Sheynkman, G.; Korkin, D.; Ross, M. E.; Tilgner,
+      H. U.
+    journal: Nature Neuroscience
+    year: 2024
+    doi: 10.1038/s41593-024-01616-4
+    bibkey: joglekar2024singlecell
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L43
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11156538#L43
+    quote: For 72% of genes, full-length isoform expression varies along one or more axes
+  confidence: high
+- id: LR-020
+  claim: 'Quality-control analysis of a PacBio mouse neural transcriptome showed the asymmetry that makes
+    novel long-read structures hard to trust: 99.9 per cent of the junctions already in the annotation
+    used canonical dinucleotides, but only 69 per cent of the 3,837 novel junctions did, leaving 1,188
+    non-canonical.
+
+    '
+  topic: honest limits
+  source:
+    doc_id: PMC5848618
+    title: 'SQANTI: extensive characterization of long-read transcript sequences for quality control in
+      full-length transcriptome identification and quantification'
+    authors: Tardaguila, M.; de la Fuente, L.; Marti, C.; Pereira, C.; Pardo-Palacios, F. J.; del Risco,
+      H.; Ferrell, M.; Mellado, M.; Macchietto, M.; Verheggen, K.; Edelmann, M.; Ezkurdia, I.; Vazquez,
+      J.; Tress, M.; Mortazavi, A.; Martens, L.; Rodriguez-Navarro, S.; Moreno-Manzano, V.; Conesa, A.
+    journal: Genome Research
+    year: 2018
+    doi: 10.1101/gr.222976.117
+    bibkey: tardaguila2018sqanti
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L42
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5848618#L42
+    quote: Out of 3837 novel splice junctions, 69% were canonical and 31% (1188) were noncanonical
+  confidence: high
+  figure_idea: 'Two stacked bars, known versus novel junctions, split by canonical and non-canonical dinucleotide
+    - the single clearest picture of why novel long-read junctions need filtering.
+
+    '
+- id: LR-021
+  claim: 'ENCODE4 made the annotation gap concrete: in GENCODE v40 a multi-exon splice chain carries at
+    most three annotated start or end sites, and is given exactly one start site in 99.7 per cent of cases
+    and one end site in 99.4 per cent, whereas the long-read annotation attaches substantially more distinct
+    ends to the same chain.
+
+    '
+  topic: diversity higher than annotation implied
+  source:
+    doc_id: bio_ad940b766ccc
+    title: The ENCODE4 long-read RNA-seq collection reveals distinct classes of transcript structure diversity
+    authors: Reese, F.; Williams, B.; Balderrama-Gutierrez, G.; Wyman, D.; Çelik, M. H.; Rebboah, E.;
+      Rezaie, N.; Trout, D.; Razavi-Mohseni, M.; Jiang, Y.; Borsari, B.; Morabito, S.; Liang, H. Y.; McGill,
+      C. J.; Rahmanian, S.; Sakr, J.; Jiang, S.; Zeng, W.; Carvalho, K.; Weimer, A. K.; Dionne, L. A.;
+      McShane, A.; Bedi, K.; Elhajjajy, S. I.; Upchurch, S.; Jou, J.; Youngworth, I.; Gabdank, I.; Sud,
+      P.; Jolanki, O.; Strattan, J. S.; Kagda, M. S.; Snyder, M. P.; Hitz, B. C.; Moore, J. E.; Weng,
+      Z.; Bennett, D.; Reinholdt, L.; Ljungman, M.; Beer, M. A.; Gerstein, M. B.; Pachter, L.; Guigó,
+      R.; Wold, B. J.; Mortazavi, A.
+    journal: bioRxiv
+    year: 2023
+    doi: 10.1101/2023.05.15.540865
+    bibkey: reese2023encode4
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L59
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_ad940b766ccc#L59
+    quote: in GENCODE v40, each multiexonic EC has a maximum of 3 TSSs or TESs across the polyA transcripts
+  confidence: high
+  figure_idea: 'One splice chain drawn once, with the small fan of annotated 5''/3'' ends above it and
+    the much wider fan of observed ends below - the point being that the annotation flattens a combinatorial
+    space.
+
+    '
+- id: LR-022
+  claim: 'Scored on the three-part description of a transcript - start site, splice chain, end site -
+    89.8 per cent of human protein-coding genes used more than one distinct component across the ENCODE4
+    long-read samples, while lncRNAs and pseudogenes were far less variable.
+
+    '
+  topic: diversity higher than annotation implied
+  source:
+    doc_id: bio_ad940b766ccc
+    title: The ENCODE4 long-read RNA-seq collection reveals distinct classes of transcript structure diversity
+    authors: Reese, F.; Williams, B.; Balderrama-Gutierrez, G.; Wyman, D.; Çelik, M. H.; Rebboah, E.;
+      Rezaie, N.; Trout, D.; Razavi-Mohseni, M.; Jiang, Y.; Borsari, B.; Morabito, S.; Liang, H. Y.; McGill,
+      C. J.; Rahmanian, S.; Sakr, J.; Jiang, S.; Zeng, W.; Carvalho, K.; Weimer, A. K.; Dionne, L. A.;
+      McShane, A.; Bedi, K.; Elhajjajy, S. I.; Upchurch, S.; Jou, J.; Youngworth, I.; Gabdank, I.; Sud,
+      P.; Jolanki, O.; Strattan, J. S.; Kagda, M. S.; Snyder, M. P.; Hitz, B. C.; Moore, J. E.; Weng,
+      Z.; Bennett, D.; Reinholdt, L.; Ljungman, M.; Beer, M. A.; Gerstein, M. B.; Pachter, L.; Guigó,
+      R.; Wold, B. J.; Mortazavi, A.
+    journal: bioRxiv
+    year: 2023
+    doi: 10.1101/2023.05.15.540865
+    bibkey: reese2023encode4
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L56
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_ad940b766ccc#L56
+    quote: We find that most protein coding genes (89.8%) express more than one triplet feature across
+      our dataset
+  confidence: high
+- id: LR-023
+  claim: 'In GTEx tissues, haplotype-resolved long reads let the authors reduce a cluster of overlapping
+    splicing associations at DUSP13 to one statement: in both donors showing allelic transcript-structure
+    imbalance, the transcript missing four internal exons was the more highly expressed from the risk
+    allele of a body-fat-associated locus.
+
+    '
+  topic: isoform-level eQTLs and sQTLs
+  source:
+    doc_id: bio_68a8e7ff6c37
+    title: Transcriptome variation in human tissues revealed by long-read sequencing
+    authors: Glinos, D. A.; Garborcauskas, G.; Hoffman, P.; Ehsan, N.; Jiang, L.; Gokden, A.; Dai, X.;
+      Aguet, F.; Brown, K. L.; Garimella, K.; Bowers, T.; Costello, M.; Ardlie, K.; Jian, R.; Tucker,
+      N. R.; Ellinor, P. T.; Harrington, E. D.; Tang, H.; Snyder, M.; Juul, S.; Mohammadi, P.; MacArthur,
+      D. G.; Lappalainen, T.; Cummings, B.
+    journal: bioRxiv
+    year: 2021
+    doi: 10.1101/2021.01.22.427687
+    bibkey: glinos2021transcriptome
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L43
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_68a8e7ff6c37#L43
+    quote: able to pinpoint to the exact event leading to differences in transcript expression from the
+      two alleles
+  confidence: high
+- id: LR-024
+  claim: 'Adding the long-read transcripts to the reference annotation changed the predicted most severe
+    consequence for 0.67 per cent of GTEx genome variants, and the reassigned variants carried higher
+    average CADD scores than those whose annotation was unchanged.
+
+    '
+  topic: consequences of incomplete annotation
+  source:
+    doc_id: bio_68a8e7ff6c37
+    title: Transcriptome variation in human tissues revealed by long-read sequencing
+    authors: Glinos, D. A.; Garborcauskas, G.; Hoffman, P.; Ehsan, N.; Jiang, L.; Gokden, A.; Dai, X.;
+      Aguet, F.; Brown, K. L.; Garimella, K.; Bowers, T.; Costello, M.; Ardlie, K.; Jian, R.; Tucker,
+      N. R.; Ellinor, P. T.; Harrington, E. D.; Tang, H.; Snyder, M.; Juul, S.; Mohammadi, P.; MacArthur,
+      D. G.; Lappalainen, T.; Cummings, B.
+    journal: bioRxiv
+    year: 2021
+    doi: 10.1101/2021.01.22.427687
+    bibkey: glinos2021transcriptome
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L47
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_68a8e7ff6c37#L47
+    quote: The most severe consequence for a variant changed for 0.67% of all variants
+  confidence: high
+- id: LR-025
+  claim: 'Phasing long reads is cheap in information terms: in a polymorphic mouse cross the authors report
+    that one heterozygous site inside a read was enough to assign that whole transcript to a parental
+    chromosome.
+
+    '
+  topic: allele- and haplotype-resolved isoform expression
+  source:
+    doc_id: PMC12606347
+    title: Long-read sequencing disentangles isoform complexity at allele-specific loci
+    authors: Lemoine, L.; Hoelzl, S.; Hasenbein, T. P.; Graf, E.; Andergassen, D.
+    journal: Scientific Reports
+    year: 2025
+    doi: 10.1038/s41598-025-97362-z
+    bibkey: lemoine2025longread
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L17
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12606347#L17
+    quote: A single SNP was sufficient to map long reads to the corresponding alleles
+  confidence: high
+- id: LR-026
+  claim: 'In a mouse model with skewed X inactivation, only 69 of 12,623 X-linked long reads (0.54 per
+    cent) came from the inactive chromosome, and 39 of those few were accounted for by Xist plus the two
+    known escape genes - escape measured as transcripts rather than as junction counts.
+
+    '
+  topic: allele- and haplotype-resolved isoform expression
+  source:
+    doc_id: PMC12606347
+    title: Long-read sequencing disentangles isoform complexity at allele-specific loci
+    authors: Lemoine, L.; Hoelzl, S.; Hasenbein, T. P.; Graf, E.; Andergassen, D.
+    journal: Scientific Reports
+    year: 2025
+    doi: 10.1038/s41598-025-97362-z
+    bibkey: lemoine2025longread
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L26
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12606347#L26
+    quote: with only 69 (0.54%) aligning to the paternal inactive X chromosome. Of these, 39 reads correspond
+      to Xist and the two known escape genes
+  confidence: high
+- id: LR-027
+  claim: 'Pairing colocalized splicing QTLs with long-read transcripts from a bone-relevant cell model
+    nominated 2,029 full-length protein isoforms, 643 of them unannotated, across 441 genes as the candidate
+    effectors of bone mineral density associations.
+
+    '
+  topic: isoform-level eQTLs and sQTLs
+  source:
+    doc_id: bio_0dcfa48e6c1f
+    title: Long-read proteogenomics to connect disease-associated sQTLs to the protein isoform effectors
+      of disease
+    authors: Abood, A.; Mesner, L. D.; Jeffery, E. D.; Murali, M.; Lehe, M. D.; Saquing, J.; Farber, C.
+      R.; Sheynkman, G. M.
+    journal: The American Journal of Human Genetics
+    year: 2024
+    doi: 10.1016/j.ajhg.2024.07.003
+    bibkey: abood2024longread
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L22
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_0dcfa48e6c1f#L22
+    quote: We identified 2,029 (643 novel) full-length protein isoforms from 441 protein-coding genes
+      that are candidate effectors of BMD
+  confidence: high
+- id: LR-028
+  claim: 'Long reads corrected gene models in maize rather than merely adding to them: RGH3 had been mis-annotated
+    because of a genome assembly error, and CSR1 was present in the reference sequence with no annotation
+    at all.
+
+    '
+  topic: non-human annotation reset
+  source:
+    doc_id: PMC4931018
+    title: Unveiling the complexity of the maize transcriptome by single-molecule long-read sequencing
+    authors: Wang, B.; Tseng, E.; Regulski, M.; Clark, T. A.; Hon, T.; Jiao, Y.; Lu, Z.; Olson, A.; Stein,
+      J. C.; Ware, D.
+    journal: Nature Communications
+    year: 2016
+    doi: 10.1038/ncomms11708
+    bibkey: wang2016unveiling
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L44
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4931018#L44
+    quote: The RGH3 locus was mis-annotated due to assembly error, whereas the CSR1 locus, although present
+      in the reference genome, lacks annotation altogether
+  confidence: high
+- id: LR-029
+  claim: 'The honest ledger on single-cell long reads, from a matched comparison on the same cells: PacBio
+    concatenation libraries averaged roughly 21,000 to 97,000 reads per cell where the Illumina libraries
+    averaged roughly 142,000 to 443,000, so isoform resolution is bought with depth.
+
+    '
+  topic: honest limits
+  source:
+    doc_id: PMC12231600
+    title: 'Comparison of single-cell long-read and short-read transcriptome sequencing via cDNA molecule
+      matching: quality evaluation of the MAS-ISO-seq approach'
+    authors: Zajac, N.; Zhang, Q.; Bratus-Neuenschwander, A.; Qi, W.; Bolck, H. A.; Karakulak, T.; Oltra,
+      T. C.; Moch, H.; Kahraman, A.; Rehrauer, H.
+    journal: NAR Genomics and Bioinformatics
+    year: 2025
+    doi: 10.1093/nargab/lqaf089
+    bibkey: zajac2025comparison
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L51
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12231600#L51
+    quote: the average number of reads per cell ranging from 21 499 to 96 620 (Table 1)
+  confidence: high
+  figure_idea: 'Paired bars per sample for reads recovered per cell on the two platforms, with a second
+    axis for isoforms resolved - the trade the chapter is describing, in one picture.
+
+    '
+- id: LR-030
+  claim: 'The same comparison flags an under-discussed analytic risk: the standard single-cell long-read
+    pipeline discarded an average of 48 per cent of isoforms and 27 per cent of reads as low-coverage
+    or non-canonical, with the loss biased towards longer transcripts.
+
+    '
+  topic: honest limits
+  source:
+    doc_id: PMC12231600
+    title: 'Comparison of single-cell long-read and short-read transcriptome sequencing via cDNA molecule
+      matching: quality evaluation of the MAS-ISO-seq approach'
+    authors: Zajac, N.; Zhang, Q.; Bratus-Neuenschwander, A.; Qi, W.; Bolck, H. A.; Karakulak, T.; Oltra,
+      T. C.; Moch, H.; Kahraman, A.; Rehrauer, H.
+    journal: NAR Genomics and Bioinformatics
+    year: 2025
+    doi: 10.1093/nargab/lqaf089
+    bibkey: zajac2025comparison
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L114
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12231600#L114
+    quote: An average of 48% of isoforms and 27% of reads were identified as belonging to that category
+  confidence: high
+- id: LR-031
+  claim: 'Applying the accuracy-boosting R2C2 nanopore protocol to a human peripheral blood sample, the
+    authors conclude that accurate deep full-length cDNA sequencing resolves the most complex transcripts
+    in the mammalian genome and is an unbiased alternative to the dedicated HLA typing and immune-repertoire
+    assays normally required.
+
+    '
+  topic: single-molecule accuracy and what it unlocked
+  source:
+    doc_id: PMC7197476
+    title: Complete characterization of the human immune cell transcriptome using accurate full-length
+      cDNA sequencing
+    authors: Cole, C.; Byrne, A.; Adams, M.; Volden, R.; Vollmers, C.
+    journal: Genome Research
+    year: 2020
+    doi: 10.1101/gr.257188.119
+    bibkey: cole2020complete
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L14,L15
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7197476#L14,L15
+    quote: full-length cDNA sequencing can resolve the most complex transcripts in the mammalian genome
+      and represents an unbiased alternative to current HLA typing
+  confidence: high
+- id: LR-032
+  claim: 'On matched libraries, short-read splicing analysis still recovered about 30 per cent more splice
+    junctions than either long-read platform, so long reads add structure at a cost in junction sensitivity
+    rather than superseding short reads.
+
+    '
+  topic: honest limits
+  source:
+    doc_id: PMC11529863
+    title: Contrasting and combining transcriptome complexity captured by short and long RNA sequencing
+      reads
+    authors: Han, S. W.; Jewell, S.; Thomas-Tikhonenko, A.; Barash, Y.
+    journal: Genome Research
+    year: 2024
+    doi: 10.1101/gr.278659.123
+    bibkey: han2024contrasting
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L45
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11529863#L45
+    quote: Short-read-based analysis of matched data sets revealed 30% more splice junctions
+  confidence: high
+- id: LR-033
+  claim: 'The authors hypothesise that the gap comes from a 3''-to-5'' bias: in the LRGASP data only 5.4
+    per cent of ONT reads and 51.6 per cent of PacBio reads reached the roughly 3 kb median human transcript
+    length, and events far from the poly(A) end were correspondingly harder to quantify.
+
+    '
+  topic: honest limits
+  source:
+    doc_id: PMC11529863
+    title: Contrasting and combining transcriptome complexity captured by short and long RNA sequencing
+      reads
+    authors: Han, S. W.; Jewell, S.; Thomas-Tikhonenko, A.; Barash, Y.
+    journal: Genome Research
+    year: 2024
+    doi: 10.1101/gr.278659.123
+    bibkey: han2024contrasting
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L32
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11529863#L32
+    quote: only 5.4% of ONT and 51.6% of PacBio reads in the LRGASP data set shown in Figure 4C (right
+      panel)
+  confidence: high
+  figure_idea: 'Cumulative read-length curves for the two platforms with the median human transcript length
+    marked, so the reader sees what fraction of molecules are actually captured end to end.
+
+    '
+- id: LR-034
+  claim: 'Authors applying concatenation-based single-cell long reads to Alzheimer brain state the ceiling
+    directly: even with the throughput gain of concatenation, depth per sequencing run remains lower and
+    cost per read higher than for short-read sequencing.
+
+    '
+  topic: honest limits
+  source:
+    doc_id: PMC13065774
+    title: RNA isoform diversity, splicing variants and switching in single cells of the Alzheimer's disease
+      brain
+    authors: Shahnaee, A.; Liu, C. S.; Ngo, T.; Palmer, C. R.; Ziomek, D.; Park, C.; Tan, V. P.; Jimenez,
+      N. L.; Chun, J.
+    journal: Communications Biology
+    year: 2026
+    doi: 10.1038/s42003-026-09759-9
+    bibkey: shahnaee2026rna
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L19
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13065774#L19
+    quote: A major limitation of long-read sequencing is the lower depth per sequencing run, including
+      a higher cost per read in comparison to short-read sequencing
+  confidence: high
+- id: LR-035
+  claim: 'A single-cell long-read atlas of human CD8 T cells reports that only about half of the isoforms
+    differentially expressed within a cluster came from genes that were also differentially expressed
+    at the gene level; the authors read the remainder as isoform-specific regulation.
+
+    '
+  topic: single-cell long reads
+  source:
+    doc_id: bio_34869dff6d61
+    title: RNA splicing dynamics in CD8 T cells uncovers isoforms that impact T cell-mediated cancer immunotherapy
+    authors: Tzaban, S.; Appasamy, P.; Zisman, E.; Klein, S.; Lewis, R.; Yu, H.; Khorgade, A.; Schwartz,
+      M. A.; Sade-Feldman, M.; Eisenhaure, T.; Parnas, O.; Popovtzer, A.; Cohen, C.; Shifrut, E.; Al’Khafaji,
+      A. M.; karni, R.; Eisenberg, G.; Hacohen, N.; Lotem, M.
+    journal: bioRxiv
+    year: 2025
+    doi: 10.1101/2025.09.07.674706
+    bibkey: tzaban2025rna
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L36
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_34869dff6d61#L36
+    quote: of differentially expressed isoforms (DEIs) originated from genes that were also differentially
+      expressed at the gene level (DEGs) within the same cluster
+  confidence: medium
+leads:
+- note: 'The ENCODE4 long-read collection (LR-021, LR-022) exists in this corpus only as the 2023 bioRxiv
+    preprint. Its meta.json and a lookup by exact title both return only the preprint DOI, so no journal
+    DOI was available to record; this matches the sibling catalogs file, which uses the same DOI and bibkey
+    reese2023encode4. Every ENCODE4 number and figure in the book must still be re-checked against the
+    peer-reviewed version.
+
+    '
+  why: A preprint number quoted as final would be an auditable error.
+- note: 'The GTEx long-read paper (LR-023, LR-024) is likewise preprint-only, again with no journal DOI
+    in meta.json or in a title lookup. Bibkey glinos2021transcriptome matches the sibling catalogs file.
+    The DUSP13 example and the 0.67 per cent variant-reannotation figure need re-checking against the
+    published version.
+
+    '
+  why: A preprint number quoted as final would be an auditable error.
+- note: 'Two further sources were read as preprints although a journal version exists. For the sQTL proteogenomics
+    paper (LR-027) and the cDNA-concatenation method paper (LR-002) the journal DOI came from the corpus
+    search listing''s "Published" line, not from meta.json, which carries only the preprint DOI; both
+    should be confirmed against the journal record. The CD8 T cell splicing atlas (LR-035) is preprint-only
+    with no journal version visible in the corpus.
+
+    '
+  why: A DOI taken from a listing line should be confirmed before it reaches references.bib.
+- note: 'Recorded conflict inside a single source. Workman et al. L45 (LR-007) states 44 X-linked genes
+    were testable and that 23 showed allelic imbalance, which it scores as 95.7 per cent. 23/44 is 52
+    per cent; 95.7 per cent corresponds to 22/23. The claim record therefore reports the counts and the
+    paper''s own percentage side by side rather than reconciling them. Someone should check the published
+    supplement before the book quotes either figure.
+
+    '
+  why: Quoting 95.7 per cent unqualified would propagate an internal inconsistency.
+- note: 'Not located after targeted searches on splice-site accuracy and spliced alignment error: a base-level
+    measurement of splice-site coordinate offsets for PacBio versus ONT against a truth set, inside a
+    paper whose purpose is biological rather than tool benchmarking. Han et al. (LR-032, LR-033) report
+    detection gaps and quantification bias, and their L27 notes only secondhand that PacBio/ONT splice-site
+    disagreement is often small coordinate shifts, citing Mikheenko et al. 2022 - which was not retrieved
+    here. The nearest primary records found were LongTron (bio_841a781f7079) and ESPRESSO (PMC9858503),
+    both tool papers that the book deliberately does not catalogue.
+
+    '
+  why: 'The claim that long-read error profiles shift splice-site calls by a few bases is widely repeated;
+    the chapter should anchor it to Mikheenko or drop it.
+
+    '
+- note: 'Not located: a quantified rate of internal priming at genomic A-rich tracts in a named long-read
+    dataset. LR-014 is the closest - its authors argue against internal priming as the dominant explanation
+    - and SQANTI (LR-020) implements an intra-priming filter without reporting how much it removes. Searches
+    covered internal priming, intra-priming and off-priming.
+
+    '
+  why: 'Internal priming is the artifact most often blamed for spurious novel 3'' ends and the chapter
+    will want a number for it.
+
+    '
+- note: 'Single-cell long-read records here are deliberately technology-facing (LR-002, LR-019, LR-029,
+    LR-030, LR-034, LR-035) because a sibling agent covers single-cell and spatial isoform biology. Joglekar
+    et al. 2024 (PMC11156538) is cited in both files on different lines - L43 here, L79 and L97 there
+    - with the same bibkey, so the two should be merged at the writing stage rather than cited twice.
+
+    '
+  why: Avoids the same paper appearing as two separate references.

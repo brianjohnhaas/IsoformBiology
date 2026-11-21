@@ -132,3 +132,52 @@ python3 scripts/verify_claims.py research/<your-file>.yml
 It re-reads every cited line range and asserts your quote is a byte-exact
 substring. Zero problems is the bar. A claim that fails is either mis-anchored
 or was written from memory; both are disqualifying — fix it or drop it.
+
+---
+
+## Bibliographic metadata is never written from memory
+
+Abstract-only records carry title, DOI, PMID and year, but **no author list and
+no journal name**. `sql` cannot reach them either, since that table covers only
+PMC and the preprint servers.
+
+Supplying those fields from memory produces a byline that looks authoritative,
+cites a real DOI, and may credit the wrong people. That is worse than a blank
+field, because nothing downstream can detect it.
+
+So: if `meta.json` does not carry it, do not write it. Put the literal string
+`RESOLVE_FROM_DOI` in `authors` and `journal`, make the bibkey title-derived
+rather than author-derived, and move on. The orchestrator fills them
+authoritatively with:
+
+```
+python3 scripts/resolve_metadata.py --check    # report
+python3 scripts/resolve_metadata.py --write    # apply
+```
+
+which asks Crossref, writes back the real author list, journal and year, and
+reports any case where a recorded first author disagrees with the DOI record.
+
+The same rule applies inside `claim` text. Do not write "Smith and colleagues
+showed..." unless you read the name in `meta.json`. If a name is wrong there,
+the prose inherits it and the citation looks correct while the attribution is
+not.
+
+Read `meta.json` values to the closing quote. A `grep -oE '"doi"[^,]*'` pattern
+truncates journal names at the first comma, and a loop that pulls only
+`pub_year` and `journal` leaves the DOI unverified, since the verifier only
+checks that the field is non-empty.
+
+Note the key is `pub_year`, not `year`.
+
+## Quotes: slice, never retype
+
+Build the audit quote by re-reading the cited line and slicing between two ASCII
+anchors in it. Retyping loses `∼`, `–`, `Δ`, `ρ`, curly apostrophes and prime
+characters, and the verifier is byte-exact by design, so a retyped quote fails.
+
+## Rate limit
+
+`paperclip search` allows roughly 25 starts per 60 seconds and the quota appears
+to be shared across concurrent agents. `grep` and `cat` are unaffected, so
+prefer them once you know which document you want.

@@ -1,0 +1,1100 @@
+area: neuro-mendelian
+researcher: agent-07-neuro-mendelian
+date: 2026-11-21
+corpus: paperclip 0.8.23
+claims:
+- id: NEU-001
+  claim: 'Adult human brain holds 3R- and 4R-tau at roughly a one-to-one ratio, so the inclusion or skipping
+    of a single MAPT exon - exon 10, which encodes the second microtubule-binding repeat - is what sets
+    the balance between the two halves of the tau isoform pool.
+
+    '
+  topic: MAPT exon 10 and the 3R/4R balance
+  source:
+    doc_id: PMC2483273
+    title: Tau exon 10 alternative splicing and tauopathies
+    authors: Liu, F.; Gong, C. X.
+    journal: Molecular Neurodegeneration
+    year: 2008
+    doi: 10.1186/1750-1326-3-8
+    bibkey: liu2008tauexon10
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L16
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2483273#L16
+    quote: In the adult human brain, the ratio of 3R-tau and 4R-tau isoforms is ~1.
+  confidence: high
+  figure_idea: 'One axis showing 3R:4R ratio, with a vertical band marking the normal adult range near
+    1, and markers for the direction each disease or mutation class pushes the ratio - so the reader sees
+    that both directions are pathogenic.
+
+    '
+- id: NEU-002
+  claim: 'Eleven FTDP-17 mutations fall inside a single self-complementary stem loop spanning the exon
+    10 / intron 10 boundary of MAPT, and each disrupts the complementarity and destabilises the structure;
+    the same position is already destabilised in rodents, which is offered as the reason adult mice and
+    rats are predominantly 4R.
+
+    '
+  topic: MAPT exon 10 and the 3R/4R balance
+  source:
+    doc_id: PMC2483273
+    title: Tau exon 10 alternative splicing and tauopathies
+    authors: Liu, F.; Gong, C. X.
+    journal: Molecular Neurodegeneration
+    year: 2008
+    doi: 10.1186/1750-1326-3-8
+    bibkey: liu2008tauexon10
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L23
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2483273#L23
+    quote: Eleven mutations causing FTDP-17 are clustered in this stem loop region. They all disrupt the
+      complementarity and destabilize the stem loop structure
+  confidence: high
+- id: NEU-003
+  claim: 'The FTDP-17 mutations N279K and delta-280K sit in the same polypurine enhancer of MAPT exon
+    10 and add or delete an AAG copy respectively, raising or lowering SF2/ASF binding, so two neighbouring
+    changes push exon 10 inclusion in opposite directions.
+
+    '
+  topic: MAPT exon 10 and the 3R/4R balance
+  source:
+    doc_id: PMC2483273
+    title: Tau exon 10 alternative splicing and tauopathies
+    authors: Liu, F.; Gong, C. X.
+    journal: Molecular Neurodegeneration
+    year: 2008
+    doi: 10.1186/1750-1326-3-8
+    bibkey: liu2008tauexon10
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L28
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2483273#L28
+    quote: FTDP-17 mutations N279K and Δ280 K alter the normal PPE sequence by adding or removing an AAG
+      copy
+  confidence: high
+- id: NEU-004
+  claim: 'Because some FTDP-17 mutations are silent or intronic and disrupt only MAPT exon 10 splicing
+    without altering tau''s primary sequence, an altered 3R:4R ratio is by itself sufficient to cause
+    neurodegeneration and dementia; most such mutations push toward 4R, a minority toward 3R.
+
+    '
+  topic: MAPT exon 10 and the 3R/4R balance
+  source:
+    doc_id: PMC2483273
+    title: Tau exon 10 alternative splicing and tauopathies
+    authors: Liu, F.; Gong, C. X.
+    journal: Molecular Neurodegeneration
+    year: 2008
+    doi: 10.1186/1750-1326-3-8
+    bibkey: liu2008tauexon10
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L6,L88
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2483273#L6,L88
+    quote: Discovery of the splicing mutations in FTDP-17 demonstrates that disruption of 3R-tau/4R-tau
+      balance is sufficient to causes neurodegeneration and dementia.
+  confidence: high
+- id: NEU-005
+  claim: 'TDP-43''s role here is negative: it suppresses the splicing of non-conserved cryptic exons and
+    so preserves intron integrity, and when it is depleted those exons enter mRNAs, frequently disrupting
+    translation and triggering nonsense-mediated decay - a repression already impaired in ALS-FTD cases.
+
+    '
+  topic: TDP-43 cryptic exons as a disease mechanism
+  source:
+    doc_id: 64751354
+    title: TDP-43 repression of nonconserved cryptic exons is compromised in ALS-FTD
+    authors: Ling, J. P.; Pletnikova, O.; Troncoso, J. C.; Wong, P. C.
+    journal: Science
+    year: 2015
+    doi: 10.1126/science.aab0983
+    bibkey: ling2015crypticexons
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/64751354#L1
+    quote: we found that TDP-43 repressed the splicing of nonconserved cryptic exons, maintaining intron
+      integrity
+  confidence: high
+  figure_idea: 'A schematic contrast between a conserved cassette exon (present in the annotation, regulated)
+    and a cryptic exon (absent from the annotation, held silent by a bound repressor), with the downstream
+    fate - translated protein versus NMD - shown for each.
+
+    '
+- id: NEU-006
+  claim: 'In STMN2 the pathogenic event is a change in RNA processing rather than a mutation: when TDP-43
+    levels fall, its binding to the first intron is lost, a cryptic polyadenylation site there is used,
+    and the gene produces a truncated transcript that is not functional.
+
+    '
+  topic: STMN2 cryptic exon in ALS and FTD
+  source:
+    doc_id: PMC6348009
+    title: Premature polyadenylation-mediated loss of stathmin-2 is a hallmark of TDP-43-dependent neurodegeneration
+    authors: Melamed, Z.; López-Erauskin, J.; Baughn, M. W.; Zhang, O.; Drenner, K.; Sun, Y.; Freyermuth,
+      F.; McMahon, M. A.; Beccari, M. S.; Artates, J. W.; Ohkubo, T.; Rodriguez, M.; Lin, N.; Wu, D.;
+      Bennett, C. F.; Rigo, F.; Da Cruz, S.; Ravits, J.; Lagier-Tourenne, C.; Cleveland, D. W.
+    journal: Nature Neuroscience
+    year: 2019
+    doi: 10.1038/s41593-018-0293-z
+    bibkey: melamed2019stathmin2
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L12
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6348009#L12
+    quote: uncover a cryptic polyadenylation site whose utilization produces a truncated, non-functional
+      mRNA
+  confidence: high
+  figure_idea: 'A gene diagram of STMN2 with the normal transcript above and the truncated exon-2a transcript
+    below, and, beside each, what protein it can encode - so the reader sees that one transcript end decides
+    whether the gene yields a functional product.
+
+    '
+- id: NEU-007
+  claim: 'Exon 2a was present in laser-captured lumbar motor neurons from every one of thirteen sporadic
+    ALS patients examined and absent from all seven non-ALS individuals tested.
+
+    '
+  topic: STMN2 cryptic exon in ALS and FTD
+  source:
+    doc_id: PMC6348009
+    title: Premature polyadenylation-mediated loss of stathmin-2 is a hallmark of TDP-43-dependent neurodegeneration
+    authors: Melamed, Z.; López-Erauskin, J.; Baughn, M. W.; Zhang, O.; Drenner, K.; Sun, Y.; Freyermuth,
+      F.; McMahon, M. A.; Beccari, M. S.; Artates, J. W.; Ohkubo, T.; Rodriguez, M.; Lin, N.; Wu, D.;
+      Bennett, C. F.; Rigo, F.; Da Cruz, S.; Ravits, J.; Lagier-Tourenne, C.; Cleveland, D. W.
+    journal: Nature Neuroscience
+    year: 2019
+    doi: 10.1038/s41593-018-0293-z
+    bibkey: melamed2019stathmin2
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L37
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6348009#L37
+    quote: RNAs from all analyzed sporadic ALS patients (n=13) contained inclusion of exon 2a
+  confidence: high
+- id: NEU-008
+  claim: 'Neither the cryptic polyadenylation signal nor the three GU-rich TDP-43 binding sites of human
+    STMN2 intron 1 exist in the corresponding mouse intron, and the authors note that the abnormal processing
+    is correspondingly not recapitulated in TDP-43 transgenic or TDP-43-deficient mice.
+
+    '
+  topic: STMN2 cryptic exon in ALS and FTD
+  source:
+    doc_id: PMC6348009
+    title: Premature polyadenylation-mediated loss of stathmin-2 is a hallmark of TDP-43-dependent neurodegeneration
+    authors: Melamed, Z.; López-Erauskin, J.; Baughn, M. W.; Zhang, O.; Drenner, K.; Sun, Y.; Freyermuth,
+      F.; McMahon, M. A.; Beccari, M. S.; Artates, J. W.; Ohkubo, T.; Rodriguez, M.; Lin, N.; Wu, D.;
+      Bennett, C. F.; Rigo, F.; Da Cruz, S.; Ravits, J.; Lagier-Tourenne, C.; Cleveland, D. W.
+    journal: Nature Neuroscience
+    year: 2019
+    doi: 10.1038/s41593-018-0293-z
+    bibkey: melamed2019stathmin2
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L49
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6348009#L49
+    quote: the cryptic polyadenylation signal and three GU-rich sequences in intron one of the human stathmin-2
+      gene are not found in the corresponding mouse intron
+  confidence: high
+- id: NEU-009
+  claim: 'The splicing lesion carries the phenotype rather than merely accompanying it: re-expressing
+    stathmin-2 from a construct lacking the cryptic polyadenylation site restored axonal regeneration
+    after axotomy in TDP-43-depleted human iPSC motor neurons, even though TDP-43 affects the levels or
+    splicing of many RNAs.
+
+    '
+  topic: STMN2 cryptic exon in ALS and FTD
+  source:
+    doc_id: PMC6348009
+    title: Premature polyadenylation-mediated loss of stathmin-2 is a hallmark of TDP-43-dependent neurodegeneration
+    authors: Melamed, Z.; López-Erauskin, J.; Baughn, M. W.; Zhang, O.; Drenner, K.; Sun, Y.; Freyermuth,
+      F.; McMahon, M. A.; Beccari, M. S.; Artates, J. W.; Ohkubo, T.; Rodriguez, M.; Lin, N.; Wu, D.;
+      Bennett, C. F.; Rigo, F.; Da Cruz, S.; Ravits, J.; Lagier-Tourenne, C.; Cleveland, D. W.
+    journal: Nature Neuroscience
+    year: 2019
+    doi: 10.1038/s41593-018-0293-z
+    bibkey: melamed2019stathmin2
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L45
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6348009#L45
+    quote: restoration of stathmin-2 alone was sufficient to rescue regeneration after axotomy of TDP-43
+      depleted motor neurons
+  confidence: high
+- id: NEU-010
+  claim: 'Cryptic exon de-repression on TDP-43 loss is broad but only rarely lands on a known risk gene
+    - of 179 cryptic exons detected in TDP-43-depleted iPSC-derived cortical-like neurons, the synaptic
+    gene UNC13A was the only host gene that was also an established ALS-FTD risk gene.
+
+    '
+  topic: UNC13A cryptic exon and the ALS GWAS signal
+  source:
+    doc_id: PMC8891020
+    title: TDP-43 loss and ALS-risk SNPs drive mis-splicing and depletion of UNC13A
+    authors: Brown, A. L.; Wilkins, O. G.; Keuss, M. J.; Kargbo-Hill, S. E.; Zanovello, M.; Lee, W. C.;
+      Bampton, A.; Lee, F. C. Y.; Masino, L.; Qi, Y. A.; Bryce-Smith, S.; Gatt, A.; Hallegger, M.; Fagegaltier,
+      D.; Phatnani, H.; NYGC ALS Consortium; Phatnani, H.; Kwan, J.; Sareen, D.; Broach, J. R.; Simmons,
+      Z.; Arcila-Londono, X.; Lee, E. B.; Van Deerlin, V. M.; Shneider, N. A.; Fraenkel, E.; Ostrow, L.
+      W.; Baas, F.; Zaitlen, N.; Berry, J. D.; Malaspina, A.; Fratta, P.; Cox, G. A.; Thompson, L. M.;
+      Finkbeiner, S.; Dardiotis, E.; Miller, T. M.; Chandran, S.; Pal, S.; Hornstein, E.; MacGowan, D.
+      J.; Heiman-Patterson, T.; Hammell, M. G.; Patsopoulos, N. A.; Butovsky, O.; Dubnau, J.; Nath, A.;
+      Bowser, R.; Harms, M.; Aronica, E.; Poss, M.; Phillips-Cremins, J.; Crary, J.; Atassi, N.; Lange,
+      D. J.; Adams, D. J.; Stefanis, L.; Gotkine, M.; Baloh, R. H.; Babu, S.; Raj, T.; Paganoni, S.; Shalem,
+      O.; Smith, C.; Zhang, B.; Harris, B.; Broce, I.; Drory, V.; Ravits, J.; McMillan, C.; Menon, V.;
+      Wu, L.; Altschuler, S.; Lerner, Y.; Sattler, R.; Van Keuren-Jensen, K.; Rozenblatt-Rosen, O.; Lindblad-Toh,
+      K.; Nicholson, K.; Gregersen, P.; Lee, J. H.; Koks, S.; Muljo, S.; Newcombe, J.; Gustavsson, E.
+      K.; Seddighi, S.; Reyes, J. F.; Coon, S. L.; Ramos, D.; Schiavo, G.; Fisher, E. M. C.; Raj, T.;
+      Secrier, M.; Lashley, T.; Ule, J.; Buratti, E.; Humphrey, J.; Ward, M. E.; Fratta, P.
+    journal: Nature
+    year: 2022
+    doi: 10.1038/s41586-022-04436-3
+    bibkey: brown2022unc13a
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L102
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8891020#L102
+    quote: Of the 179 CE-harbouring genes, only the synaptic gene UNC13A was also an ALS–FTD risk gene
+  confidence: high
+- id: NEU-011
+  claim: 'In 1,349 post-mortem brain and spinal cord tissues from 377 individuals, the UNC13A cryptic
+    exon was found only in TDP-43 proteinopathy - in 89 per cent of FTLD-TDP and 38 per cent of ALS-TDP
+    individuals - and in no SOD1 or FUS ALS case, no FTLD-TAU or FTLD-FUS case, and no control.
+
+    '
+  topic: UNC13A cryptic exon and the ALS GWAS signal
+  source:
+    doc_id: PMC8891020
+    title: TDP-43 loss and ALS-risk SNPs drive mis-splicing and depletion of UNC13A
+    authors: Brown, A. L.; Wilkins, O. G.; Keuss, M. J.; Kargbo-Hill, S. E.; Zanovello, M.; Lee, W. C.;
+      Bampton, A.; Lee, F. C. Y.; Masino, L.; Qi, Y. A.; Bryce-Smith, S.; Gatt, A.; Hallegger, M.; Fagegaltier,
+      D.; Phatnani, H.; NYGC ALS Consortium; Phatnani, H.; Kwan, J.; Sareen, D.; Broach, J. R.; Simmons,
+      Z.; Arcila-Londono, X.; Lee, E. B.; Van Deerlin, V. M.; Shneider, N. A.; Fraenkel, E.; Ostrow, L.
+      W.; Baas, F.; Zaitlen, N.; Berry, J. D.; Malaspina, A.; Fratta, P.; Cox, G. A.; Thompson, L. M.;
+      Finkbeiner, S.; Dardiotis, E.; Miller, T. M.; Chandran, S.; Pal, S.; Hornstein, E.; MacGowan, D.
+      J.; Heiman-Patterson, T.; Hammell, M. G.; Patsopoulos, N. A.; Butovsky, O.; Dubnau, J.; Nath, A.;
+      Bowser, R.; Harms, M.; Aronica, E.; Poss, M.; Phillips-Cremins, J.; Crary, J.; Atassi, N.; Lange,
+      D. J.; Adams, D. J.; Stefanis, L.; Gotkine, M.; Baloh, R. H.; Babu, S.; Raj, T.; Paganoni, S.; Shalem,
+      O.; Smith, C.; Zhang, B.; Harris, B.; Broce, I.; Drory, V.; Ravits, J.; McMillan, C.; Menon, V.;
+      Wu, L.; Altschuler, S.; Lerner, Y.; Sattler, R.; Van Keuren-Jensen, K.; Rozenblatt-Rosen, O.; Lindblad-Toh,
+      K.; Nicholson, K.; Gregersen, P.; Lee, J. H.; Koks, S.; Muljo, S.; Newcombe, J.; Gustavsson, E.
+      K.; Seddighi, S.; Reyes, J. F.; Coon, S. L.; Ramos, D.; Schiavo, G.; Fisher, E. M. C.; Raj, T.;
+      Secrier, M.; Lashley, T.; Ule, J.; Buratti, E.; Humphrey, J.; Ward, M. E.; Fratta, P.
+    journal: Nature
+    year: 2022
+    doi: 10.1038/s41586-022-04436-3
+    bibkey: brown2022unc13a
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L115
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8891020#L115
+    quote: The UNC13A CE was detected exclusively in tissues from individuals with FTLD-TDP and ALS-TDP
+      (89% and 38% of individuals, respectively)
+  confidence: high
+  figure_idea: 'A matrix of diagnostic group against cryptic-exon detection rate, including the non-TDP
+    neurodegenerative groups as explicit zeroes, so the specificity of the marker to TDP-43 pathology
+    is the visual message.
+
+    '
+- id: NEU-012
+  claim: 'The long-unexplained UNC13A GWAS association resolves into a splicing effect: patient tissues
+    homozygous for the risk alleles showed significantly more UNC13A cryptic exon inclusion even after
+    normalising to STMN2 cryptic splicing, which controls for how much TDP-43 function each sample had
+    already lost.
+
+    '
+  topic: UNC13A cryptic exon and the ALS GWAS signal
+  source:
+    doc_id: PMC8891020
+    title: TDP-43 loss and ALS-risk SNPs drive mis-splicing and depletion of UNC13A
+    authors: Brown, A. L.; Wilkins, O. G.; Keuss, M. J.; Kargbo-Hill, S. E.; Zanovello, M.; Lee, W. C.;
+      Bampton, A.; Lee, F. C. Y.; Masino, L.; Qi, Y. A.; Bryce-Smith, S.; Gatt, A.; Hallegger, M.; Fagegaltier,
+      D.; Phatnani, H.; NYGC ALS Consortium; Phatnani, H.; Kwan, J.; Sareen, D.; Broach, J. R.; Simmons,
+      Z.; Arcila-Londono, X.; Lee, E. B.; Van Deerlin, V. M.; Shneider, N. A.; Fraenkel, E.; Ostrow, L.
+      W.; Baas, F.; Zaitlen, N.; Berry, J. D.; Malaspina, A.; Fratta, P.; Cox, G. A.; Thompson, L. M.;
+      Finkbeiner, S.; Dardiotis, E.; Miller, T. M.; Chandran, S.; Pal, S.; Hornstein, E.; MacGowan, D.
+      J.; Heiman-Patterson, T.; Hammell, M. G.; Patsopoulos, N. A.; Butovsky, O.; Dubnau, J.; Nath, A.;
+      Bowser, R.; Harms, M.; Aronica, E.; Poss, M.; Phillips-Cremins, J.; Crary, J.; Atassi, N.; Lange,
+      D. J.; Adams, D. J.; Stefanis, L.; Gotkine, M.; Baloh, R. H.; Babu, S.; Raj, T.; Paganoni, S.; Shalem,
+      O.; Smith, C.; Zhang, B.; Harris, B.; Broce, I.; Drory, V.; Ravits, J.; McMillan, C.; Menon, V.;
+      Wu, L.; Altschuler, S.; Lerner, Y.; Sattler, R.; Van Keuren-Jensen, K.; Rozenblatt-Rosen, O.; Lindblad-Toh,
+      K.; Nicholson, K.; Gregersen, P.; Lee, J. H.; Koks, S.; Muljo, S.; Newcombe, J.; Gustavsson, E.
+      K.; Seddighi, S.; Reyes, J. F.; Coon, S. L.; Ramos, D.; Schiavo, G.; Fisher, E. M. C.; Raj, T.;
+      Secrier, M.; Lashley, T.; Ule, J.; Buratti, E.; Humphrey, J.; Ward, M. E.; Fratta, P.
+    journal: Nature
+    year: 2022
+    doi: 10.1038/s41586-022-04436-3
+    bibkey: brown2022unc13a
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L123
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8891020#L123
+    quote: we found significantly increased UNC13A CE in cases with homozygous risk variants (P < 0.001,
+      Wilcoxon test)
+  confidence: high
+- id: NEU-013
+  claim: 'The top ALS- and FTD-associated variants at UNC13A lie not in coding sequence but inside the
+    intron that harbours the cryptic exon, and the authors show they increase cryptic exon splicing when
+    TDP-43 is dysfunctional - a direct functional route from a GWAS hit to a splicing change.
+
+    '
+  topic: UNC13A cryptic exon and the ALS GWAS signal
+  source:
+    doc_id: PMC8891019
+    title: TDP-43 represses cryptic exon inclusion in the FTD-ALS gene UNC13A
+    authors: Ma, X. R.; Prudencio, M.; Koike, Y.; Vatsavayai, S. C.; Kim, G.; Harbinski, F.; Briner, A.;
+      Rodriguez, C. M.; Guo, C.; Akiyama, T.; Schmidt, H. B.; Cummings, B. B.; Wyatt, D. W.; Kurylo, K.;
+      Miller, G.; Mekhoubad, S.; Sallee, N.; Mekonnen, G.; Ganser, L.; Rubien, J. D.; Jansen-West, K.;
+      Cook, C. N.; Pickles, S.; Oskarsson, B.; Graff-Radford, N. R.; Boeve, B. F.; Knopman, D. S.; Petersen,
+      R. C.; Dickson, D. W.; Shorter, J.; Myong, S.; Green, E. M.; Seeley, W. W.; Petrucelli, L.; Gitler,
+      A. D.
+    journal: Nature
+    year: 2022
+    doi: 10.1038/s41586-022-04424-7
+    bibkey: ma2022unc13a
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L19
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8891019#L19
+    quote: The top variants associated with FTD or ALS risk in humans are located in the intron harbouring
+      the cryptic exon
+  confidence: high
+- id: NEU-014
+  claim: 'Targeted long-read RNA sequencing of a disease-specific gene panel reached molecular diagnoses
+    in two patients who had no candidate gene at all, including a Leigh syndrome case resolved by two
+    unproductive MTFMT splicing events - partial exon 4 skipping and a 53-bp pseudoexon in intron 6.
+
+    '
+  topic: Long reads and targeted RNA assays in diagnosis
+  source:
+    doc_id: PMC13082330
+    title: Targeted long-read RNA sequencing for rare disease diagnosis and variant interpretation
+    authors: Wang, R.; Wang, F.; DeBruyne, N.; Ji, X.; Engelhardt, N. M.; Park, J. J. H.; Notaro, A.;
+      Gaerlan, S.; Park, R.; Schultz, M. J.; Clever, S.; McCormick, E. M.; Keith, K.; Ng, B. G.; Kadash-Edmondson,
+      K. E.; Freeze, H. H.; Lam, C. T.; Morava, E.; Helbig, I.; Falk, M. J.; Ganetzky, R. D.; Edmondson,
+      A. C.; Lin, L.; Xing, Y.
+    journal: Science Advances
+    year: 2026
+    doi: 10.1126/sciadv.ady9895
+    bibkey: wang2026stripe
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L50
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13082330#L50
+    quote: We were also able to achieve molecular diagnoses in two patients with no candidate genes.
+  confidence: high
+  figure_idea: 'A coverage-versus-cost sketch contrasting whole-transcriptome short reads, whole-transcriptome
+    long reads and a targeted long-read panel for the same gene, with the detection floor for a low-expression
+    disease gene marked on each.
+
+    '
+- id: NEU-015
+  claim: 'SMN2 is a nearly identical copy of SMN1 that fails to compensate for its loss because it predominantly
+    skips exon 7, and the change held responsible is a single C-to-T substitution at the sixth nucleotide
+    of that exon, proposed to weaken its 3'' splice site.
+
+    '
+  topic: SMN1/SMN2 and spinal muscular atrophy
+  source:
+    doc_id: PMC7691903
+    title: The First Orally Deliverable Small Molecule for the Treatment of Spinal Muscular Atrophy
+    authors: Singh, R. N.; Ottesen, E. W.; Singh, N. N.
+    journal: Neuroscience Insights
+    year: 2020
+    doi: 10.1177/2633105520973985
+    bibkey: singh2020risdiplam
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L5,L10
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7691903#L5,L10
+    quote: A critical C-to-T mutation at the 6th position (C6U substitution in RNA) of exon 7 is associated
+      with the skipping of SMN2 exon 7.
+  confidence: high
+  figure_idea: 'A side-by-side of SMN1 and SMN2 exon 7 marking the single divergent nucleotide, with the
+    downstream intronic silencer that the approved oligonucleotide targets marked on the same diagram.
+
+    '
+- id: NEU-016
+  claim: 'Both approved splicing-directed SMA drugs act on the same exon: nusinersen is an antisense oligonucleotide
+    targeting the intronic splicing silencer ISS-N1 in SMN2 and is described as the first FDA-approved
+    drug for SMA, while risdiplam, an orally deliverable small molecule, became the third approved SMA
+    therapy.
+
+    '
+  topic: SMN1/SMN2 and spinal muscular atrophy
+  source:
+    doc_id: PMC7691903
+    title: The First Orally Deliverable Small Molecule for the Treatment of Spinal Muscular Atrophy
+    authors: Singh, R. N.; Ottesen, E. W.; Singh, N. N.
+    journal: Neuroscience Insights
+    year: 2020
+    doi: 10.1177/2633105520973985
+    bibkey: singh2020risdiplam
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L5,L14
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7691903#L5,L14
+    quote: an orally deliverable small molecule, risdiplam (Evrysdi™), became the third approved therapy
+      for SMA
+  confidence: high
+- id: NEU-017
+  claim: 'In the phase 3 sham-controlled trial of nusinersen in infants with spinal muscular atrophy,
+    the final analysis recorded a motor-milestone response in 37 of 73 treated infants (51 per cent) and
+    in none of the 37 controls.
+
+    '
+  topic: SMN1/SMN2 and spinal muscular atrophy
+  source:
+    doc_id: 46565666
+    title: Nusinersen versus Sham Control in Infantile-Onset Spinal Muscular Atrophy
+    authors: Finkel, R. S.; Mercuri, E.; Darras, B. T.; Connolly, A. M.; Kuntz, N. L.; Kirschner, J.;
+      Chiriboga, C. A.; Saito, K.; Servais, L.; Tizzano, E.; Topaloglu, H.; Tulinius, M.; Montes, J.;
+      Glanzman, A. M.; Bishop, K.; Zhong, Z. J.; Gheuens, S.; Bennett, C. F.; Schneider, E.; Farwell,
+      W.; De Vivo, D. C.
+    journal: New England Journal of Medicine
+    year: 2017
+    doi: 10.1056/NEJMoa1702752
+    bibkey: finkel2017endear
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/46565666#L1
+    quote: had a motor-milestone response (37 of 73 infants [51%] vs. 0 of 37 [0%])
+  confidence: high
+- id: NEU-018
+  claim: 'In FIREFISH Part 1, 41 per cent of the infants with type 1 SMA given the therapeutic dose of
+    risdiplam (7 of 17) could sit independently for at least five seconds at twelve months.
+
+    '
+  topic: SMN1/SMN2 and spinal muscular atrophy
+  source:
+    doc_id: PMC12383623
+    title: 'Transforming Spinal Muscular Atrophy: From Pivotal Trials to Real-World Evidence and Future
+      Therapeutic Frontiers in Types 1 and 2'
+    authors: Belančić, A.; Eustaquio, P. C.; Gkrinia, E. M. M.; Rački, V.; Pilipović, K.; Vitezić, D.
+    journal: Biomedicines
+    year: 2025
+    doi: 10.3390/biomedicines13081939
+    bibkey: belancic2025smatrials
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L31
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12383623#L31
+    quote: At 12 months, 41% (7/17) of these patients could sit independently for at least 5 s
+  confidence: medium
+- id: NEU-019
+  claim: 'Risdiplam is described as a once-daily oral SMN2 pre-mRNA splicing modifier that raises full-length
+    SMN protein by promoting exon 7 inclusion, and it received EMA approval in March 2021 on the basis
+    of the FIREFISH and SUNFISH trials.
+
+    '
+  topic: SMN1/SMN2 and spinal muscular atrophy
+  source:
+    doc_id: PMC12383623
+    title: 'Transforming Spinal Muscular Atrophy: From Pivotal Trials to Real-World Evidence and Future
+      Therapeutic Frontiers in Types 1 and 2'
+    authors: Belančić, A.; Eustaquio, P. C.; Gkrinia, E. M. M.; Rački, V.; Pilipović, K.; Vitezić, D.
+    journal: Biomedicines
+    year: 2025
+    doi: 10.3390/biomedicines13081939
+    bibkey: belancic2025smatrials
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L29
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12383623#L29
+    quote: Risdiplam received EMA approval in March 2021 based on the pivotal FIREFISH and SUNFISH clinical
+      trials
+  confidence: medium
+- id: NEU-020
+  claim: 'The therapeutic logic of exon skipping in Duchenne dystrophy came from reading a natural experiment:
+    DMD deletions that leave the reading frame intact generate variants able to produce a functional if
+    truncated dystrophin and the milder Becker phenotype, which is read as showing that the nature of
+    the deletion determines severity.
+
+    '
+  topic: DMD exon-skipping therapy
+  source:
+    doc_id: PMC5338848
+    title: Eteplirsen in the treatment of Duchenne muscular dystrophy
+    authors: Lim, K. R.; Maruyama, R.; Yokota, T.
+    journal: Drug Design, Development and Therapy
+    year: 2017
+    doi: 10.2147/DDDT.S97635
+    bibkey: lim2017eteplirsen
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L18
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5338848#L18
+    quote: some lead to in-frame mutations, generating variants able to produce functional albeit truncated
+      versions of dystrophin
+  confidence: high
+  figure_idea: 'A frame diagram: an out-of-frame deletion, the same deletion with one extra exon skipped,
+    and the resulting in-frame product - making visible why removing more sequence can help.
+
+    '
+- id: NEU-021
+  claim: 'Four exon-skipping antisense drugs for Duchenne dystrophy hold FDA approval, but these were
+    accelerated approvals resting mainly on a biomarker - modest increases in dystrophin - and that basis
+    is described as having sparked significant debate.
+
+    '
+  topic: DMD exon-skipping therapy
+  source:
+    doc_id: PMC13290086
+    title: 'FDA-approved antisense oligonucleotide therapies for Duchenne muscular dystrophy: current
+      status and future outlook'
+    authors: Moriyama, H.; Moriyama, S.; Yokota, T.
+    journal: RNA Biology
+    year: 2026
+    doi: 10.1080/15476286.2026.2689117
+    bibkey: moriyama2026dmdaso
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L26
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13290086#L26
+    quote: these accelerated approvals, primarily based on the biomarker of modest increases in dystrophin
+      levels, have sparked significant debate
+  confidence: high
+- id: NEU-022
+  claim: 'Of the human tissues compared on genomically aligned EST evidence, brain carried the highest
+    fraction of alternatively spliced genes, with more than 40 per cent of its genes showing at least
+    one alternative splicing event, followed by liver and testis.
+
+    '
+  topic: Neuronal isoform diversity
+  source:
+    doc_id: PMC545594
+    title: Variation in alternative splicing across human tissues
+    authors: Yeo, G.; Holste, D.; Kreiman, G.; Burge, C. B.
+    journal: Genome Biology
+    year: 2004
+    doi: 10.1186/gb-2004-5-10-r74
+    bibkey: yeo2004tissuesplicing
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L19
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC545594#L19
+    quote: highest fraction of AS genes in this analysis (Figure 1a), with more than 40% of genes exhibiting
+      one or more AS events
+  confidence: high
+  figure_idea: 'A ranked bar chart of tissues by fraction of alternatively spliced genes, with brain at
+    the top, drawn from the modern long-read catalogues rather than from EST counts.
+
+    '
+- id: NEU-023
+  claim: 'Neurexin mRNAs are extensively alternatively spliced at six canonical positions, SS1 through
+    SS6, whose use is reported to be tightly regulated in space and time.
+
+    '
+  topic: Neuronal isoform diversity
+  source:
+    doc_id: PMC10063607
+    title: A combinatorial code of neurexin-3 alternative splicing controls inhibitory synapses via a
+      trans-synaptic dystroglycan signaling loop
+    authors: Trotter, J. H.; Wang, C. Y.; Zhou, P.; Nakahara, G.; Südhof, T. C.
+    journal: Nature Communications
+    year: 2023
+    doi: 10.1038/s41467-023-36872-8
+    bibkey: trotter2023neurexin3
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L11
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC10063607#L11
+    quote: Neurexin mRNAs are extensively alternatively spliced at six canonical positions (SS1 to SS6)
+  confidence: high
+- id: NEU-024
+  claim: 'Long-read sequencing of mid-gestation human neocortex reported 214,516 distinct isoforms, of
+    which 72.6 per cent were unannotated in GENCODE, plus more than 7,000 novel exons, expanding the inferred
+    proteome by 92,422 putative proteoforms in a single developing tissue.
+
+    '
+  topic: Neuronal isoform diversity
+  source:
+    doc_id: bio_cea1c1676f0e
+    title: Developmental isoform diversity in the human neocortex informs neuropsychiatric risk mechanisms
+    authors: Patowary, A.; Zhang, P.; Jops, C.; Vuong, C. K.; Ge, X.; Hou, K.; Kim, M.; Gong, N.; Margolis,
+      M.; Vo, D.; Wang, X.; Liu, C.; Pasaniuc, B.; Li, J. J.; Gandal, M. J.; de la Torre-Ubieta, L.
+    journal: Science
+    year: 2024
+    doi: 10.1126/science.adh7688
+    bibkey: patowary2024neocortexisoforms
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L31
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_cea1c1676f0e#L31
+    quote: We identified 214,516 unique isoforms, of which 72.6% were novel (unannotated in Gencode),
+      and >7,000 novel exons, expanding the proteome by 92,422 putative proteoforms.
+  confidence: high
+- id: NEU-025
+  claim: 'A machine-learning estimate over exonic variants put the splice-disrupting fraction at approximately
+    16 per cent of inherited disease exonic mutations and approximately 10 to 14 per cent of cancer exonic
+    mutations - a predicted, not assayed, share, and of exonic variants only.
+
+    '
+  topic: What fraction of pathogenic variants act through splicing
+  source:
+    doc_id: PMC4054890
+    title: 'MutPred Splice: machine learning-based prediction of exonic variants that disrupt splicing'
+    authors: Mort, M.; Sterne-Weiler, T.; Li, B.; Ball, E. V.; Cooper, D. N.; Radivojac, P.; Sanford,
+      J. R.; Mooney, S. D.
+    journal: Genome Biology
+    year: 2014
+    doi: 10.1186/gb-2014-15-1-r19
+    bibkey: mort2014mutpredsplice
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L182
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4054890#L182
+    quote: approximately 16% of inherited disease and approximately 10 to 14% of cancer exonic mutations
+      impact upon pre-mRNA splicing
+  confidence: medium
+  figure_idea: 'A single figure placing each published estimate on a common axis with its denominator
+    labelled - exonic HGMD variants, all disease alleles, splice-region variants, pathogenic variants
+    in rare disease - so the spread reads as different questions rather than disagreement about one number.
+
+    '
+- id: NEU-026
+  claim: 'A massively parallel splicing assay of 4,964 exonic disease alleles drawn from HGMD found that
+    about 10 per cent of them (513) disrupted splicing both in cells and in vitro, against 3 per cent
+    of the common SNPs tested the same way.
+
+    '
+  topic: What fraction of pathogenic variants act through splicing
+  source:
+    doc_id: PMC6679692
+    title: Pathogenic variants that alter protein code often disrupt splicing
+    authors: Soemedi, R.; Cygan, K. J.; Rhine, C. L.; Wang, J.; Bulacan, C.; Yang, J.; Bayrak-Toydemir,
+      P.; McDonald, J.; Fairbrother, W. G.
+    journal: Nature Genetics
+    year: 2017
+    doi: 10.1038/ng.3837
+    bibkey: soemedi2017mapsy
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L31
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6679692#L31
+    quote: We found ~10% (513/4,964) of exonic disease alleles disrupt splicing in vivo and in vitro.
+  confidence: high
+- id: NEU-027
+  claim: 'The one-third figure - that one third of disease alleles alter splicing - enters this literature
+    as the authors'' summary of previous studies rather than as a measurement they report, so it should
+    not be counted as an independent estimate.
+
+    '
+  topic: What fraction of pathogenic variants act through splicing
+  source:
+    doc_id: PMC6679692
+    title: Pathogenic variants that alter protein code often disrupt splicing
+    authors: Soemedi, R.; Cygan, K. J.; Rhine, C. L.; Wang, J.; Bulacan, C.; Yang, J.; Bayrak-Toydemir,
+      P.; McDonald, J.; Fairbrother, W. G.
+    journal: Nature Genetics
+    year: 2017
+    doi: 10.1038/ng.3837
+    bibkey: soemedi2017mapsy
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L11
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6679692#L11
+    quote: Previous studies suggest one-third of disease alleles alter splicing.
+  confidence: medium
+- id: NEU-028
+  claim: 'The SpliceAI authors estimated that 9 to 11 per cent of pathogenic mutations in patients with
+    rare genetic disorders are caused by cryptic splicing, which they describe as a previously underappreciated
+    class of disease variation.
+
+    '
+  topic: What fraction of pathogenic variants act through splicing
+  source:
+    doc_id: 34980441
+    title: Predicting Splicing from Primary Sequence with Deep Learning
+    authors: Jaganathan, K.; Kyriazopoulou Panagiotopoulou, S.; McRae, J. F.; Darbandi, S. F.; Knowles,
+      D.; Li, Y. I.; Kosmicki, J. A.; Arbelaez, J.; Cui, W.; Schwartz, G. B.; Chow, E. D.; Kanterakis,
+      E.; Gao, H.; Kia, A.; Batzoglou, S.; Sanders, S. J.; Farh, K. K. H.
+    journal: Cell
+    year: 2019
+    doi: 10.1016/j.cell.2018.12.015
+    bibkey: jaganathan2019spliceai
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/34980441#L1
+    quote: We estimate that 9%-11% of pathogenic mutations in patients with rare genetic disorders are
+      caused by this previously underappreciated class of disease variation.
+  confidence: high
+- id: NEU-029
+  claim: 'Within splice-region variants specifically, a de novo mutation burden analysis across 7,833
+    developmental disorder probands and their parents apportioned 73 per cent of the pathogenic contribution
+    to the canonical dinucleotides and 27 per cent to flanking non-canonical positions.
+
+    '
+  topic: What fraction of pathogenic variants act through splicing
+  source:
+    doc_id: PMC6360807
+    title: Pathogenicity and selective constraint on variation near splice sites
+    authors: Lord, J.; Gallone, G.; Short, P. J.; McRae, J. F.; Ironfield, H.; Wynn, E. H.; Gerety, S.
+      S.; He, L.; Kerr, B.; Johnson, D. S.; McCann, E.; Kinning, E.; Flinter, F.; Temple, I. K.; Clayton-Smith,
+      J.; McEntagart, M.; Lynch, S. A.; Joss, S.; Douzgou, S.; Dabir, T.; Clowes, V.; McConnell, V. P.;
+      Lam, W.; Wright, C. F.; FitzPatrick, D. R.; Firth, H. V.; Barrett, J. C.; Hurles, M. E.; on behalf
+      of the Deciphering Developmental Disorders study
+    journal: Genome Research
+    year: 2019
+    doi: 10.1101/gr.238444.118
+    bibkey: lord2019splicesites
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L21
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6360807#L21
+    quote: the relative contributions of mutations at canonical dinucleotides (73%) and flanking noncanonical
+      positions (27%)
+  confidence: high
+- id: NEU-030
+  claim: 'Published estimates of the non-canonical share disagree by more than twofold, and the same paper''s
+    discussion sets its own trio-based 27 per cent against roughly 30 per cent from HGMD, roughly 43 per
+    cent from another curation and roughly 17 per cent in ClinVar, attributing the spread to how each
+    set''s variants were ascertained.
+
+    '
+  topic: What fraction of pathogenic variants act through splicing
+  source:
+    doc_id: PMC6360807
+    title: Pathogenicity and selective constraint on variation near splice sites
+    authors: Lord, J.; Gallone, G.; Short, P. J.; McRae, J. F.; Ironfield, H.; Wynn, E. H.; Gerety, S.
+      S.; He, L.; Kerr, B.; Johnson, D. S.; McCann, E.; Kinning, E.; Flinter, F.; Temple, I. K.; Clayton-Smith,
+      J.; McEntagart, M.; Lynch, S. A.; Joss, S.; Douzgou, S.; Dabir, T.; Clowes, V.; McConnell, V. P.;
+      Lam, W.; Wright, C. F.; FitzPatrick, D. R.; Firth, H. V.; Barrett, J. C.; Hurles, M. E.; on behalf
+      of the Deciphering Developmental Disorders study
+    journal: Genome Research
+    year: 2019
+    doi: 10.1101/gr.238444.118
+    bibkey: lord2019splicesites
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L55
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6360807#L55
+    quote: These values are closer to our 27% estimate than to the ClinVar proportion of ∼17%
+  confidence: high
+  figure_idea: 'A dot plot of the four non-canonical-share estimates with each one annotated by how its
+    variants were ascertained - population constraint, publication-derived database, curated set, clinical
+    submissions - showing that ascertainment, not biology, orders them.
+
+    '
+- id: NEU-031
+  claim: 'Muscle RNA sequencing of 50 genetically undiagnosed rare muscle disease patients reached an
+    overall diagnosis rate of 35 per cent, by validating candidate splice-disrupting variants and by finding
+    splice-altering variants in both exonic and deep intronic positions.
+
+    '
+  topic: RNA sequencing as a diagnostic
+  source:
+    doc_id: 55237691
+    title: Improving genetic diagnosis in Mendelian disease with transcriptome sequencing
+    authors: Cummings, B. B.; Marshall, J. L.; Tukiainen, T.; Lek, M.; Donkervoort, S.; Foley, A. R.;
+      Bolduc, V.; Waddell, L.; Sandaradura, S.; O’Grady, G.; Estrella, E.; Reddy, H. M.; Zhao, F.; Weisburd,
+      B.; Karczewski, K. J.; O’Donnell-Luria, A. H.; Birnbaum, D.; Sarkozy, A.; Hu, Y.; Gonorazky, H.;
+      Claeys, K.; Joshi, H.; Bournazos, A.; Oates, E. C.; Ghaoui, R.; Davis, M.; Laing, N.; Topf, A.;
+      GTEx Consortium; Kang, P. B.; Beggs, A. H.; North, K. N.; Straub, V.; Dowling, J.; Muntoni, F.;
+      Clarke, N. F.; Cooper, S. T.; Bonnemann, C. G.; MacArthur, D. G.
+    journal: bioRxiv
+    year: 2016
+    doi: 10.1101/074153
+    bibkey: cummings2016musclernaseq
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/55237691#L1
+    quote: identify splice-altering variants in both exonic and deep intronic regions, yielding an overall
+      diagnosis rate of 35%
+  confidence: high
+  figure_idea: 'A horizontal panel of reported incremental RNA-seq yields over exome/genome, each bar
+    labelled with cohort size, source tissue and whether the cohort was phenotype-enriched - so the reader
+    sees that tissue choice explains much of the spread.
+
+    '
+- id: NEU-032
+  claim: 'In fibroblasts from 48 exome-undiagnosed mitochondriopathy patients, transcriptome sequencing
+    produced a molecular diagnosis in 10 per cent (5 of 48) and candidate genes for the remainder, with
+    per-sample medians of one aberrantly expressed gene and five aberrant splicing events.
+
+    '
+  topic: RNA sequencing as a diagnostic
+  source:
+    doc_id: PMC5499207
+    title: Genetic diagnosis of Mendelian disorders via RNA sequencing
+    authors: Kremer, L. S.; Bader, D. M.; Mertes, C.; Kopajtich, R.; Pichler, G.; Iuso, A.; Haack, T.
+      B.; Graf, E.; Schwarzmayr, T.; Terrile, C.; Koňaříková, E.; Repp, B.; Kastenmüller, G.; Adamski,
+      J.; Lichtner, P.; Leonhardt, C.; Funalot, B.; Donati, A.; Tiranti, V.; Lombes, A.; Jardel, C.; Gläser,
+      D.; Taylor, R. W.; Ghezzi, D.; Mayr, J. A.; Rötig, A.; Freisinger, P.; Distelmaier, F.; Strom, T.
+      M.; Meitinger, T.; Gagneur, J.; Prokisch, H.
+    journal: Nature Communications
+    year: 2017
+    doi: 10.1038/ncomms15824
+    bibkey: kremer2017rnaseqdiagnosis
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L24
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5499207#L24
+    quote: transcriptome sequencing to molecularly diagnose 10% (5 of 48) of mitochondriopathy patients
+      and identify candidate genes for the remainder
+  confidence: high
+- id: NEU-033
+  claim: 'Scaled into a clinical workflow on skin fibroblasts from 303 individuals with a suspected mitochondrial
+    disease who had already had exome sequencing, the same approach established a genetic diagnosis in
+    16 per cent of the 205 exome-inconclusive cases.
+
+    '
+  topic: RNA sequencing as a diagnostic
+  source:
+    doc_id: PMC8981716
+    title: Clinical implementation of RNA sequencing for Mendelian disease diagnostics
+    authors: Yépez, V. A.; Gusic, M.; Kopajtich, R.; Mertes, C.; Smith, N. H.; Alston, C. L.; Ban, R.;
+      Beblo, S.; Berutti, R.; Blessing, H.; Ciara, E.; Distelmaier, F.; Freisinger, P.; Häberle, J.; Hayflick,
+      S. J.; Hempel, M.; Itkis, Y. S.; Kishita, Y.; Klopstock, T.; Krylova, T. D.; Lamperti, C.; Lenz,
+      D.; Makowski, C.; Mosegaard, S.; Müller, M. F.; Muñoz-Pujol, G.; Nadel, A.; Ohtake, A.; Okazaki,
+      Y.; Procopio, E.; Schwarzmayr, T.; Smet, J.; Staufner, C.; Stenton, S. L.; Strom, T. M.; Terrile,
+      C.; Tort, F.; Van Coster, R.; Vanlander, A.; Wagner, M.; Xu, M.; Fang, F.; Ghezzi, D.; Mayr, J.
+      A.; Piekutowska-Abramczuk, D.; Ribes, A.; Rötig, A.; Taylor, R. W.; Wortmann, S. B.; Murayama, K.;
+      Meitinger, T.; Gagneur, J.; Prokisch, H.
+    journal: Genome Medicine
+    year: 2022
+    doi: 10.1186/s13073-022-01019-9
+    bibkey: yepez2022rnaseqclinical
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L44,L46
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8981716#L44,L46
+    quote: A genetic diagnosis was established for 16% of the 205 WES-inconclusive cases.
+  confidence: high
+- id: NEU-034
+  claim: 'Across 27 distinct splicing outcomes collated from short- and long-read data in a rare disorder
+    cohort, PacBio long-read RNA-seq recovered 18 variant-linked aberrant splicing events and three normal
+    outcomes but failed to capture four, three of which the authors attribute to low or absent coverage
+    of the gene.
+
+    '
+  topic: Long reads and targeted RNA assays in diagnosis
+  source:
+    doc_id: PMC13247170
+    title: HiFi long-read RNA sequencing enhances clinical diagnostics in rare disorders
+    authors: Jaramillo Oquendo, C.; Ferraro, F.; Wai, H. A.; Ferrao, H.; van der Linde, H.; Karelioti,
+      E.; Tseng, L.; Dhillon, H.; Holt, S.; Bunyan, D. J.; Donker Kaat, L.; van Dooren, M.; Zhou, J.;
+      Ennis, S.; Holloway, J. W.; van Ham, T. J.; Baralle, D.
+    journal: European Journal of Human Genetics
+    year: 2026
+    doi: 10.1038/s41431-026-02042-9
+    bibkey: oquendo2026hifirnaseq
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L55
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13247170#L55
+    quote: 'LR RNA-seq detected: 18 aberrant splicing events linked to a variant, three normal splicing
+      outcomes'
+  confidence: high
+- id: NEU-035
+  claim: 'Variant interpretation now leans on tools whose accuracy has been measured against experimentally
+    characterised variants: on NF1 spliceogenic variants, SpliceAI reached an ROC area under the curve
+    of 0.972 for de novo or cryptic splice site prediction, ahead of every other tool tested except SpliceRover
+    at 0.924, from which the difference was not statistically significant.
+
+    '
+  topic: Splice-prediction tools and their measured performance
+  source:
+    doc_id: PMC9584665
+    title: 'Comparison of In Silico Tools for Splice-Altering Variant Prediction Using Established Spliceogenic
+      Variants: An End-User''s Point of View'
+    authors: Jang, W.; Park, J.; Chae, H.; Kim, M.
+    journal: International Journal of Genomics
+    year: 2022
+    doi: 10.1155/2022/5265686
+    bibkey: jang2022splicetools
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L32
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9584665#L32
+    quote: SpliceAI (AUC 0.972) outperformed all other tools for cryptic splice site prediction, except
+      for SpliceRover (AUC of 0.924)
+  confidence: high
+- id: NEU-036
+  claim: 'On the OpenSplice massively parallel reporter benchmark, the successor model SpliceAI2 agreed
+    with experimentally measured variant effects at Spearman 0.59, against 0.55 for SpliceAI.
+
+    '
+  topic: Splice-prediction tools and their measured performance
+  source:
+    doc_id: bio_6f0a212282bb
+    title: A unified framework for quantitative splicing and transcript prediction
+    authors: Jaganathan, K.; Chen, J.; Liu, X.; Zhang, Y.; Kim, Y.; Banerjee, A.; Fiziev, P. P.; Wilcox,
+      N.; Taskiran, I. I.; Cai, Y.; Wigdor, E. M.; Chew, G. L.; Png, G.; McRae, J. F.; Reddy, A. J.; Chao,
+      K. H.; Mehio, R.; Sanders, S. J.; Farh, K. K. H.
+    journal: bioRxiv
+    year: 2026
+    doi: 10.64898/2026.10.08.757673
+    bibkey: jaganathan2026spliceai2
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L8
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_6f0a212282bb#L8
+    quote: SpliceAI2 showed the strongest agreement with experimentally measured variant effects (Spearman
+      ρ, 0.59 versus 0.55 for SpliceAI)
+  confidence: medium
+- id: NEU-037
+  claim: 'The endpoint of isoform-level diagnosis is a drug designed for one genome: proof-of-concept
+    experiments in cell lines from a single patient were the basis for launching an n-of-1 study of the
+    splice-modulating oligonucleotide milasen within one year of first contact with that patient.
+
+    '
+  topic: Antisense oligonucleotide therapy and n-of-1 cases
+  source:
+    doc_id: 27235986
+    title: Patient-Customized Oligonucleotide Therapy for a Rare Genetic Disease
+    authors: Kim, J.; Hu, C.; Moufawad El Achkar, C.; Black, L. E.; Douville, J.; Larson, A.; Pendergast,
+      M. K.; Goldkind, S. F.; Lee, E. A.; Kuniholm, A.; Soucy, A.; Vaze, J.; Belur, N. R.; Fredriksen,
+      K.; Stojkovska, I.; Tsytsykova, A.; Armant, M.; DiDonato, R. L.; Choi, J.; Cornelissen, L.; Pereira,
+      L. M.; Augustine, E. F.; Genetti, C. A.; Dies, K.; Barton, B.; Williams, L.; Goodlett, B. D.; Riley,
+      B. L.; Pasternak, A.; Berry, E. R.; Pflock, K. A.; Chu, S.; Reed, C.; Tyndall, K.; Agrawal, P. B.;
+      Beggs, A. H.; Grant, P. E.; Urion, D. K.; Snyder, R. O.; Waisbren, S. E.; Poduri, A.; Park, P. J.;
+      Patterson, A.; Biffi, A.; Mazzulli, J. R.; Bodamer, O.; Berde, C. B.; Yu, T. W.
+    journal: New England Journal of Medicine
+    year: 2019
+    doi: 10.1056/nejmoa1813279
+    bibkey: kim2019milasen
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/27235986#L1
+    quote: Proof-of-concept experiments in cell lines from the patient served as the basis for launching
+      an "N-of-1" study of milasen within 1 year
+  confidence: high
+  figure_idea: 'A timeline from first clinical contact through variant identification, splicing assay,
+    oligonucleotide design, toxicology and first dose, with the elapsed time at each step - the figure''s
+    point being which steps are compressible and which are not.
+
+    '
+- id: NEU-038
+  claim: 'The clinical result of the milasen n-of-1 was partial and should be reported as such: seizure
+    frequency and duration fell to half their pre-treatment values, but the drug did not impede progressive
+    brain volume loss and the patient died three years after treatment began.
+
+    '
+  topic: Antisense oligonucleotide therapy and n-of-1 cases
+  source:
+    doc_id: PMC11275492
+    title: Preparing for Patient-Customized N-of-1 Antisense Oligonucleotide Therapy to Treat Rare Diseases
+    authors: Wilton-Clark, H.; Yan, E.; Yokota, T.
+    journal: Genes
+    year: 2024
+    doi: 10.3390/genes15070821
+    bibkey: wiltonclark2024nof1aso
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L24
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11275492#L24
+    quote: seizure frequency and duration were reduced to half of their pretreatment values
+  confidence: medium
+leads:
+- note: 'The same muscle RNA-seq abstract read for NEU-031 also reports a recurrent de novo deep-intronic
+    COL6A1 variant creating a dominantly acting splice-gain event, identified in 27 further genetically
+    unsolved patients and said to explain roughly a quarter of a collagen VI-like dystrophy cohort. It
+    has no record of its own here.
+
+    '
+  why: It is the single best Mendelian example of one deep-intronic splice variant accounting for a large
+    slice of a phenotype-defined cohort, and would strengthen any deep-intronic section.
+- note: 'Brown et al. report that the UNC13A cryptic exon becomes detectable only after more than 50 per
+    cent of TDP-43 is lost, whereas the analogous UNC13B event needed more than 90 per cent loss. Read
+    but not recorded as a claim.
+
+    '
+  why: A dose threshold is what licenses or forbids using a cryptic exon as an early biomarker, and the
+    chapter will want it if it argues for cryptic exons as biomarkers.
+- note: 'Ma et al. show by minigene dissection that rs12973192, inside the UNC13A cryptic exon itself,
+    has the largest single effect on cryptic exon inclusion in TDP-43-null cells, with the other haplotype
+    variants contributing non-additively. Read at that paper''s L39 but dropped for want of a slot.
+
+    '
+  why: This is the direct causal step from variant to splicing change; the records kept here establish
+    location and association but not causation by a single allele.
+- note: 'The muscle RNA-seq study cited here as a 2016 bioRxiv preprint (35 per cent diagnosis rate in
+    50 patients) was published in Science Translational Medicine in 2017 as article eaal5209, per the
+    reference list of Gonorazky et al. The published version is not in the corpus and the claim is anchored
+    on the preprint abstract.
+
+    '
+  why: The published version may report a revised cohort or yield, and the book should cite the journal
+    version rather than the preprint.
+- note: 'The developmental neocortex isoform counts in NEU-024 were read from the bioRxiv preprint; the
+    corpus search listing records a 2024 Science DOI (10.1126/science.adh7688) for the published version.
+
+    '
+  why: Preprint and published counts can differ, and any figure built on 214,516 / 72.6 per cent must
+    be re-checked against the published paper.
+- note: 'NEU-017 is anchored on the ENDEAR trial abstract itself, but the FIREFISH numbers in NEU-018
+    and the EMA approval date in NEU-019 still come from a 2025 review that restates them. The FIREFISH
+    Part 2 record found in the corpus is a conference abstract that states the endpoint but reports no
+    efficacy figures.
+
+    '
+  why: Approval dates and trial efficacy figures are where a secondhand restatement is most likely to
+    have drifted; both should be re-anchored to the trial publications or to a regulatory document before
+    publication.
+- note: 'No records exist for three examples named in the chapter brief: CFTR splice variants (the intron
+    9 poly-T tract modifying R117H severity was located as a paper but not read), MECP2 isoform-specific
+    variants, and the retinitis pigmentosa splicing-factor genes such as PRPF3, PRPF8 and PRPF31.
+
+    '
+  why: These are supporting examples in the brief and currently have no anchored support at all.
+- note: 'Two tauopathy facts were read in the tau review but not recorded as claims. Its L89 reports that
+    Pick disease brains carry predominantly 3R-tau inclusions while 4R-tau is up-regulated in most progressive
+    supranuclear palsy and corticobasal degeneration cases; its L90 reports that published findings on
+    the 3R:4R ratio in Alzheimer brain contradict one another, possibly because distinct AD subtypes are
+    differentially deregulated.
+
+    '
+  why: A 3R/4R table in the chapter needs the Pick/PSP/CBD assignments, and if it asserts any direction
+    for Alzheimer disease it will likely be wrong unless the conflict is stated.
+- note: 'The chapter brief describes the STMN2 defect as one that was ''invisible at gene level''. Melamed
+    et al. as read does not support that framing: total STMN2 mRNA was significantly reduced in sporadic
+    ALS motor neurons (mean 423 versus 971 TPM in controls).
+
+    '
+  why: The honest version of the point is that the defect is invisible in the annotation and in rodent
+    models, not that gene-level expression looked normal; writing the stronger claim would misstate the
+    source.

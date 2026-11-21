@@ -1,0 +1,1051 @@
+area: technology-arc
+researcher: agent-04-technology-arc
+date: 2026-11-21
+corpus: paperclip 0.8.23
+claims:
+- id: TECH-001
+  claim: 'Splicing was first established by a physical measurement rather than a sequence: Berget, Moore
+    and Sharp located adenovirus hexon mRNA on the viral genome by looking at RNA-DNA hybrids in the electron
+    microscope.
+
+    '
+  topic: 1977 discovery - electron microscopy of RNA:DNA hybrids
+  source:
+    doc_id: '124467445'
+    title: Spliced segments at the 5' terminus of adenovirus 2 late mRNA
+    authors: Berget, S. M.; Moore, C.; Sharp, P. A.
+    journal: Proceedings of the National Academy of Sciences
+    year: 1977
+    doi: 10.1073/pnas.74.8.3171
+    bibkey: berget1977spliced
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/124467445#L1
+    quote: 'mapped between 51.7 and 61.3 units on the genome by visualizing RNA-DNA hybrids in the electron
+      microscope
+
+      '
+  confidence: high
+  figure_idea: 'A schematic of what the 1977 assay could and could not report: a hybrid duplex with an
+    unpaired 5'' tail, annotated with the two quantities the microscope actually yielded (map position,
+    contour length) next to the quantities it could not yield (nucleotide sequence, exact splice-site
+    boundary).
+
+    '
+- id: TECH-002
+  claim: 'The observation that carried the inference was a length: about 160 nucleotides at the mRNA''s
+    5'' end failed to pair with the single-stranded DNA encoding the rest of the message.
+
+    '
+  topic: 1977 discovery - what the microscope measured
+  source:
+    doc_id: '124467445'
+    title: Spliced segments at the 5' terminus of adenovirus 2 late mRNA
+    authors: Berget, S. M.; Moore, C.; Sharp, P. A.
+    journal: Proceedings of the National Academy of Sciences
+    year: 1977
+    doi: 10.1073/pnas.74.8.3171
+    bibkey: berget1977spliced
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/124467445#L1
+    quote: '160 nucleotides of RNA from the 5'' terminus were not hydrogen bonded to the single-stranded
+      DNA
+
+      '
+  confidence: high
+- id: TECH-003
+  claim: 'Chow, Gelinas, Broker and Roberts reached the same conclusion through a different hybridisation
+    geometry - R-loops formed between viral DNA and unfractionated polysomal RNA - and resolved three
+    short segments from distant map positions fused into one 150 to 200 nucleotide leader.
+
+    '
+  topic: 1977 discovery - R-loop mapping as an independent route
+  source:
+    doc_id: '135910475'
+    title: An amazing sequence arrangement at the 5' ends of adenovirus 2 messenger RNA
+    authors: Chow, L. T.; Gelinas, R. E.; Broker, T. R.; Roberts, R. J.
+    journal: Cell
+    year: 1977
+    doi: 10.1016/0092-8674(77)90180-5
+    bibkey: chow1977amazing
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/135910475#L1
+    quote: 'short sequences coded at map positions 16.6, 19.6 and 26.6 on the R strand are joined to form
+      a leader sequence of 150-200 nucleotides
+
+      '
+  confidence: high
+  figure_idea: 'Two panels on one adenovirus map-coordinate axis - hybrid-branch mapping versus R-loop
+    mapping - showing that two unlike physical assays placed the same leader segments at the same coordinates.
+    The point is replication by independent method, not the molecules themselves.
+
+    '
+- id: TECH-004
+  claim: 'Rogers and colleagues showed that the membrane and secreted forms of the immunoglobulin mu heavy
+    chain are carried on two separate mRNAs of 2.7 and 2.4 kilobases, read out from restriction mapping
+    and sequencing of cDNA clones taken from a tumour that made both chains.
+
+    '
+  topic: ~1980 - immunoglobulin mu membrane/secreted switch
+  source:
+    doc_id: '135795311'
+    title: Two mRNAs with different 3' ends encode membrane-bound and secreted forms of immunoglobulin
+      mu chain
+    authors: Rogers, J.
+    journal: Cell
+    year: 1980
+    doi: 10.1016/0092-8674(80)90616-9
+    bibkey: rogers1980twomrnas
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/135795311#L1
+    quote: 'we demonstrate that mum and mus heavy chains are encoded by separate mRNAs of 2.7 and 2.4
+      kb, respectively
+
+      '
+  confidence: high
+- id: TECH-005
+  claim: 'Amara and colleagues reported that alternative processing of calcitonin gene transcripts yields
+    distinct mRNAs with different tissue distributions, and proposed it as a general strategy rather than
+    a curiosity: developmental regulation of RNA processing as a way of increasing the diversity of neuroendocrine
+    gene expression.
+
+    '
+  topic: ~1980 - calcitonin/CGRP and the concept of regulated alternative processing
+  source:
+    doc_id: '133423452'
+    title: Alternative RNA processing in calcitonin gene expression generates mRNAs encoding different
+      polypeptide products
+    authors: Amara, S. G.; Jonas, V.; Rosenfeld, M. G.; Ong, E. S.; Evans, R. M.
+    journal: Nature
+    year: 1982
+    doi: 10.1038/298240a0
+    bibkey: amara1982alternative
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/133423452#L1
+    quote: 'developmental regulation of RNA processing is used to increase the diversity of neuroendocrine
+      gene expression
+
+      '
+  confidence: high
+  figure_idea: 'A two-column timeline contrasting the claim each era could support: 1977 "a transcript
+    can be discontinuous" versus 1982 "the choice between discontinuities is regulated". Annotate each
+    column with the method that licensed it.
+
+    '
+- id: TECH-006
+  claim: 'Rosenfeld and colleagues used the CGRP case to make the methodological argument directly: cloning
+    plus processing analysis could reach a complex neurobiological system with no prior structural or
+    biological information about the product it would find.
+
+    '
+  topic: ~1980 - method as discovery engine
+  source:
+    doc_id: '133423877'
+    title: Production of a novel neuropeptide encoded by the calcitonin gene via tissue-specific RNA processing
+    authors: Rosenfeld, M. G.; Mermod, J. J.; Amara, S. G.; Swanson, L. W.; Sawchenko, P. E.; Rivier,
+      J.; Vale, W. W.; Evans, R. M.
+    journal: Nature
+    year: 1983
+    doi: 10.1038/304129a0
+    bibkey: rosenfeld1983production
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/133423877#L1
+    quote: 'permits the application of recombinant DNA technology to analyses of complex neurobiological
+      systems in the absence of prior structural or biological information
+
+      '
+  confidence: high
+- id: TECH-007
+  claim: 'Retrospectives written three decades later still name RT-PCR as the conventional molecular-biology
+    approach to quantifying a splicing decision.
+
+    '
+  topic: low-throughput era - RT-PCR as the conventional assay
+  source:
+    doc_id: PMC5777382
+    title: The Expanding Landscape of Alternative Splicing Variation in Human Populations
+    authors: Park, E.; Pan, Z.; Zhang, Z.; Lin, L.; Xing, Y.
+    journal: The American Journal of Human Genetics
+    year: 2018
+    doi: 10.1016/j.ajhg.2017.11.002
+    bibkey: park2018expanding
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L16
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5777382#L16
+    quote: 'The conventional molecular biology approach to the quantification of alternative splicing
+      is reverse transcription polymerase chain reaction
+
+      '
+  confidence: high
+- id: TECH-008
+  claim: 'The single-locus assays had their own documented blind spots: in the S1 nuclease configuration
+    best suited to demonstrating a splice, unspliced and spliced RNA both protect the probe across the
+    junction, so the assay was reported as not diagnostic and needed an RNase H pre-digestion to become
+    one.
+
+    '
+  topic: low-throughput era - an authors' own account of an S1-mapping artefact
+  source:
+    doc_id: '120596725'
+    title: A Combination of RNase H and S1 nuclease Circumvents an artefact inherent to conventional S1
+      analysis of RNA splicing
+    authors: Sisodia, S. S.; Cleveland, D. W.; Sollner-Webb, B.
+    journal: Nucleic Acids Research
+    year: 1987
+    doi: 10.1093/nar/15.5.1995
+    bibkey: rnaseh1987s1artefact
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/120596725#L1
+    quote: 'Rather, both intron-containing RNA and intronless RNA confer protection of probe across the
+      splice juncture.
+
+      '
+  confidence: high
+  figure_idea: 'A probe-protection cartoon for the failing S1 configuration: the same protected fragment
+    length produced by a spliced and an unspliced molecule. The figure''s job is to show that an assay
+    can be sensitive and still not be diagnostic.
+
+    '
+- id: TECH-009
+  claim: 'As late as 2010, authors building a single-molecule splicing readout open by stating the gap
+    plainly: studying linked regulation of multiple splice sites within one gene, in transcripts such
+    as Dscam, required new approaches.
+
+    '
+  topic: low-throughput era - combinatorics invisible to bulk assays
+  source:
+    doc_id: PMC2938221
+    title: Single molecule analysis of combinatorial splicing
+    authors: Conze, T.; Göransson, J.; Razzaghian, H. R.; Ericsson, O.; Öberg, D.; Akusjärvi, G.; Landegren,
+      U.; Nilsson, M.
+    journal: Nucleic Acids Research
+    year: 2010
+    doi: 10.1093/nar/gkq581
+    bibkey: conze2010singlemolecule
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L11
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2938221#L11
+    quote: 'To study linked regulation of multiple splice sites within individual genes, also in highly
+      complicated transcripts such as Dscam
+
+      '
+  confidence: high
+  figure_idea: 'A grid of exons by molecules showing the same marginal inclusion frequencies produced
+    by two incompatible combinatorial patterns - the ambiguity every event-level assay leaves behind.
+
+    '
+- id: TECH-036
+  claim: 'Solution hybridisation with nuclease protection was presented as the more quantitative alternative
+    to RNA blot analysis for splice-variant measurement, and its own practitioners noted the catch: at
+    a locus making several mRNAs by alternative splicing, the protected-fragment pattern from a uniformly
+    labelled cRNA probe became hard to interpret.
+
+    '
+  topic: low-throughput era - RNase/nuclease protection, and where it got hard to read
+  source:
+    doc_id: '135391362'
+    title: Solution hybridization-nuclease protection assays for sensitive detection of differentially
+      spliced substance P- and neurokinin A-encoding messenger ribonucleic acids
+    authors: Krause, J. E.; Cremins, J. D.; Carter, M. S.; Brown, E. R.; MacDonald, M. R.
+    journal: Methods in Enzymology
+    year: 1989
+    doi: 10.1016/0076-6879(89)68046-9
+    bibkey: nucleaseprotection1989solution
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/135391362#L1
+    quote: 'the results with a cRNA probe may initially appear to be quite complicated, and end-labeled
+      cDNAs may yield more easily interpretable results
+
+      '
+  confidence: high
+  figure_idea: 'A protected-fragment ladder for a two-isoform locus beside the same ladder for a five-isoform
+    locus: the readout stops being legible as the number of co-expressed forms grows. Same point as the
+    short-read ambiguity figure, one technology generation earlier.
+
+    '
+- id: TECH-010
+  claim: 'The first genome-scale figure came from spliced alignment of EST contigs in 1999 and landed
+    at 35 per cent of known human genes, with most of the detected variation sitting in 5'' untranslated
+    regions rather than in coding sequence.
+
+    '
+  topic: ESTs - the first genome-scale estimate
+  source:
+    doc_id: '9633645'
+    title: Frequent Alternative Splicing of Human Genes
+    authors: Mironov, A. A.; Fickett, J. W.; Gelfand, M. S.
+    journal: Genome Research
+    year: 1999
+    doi: 10.1101/gr.9.12.1288
+    bibkey: mironov1999frequent
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/9633645#L1
+    quote: 'Evidence of alternative splicing was shown in 35% of genes and the majority of splicing events
+      occurred in 5'' untranslated regions
+
+      '
+  confidence: high
+- id: TECH-011
+  claim: 'A different EST comparison a year later put the figure at 38 per cent, over 7,867 non-redundant
+    mRNAs of which 3,011 carried an alternative form, and reported the event spectrum as roughly 70 per
+    cent exon deletions against 30 per cent insertions.
+
+    '
+  topic: ESTs - a second, differently derived estimate
+  source:
+    doc_id: '159241185'
+    title: EST comparison indicates 38% of human mRNAs contain possible alternative splice forms
+    authors: Brett, D.; Hanke, J.; Lehmann, G.; Haase, S.; Delbrück, S.; Krueger, S.; Reich, J.; Bork,
+      P.
+    journal: FEBS Letters
+    year: 2000
+    doi: 10.1016/s0014-5793(00)01581-7
+    bibkey: brett2000estcomparison
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/159241185#L1
+    quote: 'We report the analysis of 7867 non-redundant mRNAs, 3011 of which contained alternative splice
+      forms (38% of all mRNAs analysed)
+
+      '
+  confidence: high
+- id: TECH-012
+  claim: 'Mapping roughly 2.1 million human mRNA and EST sequences onto the draft genome raised the estimate
+    again, to 42 per cent of human genes or more.
+
+    '
+  topic: ESTs - instability of the headline number
+  source:
+    doc_id: '156730331'
+    title: Genome-wide detection of alternative splicing in expressed sequences of human genes
+    authors: Modrek, B.
+    journal: Nucleic Acids Research
+    year: 2001
+    doi: 10.1093/nar/29.13.2850
+    bibkey: modrek2001genomewide
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/156730331#L1
+    quote: 'Our data indicate that a large proportion of human genes, probably 42% or more, are alternatively
+      spliced
+
+      '
+  confidence: high
+  figure_idea: 'A single axis of "percentage of human genes called alternatively spliced" with one tick
+    per published estimate from 1999 to 2008, each labelled with its method, its denominator and its abundance
+    threshold. The spread, not the trend, is the subject.
+
+    '
+- id: TECH-013
+  claim: 'The depth-dependence was demonstrated, not merely suspected: with sufficient EST coverage nearly
+    every gene examined showed some alternative form, yet requiring a variant above five per cent with
+    statistical support collapsed the yield to 17 to 28 per cent of genes.
+
+    '
+  topic: ESTs - the estimate is a function of library depth and threshold
+  source:
+    doc_id: '141190147'
+    title: Selecting for Functional Alternative Splices in ESTs
+    authors: Kan, Z.; States, D.; Gish, W.
+    journal: Genome Research
+    year: 2002
+    doi: 10.1101/gr.764102
+    bibkey: kan2002selecting
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/141190147#L1
+    quote: 'alternative splices expected at a frequency of >5% within their respective clusters were seen
+      for only 17%-28% of genes
+
+      '
+  confidence: high
+- id: TECH-014
+  claim: 'By 2004 the counter-argument was in print: cassette exons seen only in EST databases differed
+    systematically from cross-species conserved ones, and a significant portion were argued to be aberrant
+    splicing rather than regulated isoforms.
+
+    '
+  topic: ESTs - artifacts and noise inflate the count
+  source:
+    doc_id: '136587406'
+    title: How prevalent is functional alternative splicing in the human genome?
+    authors: Sorek, R.; Shamir, R.; Ast, G.
+    journal: Trends in Genetics
+    year: 2004
+    doi: 10.1016/j.tig.2003.12.004
+    bibkey: sorek2004howprevalent
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/136587406#L1
+    quote: 'We conclude that a significant portion of cassette exons evident in EST databases is not functional,
+      and might result from aberrant rather than regulated splicing
+
+      '
+  confidence: high
+- id: TECH-015
+  claim: 'Junction microarrays monitored every exon-exon junction in more than 10,000 multi-exon human
+    genes across 52 tissues and cell lines, and their authors concluded from that survey that at least
+    74 per cent of human multi-exon genes are alternatively spliced.
+
+    '
+  topic: arrays - genome-wide tissue survey of splicing and its headline number
+  source:
+    doc_id: '136878314'
+    title: Genome-Wide Survey of Human Alternative Pre-mRNA Splicing with Exon Junction Microarrays
+    authors: Johnson, J. M.; Castle, J.; Garrett-Engele, P.; Kan, Z.; Loerch, P. M.; Armour, C. D.; Santos,
+      R.; Schadt, E. E.; Stoughton, R.; Shoemaker, D. D.
+    journal: Science
+    year: 2003
+    doi: 10.1126/science.1090100
+    bibkey: johnson2003genomewide
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/136878314#L1
+    quote: 'we demonstrate the use of microarrays to monitor splicing at every exon-exon junction in more
+      than 10,000 multi-exon human genes in 52 tissues
+
+      '
+  confidence: high
+- id: TECH-016
+  claim: 'Pan and colleagues combined exon-body probes with splice-junction probes on one platform to
+    make tissue-specific alternative splicing quantitative for thousands of exons in mouse tissues.
+
+    '
+  topic: arrays - exon-body plus junction probes and quantitative event readout
+  source:
+    doc_id: '132322124'
+    title: Revealing Global Regulatory Features of Mammalian Alternative Splicing Using a Quantitative
+      Microarray Platform
+    authors: Pan, Q.; Shai, O.; Misquitta, C.; Zhang, W.; Saltzman, A. L.; Mohammad, N.; Babak, T.; Siu,
+      H.; Hughes, T. R.; Morris, Q. D.; Frey, B. J.; Blencowe, B. J.
+    journal: Molecular Cell
+    year: 2004
+    doi: 10.1016/j.molcel.2004.12.004
+    bibkey: pan2004revealing
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/132322124#L1
+    quote: 'a microarray platform, which combines information from exon body and splice-junction probes,
+      to perform a quantitative analysis of tissue-specific alternative splicing
+
+      '
+  confidence: high
+- id: TECH-017
+  claim: 'Array-era coverage was large but fixed in advance: one human compendium designed arrays monitoring
+    203,672 exons and 178,351 exon-exon junctions in 17,939 human genes.
+
+    '
+  topic: arrays - the scale of the designed probe space
+  source:
+    doc_id: PMC3197713
+    title: Differential expression of 24,426 human alternative splicing events and predicted cis-regulation
+      in 48 tissues and cell lines
+    authors: Castle, J. C.; Zhang, C.; Shah, J. K.; Kulkarni, A. V.; Kalsotra, A.; Cooper, T. A.; Johnson,
+      J. M.
+    journal: Nature Genetics
+    year: 2008
+    doi: 10.1038/ng.264
+    bibkey: castle2008differential
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L15
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3197713#L15
+    quote: 'We designed microarrays monitoring 203,672 exons and 178,351 exon-exon junctions in 17,939
+      human genes.
+
+      '
+  confidence: high
+  figure_idea: 'Two nested regions on one field: "events the platform can report" inside "events that
+    exist", drawn once for arrays (small, pre-specified) and once for short-read sequencing (larger, discovery-capable
+    but read-length bound).
+
+    '
+- id: TECH-018
+  claim: 'The splicing index, on which most array splicing calls rested, assumes a gene''s exons move
+    together when its transcription changes; that assumption was shown not to hold on real exon-array
+    data, substantially inflating the apparent number of alternatively spliced exons for technical reasons.
+
+    '
+  topic: arrays - probe-level artifacts and overestimation
+  source:
+    doc_id: PMC2760813
+    title: Overestimation of alternative splicing caused by variable probe characteristics in exon arrays
+    authors: Gaidatzis, D.; Jacobeit, K.; Oakeley, E. J.; Stadler, M. B.
+    journal: Nucleic Acids Research
+    year: 2009
+    doi: 10.1093/nar/gkp508
+    bibkey: gaidatzis2009overestimation
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L11
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2760813#L11
+    quote: 'we show that this assumption does not apply to exon array data and results in substantial
+      overestimation of the number of alternatively spliced exons
+
+      '
+  confidence: high
+- id: TECH-019
+  claim: 'Arrays had a structural blind spot by event class: alternative 5'' and 3'' splice sites shift
+    the message by a region often too small to interrogate with a probe, as the authors of a 2008 RNA-seq
+    tissue survey noted when listing the event types they could now reach.
+
+    '
+  topic: arrays - event classes arrays could not see
+  source:
+    doc_id: PMC2593745
+    title: Alternative Isoform Regulation in Human Tissue Transcriptomes
+    authors: Wang, E. T.; Sandberg, R.; Luo, S.; Khrebtukova, I.; Zhang, L.; Mayr, C.; Kingsmore, S. F.;
+      Schroth, G. P.; Burge, C. B.
+    journal: Nature
+    year: 2008
+    doi: 10.1038/nature07509
+    bibkey: wang2008alternative
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L23
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2593745#L23
+    quote: 'events, which are particularly difficult to interrogate by microarray because the variably
+      included region is often quite small
+
+      '
+  confidence: high
+- id: TECH-020
+  claim: 'The 2008 mouse RNA-seq reference datasets rested on 41 to 52 million mapped 25-base reads from
+    poly(A)-selected RNA of three tissues, and what they yielded was a junction census: about 145,000
+    distinct splices, with roughly 3,500 genes expressing one or more alternate internal splice.
+
+    '
+  topic: short-read RNA-seq - the platform's depth and the unit of observation
+  source:
+    doc_id: '112287926'
+    title: Mapping and quantifying mammalian transcriptomes by RNA-Seq
+    authors: Mortazavi, A.; Williams, B. A.; McCue, K.; Schaeffer, L.; Wold, B.
+    journal: Nature Methods
+    year: 2008
+    doi: 10.1038/nmeth.1226
+    bibkey: mortazavi2008mapping
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/112287926#L1
+    quote: 'We observed 1.45 x 10(5) distinct splices, and alternative splices were prominent, with 3,500
+      different genes expressing one or more alternate internal splices
+
+      '
+  confidence: high
+- id: TECH-022
+  claim: 'A parallel 2008 human study reported 94,241 splice junctions from two cell lines, of which only
+    4,096 were previously unidentified, and found exon skipping to be the most prevalent form of alternative
+    splicing.
+
+    '
+  topic: short-read RNA-seq - early human junction survey
+  source:
+    doc_id: '111474423'
+    title: A Global View of Gene Activity and Alternative Splicing by Deep Sequencing of the Human Transcriptome
+    authors: Sultan, M.; Schulz, M. H.; Richard, H.; Magen, A.; Klingenhoff, A.; Scherf, M.; Seifert,
+      M.; Borodina, T.; Soldatov, A.; Parkhomchuk, D.; Schmidt, D.; O'Keeffe, S.; Haas, S.; Vingron, M.;
+      Lehrach, H.; Yaspo, M. L.
+    journal: Science
+    year: 2008
+    doi: 10.1126/science.1160342
+    bibkey: sultan2008globalview
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/111474423#L1
+    quote: 'A global survey of messenger RNA splicing events identified 94,241 splice junctions (4096
+      of which were previously unidentified)
+
+      '
+  confidence: high
+- id: TECH-023
+  claim: 'The widely quoted "about 95 per cent of multi-exon human genes are alternatively spliced" is
+    not a pure RNA-seq result: its source states the estimate came from combining mRNA-Seq with EST and
+    cDNA sequence data.
+
+    '
+  topic: short-read RNA-seq - provenance of the 95 per cent figure
+  source:
+    doc_id: '111901595'
+    title: Deep surveying of alternative splicing complexity in the human transcriptome by high-throughput
+      sequencing
+    authors: Pan, Q.; Shai, O.; Lee, L. J.; Frey, B. J.; Blencowe, B. J.
+    journal: Nature Genetics
+    year: 2008
+    doi: 10.1038/ng.259
+    bibkey: pan2008deepsurveying
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/111901595#L1
+    quote: 'By combining mRNA-Seq and EST-cDNA sequence data, we estimate that transcripts from approximately
+      95% of multiexon genes undergo alternative splicing
+
+      '
+  confidence: high
+  figure_idea: 'A provenance chain for the 95 per cent figure: observed junctions, the EST/cDNA data folded
+    in, the extrapolation step, and the final number, with measured and inferred links drawn differently.
+
+    '
+- id: TECH-024
+  claim: 'The companion 2008 study cited for the same claim sequenced 12 to 29 million 32-base cDNA fragments
+    per sample from ten human tissues and five mammary epithelial or breast cancer cell lines.
+
+    '
+  topic: short-read RNA-seq - the depth and read length behind the near-universality claim
+  source:
+    doc_id: PMC2593745
+    title: Alternative Isoform Regulation in Human Tissue Transcriptomes
+    authors: Wang, E. T.; Sandberg, R.; Luo, S.; Khrebtukova, I.; Zhang, L.; Mayr, C.; Kingsmore, S. F.;
+      Schroth, G. P.; Burge, C. B.
+    journal: Nature
+    year: 2008
+    doi: 10.1038/nature07509
+    bibkey: wang2008alternative
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L15
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2593745#L15
+    quote: 'amplify and sequence between 12 and 29 million 32 bp cDNA fragments from 10 diverse human
+      tissues and 5 mammary epithelial
+
+      '
+  confidence: high
+- id: TECH-025
+  claim: 'The near-universality figure is an extrapolation over a stated denominator, not a count: multi-exon
+    genes - 94 per cent of all RefSeq genes - were binned by read coverage and a sigmoid was fitted, giving
+    an asymptote near 98 to 100 per cent of multi-exon genes, which on rescaling to all genes matches
+    the 92 to 94 per cent the paper''s abstract reports. The paper does not itself perform that rescaling;
+    it performs the analogous one for the threshold-bound figure.
+
+    '
+  topic: short-read RNA-seq - how the near-100 per cent estimate was obtained
+  source:
+    doc_id: PMC2593745
+    title: Alternative Isoform Regulation in Human Tissue Transcriptomes
+    authors: Wang, E. T.; Sandberg, R.; Luo, S.; Khrebtukova, I.; Zhang, L.; Mayr, C.; Kingsmore, S. F.;
+      Schroth, G. P.; Burge, C. B.
+    journal: Nature
+    year: 2008
+    doi: 10.1038/nature07509
+    bibkey: wang2008alternative
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L10,L19,L20
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2593745#L10,L19,L20
+    quote: 'the multi-exon genes in the Refseq database (94% of all Refseq genes) by read coverage and
+      fitting to a sigmoid curve enabled estimation
+
+      '
+  confidence: high
+- id: TECH-026
+  claim: 'The same paper carries a second, threshold-bound figure that is the more conservative one: 92
+    per cent of multi-exon genes, once a minor isoform was required to exceed 15 per cent of the gene''s
+    output in at least one sample - which the authors rescale to about 86 per cent of all human genes.
+
+    '
+  topic: short-read RNA-seq - what the number means once an abundance threshold is imposed
+  source:
+    doc_id: PMC2593745
+    title: Alternative Isoform Regulation in Human Tissue Transcriptomes
+    authors: Wang, E. T.; Sandberg, R.; Luo, S.; Khrebtukova, I.; Zhang, L.; Mayr, C.; Kingsmore, S. F.;
+      Schroth, G. P.; Burge, C. B.
+    journal: Nature
+    year: 2008
+    doi: 10.1038/nature07509
+    bibkey: wang2008alternative
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L20
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2593745#L20
+    quote: 'fully 92% of multi-exon genes were estimated to undergo AS when considering only events for
+      which the relative frequency of the minor
+
+      '
+  confidence: high
+- id: TECH-027
+  claim: 'The full-length reconstruction problem was named in the EST era: the high-throughput methods
+    of the day returned detailed information about short fragments rather than complete forms, and recovering
+    whole isoform structures from a fragment mixture was posed as a separate inference task.
+
+    '
+  topic: central limitation - fragments versus full-length forms
+  source:
+    doc_id: '136298934'
+    title: 'The Multiassembly Problem: Reconstructing Multiple Transcript Isoforms From EST Fragment Mixtures'
+    authors: Xing, Y.; Resch, A.; Lee, C.
+    journal: Genome Research
+    year: 2004
+    doi: 10.1101/gr.1304504
+    bibkey: xing2004multiassembly
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/136298934#L1
+    quote: 'most high-throughput experimental methods for characterizing transcripts (such as EST sequencing)
+      give highly detailed information about short fragments of transcripts
+
+      '
+  confidence: high
+- id: TECH-028
+  claim: 'The Cufflinks authors state the central short-read limitation in their own opening paragraph:
+    assembly and abundance estimation are hard because a read generally cannot be attributed to one isoform.
+
+    '
+  topic: central limitation - authors' own statement of read-to-isoform ambiguity
+  source:
+    doc_id: PMC3146043
+    title: Transcript assembly and abundance estimation from RNA-Seq reveals thousands of new transcripts
+      and switching among isoforms
+    authors: Trapnell, C.; Williams, B. A.; Pertea, G.; Mortazavi, A.; Kwan, G.; van Baren, M. J.; Salzberg,
+      S. L.; Wold, B. J.; Pachter, L.
+    journal: Nature Biotechnology
+    year: 2010
+    doi: 10.1038/nbt.1621
+    bibkey: trapnell2010transcript
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L13
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3146043#L13
+    quote: 'the analysis of RNA-Seq data presents major challenges in transcript assembly and abundance
+      estimation arising from the ambiguous assignment of reads to isoforms
+
+      '
+  confidence: high
+  figure_idea: 'One locus, two isoforms sharing all but one exon, with a short read drawn inside the shared
+    region: the read is compatible with both paths. Then the same locus with a read spanning the full
+    structure. The contrast is the hinge into the long-read chapter.
+
+    '
+- id: TECH-029
+  claim: 'The same authors record what they had done instead in their own earlier RNA-seq work: quantify
+    genes without allocating reads among alternative isoforms, even while reporting evidence that several
+    forms were co-expressed.
+
+    '
+  topic: central limitation - the gene-level workaround, stated by its own authors
+  source:
+    doc_id: PMC3146043
+    title: Transcript assembly and abundance estimation from RNA-Seq reveals thousands of new transcripts
+      and switching among isoforms
+    authors: Trapnell, C.; Williams, B. A.; Pertea, G.; Mortazavi, A.; Kwan, G.; van Baren, M. J.; Salzberg,
+      S. L.; Wold, B. J.; Pachter, L.
+    journal: Nature Biotechnology
+    year: 2010
+    doi: 10.1038/nbt.1621
+    bibkey: trapnell2010transcript
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L13
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3146043#L13
+    quote: 'We did not attempt to allocate reads to specific alternate isoforms although we found ample
+      evidence that multiple splice and promoter isoforms are often co-expressed
+
+      '
+  confidence: high
+- id: TECH-030
+  claim: 'A community assessment of transcript reconstruction found best-method transcript-level recovery
+    falling as the genome got more complex: 56 to 59 per cent of spliced protein-coding transcripts in
+    C. elegans, 43 per cent in D. melanogaster and 21 per cent in H. sapiens.
+
+    '
+  topic: central limitation - measured transcript-level recovery
+  source:
+    doc_id: PMC3851240
+    title: Assessment of transcript reconstruction methods for RNA-seq
+    authors: The RGASP Consortium; Steijger, T.; Abril, J. F.; Engström, P. G.; Kokocinski, F.; Hubbard,
+      T. J.; Guigó, R.; Harrow, J.; Bertone, P.
+    journal: Nature Methods
+    year: 2013
+    doi: 10.1038/nmeth.2714
+    bibkey: steijger2013assessment
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L61
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3851240#L61
+    quote: '43% from D. melanogaster (Augustus) and merely 21% from H. sapiens (Trembly)
+
+      '
+  confidence: high
+  figure_idea: 'A grouped bar of best-method transcript-level sensitivity by species from that assessment,
+    with gene-level sensitivity ghosted behind it - the gap between the two bars is the cost of needing
+    whole structures.
+
+    '
+- id: TECH-031
+  claim: 'That assessment separated the two failure modes and found both active: for most transcripts
+    not every constituent exon was detected, and even where all exons were reported the methods frequently
+    could not link them into a complete isoform.
+
+    '
+  topic: central limitation - detection versus linkage, in the assessors' words
+  source:
+    doc_id: PMC3851240
+    title: Assessment of transcript reconstruction methods for RNA-seq
+    authors: The RGASP Consortium; Steijger, T.; Abril, J. F.; Engström, P. G.; Kokocinski, F.; Hubbard,
+      T. J.; Guigó, R.; Harrow, J.; Bertone, P.
+    journal: Nature Methods
+    year: 2013
+    doi: 10.1038/nmeth.2714
+    bibkey: steijger2013assessment
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L75
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3851240#L75
+    quote: 'in cases in which all exons were reported, the protocols tested often failed to assemble the
+      exons into complete isoforms
+
+      '
+  confidence: high
+- id: TECH-032
+  claim: 'The limitation is formal, not only practical: different sets of transcript abundances can generate
+    the observed reads with equal likelihood, so the maximum-likelihood answer is not unique and the underlying
+    true expression cannot be determined from the reads.
+
+    '
+  topic: central limitation - non-identifiability of transcript quantification
+  source:
+    doc_id: PMC8892959
+    title: Deriving Ranges of Optimal Estimated Transcript Expression due to Nonidentifiability
+    authors: Zheng, H.; Ma, C.; Kingsford, C.
+    journal: Journal of Computational Biology
+    year: 2022
+    doi: 10.1089/cmb.2021.0444
+    bibkey: zheng2022nonidentifiability
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L6
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8892959#L6
+    quote: 'the most likely estimates for transcript abundances are not unique. This means multiple estimates
+      of transcript abundances generate the observed RNA-seq reads with equal likelihood
+
+      '
+  confidence: high
+- id: TECH-033
+  claim: 'Sequencing deeper does not dissolve the ambiguity: multi-mapping reads are prevalent in RNA-seq
+    data regardless of sequencing depth, so this source of uncertainty cannot be addressed by collecting
+    more data.
+
+    '
+  topic: central limitation - why depth cannot fix it
+  source:
+    doc_id: PMC8892959
+    title: Deriving Ranges of Optimal Estimated Transcript Expression due to Nonidentifiability
+    authors: Zheng, H.; Ma, C.; Kingsford, C.
+    journal: Journal of Computational Biology
+    year: 2022
+    doi: 10.1089/cmb.2021.0444
+    bibkey: zheng2022nonidentifiability
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L15
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8892959#L15
+    quote: 'Multimapped reads are prevalent in RNA-seq data regardless of the sequencing depth.
+
+      '
+  confidence: high
+- id: TECH-034
+  claim: 'Read length buys isoform assignment measurably: comparing two Illumina paired-end libraries
+    from the same cell line, 25.04 per cent of assignable 75-base reads matched exactly one annotated
+    isoform, against 32.98 per cent at 262 bases.
+
+    '
+  topic: central limitation - the effect of read length on assignment ambiguity
+  source:
+    doc_id: PMC4176000
+    title: High-Resolution Transcriptome Analysis with Long-Read RNA Sequencing
+    authors: Cho, H.; Davis, J.; Li, X.; Smith, K. S.; Battle, A.; Montgomery, S. B.
+    journal: PLoS ONE
+    year: 2014
+    doi: 10.1371/journal.pone.0108095
+    bibkey: cho2014highresolution
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L39
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4176000#L39
+    quote: 'were unambiguously assigned to a single isoform, which is 7.94% higher than 25.04% observed
+      for L75
+
+      '
+  confidence: high
+  figure_idea: 'Fraction of reads assignable to exactly one annotated isoform as a function of read length,
+    with the two measured points marked and the short-read and long-read regimes labelled.
+
+    '
+- id: TECH-035
+  claim: 'The workaround became a named category of analysis: event-based tools that count reads over
+    particular exons and junctions and report a percent-spliced-in value, measuring one decision instead
+    of solving for full-length structure.
+
+    '
+  topic: central limitation - the event-level (PSI) workaround
+  source:
+    doc_id: PMC5777382
+    title: The Expanding Landscape of Alternative Splicing Variation in Human Populations
+    authors: Park, E.; Pan, Z.; Zhang, Z.; Lin, L.; Xing, Y.
+    journal: The American Journal of Human Genetics
+    year: 2018
+    doi: 10.1016/j.ajhg.2017.11.002
+    bibkey: park2018expanding
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L25
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5777382#L25
+    quote: 'The second category represents event-based tools that seek to directly quantify individual
+      alternative splicing events by using RNA-seq data.
+
+      '
+  confidence: high
+  figure_idea: 'A fork diagram of the two analysis families the short-read era produced - transcript-based
+    estimation under ambiguity, and event-based PSI - with the question each branch can and cannot answer
+    written at its end.
+
+    '
+leads:
+- note: 'Abstract-only records in this corpus expose no `authors` or `journal` field: meta.json carries
+    only title, doi, pmid, pmcid, pub_year and the abstract, and `paperclip sql "SELECT id, authors, journal_title
+    FROM documents WHERE id IN (...)"` returns zero rows for their numeric ids because that table covers
+    only PMC and the preprint servers. Every `authors` and `journal` string on an `abstract_only` claim
+    above was supplied by the researcher from general knowledge, not read from a source. Authors and journal
+    for the nine PMC sources WERE read from the corpus via that sql query and are reliable.
+
+    '
+  why: 'references.bib would silently inherit an unverified author list for the 17 abstract-only citations.
+    Each should be regenerated from the DOI. One entry (TECH-008, doi 10.1093/nar/15.5.1995) carries an
+    explicit RESOLVE FROM DOI placeholder because the researcher does not know its author list at all.
+
+    '
+- note: 'Early, P., Rogers, J., Davis, M., Calame, K., Bond, M., Wall, R., Hood, L. "Two mRNAs can be
+    produced from a single immunoglobulin mu gene by alternative RNA processing pathways" (Cell, 1980)
+    is not in the corpus under any search run here. Searches run: `lookup title` with the exact title;
+    `search -s abstracts` with the exact title; `search -s papers` with the exact title; and two paraphrase
+    searches on `-s abstracts` ("immunoglobulin heavy chain mu gene two mRNAs membrane secreted forms
+    differential processing" and "mRNA for surface immunoglobulin mu chain is sequence of two separate
+    segments remote from each other"). `lookup` returned nothing; the two exact-title searches returned
+    unrelated mu-locus papers; only the two paraphrase searches surfaced the companion Rogers et al. 1980
+    Cell paper (doc 135795311), which is what TECH-004 cites.
+
+    '
+  why: 'That is the paper that supplied the phrase "alternative RNA processing pathways" and is usually
+    cited beside Rogers for the mu switch. If the chapter names both, the Early citation must be added
+    by hand.
+
+    '
+- note: 'Three papers the chapter may want are in the corpus but were cut for the 35-claim cap, each verified
+    present by an exact-title `-s abstracts` search. Clark, T. A. et al. "Genomewide Analysis of mRNA
+    Processing in Yeast Using Splicing-Specific Microarrays" (Science 2002, doi 10.1126/science.1069415)
+    is abstract-only record 175452550; its abstract states the arrays were designed to distinguish spliced
+    from unspliced RNA for every intron-containing yeast gene. Engstrom, P. G. et al. "Systematic evaluation
+    of spliced alignment programs for RNA-seq data" (2013) is full-text PMC4018468, the alignment companion
+    to the RGASP transcript assessment cited in TECH-030 and TECH-031; its content was NOT read here,
+    only its presence confirmed. Katz, Y. et al. "Analysis and design of RNA sequencing experiments for
+    identifying isoform regulation" (Nature Methods 2010, doi 10.1038/nmeth.1528) is abstract-only record
+    97989760 - the canonical MISO citation, citable at abstract level only.
+
+    '
+  why: 'Clark 2002 is the first splicing-sensitive array and the natural opening for the array section;
+    Engstrom covers the multi-mapping half of the short-read limitation at full text; MISO is where PSI-with-uncertainty
+    enters the field. All three are one `cat` away if the chapter needs them.
+
+    '
+- note: 'Two headline numbers for the same claim sit side by side in late 2008 and are not the same measurement.
+    Pan et al. (doc 111901595) report approximately 95 per cent of multi-exon genes, explicitly from mRNA-Seq
+    combined with EST and cDNA data (TECH-023). Wang et al. (PMC2593745) give one estimate over two denominators:
+    a sigmoid asymptote near 98 to 100 per cent of multi-exon genes, which is the 92 to 94 per cent of
+    all genes quoted in their abstract once multiplied by the 94 per cent of genes that are multi-exon
+    (TECH-025); and, under a 15 per cent minor-isoform threshold, 92 per cent of multi-exon genes or about
+    86 per cent of all genes (TECH-026). The 98-100 to 92-94 rescaling is the researcher''s arithmetic,
+    mirroring the paper''s own 0.92 x 0.94 step; the paper states it only for the threshold-bound pair.
+
+    '
+  why: '"92-94%", "95%", "98-100%" and "86%" are all in circulation for what reads as one fact. Any sentence
+    or table using them must state the denominator and the abundance threshold, or it will read as an
+    error. Per SCHEMA, all are recorded and none is picked.
+
+    '
+- note: 'EST library-construction bias is documented in the corpus but is not claimed above. PMC1431573,
+    "Quantitative comparison of EST libraries requires compensation for systematic biases in cDNA generation"
+    (BMC Bioinformatics 2006, doi 10.1186/1471-2105-7-77), states at L10 that transcript-sampling biases
+    in EST libraries are an under-appreciated source of false positive tissue-specific candidates. It
+    was cut because it analyses mouse libraries and frames the result around 3''-UTR length rather than
+    splice variants.
+
+    '
+  why: 'The brief asks for library depth, 5''/3'' bias and clone artifacts. Depth is covered by TECH-013
+    and artifacts by TECH-014; library bias is the one leg with no first-rate source. A paper measuring
+    that effect directly on splice-variant calls would close the gap.
+
+    '
+- note: 'No claim above anchors the assertion that low-throughput methods biased the field toward believing
+    anything in particular. Nothing read in this corpus states it. The nearest anchored facts are that
+    RT-PCR was the conventional assay (TECH-007), that a standard S1 configuration was non-diagnostic
+    for splicing (TECH-008), and that combinatorial linkage remained out of reach into 2010 (TECH-009).
+
+    '
+  why: 'The chapter can argue the bias, but it must be argued from the method facts, not cited to a source.
+    Flagging so the writing pass does not attach a reference to it. Northern blotting is now covered indirectly
+    by TECH-036, which records nuclease protection being argued as preferable to RNA blot analysis; no
+    primary Northern-blot splicing paper is cited.
+
+    '

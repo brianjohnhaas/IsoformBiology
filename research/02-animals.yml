@@ -1,0 +1,1110 @@
+area: animals
+researcher: agent-02-animals
+date: 2026-11-21
+corpus: paperclip 0.8.23
+claims:
+- id: ANM-001
+  claim: 'Drosophila Dscam1 reaches its famous isoform count combinatorially: three mutually exclusive
+    exon clusters of 12, 48 and 33 variants build 19,008 distinct ectodomains, and pairing each of those
+    with one of two alternative transmembrane exons yields the 38,016 figure usually quoted.
+
+    '
+  topic: Dscam1 architecture
+  source:
+    doc_id: PMC10325099
+    title: A systematic CRISPR screen reveals redundant and specific roles for Dscam1 isoform diversity
+      in neuronal wiring
+    authors: Dong, H.; Yang, X.; Wu, L.; Zhang, S.; Zhang, J.; Guo, P.; Du, Y.; Pan, C.; Fu, Y.; Li, L.;
+      Shi, J.; Zhu, Y.; Ma, H.; Bian, L.; Xu, B.; Li, G.; Shi, F.; Huang, J.; He, H.; Jin, Y.
+    journal: PLOS Biology
+    year: 2023
+    doi: 10.1371/journal.pbio.3002197
+    bibkey: dong2023dscamscreen
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L12
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC10325099#L12
+    quote: 'mutually exclusive alternative splicing of 12 exon 4s, 48 exon 6s, 33 exon 9s, and 2 exon
+      17s, comprising 19,008 ectodomains
+
+      '
+  confidence: high
+  figure_idea: 'A combinatorial tree that makes the multiplication visible: three stacked cluster bars
+    (12, 48, 33) feeding one ectodomain count, then a two-way split for the transmembrane choice - so
+    a reader sees why two different numbers (19,008 and 38,016) are both correct for the same gene.
+
+    '
+- id: ANM-002
+  claim: 'Dscam1 ectodomains bind homophilically with near-absolute specificity - each isoform recognises
+    itself and binds other isoforms weakly or not at all - which is the molecular property that lets isoform
+    identity serve as a cell-surface label.
+
+    '
+  topic: Dscam1 function
+  source:
+    doc_id: '134680986'
+    title: Alternative Splicing of Drosophila Dscam Generates Axon Guidance Receptors that Exhibit Isoform-Specific
+      Homophilic Binding
+    authors: Wojtowicz, W. M.; Flanagan, J. J.; Millard, S.; Zipursky, S.; Clemens, J. C.
+    journal: Cell
+    year: 2004
+    doi: 10.1016/j.cell.2004.08.021
+    bibkey: dscam2004homophilicbinding
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/134680986#L1
+    quote: 'Each isoform binds to itself but does not bind or binds poorly to other isoforms.
+
+      '
+  confidence: high
+- id: ANM-003
+  claim: 'Self-avoidance works because sister dendrites of one neuron carry the same Dscam1 isoforms and
+    therefore recognise each other; the recognition event is converted into repulsion by the Dscam1 cytoplasmic
+    tail, not by the variable ectodomain.
+
+    '
+  topic: Dscam1 function
+  source:
+    doc_id: '118307705'
+    title: Dendrite Self-Avoidance Is Controlled by Dscam
+    authors: Matthews, B. J.; Kim, M. E.; Flanagan, J. J.; Hattori, D.; Clemens, J. C.; Zipursky, S. L.;
+      Grueber, W. B.
+    journal: Cell
+    year: 2007
+    doi: 10.1016/j.cell.2007.04.013
+    bibkey: dscam2007dendriteselfavoidance
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/118307705#L1
+    quote: 'interactions between identical Dscam isoforms on the cell surface underlie self-recognition,
+      while the cytoplasmic tail converts this recognition to dendrite repulsion
+
+      '
+  confidence: high
+  figure_idea: 'Two sister branches from one neuron meeting and turning away, beside two branches from
+    different neurons crossing freely - the same molecule producing opposite outcomes purely from isoform
+    match versus mismatch.
+
+    '
+- id: ANM-004
+  claim: 'Single-cell measurements showed that an individual Drosophila neuron uses only a small, cell-type-biased
+    slice of the Dscam1 repertoire: R3/R4 photoreceptors were estimated to express on the order of 14
+    to 50 distinct isoform mRNAs each.
+
+    '
+  topic: Dscam1 expression
+  source:
+    doc_id: '136901354'
+    title: Stochastic yet biased expression of multiple Dscam splice variants by individual cells
+    authors: Neves, G.; Zucker, J.; Daly, M.; Chess, A.
+    journal: Nature Genetics
+    year: 2004
+    doi: 10.1038/ng1299
+    bibkey: dscam2004stochasticbiased
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/136901354#L1
+    quote: 'each R3/R4 photoreceptor cell expresses 14-50 distinct mRNAs chosen from the spectrum of thousands
+      of splice variants distinctive of its cell type
+
+      '
+  confidence: high
+- id: ANM-005
+  claim: 'In C. elegans, ribosome-associated profiling of three tissues and two neuron subtypes found
+    that the splicing events which differ between tissues are preferentially the frame-preserving ones
+    and are better conserved across Caenorhabditis species than other alternative exons.
+
+    '
+  topic: Invertebrate tissue-specific splicing
+  source:
+    doc_id: PMC7706725
+    title: Global regulatory features of alternative splicing across tissues and within the nervous system
+      of C. elegans
+    authors: Koterniak, B.; Pilaka, P. P.; Gracida, X.; Schneider, L. M.; Pritišanac, I.; Zhang, Y.; Calarco,
+      J. A.
+    journal: Genome Research
+    year: 2020
+    doi: 10.1101/gr.267328.120
+    bibkey: koterniak2020celegansplicing
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L8
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7706725#L8
+    quote: 'Alternative splicing events differentially regulated between tissues are more often frame-preserving,
+      are more highly conserved across Caenorhabditis species
+
+      '
+  confidence: high
+  figure_idea: 'Two properties plotted for the same exon sets - fraction frame-preserving and cross-species
+    conservation - with tissue-regulated exons against all other alternative exons, since the argument
+    is that the two properties travel together.
+
+    '
+- id: ANM-006
+  claim: 'Mutual exclusivity in the Dscam1 exon 6 cluster is enforced in cis by RNA structure: a single
+    intronic docking site pairs with the selector sequence upstream of one variable exon at a time, physically
+    presenting only that exon to the upstream constitutive exon.
+
+    '
+  topic: Dscam1 splicing mechanism
+  source:
+    doc_id: '128751140'
+    title: Mutually Exclusive Splicing of the Insect Dscam Pre-mRNA Directed by Competing Intronic RNA
+      Secondary Structures
+    authors: Graveley, B. R.
+    journal: Cell
+    year: 2005
+    doi: 10.1016/j.cell.2005.07.028
+    bibkey: dscam2005dockingselector
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/128751140#L1
+    quote: 'each selector sequence is complementary to a portion of the docking site, and this pairing
+      juxtaposes one, and only one, alternative exon
+
+      '
+  confidence: high
+  figure_idea: 'The docking-site/selector pairing drawn as a competition: one docking site and many candidate
+    selectors, with only the paired one looped into splicing range - the rest excluded by geometry rather
+    than by a repressor.
+
+    '
+- id: ANM-007
+  claim: 'Dscam1 isoform number is itself required for wiring fidelity, not merely correlated with it:
+    two alleles that cut the maximum possible repertoire from 38,016 to 22,176 still produced specific
+    connectivity defects in mechanosensory neurons.
+
+    '
+  topic: Dscam1 diversity requirement
+  source:
+    doc_id: '125247324'
+    title: The Molecular Diversity of Dscam Is Functionally Required for Neuronal Wiring Specificity in
+      Drosophila
+    authors: Chen, B. E.; Kondo, M.; Garnier, A.; Watson, F. L.; Püettmann-Holgado, R.; Lamar, D. R.;
+      Schmucker, D.
+    journal: Cell
+    year: 2006
+    doi: 10.1016/j.cell.2006.03.034
+    bibkey: dscam2006diversityrequired
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/125247324#L1
+    quote: 'two Dscam alleles were generated that each reduced the maximally possible Dscam diversity
+      to 22,176 isoforms
+
+      '
+  confidence: high
+- id: ANM-008
+  claim: 'A CRISPR deletion series spanning 396 to 18,612 possible ectodomains separated two jobs for
+    Dscam1 diversity: dendrite self/non-self discrimination saturated at about 2,000 isoforms and did
+    not care which exon cluster supplied them, whereas normal axon patterning needed many more and depended
+    on which clusters were present.
+
+    '
+  topic: Dscam1 diversity requirement
+  source:
+    doc_id: PMC10325099
+    title: A systematic CRISPR screen reveals redundant and specific roles for Dscam1 isoform diversity
+      in neuronal wiring
+    authors: Dong, H.; Yang, X.; Wu, L.; Zhang, S.; Zhang, J.; Guo, P.; Du, Y.; Pan, C.; Fu, Y.; Li, L.;
+      Shi, J.; Zhu, Y.; Ma, H.; Bian, L.; Xu, B.; Li, G.; Shi, F.; Huang, J.; He, H.; Jin, Y.
+    journal: PLOS Biology
+    year: 2023
+    doi: 10.1371/journal.pbio.3002197
+    bibkey: dong2023dscamscreen
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L9,L32
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC10325099#L9,L32
+    quote: 'approximately 2,000 Dscam1 isoforms are sufficient to maintain a normal overlap between class
+      I and III dendrites
+
+      '
+  confidence: high
+  figure_idea: 'Phenotype severity against repertoire size on a log axis, with the saturating curve for
+    dendrite discrimination overlaid on the non-saturating curve for axon patterning - one trait buys
+    off at ~2,000 isoforms, the other keeps improving.
+
+    '
+- id: ANM-009
+  claim: 'Conservation splits the catalogue rather than validating it: a human-mouse exon comparison predicted
+    only about 2,000 alternatively spliced exons conserved between the two species, found those to be
+    markedly more frame-preserving and domain-sparing than other events, and concluded that the great
+    majority of alternative splicing in the human EST record is not conserved in mouse.
+
+    '
+  topic: Conservation of isoform usage
+  source:
+    doc_id: '131662694'
+    title: Identification and analysis of alternative splicing events conserved in human and mouse
+    authors: Yeo, G. W.; Van Nostrand, E.; Holste, D.; Poggio, T.; Burge, C. B.
+    journal: Proceedings of the National Academy of Sciences
+    year: 2005
+    doi: 10.1073/pnas.0409742102
+    bibkey: conservedas2005humanmouseexons
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/131662694#L1
+    quote: 'Predicted ACEs were much more likely to preserve the reading frame and less likely to disrupt
+      protein domains than other AS events
+
+      '
+  confidence: high
+  figure_idea: 'A nested-set diagram: all detected human alternative splicing events, the subset conserved
+    in mouse, and the subset that is both conserved and frame-preserving - with the areas honest about
+    the shrinkage, because that shrinkage is the whole conservation argument.
+
+    '
+- id: ANM-010
+  claim: 'Isoform bias, not only isoform count, is functional: flies with normal overall Dscam1 protein
+    levels and an identical number of possible isoforms but a globally shifted exon 9 usage distribution
+    showed marked mushroom-body defects, while the equivalent exon 4 shift did not.
+
+    '
+  topic: Dscam1 splicing bias
+  source:
+    doc_id: '7365494'
+    title: Intron-targeted mutagenesis reveals roles for Dscam1 RNA pairing architecture-driven splicing
+      bias in neuronal wiring
+    authors: Hong, W.; Zhang, J.; Dong, H.; Shi, Y.; Ma, H.; Zhou, F.; Xu, B.; Fu, Y.; Zhang, S.; Hou,
+      S.; Li, G.; Wu, Y.; Chen, S.; Zhu, X.; You, W.; Shi, F.; Yang, X.; Gong, Z.; Huang, J.; Jin, Y.
+    journal: Cell Reports
+    year: 2021
+    doi: 10.1016/j.celrep.2021.109373
+    bibkey: dscam2021splicingbias
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/7365494#L1
+    quote: 'We generate mutant flies with normal overall protein levels and an identical number but global
+      changes in exon 4 and 9 isoform bias
+
+      '
+  confidence: high
+  figure_idea: 'Two isoform-usage histograms over the exon 9 variants - wild type and docking-site deletion
+    - with identical total area and identical bar count but different shape, captioned to show that the
+    only variable changed is the distribution.
+
+    '
+- id: ANM-011
+  claim: 'Those authors conclude that number and bias do different jobs, because changing isoform bias
+    damaged axonal wiring without affecting the self-avoidance of axonal branches - the one function the
+    isoform count is thought to underwrite.
+
+    '
+  topic: Dscam1 splicing bias
+  source:
+    doc_id: '7365494'
+    title: Intron-targeted mutagenesis reveals roles for Dscam1 RNA pairing architecture-driven splicing
+      bias in neuronal wiring
+    authors: Hong, W.; Zhang, J.; Dong, H.; Shi, Y.; Ma, H.; Zhou, F.; Xu, B.; Fu, Y.; Zhang, S.; Hou,
+      S.; Li, G.; Wu, Y.; Chen, S.; Zhu, X.; You, W.; Shi, F.; Yang, X.; Gong, Z.; Huang, J.; Jin, Y.
+    journal: Cell Reports
+    year: 2021
+    doi: 10.1016/j.celrep.2021.109373
+    bibkey: dscam2021splicingbias
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/7365494#L1
+    quote: 'changes in isoform bias cause axonal defects but do not influence the self-avoidance of axonal
+      branches
+
+      '
+  confidence: high
+- id: ANM-012
+  claim: 'The authors note the tension their own result creates for the standard model: strong, reproducible
+    splicing bias is hard to reconcile with a pure self-avoidance account, because heavy bias restricts
+    access to the very diversity self-avoidance is supposed to exploit.
+
+    '
+  topic: Dscam1 splicing bias
+  source:
+    doc_id: bio_e869b38c6c03
+    title: Intron-targeted mutagenesis reveals roles for Dscam1 RNA pairing-mediated splicing bias in
+      neuronal wiring
+    authors: Hong, W.; Dong, H.; Zhang, J.; Zhou, F.; Wu, Y.; Shi, Y.; Chen, S.; Xu, B.; You, W.; Shi,
+      F.; Yang, X.; Gong, Z.; Huang, J.; Jin, Y.
+    journal: bioRxiv
+    year: 2019
+    doi: 10.1101/622217
+    bibkey: hong2019dscamsplicingbias
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L17
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_e869b38c6c03#L17
+    quote: 'highly biased splicing heavily limits access to the full diversity from a pool of Dscam1 isoforms
+
+      '
+  confidence: medium
+- id: ANM-013
+  claim: 'In the Drosophila somatic sex-determination cascade the female Sex-lethal protein acts directly
+    on RNA, binding the transformer transcript at or near its non-sex-specific 3'' acceptor site and so
+    forcing use of the downstream, female-productive acceptor.
+
+    '
+  topic: Drosophila sex determination cascade
+  source:
+    doc_id: '138529056'
+    title: Binding of the Drosophila Sex-lethal gene product to the alternative splice site of transformer
+      primary transcript
+    authors: Inoue, K.; Hoshijima, K.; Sakamoto, H.; Shimura, Y.
+    journal: Nature
+    year: 1990
+    doi: 10.1038/344461a0
+    bibkey: sxl1990trasplicesite
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/138529056#L1
+    quote: 'female Sxl-encoded protein binds specifically to the tra transcript at or near the non-sex-specific
+      acceptor site
+
+      '
+  confidence: high
+  figure_idea: 'The cascade as three stacked pre-mRNAs with the male and female splice choice drawn on
+    each, so the reader sees one regulatory decision being handed down the chain rather than three independent
+    switches.
+
+    '
+- id: ANM-014
+  claim: 'At the bottom of the cascade Tra and Tra2 act positively, recruiting general SR-family splicing
+    factors to a regulatory element lying downstream of the female-specific 3'' splice site of doublesex,
+    and that assembled complex is what commits the pre-mRNA to the female pattern.
+
+    '
+  topic: Drosophila sex determination cascade
+  source:
+    doc_id: '135912614'
+    title: A splicing enhancer complex controls alternative splicing of doublesex pre-mRNA
+    authors: Tian, M.; Maniatis, T.
+    journal: Cell
+    year: 1993
+    doi: 10.1016/0092-8674(93)90298-5
+    bibkey: dsx1993spliceenhancercomplex
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/135912614#L1
+    quote: 'Tra and Tra2 act by recruiting general splicing factors to a regulatory element located downstream
+      of a female-specific 3'' splice site
+
+      '
+  confidence: high
+- id: ANM-015
+  claim: 'doublesex is the clearest case of one gene whose two isoforms do opposite things: the female
+    product represses male differentiation and the male product represses female differentiation, both
+    of them described as functional products of the same primary transcript.
+
+    '
+  topic: Drosophila sex determination cascade
+  source:
+    doc_id: '135661199'
+    title: Drosophila doublesex gene controls somatic sexual differentiation by producing alternatively
+      spliced mRNAs encoding related sex-specific polypeptides
+    authors: Burtis, K. C.; Baker, B. S.
+    journal: Cell
+    year: 1989
+    doi: 10.1016/0092-8674(89)90633-8
+    bibkey: dsx1989sexspecificpolypeptides
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/135661199#L1
+    quote: 'one product is expressed in females and represses male differentiation, and the other is expressed
+      in males and represses female differentiation
+
+      '
+  confidence: high
+- id: ANM-016
+  claim: 'A third position in the function-versus-noise argument is that much alternative splicing is
+    neither protein diversity nor error but expression control: measuring across eight assays gave threefold
+    more unproductive splicing than steady-state RNA had suggested, with 15 per cent of transcript molecules
+    from protein-coding genes unproductive, and trait-associated loci acting through splicing were as
+    often explained by decay-driven expression changes as by isoform usage.
+
+    '
+  topic: Functional versus noise
+  source:
+    doc_id: PMC11387194
+    title: Global impact of unproductive splicing on human gene expression
+    authors: Fair, B.; Buen Abad Najar, C. F.; Zhao, J.; Lozano, S.; Reilly, A.; Mossian, G.; Staley,
+      J. P.; Wang, J.; Li, Y. I.
+    journal: Nature Genetics
+    year: 2024
+    doi: 10.1038/s41588-024-01872-x
+    bibkey: fair2024unproductivesplicing
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L10
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11387194#L10
+    quote: 'resulting in 15% of transcript molecules from protein-coding genes being unproductive
+
+      '
+  confidence: high
+  figure_idea: 'A three-way split of the same transcript pool - productive and tissue-regulated, productive
+    but minor, and unproductive/NMD-destined - so the reader sees that "is alternative splicing functional"
+    is really three questions with three different answers.
+
+    '
+- id: ANM-017
+  claim: 'Human CD45 produces five transmembrane phosphatase isoforms that differ only in their extracellular
+    domains, through inclusion or skipping of variable exons 4, 5 and 6; resting peripheral T cells carry
+    the long forms with two or three of those exons, and activated T cells express forms lacking most
+    or all of them.
+
+    '
+  topic: CD45 isoform switching
+  source:
+    doc_id: '128403124'
+    title: Differential Expression of CD45 Isoforms Is Controlled by the Combined Activity of Basal and
+      Inducible Splicing-regulatory Elements in Each of the Variable Exons
+    authors: Tong, A.; Nguyen, J.; Lynch, K. W.
+    journal: Journal of Biological Chemistry
+    year: 2005
+    doi: 10.1074/jbc.m508123200
+    bibkey: cd452005variableexonelements
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/128403124#L1
+    quote: 'resting cells predominantly express the larger CD45 isoforms, encoded by mRNAs containing
+      two or three variable exons
+
+      '
+  confidence: high
+  figure_idea: 'A two-state diagram of the same gene: exon cassette included versus skipped, with the
+    resulting long and short ectodomains drawn to scale next to a resting and an activated T cell - the
+    switch, not the gene, changes.
+
+    '
+- id: ANM-018
+  claim: 'The CD45 ectodomain length is functionally consequential rather than cosmetic: in T cell lines
+    carrying a defined receptor, the short exon-null isoform characteristic of memory CD4 cells supported
+    antigen recognition best, so the splice choice tunes signalling sensitivity without altering receptor
+    specificity.
+
+    '
+  topic: CD45 isoform switching
+  source:
+    doc_id: '135661872'
+    title: Isoforms of the transmembrane tyrosine phosphatase cd45 differentially affect T cell recognition
+    authors: Novak, T. J.; Farber, D.; Leitenberg, D.; Hong, S. c.; Johnson, P.; Bottomly, K.
+    journal: Immunity
+    year: 1994
+    doi: 10.1016/1074-7613(94)90104-x
+    bibkey: cd451994isoformsrecognition
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/135661872#L1
+    quote: 'isoforms differ in their ability to participate in antigen recognition, with the null isoform
+      that is predominantly found on memory CD4 T cells
+
+      '
+  confidence: high
+- id: ANM-019
+  claim: 'The bcl-x locus was described from the outset as a gene whose two spliced products pull in opposite
+    directions, with the short form acting against the pro-survival activity of bcl-2 rather than simply
+    failing to protect cells.
+
+    '
+  topic: Opposing isoform pairs
+  source:
+    doc_id: '135912696'
+    title: bcl-x, a bcl-2-related gene that functions as a dominant regulator of apoptotic cell death
+    authors: Boise, L. H.; González-García, M.; Postema, C. E.; Ding, L.; Lindsten, T.; Turka, L. A.;
+      Mao, X.; Nuñez, G.; Thompson, C. B.
+    journal: Cell
+    year: 1993
+    doi: 10.1016/0092-8674(93)90508-n
+    bibkey: bclx1993dominantregulator
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/135912696#L1
+    quote: 'the second mRNA species, bcl-xS, encodes a protein that inhibits the ability of bcl-2 to enhance
+      the survival of growth factor-deprived cells
+
+      '
+  confidence: high
+- id: ANM-020
+  claim: 'The structural basis of the Bcl-x reversal is a single internal deletion: Bcl-xS lacks 63 amino
+    acids spanning the conserved BH1 and BH2 regions, the very segment that gives Bcl-xL its greatest
+    similarity to Bcl-2 - and these authors found Bcl-xS binds Bcl-xL only weakly in vitro, showed no
+    observable heterodimers in cells, and so argued its mechanism differs from other pro-apoptotic Bcl-2
+    family members.
+
+    '
+  topic: Opposing isoform pairs
+  source:
+    doc_id: '152858487'
+    title: Bcl-xS Antagonizes the Protective Effects of Bcl-xL
+    authors: Minn, A. J.; Boise, L. H.; Thompson, C. B.
+    journal: Journal of Biological Chemistry
+    year: 1996
+    doi: 10.1074/jbc.271.11.6306
+    bibkey: bclx1996santagonizesl
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/152858487#L1
+    quote: 'Bcl-x(S), as a result of alternative splicing, lacks 63 amino acids that comprise the region
+      of greatest amino acid identity between Bcl-x(L) and Bcl-2
+
+      '
+  confidence: high
+  figure_idea: 'The Bcl-x exon 2 with its two competing donor sites, and underneath the two proteins as
+    domain bars - BH4, BH3, BH1, BH2 present in one and BH1, BH2 missing in the other - so the functional
+    flip reduces to one deleted block.
+
+    '
+- id: ANM-021
+  claim: 'A 2019 review of the locus states the mechanism as a two-sided one on the same checkpoint: Bcl-xL
+    blocks apoptosis by means that include inhibiting Bax, while Bcl-xS binds and inhibits Bcl-xL and
+    Bcl-2 and thereby releases pro-apoptotic Bak.
+
+    '
+  topic: Opposing isoform pairs
+  source:
+    doc_id: PMC6743414
+    title: Modulation of the Apoptosis Gene Bcl-x Function Through Alternative Splicing
+    authors: Stevens, M.; Oltean, S.
+    journal: Frontiers in Genetics
+    year: 2019
+    doi: 10.3389/fgene.2019.00804
+    bibkey: stevens2019bclxsplicing
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L5,L24
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6743414#L5,L24
+    quote: 'Bcl-xS can directly bind to and inhibit the anti-apoptotic Bcl-xL and Bcl-2 proteins by forming
+      heterodimers, resulting in the release of the pro-apoptotic Bak
+
+      '
+  confidence: medium
+- id: ANM-022
+  claim: 'Titin is the extreme case of isoform-determined tissue mechanics: the adult human heart expresses
+    a long compliant N2BA form of roughly 3,200-3,500 kDa alongside a short stiff N2B form of about 3,000
+    kDa, both spliced from one gene of 364 exons.
+
+    '
+  topic: Titin isoforms and tissue mechanics
+  source:
+    doc_id: PMC9243441
+    title: RBM20, a Therapeutic Target to Alleviate Myocardial Stiffness via Titin Isoforms Switching
+      in HFpEF
+    authors: Li, N.; Hang, W.; Shu, H.; Zhou, N.
+    journal: Frontiers in Cardiovascular Medicine
+    year: 2022
+    doi: 10.3389/fcvm.2022.928244
+    bibkey: li2022rbm20titinstiffness
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L17,L20
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9243441#L17,L20
+    quote: 'The long, soft N2BA isoform (3,200–3,500 kDa) and the short, rigid N2B isoform (3,000 kDa)
+      are expressed in adult human hearts
+
+      '
+  confidence: medium
+  figure_idea: 'A sarcomere spring cartoon with the I-band region drawn at two lengths, annotated with
+    the PEVK and Ig segment counts that differ - then a stress-strain sketch showing the two slopes that
+    follow from the same locus.
+
+    '
+- id: ANM-023
+  claim: 'The mechanical difference between titin isoforms traces to how much extensible material the
+    spliced transcript retains, with the compliant N2BA form keeping a larger share of PEVK and immunoglobulin-like
+    spring elements in the I-band than the stiff N2B form.
+
+    '
+  topic: Titin isoforms and tissue mechanics
+  source:
+    doc_id: PMC9243441
+    title: RBM20, a Therapeutic Target to Alleviate Myocardial Stiffness via Titin Isoforms Switching
+      in HFpEF
+    authors: Li, N.; Hang, W.; Shu, H.; Zhou, N.
+    journal: Frontiers in Cardiovascular Medicine
+    year: 2022
+    doi: 10.3389/fcvm.2022.928244
+    bibkey: li2022rbm20titinstiffness
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L11
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9243441#L11
+    quote: 'The elasticity of N2BA is higher than N2B owing to more proportion of proline-glutamate-valine-lysine
+      (PEVK) and Ig motifs
+
+      '
+  confidence: medium
+- id: ANM-024
+  claim: 'One splicing factor dominates the titin isoform ratio in vivo: the review describes RBM20 as
+    the main regulator of titin pre-mRNA, and reports that losing one functional copy shifts TTN splicing
+    toward highly compliant isoforms and impairs the Frank-Starling response of the heart.
+
+    '
+  topic: Titin isoforms and tissue mechanics
+  source:
+    doc_id: PMC9243441
+    title: RBM20, a Therapeutic Target to Alleviate Myocardial Stiffness via Titin Isoforms Switching
+      in HFpEF
+    authors: Li, N.; Hang, W.; Shu, H.; Zhou, N.
+    journal: Frontiers in Cardiovascular Medicine
+    year: 2022
+    doi: 10.3389/fcvm.2022.928244
+    bibkey: li2022rbm20titinstiffness
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L24
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9243441#L24
+    quote: 'Haploinsufficiency of RBM20 led to altered alternative splicing of TTN and a dramatic shift
+      to highly compliant titin isoforms and impaired Frank-Starling mechanism
+
+      '
+  confidence: medium
+- id: ANM-025
+  claim: 'In FGFR1 to FGFR3 the mutually exclusive IIIb and IIIc exons encode the C-terminal half of immunoglobulin
+    loop III, which sits in the ligand binding site, so the splice choice changes which fibroblast growth
+    factors the receptor can respond to at all.
+
+    '
+  topic: FGFR2 IIIb/IIIc switch
+  source:
+    doc_id: PMC3238399
+    title: Alternative Splicing of Fibroblast Growth Factor Receptor IgIII Loops in Cancer
+    authors: Holzmann, K.; Grunt, T.; Heinzle, C.; Sampl, S.; Steinhoff, H.; Reichmann, N.; Kleiter, M.;
+      Hauck, M.; Marian, B.
+    journal: Journal of Nucleic Acids
+    year: 2012
+    doi: 10.1155/2012/950508
+    bibkey: holzmann2011fgfrigiiisplicing
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L16
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3238399#L16
+    quote: 'Because the Ig-loop III is at the core of the ligand-binding site of FGFRs, the rearrangement
+      profoundly alters the ligand spectrum of the receptor
+
+      '
+  confidence: medium
+  figure_idea: 'Two receptor ectodomains side by side with their ligand-binding pockets shaded differently,
+    each wired to its own list of permitted FGF ligands - and the epithelium/mesenchyme tissue compartments
+    the two forms occupy.
+
+    '
+- id: ANM-026
+  claim: 'The two FGFR2 isoforms are not interchangeable in development: mouse deletion of the IIIb exon
+    is lethal while deletion of the IIIc exon instead produces skeletal malformations, so each spliced
+    form carries a distinct essential function.
+
+    '
+  topic: FGFR2 IIIb/IIIc switch
+  source:
+    doc_id: PMC3238399
+    title: Alternative Splicing of Fibroblast Growth Factor Receptor IgIII Loops in Cancer
+    authors: Holzmann, K.; Grunt, T.; Heinzle, C.; Sampl, S.; Steinhoff, H.; Reichmann, N.; Kleiter, M.;
+      Hauck, M.; Marian, B.
+    journal: Journal of Nucleic Acids
+    year: 2012
+    doi: 10.1155/2012/950508
+    bibkey: holzmann2011fgfrigiiisplicing
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L18
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3238399#L18
+    quote: 'For FGFR2, loss of the IIIb variant is lethal and deletion of the IIIc causes skeletal malformations
+
+      '
+  confidence: medium
+- id: ANM-027
+  claim: 'FGFR2 isoform usage is partitioned by tissue compartment, with IIIb forms in epithelia and IIIc
+    forms in mesenchyme, and a IIIb-to-IIIc switch in an epithelial tumour is associated with increased
+    invasiveness in bladder and prostate cancer.
+
+    '
+  topic: FGFR2 IIIb/IIIc switch
+  source:
+    doc_id: PMC3238399
+    title: Alternative Splicing of Fibroblast Growth Factor Receptor IgIII Loops in Cancer
+    authors: Holzmann, K.; Grunt, T.; Heinzle, C.; Sampl, S.; Steinhoff, H.; Reichmann, N.; Kleiter, M.;
+      Hauck, M.; Marian, B.
+    journal: Journal of Nucleic Acids
+    year: 2012
+    doi: 10.1155/2012/950508
+    bibkey: holzmann2011fgfrigiiisplicing
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L19,L24
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3238399#L19,L24
+    quote: 'A FGFR2-IIIb to IIIc switch is related to increased invasiveness in bladder and prostate cancers
+
+      '
+  confidence: medium
+- id: ANM-028
+  claim: 'The scope-setting number for human alternative splicing comes with a threshold attached: extrapolating
+    by read coverage put alternative splicing at about 98 per cent of multi-exon genes excluding cell
+    lines and about 100 per cent using all samples, but only 92 per cent of multi-exon genes - roughly
+    86 per cent of all human genes - had a minor isoform reaching 15 per cent frequency in at least one
+    sample.
+
+    '
+  topic: Genome-wide scope in human
+  source:
+    doc_id: PMC2593745
+    title: Alternative Isoform Regulation in Human Tissue Transcriptomes
+    authors: Wang, E. T.; Sandberg, R.; Luo, S.; Khrebtukova, I.; Zhang, L.; Mayr, C.; Kingsmore, S. F.;
+      Schroth, G. P.; Burge, C. B.
+    journal: Nature
+    year: 2008
+    doi: 10.1038/nature07509
+    bibkey: wang2008isoformregulation
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L10,L19,L20
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2593745#L10,L19,L20
+    quote: 'AS is essentially universal in human multi-exon genes, which comprise 94% of genes overall
+
+      '
+  confidence: high
+  figure_idea: 'One bar chart of the same quantity measured three ways - all detectable events, minor
+    isoform above 15 per cent, fraction of all genes rather than multi-exon genes - to show that the familiar
+    "95 per cent" and a much lower number are the same data under different inclusion rules.
+
+    '
+- id: ANM-029
+  claim: 'An independent 2008 mRNA-seq survey reached a similar figure by a different route, estimating
+    alternative splicing in roughly 95 per cent of human multi-exon genes and putting the number of intermediate-
+    to high-abundance splicing events in major tissues at about 100,000.
+
+    '
+  topic: Genome-wide scope in human
+  source:
+    doc_id: '111901595'
+    title: Deep surveying of alternative splicing complexity in the human transcriptome by high-throughput
+      sequencing
+    authors: Pan, Q.; Shai, O.; Lee, L. J.; Frey, B. J.; Blencowe, B. J.
+    journal: Nature Genetics
+    year: 2008
+    doi: 10.1038/ng.259
+    bibkey: deepsurveying2008splicingcomplexity
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/111901595#L1
+    quote: 'transcripts from approximately 95% of multiexon genes undergo alternative splicing and that
+      there are approximately 100,000 intermediate- to high-abundance alternative splicing events
+
+      '
+  confidence: high
+- id: ANM-030
+  claim: 'Most human alternative splicing events are not uniform across the body: the 2008 tissue survey
+    identified over 22,000 tissue-specific alternative transcript events and estimated, by extrapolating
+    from expression bins, that between 52 and 80 per cent of events of each type are tissue-regulated.
+
+    '
+  topic: Genome-wide scope in human
+  source:
+    doc_id: PMC2593745
+    title: Alternative Isoform Regulation in Human Tissue Transcriptomes
+    authors: Wang, E. T.; Sandberg, R.; Luo, S.; Khrebtukova, I.; Zhang, L.; Mayr, C.; Kingsmore, S. F.;
+      Schroth, G. P.; Burge, C. B.
+    journal: Nature
+    year: 2008
+    doi: 10.1038/nature07509
+    bibkey: wang2008isoformregulation
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L26
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2593745#L26
+    quote: 'a set of over 22,000 tissue-specific alternative transcript events were identified, far exceeding
+      previous sets of tissue-specific AS events
+
+      '
+  confidence: high
+- id: ANM-031
+  claim: 'Within that survey, the exons that switch most sharply between tissues were also the ones most
+    likely to preserve reading frame in both isoforms, which the authors read as evidence that switch-like
+    splicing is used to make two intact proteins rather than to shut a gene off.
+
+    '
+  topic: Functional versus noise
+  source:
+    doc_id: PMC2593745
+    title: Alternative Isoform Regulation in Human Tissue Transcriptomes
+    authors: Wang, E. T.; Sandberg, R.; Luo, S.; Khrebtukova, I.; Zhang, L.; Mayr, C.; Kingsmore, S. F.;
+      Schroth, G. P.; Burge, C. B.
+    journal: Nature
+    year: 2008
+    doi: 10.1038/nature07509
+    bibkey: wang2008isoformregulation
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L32
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2593745#L32
+    quote: 'switch-like regulation appears to be used preferentially to express distinct ‘full-length’
+      protein isoforms in different tissues
+
+      '
+  confidence: high
+  figure_idea: 'Frame-preservation rate on the y axis against switch score on the x axis, with separate
+    traces for skipped exons and mutually exclusive exons - the upward slope is the whole argument.
+
+    '
+- id: ANM-032
+  claim: 'The strongest quantitative case for splicing noise comes from de novo junction discovery: about
+    150,000 previously unannotated junctions were found in human cells, the new splice sites showed little
+    evolutionary conservation, and the implied error rate was roughly 0.7 per cent per intron, lower in
+    highly expressed genes.
+
+    '
+  topic: Functional versus noise
+  source:
+    doc_id: PMC3000347
+    title: Noisy Splicing Drives mRNA Isoform Diversity in Human Cells
+    authors: Pickrell, J. K.; Pai, A. A.; Gilad, Y.; Pritchard, J. K.
+    journal: PLoS Genetics
+    year: 2010
+    doi: 10.1371/journal.pgen.1001236
+    bibkey: pickrell2010noisysplicing
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L7
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3000347#L7
+    quote: 'Newly-identified splice sites show little evidence of evolutionary conservation, suggesting
+      that the majority are due to erroneous splice site choice
+
+      '
+  confidence: high
+  figure_idea: 'Junction abundance on a log x axis against fraction of junctions that are annotated or
+    conserved - showing that the rare-junction tail is where the unconserved events live, which is the
+    geometry both sides of the debate are arguing about.
+
+    '
+- id: ANM-033
+  claim: 'A complementary deflationary result is that one transcript usually dominates: roughly 85 per
+    cent of protein-coding mRNA in primary tissues came from each gene''s major transcript, yet the same
+    study found about 35 per cent of genes switching which transcript dominates between tissues, and its
+    authors declined to conclude that minor transcripts are functionless.
+
+    '
+  topic: Functional versus noise
+  source:
+    doc_id: PMC4053754
+    title: Transcriptome analysis of human tissues and cell lines reveals one dominant transcript per
+      gene
+    authors: Gonzàlez-Porta, M.; Frankish, A.; Rung, J.; Harrow, J.; Brazma, A.
+    journal: Genome Biology
+    year: 2013
+    doi: 10.1186/gb-2013-14-7-r70
+    bibkey: gonzalezporta2013dominanttranscript
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L16,L17,L19
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4053754#L16,L17,L19
+    quote: 'in primary tissues almost 85% of the total mRNA from protein coding loci comes from major
+      transcripts (76% in cell lines)
+
+      '
+  confidence: high
+- id: ANM-034
+  claim: 'Pyruvate kinase M illustrates how much can hang on a mutually exclusive exon pair: antisense
+    oligonucleotides that block an enhancer in exon 10 and force exon 9 inclusion killed glioblastoma
+    cells, and the authors attribute the death specifically to loss of the PK-M2 isoform rather than to
+    gain of PK-M1.
+
+    '
+  topic: PKM1/PKM2
+  source:
+    doc_id: PMC3498831
+    title: Manipulation of PK-M mutually exclusive alternative splicing by antisense oligonucleotides
+    authors: Wang, Z.; Jeon, H. Y.; Rigo, F.; Bennett, C. F.; Krainer, A. R.
+    journal: Open Biology
+    year: 2012
+    doi: 10.1098/rsob.120133
+    bibkey: wang2012pkmantisense
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L8
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3498831#L8
+    quote: 'the ASO-mediated switch in alternative splicing leads to apoptosis in glioblastoma cell lines,
+      and this is caused by the downregulation of PK-M2
+
+      '
+  confidence: high
+  figure_idea: 'The exon 9 / exon 10 choice drawn once, with the two downstream consequences stated as
+    outcomes measured in the same cells - isoform ratio shifted, cells die - and the arrow from PK-M2
+    loss, not PK-M1 gain.
+
+    '
+- id: ANM-035
+  claim: 'The PKM story also carries a cautionary measurement: absolute mass spectrometry across 25 human
+    cancers with tissue-matched controls found PKM2 predominant in tumours but equally predominant in
+    the matched normal tissue, so these authors reject a tumour-associated PKM1-to-PKM2 switch.
+
+    '
+  topic: PKM1/PKM2
+  source:
+    doc_id: PMC3248187
+    title: No evidence for a shift in pyruvate kinase PKM1 to PKM2 expression during tumorigenesis
+    authors: Bluemlein, K.; Grüning, N. M.; Feichtinger, R. G.; Lehrach, H.; Kofler, B.; Ralser, M.
+    journal: Oncotarget
+    year: 2011
+    doi: 10.18632/oncotarget.278
+    bibkey: bluemlein2011pkmnoshift
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L7
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3248187#L7
+    quote: 'this PKM2 dominance was not a result of a change in isoform expression, since PKM2 was also
+      the predominant PKM isoform in matched control tissues
+
+      '
+  confidence: high
+leads:
+- note: 'CONFLICT TO RESOLVE IN THE BOOK (PKM). ANM-034 and ANM-035 disagree about whether a PKM1-to-PKM2
+    switch accompanies tumorigenesis. PMC3498831 L8 states that exon 10 use is crucial for aerobic glycolysis
+    and tumour growth; PMC3248187 L7 and L13 report absolute mass-spectrometric quantification showing
+    PKM2 already predominant in matched normal kidney, lung, liver and thyroid (a minimum of 93 per cent
+    of total PKM) and explicitly criticise the earlier Western-blot comparisons against human muscle.
+    Both are anchored. The chapter must not assert the switch as established; the defensible statement
+    is that forcing the splice choice has a large phenotype in cancer cells, which is a separate question
+    from whether tumours naturally change the ratio.
+
+    '
+  why: The PKM1/PKM2 switch is one of the most-repeated isoform stories in cancer biology and the primary
+    quantification contradicts it.
+- note: 'CONFLICT TO RESOLVE IN THE BOOK (Bcl-x mechanism). The 2019 review (PMC6743414 L24) states that
+    Bcl-xS inhibits Bcl-xL and Bcl-2 "by forming heterodimers". The 1996 primary paper it rests on says
+    the opposite about the mechanism: at 152858487 L1 the authors report that Bcl-xS binds Bcl-xL only
+    weakly in vitro, that coimmunoprecipitation showed no observable heterodimers with other Bcl-2 family
+    members, and that Bcl-xS therefore "does not appear to function by competitively disrupting the formation
+    of dimers". ANM-021 is attributed to the review and marked medium for this reason. The functional
+    antagonism is not in doubt; the mechanism is, and the chapter should say that Bcl-xS antagonises Bcl-xL
+    without asserting heterodimerisation.
+
+    '
+  why: Reviews of this locus repeat a mechanism the cited primary paper argues against; the book would
+    inherit the error.
+- note: 'Several pre-2010 classics exist in the corpus only as abstract-only records whose meta.json carries
+    title, DOI, PMID and year but NO author list and NO journal name. Affected claims: ANM-002, ANM-003,
+    ANM-004, ANM-006, ANM-007, ANM-009, ANM-010, ANM-011, ANM-013 through ANM-015, ANM-017 through ANM-020,
+    ANM-029. Their source.authors and source.journal fields say so rather than guessing, and their bibkeys
+    were derived from title plus year rather than from a first author. Every one has a DOI, so the bibliography
+    pass can resolve author, journal, volume and pages mechanically; it must do so before any of these
+    become numbered references. Checked: the abstract-only records are not present in the SQL-queryable
+    documents table (which unions only bioRxiv/medRxiv, arXiv and PMC), so there is no in-corpus route
+    to the author lists.
+
+    '
+  why: A reference list cannot be built from these records as they stand, and inventing author names from
+    memory is exactly what this workflow exists to prevent.
+- note: 'RESOLVED, recorded for audit. The Dscam1 splicing-bias work was first read as the bioRxiv preprint
+    bio_e869b38c6c03 (preprint DOI 10.1101/622217 only). A targeted abstracts search on the distinctive
+    title words then found the journal version: doc_id 7365494, Cell Reports 2021, doi 10.1016/j.celrep.2021.109373,
+    PMID 34260933, retitled "RNA pairing architecture-driven splicing bias". ANM-010 and ANM-011 were
+    re-anchored to that version''s abstract. ANM-012, the authors'' argument that heavy bias is uneconomical
+    for self-avoidance, appears only in the preprint''s introduction (bio_e869b38c6c03 L17) and is marked
+    medium; it should be re-checked against the Cell Reports full text, which the corpus does not hold.
+
+    '
+  why: So no one re-does this search, and so the one remaining preprint-only claim is visible.
+- note: 'Conservation of isoform USAGE across species is only partly anchored (ANM-005 for Caenorhabditis,
+    ANM-009 for human-mouse exons). What was tried: lookup title on the 2012 vertebrate comparative-splicing
+    paper (nothing); a full-text topic search, which returned adjacent work (cross-mammalian RNA modification
+    and transcript diversity, evolutionary splicing graphs, tissue-specific splicing versus tissue-specific
+    expression in repurposed ancestral genes); and an abstracts search on human-mouse orthologue comparisons,
+    which returned a usable cluster including 131662694 (used here), 128876127 (conserved exon-skipping
+    events, NMD-coupled in about one fifth of cases, with conservation concentrated at synonymous sites),
+    138983383 ("Low conservation of alternative splicing patterns in the human and mouse genomes") and
+    136402697 (selection for reading-frame preservation). The headline species-versus-tissue clustering
+    result from the 2012 vertebrate papers was not located and may not be in the corpus.
+
+    '
+  why: The function-versus-noise argument usually turns on conservation data, and three further anchored
+    sources are sitting one search away.
+- note: 'Read and anchored but not written up for lack of claim slots: the Dscam1 parallel to mammalian
+    clustered protocadherins, including the asymmetry that specific protocadherin C-type isoforms have
+    dedicated roles while Dscam1 isoforms were long treated as interchangeable (PMC10325099 L61, bio_e869b38c6c03
+    L73); the tropomyosin TPM1 exon 2 switch at 2 per cent inclusion in heart versus 95 per cent in skeletal
+    muscle (PMC2593745 L31), a ready-made anchor for the tropomyosin example; titin isoform shift as a
+    double-edged adaptation, possibly good for diastole and costly in systole, with more compliant titin
+    in dilated cardiomyopathy hearts (PMC9243441 L20); the estimate that each neuron expresses roughly
+    10 to 50 Dscam1 isoforms by probabilistic splicing (PMC10325099 L12), a modern restatement of ANM-004;
+    and a C. elegans claim that tissue-regulated exons are shorter, flanked by longer introns, and include
+    conserved microexons under 27 nt (PMC7706725 L8).
+
+    '
+  why: These lines were opened and read, so they can be promoted to claims cheaply; the tropomyosin and
+    protocadherin ones cover examples the brief named.
+- note: 'Not anchored: how isoform counts PER GENE are distributed in metazoan genomes. Nothing in this
+    file gives a distribution, only aggregate fractions of genes that are spliced at all (ANM-028, ANM-029)
+    and a dominance statistic (ANM-033). The catalogs area (research/09-catalogs.yml) is the natural home
+    for a per-gene transcript-count distribution and appears to carry transcripts-per-gene material already;
+    this file should not duplicate it.
+
+    '
+  why: The brief asked for it here, but it belongs with the annotation catalogs and should not be anchored
+    twice from different projects' inclusion rules.
+- note: 'Not anchored: a vertebrate developmental splicing switch controlling cell fate. The invertebrate
+    side is covered by ANM-005, and candidate worm material was found and read (UNC-75/CELF neuron-specific
+    repression, PMC3627589; splicing of a single neuron''s sad-1 under a combinatorial transcription-factor
+    and RNA-binding-protein code, PMC6641836; alternative splicing controlling pan-neuronal homeobox gene
+    expression, PMC11789633), but no vertebrate fate-switch search was run.
+
+    '
+  why: A vertebrate developmental switch is the one bullet in the brief with no claim behind it, and three
+    worm candidates are already located if the chapter wants more invertebrate depth instead.
+- note: 'PMC3238399, the FGFR IIIb/IIIc review behind ANM-025 to ANM-027, has corpus pub_year 2011 and
+    pub_date 2011-12-12 but a 2012 DOI, 10.1155/2012/950508. Year 2011 was recorded. Worth one publisher
+    check so the printed year and DOI do not disagree.
+
+    '
+  why: A year/DOI mismatch in a printed reference reads as a transcription error.
+- note: 'CFTR and DMD were deliberately not attempted. Both are mainly stories about mis-splicing of a
+    disease allele and about splice-modulating therapy rather than about a normal isoform pair doing two
+    different jobs, which is this chapter''s argument; a therapeutics area would carry them better.
+
+    '
+  why: So a later pass does not read their absence as an oversight.

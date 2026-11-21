@@ -2,7 +2,40 @@
 
 ::: {.callout-warning}
 ## Draft
-Research in progress. Claim records: `research/02-animals.yml`
+Research complete, prose in progress. Claim records: `research/02-animals.yml`
+(35 verified claims, 27 sources).
 :::
 
-_Scope:_ Landmark isoform biology in metazoans: Dscam, sex determination, CD45, Bcl-x, titin, and others.
+## Dscam1: diversity by combination {#sec-dscam}
+
+Drosophila *Dscam1* is the clearest demonstration in any organism that a single
+gene can specify an enormous protein repertoire through splicing alone, and that
+the repertoire size is itself under selection.
+
+![Three mutually exclusive exon clusters and one alternative transmembrane exon
+generate the *Dscam1* repertoire. A single neuron uses a small, probabilistically
+drawn slice of it.](../figures/dscam-combinatorics.svg){#fig-dscam width=100%}
+
+_Scope:_ the combinatorial architecture and the arithmetic; homophilic binding
+specificity and self-avoidance; how many isoforms one neuron actually uses; the
+cis RNA-structure mechanism that enforces mutual exclusivity; the CRISPR
+deletion series separating a saturating requirement for dendrite self/non-self
+discrimination from a cluster-identity-dependent requirement for axon
+patterning; and the evidence that isoform *bias*, not only isoform *number*, is
+functional.
+
+## Other landmark cases
+
+_Scope:_ sex determination (*Sxl*/*tra*/*dsx*) as a splicing switch controlling a
+developmental decision; CD45/*PTPRC* in lymphocyte activation; *BCL2L1* and other
+opposing-function isoform pairs; titin and tissue mechanics; *FGFR2* IIIb/IIIc;
+PKM1/PKM2, recorded with the conflict between the splice-forcing phenotype and
+the absolute quantification that finds PKM2 already predominant in several normal
+tissues.
+
+## How much of this is functional
+
+_Scope:_ the genome-wide prevalence numbers and, more importantly, their
+inclusion rules. The widely repeated "95% of multi-exon genes" figure means
+different things at different abundance thresholds and over different
+denominators, and the chapter states them rather than picking one.

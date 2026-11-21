@@ -2,4 +2,16 @@
 #   generated  - produced by a script in scripts/ (ours)
 #   original   - hand-authored SVG (ours); credit the concept if it came from a paper
 #   reused     - openly licensed third-party; licence + attribution REQUIRED
-figures: []
+figures:
+  - path: figures/dscam-combinatorics.svg
+    dark: figures/dscam-combinatorics-dark.svg
+    route: generated
+    script: scripts/fig_dscam_combinatorics.py
+    chapter: chapters/02-animals.qmd
+    data_source: research/02-animals.yml (ANM-001, ANM-005, ANM-007)
+    palette: dataviz reference instance, categorical slots 1-3 + neutral
+    palette_validated: "both modes pass all six checks"
+    note: >
+      Original. Not traced from or redrawn after any published figure. The
+      transmembrane exon is deliberately neutral rather than a categorical hue,
+      since it is a binary choice rather than a variable cluster.
