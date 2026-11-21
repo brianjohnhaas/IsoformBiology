@@ -1,0 +1,941 @@
+area: cancer
+researcher: agent-06-cancer
+date: 2026-11-21
+corpus: paperclip 0.8.23
+
+claims:
+  - id: CAN-001
+    claim: >
+      In treatment-naive esophageal tissue, between 42 and 46 per cent of the
+      genes called as isoform switches during progression from low- to
+      high-grade Barrett's dysplasia showed no significant difference in
+      total gene-level expression between the same two conditions.
+    topic: gene-level analysis misses isoform switches
+    source:
+      doc_id: PMC9437810
+      title: "Characterizing isoform switching events in esophageal adenocarcinoma"
+      authors: "Zhang, Y., Weh, K. M., Howard, C. L., Riethoven, J.-J., Clarke, J. L., Lagisetty, K. H., Lin, J., Reddy, R. M., Chang, A. C., Beer, D. G., Kresty, L. A."
+      journal: "Molecular Therapy. Nucleic Acids"
+      year: 2022
+      doi: 10.1016/j.omtn.2022.08.018
+      bibkey: zhang2022esophageal
+    evidence:
+      text_access: full_text
+      lines: L24-L24
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC9437810#L24
+      quote: >
+        42.7% (32 of 75) of significant isoform-switched genes in BE.LGD versus BE.HGD (Table 1) and 45.9% (62 of 135) of genes
+    confidence: high
+    figure_idea: >
+      A two-column schematic for one gene: left column total gene expression
+      flat across the two disease stages, right column the two transcript
+      fractions crossing over. The point is that the left column alone would
+      have retired the gene from the analysis.
+
+  - id: CAN-002
+    claim: >
+      A reanalysis of twelve TCGA cancer types using differential transcript
+      usage found that roughly a quarter of the tumour-side transcripts that
+      changed in usage were not themselves called differentially expressed,
+      whereas only a few per cent of the normal-side transcripts behaved that
+      way.
+    topic: gene-level analysis misses isoform switches
+    source:
+      doc_id: PMC10298363
+      title: "Quantitative Analysis of Isoform Switching in Cancer"
+      authors: "Dolgalev, G., Poverennaya, E."
+      journal: "International Journal of Molecular Sciences"
+      year: 2023
+      doi: 10.3390/ijms241210065
+      bibkey: dolgalev2023switching
+    evidence:
+      text_access: full_text
+      lines: L22-L22
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC10298363#L22
+      quote: >
+        515 (24.6%) cancer transcripts and 76 (3.6%) normal transcripts that were differentially used, were in fact not differentially expressed
+    confidence: high
+
+  - id: CAN-003
+    claim: >
+      The same reanalysis argues against treating every called switch as a
+      genuine exchange of one isoform for another: in about half of the
+      switches that were not usage-and-expression concordant, one partner
+      transcript did not change expression at all, which the authors say makes
+      the event better described as a single-transcript expression change.
+    topic: limits of isoform-switch calling
+    source:
+      doc_id: PMC10298363
+      title: "Quantitative Analysis of Isoform Switching in Cancer"
+      authors: "Dolgalev, G., Poverennaya, E."
+      journal: "International Journal of Molecular Sciences"
+      year: 2023
+      doi: 10.3390/ijms241210065
+      bibkey: dolgalev2023switching
+    evidence:
+      text_access: full_text
+      lines: L38-L38
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC10298363#L38
+      quote: >
+        In approximately half of the rest of the identified switches, one of the transcripts did not change its expression across conditions
+    confidence: high
+
+  - id: CAN-004
+    claim: >
+      Among the isoform pairs that distinguished basal-like from luminal breast
+      tumours in TCGA, 49 of 229 pairs showed no accompanying difference in
+      gene-level expression, so the splicing difference was the only signal
+      available for those genes.
+    topic: gene-level analysis misses isoform switches
+    source:
+      doc_id: PMC4778320
+      title: "Identification of mRNA isoform switching in breast cancer"
+      authors: "Zhao, W., Hoadley, K. A., Parker, J. S., Perou, C. M."
+      journal: "BMC Genomics"
+      year: 2016
+      doi: 10.1186/s12864-016-2521-9
+      bibkey: zhao2016switching
+    evidence:
+      text_access: full_text
+      lines: L35-L35
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC4778320#L35
+      quote: >
+        49 pairs did not show a difference at the gene expression level
+    confidence: high
+
+  - id: CAN-005
+    claim: >
+      Isoform-switch calls are vulnerable to RNA quality: in the same breast
+      cancer cohort an initial 2,110 inversely correlated isoform pairs
+      collapsed to 470 once RNA integrity number was modelled as a covariate,
+      because degraded RNA inflates the apparent abundance of short isoforms.
+    topic: technical artefacts in isoform-switch calling
+    source:
+      doc_id: PMC4778320
+      title: "Identification of mRNA isoform switching in breast cancer"
+      authors: "Zhao, W., Hoadley, K. A., Parker, J. S., Perou, C. M."
+      journal: "BMC Genomics"
+      year: 2016
+      doi: 10.1186/s12864-016-2521-9
+      bibkey: zhao2016switching
+    evidence:
+      text_access: full_text
+      lines: L33-L33
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC4778320#L33
+      quote: >
+        After adjusting for the RIN bias, a modified linear regression model identified 470 pairs of isoform switching candidates from 452 genes
+    confidence: high
+    figure_idea: >
+      A before/after pair of counts with the confounder named on the arrow -
+      the general lesson being that relative transcript measurements inherit
+      every 5'-to-3' coverage bias in the library.
+
+  - id: CAN-006
+    claim: >
+      SF3B1 is the single most commonly mutated gene in myelodysplastic
+      syndromes, carried by roughly a fifth to somewhat over a quarter of all
+      patients.
+    topic: splicing factor mutations as drivers
+    source:
+      doc_id: PMC5029572
+      title: "Cryptic splicing events in the iron transporter ABCB7 and other key target genes in SF3B1-mutant myelodysplastic syndromes"
+      authors: "Dolatshad, H., Pellagatti, A., Liberante, F. G., Llorian, M., Repapi, E., Steeples, V., et al. (Boultwood, J.)"
+      journal: "Leukemia"
+      year: 2016
+      doi: 10.1038/leu.2016.149
+      bibkey: dolatshad2016abcb7
+    evidence:
+      text_access: full_text
+      lines: L15-L15
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC5029572#L15
+      quote: >
+        The splicing factor SF3B1 is the most frequently mutated gene in patients with MDS (20–28% of all cases)
+    confidence: high
+
+  - id: CAN-007
+    claim: >
+      The ring-sideroblast phenotype of SF3B1-mutant MDS is traced to a single
+      splicing lesion: a cryptic 3-prime splice site inserts 21 intronic bases
+      into the iron transporter ABCB7 transcript, creating a premature stop
+      codon, and the aberrant transcript was detected in every SF3B1-mutant
+      patient sample tested and in none of the wild-type or healthy controls.
+    topic: SF3B1 target genes and phenotype
+    source:
+      doc_id: PMC5029572
+      title: "Cryptic splicing events in the iron transporter ABCB7 and other key target genes in SF3B1-mutant myelodysplastic syndromes"
+      authors: "Dolatshad, H., Pellagatti, A., Liberante, F. G., Llorian, M., Repapi, E., Steeples, V., et al. (Boultwood, J.)"
+      journal: "Leukemia"
+      year: 2016
+      doi: 10.1038/leu.2016.149
+      bibkey: dolatshad2016abcb7
+    evidence:
+      text_access: full_text
+      lines: L52-L52
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC5029572#L52
+      quote: >
+        the aberrant ABCB7 transcript was observed in all SF3B1-mutant MDS samples analyzed (n=7), but not in any of the samples from wild-type patients (n=4)
+    confidence: high
+    figure_idea: >
+      A gene-level bar for ABCB7 that falls in mutant samples, with the
+      splice-level panel underneath showing why: a 21-nt insertion, a stop
+      codon, and the NMD arrow. The mechanism is only visible at the lower
+      panel.
+
+  - id: CAN-008
+    claim: >
+      The splicing consequence of mutant SF3B1 is not a handful of events but
+      several hundred novel 3-prime splice sites genome-wide, with closely
+      matched counts in an engineered K700E cell line and in primary MDS
+      samples.
+    topic: SF3B1 and cryptic 3' splice sites
+    source:
+      doc_id: PMC5311031
+      title: "Cancer associated SF3B1 mutants recognize otherwise inaccessible cryptic 3’ splice sites within RNA secondary structures"
+      authors: "Kesarwani, A. K., Ramirez, O., Gupta, A. K., Yang, X., Murthy, T., Minella, A. C., Pillai, M. M."
+      journal: "Oncogene"
+      year: 2017
+      doi: 10.1038/onc.2016.279
+      bibkey: kesarwani2017cryptic
+    evidence:
+      text_access: full_text
+      lines: L16-L16
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC5311031#L16
+      quote: >
+        741 and 859 cryptic 3’SS were found in SF3B1K700E and MDS patient samples respectively
+    confidence: high
+
+  - id: CAN-009
+    claim: >
+      One mechanistic account of SF3B1 mutants is that the cryptic sites they
+      activate are normally base-paired inside RNA secondary structure and so
+      invisible to the scanning spliceosome; the reduced-accessibility signature
+      held in an independent CLL cohort as well as in MDS.
+    topic: SF3B1 mechanism
+    source:
+      doc_id: PMC5311031
+      title: "Cancer associated SF3B1 mutants recognize otherwise inaccessible cryptic 3’ splice sites within RNA secondary structures"
+      authors: "Kesarwani, A. K., Ramirez, O., Gupta, A. K., Yang, X., Murthy, T., Minella, A. C., Pillai, M. M."
+      journal: "Oncogene"
+      year: 2017
+      doi: 10.1038/onc.2016.279
+      bibkey: kesarwani2017cryptic
+    evidence:
+      text_access: full_text
+      lines: L20-L20
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC5311031#L20
+      quote: >
+        We performed similar analysis with 214 cryptic 3’SS from an independent dataset of CLL patients[10], which also showed a similar pattern of reduced accessibility
+    confidence: high
+
+  - id: CAN-010
+    claim: >
+      How mutant SF3B1 actually picks cryptic 3-prime splice sites was still
+      contested as of this paper: its authors count three published and
+      mutually incompatible mechanistic models, and the chapter should not
+      present any one of them as settled.
+    topic: unresolved mechanism / conflicting models
+    source:
+      doc_id: PMC5311031
+      title: "Cancer associated SF3B1 mutants recognize otherwise inaccessible cryptic 3’ splice sites within RNA secondary structures"
+      authors: "Kesarwani, A. K., Ramirez, O., Gupta, A. K., Yang, X., Murthy, T., Minella, A. C., Pillai, M. M."
+      journal: "Oncogene"
+      year: 2017
+      doi: 10.1038/onc.2016.279
+      bibkey: kesarwani2017cryptic
+    evidence:
+      text_access: full_text
+      lines: L33-L33
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC5311031#L33
+      quote: >
+        Three recent studies have proposed divergent mechanistic models to explain how mutant SF3B1 expression leads to cryptic 3’SS usage
+    confidence: high
+
+  - id: CAN-011
+    claim: >
+      Mis-splicing of the kinase MAP3K7 is specific to SF3B1 among the
+      spliceosome genes: the same isogenic K562 panel showed extensive cryptic
+      3-prime splice site use in the SF3B1 mutant but not in SRSF2- or
+      U2AF1-mutant cells, so the four MDS splicing factor mutations are not
+      interchangeable.
+    topic: splicing factor mutations have distinct target sets
+    source:
+      doc_id: PMC8740767
+      title: "SF3B1 mutant-induced missplicing of MAP3K7 causes anemia in myelodysplastic syndromes"
+      authors: "Lieu, Y. K., Liu, Z., Ali, A. M., Wei, X., Penson, A., Zhang, J., An, X., Rabadan, R., Raza, A., Manley, J. L., Mukherjee, S."
+      journal: "Proceedings of the National Academy of Sciences of the United States of America"
+      year: 2021
+      doi: 10.1073/pnas.2111703119
+      bibkey: lieu2021map3k7
+    evidence:
+      text_access: full_text
+      lines: L30-L30
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC8740767#L30
+      quote: >
+        revealed extensive cryptic 3′ss usage of MAP3K7, which was not observed in the SRSF2 and U2AF1 mutant K562 cells
+    confidence: high
+
+  - id: CAN-012
+    claim: >
+      The MAP3K7 story stops short of explaining the whole phenotype: its
+      authors claim the misspliced kinase accounts only partly for the severe
+      anaemia of SF3B1-mutant MDS and explicitly not for ring sideroblast
+      formation.
+    topic: limits of single-target explanations
+    source:
+      doc_id: PMC8740767
+      title: "SF3B1 mutant-induced missplicing of MAP3K7 causes anemia in myelodysplastic syndromes"
+      authors: "Lieu, Y. K., Liu, Z., Ali, A. M., Wei, X., Penson, A., Zhang, J., An, X., Rabadan, R., Raza, A., Manley, J. L., Mukherjee, S."
+      journal: "Proceedings of the National Academy of Sciences of the United States of America"
+      year: 2021
+      doi: 10.1073/pnas.2111703119
+      bibkey: lieu2021map3k7
+    evidence:
+      text_access: full_text
+      lines: L19-L19
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC8740767#L19
+      quote: >
+        are at least in part responsible for the severe anemia, but not ringed sideroblast formation, observed in MDS patients harboring SF3B1 mutations
+    confidence: high
+
+  - id: CAN-013
+    claim: >
+      U2AF1 is mutated in only a few per cent of lung adenocarcinomas and acute
+      myeloid leukaemias in TCGA, yet those few cases carry hundreds of
+      mutation-associated splicing changes, so the mutation's transcriptomic
+      footprint is far larger than its frequency.
+    topic: U2AF1 mutations
+    source:
+      doc_id: PMC3909098
+      title: "A Pan-Cancer Analysis of Transcriptome Changes Associated with Somatic Mutations in U2AF1 Reveals Commonly Altered Splicing Events"
+      authors: "Brooks, A. N., Choi, P. S., de Waal, L., Sharifnia, T., Imielinski, M., Saksena, G., et al. (Meyerson, M.)"
+      journal: "PLoS ONE"
+      year: 2014
+      doi: 10.1371/journal.pone.0087361
+      bibkey: brooks2014u2af1
+    evidence:
+      text_access: full_text
+      lines: L8-L8
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC3909098#L8
+      quote: >
+        182 lung adenocarcinomas and 167 acute myeloid leukemias (AML), in which U2AF1 is somatically mutated in 3–4% of cases
+    confidence: high
+
+  - id: CAN-014
+    claim: >
+      The U2AF1 S34F mutation changes which nucleotide the spliceosome tolerates
+      three bases before the intron-exon boundary: in HeLa cells expressing the
+      mutant, 57 per cent of competing CAG-versus-TAG 3-prime splice site pairs
+      shifted, against 36 per cent with a wild-type construct.
+    topic: U2AF1 mechanism
+    source:
+      doc_id: PMC3909098
+      title: "A Pan-Cancer Analysis of Transcriptome Changes Associated with Somatic Mutations in U2AF1 Reveals Commonly Altered Splicing Events"
+      authors: "Brooks, A. N., Choi, P. S., de Waal, L., Sharifnia, T., Imielinski, M., Saksena, G., et al. (Meyerson, M.)"
+      journal: "PLoS ONE"
+      year: 2014
+      doi: 10.1371/journal.pone.0087361
+      bibkey: brooks2014u2af1
+    evidence:
+      text_access: full_text
+      lines: L31-L31
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC3909098#L31
+      quote: >
+        57% of CAG versus TAG 3′ splice sites were altered in HeLa cells expressing the U2AF1 S34F mutation, while 36% were altered
+    confidence: high
+    figure_idea: >
+      The -3 position of the 3' splice site drawn twice, once as the wild-type
+      U2AF1 reads it and once as S34F reads it, with the competing pair of AG
+      dinucleotides and which one wins in each case.
+
+  - id: CAN-015
+    claim: >
+      The CAG-over-UAG rule is a preference and not a switch - the same authors
+      note that many UAG 3-prime splice sites were unaffected, and that
+      nonsense-mediated decay of aberrant products could make affected sites
+      look unaffected.
+    topic: limits of splice-code rules
+    source:
+      doc_id: PMC3909098
+      title: "A Pan-Cancer Analysis of Transcriptome Changes Associated with Somatic Mutations in U2AF1 Reveals Commonly Altered Splicing Events"
+      authors: "Brooks, A. N., Choi, P. S., de Waal, L., Sharifnia, T., Imielinski, M., Saksena, G., et al. (Meyerson, M.)"
+      journal: "PLoS ONE"
+      year: 2014
+      doi: 10.1371/journal.pone.0087361
+      bibkey: brooks2014u2af1
+    evidence:
+      text_access: full_text
+      lines: L32-L32
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC3909098#L32
+      quote: >
+        We did not observe altered splicing of all UAG 3′ splice sites
+    confidence: high
+
+  - id: CAN-016
+    claim: >
+      The SRSF2 P95 hotspot works by re-weighting an exonic splicing enhancer
+      code rather than abolishing binding: the mutant RNA-binding domain binds
+      the CCNG motif with three- to four-fold higher affinity than GGNG, where
+      the wild-type domain treats the two about equally.
+    topic: SRSF2 mechanism
+    source:
+      doc_id: PMC6274620
+      title: "SRSF2 mutations drive oncogenesis by activating a global program of aberrant alternative splicing in hematopoietic cells"
+      authors: "Liang, Y., Tebaldi, T., Rejeski, K., Joshi, P., Stefani, G., Taylor, A., et al. (Halene, S.)"
+      journal: "Leukemia"
+      year: 2018
+      doi: 10.1038/s41375-018-0152-7
+      bibkey: liang2018srsf2
+    evidence:
+      text_access: full_text
+      lines: L42-L42
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC6274620#L42
+      quote: >
+        the 3–4-fold higher affinity of the RBD to the CCNG (Kd=0.06uM) compared to the GGNG (Kd=0.2uM) consensus motif
+    confidence: high
+    figure_idea: >
+      Two binding-affinity bars for the same protein domain against two
+      four-base motifs, wild type versus P95H, with the downstream consequence
+      (which cassette exons are included) drawn alongside. A single changed
+      preference, thousands of changed exons.
+
+  - id: CAN-017
+    claim: >
+      In an isogenic SRSF2 P95H erythroleukaemia model, over a thousand
+      significant alternative splicing events were called - two thirds of them
+      cassette exons - while overall gene expression between mutant and
+      wild-type cells barely moved, making this a textbook case of a driver
+      whose effect is invisible to differential gene expression.
+    topic: gene-level analysis misses isoform switches
+    source:
+      doc_id: PMC6274620
+      title: "SRSF2 mutations drive oncogenesis by activating a global program of aberrant alternative splicing in hematopoietic cells"
+      authors: "Liang, Y., Tebaldi, T., Rejeski, K., Joshi, P., Stefani, G., Taylor, A., et al. (Halene, S.)"
+      journal: "Leukemia"
+      year: 2018
+      doi: 10.1038/s41375-018-0152-7
+      bibkey: liang2018srsf2
+    evidence:
+      text_access: full_text
+      lines: L40,L47
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC6274620#L40,L47
+      quote: >
+        overall expression changes between SRSF2WT and SRSF2P95H HEL cells were small with almost no significant changes
+    confidence: high
+
+  - id: CAN-018
+    claim: >
+      Reproducibility across SRSF2-mutant splicing studies is poor: when nine
+      published RNA-seq datasets were overlapped at the level of
+      differentially-spliced gene lists, not a single gene appeared in all nine,
+      and only 446 genes recurred in three or more.
+    topic: reproducibility of cancer splicing results
+    source:
+      doc_id: PMC6274620
+      title: "SRSF2 mutations drive oncogenesis by activating a global program of aberrant alternative splicing in hematopoietic cells"
+      authors: "Liang, Y., Tebaldi, T., Rejeski, K., Joshi, P., Stefani, G., Taylor, A., et al. (Halene, S.)"
+      journal: "Leukemia"
+      year: 2018
+      doi: 10.1038/s41375-018-0152-7
+      bibkey: liang2018srsf2
+    evidence:
+      text_access: full_text
+      lines: L48-L48
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC6274620#L48
+      quote: >
+        Strikingly, no gene was reported as differentially spliced in all the datasets
+    confidence: high
+    figure_idea: >
+      An upset-style count of how many of nine SRSF2 studies each
+      differentially-spliced gene was reported in, with the empty
+      all-nine column as the punchline.
+
+  - id: CAN-019
+    claim: >
+      ZRSR2 mutations act on the minor spliceosome rather than the major one:
+      in primary MDS marrow, more than a third of all U12-type introns were
+      significantly more retained in ZRSR2-mutant than in
+      spliceosome-wild-type patients.
+    topic: ZRSR2 and minor introns
+    source:
+      doc_id: PMC8177065
+      title: "Minor intron retention drives clonal hematopoietic disorders and diverse cancer predisposition"
+      authors: "Inoue, D., Polaski, J. T., Taylor, J., Castel, P., Chen, S., Kobayashi, S., et al. (Abdel-Wahab, O.)"
+      journal: "Nature Genetics"
+      year: 2021
+      doi: 10.1038/s41588-021-00828-9
+      bibkey: inoue2021minor
+    evidence:
+      text_access: full_text
+      lines: L26-L26
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC8177065#L26
+      quote: >
+        with over one-third of U12-type introns exhibiting significantly increased retention
+    confidence: high
+
+  - id: CAN-020
+    claim: >
+      The tumour suppressor LZTR1 is inactivated post-transcriptionally far
+      more often than by coding mutation: retention of its single minor intron
+      exceeded the level seen in any matched normal tissue in 11.1 per cent of
+      TCGA tumour samples, across nearly all cancer types profiled.
+    topic: isoform-level inactivation invisible to exome sequencing
+    source:
+      doc_id: PMC8177065
+      title: "Minor intron retention drives clonal hematopoietic disorders and diverse cancer predisposition"
+      authors: "Inoue, D., Polaski, J. T., Taylor, J., Castel, P., Chen, S., Kobayashi, S., et al. (Abdel-Wahab, O.)"
+      journal: "Nature Genetics"
+      year: 2021
+      doi: 10.1038/s41588-021-00828-9
+      bibkey: inoue2021minor
+    evidence:
+      text_access: full_text
+      lines: L43-L43
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC8177065#L43
+      quote: >
+        a total of 11.1% of all profiled cancer samples exhibiting LZTR1 minor intron retention exceeding that observed in any peritumoral control normal tissues
+    confidence: high
+    figure_idea: >
+      For one tumour suppressor, two stacked frequency bars across cancer
+      types: how often it is hit by a coding mutation, and how often its
+      protein is lost through intron retention instead. The second bar is the
+      one exome sequencing never sees.
+
+  - id: CAN-021
+    claim: >
+      The four MDS spliceosome genes do not converge on one phenotype in mouse
+      models: Zrsr2 deletion enhanced haematopoietic stem cell self-renewal,
+      whereas published hotspot knock-ins of Sf3b1, Srsf2 and U2af1 all
+      impaired it under comparable transplantation assays.
+    topic: conflicting phenotypes among splicing factor mutations
+    source:
+      doc_id: PMC8177065
+      title: "Minor intron retention drives clonal hematopoietic disorders and diverse cancer predisposition"
+      authors: "Inoue, D., Polaski, J. T., Taylor, J., Castel, P., Chen, S., Kobayashi, S., et al. (Abdel-Wahab, O.)"
+      journal: "Nature Genetics"
+      year: 2021
+      doi: 10.1038/s41588-021-00828-9
+      bibkey: inoue2021minor
+    evidence:
+      text_access: full_text
+      lines: L24-L24
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC8177065#L24
+      quote: >
+        all of which identified a perplexing impairment in self-renewal when those mutations were induced in mice using similar transplantation methods
+    confidence: high
+
+  - id: CAN-022
+    claim: >
+      Published estimates of how often an exonic point mutation disrupts
+      splicing disagree by more than threefold - the figures in circulation
+      range from a quarter to over three quarters of exonic mutations - so any
+      single headline fraction in this area should be treated as contested.
+    topic: splice-altering mutations outside splicing factors
+    source:
+      doc_id: PMC5678748
+      title: "Depletion of somatic mutations in splicing-associated sequences in cancer genomes"
+      authors: "Hurst, L. D., Batada, N. N."
+      journal: "Genome Biology"
+      year: 2017
+      doi: 10.1186/s13059-017-1337-5
+      bibkey: hurst2017depletion
+    evidence:
+      text_access: full_text
+      lines: L18-L18
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC5678748#L18
+      quote: >
+        estimates suggest that 25–45% [16], 30% [17], ~ 60% [18] or 77% [19] of exonic point mutations, synonymous mutations included, lead to splicing disruption
+    confidence: high
+    figure_idea: >
+      A dot plot of the four published estimates on one axis with the study
+      design behind each one labelled, instead of a single bar. The spread is
+      the finding.
+
+  - id: CAN-023
+    claim: >
+      Splice-disrupting silent mutations are selected against inside tumours as
+      well as for: across 15 TCGA cancer types, synonymous mutation density was
+      about 17 per cent lower in the splicing-regulatory flanks of exons than
+      in exon cores, and the depletion was absent in tumour suppressors, where
+      losing function is advantageous.
+    topic: selection on splice-altering mutations
+    source:
+      doc_id: PMC5678748
+      title: "Depletion of somatic mutations in splicing-associated sequences in cancer genomes"
+      authors: "Hurst, L. D., Batada, N. N."
+      journal: "Genome Biology"
+      year: 2017
+      doi: 10.1186/s13059-017-1337-5
+      bibkey: hurst2017depletion
+    evidence:
+      text_access: full_text
+      lines: L7,L9
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC5678748#L7,L9
+      quote: >
+        Exon flanks, which are enriched for sequences required for splicing fidelity, have ~ 17% lower SSM density compared to exonic cores
+    confidence: high
+
+  - id: CAN-024
+    claim: >
+      A pan-cancer screen of 8,320 exomes across 22 tumour types nominated
+      22,948 synonymous single-nucleotide variants as post-transcriptionally
+      consequential, distributed over 2,042 genes, which is a much larger pool
+      of candidate silent drivers than the splicing-specific literature usually
+      quotes.
+    topic: splice-altering mutations outside splicing factors
+    source:
+      doc_id: PMC7026592
+      title: "Prevalence and architecture of posttranscriptionally impaired synonymous mutations in 8,320 genomes across 22 cancer types"
+      authors: "Teng, H., Wei, W., Li, Q., Xue, M., Shi, X., Li, X., Mao, F., Sun, Z."
+      journal: "Nucleic Acids Research"
+      year: 2020
+      doi: 10.1093/nar/gkaa019
+      bibkey: teng2020synonymous
+    evidence:
+      text_access: full_text
+      lines: L8-L8
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC7026592#L8
+      quote: >
+        we identified a total of 22,948 posttranscriptionally impaired synonymous SNVs (pisSNVs) spanning 2,042 genes
+    confidence: medium
+
+  - id: CAN-025
+    claim: >
+      A single worked case shows the clinical stakes: a synonymous
+      c.936T>G change in BAP1 exon 11 of a clear-cell renal carcinoma caused
+      exon skipping and loss of BAP1 protein, and the patient died at 56 months
+      against a TCGA median of 117 months for the PBRM1-mutant group her exome
+      placed her in.
+    topic: synonymous mutation acting through splicing
+    source:
+      doc_id: PMC7918674
+      title: "A BAP1 synonymous mutation results in exon skipping, loss of function and worse patient prognosis"
+      authors: "Niersch, J., Vega-Rubín-de-Celis, S., Bazarna, A., Mergener, S., Jendrossek, V., Siveke, J. T., Peña-Llopis, S."
+      journal: "iScience"
+      year: 2021
+      doi: 10.1016/j.isci.2021.102173
+      bibkey: niersch2021bap1
+    evidence:
+      text_access: full_text
+      lines: L17-L17
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC7918674#L17
+      quote: >
+        a ccRCC patient with a PBRM1 mutation, since an analysis of TCGA data showed a median overall survival of 117 months
+    confidence: high
+    figure_idea: >
+      A decision tree of how a variant annotation pipeline classifies this one
+      base change - "synonymous, benign" at the DNA level versus "exon skipped,
+      protein absent" at the RNA level - ending in the two survival curves.
+
+  - id: CAN-026
+    claim: >
+      As reported secondhand by the BAP1 case study, an earlier pan-cancer
+      analysis put synonymous changes at roughly 6 to 8 per cent of all
+      single-nucleotide driver mutations in oncogenes; the primary analysis
+      should be re-read before the figure is used.
+    topic: fraction of drivers that are silent mutations
+    source:
+      doc_id: PMC7918674
+      title: "A BAP1 synonymous mutation results in exon skipping, loss of function and worse patient prognosis"
+      authors: "Niersch, J., Vega-Rubín-de-Celis, S., Bazarna, A., Mergener, S., Jendrossek, V., Siveke, J. T., Peña-Llopis, S."
+      journal: "iScience"
+      year: 2021
+      doi: 10.1016/j.isci.2021.102173
+      bibkey: niersch2021bap1
+    evidence:
+      text_access: full_text
+      lines: L13-L13
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC7918674#L13
+      quote: >
+        synonymous mutations represent about 6–8% of all driver mutations by single-nucleotide variants in oncogenes (Supek et al., 2014)
+    confidence: medium
+
+  - id: CAN-027
+    claim: >
+      Aberrant junctions dwarf point mutations as a source of recurrent,
+      shareable tumour antigens: across 8,705 TCGA tumours about 251,000
+      tumour-enriched junctions were found, roughly 18,000 of them present in
+      at least 100 samples, whereas only 13 somatic point mutations reached
+      that same recurrence threshold.
+    topic: neoantigens from aberrant splicing
+    source:
+      doc_id: PMC9844097
+      title: "Comprehensive Analysis of Alternative Splicing Across Tumors from 8,705 Patients"
+      authors: "Kahles, A., Lehmann, K.-V., Toussaint, N. C., Hüser, M., Stark, S. G., Sachsenberg, T., Stegle, O., Kohlbacher, O., Sander, C., Rätsch, G."
+      journal: "Cancer Cell"
+      year: 2018
+      doi: 10.1016/j.ccell.2018.07.001
+      bibkey: kahles2018splicing
+    evidence:
+      text_access: full_text
+      lines: L20,L55
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC9844097#L20,L55
+      quote: >
+        there are only 13 somatic SNVs that were found in at least 100 tumors
+    confidence: high
+    figure_idea: >
+      Two recurrence curves on shared axes - number of tumours sharing an
+      event versus number of such events - one for somatic point mutations,
+      one for tumour-enriched junctions. The junction curve has a tail; the
+      mutation curve does not.
+
+  - id: CAN-028
+    claim: >
+      The same pan-cancer analysis cautions against reading all of this
+      splicing excess as oncogenic: tumour-enriched junctions were not enriched
+      in the cancer gene census, which the authors take as evidence that much
+      of the extra splicing diversity is passenger noise from degraded splicing
+      fidelity.
+    topic: limits of the splicing-as-driver story
+    source:
+      doc_id: PMC9844097
+      title: "Comprehensive Analysis of Alternative Splicing Across Tumors from 8,705 Patients"
+      authors: "Kahles, A., Lehmann, K.-V., Toussaint, N. C., Hüser, M., Stark, S. G., Sachsenberg, T., Stegle, O., Kohlbacher, O., Sander, C., Rätsch, G."
+      journal: "Cancer Cell"
+      year: 2018
+      doi: 10.1016/j.ccell.2018.07.001
+      bibkey: kahles2018splicing
+    evidence:
+      text_access: full_text
+      lines: L44-L44
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC9844097#L44
+      quote: >
+        we did not find an enrichment of neojunctions in the cancer census gene set
+    confidence: high
+
+  - id: CAN-029
+    claim: >
+      Splicing-derived neoantigens have been taken as far as functional T cell
+      receptors - clones reactive to aberrant GNAS and RPL22 junctions were
+      isolated and killed tumour cells - but naturally occurring reactivity in
+      patients was detected in only one of three glioma patients tested, so the
+      in-patient evidence is still thin.
+    topic: neoantigens from aberrant splicing
+    source:
+      doc_id: PMC11903331
+      title: "Tumour-wide RNA splicing aberrations generate actionable public neoantigens"
+      authors: "Kwok, D. W., Stevers, N. O., Etxeberria, I., Nejo, T., Colton Cove, M., Chen, L. H., et al. (Okada, H.)"
+      journal: "Nature"
+      year: 2025
+      doi: 10.1038/s41586-024-08552-0
+      bibkey: kwok2025public
+    evidence:
+      text_access: full_text
+      lines: L14,L49
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC11903331#L14,L49
+      quote: >
+        led to the detection of a response in one of three patients with glioma
+    confidence: high
+
+  - id: CAN-030
+    claim: >
+      The tumour-specificity of these junctions does not survive a wider
+      normal-tissue comparison: averaged over cancer types, 80.6 per cent of
+      junctions called cancer-specific against tissue-matched normals turn up
+      in other adult non-cancer tissues, and a further share of those absent
+      from all adult normals appear in developmental samples.
+    topic: counter-evidence on tumour-specific junctions
+    source:
+      doc_id: PMC8209686
+      title: "Putatively cancer-specific exon–exon junctions are shared across patients and present in developmental and other non-cancer cells"
+      authors: "David, J. K., Maden, S. K., Weeder, B. R., Thompson, R. F., Nellore, A."
+      journal: "NAR Cancer"
+      year: 2020
+      doi: 10.1093/narcan/zcaa001
+      bibkey: david2020junctions
+    evidence:
+      text_access: full_text
+      lines: L20-L20
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC8209686#L20
+      quote: >
+        80.6% of exon–exon junctions thought to be cancer-specific based on comparison with tissue-matched samples (σ = 13.0%) are in fact present
+    confidence: high
+    figure_idea: >
+      A nested set diagram of normal references - tissue-matched GTEx, all
+      adult normals, developmental and other SRA samples - with the count of
+      surviving "tumour-specific" junctions shrinking at each ring. The
+      denominator is the whole argument.
+
+  - id: CAN-031
+    claim: >
+      MET exon 14 skipping is an isoform-defined drug target: in the phase 1
+      expansion cohort, crizotinib produced a confirmed objective response in
+      32 per cent of 65 evaluable patients, the underlying DNA lesions sat
+      mostly at the splice donor (57 per cent) or acceptor (25 per cent) side
+      of exon 14, and the response rate nonetheless fell short of the 60 to 80
+      per cent seen with matched therapy for other lung cancer drivers.
+    topic: oncogenic isoform switches - MET exon 14
+    source:
+      doc_id: PMC8500676
+      title: "Antitumor Activity of Crizotinib in Lung Cancers Harboring a MET Exon 14 Alteration"
+      authors: "Drilon, A., Clark, J. W., Weiss, J., Ou, S.-H. I., Camidge, D. R., Solomon, B. J., et al. (Paik, P. K.)"
+      journal: "Nature Medicine"
+      year: 2020
+      doi: 10.1038/s41591-019-0716-8
+      bibkey: drilon2020met
+    evidence:
+      text_access: full_text
+      lines: L27,L30,L39
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC8500676#L27,L30,L39
+      quote: >
+        the ORR of crizotinib in MET exon 14-altered NSCLCs was lower compared to the ORRs of ~60–80% are achieved with targeted therapy
+    confidence: high
+    figure_idea: >
+      The MET locus with exon 14 and its juxtamembrane domain, annotated with
+      where the recurrent mutations fall relative to the two splice sites, and
+      a second panel showing that structurally diverse mutations all converge
+      on one RNA outcome. One isoform, many genotypes.
+
+  - id: CAN-032
+    claim: >
+      The androgen receptor variant AR-V7 is a therapy-emergent isoform rather
+      than an initiating lesion: immunohistochemistry across hundreds of
+      prostate specimens found AR-V7 protein in under one per cent of
+      untreated primary tumours but in about three quarters of samples taken
+      after androgen deprivation, rising further after abiraterone or
+      enzalutamide.
+    topic: oncogenic isoform switches - AR-V7
+    source:
+      doc_id: PMC6307949
+      title: "Androgen receptor splice variant-7 expression emerges with castration resistance in prostate cancer"
+      authors: "Sharp, A., Coleman, I., Yuan, W., Sprenger, C., Dolling, D., Nava Rodrigues, D., et al. (Plymate, S. R.)"
+      journal: "The Journal of Clinical Investigation"
+      year: 2019
+      doi: 10.1172/JCI122819
+      bibkey: sharp2019arv7
+    evidence:
+      text_access: full_text
+      lines: L13,L20
+      anchor: https://paperclip.gxl.ai/citations/papers/PMC6307949#L13,L20
+      quote: >
+        AR-V7 protein is rarely expressed (<1%) in primary PC but is frequently detected (75% of cases) following androgen deprivation therapy
+    confidence: high
+    figure_idea: >
+      The AR transcript drawn twice - full length with its ligand-binding
+      domain, and AR-V7 terminating in cryptic exon 3 - beside a timeline of
+      treatment showing when each becomes the dominant form. The drug target
+      disappears from the protein the drug binds.
+
+  - id: CAN-033
+    claim: >
+      The SRSF2 motif switch connects directly to a named target exon: the
+      poison exon of EZH2 contains three copies of the CCWG motif that mutant
+      SRSF2 prefers and none of the GGWG motif the wild-type protein prefers,
+      and blocking that exon with antisense oligonucleotides was tested as a
+      way to restore EZH2 protein in SRSF2-mutant cancer cells.
+    topic: therapeutics - antisense correction of a specific exon
+    source:
+      doc_id: bio_0beaafec6d85
+      title: "Targeting EZH2 Oncogenic Splicing: Decoding the Regulatory Network and Antisense Correction"
+      authors: "Islam, M. R., Nagar, P., McNaughton, N., Heeamoni, S. A., Hasan, M. M., Kandel, S., Tsakiroglou, P., Dalton, W. B., Abdel-Wahab, O., Krainer, A. R., Rahman, M. A."
+      journal: "Genes & Development"
+      year: 2026
+      doi: 10.1101/gad.353628.126
+      bibkey: islam2026ezh2
+    evidence:
+      text_access: full_text
+      lines: L26,L38
+      anchor: https://paperclip.gxl.ai/citations/papers/bio_0beaafec6d85#L26,L38
+      quote: >
+        EZH2 poison exon harbors three preferred binding motifs (CCWG) of SRSF2Mut, but no binding motif (GGWG) of SRSF2WT
+    confidence: high
+    figure_idea: >
+      A single alternative exon with its three enhancer motifs marked, two
+      arrows above it (mutant factor binds, wild-type does not), and an
+      antisense oligo drawn over the motifs. The whole therapeutic logic fits
+      in one exon's worth of sequence.
+
+  - id: CAN-034
+    claim: >
+      The selectivity of the SF3B1-targeting compound H3B-8800 for
+      spliceosome-mutant cells does not come from differential drug binding:
+      the compound bound SF3b complexes containing wild-type or mutant SF3B1
+      and altered splicing similarly in both, yet killed SF3B1- or
+      SRSF2-mutant cells preferentially, which the authors attribute to those
+      cells' dependence on normal expression of spliceosome genes.
+    topic: therapeutics - splicing modulators
+    source:
+      doc_id: "27477961"
+      title: "H3B-8800, an Orally Bioavailable Modulator of the SF3b Complex, Shows Efficacy in Spliceosome-Mutant Myeloid Malignancies"
+      authors: "Not listed in corpus meta.json; surnames appearing in the abstract's disclosure block are Buonamici, Thomas, Seiler, Chan, Caleb, Darman, Fekkes, Karr, Liu, Meeske, Mizui, Pazolli, Prajapati, Wang, Warmuth, Yu, Zhu, Smith - resolve the ordered author list before citing"
+      journal: "Blood (conference abstract)"
+      year: 2016
+      doi: 10.1182/blood.v128.22.966.966
+      bibkey: seiler2016h3b8800
+    evidence:
+      text_access: abstract_only
+      lines: L1-L1
+      anchor: https://paperclip.gxl.ai/citations/papers/27477961#L1
+      quote: >
+        H3B-8800 affected splicing similarly regardless of spliceosome genotype
+    confidence: medium
+
+  - id: CAN-035
+    claim: >
+      Clinical translation of SF3B1 modulation has so far failed on efficacy:
+      in the phase 1 dose-expansion cohorts in transfusion-dependent
+      SF3B1-mutant lower-risk MDS, only two patients in each of the two
+      cohorts (of 7 and 36 patients) reached even one interval of eight-week
+      red cell transfusion independence, and the investigators concluded the
+      drug was insufficiently effective at the doses tested.
+    topic: therapeutics - clinical status
+    source:
+      doc_id: "87270751"
+      title: "Phase 1 first-in-human dose-expansion study of the oral SF3B1 modulator H3B-8800 in lower-risk myelodysplastic syndrome"
+      authors: "Not listed in corpus meta.json (PMID 40651101) - resolve author list before citing"
+      journal: "Leukemia Research"
+      year: 2025
+      doi: 10.1016/j.leukres.2025.107735
+      bibkey: h3b8800phase1lrmds2025
+    evidence:
+      text_access: abstract_only
+      lines: L1-L1
+      anchor: https://paperclip.gxl.ai/citations/papers/87270751#L1
+      quote: >
+        the low RBC-TI rate suggests insufficient efficacy of H3B-8800 at the dose levels tested
+    confidence: high
+    figure_idea: >
+      A timeline of splicing-modulator clinical programmes with the reason
+      each stopped written on it (off-target toxicity, insufficient efficacy,
+      ongoing). An honest counterweight to the mechanism figures.
+
+leads:
+  - note: >
+      The EZH2 antisense paper (CAN-033) exists in the corpus only as the
+      bioRxiv version; meta.json carries the preprint DOI
+      10.64898/2026.01.07.697981 while the search index reports a journal
+      version at 10.1101/gad.353628.126. Confirm the journal citation and
+      re-check the motif counts against the published text before use.
+    why: "The chapter cites it as a journal paper; the lines read were the preprint's."
+  - note: >
+      CAN-035's source record has no author list in meta.json. The author
+      list must be resolved from PubMed (PMID 40651101) before this appears
+      in references.bib.
+    why: "A clinical-trial citation without authors is not publishable."
+  - note: >
+      CAN-034's source record (doc_id 27477961) is a 2016 Blood meeting
+      abstract with no author list in meta.json. The surnames recorded in
+      the source field come from the abstract's own disclosure block, not
+      from a byline, so the ordered author list must be resolved before
+      this enters references.bib.
+    why: "Conference-abstract bylines are easy to get wrong and this is the primary preclinical citation for H3B-8800."
+  - note: >
+      No full-text primary source was located in the time available for
+      several classic oncogenic isoform switches named in the brief - MDM2,
+      BCL2L1 (Bcl-xL/xS), PKM1/PKM2, CD44 variable exons, FGFR2 IIIb/IIIc,
+      RAC1b, CCND1, EGFRvIII, and BRAF splice variants in vemurafenib
+      resistance. Each is believed to exist in the literature but none is
+      anchored here, so none may be asserted.
+    why: "The chapter will look thin on solid-tumour isoform switches unless a second pass anchors two or three of these."
+  - note: >
+      The original phase 1 dose-escalation report for H3B-8800 in advanced
+      myeloid malignancies (Steensma et al., 2021) was not found as a
+      full-text record; the corpus holds only a 2019 EHA meeting abstract
+      (doc_id 31126380) and a 2017 trial-design abstract (doc_id 38139041).
+      The EZH2 preprint cites Steensma et al. 2021 as having "appeared
+      ineffective".
+    why: "The dose-escalation paper is the canonical citation for H3B-8800's clinical outcome and should be cited directly, not secondhand."
+  - note: >
+      E7107, the earlier SF3B1-targeting compound, and the reported reason its
+      trials were terminated (off-target toxicity) were not anchored in this
+      pass.
+    why: "The therapeutics section needs the full arc of SF3b-modulator clinical attempts, not only H3B-8800."
