@@ -1,8 +1,226 @@
-# Plants, fungi, and other eukaryotes
+# Plants, fungi and the rest of the eukaryotes
 
 ::: {.callout-warning}
-## Draft
-Research in progress. Claim records: `research/03-plants-fungi-other.yml`
+## First draft
+Written from `research/03-plants-fungi-other.yml` and not yet reviewed by a
+second reader.
 :::
 
-_Scope:_ Isoform biology beyond metazoans: plant temperature and flowering control, fungal splicing, protists; where the rules differ.
+Cross-species comparison of alternative splicing has a measurement problem
+sitting in front of it. Detected splicing scales with how deeply a transcriptome
+was sampled, and sequencing quality and library construction differ between
+projects. One early comparison reached the conclusion that it was impractical to
+state the exact level of alternative splicing even in the organisms it had
+itself tested [@kim2006eukaryotes]. Published prevalence figures are positions
+on different saturation curves, and a bar chart that places them side by side is
+comparing the experiments.
+
+The within-study comparisons survive that objection, and they are the ones this
+chapter leans on. The broadest of them covers 1,494 species using a single
+per-coding-sequence transcript-count metric. Splicing is minimal in prokaryotes
+and unicellular eukaryotes, highest in mammals and birds, and only moderate in
+plants despite wide variation in plant genome composition
+[@delafuente2025treeoflife].
+
+## Plants {#sec-plants}
+
+A normalised deep-coverage survey of Arabidopsis put alternative splicing at
+61.2 per cent of intron-containing genes, in flower and seedling tissue grown
+without stress. Those authors treat the figure as a floor
+[@marquez2012arabidopsis].
+
+### A different mixture of events {#sec-class-balance}
+
+The flavour differs as much as the amount. Cassette exons predominate in
+animals, while intron retention is the more frequent class in other taxa
+[@grutzmann2013fungal]. Arabidopsis follows the second pattern. Intron retention
+was the single commonest event class in that survey, at roughly two fifths of
+everything the transcript assembly detected [@marquez2012arabidopsis].
+
+The same authors then qualified their own result. Most retained introns were
+supported by far fewer reads than the junction that removes them, and about 73
+per cent had a retention ratio below 1 [@marquez2012arabidopsis]. Counting
+events overstates how much retained-intron RNA a plant cell is actually holding.
+
+### Temperature read through splicing
+
+Flowering time in Arabidopsis is set partly by how two MADS-box genes are
+spliced. FLM is the better known. FLM transcripts were cloned and sequenced at
+three growth temperatures. The share of non-canonical isoforms, which mostly
+carry premature stop codons, rose from 30 per cent at 16 degrees to over 50 per
+cent at 27 degrees [@capovilla2017flm].
+
+The mechanism is not the one originally proposed. CRISPR deletion of FLM exon 2
+or exon 3 forced plants to make only one of the two major isoforms. Those
+restricted to the warm-temperature isoform flowered early, but no earlier than
+a complete FLM null. That ordering argues against a dominant-negative role
+for the warm isoform. Driving the same isoform from a constitutive promoter does
+produce early flowering, so the effect depends on dose
+[@capovilla2017flm].
+
+MAF2 arrived at the same trick independently. At low temperature its abundant
+variant encodes a protein that partners SVP to repress flowering. Warming shifts
+the balance toward an intron-retaining variant carrying a premature stop, whose
+product can neither bind SVP nor repress [@airoldi2015maf2]. One gene family
+evolved thermosensory splicing twice.
+
+### Cold, antisense transcripts and the clock
+
+Vernalisation at the FLC locus runs through isoform choice on the antisense
+strand. The cold-induced COOLAIR transcripts exist as several isoforms
+distinguished by splicing and polyadenylation. The cold-specific distal class
+II.ii isoform represses FLC by sequestering the activator FRIGIDA away from the
+FLC promoter [@long2024coolair].
+
+The circadian clock is spliced unproductively on purpose. A systematic survey of
+Arabidopsis clock genes found unproductive splicing widespread among them,
+mostly full or partial intron retention generating in-frame premature stops. The
+CCA1 and LHY variants are conserved between the two paralogues, and the CCA1
+event is conserved across plant phyla [@filichkin2012clock]. Barley seedlings
+shifted to low temperature change the splicing of core clock genes including the
+orthologues of LHY and PRR7, which puts the mechanism in a monocot crop as well
+[@calixto2016barley].
+
+### Stress, and where the signal comes from
+
+Salt stress raises total alternative splicing. An Arabidopsis experiment
+sequenced to roughly 200-fold coverage found about 49 per cent of
+intron-containing genes alternatively spliced under salt. Of those, 10 per cent
+showed a significant stress-driven shift in isoform ratio [@ding2014salt]. Maize grown through realistic daily temperature cycles did the
+same as maximum daily temperature rose. Retained introns and skipped exons
+increased most, and the splicing regulators were themselves among the genes
+most often affected, SR45a among them [@li2021maize].
+
+Light changes splicing in Arabidopsis roots, which do not see any light. The signal traces to sugars made by photosynthesis in the shoot, acting through
+the TOR kinase pathway. Those authors describe it as a shoot-to-root route
+coordinating splicing across the whole plant [@riegler2021light]. Splicing state
+in one organ is set by metabolic status in another.
+
+### Isoform alleles that breeders care about
+
+Two crop loci show the effect sizes involved. In tropical japonica rice, six
+SNPs at the OsLG3b locus change how the OsMADS1 transcript is spliced, and that
+splice variation was associated with grain length in a candidate-region
+analysis [@yu2018oslg3b]. A near-isogenic line carried the large-grain donor
+allele in a Nipponbare background. Its grains were 7.5 per cent longer and 3.5
+per cent thicker, and yield per plant rose 7.1 per cent. Heading date, tiller
+number and grains per panicle did not change significantly [@yu2018oslg3b].
+
+Bread wheat makes five splice variants of the G-protein gamma subunit gene
+TaGS3, and two of them pull in opposite directions. Overexpressing TaGS3.1 cut
+grain weight by 5.89 per cent and length by 5.04 per cent. Overexpressing
+TaGS3.5 raised grain weight by 5.70 per cent and length by 4.30 per cent
+[@ren2021tags3]. Which isoform a plant makes is an agronomic trait, at
+single-digit percentages that a breeding programme would take.
+
+## Fungi {#sec-fungi}
+
+Budding yeast is the organism that taught most people what splicing is, and it
+is unrepresentative. Splicing is required in only about 4 per cent of
+*Saccharomyces cerevisiae* protein-coding genes, and the genes that do carry an
+intron are structurally plain, typically two exons and one intron. The same
+reanalysis nonetheless reports pervasive use of alternative splice sites within
+that small set [@schreiber2015yeast].
+
+Some of that simplicity was acquired. The widely conserved alternatively spliced
+gene SKI7/HBS1 was replaced in *Saccharomyces* by a pair of duplicated,
+intronless genes during whole-genome doubling, converting one isoform choice
+into two separate loci [@hurtig2020budding]. Gene duplication and alternative
+splicing can reach the same destination.
+
+What regulated splicing budding yeast retains is concentrated in meiosis. The
+activator Mer1 is required to splice four meiosis-specific pre-mRNAs, MER2,
+MER3, AMA1 and SPO22, whose introns are otherwise poor spliceosome substrates
+[@venkataramanan2017meiotic]. Fission yeast runs the same logic with the sign
+reversed. Mmi1 binds primary transcripts of thirty or more meiotic genes in
+vegetative cells, inhibits splicing of the introns near its binding sites while
+sparing distant ones, and routes the transcript to hyperadenylation-dependent
+decay. At least 29 target genes are therefore transcribed constitutively and
+expressed only in meiosis [@chen2011mmi1].
+
+![Within one comparative study using one method, per-gene alternative splicing
+rate tracks how multicellular the group is. Rates from different studies cannot
+be placed on an axis like this one.](../figures/fungal-as-ladder.svg){#fig-fungal-ladder width=100%}
+
+Across the kingdom the rate is higher than yeast suggests. A comparative study
+of 23 fungi with sampling-depth correction estimated that 6.4 per cent of
+annotated fungal genes are alternatively spliced on average, with *Cryptococcus
+neoformans* reaching 18 per cent. Basidiomycota averaged 8.6 per cent against
+6.0 per cent for Ascomycota, a difference those authors call not significant
+[@grutzmann2013fungal].
+
+Within that dataset the rate rises with structural complexity. It runs from
+0.26 per cent in the mostly single-celled Saccharomycotina and
+Taphrinomycotina, through 2.3 per cent in Mucoromycotina and 7.2 per cent in
+the filamentous Pezizomycotina, to 8.6 per cent in the fruiting-body-forming
+Basidiomycota [@grutzmann2013fungal]. *Cryptococcus* is intron-rich by any measure, carrying
+40,946 introns, with 99.5 per cent of its expressed genes containing at least
+one [@janbon2014cryptococcus].
+
+Pathogens remodel their isoform repertoire during infection. Transcriptome data
+from the rice blast fungus *Magnaporthe oryzae* spanned vegetative growth and
+five stages of rice infection. It yielded 4,270 novel mRNA isoforms from 2,413
+genes, 18.1 per cent of the gene set [@jeon2022riceblast].
+
+Some fungi go further and operate the host's splicing machinery directly. The
+Glomeromycotina-specific SP7-like effector family of arbuscular mycorrhizal
+fungi localises to nuclear condensates. There it binds the plant splicing
+factor SR45 together with the core spliceosome proteins U170K and U2AF35.
+Expressed in potato, it shifts the host alternative splicing programme
+[@betz2024mycorrhizal]. A symbiont establishes itself by changing which isoforms
+its host makes.
+
+## Protists, parasites and the limits of the mechanism {#sec-protists}
+
+*Plasmodium falciparum* is not the intron-poor organism it is often taken for.
+Over half its genes carry predicted introns, and gene-model-independent analysis
+of the blood stages added 977 previously undocumented canonical splice
+junctions, an 11 per cent increase on the existing annotation
+[@sorber2011plasmodium].
+
+*Toxoplasma gondii* shows what the method does to the answer. Junction-level
+counting that deliberately ignores intron retention put alternative splicing at
+22.6 per cent of annotated genes in uninduced parasites, against roughly 5 per
+cent from earlier studies built on reconstructing transcript models. The same
+authors note that detection depends heavily on sequencing depth, and that their
+own data probably captured well under half of all junctions [@yeoh2015toxoplasma].
+The organism did not change between those two numbers.
+
+Splicing regulation in the same parasite is a virulence determinant. Deleting
+the splicing factor SR2 cut brain cyst burden in infected mice by about 80 per
+cent, from roughly 216 cysts per brain in wild type to 46 in the knockout.
+Complementation restored the wild-type level [@wu2023sr2].
+
+Ciliates run splicing close to its physical minimum. Every *Paramecium* intron
+falls in a narrow 25 to 45 base pair range, among the shortest known, which
+those authors read as a functional limit for spliceosomal recognition
+[@bondarenko2016ciliate].
+
+Trypanosomes rearranged the problem altogether. Trypanosome messenger RNAs were
+shown to share an identical 35-nucleotide leader at their 5' ends, present on
+many and probably all of them [@parsons1984splicedleader]. Genes are transcribed
+polycistronically, and individual mature mRNAs are carved out of that transcript
+by spliced-leader trans-splicing, obligatorily coupled to cleavage and
+polyadenylation in the intergenic regions [@kolev2026transsplicing]. The
+splicing reaction there sets transcript boundaries instead of choosing internal
+exon content.
+
+## Whether any of this tracks complexity {#sec-trend}
+
+The green lineage gives a baseline. *Chlamydomonas reinhardtii*, which split
+from land plants around a billion years ago, shows alternative splicing at 498
+transcriptional units and 611 events, about 3 per cent of its gene count
+[@labadorf2010chlamydomonas].
+
+A coverage-corrected index built from over 39 million ESTs across 47 sequenced
+eukaryotic genomes found alternative splicing rising steadily over roughly 1,400
+million years of eukaryotic evolution. Plants scored higher than both fungi and
+protists, which those authors read as an independent increase in the plant
+lineage rather than a shared trend [@chen2014complexity].
+
+Two things are being measured in all of this, and they move separately. How much
+alternative splicing a lineage does is one quantity. Which classes of event it
+uses is another, and the switch from cassette exons to intron retention happens
+without regard to the first. Any single number offered for an organism is a
+property of the assay as much as of the organism. The comparisons that survive
+are the ones made inside a single study.
