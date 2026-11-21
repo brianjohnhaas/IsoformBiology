@@ -16,14 +16,29 @@ The book is written impersonally. No narrator, no "we", no "I". Claims are
 attributed to the people who made them, and judgements the book itself makes are
 stated as statements rather than as opinions held by someone.
 
-This keeps a multi-author book consistent as contributors come and go, and it
-puts the weight on the evidence. It also removes the most common hedge: with no
-narrator available to own a claim, a sentence either says the thing or does not.
+Two reasons this was chosen over a collective "we", after writing a chapter both
+ways. A collective voice asserts a consensus that a multi-author book does not
+yet have, and it raises the bar for contribution, since a donated section then
+has to sound like the book as well as being correct.
 
-Attribute by name when the attribution matters, especially where sources
-disagree: "those authors reject a tumour-associated switch" is better than "it
-has been suggested". Prefer the active voice with the researchers as the
-subject.
+Impersonal prose drifts toward dry. That is its failure mode, and the first draft
+of the animals chapter demonstrated it. Two rules hold it off, both enforced by
+`scripts/check_style.py`:
+
+**Keep sentences short.** Mean under 19 words, nothing over 45. The energy in
+good prose comes from pace far more than from pronouns. Measured on the two
+drafts, dropping the mean from 22.2 to 14.9 words did almost all the work that
+switching to "we" appeared to do.
+
+**End sections on a claim, not a summary.** A section that closes by restating
+what it just said has wasted its most emphatic position. Close on the thing the
+book is willing to defend. "Forcing the splice choice has a large phenotype.
+Tumours do not make the switch." is a verdict; "the defensible statement is that
+forcing the choice has a phenotype" is the same verdict with a hedge about who
+finds it defensible. Drop the hedge. A verdict needs no narrator, only an author
+willing to stop qualifying.
+
+This checker cannot see the second rule. A human has to.
 
 See `chapters/02-animals.qmd` for the reference implementation.
 

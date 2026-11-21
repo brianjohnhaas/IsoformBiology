@@ -34,6 +34,9 @@ jobs:
       - name: Check bibliography is in sync with claim records
         run: python3 scripts/build_bib.py --check
 
+      - name: Check prose style
+        run: python3 scripts/check_style.py
+
       - name: Render book
         run: quarto render --to html
 

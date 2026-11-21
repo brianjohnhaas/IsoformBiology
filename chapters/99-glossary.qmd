@@ -11,50 +11,45 @@ usage the book actually relies on. Claim records: `research/01-foundations.yml`.
 ## What this book deliberately does not do
 
 This is a biology book. It does not catalogue software, benchmark tools, or teach
-pipelines — that work is done well elsewhere, and duplicating it would both waste
-effort and date the book quickly. The landscape as of November 2026:
+pipelines. That work is done well elsewhere, and duplicating it would both
+waste effort and date the book quickly. What exists as of November 2026:
 
 ### Tool catalogues
 
-- [**long-read-tools.org**](https://long-read-tools.org/) — Ritchie Lab (WEHI)
+- [**long-read-tools.org**](https://long-read-tools.org/). Ritchie Lab (WEHI)
   catalogue of long-read analysis tools, including a transcriptomics category.
   Actively curated, accepts submissions.
-- [**awesome-alternative-splicing**](https://github.com/HussainAther/awesome-alternative-splicing)
-  — a curated splicing tool list. Note it has not been updated since 2018 and
+- [**awesome-alternative-splicing**](https://github.com/HussainAther/awesome-alternative-splicing). A curated splicing tool list. Note it has not been updated since 2018 and
   predates the long-read era; useful mainly as a record of the short-read
   toolkit.
 
 ### Methods training
 
-- [**rnabio.org**](https://rnabio.org/) — Griffith Lab RNA-seq course, usable
-  standalone, with a module on isoform analysis and assembly.
-- [**EBI: Long-read RNA-seq analysis**](https://www.ebi.ac.uk/training/materials/introduction-to-rna-seq-materials/qc-dwnstream-analysis/long-read-rna-seq-analysis/)
-  — part of EBI's *Introduction to RNA-seq and functional interpretation*.
-- [**Galaxy Training Network: differential isoform expression**](https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/differential-isoform-expression/tutorial.html)
-  — hands-on isoform switching.
+- [**rnabio.org**](https://rnabio.org/). Griffith Lab RNA-seq course, usable standalone, with a module on isoform analysis and assembly.
+- [**EBI: Long-read RNA-seq analysis**](https://www.ebi.ac.uk/training/materials/introduction-to-rna-seq-materials/qc-dwnstream-analysis/long-read-rna-seq-analysis/). Part of EBI's *Introduction to RNA-seq and functional interpretation*.
+- [**Galaxy Training Network: differential isoform expression**](https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/differential-isoform-expression/tutorial.html). Hands-on isoform switching.
 
 ### Databases and knowledge bases
 
 Where this book makes a biological case, these are where a reader goes to look up
 a specific gene or isoform.
 
-- [**APPRIS**](https://appris.bioinfo.cnio.es/) — principal isoform selection,
+- [**APPRIS**](https://appris.bioinfo.cnio.es/). Principal isoform selection,
   plus annotation of known functional alternative isoforms.
-- [**MANE**](https://www.ncbi.nlm.nih.gov/refseq/MANE/) — matched RefSeq/Ensembl
+- [**MANE**](https://www.ncbi.nlm.nih.gov/refseq/MANE/). Matched RefSeq/Ensembl
   representative transcripts; discussed critically in
   [the cataloguing chapter](09-catalogs.qmd).
-- [**GENCODE**](https://www.gencodegenes.org/) — reference transcript annotation.
-- **ASpdb**, **IsoProDB**, **SPLISOFORMS** — protein-isoform-level knowledge
+- [**GENCODE**](https://www.gencodegenes.org/). Reference transcript annotation.
+- **ASpdb**, **IsoProDB**, **SPLISOFORMS**. Protein-isoform-level knowledge
   bases integrating structure, domains, disorder and NMD annotation.
-- [**isopedia**](https://github.com/zhengxinchang/isopedia) — read-level indexing
+- [**isopedia**](https://github.com/zhengxinchang/isopedia). Read-level indexing
   across large numbers of long-read transcriptomes.
 
 ### Adjacent communities
 
 - [**Proteoform Alliance**](https://ctdp.org/) (formerly the Consortium for
   Top-Down Proteomics, renamed October 2026) and the
-  [**Human Proteoform Project**](https://www.science.org/doi/10.1126/sciadv.abk0734)
-  — the same argument made one level down, at the protein level. Natural allies:
+  [**Human Proteoform Project**](https://www.science.org/doi/10.1126/sciadv.abk0734). The same argument made one level down, at the protein level. Natural allies:
   a transcript isoform that is never translated into a distinct proteoform, and a
   proteoform with no transcript-level explanation, are each other's open
   questions.

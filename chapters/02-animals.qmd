@@ -1,254 +1,248 @@
 # Animals and humans
 
-Alternative splicing is near-universal in human genes, and that fact alone
-settles very little. A gene can produce twenty transcripts without any of them
-mattering, and a gene can produce two transcripts that do opposite things. The
-cases in this chapter are the ones where the isoform difference has been tied to
-a phenotype, because those are the cases that carry the argument.
+Almost every human gene is alternatively spliced. On its own that settles
+nothing. A gene can make twenty transcripts that all do the same job, and a gene
+can make two that do opposite jobs. The cases in this chapter are ones where
+someone tied an isoform difference to a phenotype, because those are the cases
+that carry weight.
 
 ## Dscam1: diversity by combination {#sec-dscam}
 
-*Drosophila* *Dscam1* is the most extreme demonstration available that a single
-gene can specify an enormous protein repertoire, and the most thoroughly
-dissected example of what such a repertoire is for.
+*Drosophila* *Dscam1* is the most extreme example available, and the most
+thoroughly dissected.
 
-The architecture is combinatorial rather than additive. Three clusters of
-mutually exclusive exons, holding 12, 48 and 33 variants, are spliced so that
-exactly one variant from each cluster appears in a mature transcript. The
-product of those three choices is 19,008 distinct ectodomains, and pairing each
-with one of two alternative transmembrane exons gives the 38,016 figure usually
-quoted [@dong2023dscamscreen].
+The architecture multiplies rather than adds. Three clusters of mutually
+exclusive exons hold 12, 48 and 33 variants, and splicing takes exactly one from
+each. That yields 19,008 ectodomains. An alternative transmembrane exon doubles
+it to the 38,016 usually quoted [@dong2023dscamscreen].
 
 ![Three mutually exclusive exon clusters and one alternative transmembrane exon
 generate the *Dscam1* repertoire. A single neuron uses a small, probabilistically
 drawn slice of it.](../figures/dscam-combinatorics.svg){#fig-dscam width=100%}
 
-The arithmetic is worth stating plainly because the number is often quoted as a
-curiosity about splicing capacity. It is better understood as a specification. The
-Dscam1 ectodomain binds homophilically with near-absolute specificity: each
-isoform recognises itself and binds other isoforms weakly or not at all
-[@dscam2004homophilicbinding]. An isoform is therefore usable as a cell-surface
-identity label, and the size of the repertoire sets how many distinguishable
-labels exist.
+The arithmetic deserves the space because the number is usually quoted as a
+curiosity about how far splicing can be pushed. It is a specification. Each
+Dscam1 ectodomain binds homophilically with near-absolute specificity: an isoform
+recognises itself and barely touches the others [@dscam2004homophilicbinding].
+That property is what makes an isoform usable as a cell-surface identity label,
+and the repertoire size sets how many distinguishable labels exist.
 
-What a neuron does with that label is repulsion. Sister dendrites of one neuron
-carry the same isoforms, so they recognise each other and turn away, while
-branches of different neurons pass freely. The recognition happens in the
-variable ectodomain, but the conversion into repulsion is carried out by the
-cytoplasmic tail [@dscam2007dendriteselfavoidance]. Self-avoidance thus requires
-only that a neuron's isoform set be distinctive, not that it be any particular
-set, which is consistent with how little of the repertoire a single cell uses:
-R3/R4 photoreceptors were estimated to express on the order of 14 to 50 distinct
-isoform mRNAs each [@dscam2004stochasticbiased].
+The label is used for repulsion. Sister dendrites of one neuron carry matching
+isoforms, recognise each other and turn away. Branches of different neurons pass
+without incident. Recognition happens in the variable ectodomain, but the
+cytoplasmic tail does the repelling [@dscam2007dendriteselfavoidance].
 
-Mutual exclusivity is enforced in *cis*, by RNA structure rather than by a
-trans-acting factor choosing among equals. A single intronic docking site pairs
-with the selector sequence upstream of one variable exon at a time, physically
-presenting that exon and no other to the upstream constitutive exon
-[@dscam2005dockingselector].
+The implication is easy to miss. Self-avoidance requires a neuron's isoform set
+to be *distinctive*, not to be any *particular* set. The expression data match:
+R3/R4 photoreceptors express on the order of 14 to 50 distinct isoform mRNAs
+each [@dscam2004stochasticbiased], a vanishing slice of the repertoire. The
+repertoire exists to make collisions between unrelated neurons unlikely, not to
+assign meanings to individual isoforms.
+
+Selection among variants happens in *cis*, through RNA structure, with no
+trans-acting factor adjudicating. One intronic docking site pairs with the
+selector sequence upstream of a single variable exon, physically presenting that
+exon and no other to the upstream constitutive exon [@dscam2005dockingselector].
 
 ### How much diversity is required
 
-Two experiments separate correlation from requirement. Alleles cutting the
-maximum repertoire from 38,016 to 22,176 still produced specific connectivity
-defects in mechanosensory neurons, establishing that the number itself is under
-selection [@dscam2006diversityrequired]. A later CRISPR deletion series spanning
-396 to 18,612 possible ectodomains then showed that there is no single
-requirement to measure. Dendrite self/non-self discrimination saturated at about
-2,000 isoforms and was indifferent to which cluster supplied them. Normal axon
-patterning needed many more and depended on which clusters were present
-[@dong2023dscamscreen]. Diversity does two jobs with different currencies: one
-needs a sufficient count, the other needs particular identities.
+Two experiments take this from correlation to requirement.
 
-### Bias, and a tension in the standard model
+Alleles cutting the maximum repertoire from 38,016 to 22,176 still produced
+specific connectivity defects in mechanosensory neurons
+[@dscam2006diversityrequired]. The number itself is under selection.
 
-Isoform usage is not uniform across the repertoire, and the skew is itself
-functional. Flies with normal Dscam1 protein levels and an unchanged number of
-possible isoforms, but a globally shifted exon 9 usage distribution, showed
-marked mushroom-body defects; the equivalent shift at exon 4 did not
-[@dscam2021splicingbias]. Changing bias damaged axonal wiring without affecting
-the self-avoidance of axonal branches, which is the function the isoform count is
-thought to underwrite [@dscam2021splicingbias].
+A CRISPR deletion series spanning 396 to 18,612 possible ectodomains then showed
+there is no single requirement to measure. Dendrite self/non-self discrimination
+saturated near 2,000 isoforms and was indifferent to which cluster supplied them.
+Axon patterning needed far more, and depended on which clusters were present
+[@dong2023dscamscreen].
 
-That result sits awkwardly with the standard account, and the authors say so:
-strong reproducible bias restricts access to the very diversity that
-self-avoidance is supposed to exploit [@hong2019dscamsplicingbias]. The tension
-is unresolved, and the chapter leaves it that way.
+Diversity does two jobs in two currencies. One needs a sufficient count. The
+other needs particular identities.
+
+### Bias, and a crack in the standard model
+
+Isoform usage is skewed, and the skew does work. Flies with normal Dscam1 protein
+levels and an unchanged number of possible isoforms, but a shifted exon 9 usage
+distribution, showed marked mushroom-body defects. The same shift at exon 4 did
+nothing [@dscam2021splicingbias]. Changing bias damaged axonal wiring while
+leaving the self-avoidance of axonal branches intact, which is the function the
+isoform count is supposed to underwrite [@dscam2021splicingbias].
+
+Those authors name the problem their own result creates: heavy, reproducible
+bias restricts access to the diversity that self-avoidance is supposed to exploit
+[@hong2019dscamsplicingbias]. No resolution is available, and the standard
+self-avoidance account is incomplete as it stands.
 
 ## Splicing as a developmental switch
 
-*Dscam1* uses splicing to generate variety. The *Drosophila* somatic
-sex-determination cascade uses it to make a decision, and it remains the
-clearest case of a splicing switch controlling a developmental outcome.
+*Dscam1* uses splicing to generate variety. The *Drosophila* sex-determination
+cascade uses it to make a decision, and remains the cleanest example of a
+splicing switch running a developmental programme.
 
-The cascade is a chain of splice choices. Female Sex-lethal protein acts
-directly on RNA, binding the *transformer* transcript at or near its
-non-sex-specific 3' acceptor and forcing use of the downstream, female-productive
-acceptor [@sxl1990trasplicesite]. At the bottom of the chain Tra and Tra2 act
-positively, recruiting SR-family factors to a regulatory element downstream of
-the female-specific 3' splice site of *doublesex*; that assembled complex commits
-the pre-mRNA to the female pattern [@dsx1993spliceenhancercomplex].
+The cascade is a chain of splice choices. Female Sex-lethal binds the
+*transformer* transcript at or near its non-sex-specific 3' acceptor, forcing use
+of the downstream female-productive acceptor [@sxl1990trasplicesite]. At the
+bottom of the chain, Tra and Tra2 act positively, recruiting SR-family factors to
+an element downstream of the female-specific 3' splice site of *doublesex*. That
+complex commits the pre-mRNA [@dsx1993spliceenhancercomplex].
 
-*doublesex* is also the cleanest demonstration that two isoforms of one gene can
-do opposite things. The female product represses male differentiation and the
-male product represses female differentiation, both as functional products of the
-same primary transcript [@dsx1989sexspecificpolypeptides].
+*doublesex* also supplies the cleanest case anywhere of two isoforms doing
+opposite things. The female product represses male differentiation, and the
+male product represses female differentiation. Both are functional products of
+the same primary transcript [@dsx1989sexspecificpolypeptides].
 
 ## Isoform switching within a cell's lifetime
 
-Developmental cascades set an isoform once. CD45 shows the same machinery used
-reversibly, as part of ordinary immune function.
+Developmental cascades set an isoform once. CD45 runs the same machinery
+reversibly, as routine immune function.
 
-Human CD45 produces five transmembrane phosphatase isoforms differing only in
-their extracellular domains, through inclusion or skipping of variable exons 4, 5
-and 6. Resting peripheral T cells carry long forms retaining two or three of
-those exons; activated T cells express forms lacking most or all of them
-[@cd452005variableexonelements]. The ectodomain length is consequential rather
-than cosmetic: in T cell lines carrying a defined receptor, the short exon-null
-isoform characteristic of memory CD4 cells supported antigen recognition best
-[@cd451994isoformsrecognition]. The splice choice tunes signalling sensitivity
-without altering receptor specificity.
+Human CD45 makes five transmembrane phosphatase isoforms differing only in their
+extracellular domains, by including or skipping variable exons 4, 5 and 6.
+Resting T cells carry long forms retaining two or three of those exons. Activated
+T cells drop most or all of them [@cd452005variableexonelements]. Length is
+consequential: in T cell lines carrying a defined receptor, the short exon-null
+isoform typical of memory CD4 cells supported antigen recognition best
+[@cd451994isoformsrecognition].
+
+The splice choice tunes signalling sensitivity and leaves receptor specificity
+untouched. One gene, one receptor, two response thresholds.
 
 ## Opposing functions from one gene
 
-The *bcl-x* locus was described from the outset as producing two spliced products
-that pull in opposite directions, with the short form acting against the
-pro-survival activity of bcl-2 rather than merely failing to protect cells
-[@bclx1993dominantregulator].
+The *bcl-x* locus was described from the outset as making two products that pull
+against each other, with the short form actively opposing bcl-2 rather than
+merely failing to protect cells [@bclx1993dominantregulator].
 
-The structural basis is a single internal deletion. Bcl-xS lacks 63 amino acids
-spanning the conserved BH1 and BH2 regions, the segment giving Bcl-xL its closest
-similarity to Bcl-2. The mechanism is less settled than the antagonism. The
-original characterisation found Bcl-xS binding Bcl-xL only weakly in vitro, saw
-no observable heterodimers in cells, and argued on that basis that its mechanism
-differs from other pro-apoptotic family members
-[@bclx1996santagonizesl]. A later review states the mechanism as direct
-inhibition, with Bcl-xS binding and inhibiting Bcl-xL and Bcl-2 and thereby
-releasing Bak [@stevens2019bclxsplicing]. The antagonism is solid; the
-heterodimer model rests on the review rather than on the primary report.
+The structure explains the reversal. Bcl-xS lacks 63 amino acids spanning the
+conserved BH1 and BH2 regions, the stretch that makes Bcl-xL most resemble Bcl-2.
+
+The mechanism is shakier than the antagonism. The original characterisation found
+Bcl-xS binding Bcl-xL only weakly in vitro, observed no heterodimers in cells,
+and argued on that basis that its mechanism differs from other pro-apoptotic
+family members [@bclx1996santagonizesl]. A 2019 review states it as direct
+inhibition, with Bcl-xS binding Bcl-xL and Bcl-2 and thereby releasing Bak
+[@stevens2019bclxsplicing]. The antagonism is settled. The heterodimer model
+rests on the review, not on the primary report, and should be cited that way.
 
 ## Isoforms that set tissue mechanics
 
-Titin is the extreme case of a spliced product whose physical properties are the
-phenotype. The adult human heart expresses a long compliant N2BA form of roughly
-3,200 to 3,500 kDa alongside a short stiff N2B form of about 3,000 kDa, both
-spliced from one gene of 364 exons [@li2022rbm20titinstiffness]. The mechanical
-difference traces to how much extensible material the transcript retains: the
-compliant form keeps a larger share of PEVK and immunoglobulin-like spring
-elements in the I-band.
+Titin is the case where a spliced product's physical properties are the
+phenotype. The adult human heart runs a long compliant N2BA form of roughly 3,200
+to 3,500 kDa alongside a short stiff N2B form near 3,000 kDa, both spliced from
+one gene of 364 exons [@li2022rbm20titinstiffness]. The difference comes down to
+how much extensible material survives splicing. The compliant form keeps more
+PEVK and immunoglobulin-like spring elements in the I-band.
 
-One factor dominates the ratio. RBM20 is the principal regulator of titin
-pre-mRNA, and losing one functional copy shifts splicing toward highly compliant
-isoforms and impairs the Frank-Starling response [@li2022rbm20titinstiffness].
+One factor sets the ratio. RBM20 is the principal regulator of titin pre-mRNA,
+and losing a single functional copy shifts splicing toward highly compliant
+isoforms and degrades the Frank-Starling response [@li2022rbm20titinstiffness].
+A splice-factor dose change is sufficient to alter cardiac mechanics.
 
 ::: {.callout-note collapse="true"}
 ## Why a spliced-out segment changes stiffness
 
-Titin spans half a sarcomere and behaves like a spring in series with the
-contractile machinery. Its I-band region contains tandem immunoglobulin-like
-domains that unfold under load and a PEVK segment that behaves as an entropic
-spring. Retaining more of these elements in the mature transcript lengthens the
-spring, so the same stretch produces less restoring force. Splicing is not
-modulating an activity here; it is changing how much polymer sits between two
-anchors.
+Titin spans half a sarcomere and sits in series with the contractile machinery
+like a spring. Its I-band region holds tandem immunoglobulin-like domains that
+unfold under load, plus a PEVK segment behaving as an entropic spring. Keeping
+more of those elements lengthens the spring, so the same stretch produces less
+restoring force. Splicing is not tuning an activity here. It changes how much
+polymer sits between two anchors.
 :::
 
 ## Ligand specificity by mutually exclusive exon
 
 In FGFR1 through FGFR3, the mutually exclusive IIIb and IIIc exons encode the
 C-terminal half of immunoglobulin loop III, which sits in the ligand-binding
-site. The splice choice changes which fibroblast growth factors the receptor can
-respond to at all [@holzmann2011fgfrigiiisplicing].
+site. The splice choice determines which fibroblast growth factors the receptor
+can respond to at all [@holzmann2011fgfrigiiisplicing].
 
-The two forms are not interchangeable in development. Deleting the IIIb exon in
-mouse is lethal, while deleting IIIc instead produces skeletal malformations
-[@holzmann2011fgfrigiiisplicing]. Usage is partitioned by tissue compartment,
-with IIIb in epithelia and IIIc in mesenchyme, and a IIIb-to-IIIc switch in an
-epithelial tumour is associated with increased invasiveness in bladder and
-prostate cancer [@holzmann2011fgfrigiiisplicing].
+The two forms are not interchangeable. Deleting IIIb in mouse is lethal.
+Deleting IIIc instead produces skeletal malformations
+[@holzmann2011fgfrigiiisplicing]. Usage splits by compartment, IIIb in epithelia
+and IIIc in mesenchyme, and a IIIb-to-IIIc switch in an epithelial tumour tracks
+with invasiveness in bladder and prostate cancer [@holzmann2011fgfrigiiisplicing].
 
 ## A cautionary case: PKM1 and PKM2
 
-Pyruvate kinase M is the standard illustration of how much can hang on a
-mutually exclusive exon pair, and also an illustration of how a widely repeated
-isoform story can outrun its evidence.
+Pyruvate kinase M is the textbook illustration of how much can ride on one
+mutually exclusive exon pair. It is also the clearest case of an isoform story
+outrunning its evidence, which is why it belongs here.
 
-Antisense oligonucleotides blocking an enhancer in exon 10, forcing exon 9
-inclusion, killed glioblastoma cells, with the death attributed specifically to
-loss of PK-M2 rather than to gain of PK-M1 [@wang2012pkmantisense]. That the
-splice choice is consequential when forced is well supported.
+Antisense oligonucleotides blocking an exon 10 enhancer, forcing exon 9
+inclusion, killed glioblastoma cells. The authors attribute the death to loss of
+PK-M2 rather than to gain of PK-M1 [@wang2012pkmantisense].
 
-The usual framing goes further, holding that tumours switch from PKM1 to PKM2.
-Absolute mass spectrometry across 25 human cancers with tissue-matched controls
-found PKM2 predominant in tumours and equally predominant in the matched normal
-tissue, leading those authors to reject a tumour-associated switch
-[@bluemlein2011pkmnoshift]. The defensible statement is that forcing the choice
-has a large phenotype, not that tumours make the switch.
+The familiar version goes further and holds that tumours switch from PKM1 to
+PKM2. Absolute mass spectrometry across 25 human cancers with tissue-matched
+controls found PKM2 predominant in tumours and equally predominant in the matched
+normal tissue, and those authors reject the switch [@bluemlein2011pkmnoshift].
+
+Forcing the splice choice has a large phenotype. Tumours do not make the switch.
 
 ## How much of this is functional
 
-Three bodies of evidence bear on whether the bulk of alternative splicing
-resembles the cases above, and they do not agree.
+Three bodies of evidence bear on whether most alternative splicing resembles the
+cases above. They disagree, and the disagreement is informative.
 
 **Tissue regulation is extensive.** The 2008 tissue survey identified over 22,000
-tissue-specific alternative transcript events and estimated, by extrapolating
-from expression bins, that between 52 and 80 per cent of events of each type are
-tissue-regulated [@wang2008alternative]. Exons switching most sharply between
-tissues were also most likely to preserve reading frame in both isoforms, read by
-those authors as evidence that switch-like splicing makes two intact proteins
-rather than shutting a gene off [@wang2008alternative].
+tissue-specific alternative transcript events and estimated that 52 to 80 per
+cent of events of each type are tissue-regulated [@wang2008alternative]. Exons
+switching most sharply between tissues were also likeliest to preserve reading
+frame in both isoforms, read by those authors as splicing making two intact
+proteins rather than switching a gene off [@wang2008alternative].
 
-**Much of the catalogue is not conserved.** A human-mouse comparison predicted
-only about 2,000 alternatively spliced exons conserved between the species, found
-those to be markedly more frame-preserving and domain-sparing than other events,
-and concluded that the great majority of alternative splicing in the human EST
-record is not conserved in mouse [@conservedas2005humanmouseexons]. The same
-split appears in invertebrates: in *C. elegans*, splicing events differing
-between tissues are preferentially frame-preserving and better conserved across
-*Caenorhabditis* species than other alternative exons [@koterniak2020celegansplicing].
+**Most of the catalogue is not conserved.** A human-mouse comparison predicted
+only about 2,000 conserved alternatively spliced exons, found them markedly more
+frame-preserving and domain-sparing than the rest, and concluded that the great
+majority of alternative splicing in the human EST record has no mouse counterpart
+[@conservedas2005humanmouseexons]. The same split appears in invertebrates. In
+*C. elegans*, splicing events differing between tissues are preferentially
+frame-preserving and better conserved across *Caenorhabditis* than other
+alternative exons [@koterniak2020celegansplicing].
 
-**A substantial fraction is error, and another fraction is neither error nor
-protein diversity.** De novo junction discovery found about 150,000 previously
-unannotated junctions in human cells, with little evolutionary conservation at the
-new splice sites and an implied error rate near 0.7 per cent per intron, lower in
-highly expressed genes [@pickrell2010noisysplicing]. Separately, one transcript
-usually dominates: roughly 85 per cent of protein-coding mRNA in primary tissues
-came from each gene's major transcript, though about 35 per cent of genes switch
-which transcript dominates between tissues, and those authors declined to
-conclude that minor transcripts are functionless
-[@gonzalezporta2013dominanttranscript].
+**Some of it is error, and some is neither error nor protein diversity.** De novo
+junction discovery found about 150,000 previously unannotated junctions in human
+cells, with little conservation at the new splice sites and an implied error rate
+near 0.7 per cent per intron, lower in highly expressed genes
+[@pickrell2010noisysplicing]. One transcript usually dominates: roughly 85 per
+cent of protein-coding mRNA in primary tissues came from each gene's major
+transcript, though about 35 per cent of genes switch which transcript dominates
+between tissues, and those authors declined to call minor transcripts
+functionless [@gonzalezporta2013dominanttranscript].
 
 A third position reframes the question. Measuring unproductive splicing across
 eight assays gave threefold more of it than steady-state RNA had suggested, with
-15 per cent of transcript molecules from protein-coding genes unproductive, and
-trait-associated loci acting through splicing were as often explained by
-decay-driven expression changes as by isoform usage
-[@fair2024unproductivesplicing]. On that account much alternative splicing is
-neither protein diversity nor noise, but a mechanism for controlling how much
-protein a gene makes.
+15 per cent of transcript molecules from protein-coding genes unproductive. In
+the same work, trait-associated loci acting through splicing were as often
+explained by decay-driven expression changes as by isoform usage
+[@fair2024unproductivesplicing]. On that account, much alternative splicing is
+neither protein diversity nor noise. It is a volume control.
 
-These results are compatible. Most splicing events are rare, unconserved and
-probably inconsequential; a minority are switch-like, frame-preserving and
-conserved; and a further portion regulates expression level through decay. The
-cases earlier in this chapter are drawn from the second group, and nothing here
-licenses treating every annotated isoform as a functional entity.
+The three results fit together once a single answer stops being expected. Most
+splicing events are rare, unconserved and probably inconsequential. A minority
+are switch-like, frame-preserving and conserved. A further portion sets
+expression level through decay. Every case earlier in this chapter comes from the
+second group. Nothing here licenses treating an annotated isoform as a functional
+entity merely because it is annotated.
 
 ::: {.callout-note collapse="true"}
 ## What the "95 per cent" figure actually counts
 
 Two 2008 papers put alternative splicing at roughly 95 per cent of human
-multi-exon genes, and the number is now quoted without its conditions.
+multi-exon genes, and the number now circulates stripped of its conditions.
 
 Extrapolating by read coverage gave about 98 per cent of multi-exon genes
 excluding cell lines, and about 100 per cent using all samples. Requiring a minor
-isoform to reach 15 per cent frequency in at least one sample dropped this to 92
-per cent of multi-exon genes, or roughly 86 per cent of all human genes
+isoform to reach 15 per cent frequency in at least one sample drops it to 92 per
+cent of multi-exon genes, or roughly 86 per cent of all human genes
 [@wang2008alternative]. The independent survey reached about 95 per cent of
-multi-exon genes by a different route, and put intermediate- to high-abundance
-splicing events in major tissues at about 100,000 [@pan2008deepsurveying].
+multi-exon genes by a different route, and counted about 100,000 intermediate- to
+high-abundance splicing events in major tissues [@pan2008deepsurveying].
 
-Three things vary between these statements: whether the denominator is multi-exon
+Three things vary between those statements: whether the denominator is multi-exon
 genes or all genes, what abundance threshold a minor isoform must clear, and
 whether detection is direct or extrapolated. Quoted without them, "95 per cent"
-is not wrong so much as uninterpretable.
+is uninterpretable rather than wrong.
 :::

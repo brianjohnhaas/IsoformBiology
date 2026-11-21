@@ -24,7 +24,7 @@ intron          1200-1500   1600-1900  1980-2400
 
 The ordered list of internal intron boundaries, here
 `(1200, 1500), (1600, 1900), (1980, 2400)`, is the **intron chain**. It records
-which splice junctions occurred, and crucially, that they occurred *in the same
+which splice junctions occurred, and that they occurred *in the same
 molecule*.
 
 That last point is the whole reason long reads changed this field. A short-read
@@ -88,7 +88,7 @@ incomplete-splice-match count is never a clean biological quantity.
 ## The denominator
 
 Now the part that explains most of the spread in published numbers. "Novel" means
-"not in the thing I compared against", and that thing varies.
+"not in whatever it was compared against", and that reference varies.
 
 Compare the same observed transcripts against:
 
