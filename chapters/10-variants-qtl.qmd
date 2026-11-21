@@ -1,0 +1,13 @@
+# Reading function from variation
+
+::: {.callout-warning}
+## Draft
+Research in progress. Claim records: `research/10-variants-qtl.yml`
+:::
+
+_Scope:_ Transcriptomics as the bridge between a genetic variant and its
+functional consequence — the progression from eQTLs to sQTLs to isoform-level
+QTLs, and clinical transcriptomics as a diagnostic modality. This is where
+isoform resolution stops being descriptive and becomes consequential: a variant
+whose effect is invisible in gene-level expression but unambiguous in isoform
+usage is a variant that gene-level analysis would have called silent.

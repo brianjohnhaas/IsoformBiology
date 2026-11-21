@@ -11,6 +11,8 @@ book:
   repo-actions: [edit, issue]
   sidebar:
     style: docked
+  # Reading order is defined HERE, not by filename. Filename numbers reflect
+  # the order chapters were added, so they can diverge from reading order.
   chapters:
     - index.qmd
     - part: "Foundations"
@@ -24,6 +26,9 @@ book:
       chapters:
         - chapters/04-technology-arc.qmd
         - chapters/05-long-reads.qmd
+    - part: "Reading function from variation"
+      chapters:
+        - chapters/10-variants-qtl.qmd
     - part: "Isoforms in disease"
       chapters:
         - chapters/06-cancer.qmd
