@@ -45,6 +45,32 @@ def entry_type(journal: str) -> str:
     return "article"
 
 
+def research_files() -> list[pathlib.Path]:
+    """Research files the repository actually tracks.
+
+    An in-progress file sitting in the working tree but ignored by git would
+    otherwise put sources into references.bib that CI, which only sees
+    committed files, cannot account for.
+    """
+    import subprocess
+
+    found = sorted((ROOT / "research").glob("*.yml"))
+    try:
+        r = subprocess.run(
+            ["git", "check-ignore", "--stdin"],
+            input="\n".join(str(p) for p in found),
+            capture_output=True, text=True, cwd=ROOT, timeout=30,
+        )
+        ignored = {line.strip() for line in r.stdout.splitlines() if line.strip()}
+    except Exception:
+        ignored = set()
+    kept = [p for p in found if str(p) not in ignored]
+    for p in found:
+        if str(p) in ignored:
+            print(f"skipping (git-ignored): {p.name}")
+    return kept
+
+
 def main() -> int:
     try:
         import yaml
@@ -56,7 +82,7 @@ def main() -> int:
     sources: dict[str, dict] = {}
     used_by: dict[str, set[str]] = {}
 
-    for path in sorted((ROOT / "research").glob("*.yml")):
+    for path in sorted(research_files()):
         doc = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
         for c in doc.get("claims") or []:
             s = c.get("source") or {}
