@@ -181,7 +181,7 @@ normal tissue, and those authors reject the switch [@bluemlein2011pkmnoshift].
 
 Forcing the splice choice has a large phenotype. Tumours do not make the switch.
 
-## How much of this is functional
+## How much of this is functional {#sec-how-functional}
 
 Three bodies of evidence bear on whether most alternative splicing resembles the
 cases above. They disagree, and the disagreement is informative.

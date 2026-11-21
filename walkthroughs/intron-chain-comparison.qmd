@@ -7,8 +7,8 @@ compared and what they get compared against. This walkthrough works through the
 comparison itself so that the numbers in the main chapters are readable.
 
 You do not need this to follow the argument anywhere in the book. Read it if you
-want to know why a claim like "37% of detected transcripts were novel" is
-incomplete without its denominator.
+want to know why a claim like "a third of detected transcripts were novel"
+is incomplete without its denominator.
 
 ## What a transcript model actually is
 
@@ -100,7 +100,8 @@ Compare the same observed transcripts against:
 That last case is the sharpest demonstration. Re-scoring one benchmark sample
 against a catalog built from roughly a thousand long-read datasets instead of
 against a reference annotation cut the apparent novel fraction from somewhere in
-the 27 to 52 per cent range down to 2 to 5 per cent. The transcripts did not
+the 27 to 52 per cent range down to 2 to 5 per cent [@zheng2026isopedia]. The
+transcripts did not
 change. The question changed, from "is this in the annotation?" to "has anyone
 else ever seen this?"
 

@@ -68,9 +68,26 @@ def prose_only(text: str) -> str:
     return text
 
 
+# Periods that do not end a sentence. Without these, "C. elegans" and "et al."
+# split a sentence in two, which deflates the mean and can hide an overlong
+# sentence by cutting it into legal-looking halves.
+ABBREV = re.compile(
+    r"(?:\b(?:et al|e\.g|i\.e|cf|vs|ca|approx|no|Dr|Prof|St|Fig|Figs|Suppl"
+    r"|Mr|Ms|Mrs|Jr|Sr|Inc|Ltd|ibid|viz|al)\.)"
+    r"|(?:\b[A-Z]\.(?=\s*[a-z]))",          # C. elegans, A. thaliana
+    re.X)
+SENTINEL = "\u0001"
+
+
 def sentences(text: str) -> list[str]:
-    parts = re.split(r"(?<=[.!?])\s+", text)
-    return [p.strip() for p in parts if len(p.strip().split()) >= 3]
+    masked = ABBREV.sub(lambda m: m.group(0).replace(".", SENTINEL), text)
+    parts = re.split(r"(?<=[.!?])\s+", masked)
+    out = []
+    for p in parts:
+        p = p.replace(SENTINEL, ".").strip()
+        if len(p.split()) >= 3:
+            out.append(p)
+    return out
 
 
 def check(path: pathlib.Path) -> list[str]:

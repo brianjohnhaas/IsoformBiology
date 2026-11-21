@@ -10,11 +10,16 @@ usage the book actually relies on. Claim records: `research/01-foundations.yml`.
 
 ## What this book deliberately does not do
 
+<!-- numbers-ok: the dates below describe the resources themselves, not
+     claims drawn from papers, so they have no claim record to match. -->
+
 This is a biology book. It does not catalogue software, benchmark tools, or teach
 pipelines. That work is done well elsewhere, and duplicating it would both
 waste effort and date the book quickly. What exists as of November 2026:
 
 ### Tool catalogues
+
+<!-- numbers-ok: last-updated dates for the listed resources. -->
 
 - [**long-read-tools.org**](https://long-read-tools.org/). Ritchie Lab (WEHI)
   catalogue of long-read analysis tools, including a transcriptomics category.
@@ -46,6 +51,8 @@ a specific gene or isoform.
   across large numbers of long-read transcriptomes.
 
 ### Adjacent communities
+
+<!-- numbers-ok: a renaming date for an organisation, not a sourced claim. -->
 
 - [**Proteoform Alliance**](https://ctdp.org/) (formerly the Consortium for
   Top-Down Proteomics, renamed October 2026) and the
