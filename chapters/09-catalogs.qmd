@@ -1,8 +1,247 @@
-# Cataloging the isoform universe
+# Cataloguing the isoform universe
 
 ::: {.callout-warning}
-## Draft
-Research in progress. Claim records: `research/09-catalogs.yml`
+## First draft
+Written from `research/09-catalogs.yml` and not yet reviewed by a second
+reader.
 :::
 
-_Scope:_ ENCODE4 long-read transcriptomes, GENCODE, MANE, isopedia, isoform atlases, LRGASP, APPRIS.
+Long reads settled whether unannotated transcripts are real. They did not
+settle what a reference annotation is for, and that is now the harder question.
+Depth alone could inflate reference transcript sets by millions of models, so
+the decision facing every catalogue is editorial rather than technical
+[@monzo2025challenges].
+
+## Picking one transcript per gene {#sec-mane}
+
+Clinical reporting needed a default transcript and had none. MANE Select names
+exactly one representative transcript per human protein-coding gene, identical
+in exon structure between Ensembl/GENCODE and RefSeq [@morales2022mane].
+
+The scale of the problem it fixed is measurable. When the two annotation groups
+first compared their independent choices, they agreed on the same transcript
+for only 14 per cent of protein-coding genes [@morales2022mane]. By the June
+2021 release MANE had a Select transcript for 97 per cent of human
+protein-coding genes, 18,584 of them, including every gene on the ACMG
+secondary-findings list [@morales2022mane].
+
+The exception was designed in from the start. MANE Plus Clinical exists for the
+small set of loci where pathogenic variants fall on exons the Select transcript
+omits, and at first release covered 55 genes [@morales2022mane]. That set
+grows as pathogenic variants accumulate, reaching 64 transcripts by release v47
+[@mudge2024gencode].
+
+Those authors also pre-empted the obvious misreading. Picking one transcript
+per locus is not a claim that a gene's biology reduces to that transcript, and
+tissue- and development-specific isoform diversity is outside the set's scope
+[@morales2022mane].
+
+APPRIS reaches a single principal isoform by a different route, from protein
+evidence rather than expression: mapped structures, functional domains,
+conserved residues and cross-species alignment [@rodriguez2021appris]. The two
+routes largely converge, agreeing for over 97 per cent of coding genes, though
+not independently, because APPRIS principal isoforms are themselves an input to
+MANE Select curation [@rodriguez2021appris].
+
+![Four ways of choosing one transcript, scored against what proteomics finds
+dominant. The two convenience heuristics are the ones people reach for when no
+curated set is to hand.](../figures/representative-transcript.svg){#fig-representative width=100%}
+
+Benchmarking against the dominant isoform in proteomics puts numbers on the
+cost of the shortcuts. Agreement was about 96.1 per cent for APPRIS core
+principal isoforms and 94.6 per cent for MANE Select, against 86.4 per cent for
+simply taking the longest isoform and 70.1 per cent for taking the
+most-expressed transcript. Those four rates are computed over different gene
+subsets, and a randomly chosen isoform agreed about 30 per cent of the time
+[@pozo2022appris].
+
+Expression is a worse guide than its popularity suggests, and long reads agree.
+Of 18,083 genes matched between MANE and long-read GTEx data, 13,245 MANE
+Select transcripts were also the top-expressed protein-coding transcript
+[@tung2022texmst]. Those authors read that as MANE dominance. It also leaves a
+substantial remainder, part of which reflects transcript-ID mismatch between
+the GENCODE releases used rather than real disagreement about which isoform is
+highest [@tung2022texmst].
+
+## How an annotation actually grows {#sec-gencode}
+
+GENCODE's human and mouse annotation was originally produced by human curators
+working locus by locus along each chromosome, and only became project-based
+once that first full pass was finished [@mudge2024gencode].
+
+Long reads entered through targeted capture sequencing plus a supervised
+workflow, TAGENE, built so that machine-generated transcript models could reach
+close to manual-curation quality at scale [@mudge2024gencode]. The effect
+landed almost entirely on one biotype. Long-read capture added over 140,000 new
+human and 132,000 new mouse lncRNA transcript models in a single annotation
+generation, which the project describes as roughly three-fold and six-fold
+increases [@mudge2024gencode].
+
+Annotation is not purely additive. Over the same period more than 37,000
+existing human and mouse models were modified, while protein-coding counts
+moved only incrementally [@mudge2024gencode].
+
+The instability is long-standing and quantified. Across the first 24 GENCODE
+releases, only 54,840 of the 251,614 transcript models ever annotated, about
+21.7 per cent, kept the same annotation in every release. Biotype reassignment
+and outright deletion affected the rest [@jalali2016gencode]. Over those same
+releases the human transcript count grew from 87,852 to 199,005, and most of
+the added models were not protein-coding: 43,415 protein-coding at v1 against
+79,865 at V24, with 119,140 transcripts of other biotypes at V24
+[@jalali2016gencode].
+
+GENCODE is candid about what it does and does not know. Its coding-isoform
+annotation is deliberately permissive, since an alternative transcript is
+generally tagged as coding when translation is mechanistically plausible. The
+project is confident about which genes are protein-coding and much less so
+about which isoforms are [@mudge2024gencode]. It also expects per-gene
+transcript counts in the tens to hundreds to become normal, and states plainly
+that many of those transcripts will have unknown function
+[@mudge2024gencode].
+
+The response was a filtered view rather than a smaller catalogue. GENCODE
+Primary takes every MANE Select and MANE Plus Clinical transcript plus a
+minimal computationally selected remainder. It averages two transcripts per
+protein-coding gene in its first human release and became the default browser
+view, while the full comprehensive set stays available
+[@mudge2024gencode].
+
+## The long-read catalogues {#sec-encode4}
+
+::: {.callout-note collapse="true"}
+## Preprint status
+
+The ENCODE4 long-read collection and the GTEx long-read transcriptome appear in
+this book's corpus only as preprints, and the bibliography emits them as such.
+Numbers taken from either need re-checking against the peer-reviewed version.
+:::
+
+ENCODE4 built its long-read transcriptome from 264 PacBio libraries drawn from
+81 human and mouse tissue or cell-line samples, which reduce to 49 unique
+tissues or cell types once mouse developmental time-points are collapsed
+[@reese2023encode4].
+
+In the human data, 206,806 transcripts from polyadenylated genes were detected
+at or above 1 TPM. Of those, 76,469, about 37 per cent, used an exon junction
+chain annotated in neither GENCODE v29 nor v40 [@reese2023encode4]. Novelty was
+unevenly distributed across the three structural axes described in
+@sec-three-axes: splice patterns were far more often unannotated than
+transcript start or end sites [@reese2023encode4].
+
+The result those authors put against single-representative-transcript resources
+is the dominance one. Across the sample panel, nearly three quarters of human
+protein-coding genes did not have one stable top-expressed transcript, because
+which isoform dominated changed with the tissue or cell line
+[@reese2023encode4]. They framed the work as a direct challenge to that
+assumption, naming it explicitly before testing it [@reese2023encode4].
+
+Other catalogues give the same shape at different scales. The GTEx long-read
+survey covered 88 samples on Nanopore and added just under 100,000 previously
+unannotated transcripts to already-annotated genes
+[@glinos2021transcriptome]. In that dataset 127,478 transcripts were quantified
+across 27,461 genes, and 77 per cent had intron chains matching nothing in the
+GENCODE release used, with intron retention strongly enriched among the novel
+set [@glinos2021transcriptome].
+
+The TRAILS immune atlas catalogued 159,369 isoforms from 17,496 loci across 29
+human immune cell subsets, with 78 per cent carrying either a novel splice-site
+combination or an outright novel splice site relative to GENCODE
+[@inamo2024trails]. It also reports its own ceiling. The whole atlas comes from
+one healthy donor. A single independent PBMC sample from a second individual
+reproduced 85.0 per cent of the isoforms expressed in PBMC, and only 30.6 per
+cent of the catalogued isoforms across all cell types. That is why the resource
+ships as both an exploratory and a validated set [@inamo2024trails].
+
+Non-human catalogues start lower and behave the same. One multiplexed Nanopore
+run over 32 bovine tissues yielded 99,044 transcript isoforms at 31,824 loci.
+Only 21 per cent exactly matched an existing reference transcript, while 61 per
+cent were novel isoforms of known genes [@halstead2021bovine].
+
+### Who was sequenced changes what is in the catalogue
+
+A diverse-ancestry long-read cohort collapsed 380,519 candidate transcript
+models to 155,875 after reproducibility filtering. Of those, 41,297 were novel
+and 31,097 were absent from the GTEx, ENCODE4 and CHESS3 catalogues
+[@clavellrevelles2025ancestry].
+
+The gap is not ancestry-neutral. Population-specific transcripts found only in
+European samples were enriched for already-annotated structures, while those
+found only in non-European samples were enriched for novel ones
+[@clavellrevelles2025ancestry]. The annotation is a record of who has been
+sequenced.
+
+## What novel means {#sec-what-novel-means}
+
+Novelty defined against an evolving annotation is circular, because a
+transcript can be called novel purely for not yet having been curated into a
+release [@zheng2026isopedia].
+
+Isopedia makes recurrence the unit of evidence instead. It indexes long-read
+alignments from 1,007 public human transcriptomes, 603 PacBio and 404 Nanopore,
+across 37 tissue contexts [@zheng2026isopedia].
+
+Changing the denominator changes the answer by more than an order of magnitude.
+Re-scoring the same benchmark sample against a population of long-read
+transcriptomes instead of against a reference annotation cut the apparent novel
+fraction from roughly 27 to 52 per cent down to 2 to 5 per cent, a reduction of
+up to 26-fold [@zheng2026isopedia]. The transcripts did not change. The
+question did.
+
+## What benchmarking established {#sec-lrgasp}
+
+LRGASP was a community exercise rather than one lab's comparison. Participants
+worked from a shared body of over 427 million long reads spanning cDNA and
+direct-RNA protocols in human, mouse and manatee. The study design was
+published as a Registered Report in advance, and scoring was done by organisers
+who had not submitted predictions [@pardopalacios2024lrgasp].
+
+Its headline result separates the two jobs long reads get used for. Read length
+and accuracy drive correct transcript structures, while raw depth drives
+accurate abundance estimates, so one library design cannot be optimal for both
+[@pardopalacios2024lrgasp].
+
+The reproducibility numbers are stark. In one human cell line nearly 280,000
+novel isoforms were reported in total, of which only 743 were called
+consistently across pipelines, while 242,125 were seen by only one or two
+[@pardopalacios2024lrgasp].
+
+Low reproducibility did not mean the transcripts were false. Targeted PCR
+validated all consistently detected novel isoforms, and still validated 90 per
+cent of poorly reproducible novel-in-catalog isoforms and 50 per cent of
+novel-not-in-catalog ones [@pardopalacios2024lrgasp]. Pipelines disagree about
+which novel isoforms to report, and the ones they report are frequently real.
+
+Without a reference annotation, tool choice swamps biology. De novo submissions
+on the same mouse sample reported between roughly 20,000 and 150,000
+transcripts, and on the manatee sample between roughly 2,000 and 500,000. The
+consortium's verdict was that de novo annotation remains challenging and needs
+further tool development [@pardopalacios2024lrgasp].
+
+Their standing recommendation is procedural rather than tool-specific:
+high-quality data, biological replicates, extensive orthogonal evidence, a
+transcript-level filter, and transcripts identified by more than one analysis
+tool [@pardopalacios2024lrgasp].
+
+## Catalogue size is a policy choice {#sec-per-gene-counts}
+
+Short-read assembly reached the opposite verdict about transcriptional
+abundance. Assembling thousands of GTEx samples produced over 30 million
+distinct transcripts at some 700,000 genomic locations, of which those authors
+judged only about 42,000, six per cent, to be functional gene loci
+[@pertea2018chess].
+
+The successor catalogue shows what an inclusion rule does to a number. By
+excluding anything judged non-functional, CHESS 3 lists 19,839 protein-coding
+genes with 99,202 transcripts, about five per gene, against roughly 110,000
+protein-coding transcripts in the contemporaneous GENCODE release
+[@varabyou2023chess3]. The gene counts agree. The transcript counts diverge
+because the projects are answering different questions.
+
+A single right annotation is incoherent as a goal, because the uses conflict.
+Maximal transcript representation helps gene-level read assignment and
+transcript discovery, and degrades isoform-level quantification by spreading
+reads across near-identical models [@monzo2025challenges].
+
+That is the state of the field. The catalogues are no longer limited by what
+can be observed. They are limited by having to decide, for each use, which
+observations belong in a reference at all.
