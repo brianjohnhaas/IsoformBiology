@@ -93,10 +93,42 @@ chapters read as one system.
 
 - [ ] Every claim traces to a record in `research/`
 - [ ] Every number has a line-anchored citation
-- [ ] `scripts/check_overlap.py` run, no flagged spans (see below)
+- [ ] All five checks below pass
 - [ ] All figures accounted for under one of the three routes above
 - [ ] `quarto render` clean, no unresolved cross-references
-- [ ] Reviewed by someone who did not write it
+- [ ] Read by someone who did not write it, for the things no check can see
+
+### The five checks
+
+Four run in CI on every push. The fifth needs the paperclip corpus, which the
+build machine does not have, so run it locally before a research file is
+committed and after any edit to a quote or an anchor.
+
+| Script | What it proves | Where |
+|---|---|---|
+| `verify_claims.py` | Every stored quote is still a byte-exact substring of the lines it cites, and bibkeys and DOIs agree across files | local only |
+| `check_overlap.py` | No chapter reuses 8+ consecutive words from a recorded source quote | CI |
+| `check_citations.py` | Every number in a section appears in a claim for a source that section cites | CI |
+| `build_bib.py --check` | `references.bib` is exactly what the claim records generate | CI |
+| `check_style.py` | Sentence length, first person, banned constructions, em dashes, metronomic runs | CI |
+| `check_figures.py` | Every figure has a manifest entry with its provenance, and every entry names files that exist | CI |
+
+### What the checks cannot see
+
+They compare digits and wording. They do not read meaning, and three failures
+have come from that gap:
+
+- **A sentence extended past its claim.** The record says three quarters were
+  chargeable to one compartment; the prose added what the other quarter was.
+  Nothing in the chapter is wrong by any mechanical test.
+- **A number from one context reused in another.** "The third approved SMA
+  therapy" became "three approved splicing-directed drugs".
+- **Arithmetic over a range.** Two estimates were called four-fold apart when
+  one of them was a range and the other was "nearly every gene".
+
+Most of these appeared while rewriting a sentence to satisfy `check_style.py`.
+When you split a long sentence, re-read the result against the claim record,
+not against the sentence you started with.
 
 ### Overlap check
 
