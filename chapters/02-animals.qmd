@@ -217,8 +217,8 @@ eight assays gave threefold more of it than steady-state RNA had suggested, with
 15 per cent of transcript molecules from protein-coding genes unproductive. In
 the same work, trait-associated loci acting through splicing were as often
 explained by decay-driven expression changes as by isoform usage
-[@fair2024unproductivesplicing]. On that account, much alternative splicing is
-neither protein diversity nor noise. It is a volume control.
+[@fair2024unproductivesplicing]. On that account, much alternative splicing is neither protein diversity
+nor noise. It is a volume control, and @sec-as-nmd gives the mechanism.
 
 The three results fit together once a single answer stops being expected. Most
 splicing events are rare, unconserved and probably inconsequential. A minority

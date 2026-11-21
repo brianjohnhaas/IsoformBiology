@@ -94,8 +94,9 @@ or polyadenylation site [@sammeth2008nomenclature].
 
 The omitted remainder is large. Patterns too complex for any of the five names
 run from 23.18 per cent of annotated events in RefSeq to 35.4 per cent in
-Ensembl [@sammeth2008nomenclature]. Roughly a quarter to a third of annotated
-alternative splicing has no textbook label.
+Ensembl [@sammeth2008nomenclature]. Roughly a quarter to a third of annotated alternative splicing
+has no textbook label. Which classes dominate also varies by lineage, and
+@sec-class-balance gives the plant and fungal picture.
 
 Mutual exclusivity is rarer than its prominence in the literature suggests.
 Mutually exclusive exons make up 12 to 14.5 per cent of the complex event pool
@@ -154,8 +155,9 @@ phenomenon.
 Percent spliced-in, written PSI or Ψ, is the fraction of a gene's mRNAs that
 contain a given exon. It was defined on read densities rather than on raw read
 counts: the density of inclusion reads, divided by the sum of the inclusion and
-exclusion densities [@wang2008alternative]. The metric asks nothing about full
-transcripts, which is why it survived the short-read era intact.
+exclusion densities [@wang2008alternative]. The metric asks nothing about full transcripts, which is why
+the short-read era settled on it. @sec-short-read-limit gives the constraint
+that made that necessary.
 
 It hides one thing. A single PSI value sits across two separate splicing acts,
 one at each end of the intron. The intron-centric reformulation splits it into a
@@ -192,9 +194,9 @@ makes.
 Transcript identity has to be settled mechanically, and the unit that makes it
 checkable is the intron chain. Two transcripts match at intron-chain level when
 every intron has identical coordinates and the counts agree, which implies that
-all internal exons match. The definition says nothing about where the transcript
-starts and ends. Terminal boundaries are deliberately left outside it
-[@pertea2020gffutilities].
+all internal exons match. The definition says nothing about where the transcript starts and ends.
+Terminal boundaries are deliberately left outside it [@pertea2020gffutilities],
+and @sec-three-axes shows what sits in that gap.
 
 Long-read classification is built on the same comparison. A full splice match
 reproduces every splice junction of some reference transcript. An incomplete
@@ -266,6 +268,7 @@ transcript per gene [@gonzalezporta2013dominanttranscript]. What survives of the
 functional claim, once that is taken into account, is the subject of
 @sec-how-functional.
 
-A typical protein-coding gene carries annotation for six isoforms and expresses
-about one. Both numbers are correct, and the distance between them is where most
-of the argument in this book sits.
+A typical protein-coding gene carries annotation for six isoforms and
+expresses about one. Both numbers are correct, and the distance between them is
+where most of the argument in this book sits. @sec-per-gene-counts returns to
+it once the catalogues are in view.

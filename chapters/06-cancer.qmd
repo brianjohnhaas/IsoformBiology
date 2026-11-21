@@ -20,8 +20,8 @@ called as isoform switches during progression from low-grade to high-grade
 Barrett's dysplasia showed no significant difference in total gene-level
 expression between the same two conditions [@zhang2022esophageal].
 
-A reanalysis of twelve TCGA cancer types using differential transcript usage
-found that roughly a quarter of the tumour-side transcripts that changed in
+A reanalysis of twelve TCGA cancer types using differential transcript
+usage, in the sense of @sec-dtu, found that roughly a quarter of the tumour-side transcripts that changed in
 usage were not themselves called differentially expressed. Only a few per cent
 of the normal-side transcripts behaved that way [@dolgalev2023switching].
 

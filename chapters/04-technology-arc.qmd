@@ -218,6 +218,6 @@ percent-spliced-in value, measuring one decision instead of solving for the
 whole molecule [@park2018expanding]. That is where PSI comes from, and
 @sec-psi gives what it costs.
 
-Thirty years of method development had converged on a measurement that answers
-a smaller question very well. What the smaller question leaves out is a
-molecule, and getting it back took a longer read.
+Thirty years of method development had converged on a measurement that
+answers a smaller question very well. What the smaller question leaves out is a
+molecule, and getting it back took a longer read, which is @sec-one-molecule.

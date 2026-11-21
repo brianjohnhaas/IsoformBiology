@@ -2,11 +2,151 @@
 
 ## Glossary
 
-::: {.callout-warning}
-## Draft
-Terms are added as chapters are written, so that each definition matches the
-usage the book actually relies on. Claim records: `research/01-foundations.yml`.
-:::
+Definitions here match the usage the chapters rely on, and each points at the
+section where the term does its work. Where a definition rests on a published
+source, that source is cited. Four terms have no citable defining source and
+are marked; those definitions are the book's own and are flagged for review.
+
+**Alternative polyadenylation (APA)**
+: Choosing among a gene's several poly(A) sites, producing transcripts that
+differ in 3' UTR, terminal exon or coding potential. An isoform-generating
+process in its own right, with no splicing difference required
+[@huang2026apacancer]. See @sec-ends.
+
+**AS-NMD**
+: Splicing that produces a transcript in order for decay to remove it, so that
+the fraction of transcripts reaching protein is set after transcription. Also
+published as regulated unproductive splicing and translation
+[@garciamoreno2020asnmd]. See @sec-as-nmd.
+
+**Cassette exon**
+: An exon that is either included in or skipped from the mature transcript.
+Used in this book as a synonym for skipped exon. *No source defines the two
+terms as equivalent; this equivalence is the book's own and is flagged for
+review.* The event class itself is one of the five named in
+[@sammeth2008nomenclature]. See @sec-event-classes.
+
+**Colocalisation**
+: A test of whether a trait association and a molecular QTL at the same locus
+are driven by the same causal variant, rather than by two variants in linkage
+disequilibrium. See @sec-coloc-gap.
+
+**Differential gene expression (DGE)**
+: A test of whether a gene's total transcriptional output changed
+[@soneson2016differential]. See @sec-dtu and @fig-dge-dtu-dte.
+
+**Differential transcript expression (DTE)**
+: A test of whether an individual transcript changed in abundance
+[@soneson2016differential]. See @sec-dtu.
+
+**Differential transcript usage (DTU)**
+: A test of whether the composition of a gene's isoform abundance spectrum
+changed, independently of its total [@soneson2016differential]. See @sec-dtu.
+
+**Dominant transcript**
+: A gene's major transcript, meaning the one with highest expression, when it is
+expressed at considerably more than any minor one. Operationalised as at least
+twice the abundance of the next [@gonzalezporta2013dominanttranscript]. See
+@sec-scale.
+
+**Event-level metric**
+: Any measure that scores one splicing decision rather than solving for
+full-length structure, PSI being the canonical case. *Its limits are stated
+on the book's own authority and are flagged for review:* an event-level metric
+cannot report which decisions co-occurred in the same molecule, and a single
+value can average over two decisions taken independently
+[@pervouchine2013introncentric]. See @sec-psi.
+
+**Full splice match (FSM)**
+: An observed transcript reproducing every splice junction of some reference
+transcript. Says nothing about whether the ends agree
+[@tardaguila2018sqanti]. See @sec-transcript-classes.
+
+**Incomplete splice match (ISM)**
+: An observed transcript reproducing a consecutive run of a reference
+transcript's junctions but not all of them. Can be a genuinely shorter isoform
+or a truncated cDNA [@tardaguila2018sqanti]. See @sec-transcript-classes.
+
+**Intron chain**
+: The ordered list of a transcript's internal intron coordinates. Two
+transcripts match at intron-chain level when every intron has identical
+coordinates and the counts agree, which implies that all internal exons match
+and says nothing about the terminal boundaries
+[@pertea2020gffutilities]. *The term is in wide use and no paper coins it; the
+earliest operational definition located for this book is the one cited.
+Flagged for review.* See @sec-transcript-classes and
+[the comparison walkthrough](../walkthroughs/intron-chain-comparison.qmd).
+
+**Intron retention**
+: An intron present in a mature polyadenylated transcript. The one event class
+whose observation does not establish that a splicing decision was taken, since
+it is equally compatible with an unfinished intermediate
+[@jacob2017intronretention]. See @sec-event-classes.
+
+**Isoform**
+: Any of the distinct transcripts a gene produces. Not a synonym for splice
+variant, since alternative transcription start sites and alternative
+polyadenylation generate isoforms without any splicing difference
+[@carrion2023alternativetranscripts].
+
+**Isoform fraction (IF), and dIF**
+: The share of a gene's output carried by one of its isoforms, and the change in
+that share between two conditions. *No source defines these terms; the
+definitions here are the book's own and are flagged for review.* The quantity
+is what differential transcript usage tests. See @sec-dtu.
+
+**MANE Select, MANE Plus Clinical**
+: One representative transcript per human protein-coding gene, identical in exon
+structure between Ensembl/GENCODE and RefSeq; and the additional set for loci
+where pathogenic variants fall on exons the Select transcript omits
+[@morales2022mane]. See @sec-mane.
+
+**Minor spliceosome**
+: The parallel U12-dependent machinery that excises a small fraction of introns,
+recognising different signals from the major U2-dependent spliceosome
+[@akinyi2021minorspliceosome]. See @sec-mechanism.
+
+**Nonsense-mediated decay (NMD)**
+: Degradation triggered when a stop codon sits far enough upstream of the last
+exon junction to leave an exon junction complex downstream of it after the
+first round of translation [@lindeboom2016nmdrules]. See @sec-as-nmd.
+
+**Novel in catalog (NIC), novel not in catalog (NNC)**
+: An observed transcript using only annotated splice sites in an unannotated
+combination, and one introducing a splice site the annotation does not contain
+[@tardaguila2018sqanti]. See @sec-transcript-classes.
+
+**Percent spliced-in (PSI, Ψ)**
+: The fraction of a gene's mRNAs containing a given exon, estimated from the
+density of inclusion reads over the sum of inclusion and exclusion densities
+[@wang2008alternative]. See @sec-psi.
+
+**Poison exon**
+: An alternative exon whose inclusion introduces a premature stop codon and
+sends the transcript to decay. See @sec-cancer-therapeutics.
+
+**Proteoform**
+: A distinct molecular form of a protein from one gene, including forms arising
+from isoform differences. See @sec-brain-splicing.
+
+**Pseudoexon**
+: An intronic sequence spliced into a transcript as though it were an exon,
+usually because a variant created or strengthened a splice site. See
+@sec-rnaseq-diagnosis.
+
+**QTL: eQTL, sQTL, isoform QTL, apaQTL**
+: A variant associated with a molecular phenotype, respectively gene-level
+expression, a splicing event, an isoform's expression or usage, and poly(A)
+site choice. See @sec-qtl-position and @sec-isoform-qtl.
+
+**Splice chain, start site, end site**
+: The three parts of a transcript that can vary independently. Annotation has
+historically given one chain exactly one of each [@reese2023encode4]. See
+@sec-three-axes.
+
+**Transcripts per million (TPM)**
+: A within-sample abundance unit, normalised for transcript length and then for
+sequencing depth.
 
 ## What this book deliberately does not do
 

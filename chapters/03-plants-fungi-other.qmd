@@ -31,9 +31,9 @@ without stress. Those authors treat the figure as a floor
 
 ### A different mixture of events {#sec-class-balance}
 
-The flavour differs as much as the amount. Cassette exons predominate in
-animals, while intron retention is the more frequent class in other taxa
-[@grutzmann2013fungal]. Arabidopsis follows the second pattern. Intron retention
+The flavour differs as much as the amount. Cassette exons predominate in animals, while intron
+retention is the more frequent class in other taxa [@grutzmann2013fungal]. The
+five event names are defined in @sec-event-classes. Arabidopsis follows the second pattern. Intron retention
 was the single commonest event class in that survey, at roughly two fifths of
 everything the transcript assembly detected [@marquez2012arabidopsis].
 

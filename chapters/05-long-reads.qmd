@@ -176,7 +176,8 @@ no platform delivered both. Ligating cDNAs into composite molecules raised
 PacBio output more than fifteenfold, to roughly 40 million reads per run
 [@alkhafaji2024highthroughput].
 
-That is a throughput fix rather than a cost fix. Authors applying the same
+What that throughput bought is the subject of @sec-brain-atlas. It is a
+throughput fix rather than a cost fix, though. Authors applying the same
 approach to Alzheimer brain state the ceiling directly: even with the gain from
 concatenation, depth per sequencing run remains lower and cost per read higher
 than for short-read sequencing [@shahnaee2026rna].
