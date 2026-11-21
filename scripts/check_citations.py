@@ -47,7 +47,9 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 NUMBER = re.compile(
     r"(?<![A-Za-z0-9.,])(?<![A-Za-z]-)"   # not CD45, not TDP-43, not 3.14
     r"(\d+(?:,\d{3})*(?:\.\d+)?)(?![A-Za-z0-9])")
-CITE = re.compile(r"@([A-Za-z][A-Za-z0-9_:.-]*)")
+# Quarto cross-references share the @ sigil with citations and are not keys.
+XREF = "sec|fig|tbl|eq|lst|thm|lem|cor|prp|def|exm|exr"
+CITE = re.compile(rf"@(?!(?:{XREF})-)([A-Za-z][A-Za-z0-9_:-]*)")
 
 # Numbers that are structure, not fact: list ordinals and the like.
 IGNORE_NUMBERS = {"1", "2", "3", "4"}

@@ -1,8 +1,271 @@
 # Foundations
 
 ::: {.callout-warning}
-## Draft
-Research in progress. Claim records: `research/01-foundations.yml`
+## First draft
+Written from `research/01-foundations.yml` and not yet reviewed by a second
+reader.
 :::
 
-_Scope:_ What an isoform is; mechanisms; the vocabulary (PSI, DTU, intron chain, FSM/ISM); how much of the transcriptome is alternatively processed.
+One gene, one protein was always an approximation. It stopped being a useful one
+as soon as transcripts could be counted directly. The question that replaced it
+is harder to answer: a gene produces several transcripts, and which of them
+matter, and why?
+
+Three processes generate those transcripts. Exons can be spliced in different
+combinations, transcription can start in different places, and polyadenylation
+can end the molecule in different places. Each of the three affects at least
+half of human protein-coding genes [@carrion2023alternativetranscripts]. So
+isoform is not a synonym for splice variant, and this book keeps the two terms
+apart.
+
+The rest of this chapter fixes the vocabulary and the measurements that the
+later chapters use without re-explaining.
+
+## The machine that removes an intron {#sec-mechanism}
+
+Splicing is done by an assembly rather than by an enzyme. Five small nuclear
+ribonucleoproteins, U1, U2, U4, U5 and U6, work together with hundreds of
+further proteins. The complex is built fresh on every pre-mRNA, through an
+ordered series of intermediates named E, A, B and C, and only the E complex
+forms without ATP [@borao2021earlyspliceosome].
+
+The two ends of an intron are recognised by different machinery, in a definite
+order. U1 engages the 5' splice site. SF1 and U2AF recognise the 3' splice site
+together, and U2 arrives later by displacing SF1 [@borao2021earlyspliceosome].
+
+What usually gets written as a single 3' splice site is three sequence elements
+working together. The branchpoint supplies the acceptor nucleotide for the first
+chemical step. The polypyrimidine tract has an operational definition rather
+than a motif: an uninterrupted run of pyrimidines, strength counted in uridines,
+sitting between the branchpoint and the terminal AG, where U2AF65 binds it.
+Recognition of the 3' end can therefore fail without the AG itself being touched
+[@borao2021earlyspliceosome].
+
+Neither signal is as fixed as the diagrams suggest. In humans the branchpoint is
+barely a consensus, YUNAY, and one of those positions is unconstrained. Budding
+yeast holds a near-invariant UACUAAC instead [@borao2021earlyspliceosome]. On
+the 5' side only the first two bases of a human intron, GU, are reliably
+conserved, and every other position varies. The last three nucleotides of the
+upstream exon also affect how tightly U1 binds. Human 5' splice sites therefore
+span a broad range of interaction strengths rather than sorting into matches and
+mismatches [@borao2021earlyspliceosome].
+
+That degeneracy is the enabling condition for everything else in the book.
+Splice site motifs degenerated over evolution in a way that permitted regulated
+splicing, and spliceosome complexity increased alongside them. Budding yeast
+splices mainly constitutively, humans alternatively
+[@borao2021earlyspliceosome]. Constitutive and alternative splicing are two
+regimes of one mechanism, not two mechanisms.
+
+### A second spliceosome, running in parallel
+
+About 0.5 per cent of introns are removed by a different machine entirely.
+Roughly 700 human genes carry a U12-type intron, against 19 genes in
+*Drosophila*, and a gene that has one usually has exactly one among many
+ordinary introns [@akinyi2021minorspliceosome].
+
+The two intron classes are told apart by their signals rather than by their
+chemistry. A polypyrimidine tract belongs to major U2-type introns only. The
+minor 3' splice site is read by ZRSR2 in place of the U2AF heterodimer. U12
+signals are much better conserved, and they support correspondingly less
+alternative splicing [@akinyi2021minorspliceosome].
+
+The share is not settled. A review of the same system puts U12-type introns
+below 0.4 per cent of all human introns, and names the machinery that removes
+them as U11, U12, U4atac, U5 and U6atac [@elmarabti2021minorintron]. Both
+figures are small. The difference between them matters only where a count of
+minor introns is being used as a denominator.
+
+## The five event names, and what they leave out {#sec-event-classes}
+
+Most descriptions of alternative splicing use five names: exon skipping,
+mutually exclusive exons, intron retention, alternative donor and alternative
+acceptor. They were inherited as a traditional vocabulary rather than derived.
+The paper that formalised event nomenclature says so, and then points out that
+real annotations contain many patterns none of the five describes
+[@sammeth2008nomenclature].
+
+Across three human reference annotations the four simple classes fall in the
+same rank order. Exon skipping is commonest, then alternative donor, then
+alternative acceptor, with intron retention last. The denominator is stated
+rather than assumed: events with a simple splicing pattern, involving at most two
+alternative splice sites, and uncorrelated with a variable transcription start
+or polyadenylation site [@sammeth2008nomenclature].
+
+The omitted remainder is large. Patterns too complex for any of the five names
+run from 23.18 per cent of annotated events in RefSeq to 35.4 per cent in
+Ensembl [@sammeth2008nomenclature]. Roughly a quarter to a third of annotated
+alternative splicing has no textbook label.
+
+Mutual exclusivity is rarer than its prominence in the literature suggests.
+Mutually exclusive exons make up 12 to 14.5 per cent of the complex event pool
+depending on the annotation, behind the skipping of two consecutive exons. The
+scarcity is attributed to the more elaborate mechanism mutual exclusivity
+requires [@sammeth2008nomenclature].
+
+The mixture also differs inside and outside the reading frame. In RefSeq coding
+sequence, exon skipping accounts for 50.9 per cent of local events, against 37.9
+per cent in 5' UTRs. Intron retention runs the other way, 2.1 per cent in coding
+sequence against 8.4 per cent in 5' UTRs. Those authors read the reversal as
+selection against in-frame stop codons [@sammeth2008nomenclature].
+
+One class is different in kind from the other four. An unspliced intron seen in
+polyadenylated RNA does not establish that a splicing decision was taken. It is
+compatible with a finished mRNA. It is equally compatible with an intermediate
+accumulating ahead of a slow rate-limiting step, or with a transcript
+deliberately stalled while a later decision is pending
+[@jacob2017intronretention]. Intron retention is the only one of the five whose
+observation leaves the question open.
+
+## Where isoform differences actually sit {#sec-ends}
+
+Alternative polyadenylation produces isoforms with no splicing difference at
+all. Choosing among a gene's several poly(A) sites yields transcripts that
+differ in 3' UTR, in terminal exon, or in coding potential
+[@huang2026apacancer].
+
+The name covers two consequences that should not be pooled. Tandem 3' UTR choice
+within the last exon leaves the protein untouched and changes only which
+regulatory elements the transcript carries. A poly(A) site used further
+upstream, in an intron, an internal exon or an alternative terminal exon, can
+truncate the protein outright [@huang2026apacancer].
+
+Splicing turns out to be the minority explanation for tissue-dependent isoform
+differences. Measured across 23 human cell types, alternative splicing accounts
+for those differences in at most 35 per cent of genes. For 53 per cent of
+tissue-dependent exonic regions there was no evidence, or only weak evidence, of
+the region ever being spliced out [@reyes2018altstart].
+
+The share that could plausibly change a protein is smaller again. Only about 15
+per cent of tissue-dependent splicing involves exons belonging to principal
+isoforms. The rest is concentrated in untranslated exons and in non-coding or
+minor transcripts [@reyes2018altstart].
+
+Where coding sequence does vary between isoforms, the variation sits at the ends
+rather than in the middle. Coding exons in the variable 5' and 3' regions
+produced by alternative initiation and termination carry about four times more
+alternative nucleotides than the core coding region, which splicing alone can
+diversify [@shabalina2014proteinends]. A treatment of isoform biology that
+discussed splicing and nothing else would be describing the smaller half of the
+phenomenon.
+
+## Measuring how much an exon is used {#sec-psi}
+
+Percent spliced-in, written PSI or Ψ, is the fraction of a gene's mRNAs that
+contain a given exon. It was defined on read densities rather than on raw read
+counts: the density of inclusion reads, divided by the sum of the inclusion and
+exclusion densities [@wang2008alternative]. The metric asks nothing about full
+transcripts, which is why it survived the short-read era intact.
+
+It hides one thing. A single PSI value sits across two separate splicing acts,
+one at each end of the intron. The intron-centric reformulation splits it into a
+5' and a 3' index, one per intron end, so that the choice made at the donor and
+the choice made at the acceptor are scored separately
+[@pervouchine2013introncentric]. Where the two
+indices disagree, a single number reports the average of two decisions that were
+never taken together.
+
+## Three questions that are easy to confuse {#sec-dtu}
+
+Three study designs ask three different things of the same data. Differential
+gene expression asks whether a gene's total transcriptional output changed.
+Differential transcript usage asks whether the composition of its isoform
+abundance spectrum changed. Differential transcript expression asks whether an
+individual transcript changed [@soneson2016differential]. They are different
+null hypotheses rather than different resolutions of one.
+
+![The same two-isoform gene under four outcomes. Only transcript usage
+distinguishes a gene that redistributed its output from one that did not, and
+only gene-level testing is blind to that case.](../figures/dge-dtu-dte.svg){#fig-dge-dtu-dte width=100%}
+
+Exon-level testing sits close to transcript usage without replacing it.
+Differential exon usage and differential transcript usage answer the same
+question at gene level. Only transcript usage names which isoforms were used
+more and which less. Exon counting additionally has to contend with exons whose
+boundaries differ between the isoforms containing them [@baldoni2025dtu].
+
+A gene whose total output never moves can still have reversed which protein it
+makes.
+
+## When two transcripts count as the same {#sec-transcript-classes}
+
+Transcript identity has to be settled mechanically, and the unit that makes it
+checkable is the intron chain. Two transcripts match at intron-chain level when
+every intron has identical coordinates and the counts agree, which implies that
+all internal exons match. The definition says nothing about where the transcript
+starts and ends. Terminal boundaries are deliberately left outside it
+[@pertea2020gffutilities].
+
+Long-read classification is built on the same comparison. A full splice match
+reproduces every splice junction of some reference transcript. An incomplete
+splice match reproduces a consecutive run of them but not all. Neither category
+says the ends agree, which is why an incomplete match can be a genuinely shorter
+isoform or a truncated cDNA [@tardaguila2018sqanti].
+
+The novel categories are graded by how far a transcript departs from the
+annotation's inventory of splice sites. Novel in catalog uses only annotated
+donors and acceptors, either recombined into new junction combinations or newly
+paired with each other. Novel not in catalog introduces a donor or acceptor the
+annotation does not contain [@tardaguila2018sqanti].
+
+Which comparison was run determines every novelty count in this book. The
+reasons published novel-isoform percentages range from a few per cent to more
+than half, sometimes for the same data, are worked through in
+[the transcript comparison walkthrough](../walkthroughs/intron-chain-comparison.qmd).
+
+## Splicing into decay {#sec-as-nmd}
+
+Whether a stop codon counts as premature is decided by position. A stop at least
+50 nucleotides upstream of the last exon junction leaves an exon junction
+complex downstream of it after the first round of translation, and that complex
+is what triggers decay. The rule was established with reporter constructs rather
+than by survey [@lindeboom2016nmdrules].
+
+That makes decay available as a regulatory output. AS-NMD, also published under
+the name regulated unproductive splicing and translation, is the proposal that
+cells splice deliberately into decay. An isoform is made in order to be
+destroyed, so that the fraction of transcripts reaching protein is set after
+transcription [@garciamoreno2020asnmd]. On that reading an unproductive isoform
+is a product of regulation.
+
+How much of the transcriptome this accounts for depends on a denominator, which
+the survey states. With decay inhibited in HeLa cells, high-confidence targets
+came to 2,793 isoforms from 2,116 genes. That is 19 per cent of expressed
+protein-coding genes. It is also 22 per cent of the 9,440 genes those authors
+counted as alternatively spliced, where alternatively spliced means producing
+two or more expressed isoforms, including the decay targets themselves
+[@french2020asnmdsurvey].
+
+An isoform that never reaches protein can still be the reason the gene's protein
+level is what it is.
+
+## How many isoforms does a gene have {#sec-scale}
+
+The answer depends entirely on which genes are counted. Across all Ensembl gene
+bodies the median is one isoform. For protein-coding genes the median is six,
+the 75th percentile is eleven, and only 14.6 per cent are left with a single
+annotated transcript [@page2025annotations].
+
+Annotation and observation part company at the top of that distribution. Ensembl
+lists 7,255 genes with ten or more isoforms, 256 with fifty or more, and 30 with
+a hundred or more. The same authors quantified nine GTEx tissues with long reads
+and observed at most 105 isoforms for any gene body, and 60 for any
+protein-coding gene, while accepting a single uniquely aligned read as evidence
+[@page2025isoformdiversity].
+
+Dominance needs defining before it can be counted, and the phrase hides two
+claims. The major transcript is whichever has the highest expression within a
+gene. A dominant transcript is a major transcript expressed at considerably more
+than any minor one, operationalised as at least twice the abundance of the next.
+That held for almost 80 per cent of expressed genes in primary tissues
+[@gonzalezporta2013dominanttranscript].
+
+Expression is sparser than annotation in the ordinary case. In primary tissues
+the ratio of expressed transcripts to genes averaged 1.12, just over one
+transcript per gene [@gonzalezporta2013dominanttranscript]. What survives of the
+functional claim, once that is taken into account, is the subject of
+@sec-how-functional.
+
+A typical protein-coding gene carries annotation for six isoforms and expresses
+about one. Both numbers are correct, and the distance between them is where most
+of the argument in this book sits.
