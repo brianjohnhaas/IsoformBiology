@@ -49,11 +49,42 @@ a collapsible aside or a `walkthroughs/` document rather than in the chapter.
    comes from a specific paper, the caption says so: "Schematic after [N]."
    An original drawing of someone else's idea, credited, is fine; a redraw that
    reproduces their specific layout and labelling is not.
-3. **Reuse an openly licensed figure.** Only CC-BY / CC0 / public-domain, with
-   the licence and full attribution in the caption. Record it in
-   `figures/MANIFEST.yml` with the licence and a link to the licence terms.
-   Check the *figure's* licence, not the journal's general policy — open-access
-   articles sometimes contain all-rights-reserved panels reused from elsewhere.
+3. **Reuse an openly licensed figure.** Permitted, and sometimes the honest
+   choice when a published figure is the canonical depiction of a result. It
+   carries the most obligations, so work through the checklist below before
+   committing one.
+
+### Checklist for reusing a published figure
+
+Do all of these, in order. If any step is unclear, pick route 1 or 2 instead;
+redrawing is usually faster than resolving a licence question.
+
+1. **Find the licence on the article itself**, not on the journal's general
+   policy page and not on a PDF aggregator. Look for an explicit CC BY, CC BY-SA,
+   CC0 or public-domain statement attached to that article.
+2. **Check the figure's own caption and credit line.** Open-access articles
+   routinely contain panels reproduced from earlier, non-open papers under a
+   one-time permission that does not transfer. A figure captioned "adapted from
+   [x]" or "reproduced with permission" is off limits no matter what licence the
+   host article carries.
+3. **Reject the non-commercial and no-derivatives variants.** CC BY-NC and
+   CC BY-ND are incompatible with this book's CC BY 4.0 licence, because they
+   restrict what downstream readers may do with the whole work.
+4. **Check the publisher, not just the repository.** A PMC copy does not
+   establish a licence; PMC hosts articles under many terms, including ones that
+   permit reading but not redistribution.
+5. **Attribute in the caption itself**, not only in the manifest: author, year,
+   source, licence name, and a link to the licence text. The attribution has to
+   travel with the image.
+6. **Record it in `figures/MANIFEST.yml`** with `route: reused`, the licence, the
+   licence URL, the source DOI, and the date checked.
+7. **Do not crop, recolour or relabel** a reused figure beyond scaling. Editing
+   it can exceed the licence and will usually misrepresent the original. If the
+   figure needs changing to make your point, you want route 2.
+
+When in doubt, redraw. An original schematic crediting the source concept is
+always safe, and it usually serves the argument better, since a figure drawn for
+a paper was composed to make that paper's point rather than this chapter's.
 
 Load the `dataviz` guidance before writing any chart code, so figures across
 chapters read as one system.
