@@ -4,7 +4,6 @@ project:
 
 book:
   title: "Isoform Biology"
-  subtitle: "Why one gene is not one transcript, and why that matters"
   date: today
   search: true
   repo-url: https://github.com/brianjohnhaas/IsoformBiology

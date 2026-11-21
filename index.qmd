@@ -1,5 +1,24 @@
 # Preface {.unnumbered}
 
+::: {.callout-important}
+## An AI-directed project, early in its development
+
+Every chapter here was researched and written by Claude, an AI model, working
+from the primary literature under human direction. No chapter has yet been read
+by a subject expert.
+
+The project is built so that the claims can be checked rather than taken on
+trust. Each statement traces back to a record naming the paper it came from and
+the lines it was read from, the bibliography is generated from those records,
+and several automated checks run on every change. Those checks compare numbers
+and wording. They cannot catch a sentence that says slightly more than its
+source, and some have got through and been corrected after the fact.
+
+Read this as a referenced starting point rather than as a reviewed secondary
+source, and go to the cited paper before relying on anything. Corrections are
+welcome as [issues](https://github.com/brianjohnhaas/IsoformBiology/issues).
+:::
+
 A gene is not a transcript. Most human genes produce several, sometimes dozens,
 and the differences between them are often the biology. Which protein domain is
 present, which cell type expresses which form, whether a transcript is
@@ -18,14 +37,11 @@ current efforts to catalog the isoform universe outright.
 
 ::: {.callout-note}
 ## Status
-All chapters are drafted and none has had a second reader. Every chapter is built from line-anchored claim records.
-Three gates run on every commit: chapter prose is checked for overlap with the
-recorded source quotes, every cited number is checked against the claim it
-cites, and the bibliography is regenerated from the records rather than edited.
-A fourth check re-reads every recorded quote from the source corpus and is run
-by hand, because it needs a corpus the build machine does not have. [CONTRIBUTING.md](CONTRIBUTING.md) explains how, and why it is
-built that way.
+All ten chapters are drafted, from research records built one paper at a time.
+The checks that run on every commit, and the things they cannot see, are listed
+in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Four glossary terms rest on no citable source and are marked in place as the
-book's own. They are the entries most in need of review.
+Four glossary terms rest on no citable source and are written on this book's
+own authority. They are marked in place, and they are the entries most in need
+of a reader.
 :::
