@@ -94,8 +94,8 @@ make affected sites look unaffected [@brooks2014u2af1].
 The SRSF2 P95 hotspot works by re-weighting an exonic splicing enhancer code
 rather than by abolishing binding. The mutant RNA-binding domain binds the CCNG
 motif with three- to four-fold higher affinity than GGNG, where the wild-type
-domain treats the two about equally [@liang2018srsf2]. One changed preference
-redistributes thousands of exons.
+domain treats the two about equally [@liang2018srsf2]. One changed binding preference is enough to redistribute splicing across the
+transcriptome.
 
 Reproducibility across SRSF2 studies is a problem. When nine published RNA-seq
 datasets were overlapped at the level of differentially spliced gene lists, not

@@ -76,6 +76,21 @@ it costs. What was found with it, which is the Joglekar brain atlas and the
 CD8 T cell atlas, belongs to chapter 8 with the rest of the single-cell
 biology.
 
+## Checked after drafting
+
+Two rows needed correcting once every chapter existed.
+
+The CD8 T cell atlas claim was assigned to chapter 8 and had not actually been
+written there. It is now in `#sec-isoform-only` with the rest of the
+isoform-only evidence.
+
+The prevalence row said chapter 2 owns the 95 per cent figure. Chapter 4 also
+states those numbers, and that is deliberate rather than a duplication: chapter
+2's aside is about what the figure counts and under which thresholds, while
+chapter 4 is about how it was obtained, which is the provenance chain through
+EST and cDNA data and the sigmoid extrapolation. Chapter 4 points at
+`#sec-how-functional` for the conditions rather than restating them.
+
 ## Procedure while drafting
 
 Write back-references as you go. Leave forward references until every chapter

@@ -18,12 +18,12 @@ current efforts to catalog the isoform universe outright.
 
 ::: {.callout-note}
 ## Status
-All chapters are drafted and none has had a second reader. Every chapter is
-built from line-anchored claim records, and four mechanical gates run on every
-commit: recorded quotes are re-read from the source, chapter prose is checked
-against those quotes for overlap, every cited number is checked against the
-claim it cites, and the bibliography is regenerated from the records rather
-than edited. [CONTRIBUTING.md](CONTRIBUTING.md) explains how, and why it is
+All chapters are drafted and none has had a second reader. Every chapter is built from line-anchored claim records.
+Three gates run on every commit: chapter prose is checked for overlap with the
+recorded source quotes, every cited number is checked against the claim it
+cites, and the bibliography is regenerated from the records rather than edited.
+A fourth check re-reads every recorded quote from the source corpus and is run
+by hand, because it needs a corpus the build machine does not have. [CONTRIBUTING.md](CONTRIBUTING.md) explains how, and why it is
 built that way.
 
 Four glossary terms rest on no citable source and are marked in place as the

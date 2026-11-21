@@ -44,8 +44,7 @@ events overstates how much retained-intron RNA a plant cell is actually holding.
 
 ### Temperature read through splicing
 
-Flowering time in Arabidopsis is set partly by how two MADS-box genes are
-spliced. FLM is the better known. FLM transcripts were cloned and sequenced at
+Flowering time in Arabidopsis is set partly by how two genes are spliced. FLM is the better known. FLM transcripts were cloned and sequenced at
 three growth temperatures. The share of non-canonical isoforms, which mostly
 carry premature stop codons, rose from 30 per cent at 16 degrees to over 50 per
 cent at 27 degrees [@capovilla2017flm].
@@ -91,7 +90,8 @@ same as maximum daily temperature rose. Retained introns and skipped exons
 increased most, and the splicing regulators were themselves among the genes
 most often affected, SR45a among them [@li2021maize].
 
-Light changes splicing in Arabidopsis roots, which do not see any light. The signal traces to sugars made by photosynthesis in the shoot, acting through
+Light changes splicing in Arabidopsis roots, and not as a direct response to
+light. The signal traces to sugars made by photosynthesis in the shoot, acting through
 the TOR kinase pathway. Those authors describe it as a shoot-to-root route
 coordinating splicing across the whole plant [@riegler2021light]. Splicing state
 in one organ is set by metabolic status in another.

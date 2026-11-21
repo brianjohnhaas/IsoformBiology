@@ -30,7 +30,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 # PFO-021. Ordered as the study orders them, by structural complexity.
 GROUPS = [
     ("Saccharomycotina and\nTaphrinomycotina", "mostly single-celled", 0.26),
-    ("Mucoromycotina", "simple hyphae", 2.3),
+    ("Mucoromycotina", "", 2.3),
     ("Pezizomycotina", "filamentous", 7.2),
     ("Basidiomycota", "fruiting bodies", 8.6),
 ]
@@ -58,8 +58,9 @@ def draw(mode: str) -> pathlib.Path:
                 fontsize=9.4, color=c["ink"], zorder=4)
         ax.text(-0.35, y + 0.10, name, va="center", ha="right",
                 fontsize=9.0, color=c["ink"], linespacing=1.3)
-        ax.text(-0.35, y - 0.30, habit, va="center", ha="right",
-                fontsize=7.8, color=c["muted"], style="italic")
+        if habit:
+            ax.text(-0.35, y - 0.30, habit, va="center", ha="right",
+                    fontsize=7.8, color=c["muted"], style="italic")
 
     ax.set_xlim(0, 10.6)
     ax.set_ylim(-0.75, len(GROUPS) - 0.25)

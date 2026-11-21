@@ -135,6 +135,15 @@ which isoform dominated changed with the tissue or cell line
 [@reese2023encode4]. They framed the work as a direct challenge to that
 assumption, naming it explicitly before testing it [@reese2023encode4].
 
+That three-quarters figure sits above the one in @sec-how-functional, where
+about 35 per cent of genes switch which transcript dominates between tissues
+[@gonzalezporta2013dominanttranscript].
+The two are measuring different things. The earlier number counts genes whose
+dominant transcript changes between primary tissues in short-read data; this
+one counts genes with no single top transcript stable across a long-read panel
+that includes cell lines. Neither is wrong, and quoting either without its
+panel is.
+
 Other catalogues give the same shape at different scales. The GTEx long-read
 survey covered 88 samples on Nanopore and added just under 100,000 previously
 unannotated transcripts to already-annotated genes

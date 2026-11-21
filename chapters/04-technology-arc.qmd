@@ -101,8 +101,8 @@ raised the estimate again, to 42 per cent of human genes or more
 Then the dependence was demonstrated rather than suspected. With sufficient EST
 coverage, nearly every gene examined showed some alternative form. Requiring a
 variant above five per cent with statistical support collapsed the yield to 17
-to 28 per cent of genes [@kan2002selecting]. One dataset, two defensible
-numbers, four-fold apart.
+to 28 per cent of genes [@kan2002selecting]. One dataset, two defensible numbers, and the threshold is the whole
+difference between them.
 
 By 2004 the counter-argument was in print. Cassette exons seen only in EST
 databases differed systematically from cross-species conserved ones, and a

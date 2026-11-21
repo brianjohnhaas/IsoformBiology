@@ -37,6 +37,9 @@ jobs:
       - name: Check cited numbers against claim records
         run: python3 scripts/check_citations.py
 
+      - name: Check every figure is recorded with its provenance
+        run: python3 scripts/check_figures.py
+
       - name: Check prose style
         run: python3 scripts/check_style.py
 

@@ -6,10 +6,10 @@ Written from `research/07-neuro-mendelian.yml` and not yet reviewed by a second
 reader.
 :::
 
-This is where isoform biology has gone furthest into the clinic. Three
-splicing-directed drugs hold approval, a cryptic exon has become a
-pathology-specific marker, and a splice-modulating oligonucleotide has been
-designed for a single patient. The same chapter contains the clearest evidence
+This is where isoform biology has gone furthest into the clinic.
+Splicing-directed drugs hold approval in two diseases, a cryptic exon has
+become a pathology-specific marker, and a splice-modulating oligonucleotide has
+been designed for a single patient. The same chapter contains the clearest evidence
 that the field does not agree on how large the underlying phenomenon is.
 
 ## Why the brain {#sec-brain-splicing}

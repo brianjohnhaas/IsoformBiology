@@ -60,6 +60,11 @@ higher. About seven in ten genes carry isoforms whose variation across
 development, region or subtype is not explained by variation in the gene's own
 expression [@joglekar2024singlecell].
 
+A single-cell long-read atlas of human CD8 T cells found about half of the
+isoforms differentially expressed within a cluster coming from genes that were
+also differentially expressed at gene level. Those authors read the remainder
+as isoform-specific regulation [@tzaban2025rna].
+
 Cell type matters more than tissue for one of those quantities and not the
 other. How widely a gene spreads its expression across isoforms tracked cell
 type more strongly than tissue of residence, at mean partial omega-squared
@@ -71,8 +76,8 @@ cell type and from tissue, once factor complexity was accounted for
 
 Single cells let a regional difference be charged to a compartment. In postnatal mouse hippocampus against prefrontal cortex, three quarters of
 the isoform differences visible in pooled tissue could be charged to one
-compartment alone, neuronal or non-neuronal. A coordinated change in both
-accounted for the rest [@joglekar2021spatially].
+compartment alone, neuronal or non-neuronal, rather than to a coordinated
+change in both [@joglekar2021spatially].
 
 Sometimes the annotated cell type is the thing that breaks. For a developmental gene with a neuron-specific isoform, part of a granule
 neuroblast population used the excitatory-neuron isoform and the rest used the
@@ -185,9 +190,8 @@ model. Reanalysing two published long-read spatial brain sections with a model
 built for sparse isoform counts more than doubled the number called, from 61 to
 150 reproducible across replicates [@su2025splisosm]. The same framework was then applied to ordinary short-read spatial data from
 adult mouse brain. Over eight hundred genes varied spatially in which 3' end
-they used, more than five times the count recovered from long-read spatial data
-of the same tissue [@su2025splisosm]. The cheaper assay returned more, because it returned more
-molecules.
+they used, more than five times the count recovered from long-read spatial data of the
+same tissue [@su2025splisosm]. The cheaper assay returned more.
 
 ## What these measurements cannot do {#sec-sc-limits}
 
