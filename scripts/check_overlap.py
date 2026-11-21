@@ -32,8 +32,15 @@ STOPSPANS = re.compile(
 )
 
 
+# A number is one word. Splitting 203,672 into "203" and "672", or 2.7 into
+# "2" and "7", let a short shared phrase reach the 8-word threshold on digits
+# alone and reported overlap where there was none.
+TOKEN = re.compile(r"\d+\.\d+|[A-Za-z0-9'\-]+")
+
+
 def words(text: str) -> list[str]:
-    return re.findall(r"[A-Za-z0-9'\-]+", text.lower())
+    text = re.sub(r"(?<=\d),(?=\d\d\d)", "", text.lower())
+    return TOKEN.findall(text)
 
 
 def shingles(ws: list[str], n: int) -> set[tuple[str, ...]]:

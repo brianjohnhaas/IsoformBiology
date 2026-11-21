@@ -1,8 +1,223 @@
 # How technology shaped what we could see
 
 ::: {.callout-warning}
-## Draft
-Research in progress. Claim records: `research/04-technology-arc.yml`
+## First draft
+Written from `research/04-technology-arc.yml` and not yet reviewed by a second
+reader.
 :::
 
-_Scope:_ R-loops and EM to cDNA cloning, ESTs, exon arrays, and short-read RNA-seq: each method's blind spots and the biology it let in.
+Every claim about alternative splicing has an assay behind it, and the assay
+fixes what kind of claim it can be. A method that measures a length can
+establish that a transcript is discontinuous. It cannot establish that the
+discontinuity is regulated. A method that counts junctions can establish
+prevalence, and cannot establish which junctions occurred in the same molecule.
+
+This chapter follows that constraint rather than the chronology. Each section
+covers one generation of method, what it licensed, and the specific thing it
+could not reach.
+
+## Seeing a discontinuity {#sec-1977}
+
+Splicing was established by a physical measurement rather than by a sequence.
+Berget, Moore and Sharp located adenovirus hexon mRNA on the viral genome by
+examining RNA-DNA hybrids in the electron microscope [@berget1977spliced].
+
+What carried the inference was a length. About 160 nucleotides at the mRNA's 5'
+end failed to pair with the single-stranded DNA encoding the rest of the
+message [@berget1977spliced].
+
+A second group reached the same place by a different hybridisation geometry.
+R-loops formed between viral DNA and unfractionated polysomal RNA resolved
+three short segments from distant map positions, fused into one leader of 150
+to 200 nucleotides [@chow1977amazing].
+
+Two unlike physical assays put the same segments at the same coordinates.
+Neither could give a sequence or an exact splice boundary. What they licensed
+was that a transcript can be discontinuous.
+
+## Showing that the choice is regulated {#sec-regulated}
+
+Immunoglobulin was one route to the next claim. The membrane and secreted forms
+of the mu heavy chain travel on two different mRNAs, one of 2.7 and one of 2.4
+kilobases. That came from restriction mapping and sequencing of cDNA clones
+taken from a tumour making both chains [@rogers1980twomrnas].
+
+Calcitonin was the other, and its authors drew the general conclusion.
+Alternative processing of calcitonin gene transcripts yields distinct mRNAs
+with different tissue distributions. They proposed this as a strategy:
+developmental regulation of RNA processing as a way of increasing the diversity
+of neuroendocrine gene expression [@amara1982alternative].
+
+The same group later made the methodological argument explicit. Cloning
+together with processing analysis could reach a complex neurobiological system
+with no prior structural or biological information about the product it would
+find [@rosenfeld1983production]. The method had become a way of discovering
+biology rather than confirming it.
+
+## One locus at a time {#sec-low-throughput}
+
+For roughly two decades after that, measuring splicing meant one locus and one
+gene. RT-PCR was the conventional approach, and retrospectives written three
+decades later still name it as such [@park2018expanding].
+
+Solution hybridisation with nuclease protection was the more quantitative
+alternative to RNA blot analysis. Its own practitioners recorded the catch. At
+a locus making several mRNAs by alternative splicing, the protected-fragment
+pattern from a uniformly labelled cRNA probe became hard to interpret
+[@nucleaseprotection1989solution].
+
+An assay can be sensitive without being diagnostic. In the S1 nuclease
+configuration best suited to demonstrating a splice, unspliced and spliced RNA
+both protect the probe across the junction. The assay was reported as not
+diagnostic, and needed an RNase H pre-digestion to become one
+[@rnaseh1987s1artefact].
+
+The deeper limitation was combinatorial, and it outlasted the era. As late as
+2010, authors building a single-molecule splicing readout opened by stating it
+plainly: studying linked regulation of multiple splice sites within one gene,
+in transcripts such as Dscam, required new approaches
+[@conze2010singlemolecule]. The arithmetic in @sec-dscam is precisely what a
+bulk assay cannot report. Inclusion frequencies measured one exon at a time are
+compatible with combinations across molecules that contradict each other.
+
+## ESTs, and the first genome-scale numbers {#sec-est-era}
+
+Expressed sequence tags made a genome-scale count possible, and the counts did
+not settle.
+
+Spliced alignment of EST contigs in 1999 put alternative splicing at 35 per
+cent of known human genes. Most of the detected variation sat in 5'
+untranslated regions rather than in coding sequence [@mironov1999frequent].
+
+A different EST comparison a year later gave 38 per cent, over 7,867
+non-redundant mRNAs of which 3,011 carried an alternative form. Its event
+spectrum was roughly 70 per cent exon deletions against 30 per cent insertions
+[@brett2000estcomparison].
+
+Mapping roughly 2.1 million human mRNA and EST sequences onto the draft genome
+raised the estimate again, to 42 per cent of human genes or more
+[@modrek2001genomewide].
+
+Then the dependence was demonstrated rather than suspected. With sufficient EST
+coverage, nearly every gene examined showed some alternative form. Requiring a
+variant above five per cent with statistical support collapsed the yield to 17
+to 28 per cent of genes [@kan2002selecting]. One dataset, two defensible
+numbers, four-fold apart.
+
+By 2004 the counter-argument was in print. Cassette exons seen only in EST
+databases differed systematically from cross-species conserved ones, and a
+significant portion were argued to be aberrant splicing rather than regulated
+isoforms [@sorek2004howprevalent]. The headline number was a function of
+library depth and of the threshold applied to it, and @fig-prevalence shows
+what that does to a decade of published estimates.
+
+## Arrays {#sec-arrays}
+
+Arrays moved the measurement from discovery to a designed survey. Junction
+microarrays monitored every exon-exon junction in more than 10,000 multi-exon
+human genes across 52 tissues and cell lines. Their authors concluded that at
+least 74 per cent of human multi-exon genes are alternatively spliced
+[@johnson2003genomewide].
+
+Combining exon-body probes with splice-junction probes on one platform made
+tissue-specific alternative splicing quantitative for thousands of exons in
+mouse tissues [@pan2004revealing]. One human compendium designed arrays carrying
+probes for 203,672 exons and for 178,351 junctions, across 17,939 genes
+[@castle2008differential]. That coverage is large, and it is fixed before the
+experiment begins.
+
+Two limitations are worth carrying forward. Arrays had a structural blind spot
+by event class, because alternative 5' and 3' splice sites shift the message by
+a region often too small to interrogate with a probe
+[@wang2008alternative]. The splicing index, on which most array splicing calls
+rested, assumes that a gene's exons move together when its transcription
+changes. That assumption was shown not to hold on real exon-array data,
+substantially inflating the apparent number of alternatively spliced exons for
+technical reasons [@gaidatzis2009overestimation].
+
+## RNA-seq arrives {#sec-rnaseq-arrives}
+
+RNA-seq removed the design step. The 2008 mouse reference datasets rested on 41
+to 52 million mapped 25-base reads from poly(A)-selected RNA of three tissues.
+What they yielded was a junction census: about 145,000 distinct splices, with
+roughly 3,500 genes expressing one or more alternate internal splice
+[@mortazavi2008mapping].
+
+A parallel human study reported 94,241 splice junctions from two cell lines, of
+which only 4,096 were previously unidentified. Exon skipping was the most
+prevalent form of alternative splicing [@sultan2008globalview]. The companion
+study behind the near-universality claim sequenced 12 to 29 million 32-base
+cDNA fragments per sample, from ten human tissues and five mammary epithelial
+or breast cancer cell lines [@wang2008alternative].
+
+The figure everyone quotes needs its provenance attached. The claim that about
+95 per cent of multi-exon human genes are alternatively spliced is not a pure
+RNA-seq result. Its source states that the estimate came from combining
+mRNA-Seq with EST and cDNA sequence data [@pan2008deepsurveying].
+
+The companion number is an extrapolation over a stated denominator. Multi-exon
+genes, 94 per cent of all RefSeq genes, were binned by read coverage and a
+sigmoid was fitted. The asymptote lands near 98 to 100 per cent of multi-exon
+genes [@wang2008alternative].
+
+The same paper carries a more conservative figure bounded by a threshold.
+Requiring a minor isoform to exceed 15 per cent of the gene's output in at
+least one sample gives 92 per cent of multi-exon genes, which those authors
+rescale to about 86 per cent of all human genes [@wang2008alternative].
+
+![Ten years of estimates of how many human genes are alternatively spliced. The
+denominators differ, the abundance thresholds differ, and two of the values are
+extrapolations rather than counts. The spread is the subject, and reading the
+column as a rising trend reads nine questions as
+one.](../figures/prevalence-estimates.svg){#fig-prevalence width=100%}
+
+What that figure counts, and under which conditions, is taken up in
+@sec-how-functional.
+
+## What short reads could not do {#sec-short-read-limit}
+
+The full-length reconstruction problem was named in the EST era. The
+high-throughput methods of the day returned detailed information about short
+fragments rather than complete forms, and recovering whole isoform structures
+from a fragment mixture was posed as a separate inference task
+[@xing2004multiassembly].
+
+Short reads inherited it. The Cufflinks authors state the limitation in their
+own opening paragraph: assembly and abundance estimation are hard because a
+read generally cannot be attributed to one isoform [@trapnell2010transcript].
+They also record what they had done instead in earlier work, which was to
+quantify genes without allocating reads among alternative isoforms, while still
+reporting evidence that several forms were co-expressed
+[@trapnell2010transcript].
+
+A community assessment measured the cost. Best-method transcript-level recovery
+fell as the genome got more complex, from 56 to 59 per cent of spliced
+protein-coding transcripts in *C. elegans*, to 43 per cent in *D.
+melanogaster*, to 21 per cent in *H. sapiens* [@steijger2013assessment]. The
+same assessment separated the two failure modes and found both active. For most
+transcripts not every constituent exon was detected, and even where all exons
+were reported the methods frequently could not link them into a complete
+isoform [@steijger2013assessment].
+
+Read length buys assignment, and the amount is measurable. Comparing two
+Illumina paired-end libraries from the same cell line, 25.04 per cent of
+assignable 75-base reads matched exactly one annotated isoform, against 32.98
+per cent at 262 bases [@cho2014highresolution].
+
+Depth does not substitute for length. Reads that map to several places stay
+common however deeply a library is sequenced, so more data does not remove that
+uncertainty [@zheng2022nonidentifiability]. The limitation
+is formal as well as practical. Different sets of transcript abundances can
+generate the observed reads with equal likelihood, so the maximum-likelihood
+answer is not unique, and the underlying true expression cannot be determined
+from the reads [@zheng2022nonidentifiability].
+
+The field's response was to stop asking for full-length structures. Event-based
+tools count reads over particular exons and junctions and report a
+percent-spliced-in value, measuring one decision instead of solving for the
+whole molecule [@park2018expanding]. That is where PSI comes from, and
+@sec-psi gives what it costs.
+
+Thirty years of method development had converged on a measurement that answers
+a smaller question very well. What the smaller question leaves out is a
+molecule, and getting it back took a longer read.
