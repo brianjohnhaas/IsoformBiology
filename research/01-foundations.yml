@@ -1,0 +1,896 @@
+area: foundations
+researcher: agent-01-foundations
+date: '2026-11-21'
+corpus: paperclip 0.8.23
+claims:
+- id: FND-001
+  claim: The machine that removes an intron is not a single enzyme but five small nuclear ribonucleoproteins - U1,
+    U2, U4, U5 and U6 - plus hundreds of further proteins, and it is assembled fresh on each pre-mRNA through an
+    ordered series of intermediates named E, A, B and C, of which only the E complex forms without ATP.
+  topic: spliceosome composition
+  source:
+    doc_id: PMC8624252
+    title: Evolution of the Early Spliceosomal Complex—From Constitutive to Regulated Splicing
+    authors: Borao, S.; Ayté, J.; Hümmer, S.
+    journal: International Journal of Molecular Sciences
+    year: 2021
+    doi: 10.3390/ijms222212444
+    bibkey: borao2021earlyspliceosome
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L12
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8624252#L12
+    quote: The five different snRNPs are called U1, U2, U4, U5, and U6
+  confidence: high
+  figure_idea: One horizontal pre-mRNA with the four core signals marked, and beneath it a left-to-right ladder
+    of the E, A, B and C intermediates showing which snRNP joins at each step and where ATP is required - the figure
+    a reader should be able to return to for the whole book.
+- id: FND-002
+  claim: 'The two ends of an intron are recognised by different machinery and in a definite order: U1 snRNP engages
+    the 5'' splice site while SF1 and U2AF together recognise the 3'' splice site, and U2 snRNP only arrives later
+    by displacing SF1.'
+  topic: splice site recognition
+  source:
+    doc_id: PMC8624252
+    title: Evolution of the Early Spliceosomal Complex—From Constitutive to Regulated Splicing
+    authors: Borao, S.; Ayté, J.; Hümmer, S.
+    journal: International Journal of Molecular Sciences
+    year: 2021
+    doi: 10.3390/ijms222212444
+    bibkey: borao2021earlyspliceosome
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L13
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8624252#L13
+    quote: cooperative recognition of the 3′ ss by SF1 (Splicing Factor 1) and U2AF
+  confidence: high
+- id: FND-003
+  claim: What is usually written as a single "3' splice site" is three separate sequence elements working together
+    - the branchpoint, the polypyrimidine tract and the terminal AG dinucleotide - so 3' splice site recognition
+    can fail without the AG itself being touched.
+  topic: core splice signals
+  source:
+    doc_id: PMC8624252
+    title: Evolution of the Early Spliceosomal Complex—From Constitutive to Regulated Splicing
+    authors: Borao, S.; Ayté, J.; Hümmer, S.
+    journal: International Journal of Molecular Sciences
+    year: 2021
+    doi: 10.3390/ijms222212444
+    bibkey: borao2021earlyspliceosome
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L37
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8624252#L37
+    quote: Three cis-elements of an intron—the branchpoint sequence, the Py tract, and the terminal AG dinucleotide—are
+      thought to be involved in defining a functional 3′ ss
+  confidence: high
+- id: FND-004
+  claim: The branchpoint supplies the acceptor nucleotide for the first chemical step of splicing, but in humans
+    its sequence is barely a consensus at all - only YUNAY, one position of which is unconstrained - whereas budding
+    yeast holds a near-invariant UACUAAC.
+  topic: core splice signals
+  source:
+    doc_id: PMC8624252
+    title: Evolution of the Early Spliceosomal Complex—From Constitutive to Regulated Splicing
+    authors: Borao, S.; Ayté, J.; Hümmer, S.
+    journal: International Journal of Molecular Sciences
+    year: 2021
+    doi: 10.3390/ijms222212444
+    bibkey: borao2021earlyspliceosome
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L38
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8624252#L38
+    quote: highly degenerated branchpoint sequences with a minimal consensus YURAY (Y = pyrimidine; R = purine)
+      in fission yeast [101,[102],103]) and YUNAY
+  confidence: high
+- id: FND-005
+  claim: 'The polypyrimidine tract has an operational definition rather than a motif: an uninterrupted run of pyrimidines,
+    whose strength is counted in uridines, sitting between the branchpoint and the terminal AG where U2AF65 binds
+    it.'
+  topic: core splice signals
+  source:
+    doc_id: PMC8624252
+    title: Evolution of the Early Spliceosomal Complex—From Constitutive to Regulated Splicing
+    authors: Borao, S.; Ayté, J.; Hümmer, S.
+    journal: International Journal of Molecular Sciences
+    year: 2021
+    doi: 10.3390/ijms222212444
+    bibkey: borao2021earlyspliceosome
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L44
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8624252#L44
+    quote: Py-tracts are defined as a pyrimidine-rich sequence (C, U) which is not interspaced by a purine (A, G)
+  confidence: high
+- id: FND-006
+  claim: On the 5' side of a human intron only the first two bases, GU, are reliably conserved and every other position
+    varies; the last three nucleotides of the upstream exon also contribute to how tightly U1 binds, so that degeneracy
+    plus the exonic extension gives a broad range of 5' splice site interaction strengths rather than a match or
+    a mismatch.
+  topic: core splice signals
+  source:
+    doc_id: PMC8624252
+    title: Evolution of the Early Spliceosomal Complex—From Constitutive to Regulated Splicing
+    authors: Borao, S.; Ayté, J.; Hümmer, S.
+    journal: International Journal of Molecular Sciences
+    year: 2021
+    doi: 10.3390/ijms222212444
+    bibkey: borao2021earlyspliceosome
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L34-L35
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8624252#L34-L35
+    quote: only the GU dinucleotide at the beginning of the intron is conserved in S. pombe and humans
+  confidence: high
+- id: FND-007
+  claim: 'Constitutive and alternative splicing are two regimes of one mechanism rather than two mechanisms: these
+    authors argue that splice site motifs degenerated over evolution specifically to allow regulated splicing, and
+    that the accompanying increase in spliceosome complexity underlies the shift from mainly constitutive splicing
+    in budding yeast to regulated and alternative splicing in humans.'
+  topic: constitutive versus alternative splicing
+  source:
+    doc_id: PMC8624252
+    title: Evolution of the Early Spliceosomal Complex—From Constitutive to Regulated Splicing
+    authors: Borao, S.; Ayté, J.; Hümmer, S.
+    journal: International Journal of Molecular Sciences
+    year: 2021
+    doi: 10.3390/ijms222212444
+    bibkey: borao2021earlyspliceosome
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L15,L55
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8624252#L15,L55
+    quote: the increase in the complexity of the spliceosome is thought to contribute to the evolution from mainly
+      constitutive splicing in budding yeast
+  confidence: high
+- id: FND-008
+  claim: 'A second, parallel spliceosome exists and is tiny by comparison: the minor U12-dependent machinery excises
+    about 0.5 per cent of introns, roughly 700 human genes carry a U12-type intron against only 19 genes in Drosophila,
+    and the typical minor-intron-containing gene holds exactly one of them among many major introns.'
+  topic: minor (U12) spliceosome
+  source:
+    doc_id: PMC8329584
+    title: 'At the Intersection of Major and Minor Spliceosomes: Crosstalk Mechanisms and Their Impact on Gene Expression'
+    authors: Akinyi, M. V.; Frilander, M. J.
+    journal: Frontiers in Genetics
+    year: 2021
+    doi: 10.3389/fgene.2021.700744
+    bibkey: akinyi2021minorspliceosome
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L9
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8329584#L9
+    quote: approximately 700 genes contain U12-type introns, while only 19 are found in Drosophila
+  confidence: high
+- id: FND-009
+  claim: 'The two intron classes are told apart by their signals, not their chemistry: a polypyrimidine tract is
+    a feature of major U2-type introns only, the minor 3'' splice site is recognised by ZRSR2 rather than the U2AF
+    heterodimer, and because U12 splice signals are far better conserved they support correspondingly less alternative
+    splicing.'
+  topic: minor (U12) spliceosome
+  source:
+    doc_id: PMC8329584
+    title: 'At the Intersection of Major and Minor Spliceosomes: Crosstalk Mechanisms and Their Impact on Gene Expression'
+    authors: Akinyi, M. V.; Frilander, M. J.
+    journal: Frontiers in Genetics
+    year: 2021
+    doi: 10.3389/fgene.2021.700744
+    bibkey: akinyi2021minorspliceosome
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L10
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8329584#L10
+    quote: U2-type introns distinctively contain a polypyrimidine tract (PPT) upstream of the 3′ss
+  confidence: high
+- id: FND-010
+  claim: A review of minor intron splicing puts U12-type introns at less than 0.4 per cent of all human introns
+    and names the snRNPs of the machinery that removes them as U11, U12, U4atac, U5 and U6atac.
+  topic: minor (U12) spliceosome - conflicting share
+  source:
+    doc_id: PMC8199999
+    title: Minor Intron Splicing from Basic Science to Disease
+    authors: El Marabti, E.; Malek, J.; Younis, I.
+    journal: International Journal of Molecular Sciences
+    year: 2021
+    doi: 10.3390/ijms22116062
+    bibkey: elmarabti2021minorintron
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L6
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8199999#L6
+    quote: less than 0.4% are U12 type, also known as minor introns (mi-INTs), and require a specialized spliceosome
+      composed of U11, U12, U4atac, U5
+  confidence: medium
+- id: FND-011
+  claim: The five event names the field still uses - exon skipping, mutually exclusive exons, intron retention,
+    alternative donor and alternative acceptor - were inherited as a traditional vocabulary rather than derived,
+    and the paper that formalised event nomenclature says so explicitly before pointing out that real annotations
+    contain many patterns none of the five describes.
+  topic: event classes - nomenclature
+  source:
+    doc_id: PMC2467475
+    title: A General Definition and Nomenclature for Alternative Splicing Events
+    authors: Sammeth, M.; Foissac, S.; Guigó, R.
+    journal: PLoS Computational Biology
+    year: 2008
+    doi: 10.1371/journal.pcbi.1000147
+    bibkey: sammeth2008nomenclature
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L10
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2467475#L10
+    quote: 'five kinds of AS events have been coined: exon skipping (ES), mutually exclusive exons (ME), intron
+      retention (IR), alternative donor (AD) and acceptor (AA) sites'
+  confidence: high
+- id: FND-012
+  claim: 'Over three human reference annotations the four simple event classes fall in the same rank order - exon
+    skipping first, then alternative donor, then alternative acceptor, with intron retention last. The denominator
+    is stated rather than implied: events with a simple splicing pattern, involving at most two alternative splice
+    sites and not correlated with a variable transcription start or polyadenylation site.'
+  topic: event classes - relative frequency
+  source:
+    doc_id: PMC2467475
+    title: A General Definition and Nomenclature for Alternative Splicing Events
+    authors: Sammeth, M.; Foissac, S.; Guigó, R.
+    journal: PLoS Computational Biology
+    year: 2008
+    doi: 10.1371/journal.pcbi.1000147
+    bibkey: sammeth2008nomenclature
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L58
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2467475#L58
+    quote: 'in the order: exon skipping (ES), alternate donor (AD), alternate acceptors (AA) and intron retention
+      (IR)'
+  confidence: high
+  figure_idea: A grouped bar chart of the four simple event classes side by side for RefSeq, Ensembl and GENCODE,
+    with the complex-event remainder shown as its own bar, so the reader sees both the stable rank order and how
+    much of the landscape the five traditional names leave out.
+- id: FND-013
+  claim: 'The five traditional classes do not cover the ground: splicing patterns too complex to be named by any
+    of them make up between 23.18 per cent of the event landscape in RefSeq and 35.4 per cent in Ensembl, so roughly
+    a quarter to a third of annotated alternative splicing has no textbook label.'
+  topic: event classes - what the five names miss
+  source:
+    doc_id: PMC2467475
+    title: A General Definition and Nomenclature for Alternative Splicing Events
+    authors: Sammeth, M.; Foissac, S.; Guigó, R.
+    journal: PLoS Computational Biology
+    year: 2008
+    doi: 10.1371/journal.pcbi.1000147
+    bibkey: sammeth2008nomenclature
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L58
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2467475#L58
+    quote: These “complex” events form as a whole a substantial part of the AS landscape (from 23.18% in RefSeq
+      up to 35.4% in EnsEmbl
+  confidence: high
+- id: FND-014
+  claim: Mutually exclusive exons are rare as a share of the complex event pool, 12 to 14.5 per cent of it depending
+    on the annotation, well behind the skipping of two consecutive exons; the authors attribute the scarcity to
+    the more elaborate mechanism mutual exclusivity requires.
+  topic: event classes - mutually exclusive exons
+  source:
+    doc_id: PMC2467475
+    title: A General Definition and Nomenclature for Alternative Splicing Events
+    authors: Sammeth, M.; Foissac, S.; Guigó, R.
+    journal: PLoS Computational Biology
+    year: 2008
+    doi: 10.1371/journal.pcbi.1000147
+    bibkey: sammeth2008nomenclature
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L58
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2467475#L58
+    quote: Mutually exclusive exons (1–2ˆ,3–4ˆ) are less frequent (from 12% to 14.5%
+  confidence: high
+- id: FND-015
+  claim: 'The event spectrum is not the same inside and outside the reading frame: in RefSeq coding sequence exon
+    skipping accounts for 50.9 per cent of the local event landscape against 37.9 per cent in 5'' UTRs, while intron
+    retention runs the other way - 2.1 per cent in coding sequence against 8.4 per cent in 5'' UTRs - which the
+    authors read as selection against in-frame stop codons.'
+  topic: event classes - coding versus untranslated
+  source:
+    doc_id: PMC2467475
+    title: A General Definition and Nomenclature for Alternative Splicing Events
+    authors: Sammeth, M.; Foissac, S.; Guigó, R.
+    journal: PLoS Computational Biology
+    year: 2008
+    doi: 10.1371/journal.pcbi.1000147
+    bibkey: sammeth2008nomenclature
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L62
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2467475#L62
+    quote: the proportion of ES is significantly higher in CDS (50.9% of the landscape) than in the 5′ UTR (37.9%
+  confidence: high
+  figure_idea: Two stacked bars, one for coding sequence and one for 5' UTR, each partitioned into the four simple
+    classes plus complex events, making the reversal of exon skipping and intron retention visible in one glance.
+- id: FND-016
+  claim: Intron retention is the one event class whose observation does not establish that a splicing decision was
+    made. An unspliced intron seen in polyadenylated RNA is compatible with a finished mRNA, with an intermediate
+    accumulating ahead of a slow rate-limiting step, or with a transcript deliberately stalled awaiting a later
+    decision.
+  topic: intron retention as a category
+  source:
+    doc_id: PMC5602073
+    title: Intron retention as a component of regulated gene expression programs
+    authors: Jacob, A. G.; Smith, C. W. J.
+    journal: Human Genetics
+    year: 2017
+    doi: 10.1007/s00439-017-1791-x
+    bibkey: jacob2017intronretention
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L17
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5602073#L17
+    quote: retained intron in polyadenylated RNA is ambiguous. It could either represent a mature fully processed
+      RNA; an intermediate that accumulates prior to a slow
+  confidence: high
+- id: FND-017
+  claim: Three distinct processes generate transcript isoforms - alternative exon splicing, alternative transcription
+    start site choice and alternative polyadenylation - and each one touches at least half of human protein-coding
+    genes, which is why "isoform" cannot be treated as a synonym for "splice variant".
+  topic: isoform diversity beyond splicing
+  source:
+    doc_id: PMC10671453
+    title: Alternative Transcripts Diversify Genome Function for Phenome Relevance to Health and Diseases
+    authors: Carrion, S. A.; Michal, J. J.; Jiang, Z.
+    journal: Genes
+    year: 2023
+    doi: 10.3390/genes14112051
+    bibkey: carrion2023alternativetranscripts
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L5
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC10671453#L5
+    quote: All three are pervasive in organisms, present in at least 50% of human protein-coding genes
+  confidence: high
+- id: FND-018
+  claim: 'Alternative polyadenylation is an isoform-generating process in its own right: choosing among a gene''s
+    several poly(A) sites yields transcripts that differ in 3'' UTR, in terminal exon, or in coding potential, none
+    of which is a splicing difference.'
+  topic: alternative polyadenylation
+  source:
+    doc_id: PMC13721586
+    title: 'Alternative polyadenylation in cancer: mechanisms, functions, and therapeutic potential'
+    authors: Huang, Y.; Li, Z.; Yu, F.; Wang, L.
+    journal: Molecular Cancer
+    year: 2026
+    doi: 10.1186/s12943-026-02760-0
+    bibkey: huang2026apacancer
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L11
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13721586#L11
+    quote: undergo alternative polyadenylation (APA), generating transcript isoforms with different 3′ untranslated
+      regions (3′UTRs), terminal exons, or coding potential
+  confidence: high
+- id: FND-019
+  claim: '"Alternative polyadenylation" names two consequences that should not be pooled: tandem 3'' UTR choice
+    within the last exon leaves the protein untouched and changes only the regulatory elements carried, whereas
+    poly(A) sites used upstream - in introns, internal exons or alternative terminal exons - can truncate the protein
+    outright.'
+  topic: alternative polyadenylation
+  source:
+    doc_id: PMC13721586
+    title: 'Alternative polyadenylation in cancer: mechanisms, functions, and therapeutic potential'
+    authors: Huang, Y.; Li, Z.; Yu, F.; Wang, L.
+    journal: Molecular Cancer
+    year: 2026
+    doi: 10.1186/s12943-026-02760-0
+    bibkey: huang2026apacancer
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L12
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13721586#L12
+    quote: Tandem 3′UTR APA occurs within the terminal 3′UTR and mainly changes regulatory-element composition without
+      altering coding sequence
+  confidence: high
+- id: FND-020
+  claim: 'Measured across 23 human cell types, splicing is the minority explanation for tissue-dependent isoform
+    differences: the authors estimate that alternative splicing explains those differences for at most 35 per cent
+    of the genes, and 53 per cent of the tissue-dependent exonic regions showed no or only weak evidence of ever
+    being spliced out.'
+  topic: relative contribution of splicing versus ends
+  source:
+    doc_id: PMC5778607
+    title: Alternative start and termination sites of transcription drive most transcript isoform differences across
+      human tissues
+    authors: Reyes, A.; Huber, W.
+    journal: Nucleic Acids Research
+    year: 2018
+    doi: 10.1093/nar/gkx1165
+    bibkey: reyes2018altstart
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L14,L55
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5778607#L14,L55
+    quote: We estimated that alternative splicing explains tissue-dependent transcript differences for, at most,
+      35% of the genes
+  confidence: high
+- id: FND-021
+  claim: 'The share of splicing variation that could plausibly change a protein is small: only about 15 per cent
+    of tissue-dependent splicing involves exons belonging to principal isoforms, with the rest concentrated in untranslated
+    exons and in non-coding or minor transcripts.'
+  topic: coding-changing versus UTR-only diversity
+  source:
+    doc_id: PMC5778607
+    title: Alternative start and termination sites of transcription drive most transcript isoform differences across
+      human tissues
+    authors: Reyes, A.; Huber, W.
+    journal: Nucleic Acids Research
+    year: 2018
+    doi: 10.1093/nar/gkx1165
+    bibkey: reyes2018altstart
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L71
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5778607#L71
+    quote: Only around 15% of tissue-dependent splicing involves exons from principal isoforms
+  confidence: high
+- id: FND-022
+  claim: 'Where coding sequence does vary between isoforms, the variation is concentrated at the ends rather than
+    the middle: coding exons in the variable 5'' and 3'' transcript ends produced by alternative initiation and
+    termination carry about four times more alternative nucleotides than the core coding region, which can only
+    be diversified by splicing.'
+  topic: coding-changing versus UTR-only diversity
+  source:
+    doc_id: PMC4066770
+    title: 'Evolution at protein ends: major contribution of alternative transcription initiation and termination
+      to the transcriptome and proteome diversity in mammals'
+    authors: Shabalina, S. A.; Ogurtsov, A. Y.; Spiridonov, N. A.; Koonin, E. V.
+    journal: Nucleic Acids Research
+    year: 2014
+    doi: 10.1093/nar/gku342
+    bibkey: shabalina2014proteinends
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L6
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4066770#L6
+    quote: created by ATI and ATT contain approximately four times more alternative nucleotides than core protein-coding
+      regions that diversify exclusively via AS
+  confidence: high
+  figure_idea: A schematic gene drawn once, with alternative-nucleotide density plotted along its length as a shaded
+    profile - high at both ends, low across the core coding region - rather than as separate per-region bars.
+- id: FND-023
+  claim: 'The canonical rule for whether a stop codon is read as premature is positional: a stop at least 50 nucleotides
+    upstream of the last exon junction leaves an exon junction complex downstream of it after the first round of
+    translation, and that complex is what triggers decay. The rule was established with reporter constructs, not
+    by survey.'
+  topic: nonsense-mediated decay
+  source:
+    doc_id: PMC5045715
+    title: The rules and impact of nonsense-mediated mRNA decay in human cancers
+    authors: Lindeboom, R. G. H.; Supek, F.; Lehner, B.
+    journal: Nature Genetics
+    year: 2016
+    doi: 10.1038/ng.3664
+    bibkey: lindeboom2016nmdrules
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L12
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5045715#L12
+    quote: If a PTC is present at least 50 nucleotides (nt) upstream of the last exon junction, an EJC will remain
+      bound
+  confidence: high
+- id: FND-024
+  claim: 'AS-NMD, also published under the name regulated unproductive splicing and translation, is the proposal
+    that cells splice deliberately into decay: an isoform is made in order to be destroyed, so that the fraction
+    of transcripts reaching protein is set post-transcriptionally. On this reading an unproductive isoform is an
+    output of regulation, not a failure of it.'
+  topic: AS-NMD as a regulatory output
+  source:
+    doc_id: PMC7764535
+    title: Perspective in Alternative Splicing Coupled to Nonsense-Mediated mRNA Decay
+    authors: García-Moreno, J. F.; Romão, L.
+    journal: International Journal of Molecular Sciences
+    year: 2020
+    doi: 10.3390/ijms21249424
+    bibkey: garciamoreno2020asnmd
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L25
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7764535#L25
+    quote: known as AS-NMD, was proposed as a post-transcriptional regulatory process of the cell, also called “Regulated
+      Unproductive Splicing and Translation” (RUST)
+  confidence: high
+- id: FND-025
+  claim: 'A survey of HeLa cells with decay inhibited put high-confidence decay targets at 2,793 isoforms from 2,116
+    genes, which the authors express over two explicit denominators: 19 per cent of expressed protein-coding genes,
+    and 22 per cent of the 9,440 genes they counted as alternatively spliced, where alternatively spliced means
+    producing two or more expressed isoforms including the decay targets themselves.'
+  topic: AS-NMD prevalence with denominators
+  source:
+    doc_id: bio_5eb258456cf7
+    title: Transcriptome analysis of alternative splicing-coupled nonsense-mediated mRNA decay in human cells reveals
+      broad regulatory potential
+    authors: French, C. E.; Wei, G.; Lloyd, J. P. B.; Hu, Z.; Brooks, A. N.; Brenner, S. E.
+    journal: bioRxiv
+    year: 2020
+    doi: 10.1101/2020.07.01.183327
+    bibkey: french2020asnmdsurvey
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L13,L28
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_5eb258456cf7#L13,L28
+    quote: These isoforms were derived from 19% of expressed, protein-coding genes, and 22% (2,116 out of 9,440)
+      of alternatively spliced genes
+  confidence: high
+- id: FND-026
+  claim: 'Percent spliced-in was introduced as the fraction of a gene''s mRNAs that contain a given exon, estimated
+    from read densities rather than raw read counts: the density of inclusion reads divided by the sum of the inclusion
+    and exclusion read densities.'
+  topic: PSI / percent spliced-in
+  source:
+    doc_id: PMC2593745
+    title: Alternative Isoform Regulation in Human Tissue Transcriptomes
+    authors: Wang, E. T.; Sandberg, R.; Luo, S.; Khrebtukova, I.; Zhang, L.; Mayr, C.; Kingsmore, S. F.; Schroth,
+      G. P.; Burge, C. B.
+    journal: Nature
+    year: 2008
+    doi: 10.1038/nature07509
+    bibkey: wang2008alternative
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L24
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2593745#L24
+    quote: the “Percent Spliced In” (PSI or Ψ) value – can be estimated as the ratio of the density of inclusion
+      reads
+  confidence: high
+- id: FND-027
+  claim: A single percent spliced-in value sits across two separate splicing acts, and the intron-centric reformulation
+    splits it into a 5' and a 3' index, one per intron end, which the authors say deconvolutes two distinct elementary
+    acts of the splicing reaction.
+  topic: limits of an event-level metric
+  source:
+    doc_id: PMC3546801
+    title: Intron-centric estimation of alternative splicing from RNA-seq data
+    authors: Pervouchine, D. D.; Knowles, D. G.; Guigó, R.
+    journal: Bioinformatics
+    year: 2013
+    doi: 10.1093/bioinformatics/bts678
+    bibkey: pervouchine2013introncentric
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L6
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3546801#L6
+    quote: two separate indices is that they deconvolute two distinct elementary acts of the splicing reaction
+  confidence: high
+  figure_idea: One intron drawn with its donor and acceptor, showing which reads enter the 5' index and which the
+    3' index, next to a case where the two indices disagree - the situation a single PSI value hides.
+- id: FND-028
+  claim: 'The three questions the book keeps apart are set out as three study designs: differential gene expression
+    asks whether a gene''s total transcriptional output changed, differential transcript usage asks whether the
+    composition of its isoform abundance spectrum changed, and differential transcript expression asks whether an
+    individual transcript changed. They are different null hypotheses, not different resolutions of one.'
+  topic: DGE versus DTE versus DTU
+  source:
+    doc_id: PMC4712774
+    title: 'Differential analyses for RNA-seq: transcript-level estimates improve gene-level inferences'
+    authors: Soneson, C.; Love, M. I.; Robinson, M. D.
+    journal: F1000Research
+    year: 2016
+    doi: 10.12688/f1000research.7563.2
+    bibkey: soneson2016differential
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L14
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4712774#L14
+    quote: differential transcript/exon usage (DTU/DEU) studies, where the composition of a gene’s isoform abundance
+      spectrum is compared between conditions, or 3) differential transcript expression (DTE) studies
+  confidence: high
+  figure_idea: 'A 2x2 of a two-isoform gene: total output up or flat on one axis, isoform proportions shifted or
+    flat on the other, with each cell labelled by which of DGE, DTU and DTE would call it.'
+- id: FND-029
+  claim: 'Differential exon usage and differential transcript usage answer the same gene-level question but not
+    the same transcript-level one: both can report that a gene''s splicing changed, while only transcript usage
+    names which isoforms were used more and which less, and exon-level counting additionally suffers from exons
+    whose boundaries differ between isoforms.'
+  topic: DTU versus exon-level testing
+  source:
+    doc_id: PMC12684397
+    title: Dividing out quantification uncertainty enables assessment of differential transcript usage with limma
+      and edgeR
+    authors: Baldoni, P. L.; Chen, L.; Li, M.; Chen, Y.; Smyth, G. K.
+    journal: Nucleic Acids Research
+    year: 2025
+    doi: 10.1093/nar/gkaf1305
+    bibkey: baldoni2025dtu
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L19
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12684397#L19
+    quote: only DTU can reveal which transcripts are being differentially used as a response to a given biological
+      condition
+  confidence: high
+- id: FND-030
+  claim: 'The intron chain is the comparison unit that makes transcript identity checkable: two transcripts match
+    at intron-chain level when every intron has identical coordinates and the counts agree, which implies all internal
+    exons match but says nothing about where the transcript starts and ends. Terminal boundaries are deliberately
+    outside the definition.'
+  topic: intron chain
+  source:
+    doc_id: PMC7222033
+    title: 'GFF Utilities: GffRead and GffCompare'
+    authors: Pertea, G.; Pertea, M.
+    journal: F1000Research
+    year: 2020
+    doi: 10.12688/f1000research.23297.2
+    bibkey: pertea2020gffutilities
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L108
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7222033#L108
+    quote: all of its introns can be found, with the same exact intron coordinates as in a reference transcript
+      that has the same number of introns
+  confidence: high
+  figure_idea: Two transcript models with identical internal structure but different first and last exon boundaries,
+    annotated to show they are the same intron chain and different transcripts - the distinction every novelty count
+    in the book depends on.
+- id: FND-031
+  claim: 'The two "known" categories of the long-read classification are defined purely on junctions: a full splice
+    match reproduces every splice junction of some reference transcript, and an incomplete splice match reproduces
+    a consecutive run of them but not all. Neither category says the ends agree, which is why an incomplete match
+    can be a real short isoform or a truncated cDNA.'
+  topic: FSM / ISM / NIC / NNC classification
+  source:
+    doc_id: PMC5848618
+    title: 'SQANTI: extensive characterization of long-read transcript sequences for quality control in full-length
+      transcriptome identification and quantification'
+    authors: Tardaguila, M.; de la Fuente, L.; Marti, C.; Pereira, C.; Pardo-Palacios, F. J.; del Risco, H.; Ferrell,
+      M.; Mellado, M.; Macchietto, M.; Verheggen, K.; Edelmann, M.; Ezkurdia, I.; Vazquez, J.; Tress, M.; Mortazavi,
+      A.; Martens, L.; Rodriguez-Navarro, S.; Moreno-Manzano, V.; Conesa, A.
+    journal: Genome Research
+    year: 2018
+    doi: 10.1101/gr.222976.117
+    bibkey: tardaguila2018sqanti
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L25,L37
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5848618#L25,L37
+    quote: Full Splice Match (FSM), while transcripts matching consecutive, but not all, splice junctions of the
+      reference transcripts are designated as Incomplete Splice Match (ISM)
+  confidence: high
+- id: FND-032
+  claim: 'The two novel categories are graded by how far a transcript departs from the annotation''s splice-site
+    inventory: novel in catalog uses only already-annotated donors and acceptors, either recombined into new junction
+    combinations or newly paired with each other, whereas novel not in catalog introduces a donor or acceptor the
+    annotation does not contain.'
+  topic: FSM / ISM / NIC / NNC classification
+  source:
+    doc_id: PMC5848618
+    title: 'SQANTI: extensive characterization of long-read transcript sequences for quality control in full-length
+      transcriptome identification and quantification'
+    authors: Tardaguila, M.; de la Fuente, L.; Marti, C.; Pereira, C.; Pardo-Palacios, F. J.; del Risco, H.; Ferrell,
+      M.; Mellado, M.; Macchietto, M.; Verheggen, K.; Edelmann, M.; Ezkurdia, I.; Vazquez, J.; Tress, M.; Mortazavi,
+      A.; Martens, L.; Rodriguez-Navarro, S.; Moreno-Manzano, V.; Conesa, A.
+    journal: Genome Research
+    year: 2018
+    doi: 10.1101/gr.222976.117
+    bibkey: tardaguila2018sqanti
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L26
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5848618#L26
+    quote: NIC transcripts contain new combinations of already annotated splice junctions or novel splice junctions
+      formed from already annotated donors and acceptors
+  confidence: high
+  figure_idea: 'A reference locus with its donor and acceptor set drawn as a palette, and three candidate transcripts
+    beside it: one reusing annotated pairs in a new order, one pairing annotated sites that were never paired, one
+    using an unannotated site - mapped onto NIC and NNC.'
+- id: FND-033
+  claim: '"Dominant isoform" is two claims collapsed into one phrase, and this paper separates them: the major transcript
+    is whichever has the highest expression within a gene, while a dominant transcript is a major transcript expressed
+    at considerably more than any minor one - operationalised as the major transcript being at least twice as abundant
+    as the next, which held for almost 80 per cent of expressed genes in primary tissues.'
+  topic: isoform fraction and dominance
+  source:
+    doc_id: PMC4053754
+    title: Transcriptome analysis of human tissues and cell lines reveals one dominant transcript per gene
+    authors: Gonzàlez-Porta, M.; Frankish, A.; Rung, J.; Harrow, J.; Brazma, A.
+    journal: Genome Biology
+    year: 2013
+    doi: 10.1186/gb-2013-14-7-r70
+    bibkey: gonzalezporta2013dominanttranscript
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L16
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4053754#L16
+    quote: major transcripts - the transcript with the highest expression level within a given gene; and (2) dominant
+      transcripts
+  confidence: high
+- id: FND-034
+  claim: In primary tissues the ratio of the number of expressed transcripts to the number of genes averaged 1.12,
+    that is, just over one transcript per gene.
+  topic: scale - the typical case
+  source:
+    doc_id: PMC4053754
+    title: Transcriptome analysis of human tissues and cell lines reveals one dominant transcript per gene
+    authors: Gonzàlez-Porta, M.; Frankish, A.; Rung, J.; Harrow, J.; Brazma, A.
+    journal: Genome Biology
+    year: 2013
+    doi: 10.1186/gb-2013-14-7-r70
+    bibkey: gonzalezporta2013dominanttranscript
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L16
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4053754#L16
+    quote: the ratio of the number of expressed transcripts to genes in primary tissues is on average 1.12 (that
+      is, just over one transcript per gene
+  confidence: high
+- id: FND-035
+  claim: 'The per-gene distribution of annotated isoforms is heavily skewed and differs by biotype: across all Ensembl
+    v109 gene bodies the median is one isoform, but for protein-coding genes the median is six with a 75th percentile
+    of eleven, and only 14.6 per cent of protein-coding genes are left with a single annotated transcript.'
+  topic: scale - annotated transcripts per gene
+  source:
+    doc_id: PMC12679773
+    title: 'Genome annotations matter: characterizing Ensembl hg38 annotations from 2014 to 2023'
+    authors: Page, M. L.; Wadsworth, M. E.; Aguzzoli Heberle, B.; Fardo, D. W.; Ebbert, M. T. W.
+    journal: BMC Genomics
+    year: 2025
+    doi: 10.1186/s12864-025-12167-8
+    bibkey: page2025annotations
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L32
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12679773#L32
+    quote: 'only 2,922 protein-coding genes (14.6%) have a single annotated isoform while the median number of annotated
+      isoforms is 6 (75th percentile: 11 isoforms'
+  confidence: high
+  figure_idea: A single histogram of isoforms per gene with the protein-coding subset overlaid, medians and the
+    75th, 85th and 95th percentiles marked - showing that the typical protein-coding gene and the typical gene body
+    are not the same animal.
+- id: FND-036
+  claim: 'Annotation and observation diverge sharply at the top of the per-gene distribution: Ensembl v109 lists
+    7,255 genes with ten or more isoforms, 256 with fifty or more and 30 with a hundred or more, while the same
+    authors quantifying nine GTEx tissues with long reads observed at most 105 isoforms for any gene body and 60
+    for any protein-coding gene, even accepting a single uniquely aligned read as evidence.'
+  topic: scale - annotated versus observed
+  source:
+    doc_id: PMC12679790
+    title: A bioinformatic survey of RNA isoform diversity and expression across 9 GTEx tissues using long-read
+      sequencing data
+    authors: Page, M. L.; Aguzzoli Heberle, B.; Brandon, J. A.; Wadsworth, M. E.; Gordon, L. A.; Nations, K. A.;
+      Fardo, D. W.; Ebbert, M. T. W.
+    journal: BMC Genomics
+    year: 2025
+    doi: 10.1186/s12864-025-11919-w
+    bibkey: page2025isoformdiversity
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L42-L43
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12679790#L42-L43
+    quote: Ensembl v109 suggests that 7,255; 256; and 30 genes express ≥ 10; ≥ 50; and ≥ 100 RNA isoforms
+  confidence: high
+  figure_idea: 'A paired dot plot per gene: annotated isoform count against maximum observed isoform count across
+    nine tissues, with the identity line drawn - the vertical gap is the claim.'
+leads:
+- note: 'Covered in sibling files - do not re-anchor in this chapter. Overall alternative splicing prevalence in
+    human: 02-animals ANM-028 and 04-technology-arc TECH-023, TECH-025, TECH-026 (with the denominator and threshold
+    caveats). Exon skipping as the commonest class in early RNA-seq: 04-technology-arc TECH-022. Cassette exons
+    in animals versus intron retention in other taxa: 03-plants-fungi-other PFO-020. PSI as the event-level workaround
+    that short reads forced on the field: 04-technology-arc TECH-035. Major-transcript dominance as a result: 02-animals
+    ANM-033, 09-catalogs CAT-005 and CAT-023. Magnitude of unproductive splicing: 02-animals ANM-016. The start-site
+    / splice-chain / end-site triplet and its diversity: 05-long-reads LR-021 and LR-022, 09-catalogs CAT-003. Catalog-level
+    per-gene transcript counts: 09-catalogs CAT-011, CAT-042, CAT-051, CAT-053. EST-era concentration of variation
+    in 5'' UTRs: 04-technology-arc TECH-010.'
+  why: Keeps chapter 1 to vocabulary and framing and prevents a second, differently-anchored copy of a number a
+    later chapter already owns.
+- note: 'No citable defining source was found in the corpus for the term "isoform fraction" (IF) or its differential
+    form (dIF). The originating methods papers of Vitting-Seerup and Sandelin are not in the corpus; `search -s
+    papers` on the isoform-switch landscape title and on IsoformSwitchAnalyzeR returned only the 2026 v2 paper (PMC13504270),
+    which uses isoform switching without defining IF, plus many application papers. The closest in-corpus operational
+    definitions are user-level and were not recorded as claims: bio_3f124d4aed6f states IF is the ratio of each
+    isoform''s FPKM to total gene expression, and bio_125009b06fd4 operationalises a dominance change as max absolute
+    delta isoform fraction at or above 0.15. The glossary entry for isoform fraction will have to be written without
+    a citation, or the Vitting-Seerup papers fetched from outside the corpus.'
+  why: The chapter promises to anchor every measurement term to a defining paper; this is the one term where that
+    is not possible from this corpus.
+- note: The term "intron chain" is in wide current use but no paper in the corpus introduces it. `grep -i "intron
+    chain" /papers/` returns matches in dozens of tool and atlas papers; SQANTI (PMC5848618 L26) attributes the
+    intron-based definition to Tilgner et al. 2013, yet the words "intron chain" and "chain" do not appear in the
+    body of that paper (PMC3583448). FND-030 therefore anchors the term to the GffCompare accuracy levels, which
+    is the earliest operational definition located, not to a coining paper.
+  why: If the book says "the intron chain, as defined by X", X needs checking against the pre-2013 transcript-assembly
+    literature (Cufflinks / Cuffcompare documentation) which is not in this corpus.
+- note: 'Anchored and read but cut at the 36-claim cap, reusable without re-reading: intron retention makes up about
+    12 per cent of the event landscape in transcripts with no annotated reading frame against far less in coding
+    sequence (PMC2467475 L68); intron retention is categorically unlike the other event classes because the retained
+    RNA still contains a potentially spliceable intron (PMC5602073 L48); detained introns are defined as unspliced
+    introns in otherwise fully spliced polyadenylated mRNA, with nuclear retention as the primary consequence (PMC5602073
+    L42); SR and hnRNP splicing factors autoregulate through AS-NMD in opposite directions, SR proteins by including
+    poison exons and hnRNPs by promoting frame-breaking exon skipping (PMC7764535 L28, L29); differential transcript
+    expression can arise from a change in total gene output, from a change in relative isoform usage, or from both,
+    which is the reason the Soneson authors argue DTE alone is hard to interpret (PMC4712774 L33); intron-chain-level
+    accuracy is computed only over multi-exon transcripts whereas transcript-level accuracy admits single-exon models
+    and allows terminal boundaries to differ by up to 100 bases (PMC7222033 L109); the optimal branchpoint-to-3''-splice-site
+    distance in human introns is 16 to 25 nucleotides with a minimum of 8 (PMC8624252 L47); and the exonic last
+    three nucleotides before a 5'' splice site contribute measurably to U1 binding strength and are omitted from
+    most bioinformatic analyses (PMC8624252 L35).'
+  why: Each is already line-verified, so a later pass can promote any of them to a claim without new reading.
+- note: FND-025 rests on the bioRxiv version of the French et al. AS-NMD survey (bio_5eb258456cf7). Its meta.json
+    carries only the preprint DOI and no journal field, and no journal version was located in the corpus. The 19
+    per cent and 22 per cent denominators should be re-checked against the published version before the chapter
+    asserts them.
+  why: Preprint-only numbers can move between versions, and this one is the chapter's single prevalence figure for
+    AS-NMD.
+- note: 'FND-010 records a conflict rather than resolving it: El Marabti et al. say less than 0.4 per cent of human
+    introns are U12 type while Akinyi and Frilander say about 0.5 per cent. Neither review states its inclusion
+    rule for what counts as a confidently identified minor intron. Any table that prints a single minor-intron percentage
+    will read as an error to a reader who knows the other figure.'
+  why: SCHEMA requires conflicts to be recorded and attributed rather than averaged.
+- note: 'Not found: a quantitative statement of how much of a given isoform catalog differs from its gene''s reference
+    only in untranslated region, as opposed to in coding sequence, computed directly on transcript structures. FND-021
+    and FND-022 approach the question from tissue-dependent splicing and from alternative-nucleotide density respectively,
+    but neither is a straight partition of a transcript set into coding-changing and UTR-only. Searches covered
+    coding versus UTR isoform differences, proteome complexity and alternative nucleotide classification.'
+  why: A single clean percentage would be the most quotable number in the chapter's scale section, and the chapter
+    should not invent one by combining FND-021 and FND-022.
+- note: 'Not located: a defining source for the operational phrase "cassette exon" as distinct from "skipped exon".
+    The nomenclature paper (PMC2467475 L10) coins exon skipping and uses skipped exon; cassette appears in the corpus
+    mainly in application papers. The two terms should be declared synonymous in the glossary on the chapter''s
+    own authority rather than attributed.'
+  why: Both terms are used interchangeably by the sibling research files, so the glossary must say so explicitly.
+- note: No source read for this chapter states what an event-level metric cannot express. FND-027 anchors only the
+    positive claim that percent spliced-in sits across two splicing acts and can be split into a 5' and a 3' index
+    (PMC3546801 L6). The nearest anchored statement of the limitation is 04-technology-arc TECH-035, which records
+    event-based tools as measuring one decision instead of solving for full-length structure. The chapter's sentence
+    about what PSI cannot express should cite TECH-035's source or be written as the book's own framing, not attributed
+    to Pervouchine et al.
+  why: The distinction between an event metric and a transcript metric is load-bearing for the whole book and must
+    not be attributed to a paper that does not make it.
+- note: 'Read but not claimed, and relevant to the open lead in 09-catalogs about a single annotation growth curve:
+    PMC12679773 L25 reports Ensembl gene annotations rising from 58,764 in v76 (August 2014) to 62,710 in v109 (February
+    2023), an increase of 3,946 or 6.7 per cent, and states that the series is not monotonic - a sharp rise in 2015
+    followed by a sharper fall in 2016, and 149 gene bodies present in both 2019 and 2021 that are absent from 2023.
+    L26 reports the same non-monotonic pattern for the protein-coding subset. This is a gene-level, not transcript-level,
+    series and so does not duplicate 09-catalogs CAT-053.'
+  why: 09-catalogs records that no source continuing the GENCODE transcript-count series to the present was found;
+    this is the nearest thing located, at the gene level, and it also documents that annotation is not additive.
+- note: 'All 36 claims are recorded as text_access full_text, which is correct in the sense that every cited document
+    carries full text in the corpus. Three claims nevertheless cite lines that are the document''s abstract rather
+    than its body: FND-010 (PMC8199999 L6), FND-017 (PMC10671453 L5) and FND-022 (PMC4066770 L6). For FND-022 the
+    four-fold figure was searched for in the body and appears only at L6. The writing pass should not assert methodological
+    detail beyond what those abstract lines contain.'
+  why: The schema's abstract_only flag covers records that exist only as abstracts, so it would be wrong here, but
+    the same caution applies and nothing else in the record would signal it.
