@@ -1,13 +1,258 @@
 # Reading function from variation
 
 ::: {.callout-warning}
-## Draft
-Research in progress. Claim records: `research/10-variants-qtl.yml`
+## First draft
+Written from `research/10-variants-qtl.yml` and not yet reviewed by a second
+reader.
 :::
 
-_Scope:_ Transcriptomics as the bridge between a genetic variant and its
-functional consequence — the progression from eQTLs to sQTLs to isoform-level
-QTLs, and clinical transcriptomics as a diagnostic modality. This is where
-isoform resolution stops being descriptive and becomes consequential: a variant
-whose effect is invisible in gene-level expression but unambiguous in isoform
-usage is a variant that gene-level analysis would have called silent.
+Genome-wide association studies find places in the genome where variation
+tracks a trait. They do not say what the variation does. The standard answer
+has been that the variant changes how much of some gene is made, and that
+answer works less often than its popularity suggests.
+
+Applying mediated expression score regression to 42 traits, using GTEx cis-eQTL
+data from 48 tissues, put the share of heritability mediated by assayed gene
+expression levels at 11 per cent, reported as 11 plus or minus 2
+[@yao2020quantifying]. Most of the heritability is doing something else.
+
+## The colocalisation gap {#sec-coloc-gap}
+
+A sharper version of the problem comes from asking the question backwards. Take
+genes nominated as causal for a complex trait on grounds that have nothing to
+do with expression, such as coding variants in the gene or in its Mendelian
+counterpart. Then ask how often a GTEx eQTL for that gene colocalises with the
+GWAS signal.
+
+Out of 220 such genes, colocalisation implicated 18, which is 8.2 per cent.
+Those authors note that this is not clearly better than chance
+[@connally2022missing].
+
+The explanation is not a shortage of eQTLs. More than nine in ten of the
+candidate causal genes had a detectable eQTL in at least one trait-relevant
+tissue [@connally2022missing]. The eQTLs are there, and they are not the same
+signal.
+
+![Two views of the same gap. The overlap between the eQTL and sQTL fractions
+was not reported, so those bars are drawn side by side rather than stacked. On
+the right, the collapse happens at the last step rather than the
+earlier ones.](../figures/coloc-gap.svg){#fig-coloc width=100%}
+
+The best-powered resource gives the same picture from the other direction.
+Across 5,385 GWAS associations in 1,167 independent LD blocks from 87 complex
+traits, GTEx v8 colocalised 43 per cent with a cis-eQTL and 23 per cent with a
+cis-splicing QTL [@aguet2019gtex]. A majority of loci have no expression
+explanation in the largest multi-tissue dataset available.
+
+## Splicing QTLs are a different map {#sec-qtl-position}
+
+The first thing to establish is that splicing QTLs are not a relabelling of
+expression QTLs.
+
+They sit in different parts of the gene. The splicing set was preferentially
+enriched at splice acceptor and donor sites and at RNA-binding-protein
+footprints. The expression set was enriched at transcription start sites and
+lay closer to them [@qi2022genetic].
+
+Where a gene has both, the two usually come from different variants. GTEx v8's
+own summary states that where a gene carries both an expression QTL and a
+splicing QTL, the two effects are usually driven by different causal variants
+[@aguet2019gtex]. Finding one tells you little about the other at the same
+gene.
+
+Overlap at gene level is therefore misleading. A multivariate transcript-ratio
+analysis of GTEx v7 found 52 per cent of its splicing QTLs were also expression
+QTLs for the same gene and tissue. The lead splicing variant and the lead
+expression variant were the same SNP in only 3 per cent of cases
+[@garridomartin2021identification]. The same gene, almost never the same
+variant.
+
+Allelic expression does not bridge the two either. In GTEx v8 the correlation
+between allelic imbalance and splicing-QTL genotype was essentially nil, and
+the consortium concluded that genetic splicing variation in cis is not strongly
+reflected in gene-level allelic expression data [@aguet2019gtex]. Gene-level
+allelic expression is a good proxy for expression QTLs and a poor one for
+splicing QTLs.
+
+## What splicing QTLs find {#sec-sqtl-finds}
+
+The argument was made early. A study in Yoruba lymphoblastoid cell lines
+reported 2,893 splicing QTLs, most of which had little or no effect on
+gene-level expression, and judged their aggregate contribution to complex
+traits roughly equal to that of variants acting on expression levels
+[@li2016splicing].
+
+Brain gave the strongest version. In 2,865 human brain transcriptomes, 12,794
+genes carried a cis-splicing QTL. For 4,377 of the genes that also had an
+expression QTL, the two signals were statistically incompatible, with a
+posterior probability above 0.8 for two distinct causal variants. Together with
+the splicing-only genes, that put roughly 61 per cent of splicing QTLs outside
+the expression QTL map [@qi2022genetic].
+
+The consequence for gene discovery is direct. Integrating those brain splicing
+QTLs with GWAS for twelve brain-related traits implicated 244 genes through
+splicing, about 61 per cent of which the matched expression QTL data could not
+have found [@qi2022genetic].
+
+The same pattern shows up locus by locus in other diseases. A
+transcriptome-wide association study of rheumatoid arthritis run on
+intron-excision phenotypes named 18 candidate genes, 13 of which the same
+analysis on gene expression levels did not find [@li2017annotation].
+
+## How much it explains, stated carefully {#sec-how-much}
+
+The case above is easy to overstate, and the same datasets support a more
+measured reading.
+
+GWAS catalog variants in GTEx v8 were enriched 1.46-fold among cis-eQTLs and
+1.86-fold among cis-splicing QTLs, with the splicing QTLs being the smaller
+annotation, 20 per cent of tested variants against 43 per cent
+[@aguet2019gtex]. The per-variant enrichment favours splicing.
+
+The consortium's own reading is cautious. Under the robust enrichment analyses
+the relative GWAS enrichments of splicing and expression QTLs were similar and
+not significantly different, and because far more expression QTLs were
+discovered, the consortium inferred a greater aggregated contribution from them
+[@aguet2019gtex].
+
+Partitioning heritability by annotation gives the same shape. In blood, the
+roughly 1.0 per cent of SNPs annotated as expression QTLs explained 13.9 per
+cent of heritability on average across traits. The much smaller splicing-QTL
+annotation, 0.1 per cent of SNPs, explained 2.8 per cent, and protein QTLs, 0.2
+per cent of SNPs, explained 4.0 per cent [@liu2025transcriptional].
+
+The literature does not agree on how to weigh this. The authors of the
+colocalisation audit dismissed splicing QTLs as a candidate explanation for
+their negative result, on the grounds that splicing QTLs consistently explain
+less phenotypic variance than expression QTLs [@connally2022missing]. That is
+the opposite emphasis from the lymphoblastoid and brain work above. The
+disagreement is about aggregate variance explained, and it is unresolved.
+
+Per variant, splicing QTLs are at least as informative. In total, there are
+fewer of them. Both statements come from the same data.
+
+## Isoform-level QTLs {#sec-isoform-qtl}
+
+Splicing QTLs are still measured on events rather than on molecules. Moving to
+isoform-level phenotypes changes what is detectable again, and
+@sec-gtex-lr gives the long-read result that makes the point most sharply.
+
+Two configurations are worth naming, because they are the ones a gene-level
+analysis cannot represent. Within that B-cell isoform QTL set, 1,135 variants
+had significantly different effect sizes on different isoforms of the same
+gene, and 153 pushed two isoforms in opposite directions
+[@nagura2025longread]. Summing isoform counts into a gene total cancels the
+second configuration exactly.
+
+The mechanisms are not only splice-signal disruption. Variants found only by
+isoform-level mapping in B cells were enriched at intronic branchpoints, and
+also at promoters and super-enhancers [@nagura2025longread]. An isoform QTL can
+be a transcription-initiation choice.
+
+Short reads can reach some of this if the phenotype is defined well. Mapping
+isoform-to-gene expression ratios rather than isoform abundances, in 2,622
+Framingham whole-blood samples, yielded over 1.1 million common cis
+associations. A fifth of those had no significant association with overall gene
+expression. The same analysis found 1,870 sentinel trans associations
+[@liu2025integrating]. Isoform-ratio QTLs act at a distance as well as locally.
+
+Poly(A) site choice is a mappable phenotype in its own right. Three-prime-end
+sequencing of nuclear RNA from lymphoblastoid lines identified 602
+polyadenylation QTLs in 479 genes, with lead variants clustered near the
+poly(A) sites whose usage they changed [@mittleman2020alternative].
+
+Association testing shows the same gain. Running transcriptome-wide association
+tests on isoform rather than gene expression, across six cancers and six
+subtype classifications, raised the number of significant associations from
+2,336 to 6,163. It tagged associations at 52 per cent more independent GWAS
+loci, and attributed an estimated 63 per cent greater share of cancer risk SNP
+heritability to isoform expression than to gene expression
+[@chang2025isoform]. Specific loci make it concrete: CLPTM1L in lung, LAMC1 in
+colorectal and BABAM1 in breast cancer colocalise with an isoform-level
+association and not with a gene-level one [@chang2025isoform].
+
+One caution belongs here, from the B-cell study itself. Of 372 variants
+coinciding with a published GWAS association, 242 were found only by the
+isoform-level analysis. The per-variant GWAS hit rate was 2.0 per cent for
+isoform-only variants, against 2.4 per cent for shared ones and 0.8 per cent
+for gene-only ones [@nagura2025longread]. The 242 reflects a much larger
+isoform-only pool rather than a higher enrichment per variant.
+
+More associations is not automatically more signal. The case for isoform-level
+mapping rests on the configurations gene-level analysis cannot represent, not
+on the count.
+
+## From uncertain significance to an answer {#sec-vus}
+
+Clinical variant interpretation has the same problem in a form where a single
+patient's result depends on it.
+
+The ACMG/AMP framework already asks whether a variant perturbs splicing, and
+spreads that question across six evidence codes: PVS1, PS3, PP3, BS3, BP4 and
+BP7. As of the ClinGen Sequence Variant Interpretation splicing subgroup's
+review there was no standardised method for turning RNA data into any of them,
+which is why expert panels had diverged [@walker2023application].
+
+What RNA evidence does to a backlog has been modelled. Treating RNA evidence as
+one supporting-strength point in a semiquantitative implementation, a clinical
+laboratory projected that 31 per cent of its 16,965 unique splicing variants of
+uncertain significance would cross a classification threshold. Of those, 93 per
+cent would land on the benign side and 7 per cent on the pathogenic side
+[@truty2021spectrum]. That describes where variants sit relative to
+thresholds, rather than observed RNA results.
+
+RNA evidence rarely settles a case on its own. For 69 per cent of that cohort's
+unique splicing variants of uncertain significance, a classification would
+still fall short, because no other applicable evidence category existed to
+combine with the RNA result [@truty2021spectrum].
+
+Three constraints bound what the assay can see. The transcripts are read in
+part rather than whole: RT-PCR and both targeted and whole-transcriptome
+RNA-seq report which splicing events occurred rather than the complete exon
+structure of the resulting mRNA, and comprehensive long-read data is still
+lacking for many disease-susceptibility genes [@walker2023application]. The
+tissue has to contain the transcript, and pathogenic splicing variants detected
+in fibroblasts have been reported as undetected in blood [@peymani2022rna].
+The variant class that most needs observing is also the one decay removes.
+Nonsense, frameshift and often canonical splice-site variants introduce
+premature termination codons and trigger nonsense-mediated decay, which is
+likely to leave the affected transcript at a very low expression level
+[@peymani2022rna].
+
+Allele-specific expression modifies the picture for coding variants. Allelic
+imbalance has been put at 30 per cent or more of genes in a given cell type,
+and measured with targeted deep sequencing in ten tissues of one individual,
+allelic ratios varied across tissues more than gene expression levels did
+[@kukurba2014allelic].
+
+## Transcriptomes in the clinic {#sec-clinical}
+
+Expression-based assays are already deployed. The PAM50 breast cancer signature
+was retrained on a 50-gene counting platform for formalin-fixed material,
+cleared by the FDA and CE marked, and issued for decentralised use in clinical
+laboratories as a recurrence-risk and intrinsic-subtype test
+[@wallden2015development].
+
+Fusion detection is where RNA changes the diagnosis rather than annotating it.
+In a 788-patient multicentre sarcoma cohort, adding targeted RNA fusion
+sequencing to histopathology changed the pathological subtype for 11.9 per cent
+of patients, and confirmed or refined the diagnosis for a further 13.3 per cent
+[@jin2025superiority].
+
+The analytic performance supports that use. Measured against DNA-based panels
+over shared fusion targets, the RNA panel reached 93.5 per cent sensitivity and
+98.8 per cent specificity, and orthogonal testing of DNA-only fusion calls
+indicated several were non-functional events [@jin2025superiority]. Sample
+quality is the binding constraint, and it is reported as a number: roughly 40
+per cent of heavily degraded specimens were still successfully profiled
+[@jin2025superiority].
+
+The honest summary of adoption comes from a 2025 validation of an integrated
+tumour DNA-plus-RNA exome assay. It describes RNA-seq as the standard way to
+measure fusions and characterise tissue phenotype, while stating in the same
+sentence that its clinical adoption remains limited [@yudina2025clinical].
+
+A variant whose effect is invisible in gene-level expression and unambiguous in
+isoform usage is a variant that gene-level analysis calls silent. The methods
+for seeing it exist. What is missing is the standardised path from an RNA
+observation to a classification code.
