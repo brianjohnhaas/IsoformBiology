@@ -138,7 +138,8 @@ def check(path: pathlib.Path) -> list[str]:
 
 def main() -> int:
     targets = ([pathlib.Path(a).resolve() for a in sys.argv[1:]]
-               or sorted((ROOT / "chapters").glob("*.qmd"))
+               or [ROOT / "index.qmd"]
+               + sorted((ROOT / "chapters").glob("*.qmd"))
                + sorted((ROOT / "walkthroughs").glob("*.qmd")))
 
     total = 0

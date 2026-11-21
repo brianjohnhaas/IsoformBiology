@@ -1,9 +1,10 @@
 # Preface {.unnumbered}
 
 A gene is not a transcript. Most human genes produce several, sometimes dozens,
-and the differences between them are often the biology — which protein domain is
-present, which cell type expresses which form, whether a transcript is translated
-at all or routed to decay.
+and the differences between them are often the biology. Which protein domain is
+present, which cell type expresses which form, whether a transcript is
+translated at all or routed to decay: these are isoform-level questions, and a
+gene-level answer cannot reach them.
 
 Yet most transcriptomic analysis still collapses this to one number per gene.
 That collapse is sometimes justified and often simply inherited from a time when
@@ -17,7 +18,14 @@ current efforts to catalog the isoform universe outright.
 
 ::: {.callout-note}
 ## Status
-Early draft under active construction. Chapters are built from line-anchored
-claim records; see [CONTRIBUTING.md](CONTRIBUTING.md) for how, and why that
-matters.
+All chapters are drafted and none has had a second reader. Every chapter is
+built from line-anchored claim records, and four mechanical gates run on every
+commit: recorded quotes are re-read from the source, chapter prose is checked
+against those quotes for overlap, every cited number is checked against the
+claim it cites, and the bibliography is regenerated from the records rather
+than edited. [CONTRIBUTING.md](CONTRIBUTING.md) explains how, and why it is
+built that way.
+
+Four glossary terms rest on no citable source and are marked in place as the
+book's own. They are the entries most in need of review.
 :::

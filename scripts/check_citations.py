@@ -192,7 +192,8 @@ def main() -> int:
     verbose = "--verbose" in sys.argv
     args = [a for a in sys.argv[1:] if not a.startswith("-")]
     targets = ([pathlib.Path(a).resolve() for a in args]
-               or sorted((ROOT / "chapters").glob("*.qmd"))
+               or [ROOT / "index.qmd"]
+               + sorted((ROOT / "chapters").glob("*.qmd"))
                + sorted((ROOT / "walkthroughs").glob("*.qmd")))
 
     numbers, years = claim_index()
