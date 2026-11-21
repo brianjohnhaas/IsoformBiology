@@ -1,8 +1,235 @@
-# Isoforms in cancer
+# Cancer
 
 ::: {.callout-warning}
-## Draft
-Research in progress. Claim records: `research/06-cancer.yml`
+## First draft
+Written from `research/06-cancer.yml` and not yet reviewed by a second reader.
 :::
 
-_Scope:_ Splicing-factor mutations, isoform switches, neoantigens from aberrant splicing, therapeutic angles.
+Cancer transcriptomes are usually read for which genes went up and which went
+down. A large fraction of what changes in a tumour does not move a gene total
+at all, and this chapter is about that fraction and about how much of it holds
+up.
+
+## Changes a gene-level analysis retires {#sec-invisible-switches}
+
+The size of the effect is measurable, and several groups have measured it in
+different ways.
+
+In treatment-naive oesophageal tissue, between 42 and 46 per cent of the genes
+called as isoform switches during progression from low-grade to high-grade
+Barrett's dysplasia showed no significant difference in total gene-level
+expression between the same two conditions [@zhang2022esophageal].
+
+A reanalysis of twelve TCGA cancer types using differential transcript usage
+found that roughly a quarter of the tumour-side transcripts that changed in
+usage were not themselves called differentially expressed. Only a few per cent
+of the normal-side transcripts behaved that way [@dolgalev2023switching].
+
+Among the isoform pairs distinguishing basal-like from luminal breast tumours
+in TCGA, 49 of 229 pairs showed no accompanying difference in gene-level
+expression, so splicing was the only signal available for those genes
+[@zhao2016switching].
+
+The cleanest version is an engineered one. In an isogenic SRSF2 P95H
+erythroleukaemia model, over a thousand significant alternative splicing events
+were called, two thirds of them cassette exons, while overall gene expression
+between mutant and wild-type cells barely moved [@liang2018srsf2].
+
+### Two reasons to discount part of that
+
+Not every called switch is an exchange of one isoform for another. In about
+half of the switches that were not concordant in usage and expression, one
+partner transcript did not change expression at all, which those authors say
+makes the event better described as a single-transcript expression change
+[@dolgalev2023switching].
+
+Relative transcript measurements also inherit every coverage bias in the
+library. In one breast cancer cohort an initial 2,110 inversely correlated
+isoform pairs collapsed to 470 once RNA integrity number was modelled as a
+covariate, because degraded RNA inflates the apparent abundance of short
+isoforms [@zhao2016switching]. Nearly four in five of those pairs were a
+property of the samples.
+
+## Splicing factor mutations {#sec-splicing-factors}
+
+SF3B1 is the single most commonly mutated gene in myelodysplastic syndromes,
+carried by roughly a fifth to somewhat over a quarter of all patients
+[@dolatshad2016abcb7].
+
+The ring-sideroblast phenotype traces to one splicing lesion. A cryptic 3'
+splice site inserts 21 intronic bases into the iron transporter ABCB7
+transcript, creating a premature stop codon. The aberrant transcript was
+detected in every SF3B1-mutant patient sample tested, and in none of the
+wild-type or healthy controls [@dolatshad2016abcb7].
+
+The genome-wide picture is larger than one gene. Mutant SF3B1 activates several
+hundred novel 3' splice sites, with closely matched counts in an engineered
+K700E cell line and in primary MDS samples [@kesarwani2017cryptic]. One
+mechanistic account holds that those cryptic sites are normally base-paired
+inside RNA secondary structure and therefore invisible to the scanning
+spliceosome, and the reduced-accessibility signature held in an independent CLL
+cohort [@kesarwani2017cryptic].
+
+How mutant SF3B1 actually chooses its cryptic sites is contested. Those same
+authors count three published and mutually incompatible mechanistic models
+[@kesarwani2017cryptic]. None should be presented as settled.
+
+### U2AF1 and a changed preference at one position
+
+U2AF1 is mutated in only a few per cent of lung adenocarcinomas and acute
+myeloid leukaemias in TCGA. Those few cases carry hundreds of
+mutation-associated splicing changes [@brooks2014u2af1].
+
+The mechanism is a shift in what the spliceosome tolerates three bases before
+the intron-exon boundary. In HeLa cells expressing the S34F mutant, 57 per cent
+of competing CAG-versus-TAG 3' splice site pairs shifted, against 36 per cent
+with a wild-type construct [@brooks2014u2af1].
+
+The rule is a preference. The same authors note that many UAG 3' splice sites
+were unaffected, and that nonsense-mediated decay of aberrant products could
+make affected sites look unaffected [@brooks2014u2af1].
+
+### SRSF2 and a re-weighted enhancer code
+
+The SRSF2 P95 hotspot works by re-weighting an exonic splicing enhancer code
+rather than by abolishing binding. The mutant RNA-binding domain binds the CCNG
+motif with three- to four-fold higher affinity than GGNG, where the wild-type
+domain treats the two about equally [@liang2018srsf2]. One changed preference
+redistributes thousands of exons.
+
+Reproducibility across SRSF2 studies is a problem. When nine published RNA-seq
+datasets were overlapped at the level of differentially spliced gene lists, not
+a single gene appeared in all nine, and only 446 genes recurred in three or
+more [@liang2018srsf2].
+
+### ZRSR2 and the other spliceosome
+
+ZRSR2 mutations act on the minor spliceosome. In primary MDS marrow, more than
+a third of all U12-type introns were significantly more retained in
+ZRSR2-mutant patients than in spliceosome-wild-type ones [@inoue2021minor].
+
+The four MDS splicing factor genes are not interchangeable, and the clearest
+evidence is that their mouse models disagree in direction. Zrsr2 deletion
+enhanced haematopoietic stem cell self-renewal, whereas published hotspot
+knock-ins of Sf3b1, Srsf2 and U2af1 all impaired it under comparable
+transplantation assays [@inoue2021minor].
+
+Their target sets differ too. Mis-splicing of the kinase MAP3K7 is specific to
+SF3B1 among the spliceosome genes, and the same isogenic K562 panel showed
+extensive cryptic 3' splice site use in the SF3B1 mutant and not in SRSF2- or
+U2AF1-mutant cells [@lieu2021map3k7]. Even that case is partial. Its authors
+claim the misspliced kinase accounts only partly for the severe anaemia of
+SF3B1-mutant MDS, and explicitly not for ring sideroblast formation
+[@lieu2021map3k7].
+
+## Isoform-level inactivation that exome sequencing cannot see {#sec-lztr1}
+
+The tumour suppressor LZTR1 is inactivated post-transcriptionally far more
+often than by coding mutation. Retention of its single minor intron exceeded
+the level seen in any matched normal tissue in 11.1 per cent of TCGA tumour
+samples, across nearly all cancer types profiled [@inoue2021minor].
+
+A gene can be functionally lost in a tenth of tumours with nothing in the exome
+to show for it.
+
+## Silent mutations that are not silent {#sec-silent}
+
+How often an exonic point mutation disrupts splicing is contested. The figures
+in circulation range from a quarter to over three quarters of exonic mutations,
+a disagreement of more than threefold, so no single headline fraction in this
+area should be quoted as settled [@hurst2017depletion].
+
+Selection inside tumours leaves a measurable trace. Across 15 TCGA cancer
+types, synonymous mutation density was about 17 per cent lower in the
+splicing-regulatory flanks of exons than in exon cores. The depletion was
+absent in tumour suppressors, where losing function is advantageous
+[@hurst2017depletion].
+
+The candidate pool is large. A pan-cancer screen of 8,320 exomes across 22
+tumour types nominated 22,948 synonymous single-nucleotide variants as
+post-transcriptionally consequential, distributed over 2,042 genes
+[@teng2020synonymous].
+
+One case shows the clinical stakes. A synonymous c.936T>G change in BAP1 exon
+11 of a clear-cell renal carcinoma caused exon skipping and loss of BAP1
+protein. The patient died at 56 months, against a TCGA median of 117 months for
+the group her exome had placed her in [@niersch2021bap1]. That report also
+cites an earlier pan-cancer estimate putting synonymous changes at roughly 6 to
+8 per cent of single-nucleotide driver mutations in oncogenes, secondhand
+[@niersch2021bap1]. The primary analysis should be read before that figure is
+used.
+
+## Isoform-defined drug targets {#sec-drug-targets}
+
+Two cases show an isoform, rather than a gene, defining the target.
+
+MET exon 14 skipping is reached by structurally diverse DNA lesions converging
+on one RNA outcome. The underlying mutations sat mostly at the splice donor
+side of exon 14, at 57 per cent, or the acceptor side, at 25 per cent. In the
+phase 1 expansion cohort, crizotinib produced a confirmed objective response in
+32 per cent of 65 evaluable patients, short of the 60 to 80 per cent seen with
+matched therapy for other lung cancer drivers [@drilon2020met].
+
+AR-V7 is the opposite shape of problem, an isoform that therapy creates.
+Immunohistochemistry across hundreds of prostate specimens found AR-V7 protein
+in under one per cent of untreated primary tumours, and in about three quarters
+of samples taken after androgen deprivation, rising further after abiraterone
+or enzalutamide [@sharp2019arv7]. The drug target disappears from the protein
+the drug binds.
+
+## Neoantigens, and how much survives a wider reference {#sec-neoantigens}
+
+Aberrant junctions dwarf point mutations as a source of recurrent, shareable
+tumour antigens. Across 8,705 TCGA tumours about 251,000 tumour-enriched
+junctions were found, roughly 18,000 of them present in at least 100 samples.
+Only 13 somatic point mutations reached that same recurrence threshold
+[@kahles2018splicing].
+
+![Left: how many events of each kind are shared across tumours, on a log axis
+because the two differ by more than three orders of magnitude. Right: what
+happens to the same junctions when the normal reference is widened beyond
+tissue-matched samples.](../figures/neoantigen-recurrence.svg){#fig-neoantigen width=100%}
+
+The same analysis cautions against reading all of that as oncogenic.
+Tumour-enriched junctions were not enriched in the cancer gene census, which
+those authors take as evidence that much of the extra splicing diversity is
+passenger noise from degraded splicing fidelity [@kahles2018splicing].
+
+The tumour-specificity itself does not survive a wider comparison. Averaged
+over cancer types, 80.6 per cent of junctions called cancer-specific against
+tissue-matched normals turn up in other adult non-cancer tissues, and a further
+share of those absent from all adult normals appear in developmental samples
+[@david2020junctions]. The denominator is most of the argument.
+
+The functional evidence has been taken as far as T cell receptors. Clones
+reactive to aberrant GNAS and RPL22 junctions were isolated and killed tumour
+cells. Naturally occurring reactivity in patients was detected in only one of
+three glioma patients tested [@kwok2025public]. The mechanism works; the
+in-patient evidence is thin.
+
+## Therapeutics {#sec-cancer-therapeutics}
+
+The SRSF2 motif switch connects to a named target exon. The poison exon of EZH2
+contains three copies of the CCWG motif that mutant SRSF2 prefers, and none of
+the GGWG motif the wild-type protein prefers. Blocking that exon with antisense
+oligonucleotides was tested as a way to restore EZH2 protein in SRSF2-mutant
+cancer cells [@islam2026ezh2]. The whole therapeutic logic fits inside one
+exon's worth of sequence.
+
+Modulating the spliceosome itself is less targeted than it sounds. The
+SF3B1-directed compound H3B-8800 bound SF3b complexes containing wild-type or
+mutant SF3B1 and altered splicing similarly in both, yet killed SF3B1- or
+SRSF2-mutant cells preferentially. Those authors attribute the selectivity to
+those cells' dependence on normal expression of spliceosome genes rather than
+to differential drug binding [@seiler2016h3b8800].
+
+The clinical result is the counterweight to everything above. In the phase 1
+dose-expansion cohorts in transfusion-dependent SF3B1-mutant lower-risk MDS, of
+7 and 36 patients, only two patients in each reached even one interval of
+eight-week red cell transfusion independence. The investigators concluded the
+drug was insufficiently effective at the doses tested
+[@h3b8800phase1lrmds2025].
+
+A mechanism can be correct, specific and well characterised, and still not
+yield a drug. The isoform-level view of cancer has changed what counts as a
+driver. It has not yet changed what counts as a treatment.
