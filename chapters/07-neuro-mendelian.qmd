@@ -215,7 +215,8 @@ collated from short- and long-read data in a rare disorder cohort, PacBio
 long-read RNA-seq recovered 18 variant-linked aberrant splicing events and
 three normal outcomes, and failed to capture four. Three of the four are
 attributed to low or absent coverage of the gene [@oquendo2026hifirnaseq].
-Coverage of the specific disease gene decides the outcome, not read length.
+Coverage of the specific disease gene mattered more than read length in
+those four cases.
 
 ## What the prediction tools deliver {#sec-splice-prediction}
 
