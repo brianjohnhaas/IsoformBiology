@@ -1,8 +1,228 @@
-# Single-cell and spatial isoform biology
+# Single cells and tissue space
 
 ::: {.callout-warning}
-## Draft
-Research in progress. Claim records: `research/08-singlecell-spatial.yml`
+## First draft
+Written from `research/08-singlecell-spatial.yml` and not yet reviewed by a
+second reader.
 :::
 
-_Scope:_ Cell-type-specific isoform usage and spatially resolved transcript processing.
+A bulk measurement of isoform usage averages over every cell in the sample. If
+two cell types each use one isoform exclusively, and the sample holds equal
+numbers of both, the bulk answer is a fifty-fifty mixture that no cell
+produces. Single-cell and spatial methods exist to break that average open, and
+the interesting part is which questions they have actually settled.
+
+## One gene marking subsets by its splice form {#sec-ptprc}
+
+@sec-cd45 treated CD45 as a receptor whose splice choice tunes signalling. In
+single-cell data the same gene works as a subset marker, and gene-level
+counting cannot read it.
+
+In human CD8 T cells profiled with a 5' assay, naive and
+effector-memory-reexpressing-CD45RA clusters carried the CD45RA form of PTPRC,
+while central memory and MAIT cells carried CD45RO
+[@michalik2024ideis]. The gene is expressed in all of them. Only the splice
+form distinguishes them.
+
+Mouse leukocytes behave the same way, with Cd45RB marking naive and central
+memory T cells plus NK cells, and Cd45RC essentially unused
+[@michalik2024ideis].
+
+## Structure that expression clustering misses {#sec-sc-structure}
+
+Splice-isoform quantification split human blood classical monocytes into two
+subpopulations that gene-expression clustering of the same cells did not
+resolve [@olivieri2021splicing].
+
+Splicing also carries enough information to place a cell. Unsupervised
+clustering on the splicing scores of just two ubiquitously expressed genes
+assigned individual human cells to the right tissue compartment. Accuracy was 78, 84 and 95 per cent for stromal, epithelial and immune cells
+in one donor. In a second donor with a third as many cells it was 70, 100 and
+49 per cent [@olivieri2021splicing].
+
+The counterweight is from a different group and should be read alongside. An annotation-free analysis of two large mouse single-cell atlases found
+splicing strongly tied to cell identity. In those authors' hands it never
+revealed a cell subpopulation that expression clustering had missed
+[@benegas2022robust]. Whether isoform data finds new populations or only
+describes known ones is not settled.
+
+## Isoform change without gene change {#sec-isoform-only}
+
+The fraction of isoform differences invisible to gene-level analysis has been
+measured in single cells as it was in tumours.
+
+Across a cross-tissue single-cell long-read atlas, a third of the cases where
+isoform proportions differed between cell classes showed no significant change
+in the gene's total expression [@mantri2026splice].
+
+A mouse and human brain isoform map covering roughly 200,000 cells put it
+higher. About seven in ten genes carry isoforms whose variation across
+development, region or subtype is not explained by variation in the gene's own
+expression [@joglekar2024singlecell].
+
+Cell type matters more than tissue for one of those quantities and not the
+other. How widely a gene spreads its expression across isoforms tracked cell
+type more strongly than tissue of residence, at mean partial omega-squared
+0.062 against 0.047. Which isoforms a gene used contributed comparably from
+cell type and from tissue, once factor complexity was accounted for
+[@mantri2026splice].
+
+## The brain atlas {#sec-brain-atlas}
+
+Single cells let a regional difference be charged to a compartment. In postnatal mouse hippocampus against prefrontal cortex, three quarters of
+the isoform differences visible in pooled tissue could be charged to one
+compartment alone, neuronal or non-neuronal. A coordinated change in both
+accounted for the rest [@joglekar2021spatially].
+
+Sometimes the annotated cell type is the thing that breaks. For a developmental gene with a neuron-specific isoform, part of a granule
+neuroblast population used the excitatory-neuron isoform and the rest used the
+non-neuronal one. Those authors suggest the neuroblasts may not be one
+population [@joglekar2021spatially].
+
+The programmes transfer between species. Exons that distinguished mouse brain
+cell types tended to distinguish the same cell types in human hippocampus
+[@joglekar2024singlecell]. Cell-type splicing programmes are conserved well
+enough to carry across.
+
+## Immune subsets at isoform resolution {#sec-sc-methods}
+
+Long-read profiling of 29 sorted human immune subsets found one receptor gene
+using different isoforms in two T cell states. A Th17-restricted IL23R form sat
+alongside a separate form restricted to activated regulatory T cells
+[@inamo2024trails]. The receptor is the same gene in both states and a
+different molecule.
+
+## Where in the cell the molecule sits {#sec-localisation}
+
+Isoform identity predicts location inside a neuron. Sequencing soma and
+dendrite separately from the same single mouse neurons found 2,225
+dendritically localised RNAs. In 298 of those cases one 3' UTR isoform of a
+gene localised and another did not [@middleton2019comprehensive].
+
+The difference starts at the transcript rather than at the protein. For a small
+GTPase that shapes neuronal morphology, the two last-exon isoforms separated
+between the neurite and the cell body as mRNA [@ciollimattioli2018alternative].
+
+## Three-prime ends across cell types {#sec-sc-apa}
+
+Poly(A) site choice is the isoform axis that ordinary single-cell chemistry
+measures best, because most protocols read the 3' end.
+
+Across roughly two million nuclei spanning five stages of mouse embryonic
+development, 3' UTRs lengthened globally in every cell type examined. Within
+each stage, blood lineages sat at the short end and neuronal cell types at the
+long end [@agarwal2021landscape].
+
+The scale is large and the overlap with expression is small. Analysing 474
+human and mouse cell types, the dominant 3' UTR isoform switches in 60 per cent
+of human genes in at least one cell type. Only about a tenth of differential 3'
+UTR events coincide with a change in that gene's expression
+[@fansler2024quantifying]. Length and abundance are two outputs of the same
+gene.
+
+The signal is recoverable from data collected for other purposes. Mining
+ordinary 3'-tag single-cell data from mouse T cells recovered 868
+polyadenylation shifts between resting and activated cells, skewed toward
+shorter 3' UTRs in the dividing population [@shulman2019celltype]. In the Fly
+Cell Atlas nuclei, some genes resolved their 3' isoform choice reliably in
+single cells rather than only in pooled clusters, and this worked best in
+neurons [@lee2022diverse].
+
+## Does one cell use one isoform or several {#sec-bimodality}
+
+This is the chapter's open question, and the literature has moved on it twice.
+
+![Three illustrative populations of cells, each with the same population mean.
+A bulk assay returns one number for all three, which is why the question had to
+be asked in single cells.](../figures/within-cell-isoform.svg){#fig-within-cell width=100%}
+
+The early evidence pointed at real cell-to-cell choice. Single-cell polyadenylation-site mapping was applied to genetically and
+developmentally uniform stem cell populations. It found cell-to-cell
+differences in 3' end preference larger than technical noise and random
+molecule partitioning together could produce [@velten2015single]. Single-molecule imaging of one gene showed that an individual active
+transcription site in the nucleus is dominated by one 3' isoform. Those authors
+offer that as a hint that a polyadenylation site, once chosen, stays active for
+several rounds of transcription [@velten2015single].
+
+Then the all-or-nothing picture was attacked at its root. A reanalysis of human and mouse single-cell datasets, together with a
+probabilistic model, argued that the apparently all-or-nothing splicing of
+single cells is a technical artefact. Biology accounts for almost none of it on
+that reading [@buenabadnajar2020coverage]. A later review records that the bimodal picture
+survives for only about a fifth of exons once subsequent studies looked, with
+single-peaked distributions the commoner outcome [@joglekar2023words].
+
+The current position leans toward mixtures. Modelling isoform heterogeneity
+within cells against between cells, across single-cell and spatial long-read
+datasets, one group concluded that individual cells routinely carry more than
+one isoform of a well-expressed gene [@fu2025longcell].
+
+The same group reports the opposite behaviour in one spatial dataset. In Visium
+data from a mouse olfactory bulb slice, each cell within a layer used one or
+the other of a gene's two isoforms exclusively, and which one bore no relation
+to the layer [@fu2025longcell]. That measurement is per spot rather than per
+cell, and an apparently sharp choice with no spatial pattern is hard to read as
+a programme.
+
+## Space {#sec-spatial}
+
+Spatial methods give an orthogonal check on single-cell isoform calls. Long-read
+sequencing of a spatially barcoded brain section reproduced the direction of
+the single-cell regional splicing difference for 85 per cent of 40
+region-specific exons [@joglekar2021spatially].
+
+Imaging adds cases a gene-level map cannot represent at all.
+Isoform-resolved imaging of mouse brain sections caught one
+transcription-factor gene producing a coding and a non-coding isoform that
+occupied different places in the tissue and different cell types
+[@cohen2025whole].
+
+The load is unevenly distributed across the brain. Of roughly 1,400 genes with
+spatially dependent isoform use, about 800 had a module tied to a hippocampal
+subfield and about 100 to the choroid plexus [@cohen2025whole].
+
+How many genes are called spatially variable depends heavily on the statistical
+model. Reanalysing two published long-read spatial brain sections with a model
+built for sparse isoform counts more than doubled the number called, from 61 to
+150 reproducible across replicates [@su2025splisosm]. The same framework was then applied to ordinary short-read spatial data from
+adult mouse brain. Over eight hundred genes varied spatially in which 3' end
+they used, more than five times the count recovered from long-read spatial data
+of the same tissue [@su2025splisosm]. The cheaper assay returned more, because it returned more
+molecules.
+
+## What these measurements cannot do {#sec-sc-limits}
+
+A simulation study that modelled dropout and quantification error explicitly
+concluded that resolving which isoforms an individual cell expresses is not
+currently advisable with short-read single-cell RNA-seq
+[@westoby2020obstacles]. That is the baseline against which everything above
+should be read.
+
+The chemistry decides how much is reachable. In the same human individual, droplet data yielded computable splicing scores
+for 1,416 genes against 9,802 for plate-based full-length data. Those authors
+state that 3'-biased droplet reads never reach some splicing events at all
+[@olivieri2021splicing]. Because the alternatively
+spliced exons of PTPRC sit near the 5' end of the transcript, 3' gene-expression
+libraries left under a tenth of cells positive for either CD45 isoform even at
+saturating depth [@michalik2024ideis].
+
+That bias is less simple than it sounds. In one 3'-biased chemistry, junction
+recovery did not fall off toward the 5' end of genes. Recall was slightly lower
+close to the 3' terminus than tens of kilobases upstream, which complicates the
+assumption that 3' counting is uniformly blind to upstream splicing
+[@saferali2026framework].
+
+For rare cell types the binding constraint is cell number rather than depth. Take a deep combinatorial-indexing experiment at fifty thousand reads per cell.
+An abundant airway cell type of about fifteen thousand cells recovered 158,786
+of the junctions seen in matched bulk. The rarest type, of 68 cells, recovered
+25,879 [@saferali2026framework]. Sequencing those 68 cells harder would not
+have closed the gap.
+
+The statistics punish the obvious design. Testing exon by exon on single-cell
+long-read data from two mouse brain regions, only 31 of 2,132 testable genes,
+1.45 per cent, survived a correction for dependent tests. Those authors
+replaced the exon test with a single per-gene isoform test
+[@joglekar2021spatially].
+
+Breaking the bulk average open is now routine. Deciding what a single cell is
+doing with a single gene is not, and most of the disagreements in this chapter
+are about that second question rather than the first.

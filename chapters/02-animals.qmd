@@ -93,7 +93,7 @@ opposite things. The female product represses male differentiation, and the
 male product represses female differentiation. Both are functional products of
 the same primary transcript [@dsx1989sexspecificpolypeptides].
 
-## Isoform switching within a cell's lifetime
+## Isoform switching within a cell's lifetime {#sec-cd45}
 
 Developmental cascades set an isoform once. CD45 runs the same machinery
 reversibly, as routine immune function.
