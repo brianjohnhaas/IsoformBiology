@@ -791,7 +791,7 @@ claims:
     journal: Nature
     year: 2008
     doi: 10.1038/nature07509
-    bibkey: wang2008isoformregulation
+    bibkey: wang2008alternative
     metadata_source: crossref
   evidence:
     text_access: full_text
@@ -821,7 +821,7 @@ claims:
     journal: Nature Genetics
     year: 2008
     doi: 10.1038/ng.259
-    bibkey: deepsurveying2008splicingcomplexity
+    bibkey: pan2008deepsurveying
     metadata_source: crossref
   evidence:
     text_access: abstract_only
@@ -847,7 +847,7 @@ claims:
     journal: Nature
     year: 2008
     doi: 10.1038/nature07509
-    bibkey: wang2008isoformregulation
+    bibkey: wang2008alternative
     metadata_source: crossref
   evidence:
     text_access: full_text
@@ -873,7 +873,7 @@ claims:
     journal: Nature
     year: 2008
     doi: 10.1038/nature07509
-    bibkey: wang2008isoformregulation
+    bibkey: wang2008alternative
     metadata_source: crossref
   evidence:
     text_access: full_text

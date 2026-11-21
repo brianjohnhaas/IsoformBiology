@@ -123,7 +123,56 @@ def main() -> int:
     print(f"\n{total} claims checked, {problems} with problems.")
     if problems:
         print("Fix or drop every flagged claim. A claim that fails here is not citable.")
+
+    # Cross-file bibliography consistency. A paper cited from two chapters under
+    # two bibkeys becomes two entries in references.bib and two numbers in the
+    # rendered book, which reads as two different sources.
+    if len(targets) > 1:
+        problems += check_bibkeys(targets)
+
     return 1 if problems else 0
+
+
+def check_bibkeys(targets: list[pathlib.Path]) -> int:
+    import yaml
+
+    by_doi: dict[str, set[str]] = {}
+    by_key: dict[str, set[str]] = {}
+    where: dict[tuple[str, str], set[str]] = {}
+
+    for path in targets:
+        doc = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        for c in doc.get("claims") or []:
+            src = c.get("source") or {}
+            doi = str(src.get("doi", "")).strip().lower()
+            key = str(src.get("bibkey", "")).strip()
+            if not doi or not key:
+                continue
+            by_doi.setdefault(doi, set()).add(key)
+            by_key.setdefault(key, set()).add(doi)
+            where.setdefault((doi, key), set()).add(path.name)
+
+    bad = 0
+    for doi, keys in sorted(by_doi.items()):
+        if len(keys) > 1:
+            bad += 1
+            files = sorted({f for k in keys for f in where[(doi, k)]})
+            print(f"\n  [bibkey] one DOI, {len(keys)} keys: {doi}")
+            print(f"           keys: {', '.join(sorted(keys))}")
+            print(f"           in:   {', '.join(files)}")
+    for key, dois in sorted(by_key.items()):
+        if len(dois) > 1:
+            bad += 1
+            print(f"\n  [bibkey] one key, {len(dois)} DOIs: {key}")
+            print(f"           dois: {', '.join(sorted(dois))}")
+
+    shared = sum(1 for d, k in by_doi.items() if len(where[(d, next(iter(k)))]) > 1)
+    print(f"\n{len(by_doi)} distinct sources, {shared} cited from more than one area.")
+    if bad:
+        print(f"{bad} bibkey conflict(s). Resolve before building references.bib.")
+    else:
+        print("Bibkeys are consistent: every DOI has one key and every key one DOI.")
+    return bad
 
 
 if __name__ == "__main__":
