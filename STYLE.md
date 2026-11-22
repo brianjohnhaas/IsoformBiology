@@ -72,7 +72,7 @@ is probably not expert in sequencing methodology. That shape has a specific
 consequence:
 
 Do not explain their subject matter back to them. Nobody reading this book needs
-isoforms defined in chapter 6, cells defined for a cell biologist, or reads
+isoforms defined late in the book, cells defined for a cell biologist, or reads
 defined for someone who has generated them.
 
 Do explain our machinery completely. Intron chains, FSM and ISM classification,

@@ -145,6 +145,23 @@ rather than live quantities.
 
 ## Changes made while drafting
 
+The reading order was changed once chapters 11 and 12 existed. Those two were
+appended as new parts, which left chapter 12 closing on a section called "Where
+this leaves the argument" with two more chapters after it, and left the book
+ending on reference-annotation policy.
+
+The order is now 1, 2, 3, then 4, 5, 9, 8, then 11, 10, then 6, 7, 12: the tree
+of life, then measurement and what it produced, then what an isoform difference
+does to a protein, then variation, disease and targeting. Measured on
+cross-chapter `@sec-` links, forward references fall from 13 to 11. Three
+dependencies that previously pointed forward now point back: chapter 11 on
+chapter 8's single-cell 3' ends and compartment result, chapter 11's
+`#sec-is-it-translated` on GENCODE's own admission in chapter 9 that its coding
+annotation is permissive, and chapter 5 on the brain atlas.
+
+Reading order lives in `_quarto.yml` and not in the filenames, which record the
+order chapters were added. Do not renumber files to match.
+
 Two rows moved once the chapters existed.
 
 The B-cell isoform-QTL result went to chapter 5 rather than chapter 10. It is

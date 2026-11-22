@@ -21,10 +21,16 @@ book:
       chapters:
         - chapters/02-animals.qmd
         - chapters/03-plants-fungi-other.qmd
-    - part: "How technology shaped what we could see"
+    - part: "Seeing isoforms"
       chapters:
         - chapters/04-technology-arc.qmd
         - chapters/05-long-reads.qmd
+    - part: "What the catalogues contain"
+      chapters:
+        - chapters/09-catalogs.qmd
+    - part: "Resolving cells and tissues"
+      chapters:
+        - chapters/08-singlecell-spatial.qmd
     - part: "From transcript to protein"
       chapters:
         - chapters/11-transcript-to-protein.qmd
@@ -38,12 +44,6 @@ book:
     - part: "Targeting isoforms"
       chapters:
         - chapters/12-proteoforms-drugs.qmd
-    - part: "Resolving cells and tissues"
-      chapters:
-        - chapters/08-singlecell-spatial.qmd
-    - part: "Cataloging the isoform universe"
-      chapters:
-        - chapters/09-catalogs.qmd
     - chapters/99-glossary.qmd
     - part: "Walkthroughs"
       chapters:

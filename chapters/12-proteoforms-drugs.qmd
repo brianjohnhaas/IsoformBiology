@@ -59,7 +59,7 @@ cannot be prioritised when it is unknown whether the splicing event yields a
 protein, what that protein's structure is, and what it does
 [@shaw2022multiomics]. Three therapeutic routes are already in use against
 splicing events, which are immunotherapy, oligonucleotides and small molecules
-[@shaw2022multiomics]. Chapters @sec-cancer-therapeutics and @sec-sma cover
+[@shaw2022multiomics]. @sec-cancer-therapeutics and @sec-sma cover
 examples of the second and third.
 
 ## A drug that targets one isoform {#sec-isoform-selective}

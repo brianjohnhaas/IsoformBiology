@@ -38,10 +38,11 @@ literature, that the finer resolution is where a great deal of the biology
 lives.
 
 It is organized as a book rather than a tool list because the case is
-cumulative. It runs through landmark examples across the tree of life, the
-technology arc that made them visible, the disease biology that depends on
-isoform-level resolution, and the current efforts to catalog the isoform
-universe outright.
+cumulative, and it is ordered by what each step licenses. Landmark examples
+across the tree of life come first, then the measurement arc that made them
+visible and the catalogues it produced, then what an isoform difference does to
+the protein. Variation, disease and drug targets follow, because each of those
+arguments depends on the measurement being trusted first.
 
 ::: {.callout-note}
 ## Status
