@@ -1,0 +1,323 @@
+# From transcript to protein
+
+::: {.callout-warning}
+## First draft
+Written from `research/11-transcript-to-protein.yml` and not yet reviewed by a
+second reader.
+:::
+
+@sec-ends established where isoform differences sit. Most of them are not in the
+middle of the coding sequence at all. They are at the start, at the end, or
+outside the reading frame entirely.
+
+This chapter asks the next question. Given a difference between two transcripts
+of one gene, what happens to the protein? There are three answers, and all three
+turn up often. The protein changes at one end. The protein does not change, but
+how much of it gets made does. Or no protein is made from that transcript at
+all.
+
+## Which mechanism changes which part of the protein {#sec-what-changes}
+
+The mechanism is largely predictable from the region of the protein affected,
+which is not obvious and took a systematic comparison to establish. Across
+35,082 pairs of annotated human protein isoforms, differences at the beginning
+of the protein came overwhelmingly from the gene starting transcription
+somewhere else. That accounted for 70 per cent of them. Splicing inside the 5'
+UTR accounted for 9 per cent [@murali2025biosurfer].
+
+Differences at the other end of the protein had a different cause. There, 72 per
+cent involved a shift in reading frame, introduced either by a splice or by a
+retained intron [@murali2025biosurfer]. The two ends of a protein are reached by
+different routes.
+
+![What produces a difference depends on where in the protein the difference
+sits. Proportions are of annotated isoform pairs, so they describe the
+annotation as much as the
+biology.](../figures/mechanism-by-region.svg){#fig-mechanism-region width=100%}
+
+In between sits a case worth knowing about because it is easy to miss. A codon
+can straddle a splice junction, with one or two of its bases in the upstream exon
+and the rest in the downstream one. Splicing to a different partner then rebuilds
+that codon from different pieces and changes a single amino acid, without
+inserting or deleting anything. Those authors found this behind 17 per cent of
+internal sequence changes and called the pattern ragged codons
+[@murali2025biosurfer]. A one-residue difference is the kind of thing an
+event-level metric records as nothing at all, which is the limitation
+@sec-psi describes.
+
+Running the same comparison on a proteome predicted from long reads of a human
+cell line gave the same proportions, with one difference: more of the transcripts
+were predicted to be destroyed rather than translated [@murali2025biosurfer].
+That is a hint about what long reads add to this question, and @sec-is-it-translated
+takes it up.
+
+## When the difference is outside the protein {#sec-utr-only}
+
+An isoform pair can differ in no amino acid whatsoever. This is the common case
+rather than the exotic one, and the regulatory consequences are real but smaller
+and less consistent than the literature's enthusiasm suggests.
+
+### The leader
+
+Start-site choice changes the length of the untranslated leader, and the leader
+affects how efficiently a ribosome gets going. Measured directly in mouse
+fibroblasts by separating isoforms with different start sites and asking how many
+ribosomes each carried, 4,153 of 9,951 expressed genes initiated at more than one
+site. Of those, 745 translated their isoforms at detectably different rates
+[@wang2016alttss]. The direction was consistent: the isoform with the longer
+leader was generally translated less well. Sequence features inside the leaders
+explained over half the variance in that difference, which leaves a substantial
+remainder unexplained [@wang2016alttss].
+
+Then there is a result that undercuts the premise of this whole section. The
+length of the leader does not only set how much protein is made. It can set which
+protein is made, by controlling which start codon the ribosome uses. A very short
+leader lets the ribosome slide past the first available start codon, so the
+shorter protein form is the one produced [@ly2026utrlength]. Because start-site
+choice sets leader length, moving the start site shifts the ratio between two
+protein forms without altering a single base of coding sequence
+[@ly2026utrlength].
+
+That mechanism reaches inherited disease. A deletion inside the VHL leader was
+found to push translation toward the shorter of that gene's two protein forms
+[@ly2026utrlength]. A variant in an untranslated region changed a protein. Any
+pipeline that filters variants to the coding sequence would discard it, which is
+the practical point @sec-vus returns to.
+
+### The tail
+
+The three-prime untranslated region is where the field most often asserts
+consequence and most often disagrees about it. Three results are worth putting
+side by side.
+
+Measured genome-wide in one mouse cell line, the choice between a near and a far
+polyadenylation site did very little. Isoforms using the far site were slightly
+less stable and slightly better translated, the effects ran in opposite
+directions, and the strongest element found was the microRNA site, associated
+with 32 per cent repression of stability against only 4 per cent of translation
+[@spies2013utrisoform]. The authors' own summary was that in those cells
+alternative tails mattered less than other parts of the transcript, because the
+two isoforms of a gene behaved alike [@spies2013utrisoform].
+
+One gene studied closely gave the opposite answer, and in the opposite direction
+from the obvious prediction. PTEN transcripts carrying the longest tails, and
+therefore the most microRNA sites, were the stable ones, resisted silencing, and
+supplied most of the protein [@thivierge2018ptenapa]. Those authors drew a
+methodological conclusion from it. A microRNA site validated in a gene's
+untranslated region may not act on the isoforms that actually carry that gene's
+output [@thivierge2018ptenapa].
+
+Stress reconciles part of the disagreement by showing when the choice matters.
+Arsenic exposure shortened tails across the transcriptome by two separate routes,
+a shift toward the near site during the stress and selective destruction of the
+long forms during recovery [@zheng2018stressapa]. A named protein does the
+selecting. TIA1 binds uracil-rich stretches that exist only in the extended part
+of the tail, which ties the long forms to stress granules and to decay
+[@zheng2018stressapa]. The consequence inverts the usual intuition about
+regulatory elements. Carrying fewer of them is protective, because a transcript
+that had already switched to the near site survived the clean-up
+[@zheng2018stressapa].
+
+So the honest summary is conditional. In a resting cell, which tail a gene uses
+is mostly inconsequential. Under stress, or at a gene whose dosage is tightly
+held, it decides how much protein there is. @sec-sc-apa gives the cell-type
+dimension of the same choice.
+
+## Whether the isoform is translated at all {#sec-is-it-translated}
+
+@sec-how-functional sets out the three-way disagreement about how much
+alternative splicing matters. Protein-level evidence bears on it directly, and it
+has arrived from two independent directions.
+
+Ribosome footprints assigned to individual isoforms rather than pooled per gene
+found evidence of translation for 40 to 50 per cent of expressed isoforms. More
+than one isoform was translated at 53 per cent of expressed human genes and 33
+per cent of mouse genes [@reixachs2020orqas]. Agreement between the two levels
+was partial: about 40 per cent of the splicing changes visible in RNA were
+matched by a change in translation [@reixachs2020orqas]. The changes that did
+carry through were disproportionately microexons, and for exons that correspond
+between human and mouse the direction of change was preserved
+[@reixachs2020orqas]. Keep the microexon result in mind; @sec-rps24 is a
+microexon case.
+
+Mass spectrometry reached the question by a different route, and had to be pushed
+unusually hard to do it. A routine proteomics run reads only a fraction of each
+protein, which is precisely why it cannot tell two isoforms apart
+[@sinitcyn2023deepproteome]. The depth required came from splitting six cell
+lines with six different enzymes and reading the fragments three ways, which
+yielded a million peptides from 17,717 protein groups and covered a median of
+about 80 per cent of each protein's length [@sinitcyn2023deepproteome].
+
+![The same measurement supports two different headlines depending on which genes
+are counted. Detection of alternative junctions in protein rises with how well
+the gene is covered.](../figures/translated-denominator.svg){#fig-translated width=100%}
+
+The result is usually quoted as proof that the proteome does carry the
+transcriptome's splicing diversity, and that quotation needs its denominator. Across everything
+compared against RNA, about 80 per cent of single-residue variants were seen in
+protein but only about 20 per cent of the junctions expected from splicing
+[@sinitcyn2023deepproteome]. Restricted to genes expressed highly enough to be
+read end to end, detection of frame-preserving splicing events rose to about 64
+per cent [@sinitcyn2023deepproteome].
+
+The load-bearing comparison is not that figure either. It is that in those
+well-covered genes, alternative junctions were detected about as often as
+constitutive ones [@sinitcyn2023deepproteome]. An alternative isoform is not
+intrinsically harder to find than the gene's main product. It is harder to find
+because it is scarcer. On that reading the low overall rate measures the assay,
+and the conclusion that most frame-preserving alternative isoforms are translated
+follows [@sinitcyn2023deepproteome].
+
+::: {.callout-note collapse="true"}
+## Why the undetected cases are the interesting ones
+
+For the single-residue variants that were expected from RNA and never seen in
+protein, those authors offered a mechanism rather than filing them as a
+measurement failure. Those variants were predicted more often to destabilise the
+protein [@sinitcyn2023deepproteome]. If that is right, absence from the proteome
+is a biological result about protein stability and not a gap in coverage. It also
+means the proteome is not a straightforward readout of the transcriptome even
+when both are measured well.
+:::
+
+## RPS24: one codon at the end of a ribosomal protein {#sec-rps24}
+
+Most of this chapter is about proportions across thousands of genes. One gene
+shows the whole argument at once, and it is small enough to hold in mind.
+
+RPS24 is one of the structural proteins of the small ribosomal subunit. Between two exons that
+are always present, it carries three very short exons of 3, 18 and 22 base pairs
+[@park2024rps24]. They sit at the end of the coding sequence, so including or
+excluding them changes the last few amino acids rather than an internal domain
+[@park2024rps24]. The three-base-pair exon is one codon. A gene can therefore
+add or remove a single residue by a splicing decision.
+
+![The RPS24 locus and the protein ends its documented isoforms produce. The
+three-base-pair exon is drawn to scale against its neighbours, which is the point
+worth seeing.](../figures/rps24-microexons.svg){#fig-rps24 width=100%}
+
+What changes is the composition of the protein's last few residues. The exon of
+22 base pairs carries a stop codon, so a transcript including it ends the protein
+three residues early. The form that excludes it keeps a proline, a lysine and a
+glutamate that the other lacks [@kerry2024rps24hypoxia]. The published naming
+scheme labels the protein forms by what they end in, which is two lysines, three
+lysines, or proline-lysine-glutamate [@magadi2025rps24].
+
+Lysine is a plausible place for this to matter, because lysines are where cells
+attach the tags that control a protein's fate. Those authors raise ubiquitination
+and acetylation as possibilities and do not demonstrate either
+[@kerry2024rps24hypoxia]. Where the protein sits gives a second reason for
+interest. It lies beside the channel through which messenger RNA enters the
+ribosome [@magadi2025rps24].
+
+### The naming is a mess, and that is a finding {#sec-rps24-naming}
+
+Anyone trying to read these papers together hits a wall that is worth describing
+rather than hiding. The groups do not label the gene the same way. Junction names
+and transcript names and protein names were each introduced by different authors
+for the same molecules, and a scheme published specifically to reconcile them
+reports that no previous system distinguished the proteins at all
+[@magadi2025rps24].
+
+Part of the problem is not editorial. The reference databases number this gene's
+exons differently from one transcript to the next [@magadi2025rps24]. There is
+also a trap that catches readers who reason from size, because transcript length
+and protein length run in opposite directions here. The shortest transcript
+encodes the longest protein [@magadi2025rps24].
+
+This book does not assert a single table mapping each exon combination to each
+protein end. Reconciling the schemes requires the exon numbering each paper used,
+and the reconciliation published so far is internally inconsistent about which
+exon of the original numbering the largest of the three microexons corresponds
+to. Each result below is therefore reported
+in its own paper's labels.
+
+### Which form a cell makes {#sec-rps24-regulation}
+
+The proportions differ by tissue, and by tumour type within a tissue
+[@park2024rps24]. One combination behaves like a tissue marker that disease
+removes: abundant in muscle, present in normal brain, absent from glioma
+[@park2024rps24]. Across the three forms, one predominates in heart, another in
+brain, and the third across blood and the solid organs [@magadi2025rps24].
+
+Two independent lines of evidence say this is held rather than drifting. The
+proportions in brain are nearly identical in mouse and human
+[@magadi2025rps24]. And in a survey of splicing across twelve human tissues,
+RPS24 was one of a small minority of genes whose splicing tracked tissue
+compartment consistently, with one of the largest such effects measured
+[@olivieri2021splicing].
+
+That survey produced the most striking single result about this gene. The
+splicing of RPS24 and one other gene was enough on its own, with no use of
+expression level, to sort individual human cells into the right tissue
+compartment [@olivieri2021splicing]. @sec-sc-structure gives the accuracies; the
+two genes behind that result are RPS24 and ATP5F1C. The same compartment pattern
+was found again in mouse and in mouse lemur [@olivieri2021splicing].
+
+### What the choice does {#sec-rps24-consequence}
+
+Under low oxygen the two protein forms are not equally durable, and the
+difference appears only under stress. They lasted equally long in normal oxygen
+and unequally when oxygen was short [@kerry2024rps24hypoxia]. Shifting the ratio
+toward the more durable form helped cells survive and grow without enough oxygen,
+which makes the splice choice consequential and not merely correlated
+[@kerry2024rps24hypoxia].
+
+In the brain the same gene reports on disease. One of the three forms is largely
+confined to microglia and rises with age, with neurodegeneration, and after a
+deliberate inflammatory challenge [@magadi2025rps24]. The increase was confirmed
+at the protein level in human post-mortem brain from Alzheimer's disease,
+Parkinson's disease and Huntington's disease, and in mouse models of them
+[@magadi2025rps24].
+
+That confirmation depended on a reagent this book has not needed until now.
+Antibodies were raised that tell the three protein ends apart, binding the
+proline-lysine-glutamate form and not the ones ending in lysines
+[@magadi2025rps24]. An antibody that distinguishes two proteins differing by
+three residues is a proteoform-level reagent. @sec-measuring explains why such
+things are rare.
+
+### In cancer, and as a drug readout {#sec-rps24-cancer}
+
+Across 135 lung cancer cell lines, two of the four junctions were present in over
+98 per cent of them. A third appeared in 89 lines, or 66 per cent, and the
+muscle-associated one turned up in a single line [@nam2025rps24kras]. Most of the
+arithmetically possible combinations are never built. Eight could be made from
+three optional exons; three were found [@nam2025rps24kras].
+
+Blocking KRAS in mutant lung cancer lines shifted the balance toward the form
+carrying the three-base-pair exon, which those authors propose as a readout of
+whether the drug is acting [@nam2025rps24kras]. That is in cell lines, and
+nothing here shows it works in patients.
+
+Resolving a three-base-pair difference took a deliberate method rather than a
+standard pipeline. Separating the fragments by size distinguished isoforms
+differing by a single base [@nam2025rps24kras]. The gene has a separate claim on
+clinical attention too, since mutations in it cause one of the inherited bone
+marrow failure syndromes [@magadi2025rps24].
+
+::: {.callout-note collapse="true"}
+## Both RPS24 sources need re-checking
+
+The hypoxia work was read here as its bioRxiv preprint, although a version
+exists in FEBS Letters, and the neurodegeneration work is preprint-only in this
+corpus. Every number taken from either should be checked against the published
+version. The microglial staining result is reported without a denominator here on
+purpose: the text and the figure legend give different counts for the
+Alzheimer's sections, and neither can be preferred from what was read.
+:::
+
+## What this chapter settles and what it does not
+
+Three things are now on firmer ground. The mechanism that produces an isoform
+difference predicts which part of the protein changes. A difference confined to
+untranslated sequence usually changes protein quantity rather than protein
+identity, though not always, and not reliably enough to assume either way. And
+when the measurement is good enough to see a gene's main product, it sees the
+gene's alternative products about as often.
+
+What remains unresolved is the thing a drug developer most needs. Knowing that an
+isoform is translated somewhere, in some cell line, at some abundance, does not
+establish that it is present in the tissue being treated, in enough copies, with
+the epitope intact. That is the subject of @sec-measuring, and it is the gap
+between this chapter and a therapy.

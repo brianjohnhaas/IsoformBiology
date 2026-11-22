@@ -36,6 +36,16 @@ six commits later.
 | TRAILS and single-cell isoform methods | 08-*, CAT-* | ch8 | `#sec-sc-methods` | ch9 |
 | Joglekar 2024 single-cell isoform atlas | LR-019, LR-035, SCS-* | ch8 | `#sec-brain-atlas` | ch5 |
 | Isoform-level QTLs in B cells | nagura2025longread | ch5 | `#sec-gtex-lr` | ch10 |
+| Mechanism to protein terminus (TSS vs splicing vs frameshift) | PRO-* | ch11 | `#sec-what-changes` | ch1, ch6, ch12 |
+| UTR-only isoforms: 5' UTR and translation efficiency | PRO-* | ch11 | `#sec-utr-only` | ch1, ch4 |
+| UTR-only isoforms: 3' UTR, stability and miRNA access | PRO-* | ch11 | `#sec-utr-only` | ch1, ch5, ch8 |
+| Whether an annotated isoform is translated at all | PRO-* | ch11 | `#sec-is-it-translated` | ch2, ch9 |
+| RPS24 microexons and the C-terminal lysines | PRO-* | ch11 | `#sec-rps24` | ch6, ch7, ch8, ch12 |
+| Measuring proteoforms (top-down, targeted proteogenomics) | DRG-* | ch12 | `#sec-measuring` | ch5, ch9 |
+| Isoform-selective approved drugs (CLDN18.2, FGFR2b) | DRG-* | ch12 | `#sec-isoform-selective` | ch2, ch6 |
+| Isoform switching as acquired resistance | DRG-* | ch12 | `#sec-resistance` | ch6 |
+| Emerging proteoform-selective modalities | DRG-* | ch12 | `#sec-modalities` | ch6, ch7 |
+| Proteoform medicine as a programme | DRG-* | ch12 | `#sec-programme` | ch9, glossary |
 
 ## Sources recorded in more than one area
 
@@ -96,3 +106,51 @@ EST and cDNA data and the sigmoid extrapolation. Chapter 4 points at
 Write back-references as you go. Leave forward references until every chapter
 exists, then add them in one pass, because a `@sec-` that points at an unwritten
 chapter renders as a broken link and Quarto does not fail the build over it.
+
+## Boundaries for the two protein-level chapters
+
+These were fixed before either chapter was drafted, because four of their
+topics already had homes and would otherwise have been written twice.
+
+**Chapter 1 keeps the taxonomy.** `#sec-ends` states where isoform differences
+sit: that alternative polyadenylation yields isoforms with no splicing
+difference, that tandem 3' UTR choice and an upstream poly(A) site have
+different consequences, and that splicing explains a minority of
+tissue-dependent isoform differences. Chapter 11 does not restate any of that.
+It starts from the consequence instead: what the difference does to the protein,
+and what it does when there is no protein difference at all.
+
+**Chapter 5 keeps isoform stability as a measurement.** That isoform-level
+stability cannot be estimated from short reads, and that individual isoforms of
+one gene do not share a stability, belong to `#sec-ends`-adjacent material in
+chapter 5. Chapter 11 cites the regulatory mechanism, not the method.
+
+**Chapter 8 keeps single-cell three-prime ends.** `#sec-sc-apa` owns the
+cell-type 3' UTR switching numbers. Chapter 11 refers to it.
+
+**Chapter 2 keeps the functionality argument.** `#sec-how-functional` owns the
+three-way disagreement about how much alternative splicing matters. Chapter 11's
+`#sec-is-it-translated` adds only the protein-level evidence that bears on it,
+and points back rather than re-running the argument.
+
+**Chapters 6 and 7 keep their therapeutics sections.** `#sec-drug-targets`,
+`#sec-cancer-therapeutics`, `#sec-sma`, `#sec-dmd` and `#sec-nof1` stay where
+they are, because the glossary and several chapters already point at those
+identifiers. Chapter 12 cross-references them and adds only what is new:
+isoform-selective biologics, resistance by isoform switching, the measurement
+problem at the protein level, and the forward programme.
+
+## One verdict needed reconciling
+
+Chapter 6 closes by saying the isoform-level view of cancer "has changed what
+counts as a driver. It has not yet changed what counts as a treatment." That
+was written from a corpus in which the splicing-modulator trials had failed and
+the isoform-defined targets were MET exon 14 and AR-V7.
+
+It does not survive the chapter 12 material. Zolbetuximab plus chemotherapy is
+approved for CLDN18.2-positive gastric and gastro-oesophageal junction cancer,
+and CLDN18.2 differs from CLDN18.1 by an isoform-specific first exon. That is an
+approved drug whose epitope exists in one isoform of a gene and not the other.
+The verdict in chapter 6 is therefore narrowed to the claim it can carry, which
+is about splicing-modulator therapy specifically, and chapter 12 states the
+counter-case.

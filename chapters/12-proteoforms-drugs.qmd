@@ -1,0 +1,221 @@
+# Proteoforms and drug targeting
+
+::: {.callout-warning}
+## First draft
+Written from `research/12-proteoforms-drugs.yml` and not yet reviewed by a
+second reader.
+:::
+
+A drug does not bind a gene. It binds a molecule with a particular shape, and
+@sec-what-changes showed that one gene's isoforms can differ at exactly the
+surfaces a drug would touch. That raises a practical question with an
+uncomfortable answer. If a gene makes several proteins, which one is the target,
+and can anything be aimed at that one alone?
+
+The vocabulary shifts here. A transcript isoform is an RNA molecule. A proteoform
+is a distinct protein form from one gene, and it absorbs differences this book has
+treated separately: those from splicing, those from genetic variation, and those
+added after translation.
+
+## What can be measured {#sec-measuring}
+
+The gap between ambition and measurement is the largest in this book, and it is
+worth stating numerically before anything else.
+
+A single cell is estimated to carry upwards of a million different protein
+forms, built from about 20,000 coding genes [@proteoformmedicine2026]. What the best
+available method delivers is thousands of protein forms from a cell lysate
+[@xu2024topdown]. The estimate and the measurement are three orders of magnitude
+apart.
+
+![Three quantities on one logarithmic axis. What is estimated to exist and what
+one experiment can see differ by three orders of magnitude, and that gap is what
+limits isoform-level drug
+discovery.](../figures/proteoform-scale.svg){#fig-proteoform-scale width=100%}
+
+Two styles of mass spectrometry divide the problem. Reading fragments of a
+protein gives information about regions of it. Reading the intact molecule
+reports which combination of features one molecule actually carries
+[@xu2024topdown]. Only the second can confirm that two differences sit on the
+same protein, and it is the expensive one.
+
+The specific obstacle is abundance rather than principle. The peptide that
+distinguishes one isoform from another is usually the scarce one, so isoforms go
+unrecorded for want of signal [@korchak2024isprm]. @sec-is-it-translated showed
+the same effect from the other side: detection tracked how well a gene was
+covered.
+
+One way round it is to stop searching and start looking. Long reads from the same
+sample predict which isoform-specific peptides ought to exist, and the instrument
+is then pointed at those [@korchak2024isprm]. It works, raising isoform
+detectability 3.6-fold over the untargeted approach and finding five isoforms
+that no annotation listed [@korchak2024isprm].
+
+The scale of that success is the thing to keep in view. It confirmed protein for
+54 resolved isoforms across 43 of 55 genes, and required a synthetic standard for
+each of 192 peptides it hoped to find [@korchak2024isprm]. This is not yet a
+survey method.
+
+Why this blocks drug discovery in particular has been put plainly. A candidate
+cannot be prioritised when it is unknown whether the splicing event yields a
+protein, what that protein's structure is, and what it does
+[@shaw2022multiomics]. Three therapeutic routes are already in use against
+splicing events, which are immunotherapy, oligonucleotides and small molecules
+[@shaw2022multiomics]. Chapters @sec-cancer-therapeutics and @sec-sma cover
+examples of the second and third.
+
+## A drug that targets one isoform {#sec-isoform-selective}
+
+Claudin-18 settles the question of whether isoform-selective therapy is possible,
+because it already exists in the clinic.
+
+The gene makes two forms that differ only at the front of the protein, and the
+difference traces to which first exon it uses. One belongs to stomach, the other
+to lung [@katoh2026cldn18]. This is the alternative-promoter mechanism of
+@sec-what-changes, arriving as a drug target.
+
+![Two first exons, two proteins differing only at one end, and an antibody that
+binds the loop present in one of
+them.](../figures/cldn18-isoform-target.svg){#fig-cldn18 width=100%}
+
+A monoclonal antibody against the stomach form, given with chemotherapy, holds
+approval in the United States for gastric and gastro-oesophageal junction cancer
+[@katoh2026cldn18]. Avoiding the other isoform was the design goal rather than a
+side benefit, because the lung form is present in healthy lung and binding it
+would do pulmonary harm [@katoh2026cldn18].
+
+The general principle is stated in the same review. The point of targeting an
+isoform rather than a gene is to leave the gene's other products alone
+[@katoh2026cldn18]. That is the therapeutic argument for everything in this book,
+and here it has a licensed drug attached to it.
+
+The companion target in that review is one this book has already met. FGFR2b is
+the epithelial form of a receptor whose IIIb and IIIc exons decide which growth
+factors it answers to, described in @sec-fgfr. Both it and claudin-18 have
+first-generation antibodies against them [@katoh2026cldn18].
+
+Two cautions belong with this. How many patients the approach applies to depends
+on which antibody is used to ask, and the clinical cut-offs differ between trials
+[@katoh2026cldn18]. And resistance is expected to arrive by the mechanism that
+created the target, with the tumour switching to an isoform that no longer
+carries the epitope [@katoh2026cldn18].
+
+::: {.callout-important}
+## This narrows a verdict given earlier
+
+@sec-cancer-therapeutics concludes that the isoform-level view of cancer has
+changed what counts as a driver but not yet what counts as a treatment. That
+holds for splicing-modulator drugs, which is the evidence it was drawn from. It
+does not hold as a general statement. An approved first-line therapy already
+depends on a distinction between two isoforms of one gene.
+:::
+
+## When the tumour changes isoform {#sec-resistance}
+
+The resistance mechanism anticipated for claudin-18 has already been documented
+elsewhere, which is the strongest reason to take it seriously.
+
+HER2 is among the most studied targets in oncology. Reading its transcripts at
+full length raised its protein-coding isoform count from 13 to 90
+[@guardia2025her2]. Most of that diversity is invisible to the assays used in
+the clinic, having been found only across hundreds of primary tumours
+[@guardia2025her2]. Even the two HER2 variants that were already well known
+turned out to be families: nine isoforms lacking exon 16 were found, of which
+only 1 appeared in the reference annotation [@guardia2025her2].
+
+The functional result is the one that matters. Cells made resistant to the
+antibody and to antibody-drug conjugates came to favour forms of the receptor
+that no longer carry the stretch the antibody grips [@guardia2025her2]. The target did not
+disappear. It changed shape.
+
+Cell therapy learned this first. Relapse after CD19-directed treatment has been
+attributed to the tumour switching which isoform of the target it makes
+[@barnkob2022carisoform]. Auditing the antigens proposed for solid tumours
+suggested the problem is general rather than specific to that one target
+[@barnkob2022carisoform].
+
+Those authors turned it into a selection rule worth repeating. Aim at the
+isoforms a tumour gains rather than the ones it can afford to lose
+[@barnkob2022carisoform].
+
+Reviewed across antibody therapy as a whole, the same mechanism recurs on many of
+the field's principal targets [@choi2025asresistance]. One recurring trick is to
+make the target soluble, so it leaves the cell surface and absorbs the drug or
+the immune signal while the cell goes unharmed [@choi2025asresistance]. The death
+receptor FAS is a worked example: skipping one exon removes the membrane anchor,
+and the soluble protein that results blocks the signal that would have killed the
+cell [@choi2025asresistance].
+
+This reframes @sec-drug-targets. AR-V7 was presented there as a target that
+therapy creates. Isoform switching under drug pressure looks like the general
+form of that behaviour rather than a peculiarity of the androgen receptor.
+
+## Modalities being built {#sec-modalities}
+
+If a target is an isoform, the binding reagent has to discriminate at that
+resolution. Two approaches are being developed, and both run into the same
+circular problem.
+
+Single-domain antibodies keep full binding capacity at one-tenth the size of a
+conventional antibody [@vanfossen2025nanobodies]. The property that matters here
+is discrimination rather than affinity, since they can distinguish shapes of the
+same protein that differ only slightly [@vanfossen2025nanobodies]. RPS24 showed
+in @sec-rps24 that reagents of this selectivity can be made, for a difference of
+three residues.
+
+The obstacle is worth stating because it is circular. Raising a reagent against
+one protein form requires having that form in quantity and purity first
+[@vanfossen2025nanobodies]. Measurement and reagent development are each waiting
+on the other.
+
+Targeted degradation inherits the same blind spot in a more dangerous form. A
+degrader designed against a protein does not distinguish that protein's forms, so
+it may remove the harmless one and leave the harmful one to take over, selecting
+for resistance [@cui2026proteoformdegradation]. Stated the other way round, a
+drug aimed at a gene's canonical product may work against some of that gene's
+protein forms and not others, which presents as variable response rather than as
+a design error [@cui2026proteoformdegradation].
+
+That last point deserves emphasis because of where it leads. A proteoform-blind
+drug does not fail loudly. It works in some patients.
+
+## Proteoform medicine as a programme {#sec-programme}
+
+The position now being argued is that protein forms sit between genotype and
+phenotype rather than alongside them [@proteoformmedicine2026]. On that account
+they are not a measurement curiosity but the layer at which disease mechanism and
+drug action actually operate.
+
+Two technologies are named as making the programme feasible, and one of them is
+the long-read sequencing of @sec-three-axes [@proteoformmedicine2026]. The claim
+is framed as a dependency rather than an aspiration. Treatment at this resolution
+requires measurement at this resolution [@proteoformmedicine2026].
+
+::: {.callout-note collapse="true"}
+## What this book can and cannot say about that review
+
+The review is in this corpus as an abstract only, so only its abstract-level
+statements are cited here. Its account of the network biology, its treatment of
+specific diseases, and any figure in it have not been read. Readers who want the
+argument in full should go to the paper rather than to this section, which is
+what @sec-what-novel-means says about secondhand summaries generally.
+:::
+
+## Where this leaves the argument
+
+The honest position has three parts, and they do not resolve into a single mood.
+
+Isoform-selective therapy works. There is an approved drug whose selectivity
+rests on which first exon a gene uses, and the design deliberately spared the
+other isoform to avoid harming healthy tissue.
+
+Isoform-blind therapy fails in a characteristic way. Tumours escape by switching
+to a form the drug cannot see, which has been documented for HER2, for CD19 and
+across antibody therapy generally. A target defined at gene level carries that
+failure mode built in.
+
+And the measurement is not yet adequate to the ambition. Confirming that a
+particular protein form is present in a particular tissue, in enough copies, with
+its epitope intact, remains a targeted experiment rather than a survey. Until
+that changes, isoform-level drug discovery will proceed one gene at a time, which
+is roughly where @sec-rps24 found it.

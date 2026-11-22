@@ -231,5 +231,9 @@ drug was insufficiently effective at the doses tested
 [@h3b8800phase1lrmds2025].
 
 A mechanism can be correct, specific and well characterised, and still not
-yield a drug. The isoform-level view of cancer has changed what counts as a
-driver. It has not yet changed what counts as a treatment.
+yield a drug. For therapy that works by modulating splicing, the isoform-level
+view of cancer has changed what counts as a driver without yet changing what
+counts as a treatment.
+
+Aiming a drug at one isoform directly is a different proposition, and it has
+already succeeded. @sec-isoform-selective gives that case.

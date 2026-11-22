@@ -1,0 +1,806 @@
+area: proteoforms-drugs
+researcher: claude-opus-5
+date: 2026-11-21
+corpus: paperclip
+claims:
+- id: DRG-001
+  claim: 'The scale being proposed is far beyond the gene count: a single cell is estimated to hold more
+    than one million distinct protein forms built from about 20,000 coding genes.'
+  topic: proteoform medicine as a programme
+  source:
+    doc_id: '165197193'
+    title: 'Proteoform medicine: characterizing and targeting protein forms in human disease'
+    authors: Korchak, J. A.; Stephen Yi, S.; Kelleher, N. L.; Sahni, N.; Sheynkman, G. M.
+    journal: Nature Reviews Genetics
+    year: 2026
+    doi: 10.1038/s41576-025-00915-1
+    bibkey: proteoformmedicine2026
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/165197193#L1
+    quote: There are estimated to be more than one million distinct protein variants produced from ~20,000
+      protein-coding genes in a given cell
+  confidence: high
+  figure_idea: 'A single descending scale on one axis: coding genes, annotated transcripts, proteoforms
+    estimated per cell, and proteoforms a single top-down experiment reports. The gap between the last
+    two is the subject of this chapter.
+
+    '
+- id: DRG-002
+  claim: 'The argument placed protein forms between genotype and phenotype rather than alongside them,
+    which is what makes them a therapeutic target and not only a measurement problem.
+
+    '
+  topic: proteoform medicine as a programme
+  source:
+    doc_id: '165197193'
+    title: 'Proteoform medicine: characterizing and targeting protein forms in human disease'
+    authors: Korchak, J. A.; Stephen Yi, S.; Kelleher, N. L.; Sahni, N.; Sheynkman, G. M.
+    journal: Nature Reviews Genetics
+    year: 2026
+    doi: 10.1038/s41576-025-00915-1
+    bibkey: proteoformmedicine2026
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/165197193#L1
+    quote: They are the crucial link between genotype and phenotype.
+  confidence: high
+- id: DRG-003
+  claim: 'Two technologies are named as the ones making the programme feasible, and one of them is the
+    long-read sequencing this book has already covered.
+
+    '
+  topic: proteoform medicine as a programme
+  source:
+    doc_id: '165197193'
+    title: 'Proteoform medicine: characterizing and targeting protein forms in human disease'
+    authors: Korchak, J. A.; Stephen Yi, S.; Kelleher, N. L.; Sahni, N.; Sheynkman, G. M.
+    journal: Nature Reviews Genetics
+    year: 2026
+    doi: 10.1038/s41576-025-00915-1
+    bibkey: proteoformmedicine2026
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/165197193#L1
+    quote: including long-read transcriptomics and emerging methods for direct protein sequencing
+  confidence: high
+- id: DRG-004
+  claim: 'The claim is stated as a dependency rather than an aspiration: targeted treatment at this resolution
+    requires measurement at this resolution.
+
+    '
+  topic: proteoform medicine as a programme
+  source:
+    doc_id: '165197193'
+    title: 'Proteoform medicine: characterizing and targeting protein forms in human disease'
+    authors: Korchak, J. A.; Stephen Yi, S.; Kelleher, N. L.; Sahni, N.; Sheynkman, G. M.
+    journal: Nature Reviews Genetics
+    year: 2026
+    doi: 10.1038/s41576-025-00915-1
+    bibkey: proteoformmedicine2026
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/165197193#L1
+    quote: We believe that precision medicine will require precision proteomics.
+  confidence: high
+- id: DRG-010
+  claim: 'The two styles of mass spectrometry answer different questions. Reading fragments gives information
+    about regions of a protein; reading the intact molecule gives the combination of features carried
+    by one molecule.
+
+    '
+  topic: measuring proteoforms
+  source:
+    doc_id: PMC11257149
+    title: 'Mass spectrometry-intensive top-down proteomics: an update on technology advancements and
+      biomedical applications'
+    authors: Xu, T.; Wang, Q.; Wang, Q.; Sun, L.
+    journal: Analytical Methods
+    year: 2024
+    doi: 10.1039/d4ay00651h
+    bibkey: xu2024topdown
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L8
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11257149#L8
+    quote: TDP deciphers the combinatorial PTMs and amino acid variations in individual proteoforms
+  confidence: high
+- id: DRG-011
+  claim: What the intact-molecule approach currently delivers is thousands of protein forms from one cell
+    lysate, which is three orders of magnitude below the estimate of more than one million for a single
+    cell.
+  topic: measuring proteoforms
+  source:
+    doc_id: PMC11257149
+    title: 'Mass spectrometry-intensive top-down proteomics: an update on technology advancements and
+      biomedical applications'
+    authors: Xu, T.; Wang, Q.; Wang, Q.; Sun, L.
+    journal: Analytical Methods
+    year: 2024
+    doi: 10.1039/d4ay00651h
+    bibkey: xu2024topdown
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L5
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11257149#L5
+    quote: In a single TDP study, thousands of proteoforms can be identified and quantified from a cell
+      lysate.
+  confidence: high
+- id: DRG-012
+  claim: 'The specific obstacle is abundance, not principle. The peptide that distinguishes one isoform
+    from another is usually rare, so isoforms go unrecorded for want of signal.
+
+    '
+  topic: measuring proteoforms
+  source:
+    doc_id: PMC11544703
+    title: IS-PRM-Based Peptide Targeting Informed by Long-Read Sequencing for Alternative Proteome Detection
+    authors: Korchak, J. A.; Jeffery, E. D.; Bandyopadhyay, S.; Jordan, B. T.; Lehe, M. D.; Watts, E.
+      F.; Fenix, A.; Wilhelm, M.; Sheynkman, G. M.
+    journal: Journal of the American Society for Mass Spectrometry
+    year: 2024
+    doi: 10.1021/jasms.4c00119
+    bibkey: korchak2024isprm
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L11
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11544703#L11
+    quote: detection of relatively scarce isoform-specific peptides is challenging, with many protein
+      isoforms remaining uncharted due to technical limitations
+  confidence: high
+- id: DRG-013
+  claim: 'One way round it is to stop searching and start looking: use long reads from the same sample
+    to predict which isoform-specific peptides should exist, then target the instrument at those.
+
+    '
+  topic: measuring proteoforms
+  source:
+    doc_id: PMC11544703
+    title: IS-PRM-Based Peptide Targeting Informed by Long-Read Sequencing for Alternative Proteome Detection
+    authors: Korchak, J. A.; Jeffery, E. D.; Bandyopadhyay, S.; Jordan, B. T.; Lehe, M. D.; Watts, E.
+      F.; Fenix, A.; Wilhelm, M.; Sheynkman, G. M.
+    journal: Journal of the American Society for Mass Spectrometry
+    year: 2024
+    doi: 10.1021/jasms.4c00119
+    bibkey: korchak2024isprm
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L11
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11544703#L11
+    quote: a targeted proteogenomic approach that leverages sample-matched long-read RNA sequencing (lrRNA-seq)
+      data to predict potential protein isoforms with prior transcript evidence
+  confidence: high
+- id: DRG-014
+  claim: Targeting worked, raising isoform detectability 3.6-fold over the untargeted method, and it turned
+    up five isoforms that no annotation listed.
+  topic: measuring proteoforms
+  source:
+    doc_id: PMC11544703
+    title: IS-PRM-Based Peptide Targeting Informed by Long-Read Sequencing for Alternative Proteome Detection
+    authors: Korchak, J. A.; Jeffery, E. D.; Bandyopadhyay, S.; Jordan, B. T.; Lehe, M. D.; Watts, E.
+      F.; Fenix, A.; Wilhelm, M.; Sheynkman, G. M.
+    journal: Journal of the American Society for Mass Spectrometry
+    year: 2024
+    doi: 10.1021/jasms.4c00119
+    bibkey: korchak2024isprm
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L11
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11544703#L11
+    quote: Tomahto increased detectability of isoforms by 3.6-fold, resulting in the identification of
+      five previously unannotated isoforms
+  confidence: high
+- id: DRG-015
+  claim: The scale is the thing to keep in view. The experiment confirmed protein for 54 resolved isoforms
+    across 43 of 55 genes, having had to synthesise a standard for each of 192 peptides it wanted to find.
+  topic: measuring proteoforms
+  source:
+    doc_id: PMC11544703
+    title: IS-PRM-Based Peptide Targeting Informed by Long-Read Sequencing for Alternative Proteome Detection
+    authors: Korchak, J. A.; Jeffery, E. D.; Bandyopadhyay, S.; Jordan, B. T.; Lehe, M. D.; Watts, E.
+      F.; Fenix, A.; Wilhelm, M.; Sheynkman, G. M.
+    journal: Journal of the American Society for Mass Spectrometry
+    year: 2024
+    doi: 10.1021/jasms.4c00119
+    bibkey: korchak2024isprm
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L11
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11544703#L11
+    quote: Our method detected protein isoform expression for 43 out of 55 genes corresponding to 54 resolved
+      isoforms.
+  confidence: high
+- id: DRG-016
+  claim: 'Why this blocks drug discovery specifically: a candidate target cannot be prioritised when it
+    is unknown whether the event yields a protein, what that protein looks like, or what it does.
+
+    '
+  topic: measuring proteoforms
+  source:
+    doc_id: PMC9730332
+    title: Multi-omics approach to identifying isoform variants as therapeutic targets in cancer patients
+    authors: Shaw, T. I.; Zhao, B.; Li, Y.; Wang, H.; Wang, L.; Manley, B.; Stewart, P. A.; Karolak, A.
+    journal: Frontiers in Oncology
+    year: 2022
+    doi: 10.3389/fonc.2022.1051487
+    bibkey: shaw2022multiomics
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L9
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9730332#L9
+    quote: identifying actionable ASE targets remains challenging due to the uncertainty of its protein
+      product, structure impact, and proteoform (protein isoform) function
+  confidence: high
+- id: DRG-017
+  claim: 'The same review lists the three therapeutic routes already in use against splicing events, which
+    are immunotherapy, oligonucleotides and small molecules.
+
+    '
+  topic: measuring proteoforms
+  source:
+    doc_id: PMC9730332
+    title: Multi-omics approach to identifying isoform variants as therapeutic targets in cancer patients
+    authors: Shaw, T. I.; Zhao, B.; Li, Y.; Wang, H.; Wang, L.; Manley, B.; Stewart, P. A.; Karolak, A.
+    journal: Frontiers in Oncology
+    year: 2022
+    doi: 10.3389/fonc.2022.1051487
+    bibkey: shaw2022multiomics
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L9
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9730332#L9
+    quote: can be targeted by immunotherapy, oligonucleotide therapy, and small molecule inhibition
+  confidence: high
+- id: DRG-020
+  claim: 'Two forms of claudin-18 differ only at the front of the protein, and the difference traces to
+    which first exon the gene uses. One form belongs to stomach, the other to lung.
+
+    '
+  topic: isoform-selective approved drugs
+  source:
+    doc_id: PMC13650739
+    title: CLDN18 and FGFR2 splicing variants are emerging tumor-associated antigens for cancer therapy
+    authors: Katoh, M.; Katoh, M.
+    journal: Frontiers in Molecular Medicine
+    year: 2026
+    doi: 10.3389/fmmed.2026.1927389
+    bibkey: katoh2026cldn18
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L17
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13650739#L17
+    quote: except for the N-terminal cytoplasmic region, the first transmembrane domain and ECL1 derived
+      from isoform-specific first exons
+  confidence: high
+  figure_idea: 'The CLDN18 locus with its two alternative first exons, the two proteins beneath differing
+    only at the N-terminal end and first loop, and the antibody drawn binding the loop present in one
+    of them. The drug''s selectivity and the promoter choice are the same fact.
+
+    '
+- id: DRG-021
+  claim: 'A monoclonal antibody against the stomach form, given with chemotherapy, holds regulatory approval
+    in the United States for gastric and gastro-oesophageal junction cancer.
+
+    '
+  topic: isoform-selective approved drugs
+  source:
+    doc_id: PMC13650739
+    title: CLDN18 and FGFR2 splicing variants are emerging tumor-associated antigens for cancer therapy
+    authors: Katoh, M.; Katoh, M.
+    journal: Frontiers in Molecular Medicine
+    year: 2026
+    doi: 10.3389/fmmed.2026.1927389
+    bibkey: katoh2026cldn18
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L13
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13650739#L13
+    quote: in combination with conventional chemotherapies has been approved for the treatment of G/GEJ
+      cancer patients by the US Food and Drug Administration (FDA)
+  confidence: high
+- id: DRG-022
+  claim: 'Avoiding the other isoform was the design goal, because the lung form is present in healthy
+    lung and hitting it would cause pulmonary harm.
+
+    '
+  topic: isoform-selective approved drugs
+  source:
+    doc_id: PMC13650739
+    title: CLDN18 and FGFR2 splicing variants are emerging tumor-associated antigens for cancer therapy
+    authors: Katoh, M.; Katoh, M.
+    journal: Frontiers in Molecular Medicine
+    year: 2026
+    doi: 10.3389/fmmed.2026.1927389
+    bibkey: katoh2026cldn18
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L18
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13650739#L18
+    quote: which was expected to prevent cross-reaction to CLDN18.1 and reduce pulmonary adverse effects
+  confidence: high
+- id: DRG-023
+  claim: 'The general case is stated plainly in the same review: the point of targeting an isoform rather
+    than a gene is to leave the gene''s other products alone.
+
+    '
+  topic: isoform-selective approved drugs
+  source:
+    doc_id: PMC13650739
+    title: CLDN18 and FGFR2 splicing variants are emerging tumor-associated antigens for cancer therapy
+    authors: Katoh, M.; Katoh, M.
+    journal: Frontiers in Molecular Medicine
+    year: 2026
+    doi: 10.3389/fmmed.2026.1927389
+    bibkey: katoh2026cldn18
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L9
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13650739#L9
+    quote: with one potential benefit being reduced off-target effects by not targeting all isoforms from
+      a gene
+  confidence: high
+- id: DRG-024
+  claim: 'The companion target in the same review is the receptor isoform this book has already met in
+    a developmental context, showing the same gene reached by a different antibody.
+
+    '
+  topic: isoform-selective approved drugs
+  source:
+    doc_id: PMC13650739
+    title: CLDN18 and FGFR2 splicing variants are emerging tumor-associated antigens for cancer therapy
+    authors: Katoh, M.; Katoh, M.
+    journal: Frontiers in Molecular Medicine
+    year: 2026
+    doi: 10.3389/fmmed.2026.1927389
+    bibkey: katoh2026cldn18
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L5
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13650739#L5
+    quote: Zolbetuximab and bemarituzumab are first-generation monoclonal antibodies (mAbs) targeting
+      CLDN18.2 and FGFR2b, respectively
+  confidence: high
+- id: DRG-025
+  claim: 'How many patients this applies to depends on which antibody is used to ask, and the review says
+    the clinical cut-offs are inconsistent between trials.
+
+    '
+  topic: isoform-selective approved drugs
+  source:
+    doc_id: PMC13650739
+    title: CLDN18 and FGFR2 splicing variants are emerging tumor-associated antigens for cancer therapy
+    authors: Katoh, M.; Katoh, M.
+    journal: Frontiers in Molecular Medicine
+    year: 2026
+    doi: 10.3389/fmmed.2026.1927389
+    bibkey: katoh2026cldn18
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L17
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13650739#L17
+    quote: Cut-off values for CLDN18.2 IHC in clinical settings are confusing, because different diagnostic
+      antibodies and cut-offs are used in clinical trials
+  confidence: high
+- id: DRG-026
+  claim: 'Resistance is anticipated to arrive through the same mechanism that created the target, by the
+    tumour switching to an isoform that no longer carries the epitope.
+
+    '
+  topic: isoform switching as resistance
+  source:
+    doc_id: PMC13650739
+    title: CLDN18 and FGFR2 splicing variants are emerging tumor-associated antigens for cancer therapy
+    authors: Katoh, M.; Katoh, M.
+    journal: Frontiers in Molecular Medicine
+    year: 2026
+    doi: 10.3389/fmmed.2026.1927389
+    bibkey: katoh2026cldn18
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L5
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13650739#L5
+    quote: would address resistance mechanisms, such as epitope-losing isoform switching and immune evasion
+  confidence: high
+- id: DRG-030
+  claim: Long reads applied to one of the best-studied drug targets in oncology raised its protein-coding
+    isoform count from 13 to 90.
+  topic: isoform switching as resistance
+  source:
+    doc_id: PMC12400952
+    title: Alternative splicing generates HER2 isoform diversity underlying antibody–drug conjugate resistance
+      in breast cancer
+    authors: Guardia, G. D.; dos Anjos, C. H.; Rangel-Pozzo, A.; dos Santos, F. F.; Birbrair, A.; Asprino,
+      P. F.; Camargo, A. A.; Galante, P. A.
+    journal: Genome Research
+    year: 2025
+    doi: 10.1101/gr.280304.124
+    bibkey: guardia2025her2
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L8
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12400952#L8
+    quote: We expand the catalog of known HER2 protein-coding isoforms from 13 to 90
+  confidence: high
+- id: DRG-031
+  claim: 'Cells made resistant to the antibody and to antibody-drug conjugates moved their expression
+    toward isoforms that lack the region the antibody binds.
+
+    '
+  topic: isoform switching as resistance
+  source:
+    doc_id: PMC12400952
+    title: Alternative splicing generates HER2 isoform diversity underlying antibody–drug conjugate resistance
+      in breast cancer
+    authors: Guardia, G. D.; dos Anjos, C. H.; Rangel-Pozzo, A.; dos Santos, F. F.; Birbrair, A.; Asprino,
+      P. F.; Camargo, A. A.; Galante, P. A.
+    journal: Genome Research
+    year: 2025
+    doi: 10.1101/gr.280304.124
+    bibkey: guardia2025her2
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L8
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12400952#L8
+    quote: drug-resistant cells shift their expression toward isoforms lacking antibody-binding domains
+  confidence: high
+- id: DRG-032
+  claim: 'Most of that diversity is invisible to the assays used in the clinic, having been found only
+    by reading full-length transcripts across hundreds of primary tumours.
+
+    '
+  topic: isoform switching as resistance
+  source:
+    doc_id: PMC12400952
+    title: Alternative splicing generates HER2 isoform diversity underlying antibody–drug conjugate resistance
+      in breast cancer
+    authors: Guardia, G. D.; dos Anjos, C. H.; Rangel-Pozzo, A.; dos Santos, F. F.; Birbrair, A.; Asprino,
+      P. F.; Camargo, A. A.; Galante, P. A.
+    journal: Genome Research
+    year: 2025
+    doi: 10.1101/gr.280304.124
+    bibkey: guardia2025her2
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L8
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12400952#L8
+    quote: revealing novel transcripts that were previously unrecognized and are not assessed in routine
+      clinical practice
+  confidence: high
+- id: DRG-033
+  claim: Even the two HER2 variants that were already well known turned out to be families rather than
+    single entities. Nine isoforms lacking exon 16 were found, of which only 1 was in the reference annotation.
+  topic: isoform switching as resistance
+  source:
+    doc_id: PMC12400952
+    title: Alternative splicing generates HER2 isoform diversity underlying antibody–drug conjugate resistance
+      in breast cancer
+    authors: Guardia, G. D.; dos Anjos, C. H.; Rangel-Pozzo, A.; dos Santos, F. F.; Birbrair, A.; Asprino,
+      P. F.; Camargo, A. A.; Galante, P. A.
+    journal: Genome Research
+    year: 2025
+    doi: 10.1101/gr.280304.124
+    bibkey: guardia2025her2
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L27
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12400952#L27
+    quote: 'we identified nine distinct isoforms that lost exon 16 (Δ16HER2 variants): only one reported
+      in GENCODE'
+  confidence: high
+- id: DRG-034
+  claim: 'The lesson was already available from cell therapy. Relapse after CD19-directed treatment has
+    been attributed to the tumour switching which isoform of the target it makes.
+
+    '
+  topic: isoform switching as resistance
+  source:
+    doc_id: PMC9327123
+    title: Target isoforms are an overlooked challenge and opportunity in chimeric antigen receptor cell
+      therapy
+    authors: Bogetofte Barnkob, M.; Vitting-Seerup, K.; Rønn Olsen, L.
+    journal: Immunotherapy Advances
+    year: 2022
+    doi: 10.1093/immadv/ltac009
+    bibkey: barnkob2022carisoform
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L7
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9327123#L7
+    quote: target isoform switching has been shown to cause tumour relapse, but little is known about
+      the isoforms of CAR targets in solid cancers
+  confidence: high
+- id: DRG-035
+  claim: 'Extending the audit to the antigens proposed for solid tumours suggested the problem is general
+    rather than particular to that one target.
+
+    '
+  topic: isoform switching as resistance
+  source:
+    doc_id: PMC9327123
+    title: Target isoforms are an overlooked challenge and opportunity in chimeric antigen receptor cell
+      therapy
+    authors: Bogetofte Barnkob, M.; Vitting-Seerup, K.; Rønn Olsen, L.
+    journal: Immunotherapy Advances
+    year: 2022
+    doi: 10.1093/immadv/ltac009
+    bibkey: barnkob2022carisoform
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L19
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9327123#L19
+    quote: the targetability of most of the currently used and proposed antigens for CAR therapy against
+      solid tumour targets may be negatively affected by isoform switching
+  confidence: high
+- id: DRG-036
+  claim: 'Those authors turned the problem round into a selection rule: aim at the isoforms a tumour gains
+    rather than the ones it can afford to lose.
+
+    '
+  topic: isoform switching as resistance
+  source:
+    doc_id: PMC9327123
+    title: Target isoforms are an overlooked challenge and opportunity in chimeric antigen receptor cell
+      therapy
+    authors: Bogetofte Barnkob, M.; Vitting-Seerup, K.; Rønn Olsen, L.
+    journal: Immunotherapy Advances
+    year: 2022
+    doi: 10.1093/immadv/ltac009
+    bibkey: barnkob2022carisoform
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L21
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9327123#L21
+    quote: specifically targeting the small number of isoforms that are not lost, but enriched in cell-membrane
+      proteins in cancer cells
+  confidence: high
+- id: DRG-037
+  claim: 'Reviewed across antibody therapy as a whole, the same mechanism recurs on many of the field''s
+    principal targets rather than on a few.
+
+    '
+  topic: isoform switching as resistance
+  source:
+    doc_id: PMC12732648
+    title: 'Alternative Splicing-Mediated Resistance to Antibody-Based Therapies: Mechanisms and Emerging
+      Therapeutic Strategies'
+    authors: Choi, S.; Kang, J.; Kim, J. H.
+    journal: International Journal of Molecular Sciences
+    year: 2025
+    doi: 10.3390/ijms262411918
+    bibkey: choi2025asresistance
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L5
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12732648#L5
+    quote: how AS-generated isoforms remodel surface antigen structure and function across key therapeutic
+      targets
+  confidence: high
+- id: DRG-038
+  claim: 'One recurring trick is to make the target soluble, so that it leaves the cell surface and absorbs
+    the drug or the immune signal without the cell being harmed.
+
+    '
+  topic: isoform switching as resistance
+  source:
+    doc_id: PMC12732648
+    title: 'Alternative Splicing-Mediated Resistance to Antibody-Based Therapies: Mechanisms and Emerging
+      Therapeutic Strategies'
+    authors: Choi, S.; Kang, J.; Kim, J. H.
+    journal: International Journal of Molecular Sciences
+    year: 2025
+    doi: 10.3390/ijms262411918
+    bibkey: choi2025asresistance
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L5
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12732648#L5
+    quote: the secretion of soluble decoy isoforms that evade immune recognition
+  confidence: high
+- id: DRG-039
+  claim: 'A worked example is the death receptor FAS, where skipping one exon removes the membrane anchor
+    and the resulting soluble protein blocks the signal that would have killed the cell.
+
+    '
+  topic: isoform switching as resistance
+  source:
+    doc_id: PMC12732648
+    title: 'Alternative Splicing-Mediated Resistance to Antibody-Based Therapies: Mechanisms and Emerging
+      Therapeutic Strategies'
+    authors: Choi, S.; Kang, J.; Kim, J. H.
+    journal: International Journal of Molecular Sciences
+    year: 2025
+    doi: 10.3390/ijms262411918
+    bibkey: choi2025asresistance
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L27
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12732648#L27
+    quote: SRSF7 promotes exon 6 skipping in FAS, resulting in a soluble Fas isoform that lacks the transmembrane
+      domain
+  confidence: high
+- id: DRG-040
+  claim: A smaller binding reagent is one proposed route to isoform selectivity. Single-domain antibodies
+    keep full binding capacity at one-tenth the size of a conventional antibody.
+  topic: emerging modalities
+  source:
+    doc_id: PMC12362336
+    title: 'Harnessing Nanobodies for Precision Targeting of Proteoforms: Opportunities and Challenges
+      in Therapeutics and Diagnostics'
+    authors: Van Fossen, E. M.; Rodriguez, O.; Berger, M.; Wooldridge, R.; Gorham, L.; Shouaib, A.; Sims,
+      A. C.; Melchior, J. T.; Powell, S. M.
+    journal: ACS Chemical Biology
+    year: 2025
+    doi: 10.1021/acschembio.5c00329
+    bibkey: vanfossen2025nanobodies
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L11
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12362336#L11
+    quote: Nbs retain full antigen-binding capacity but are one-tenth the size of conventional antibodies
+      (Abs)
+  confidence: high
+- id: DRG-041
+  claim: 'The property that matters for this purpose is discrimination rather than affinity: they can
+    tell apart shapes of the same protein that differ only slightly.
+
+    '
+  topic: emerging modalities
+  source:
+    doc_id: PMC12362336
+    title: 'Harnessing Nanobodies for Precision Targeting of Proteoforms: Opportunities and Challenges
+      in Therapeutics and Diagnostics'
+    authors: Van Fossen, E. M.; Rodriguez, O.; Berger, M.; Wooldridge, R.; Gorham, L.; Shouaib, A.; Sims,
+      A. C.; Melchior, J. T.; Powell, S. M.
+    journal: ACS Chemical Biology
+    year: 2025
+    doi: 10.1021/acschembio.5c00329
+    bibkey: vanfossen2025nanobodies
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L8
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12362336#L8
+    quote: the heightened sensitivity and ability to distinguish subtle changes in the conformation of
+      a given protein
+  confidence: high
+- id: DRG-042
+  claim: 'The obstacle is circular and worth stating, because raising a reagent against one protein form
+    requires having that form in quantity and purity first.
+
+    '
+  topic: emerging modalities
+  source:
+    doc_id: PMC12362336
+    title: 'Harnessing Nanobodies for Precision Targeting of Proteoforms: Opportunities and Challenges
+      in Therapeutics and Diagnostics'
+    authors: Van Fossen, E. M.; Rodriguez, O.; Berger, M.; Wooldridge, R.; Gorham, L.; Shouaib, A.; Sims,
+      A. C.; Melchior, J. T.; Powell, S. M.
+    journal: ACS Chemical Biology
+    year: 2025
+    doi: 10.1021/acschembio.5c00329
+    bibkey: vanfossen2025nanobodies
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L8
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12362336#L8
+    quote: significant challenges in obtaining sufficient quantities and purities of specific proteoform
+      antigens
+  confidence: high
+- id: DRG-043
+  claim: 'Targeted degradation inherits the same blind spot. A degrader designed against a protein does
+    not distinguish that protein''s forms, so it may remove the harmless one and leave the harmful one
+    to take over.
+
+    '
+  topic: emerging modalities
+  source:
+    doc_id: PMC13159605
+    title: Targeted proteoform degradation for precision drug design, delivery, and therapy
+    authors: Cui, C.; Zhang, H.; Wang, X.; Li, N.; Zhan, X.
+    journal: Drug Delivery
+    year: 2026
+    doi: 10.1080/10717544.2026.2665871
+    bibkey: cui2026proteoformdegradation
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L23
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13159605#L23
+    quote: cannot distinguish different proteoforms that are derived from a canonical protein, potentially
+      preferentially degrading non-pathogenic subtypes and resulting in the expansion of drug-resistant
+      clones
+  confidence: high
+- id: DRG-044
+  claim: 'Stated the other way round, a drug aimed at a gene''s canonical product may work against some
+    of that gene''s protein forms and not others, which shows up as variable response rather than as a
+    design error.
+
+    '
+  topic: emerging modalities
+  source:
+    doc_id: PMC13159605
+    title: Targeted proteoform degradation for precision drug design, delivery, and therapy
+    authors: Cui, C.; Zhang, H.; Wang, X.; Li, N.; Zhan, X.
+    journal: Drug Delivery
+    year: 2026
+    doi: 10.1080/10717544.2026.2665871
+    bibkey: cui2026proteoformdegradation
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L62
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13159605#L62
+    quote: the drug might be effective against some proteoforms but ineffective against the others, resulting
+      in adverse effects or failure to achieve the expected therapeutic outcomes
+  confidence: high
+leads:
+- note: 'The Nature Reviews Genetics review is abstract-only in this corpus, so only its abstract-level
+    statements are cited. Its author list and journal were not in meta.json and are marked RESOLVE_FROM_DOI
+    for scripts/resolve_metadata.py to fill from Crossref.
+
+    '
+  why: Everything beyond the abstract must come from primary papers, not from the review.
+- note: 'Cui et al. cite mutant KRAS proteoforms (G12D and G12V) as selectively degradable by a PROTAC-like
+    molecule while wild-type KRAS is spared, attributing it to Popow et al. and Su et al. Not read.
+
+    '
+  why: It would be the single best concrete example of proteoform-selective degradation if the primary
+    paper can be read.
+- note: 'The CLDN18.2 review reports objective response rates for a long list of next-generation biologics
+    against the same isoform, several higher than the approved antibody, and names the phase of each.
+    Not recorded here.
+
+    '
+  why: A table of these would date quickly, but it is the best available picture of what is in development.
+- note: 'Reported positivity rates for CLDN18.2 differ substantially by diagnostic antibody and cut-off,
+    from roughly 38 to 49 per cent of patients in clinical studies. The numbers were read but not recorded
+    as claims.
+
+    '
+  why: A companion diagnostic that reads an isoform is itself an isoform-biology problem, and the spread
+    is the point.
+- note: 'A 3DisoTarget resource for expanding target space from genes to disease-relevant molecular forms
+    surfaced in search but was not read.
+
+    '
+  why: Would bear directly on the forward-looking section.
+- note: 'Alternative splicing of the TrkC receptor intracellular domain was reported to change the ectodomain
+    conformation, enabling isoform-selective ligands (PMC7452315). Not read.
+
+    '
+  why: A mechanism by which an intracellular difference becomes druggable from outside the cell.

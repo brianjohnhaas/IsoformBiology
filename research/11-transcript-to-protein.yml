@@ -1,0 +1,1318 @@
+area: transcript-to-protein
+researcher: claude-opus-5
+date: 2026-11-21
+corpus: paperclip
+claims:
+- id: PRO-001
+  claim: A systematic pairwise comparison of annotated human protein isoforms attributed 70 per cent of
+    the differences at the start of the protein to the choice of transcription start site, and only 9
+    per cent to splicing within the 5' UTR.
+  topic: mechanism to protein terminus
+  source:
+    doc_id: PMC12047184
+    title: Biosurfer for systematic tracking of regulatory mechanisms leading to protein isoform diversity
+    authors: Murali, M.; Saquing, J.; Lu, S.; Gao, Z.; Watts, E. F.; Jordan, B.; Wakefield, Z. P.; Fiszbein,
+      A.; Cooper, D. R.; Castaldi, P. J.; Korkin, D.; Sheynkman, G. M.
+    journal: Genome Research
+    year: 2025
+    doi: 10.1101/gr.279317.124
+    bibkey: murali2025biosurfer
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L15
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12047184#L15
+    quote: finding a majority (70%) of variable N-termini are due to the alternative transcription start
+      sites, while only 9% arise from 5′ UTR alternative splicing (AS)
+  confidence: high
+  figure_idea: 'Three horizontal bands, one per protein region (N-terminal, internal, C-terminal), each
+    broken into the mechanisms that produce variation there. Shows that the mechanism is predictable from
+    the region.
+
+    '
+- id: PRO-002
+  claim: The same analysis covered 35,082 isoform pairs drawn from the reference human annotation, so
+    the proportions are a property of what is annotated rather than of one experiment.
+  topic: mechanism to protein terminus
+  source:
+    doc_id: PMC12047184
+    title: Biosurfer for systematic tracking of regulatory mechanisms leading to protein isoform diversity
+    authors: Murali, M.; Saquing, J.; Lu, S.; Gao, Z.; Watts, E. F.; Jordan, B.; Wakefield, Z. P.; Fiszbein,
+      A.; Cooper, D. R.; Castaldi, P. J.; Korkin, D.; Sheynkman, G. M.
+    journal: Genome Research
+    year: 2025
+    doi: 10.1101/gr.279317.124
+    bibkey: murali2025biosurfer
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L15
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12047184#L15
+    quote: we analyzed the differences in 35,082 pairs of GENCODE annotated protein isoforms
+  confidence: high
+- id: PRO-003
+  claim: 'Differences at the end of the protein had a different dominant cause from differences at the
+    start: 72 per cent arose from a shift in reading frame caused by splicing or by a retained intron.'
+  topic: mechanism to protein terminus
+  source:
+    doc_id: PMC12047184
+    title: Biosurfer for systematic tracking of regulatory mechanisms leading to protein isoform diversity
+    authors: Murali, M.; Saquing, J.; Lu, S.; Gao, Z.; Watts, E. F.; Jordan, B.; Wakefield, Z. P.; Fiszbein,
+      A.; Cooper, D. R.; Castaldi, P. J.; Korkin, D.; Sheynkman, G. M.
+    journal: Genome Research
+    year: 2025
+    doi: 10.1101/gr.279317.124
+    bibkey: murali2025biosurfer
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L15
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12047184#L15
+    quote: Of variable C-termini, 72% involve splice- or intron retention-induced reading frameshifts.
+  confidence: high
+- id: PRO-004
+  claim: A codon can be split across a splice junction, so that joining different exons changes a single
+    amino acid without adding or removing any. The authors found this accounted for 17 per cent of internal
+    sequence changes and named the pattern ragged codons.
+  topic: mechanism to protein terminus
+  source:
+    doc_id: PMC12047184
+    title: Biosurfer for systematic tracking of regulatory mechanisms leading to protein isoform diversity
+    authors: Murali, M.; Saquing, J.; Lu, S.; Gao, Z.; Watts, E. F.; Jordan, B.; Wakefield, Z. P.; Fiszbein,
+      A.; Cooper, D. R.; Castaldi, P. J.; Korkin, D.; Sheynkman, G. M.
+    journal: Genome Research
+    year: 2025
+    doi: 10.1101/gr.279317.124
+    bibkey: murali2025biosurfer
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L15
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12047184#L15
+    quote: For 17% of internal sequence changes, such split codon patterns lead to single residue differences,
+      termed “ragged codons.”
+  confidence: high
+- id: PRO-005
+  claim: 'Applying the same comparison to a proteome predicted from long-read sequencing of a human cell
+    line reproduced the annotation-derived proportions, with the one difference that more transcripts
+    were predicted to be degraded rather than translated.
+
+    '
+  topic: mechanism to protein terminus
+  source:
+    doc_id: PMC12047184
+    title: Biosurfer for systematic tracking of regulatory mechanisms leading to protein isoform diversity
+    authors: Murali, M.; Saquing, J.; Lu, S.; Gao, Z.; Watts, E. F.; Jordan, B.; Wakefield, Z. P.; Fiszbein,
+      A.; Cooper, D. R.; Castaldi, P. J.; Korkin, D.; Sheynkman, G. M.
+    journal: Genome Research
+    year: 2025
+    doi: 10.1101/gr.279317.124
+    bibkey: murali2025biosurfer
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L15
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12047184#L15
+    quote: with the exception of a higher proportion of transcripts predicted to undergo nonsense-mediated
+      decay
+  confidence: high
+- id: PRO-010
+  claim: 'The length of a 5'' UTR, not just its sequence content, determines which start codon the ribosome
+    uses, so a change confined to untranslated sequence can change the protein that is made.
+
+    '
+  topic: five prime UTR and protein sequence
+  source:
+    doc_id: PMC13219423
+    title: 5′ UTR length shapes alternative N-terminal protein isoforms across cancers and in rare disease
+    authors: Ly, J.; Smith, E. M.; Di Bernardo, M.; Tao, Y. F.; Black, E. M.; Khalizeva, E.; Cheeseman,
+      I. M.
+    journal: EMBO Reports
+    year: 2026
+    doi: 10.1038/s44319-026-00776-7
+    bibkey: ly2026utrlength
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L6
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13219423#L6
+    quote: 5′ UTR length plays a direct role in alternative N-terminal protein isoform production by controlling
+      start codon selection
+  confidence: high
+  figure_idea: 'Two transcripts of one gene differing only in where transcription starts, with the ribosome
+    shown reaching a different AUG in each, and the two resulting proteins drawn to different lengths.
+    The coding sequence is identical in both.
+
+    '
+- id: PRO-011
+  claim: 'The mechanism is that a very short leader lets the ribosome slide past the first start codon,
+    so the shorter protein is produced from the shorter leader.
+
+    '
+  topic: five prime UTR and protein sequence
+  source:
+    doc_id: PMC13219423
+    title: 5′ UTR length shapes alternative N-terminal protein isoforms across cancers and in rare disease
+    authors: Ly, J.; Smith, E. M.; Di Bernardo, M.; Tao, Y. F.; Black, E. M.; Khalizeva, E.; Cheeseman,
+      I. M.
+    journal: EMBO Reports
+    year: 2026
+    doi: 10.1038/s44319-026-00776-7
+    bibkey: ly2026utrlength
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L6
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13219423#L6
+    quote: very short 5′ UTRs enhance leaky ribosome scanning, thereby promoting the production of truncated
+      alternative N-terminal protein isoforms
+  confidence: high
+- id: PRO-012
+  claim: 'Because the start site sets the leader length, moving the start site changes the ratio of the
+    two protein forms a gene makes without touching the coding sequence at all.
+
+    '
+  topic: five prime UTR and protein sequence
+  source:
+    doc_id: PMC13219423
+    title: 5′ UTR length shapes alternative N-terminal protein isoforms across cancers and in rare disease
+    authors: Ly, J.; Smith, E. M.; Di Bernardo, M.; Tao, Y. F.; Black, E. M.; Khalizeva, E.; Cheeseman,
+      I. M.
+    journal: EMBO Reports
+    year: 2026
+    doi: 10.1038/s44319-026-00776-7
+    bibkey: ly2026utrlength
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L6
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13219423#L6
+    quote: endogenous changes in 5′ UTR length due to alternative transcription initiation can tune the
+      relative abundance of alternative N-terminal isoforms
+  confidence: high
+- id: PRO-013
+  claim: 'The same mechanism appears in inherited disease. A deletion inside the VHL untranslated leader
+    was found to push translation toward the shorter of the two VHL protein forms.
+
+    '
+  topic: five prime UTR and protein sequence
+  source:
+    doc_id: PMC13219423
+    title: 5′ UTR length shapes alternative N-terminal protein isoforms across cancers and in rare disease
+    authors: Ly, J.; Smith, E. M.; Di Bernardo, M.; Tao, Y. F.; Black, E. M.; Khalizeva, E.; Cheeseman,
+      I. M.
+    journal: EMBO Reports
+    year: 2026
+    doi: 10.1038/s44319-026-00776-7
+    bibkey: ly2026utrlength
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L6
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13219423#L6
+    quote: a deletion in the VHL 5′ UTR in von Hippel–Lindau disease that shifts translation toward the
+      shorter VHLp19 isoform
+  confidence: high
+- id: PRO-014
+  claim: Measuring how hard each start-site isoform was being translated in mouse fibroblasts found 4,153
+    of 9,951 expressed genes initiating at more than one site, and 745 of those translating their isoforms
+    at detectably different rates.
+  topic: five prime UTR and translation efficiency
+  source:
+    doc_id: PMC4965872
+    title: Pervasive isoform‐specific translational regulation via alternative transcription start sites
+      in mammals
+    authors: Wang, X.; Hou, J.; Quedenau, C.; Chen, W.
+    journal: Molecular Systems Biology
+    year: 2016
+    doi: 10.15252/msb.20166941
+    bibkey: wang2016alttss
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L6
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4965872#L6
+    quote: Among 9,951 genes expressed in mouse fibroblasts, we identified 4,153 showed significant initiation
+      at multiple sites, of which 745 genes exhibited significant isoform‐divergent translation.
+  confidence: high
+- id: PRO-015
+  claim: 'The direction of the effect was consistent: the isoform carrying the longer untranslated leader
+    was generally the one translated less efficiently.
+
+    '
+  topic: five prime UTR and translation efficiency
+  source:
+    doc_id: PMC4965872
+    title: Pervasive isoform‐specific translational regulation via alternative transcription start sites
+      in mammals
+    authors: Wang, X.; Hou, J.; Quedenau, C.; Chen, W.
+    journal: Molecular Systems Biology
+    year: 2016
+    doi: 10.15252/msb.20166941
+    bibkey: wang2016alttss
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L6
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4965872#L6
+    quote: isoforms with longer 5ʹUTRs tended to translate less efficiently
+  confidence: high
+- id: PRO-016
+  claim: Sequence features within the leaders accounted for over half of the variance in how differently
+    two isoforms of the same gene were translated, which leaves the rest unexplained.
+  topic: five prime UTR and translation efficiency
+  source:
+    doc_id: PMC4965872
+    title: Pervasive isoform‐specific translational regulation via alternative transcription start sites
+      in mammals
+    authors: Wang, X.; Hou, J.; Quedenau, C.; Chen, W.
+    journal: Molecular Systems Biology
+    year: 2016
+    doi: 10.15252/msb.20166941
+    bibkey: wang2016alttss
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L6
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4965872#L6
+    quote: Quantitative models integrating all these features explained over half of the variance in the
+      observed isoform‐divergent translation.
+  confidence: high
+- id: PRO-020
+  claim: 'Measured genome-wide in one mouse cell line, the choice between a near and a far polyadenylation
+    site shifted stability and translation only slightly, and in opposite directions.
+
+    '
+  topic: three prime UTR consequences
+  source:
+    doc_id: PMC3847777
+    title: 3′ UTR-isoform choice has limited influence on the stability and translational efficiency of
+      most mRNAs in mouse fibroblasts
+    authors: Spies, N.; Burge, C. B.; Bartel, D. P.
+    journal: Genome Research
+    year: 2013
+    doi: 10.1101/gr.156919.113
+    bibkey: spies2013utrisoform
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L7
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3847777#L7
+    quote: Distal tandem isoforms had slightly but significantly lower mRNA stability and greater translational
+      efficiency than proximal isoforms on average.
+  confidence: high
+  figure_idea: 'A two-panel comparison of the same measurement in two systems: the genome-wide fibroblast
+    result where proximal and distal isoform stabilities track each other closely, and the PTEN case where
+    they do not. The point is the spread, not the mean.
+
+    '
+- id: PRO-021
+  claim: Within those data the strongest single element was the microRNA site, associated with 32 per
+    cent repression of stability but only 4 per cent of translation.
+  topic: three prime UTR consequences
+  source:
+    doc_id: PMC3847777
+    title: 3′ UTR-isoform choice has limited influence on the stability and translational efficiency of
+      most mRNAs in mouse fibroblasts
+    authors: Spies, N.; Burge, C. B.; Bartel, D. P.
+    journal: Genome Research
+    year: 2013
+    doi: 10.1101/gr.156919.113
+    bibkey: spies2013utrisoform
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L7
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3847777#L7
+    quote: microRNA complementary sites, which were associated with repression of 32% and 4% at the stability
+      and translational levels, respectively
+  confidence: high
+- id: PRO-022
+  claim: 'The authors'' own summary was deflationary: in that cell type the three-prime untranslated region
+    mattered less than other parts of the transcript, because the two isoforms of a gene behaved alike.
+
+    '
+  topic: three prime UTR consequences
+  source:
+    doc_id: PMC3847777
+    title: 3′ UTR-isoform choice has limited influence on the stability and translational efficiency of
+      most mRNAs in mouse fibroblasts
+    authors: Spies, N.; Burge, C. B.; Bartel, D. P.
+    journal: Genome Research
+    year: 2013
+    doi: 10.1101/gr.156919.113
+    bibkey: spies2013utrisoform
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L7
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3847777#L7
+    quote: alternative 3′ UTR sequences play a surprisingly small regulatory role compared to other mRNA
+      regions
+  confidence: high
+- id: PRO-023
+  claim: 'One gene examined closely gave the opposite answer, and in the opposite direction from the obvious
+    prediction. The PTEN transcripts carrying the longest untranslated tails, and therefore the most microRNA
+    sites, were the stable ones and supplied most of the protein.
+
+    '
+  topic: three prime UTR consequences
+  source:
+    doc_id: PMC6212768
+    title: Alternative polyadenylation confers Pten mRNAs stability and resistance to microRNAs
+    authors: Thivierge, C.; Tseng, H. W.; Mayya, V. K.; Lussier, C.; Gravel, S. P.; Duchaine, T. F.
+    journal: Nucleic Acids Research
+    year: 2018
+    doi: 10.1093/nar/gky666
+    bibkey: thivierge2018ptenapa
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L6
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6212768#L6
+    quote: longer isoforms are largely refractory to miRNA-mediated silencing, are more stable and contribute
+      to the bulk of PTEN protein and signalling functions
+  confidence: high
+- id: PRO-024
+  claim: 'Those authors drew a methodological conclusion from it, that a validated microRNA site in a
+    gene''s untranslated region may not act on the isoforms that actually carry the gene''s output.
+
+    '
+  topic: three prime UTR consequences
+  source:
+    doc_id: PMC6212768
+    title: Alternative polyadenylation confers Pten mRNAs stability and resistance to microRNAs
+    authors: Thivierge, C.; Tseng, H. W.; Mayya, V. K.; Lussier, C.; Gravel, S. P.; Duchaine, T. F.
+    journal: Nucleic Acids Research
+    year: 2018
+    doi: 10.1093/nar/gky666
+    bibkey: thivierge2018ptenapa
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L6
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6212768#L6
+    quote: raise concerns on how miRNA-binding sites are being validated
+  confidence: high
+- id: PRO-025
+  claim: 'Stress resolves part of the disagreement by showing when the choice matters. Arsenic exposure
+    shortened three-prime untranslated regions across the transcriptome by two separate routes, a shift
+    in site choice during the stress and selective destruction of the long forms afterwards.
+
+    '
+  topic: three prime UTR consequences
+  source:
+    doc_id: PMC5995920
+    title: Cellular stress alters 3′UTR landscape through alternative polyadenylation and isoform-specific
+      degradation
+    authors: Zheng, D.; Wang, R.; Ding, Q.; Wang, T.; Xie, B.; Wei, L.; Zhong, Z.; Tian, B.
+    journal: Nature Communications
+    year: 2018
+    doi: 10.1038/s41467-018-04730-7
+    bibkey: zheng2018stressapa
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L7
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5995920#L7
+    quote: arsenic stress elicits global shortening of 3′UTRs through preferential usage of proximal polyadenylation
+      sites during stress and enhanced degradation of long 3′UTR isoforms during recovery
+  confidence: high
+- id: PRO-026
+  claim: 'A named protein does the selecting. TIA1 bound uracil-rich stretches that sit only in the extended
+    part of the untranslated region, which tied the long forms to stress granules and to decay.
+
+    '
+  topic: three prime UTR consequences
+  source:
+    doc_id: PMC5995920
+    title: Cellular stress alters 3′UTR landscape through alternative polyadenylation and isoform-specific
+      degradation
+    authors: Zheng, D.; Wang, R.; Ding, Q.; Wang, T.; Xie, B.; Wei, L.; Zhong, Z.; Tian, B.
+    journal: Nature Communications
+    year: 2018
+    doi: 10.1038/s41467-018-04730-7
+    bibkey: zheng2018stressapa
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L7
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5995920#L7
+    quote: RNA-binding protein TIA1 preferentially interacts with alternative 3′UTR sequences through
+      U-rich motifs
+  confidence: high
+- id: PRO-027
+  claim: 'The consequence is that shortening the untranslated region is protective: a transcript that
+    had already switched to the near site survived the clean-up that removed the long forms.
+
+    '
+  topic: three prime UTR consequences
+  source:
+    doc_id: PMC5995920
+    title: Cellular stress alters 3′UTR landscape through alternative polyadenylation and isoform-specific
+      degradation
+    authors: Zheng, D.; Wang, R.; Ding, Q.; Wang, T.; Xie, B.; Wei, L.; Zhong, Z.; Tian, B.
+    journal: Nature Communications
+    year: 2018
+    doi: 10.1038/s41467-018-04730-7
+    bibkey: zheng2018stressapa
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L7
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5995920#L7
+    quote: genes with shortened 3′UTRs due to stress-induced APA can evade mRNA clearance and maintain
+      transcript abundance post stress
+  confidence: high
+- id: PRO-030
+  claim: Ribosome footprints assigned to individual isoforms rather than to genes gave evidence of translation
+    for 40 to 50 per cent of expressed isoforms, and put more than one translated isoform on 53 per cent
+    of expressed human genes and 33 per cent of mouse genes.
+  topic: is the isoform translated
+  source:
+    doc_id: PMC7156646
+    title: Ribosome profiling at isoform level reveals evolutionary conserved impacts of differential
+      splicing on the proteome
+    authors: Reixachs-Solé, M.; Ruiz-Orera, J.; Albà, M. M.; Eyras, E.
+    journal: Nature Communications
+    year: 2020
+    doi: 10.1038/s41467-020-15634-w
+    bibkey: reixachs2020orqas
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L10
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7156646#L10
+    quote: translation for 40–50% of the expressed isoforms in human and mouse, with 53% of the expressed
+      genes having more than one translated isoform
+  confidence: high
+- id: PRO-031
+  claim: Agreement between the two levels was partial. About 40 per cent of the splicing changes seen
+    in RNA were matched by a change in how much the isoform was translated.
+  topic: is the isoform translated
+  source:
+    doc_id: PMC7156646
+    title: Ribosome profiling at isoform level reveals evolutionary conserved impacts of differential
+      splicing on the proteome
+    authors: Reixachs-Solé, M.; Ruiz-Orera, J.; Albà, M. M.; Eyras, E.
+    journal: Nature Communications
+    year: 2020
+    doi: 10.1038/s41467-020-15634-w
+    bibkey: reixachs2020orqas
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L10
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7156646#L10
+    quote: about 40% of the splicing changes at RNA level are concordant with changes in translation
+  confidence: high
+- id: PRO-032
+  claim: 'The changes that carried through to translation were disproportionately microexons, and the
+    direction of change was preserved between human and mouse for exons that correspond to each other.
+
+    '
+  topic: is the isoform translated
+  source:
+    doc_id: PMC7156646
+    title: Ribosome profiling at isoform level reveals evolutionary conserved impacts of differential
+      splicing on the proteome
+    authors: Reixachs-Solé, M.; Ruiz-Orera, J.; Albà, M. M.; Eyras, E.
+    journal: Nature Communications
+    year: 2020
+    doi: 10.1038/s41467-020-15634-w
+    bibkey: reixachs2020orqas
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L10
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7156646#L10
+    quote: orthologous cassette exons between human and mouse preserve the directionality of the change,
+      and are enriched in microexons in a comparison between glia and glioma
+  confidence: high
+- id: PRO-033
+  claim: 'Asking the question with mass spectrometry required unusual depth, because a routine proteomics
+    run reads only a small part of each protein and so cannot tell two isoforms apart.
+
+    '
+  topic: is the isoform translated
+  source:
+    doc_id: PMC10713452
+    title: Global detection of human variants and isoforms by deep proteome sequencing
+    authors: Sinitcyn, P.; Richards, A. L.; Weatheritt, R. J.; Brademan, D. R.; Marx, H.; Shishkova, E.;
+      Meyer, J. G.; Hebert, A. S.; Westphall, M. S.; Blencowe, B. J.; Cox, J.; Coon, J. J.
+    journal: Nature Biotechnology
+    year: 2023
+    doi: 10.1038/s41587-023-01714-x
+    bibkey: sinitcyn2023deepproteome
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L14
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC10713452#L14
+    quote: an average shotgun experiment fails to distinguish different protein variants and isoforms
+  confidence: high
+- id: PRO-034
+  claim: That depth was reached by splitting six cell lines with six different enzymes and reading the
+    pieces three ways, yielding a million unique peptides from 17,717 protein groups at a median coverage
+    of approximately 80 per cent of each protein's length.
+  topic: is the isoform translated
+  source:
+    doc_id: PMC10713452
+    title: Global detection of human variants and isoforms by deep proteome sequencing
+    authors: Sinitcyn, P.; Richards, A. L.; Weatheritt, R. J.; Brademan, D. R.; Marx, H.; Shishkova, E.;
+      Meyer, J. G.; Hebert, A. S.; Westphall, M. S.; Blencowe, B. J.; Cox, J.; Coon, J. J.
+    journal: Nature Biotechnology
+    year: 2023
+    doi: 10.1038/s41587-023-01714-x
+    bibkey: sinitcyn2023deepproteome
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L14
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC10713452#L14
+    quote: we identify a million unique peptides from 17,717 protein groups, with a median sequence coverage
+      of approximately 80%
+  confidence: high
+- id: PRO-035
+  claim: The headline result depends entirely on which genes are counted. Across everything compared against
+    RNA, about 80 per cent of single-residue variants were seen in protein but only about 20 per cent
+    of the junctions expected from splicing.
+  topic: is the isoform translated
+  source:
+    doc_id: PMC10713452
+    title: Global detection of human variants and isoforms by deep proteome sequencing
+    authors: Sinitcyn, P.; Richards, A. L.; Weatheritt, R. J.; Brademan, D. R.; Marx, H.; Shishkova, E.;
+      Meyer, J. G.; Hebert, A. S.; Westphall, M. S.; Blencowe, B. J.; Cox, J.; Coon, J. J.
+    journal: Nature Biotechnology
+    year: 2023
+    doi: 10.1038/s41587-023-01714-x
+    bibkey: sinitcyn2023deepproteome
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L21
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC10713452#L21
+    quote: we detect ~80% of SAPs and ~20% of exon–exon junctions
+  confidence: high
+  figure_idea: 'One axis for transcript expression level, one for the fraction of frame-preserving alternative
+    junctions detected in protein, showing the rise from about a fifth overall to about two thirds in
+    the best-covered genes. The claim and its denominator in one picture.
+
+    '
+- id: PRO-036
+  claim: Restricted to the genes expressed highly enough to be read end to end, detection of frame-preserving
+    splicing events rose to about 64 per cent, and alternative junctions were then found about as often
+    as constitutive ones.
+  topic: is the isoform translated
+  source:
+    doc_id: PMC10713452
+    title: Global detection of human variants and isoforms by deep proteome sequencing
+    authors: Sinitcyn, P.; Richards, A. L.; Weatheritt, R. J.; Brademan, D. R.; Marx, H.; Shishkova, E.;
+      Meyer, J. G.; Hebert, A. S.; Westphall, M. S.; Blencowe, B. J.; Cox, J.; Coon, J. J.
+    journal: Nature Biotechnology
+    year: 2023
+    doi: 10.1038/s41587-023-01714-x
+    bibkey: sinitcyn2023deepproteome
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L21
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC10713452#L21
+    quote: ~64% of frame-preserving alternatively splicing events are detected and the rates of detection
+      of constitutively spliced and alternatively spliced junctions are similar
+  confidence: high
+- id: PRO-037
+  claim: 'That similarity is the load-bearing comparison, because it means the alternative isoform is
+    not harder to find than the constitutive one once the measurement is good enough to find either.
+
+    '
+  topic: is the isoform translated
+  source:
+    doc_id: PMC10713452
+    title: Global detection of human variants and isoforms by deep proteome sequencing
+    authors: Sinitcyn, P.; Richards, A. L.; Weatheritt, R. J.; Brademan, D. R.; Marx, H.; Shishkova, E.;
+      Meyer, J. G.; Hebert, A. S.; Westphall, M. S.; Blencowe, B. J.; Cox, J.; Coon, J. J.
+    journal: Nature Biotechnology
+    year: 2023
+    doi: 10.1038/s41587-023-01714-x
+    bibkey: sinitcyn2023deepproteome
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L14
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC10713452#L14
+    quote: provides direct evidence that most frame-preserving alternatively spliced isoforms are translated
+  confidence: high
+- id: PRO-038
+  claim: 'For the single-residue changes that went undetected, the authors offered a reason rather than
+    leaving it as a measurement failure: those changes were predicted more often to destabilise the protein.
+
+    '
+  topic: is the isoform translated
+  source:
+    doc_id: PMC10713452
+    title: Global detection of human variants and isoforms by deep proteome sequencing
+    authors: Sinitcyn, P.; Richards, A. L.; Weatheritt, R. J.; Brademan, D. R.; Marx, H.; Shishkova, E.;
+      Meyer, J. G.; Hebert, A. S.; Westphall, M. S.; Blencowe, B. J.; Cox, J.; Coon, J. J.
+    journal: Nature Biotechnology
+    year: 2023
+    doi: 10.1038/s41587-023-01714-x
+    bibkey: sinitcyn2023deepproteome
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L39
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC10713452#L39
+    quote: in the fraction of deleterious mutations for the undetected SAP group
+  confidence: high
+- id: PRO-040
+  claim: RPS24 carries three very short exons, of 3, 18 and 22 base pairs, between two exons that are
+    always present.
+  topic: RPS24 structure
+  source:
+    doc_id: PMC11162997
+    title: RPS24 alternative splicing is a marker of cancer progression and epithelial-mesenchymal transition
+    authors: Park, J.; Nam, D. H.; Kim, D.; Chung, Y. J.
+    journal: Scientific Reports
+    year: 2024
+    doi: 10.1038/s41598-024-63976-y
+    bibkey: park2024rps24
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L17
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11162997#L17
+    quote: The RPS24 gene features three microexons (3, 18, and 22 bp) situated between the constitutive
+      exons (exons 4 and 6)
+  confidence: high
+  figure_idea: 'The RPS24 locus drawn once, with the three short exons marked at true relative scale against
+    the constitutive exons either side, and beneath it the protein C-terminus each documented combination
+    produces. Scale is the point: a three-base-pair exon is one codon.
+
+    '
+- id: PRO-041
+  claim: 'Those three exons sit at the end of the coding sequence, which is why including or excluding
+    them changes the last few amino acids rather than an internal domain.
+
+    '
+  topic: RPS24 structure
+  source:
+    doc_id: PMC11162997
+    title: RPS24 alternative splicing is a marker of cancer progression and epithelial-mesenchymal transition
+    authors: Park, J.; Nam, D. H.; Kim, D.; Chung, Y. J.
+    journal: Scientific Reports
+    year: 2024
+    doi: 10.1038/s41598-024-63976-y
+    bibkey: park2024rps24
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L39
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11162997#L39
+    quote: it has been apparent that RPS24 contains three consecutive microexons at its 3′ end
+  confidence: high
+- id: PRO-042
+  claim: 'Which combination a tissue uses differs between tissues, and the proportions also differ between
+    tumour types.
+
+    '
+  topic: RPS24 regulation
+  source:
+    doc_id: PMC11162997
+    title: RPS24 alternative splicing is a marker of cancer progression and epithelial-mesenchymal transition
+    authors: Park, J.; Nam, D. H.; Kim, D.; Chung, Y. J.
+    journal: Scientific Reports
+    year: 2024
+    doi: 10.1038/s41598-024-63976-y
+    bibkey: park2024rps24
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L8
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11162997#L8
+    quote: Each of these isoforms showed tissue specificity and relative differences in expression among
+      cancer types.
+  confidence: high
+- id: PRO-043
+  claim: 'One combination behaves like a tissue marker that disease removes. It is abundant in muscle,
+    present in normal brain, and absent from glioma.
+
+    '
+  topic: RPS24 regulation
+  source:
+    doc_id: PMC11162997
+    title: RPS24 alternative splicing is a marker of cancer progression and epithelial-mesenchymal transition
+    authors: Park, J.; Nam, D. H.; Kim, D.; Chung, Y. J.
+    journal: Scientific Reports
+    year: 2024
+    doi: 10.1038/s41598-024-63976-y
+    bibkey: park2024rps24
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L14
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11162997#L14
+    quote: one specific isoform, enriched in the muscle, is also significantly expressed in normal brain
+      tissue but is lost in glioma, a brain cancer
+  confidence: high
+- id: PRO-044
+  claim: Across 135 lung cancer cell lines two of the four junctions were present in over 98 per cent,
+    a third appeared in 89 lines or 66 per cent, and the muscle-associated one turned up in a single line.
+  topic: RPS24 in cancer
+  source:
+    doc_id: PMC12207440
+    title: High-resolution detection of RPS24 microexon variations reveals novel splicing patterns in
+      response to KRAS-targeted therapy in lung adenocarcinoma
+    authors: Nam, D.; Tian, B.; Park, J.; Chung, Y. J.
+    journal: BMB Reports
+    year: 2025
+    doi: 10.5483/BMBRep.2025-0026
+    bibkey: nam2025rps24kras
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L17
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12207440#L17
+    quote: The ex4:3bp junction was expressed in 89 cell lines (66% of the total 135, using a >2% expression
+      threshold)
+  confidence: high
+- id: PRO-045
+  claim: Most of the arithmetically possible combinations are never used. Eight could be built from three
+    optional exons; three were found.
+  topic: RPS24 in cancer
+  source:
+    doc_id: PMC12207440
+    title: High-resolution detection of RPS24 microexon variations reveals novel splicing patterns in
+      response to KRAS-targeted therapy in lung adenocarcinoma
+    authors: Nam, D.; Tian, B.; Park, J.; Chung, Y. J.
+    journal: BMB Reports
+    year: 2025
+    doi: 10.5483/BMBRep.2025-0026
+    bibkey: nam2025rps24kras
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L20
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12207440#L20
+    quote: Although eight AS isoforms could theoretically arise from different microexon combinations,
+      only three were detected in lung cancer cell lines.
+  confidence: high
+- id: PRO-046
+  claim: 'Blocking KRAS in mutant lung cancer lines shifted the balance toward the form carrying the three-base-pair
+    exon, which those authors propose as a readout of whether the drug is working.
+
+    '
+  topic: RPS24 in cancer
+  source:
+    doc_id: PMC12207440
+    title: High-resolution detection of RPS24 microexon variations reveals novel splicing patterns in
+      response to KRAS-targeted therapy in lung adenocarcinoma
+    authors: Nam, D.; Tian, B.; Park, J.; Chung, Y. J.
+    journal: BMB Reports
+    year: 2025
+    doi: 10.5483/BMBRep.2025-0026
+    bibkey: nam2025rps24kras
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L7
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12207440#L7
+    quote: In KRAS-mutant cell lines, we observed a consistent upregulation of the 3 bp-containing isoform
+      following KRAS inhibition
+  confidence: high
+- id: PRO-047
+  claim: 'Resolving a three-base-pair difference needed a deliberate method. Running the fragments out
+    by size separated isoforms differing by a single base.
+
+    '
+  topic: RPS24 measurement
+  source:
+    doc_id: PMC12207440
+    title: High-resolution detection of RPS24 microexon variations reveals novel splicing patterns in
+      response to KRAS-targeted therapy in lung adenocarcinoma
+    authors: Nam, D.; Tian, B.; Park, J.; Chung, Y. J.
+    journal: BMB Reports
+    year: 2025
+    doi: 10.5483/BMBRep.2025-0026
+    bibkey: nam2025rps24kras
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L29
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12207440#L29
+    quote: a single primer set can distinguish between isoforms differing by as little as 1 bp
+  confidence: high
+- id: PRO-048
+  claim: The 22 base pair exon carries a stop codon, so including it ends the protein three residues early.
+    The form that excludes it keeps a proline, a lysine and a glutamate the other lacks.
+  topic: RPS24 protein consequence
+  source:
+    doc_id: bio_0dd5ca6372bc
+    title: Autophagy-dependent alternative splicing event produces a more stable ribosomal protein S24
+      isoform that aids in hypoxic cell survival
+    authors: Kerry, J.; Specker, E. J.; Mizzoni, M.; Brumwell, A.; Fell, L.; Goodbrand, J.; Rosen, M.
+      N.; Uniacke, J.
+    journal: FEBS Letters
+    year: 2024
+    doi: 10.1002/1873-3468.14804
+    bibkey: kerry2024rps24hypoxia
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L49
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_0dd5ca6372bc#L49
+    quote: contains a premature stop codon generating a protein isoform three amino acids shorter than
+      RPS24S, which contains an extra proline, lysine, and glutamate.
+  confidence: high
+- id: PRO-049
+  claim: 'The two protein forms are not equally durable, and the difference appears only under stress:
+    they lasted equally long in normal oxygen and unequally when oxygen was low.
+
+    '
+  topic: RPS24 protein consequence
+  source:
+    doc_id: bio_0dd5ca6372bc
+    title: Autophagy-dependent alternative splicing event produces a more stable ribosomal protein S24
+      isoform that aids in hypoxic cell survival
+    authors: Kerry, J.; Specker, E. J.; Mizzoni, M.; Brumwell, A.; Fell, L.; Goodbrand, J.; Rosen, M.
+      N.; Uniacke, J.
+    journal: FEBS Letters
+    year: 2024
+    doi: 10.1002/1873-3468.14804
+    bibkey: kerry2024rps24hypoxia
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L49
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_0dd5ca6372bc#L49
+    quote: the RPS24L mRNA and protein isoform are more stable than their RPS24S counterparts in hypoxia
+      whereas they have similar stability in normoxia
+  confidence: high
+- id: PRO-050
+  claim: 'Shifting the ratio toward the more durable form helped cells survive and grow without enough
+    oxygen, which makes the splice choice consequential rather than merely correlated.
+
+    '
+  topic: RPS24 protein consequence
+  source:
+    doc_id: bio_0dd5ca6372bc
+    title: Autophagy-dependent alternative splicing event produces a more stable ribosomal protein S24
+      isoform that aids in hypoxic cell survival
+    authors: Kerry, J.; Specker, E. J.; Mizzoni, M.; Brumwell, A.; Fell, L.; Goodbrand, J.; Rosen, M.
+      N.; Uniacke, J.
+    journal: FEBS Letters
+    year: 2024
+    doi: 10.1002/1873-3468.14804
+    bibkey: kerry2024rps24hypoxia
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L49
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_0dd5ca6372bc#L49
+    quote: increasing the RPS24L/S ratio aids in hypoxic cell survival and growth
+  confidence: high
+- id: PRO-051
+  claim: 'Why the identity of the terminal residues might matter is offered as a possibility and not demonstrated:
+    lysines are the residues cells tag to control a protein''s fate.
+
+    '
+  topic: RPS24 protein consequence
+  source:
+    doc_id: bio_0dd5ca6372bc
+    title: Autophagy-dependent alternative splicing event produces a more stable ribosomal protein S24
+      isoform that aids in hypoxic cell survival
+    authors: Kerry, J.; Specker, E. J.; Mizzoni, M.; Brumwell, A.; Fell, L.; Goodbrand, J.; Rosen, M.
+      N.; Uniacke, J.
+    journal: FEBS Letters
+    year: 2024
+    doi: 10.1002/1873-3468.14804
+    bibkey: kerry2024rps24hypoxia
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L49
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_0dd5ca6372bc#L49
+    quote: Lysine is frequently targeted for post-translational modifications such as ubiquitin and acetylation
+      that could influence protein stability and/or function.
+  confidence: high
+- id: PRO-052
+  claim: 'A naming scheme published to settle the confusion labels the three transcripts a, b and c, and
+    the three proteins by what they end in: two lysines, three lysines, or proline-lysine-glutamate.'
+  topic: RPS24 nomenclature
+  source:
+    doc_id: bio_ea2f2a326e66
+    title: Alternative splicing generates a Ribosomal Protein S24 isoform induced by neuroinflammation
+      and neurodegeneration
+    authors: Magadi, S. S.; Jonson, M.; Maqdissi, J. A.; Kaczmarczyk, L.; Zijlstra, J. J.; Perkins, M.;
+      Paul, G.; Hallbeck, M.; Ingelsson, M.; Watts, J. C.; Reichenbach, N.; Petzold, G. C.; Lucena, P.
+      B.; Heneka, M. T.; Jackson, W. S.
+    journal: bioRxiv
+    year: 2025
+    doi: 10.1101/2025.03.28.645676
+    bibkey: magadi2025rps24
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L41
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_ea2f2a326e66#L41
+    quote: encode protein isoforms S24-3K, S24-2K, and S24-PKE, respectively
+  confidence: high
+- id: PRO-053
+  claim: 'The reason a new scheme was needed is that the existing ones disagree, and no previous system
+    distinguished the proteins at all.
+
+    '
+  topic: RPS24 nomenclature
+  source:
+    doc_id: bio_ea2f2a326e66
+    title: Alternative splicing generates a Ribosomal Protein S24 isoform induced by neuroinflammation
+      and neurodegeneration
+    authors: Magadi, S. S.; Jonson, M.; Maqdissi, J. A.; Kaczmarczyk, L.; Zijlstra, J. J.; Perkins, M.;
+      Paul, G.; Hallbeck, M.; Ingelsson, M.; Watts, J. C.; Reichenbach, N.; Petzold, G. C.; Lucena, P.
+      B.; Heneka, M. T.; Jackson, W. S.
+    journal: bioRxiv
+    year: 2025
+    doi: 10.1101/2025.03.28.645676
+    bibkey: magadi2025rps24
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L242
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_ea2f2a326e66#L242
+    quote: Importantly, a systematic approach for distinguishing the protein isoforms was essentially
+      absent.
+  confidence: high
+- id: PRO-054
+  claim: 'Part of the confusion is structural rather than editorial: the reference databases number this
+    gene''s exons differently from one transcript to the next.
+
+    '
+  topic: RPS24 nomenclature
+  source:
+    doc_id: bio_ea2f2a326e66
+    title: Alternative splicing generates a Ribosomal Protein S24 isoform induced by neuroinflammation
+      and neurodegeneration
+    authors: Magadi, S. S.; Jonson, M.; Maqdissi, J. A.; Kaczmarczyk, L.; Zijlstra, J. J.; Perkins, M.;
+      Paul, G.; Hallbeck, M.; Ingelsson, M.; Watts, J. C.; Reichenbach, N.; Petzold, G. C.; Lucena, P.
+      B.; Heneka, M. T.; Jackson, W. S.
+    journal: bioRxiv
+    year: 2025
+    doi: 10.1101/2025.03.28.645676
+    bibkey: magadi2025rps24
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L242
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_ea2f2a326e66#L242
+    quote: databases like Ensembl number certain exons differently for each transcript
+  confidence: high
+- id: PRO-055
+  claim: 'There is a trap in the naming that catches readers out, because transcript length and protein
+    length run in opposite directions here. The shortest transcript encodes the longest protein.
+
+    '
+  topic: RPS24 nomenclature
+  source:
+    doc_id: bio_ea2f2a326e66
+    title: Alternative splicing generates a Ribosomal Protein S24 isoform induced by neuroinflammation
+      and neurodegeneration
+    authors: Magadi, S. S.; Jonson, M.; Maqdissi, J. A.; Kaczmarczyk, L.; Zijlstra, J. J.; Perkins, M.;
+      Paul, G.; Hallbeck, M.; Ingelsson, M.; Watts, J. C.; Reichenbach, N.; Petzold, G. C.; Lucena, P.
+      B.; Heneka, M. T.; Jackson, W. S.
+    journal: bioRxiv
+    year: 2025
+    doi: 10.1101/2025.03.28.645676
+    bibkey: magadi2025rps24
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L242
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_ea2f2a326e66#L242
+    quote: the protein isoform sizes have the reverse order, where translation of the shortest transcript
+      makes the longest protein
+  confidence: high
+- id: PRO-056
+  claim: 'Each of the three forms dominates somewhere different in the body, with one prevailing in heart,
+    another in brain, and the third across blood and the solid organs.
+
+    '
+  topic: RPS24 regulation
+  source:
+    doc_id: bio_ea2f2a326e66
+    title: Alternative splicing generates a Ribosomal Protein S24 isoform induced by neuroinflammation
+      and neurodegeneration
+    authors: Magadi, S. S.; Jonson, M.; Maqdissi, J. A.; Kaczmarczyk, L.; Zijlstra, J. J.; Perkins, M.;
+      Paul, G.; Hallbeck, M.; Ingelsson, M.; Watts, J. C.; Reichenbach, N.; Petzold, G. C.; Lucena, P.
+      B.; Heneka, M. T.; Jackson, W. S.
+    journal: bioRxiv
+    year: 2025
+    doi: 10.1101/2025.03.28.645676
+    bibkey: magadi2025rps24
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L41
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_ea2f2a326e66#L41
+    quote: in blood, kidney, liver, lung, and spleen
+  confidence: high
+- id: PRO-057
+  claim: 'The proportions in brain are nearly the same in mouse and human, which argues that the ratio
+    is held deliberately rather than drifting.
+
+    '
+  topic: RPS24 regulation
+  source:
+    doc_id: bio_ea2f2a326e66
+    title: Alternative splicing generates a Ribosomal Protein S24 isoform induced by neuroinflammation
+      and neurodegeneration
+    authors: Magadi, S. S.; Jonson, M.; Maqdissi, J. A.; Kaczmarczyk, L.; Zijlstra, J. J.; Perkins, M.;
+      Paul, G.; Hallbeck, M.; Ingelsson, M.; Watts, J. C.; Reichenbach, N.; Petzold, G. C.; Lucena, P.
+      B.; Heneka, M. T.; Jackson, W. S.
+    journal: bioRxiv
+    year: 2025
+    doi: 10.1101/2025.03.28.645676
+    bibkey: magadi2025rps24
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L41
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_ea2f2a326e66#L41
+    quote: mouse and human brain showed remarkably similar isoform ratios
+  confidence: high
+- id: PRO-058
+  claim: 'Antibodies were raised that tell the three protein ends apart, binding the proline-lysine-glutamate
+    form and not the ones ending in lysines. A reagent therefore exists that sees a proteoform rather
+    than a gene.
+
+    '
+  topic: RPS24 measurement
+  source:
+    doc_id: bio_ea2f2a326e66
+    title: Alternative splicing generates a Ribosomal Protein S24 isoform induced by neuroinflammation
+      and neurodegeneration
+    authors: Magadi, S. S.; Jonson, M.; Maqdissi, J. A.; Kaczmarczyk, L.; Zijlstra, J. J.; Perkins, M.;
+      Paul, G.; Hallbeck, M.; Ingelsson, M.; Watts, J. C.; Reichenbach, N.; Petzold, G. C.; Lucena, P.
+      B.; Heneka, M. T.; Jackson, W. S.
+    journal: bioRxiv
+    year: 2025
+    doi: 10.1101/2025.03.28.645676
+    bibkey: magadi2025rps24
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L46
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_ea2f2a326e66#L46
+    quote: specifically bound S24 peptides ending with -PKE while showing no reactivity to those ending
+      with -KK or -KKK
+  confidence: high
+- id: PRO-059
+  claim: 'One of the three forms is largely confined to microglia and rises with age, with neurodegeneration,
+    and after a deliberate inflammatory challenge.
+
+    '
+  topic: RPS24 in disease
+  source:
+    doc_id: bio_ea2f2a326e66
+    title: Alternative splicing generates a Ribosomal Protein S24 isoform induced by neuroinflammation
+      and neurodegeneration
+    authors: Magadi, S. S.; Jonson, M.; Maqdissi, J. A.; Kaczmarczyk, L.; Zijlstra, J. J.; Perkins, M.;
+      Paul, G.; Hallbeck, M.; Ingelsson, M.; Watts, J. C.; Reichenbach, N.; Petzold, G. C.; Lucena, P.
+      B.; Heneka, M. T.; Jackson, W. S.
+    journal: bioRxiv
+    year: 2025
+    doi: 10.1101/2025.03.28.645676
+    bibkey: magadi2025rps24
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L24
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_ea2f2a326e66#L24
+    quote: is predominantly expressed in microglia and is increased by neuroinflammation caused by aging,
+      neurodegeneration, or inflammatory chemicals
+  confidence: high
+- id: PRO-060
+  claim: 'The protein-level increase was confirmed in human post-mortem brain from three different neurodegenerative
+    diseases as well as in mouse models of them.
+
+    '
+  topic: RPS24 in disease
+  source:
+    doc_id: bio_ea2f2a326e66
+    title: Alternative splicing generates a Ribosomal Protein S24 isoform induced by neuroinflammation
+      and neurodegeneration
+    authors: Magadi, S. S.; Jonson, M.; Maqdissi, J. A.; Kaczmarczyk, L.; Zijlstra, J. J.; Perkins, M.;
+      Paul, G.; Hallbeck, M.; Ingelsson, M.; Watts, J. C.; Reichenbach, N.; Petzold, G. C.; Lucena, P.
+      B.; Heneka, M. T.; Jackson, W. S.
+    journal: bioRxiv
+    year: 2025
+    doi: 10.1101/2025.03.28.645676
+    bibkey: magadi2025rps24
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L24
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_ea2f2a326e66#L24
+    quote: in brains with Alzheimer’s disease, Parkinson’s disease, and Huntington’s disease, and relevant
+      mouse models, using isoform-specific antibodies
+  confidence: high
+- id: PRO-061
+  claim: 'The gene has an independent link to human disease, since mutations in it cause one of the inherited
+    bone marrow failure syndromes.
+
+    '
+  topic: RPS24 in disease
+  source:
+    doc_id: bio_ea2f2a326e66
+    title: Alternative splicing generates a Ribosomal Protein S24 isoform induced by neuroinflammation
+      and neurodegeneration
+    authors: Magadi, S. S.; Jonson, M.; Maqdissi, J. A.; Kaczmarczyk, L.; Zijlstra, J. J.; Perkins, M.;
+      Paul, G.; Hallbeck, M.; Ingelsson, M.; Watts, J. C.; Reichenbach, N.; Petzold, G. C.; Lucena, P.
+      B.; Heneka, M. T.; Jackson, W. S.
+    journal: bioRxiv
+    year: 2025
+    doi: 10.1101/2025.03.28.645676
+    bibkey: magadi2025rps24
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L28
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_ea2f2a326e66#L28
+    quote: are linked to Diamond-Blackfan Anemia
+  confidence: high
+- id: PRO-062
+  claim: 'Where the protein sits in the ribosome is the reason a few terminal residues could plausibly
+    matter: it lies beside the channel through which messenger RNA enters.
+
+    '
+  topic: RPS24 protein consequence
+  source:
+    doc_id: bio_ea2f2a326e66
+    title: Alternative splicing generates a Ribosomal Protein S24 isoform induced by neuroinflammation
+      and neurodegeneration
+    authors: Magadi, S. S.; Jonson, M.; Maqdissi, J. A.; Kaczmarczyk, L.; Zijlstra, J. J.; Perkins, M.;
+      Paul, G.; Hallbeck, M.; Ingelsson, M.; Watts, J. C.; Reichenbach, N.; Petzold, G. C.; Lucena, P.
+      B.; Heneka, M. T.; Jackson, W. S.
+    journal: bioRxiv
+    year: 2025
+    doi: 10.1101/2025.03.28.645676
+    bibkey: magadi2025rps24
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L28
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_ea2f2a326e66#L28
+    quote: S24’s location near the mRNA entry tunnel of the ribosome
+  confidence: high
+- id: PRO-063
+  claim: 'In a survey of splicing across twelve human tissues, RPS24 was among a small minority of genes
+    whose splicing tracked tissue compartment consistently, and it had one of the largest such effects
+    measured.
+
+    '
+  topic: RPS24 regulation
+  source:
+    doc_id: PMC8563012
+    title: RNA splicing programs define tissue compartments and cell types at single-cell resolution
+    authors: Olivieri, J. E.; Dehghannasiri, R.; Wang, P. L.; Jang, S.; de Morree, A.; Tan, S. Y.; Ming,
+      J.; Ruohao Wu, A.; Tabula Sapiens Consortium; Quake, S. R.; Krasnow, M. A.; Salzman, J.
+    journal: eLife
+    year: 2021
+    doi: 10.7554/eLife.70692
+    bibkey: olivieri2021splicing
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L234
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8563012#L234
+    quote: ATP5F1C, RPS24, and MYL6 have the highest compartment-specific splicing effects
+  confidence: high
+- id: PRO-064
+  claim: 'The splicing of RPS24 and one other gene was enough, on its own, to sort individual human cells
+    into the right tissue compartment, with no use of expression levels.
+
+    '
+  topic: RPS24 regulation
+  source:
+    doc_id: PMC8563012
+    title: RNA splicing programs define tissue compartments and cell types at single-cell resolution
+    authors: Olivieri, J. E.; Dehghannasiri, R.; Wang, P. L.; Jang, S.; de Morree, A.; Tan, S. Y.; Ming,
+      J.; Ruohao Wu, A.; Tabula Sapiens Consortium; Quake, S. R.; Krasnow, M. A.; Salzman, J.
+    journal: eLife
+    year: 2021
+    doi: 10.7554/eLife.70692
+    bibkey: olivieri2021splicing
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L236
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8563012#L236
+    quote: we performed unsupervised k-means clustering on the SpliZ scores of RPS24 and ATP5F1C alone
+  confidence: high
+- id: PRO-065
+  claim: 'That compartment pattern holds across species, having been found again in mouse and in mouse
+    lemur.
+
+    '
+  topic: RPS24 regulation
+  source:
+    doc_id: PMC8563012
+    title: RNA splicing programs define tissue compartments and cell types at single-cell resolution
+    authors: Olivieri, J. E.; Dehghannasiri, R.; Wang, P. L.; Jang, S.; de Morree, A.; Tan, S. Y.; Ming,
+      J.; Ruohao Wu, A.; Tabula Sapiens Consortium; Quake, S. R.; Krasnow, M. A.; Salzman, J.
+    journal: eLife
+    year: 2021
+    doi: 10.7554/eLife.70692
+    bibkey: olivieri2021splicing
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L236
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8563012#L236
+    quote: compartment-specific splicing is conserved for RPS24 and MYL6
+  confidence: high
+leads:
+- note: 'The mapping from each microexon combination to each protein C-terminus could not be stated from
+    any single line in the corpus. Park and Nam name junctions (ex4:ex6, ex4:22bp, ex4:3bp, ex4:18bp),
+    Magadi names transcripts and proteins (Rps24a/b/c, S24-3K/2K/PKE), and Kerry names only long and short
+    (RPS24L, RPS24S). Magadi''s Supplementary Discussion sets out to reconcile them and within one paragraph
+    equates the 22 bp exon with two different exons of the original scheme. The book therefore reports
+    each study in its own labels and does not assert a combined mapping.
+
+    '
+  why: A reader trying to connect the papers will hit this, and the book should say so rather than paper
+    over it.
+- note: 'Kerry et al. was read as the bioRxiv preprint although a journal version exists in FEBS Letters.
+    Magadi et al. is preprint-only in this corpus. Every number from either needs re-checking against
+    the published version.
+
+    '
+  why: Same treatment as the ENCODE4 and GTEx long-read sources.
+- note: 'Magadi reports S24-PKE staining in human post-mortem tissue as two of three Alzheimer''s sections
+    in the text and as n = 2 for Alzheimer''s in the figure legend. The book states the result without
+    a denominator.
+
+    '
+  why: Both numbers would pass the citation gate; neither can be preferred from what was read.
+- note: 'Kerry speculates that the RPS24 forms could constitute specialised ribosomes directing translation
+    of particular transcripts. Not demonstrated, and flagged as speculation by those authors.
+
+    '
+  why: Attractive and quotable, which is exactly why it should not be upgraded.
+- note: 'A further RPS24 paper reports the microexon isoform as a biomarker in oestrogen-receptor-positive
+    breast cancer and therapeutic resistance (PMC12686416), and a hypoxia study reports altered splicing
+    of ribosomal protein mRNAs generally (PMC7025504). Neither was read.
+
+    '
+  why: Would extend the RPS24 case into endocrine therapy if the chapter needs more.
+- note: 'BRCA1 is described in the alternative-TSS literature as having two isoforms with different leaders,
+    the longer and translationally inactive one appearing in tumour tissue. This is a secondary attribution
+    inside PMC4965872, not a result of that paper.
+
+    '
+  why: Would be a strong named example for the 5' UTR section if the primary source can be found.
+- note: 'Floor and Doudna are reported, again secondhand within PMC4965872, to have concluded that 3''
+    UTR properties outweigh 5'' UTR properties in isoform-specific translation. That directly bears on
+    how this chapter balances its two UTR sections.
+
+    '
+  why: If true and citable, it reorders the chapter's emphasis.

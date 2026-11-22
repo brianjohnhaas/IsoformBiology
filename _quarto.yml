@@ -25,6 +25,9 @@ book:
       chapters:
         - chapters/04-technology-arc.qmd
         - chapters/05-long-reads.qmd
+    - part: "From transcript to protein"
+      chapters:
+        - chapters/11-transcript-to-protein.qmd
     - part: "Reading function from variation"
       chapters:
         - chapters/10-variants-qtl.qmd
@@ -32,6 +35,9 @@ book:
       chapters:
         - chapters/06-cancer.qmd
         - chapters/07-neuro-mendelian.qmd
+    - part: "Targeting isoforms"
+      chapters:
+        - chapters/12-proteoforms-drugs.qmd
     - part: "Resolving cells and tissues"
       chapters:
         - chapters/08-singlecell-spatial.qmd

@@ -151,7 +151,7 @@ restoring force. Splicing is not tuning an activity here. It changes how much
 polymer sits between two anchors.
 :::
 
-## Ligand specificity by mutually exclusive exon
+## Ligand specificity by mutually exclusive exon {#sec-fgfr}
 
 In FGFR1 through FGFR3, the mutually exclusive IIIb and IIIc exons encode the
 C-terminal half of immunoglobulin loop III, which sits in the ligand-binding

@@ -16,8 +16,8 @@ of **event-level metrics**. Those four definitions are written on this book's
 authority and need a reader's sign-off.
 
 The remaining six are standard terms that no particular paper owns:
-**colocalisation**, **poison exon**, **proteoform**, **pseudoexon**, the
-**QTL** family and **TPM**. They are given here as the book uses them, without
+**colocalisation**, **microexon**, **poison exon**, **pseudoexon**, the **QTL**
+family and **TPM**. They are given here as the book uses them, without
 a citation, because attaching one would imply a provenance they do not have.
 
 **Alternative polyadenylation (APA)**
@@ -108,6 +108,11 @@ that share between two conditions. *No source defines these terms; the
 definitions here are the book's own and are flagged for review.* The quantity
 is what differential transcript usage tests. See @sec-dtu.
 
+**Microexon**
+: A very short exon, short enough that including or excluding it changes only a
+residue or two of protein. Isoforms differing by one are easily missed, both by
+short reads and by tools that assume exons are longer. See @sec-rps24.
+
 **MANE Select, MANE Plus Clinical**
 : One representative transcript per human protein-coding gene, identical in exon
 structure between Ensembl/GENCODE and RefSeq; and the additional set for loci
@@ -139,8 +144,10 @@ density of inclusion reads over the sum of inclusion and exclusion densities
 sends the transcript to decay. See @sec-cancer-therapeutics.
 
 **Proteoform**
-: A distinct molecular form of a protein from one gene, including forms arising
-from isoform differences. See @sec-brain-splicing.
+: A distinct molecular form of a protein produced from one gene. The term covers
+differences arising from genetic variation, from splicing, and from
+modification after translation, which this book otherwise treats separately
+[@proteoformmedicine2026]. See @sec-measuring.
 
 **Pseudoexon**
 : An intronic sequence spliced into a transcript as though it were an exon,
@@ -156,6 +163,12 @@ site choice. See @sec-qtl-position and @sec-isoform-qtl.
 : The three parts of a transcript that can vary independently. Annotation has
 historically given one chain exactly one of each [@reese2023encode4]. See
 @sec-three-axes.
+
+**Top-down proteomics**
+: Mass spectrometry performed on intact protein molecules rather than on
+fragments of them. It is the approach that can report which combination of
+features one molecule actually carries, which fragment-based measurement
+cannot [@xu2024topdown]. See @sec-measuring.
 
 **Transcripts per million (TPM)**
 : A within-sample abundance unit, normalised for transcript length and then for

@@ -139,3 +139,73 @@ figures:
       because the overlap between them was never reported. The middle funnel
       bar is hatched because its value is a bound, "more than nine in ten",
       rather than a count.
+
+  - path: figures/mechanism-by-region.svg
+    dark: figures/mechanism-by-region-dark.svg
+    route: generated
+    script: scripts/fig_mechanism_by_region.py
+    chapter: chapters/11-transcript-to-protein.qmd
+    data_source: research/11-transcript-to-protein.yml (PRO-001, PRO-003, PRO-004)
+    palette: dataviz reference instance, categorical slot 1 only
+    palette_validated: "both modes pass all six checks"
+    note: >
+      Original. Not traced from or redrawn after any published figure. The
+      denominator differs per row and is named beside each bar, because the
+      three percentages are shares of three different populations. No residual
+      category is drawn, since the source does not state one.
+
+  - path: figures/translated-denominator.svg
+    dark: figures/translated-denominator-dark.svg
+    route: generated
+    script: scripts/fig_translated_denominator.py
+    chapter: chapters/11-transcript-to-protein.qmd
+    data_source: research/11-transcript-to-protein.yml (PRO-035, PRO-036)
+    palette: dataviz reference instance, categorical slot 1 only
+    palette_validated: "both modes pass all six checks"
+    note: >
+      Original. Two bars and no connecting curve: the source gives two values
+      and no intermediate points, so interpolating between them would invent
+      data. The figure exists because the same result is quoted both ways.
+
+  - path: figures/rps24-microexons.svg
+    dark: figures/rps24-microexons-dark.svg
+    route: generated
+    script: scripts/fig_rps24_microexons.py
+    chapter: chapters/11-transcript-to-protein.qmd
+    data_source: research/11-transcript-to-protein.yml (PRO-040, PRO-041, PRO-052)
+    palette: dataviz reference instance, categorical slot 1 + neutral
+    palette_validated: "both modes pass all six checks"
+    note: >
+      Original. The microexons are at true relative scale to each other; the
+      constitutive exons are drawn broken because their lengths were not read.
+      Deliberately NO line connects an exon combination to a protein end: the
+      sources use mutually inconsistent naming schemes and the published
+      reconciliation is itself inconsistent, so asserting a mapping would be
+      unsupported. Terminal residue counts come from the published isoform
+      names.
+
+  - path: figures/proteoform-scale.svg
+    dark: figures/proteoform-scale-dark.svg
+    route: generated
+    script: scripts/fig_proteoform_scale.py
+    chapter: chapters/12-proteoforms-drugs.qmd
+    data_source: research/12-proteoforms-drugs.yml (DRG-001, DRG-011)
+    palette: dataviz reference instance, categorical slot 1 + neutral band
+    palette_validated: "both modes pass all six checks"
+    note: >
+      Original. The measured quantity is a band spanning one decade rather than
+      a point, because the source says only "thousands". Log axis, since the
+      quantities span five orders of magnitude.
+
+  - path: figures/cldn18-isoform-target.svg
+    dark: figures/cldn18-isoform-target-dark.svg
+    route: generated
+    script: scripts/fig_cldn18_isoform_target.py
+    chapter: chapters/12-proteoforms-drugs.qmd
+    data_source: research/12-proteoforms-drugs.yml (DRG-020, DRG-022)
+    palette: dataviz reference instance, categorical slots 1 and 2 + neutral
+    palette_validated: "both modes pass all six checks; slots 1 and 2 only, because slots 2 and 3 fall to tritan dE 4.0 against the dark surface"
+    note: >
+      Original schematic. Exon count, exon sizes and the proportions of the
+      protein bar are illustrative. The sources give the identity of the
+      differing regions, not their lengths, so nothing here should be measured.
