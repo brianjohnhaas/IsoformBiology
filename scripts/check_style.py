@@ -9,6 +9,7 @@ words, and by then the book reads like a review article.
 What is checked:
   - mean sentence length (target < 19 words)
   - no sentence over 45 words
+  - no running-prose sentence under 7 words
   - no first person (the book has no narrator)
   - banned AI-tell vocabulary and constructions
   - no em dashes
@@ -33,6 +34,10 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 MEAN_MAX = 19.0
 MIN_SENTENCES = 20   # below this a chapter is still a stub
 SENTENCE_MAX = 45
+# A four- or five-word sentence placed for emphasis is the loudest mark of
+# generated prose, and the mean-length rule above actively encourages them.
+# Labels are exempt: list items, bolded defined terms, glossary pointers.
+SENTENCE_MIN = 7
 RUN_LEN = 4
 
 FIRST_PERSON = re.compile(
@@ -54,6 +59,7 @@ EDITORIALISING = re.compile(
 def prose_only(text: str) -> str:
     """Strip everything that is not the chapter's own running prose."""
     text = re.sub(r"(?s)^---.*?---", " ", text)          # yaml front matter
+    text = re.sub(r"(?s)<!--.*?-->", " ", text)          # html comments
     text = re.sub(r"(?s):::.*?:::", " ", text)           # callouts and asides
     text = re.sub(r"(?s)```.*?```", " ", text)           # code
     text = re.sub(r"!\[[^\]]*\]\([^)]*\)[^\n]*", " ", text)  # figures+captions
@@ -90,6 +96,41 @@ def sentences(text: str) -> list[str]:
     return out
 
 
+POINTER = re.compile(r"^(See|Reviewed in)\b.*@", re.I)
+
+
+def running_prose_paragraphs(text: str) -> list[str]:
+    """Paragraphs that are running prose, with labels and lists left out.
+
+    The minimum-length rule is about prose. A list item, a bolded defined term
+    standing as its own label, and a "See @sec-..." pointer are all legitimately
+    shorter than a sentence, so they are dropped before the rule is applied.
+    """
+    text = re.sub(r"(?s)^---.*?---", " ", text)
+    text = re.sub(r"(?s)<!--.*?-->", " ", text)
+    text = re.sub(r"(?s):::.*?:::", " ", text)
+    text = re.sub(r"(?s)```.*?```", " ", text)
+    text = re.sub(r"!\[[^\]]*\]\([^)]*\)[^\n]*", " ", text)
+    text = re.sub(r"^#.*$", " ", text, flags=re.M)
+    text = re.sub(r"\[@[^\]]*\]", "", text)
+
+    out = []
+    for para in re.split(r"\n\s*\n", text):
+        lines = [l for l in para.split("\n") if l.strip()]
+        if not lines:
+            continue
+        first = lines[0].lstrip()
+        if re.match(r"[-*+>|]\s|\d+\.\s", first):   # list item or table row
+            continue
+        if first.startswith("**"):                    # bolded defined term
+            # keep the body, drop the label sentence itself
+            para = re.sub(r"^\s*\*\*[^*]*\*\*\s*", "", para)
+        para = re.sub(r"\*+", "", para)
+        para = re.sub(r"(?<!\n)\n(?!\n)", " ", para)
+        out.append(para.strip())
+    return out
+
+
 def check(path: pathlib.Path) -> list[str]:
     raw = path.read_text(encoding="utf-8")
     text = prose_only(raw)
@@ -101,15 +142,23 @@ def check(path: pathlib.Path) -> list[str]:
 
     lens = [len(s.split()) for s in sents]
     mean = sum(lens) / len(lens)
-    if len(sents) < MIN_SENTENCES:
-        return []   # stub; nothing to judge yet
-    if mean >= MEAN_MAX:
+    # The mean and the metronomic run need a sample to mean anything. The other
+    # checks do not, so a short file like the preface still gets them.
+    sampled = len(sents) >= MIN_SENTENCES
+    if sampled and mean >= MEAN_MAX:
         fails.append(f"mean sentence {mean:.1f} words (target < {MEAN_MAX}) "
                      f"- the prose has gone stately; break sentences up")
 
     for s, n in zip(sents, lens):
         if n > SENTENCE_MAX:
             fails.append(f"{n}-word sentence: {s[:90]}...")
+
+    for para in running_prose_paragraphs(raw):
+        for s in sentences(para):
+            n = len([w for w in s.split() if re.search(r"[A-Za-z0-9]", w)])
+            if n < SENTENCE_MIN and not POINTER.match(s):
+                fails.append(f"{n}-word sentence: {s!r} - too short to be "
+                             "prose; fold it into its neighbour")
 
     if "—" in raw:
         fails.append(f"em dash present ({raw.count('—')}x); use a comma, "
@@ -126,7 +175,7 @@ def check(path: pathlib.Path) -> list[str]:
         fails.append(f"participle editorialising: {m.group(0).strip()!r} "
                      "- state the specific implication or cut it")
 
-    for i in range(len(lens) - RUN_LEN + 1):
+    for i in range(len(lens) - RUN_LEN + 1 if sampled else 0):
         window = lens[i:i + RUN_LEN]
         if max(window) - min(window) <= 2:
             fails.append(f"{RUN_LEN} consecutive sentences of length "

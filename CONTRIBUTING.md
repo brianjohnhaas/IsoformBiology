@@ -110,7 +110,7 @@ committed and after any edit to a quote or an anchor.
 | `check_overlap.py` | No chapter reuses 8+ consecutive words from a recorded source quote | CI |
 | `check_citations.py` | Every number in a section appears in a claim for a source that section cites | CI |
 | `build_bib.py --check` | `references.bib` is exactly what the claim records generate | CI |
-| `check_style.py` | Sentence length, first person, banned constructions, em dashes, metronomic runs | CI |
+| `check_style.py` | Sentence length upper and lower bounds, first person, banned constructions, em dashes, metronomic runs | CI |
 | `check_figures.py` | Every figure has a manifest entry with its provenance, and every entry names files that exist | CI |
 
 ### What the checks cannot see
