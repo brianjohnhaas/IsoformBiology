@@ -14,7 +14,8 @@ answer works less often than its popularity suggests.
 Mediated expression score regression was applied to 42 traits, using GTEx
 cis-eQTL data from 48 tissues. It put the share of heritability mediated by
 assayed gene expression levels at 11 per cent, reported as 11 plus or minus 2
-[@yao2020quantifying]. Most of it is mediated by something else.
+[@yao2020quantifying]. Most of it is mediated by something other than assayed
+expression.
 
 ## The colocalisation gap {#sec-coloc-gap}
 

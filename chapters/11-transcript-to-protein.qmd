@@ -309,10 +309,11 @@ Alzheimer's sections, and neither can be preferred from what was read.
 
 Three things are now on firmer ground. The mechanism that produces an isoform
 difference predicts which part of the protein changes. A difference confined to
-untranslated sequence usually changes how much protein is made, though not
-always, and not reliably enough to assume either way. When
-the measurement is good enough to see a gene's main product, it sees the gene's
-alternative products about as often.
+untranslated sequence can change how much protein is made, and can change which
+protein is made by moving the start codon the ribosome uses, though neither
+follows reliably enough to be assumed. When the measurement is good enough to
+see a gene's main product, it sees the gene's alternative products about as
+often.
 
 One thing remains unresolved, and it is
 the thing a drug developer most needs. Knowing that an

@@ -80,9 +80,8 @@ function the isoform count is supposed to underwrite [@dscam2021splicingbias].
 
 The same authors name the problem their own result creates, in the preprint of
 that work: heavy, reproducible bias restricts access to the diversity that
-self-avoidance is supposed to exploit [@hong2019dscamsplicingbias]. No
-resolution is available, and the standard self-avoidance account is incomplete
-as it stands.
+self-avoidance is supposed to exploit [@hong2019dscamsplicingbias], and they
+leave that tension unresolved.
 
 ## Splicing as a developmental switch
 

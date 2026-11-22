@@ -12,9 +12,6 @@ up.
 
 ## Changes a gene-level analysis retires {#sec-invisible-switches}
 
-The size of the effect is measurable, and several groups have measured it in
-different ways.
-
 Treatment-naive oesophageal tissue was scored for isoform switches during
 progression from low-grade to high-grade Barrett's dysplasia. Between 42 and 46
 per cent of the genes called that way showed no significant difference in total
@@ -24,7 +21,8 @@ A reanalysis of twelve TCGA cancer types using differential transcript usage, in
 the sense of @sec-dtu, found that roughly a quarter of the tumour-side
 transcripts that changed in usage were not themselves called differentially
 expressed. Only a few per cent of the normal-side transcripts behaved that way
-[@dolgalev2023switching].
+[@dolgalev2023switching]. That figure counts transcripts and the one above
+counts genes, so the two do not combine.
 
 Among the isoform pairs distinguishing basal-like from luminal breast tumours
 in TCGA, 49 of 229 pairs showed no accompanying difference in gene-level

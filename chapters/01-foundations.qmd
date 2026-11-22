@@ -263,7 +263,8 @@ transcript per gene [@gonzalezporta2013dominanttranscript]. What survives of the
 functional claim, once that is taken into account, is the subject of
 @sec-how-functional.
 
-A typical protein-coding gene carries annotation for six isoforms and
-expresses about one. Both numbers are correct, and the distance between them is
-where most of the argument in this book sits. @sec-per-gene-counts returns to
-it once the catalogues are in view.
+The median protein-coding gene in one Ensembl release carries annotation for
+six isoforms, and a separate short-read study of primary tissues put the ratio
+of expressed transcripts to genes at about one. The two were not measured on
+the same footing, so the distance between them is not a measured gap.
+@sec-per-gene-counts returns to the question once the catalogues are in view.

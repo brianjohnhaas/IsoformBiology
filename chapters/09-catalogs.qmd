@@ -6,11 +6,10 @@ Written from `research/09-catalogs.yml` and not yet reviewed by a second
 reader.
 :::
 
-Long reads settled whether unannotated transcripts are real, without settling
+Long reads showed that many unannotated transcripts are real, without settling
 what a reference annotation is for, and that second question is now the harder
-one.
-Depth alone could inflate reference transcript sets by millions of models, so
-the decision facing every catalogue is editorial rather than technical
+one. Depth alone could inflate reference transcript sets by millions of models,
+so the decision facing every catalogue is editorial rather than technical
 [@monzo2025challenges].
 
 ## Picking one transcript per gene {#sec-mane}

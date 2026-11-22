@@ -136,9 +136,9 @@ was enough to assign that whole transcript to a parental chromosome
 free with length.
 
 Assigning native RNA reads to a parental chromosome this way gave allelic
-imbalance for 228 of the testable autosomal genes, which is 6.1 per cent,
-against 23 X-linked genes scored at 95.7 per cent. Of those 23, 22 were
-maternal, and the single paternal one was XIST [@workman2019nanopore].
+imbalance for 228 of the testable autosomal genes, which is 6.1 per cent. Among
+X-linked genes 23 showed imbalance, 22 of them maternal, and the single
+paternal one was XIST [@workman2019nanopore].
 
 The same approach measures escape from X inactivation in transcripts rather than
 in junction counts. In a mouse model with skewed inactivation, only 69 of 12,623
