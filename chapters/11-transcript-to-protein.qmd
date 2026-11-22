@@ -230,7 +230,7 @@ from its own text. Settling it would take the annotated transcript and protein
 sequences rather than the papers. Each result below is therefore reported in its
 own paper's labels.
 
-### The proportions differ by tissue and are held {#sec-rps24-regulation}
+### Tissue proportions that are conserved between species {#sec-rps24-regulation}
 
 The proportions differ by tissue, and by tumour type within a tissue
 [@park2024rps24]. One combination behaves like a tissue marker that disease
