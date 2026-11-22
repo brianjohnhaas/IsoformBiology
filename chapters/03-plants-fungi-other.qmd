@@ -9,8 +9,8 @@ second reader.
 Two limits run through it. Thirty-one of its sources were read as abstracts
 rather than as full text, which is the second-largest such count in the book,
 and much of the plant work on flowering time predates full-text indexing. The
-apicomplexan material also leans on one laboratory, and @sec-protists says so
-where it matters.
+apicomplexan material also leans on one laboratory, and the section on
+protists and parasites says so where it matters.
 :::
 
 Two kinds of statement get made about isoforms outside the animals. One is a
@@ -241,16 +241,19 @@ second gene.
 
 An earlier study of MAF2 reached the opposite conclusion from the same kind of
 experiment. Overexpressing the genomic clone delayed flowering, but no
-individual splice variant did, and the cold-abundant variant instead made plants
-flower pronouncedly early in two backgrounds
+individual splice variant did, and the cold-abundant variant instead made
+plants flower pronouncedly early in two backgrounds
 [@rosloski2012maf2variants]. Those authors repeated the test in an accession
 null for FLC and MAF2 expression, which also fails to express MAF3 and MAF4
-properly, so that co-suppression of relatives could not confound the result. The
-genomic clone still delayed flowering while the cold-abundant variant alone did
-not under long days, although under short days it gave the same spread of
-flowering times as the clone [@rosloski2012maf2variants]. Photoperiod does not
-reconcile the two studies, since both scored long days. What differs is
-background and transgene integrity, and the disagreement is unresolved.
+properly, so that co-suppression of relatives could not confound the result.
+The genomic clone still delayed flowering while the cold-abundant variant
+alone did not under long days, although under short days it gave the same
+spread of flowering times as the clone [@rosloski2012maf2variants].
+Photoperiod does not reconcile the two studies, since both scored long days.
+What differs is genetic background and transgene integrity, and on the second
+point the earlier authors note that only some of their lines expressed the
+transgene along its whole length. The disagreement stands unresolved in the
+literature.
 
 ### COOLAIR, and whether the antisense isoforms are needed at all
 
@@ -307,15 +310,21 @@ alike, turned out to make new antisense transcripts starting inside the first
 intron of FLC [@zhao2021coolairfield]. If removing COOLAIR replaces it with
 something, a null result is hard to read.
 
-The authors of one negative result tested that objection directly. Wild type makes low-abundance convergent antisense transcripts at the locus as
-well. Cold reduced those to the same extent in wild type and in every deletion
-mutant, so their regulation does not depend on COOLAIR
-[@jeon2023coolaircbf]. A later study supplies the most likely reconciliation.
-The Polycomb route can silence FLC on its own. In COOLAIR-defective lines the
-active mark was removed more slowly during cold, and the locus still ended up
-fully silenced, whether the antisense pathway was crippled or driven hard
-[@nielsen2024coolairprc2]. Two parallel routes to one outcome would explain why
-the requirement appears and disappears with growth conditions.
+The authors of one negative result tested that objection directly. Wild type
+makes low-abundance convergent antisense transcripts at the locus as well.
+Cold reduced those to the same extent in wild type and in every deletion
+mutant, so their regulation does not depend on COOLAIR [@jeon2023coolaircbf].
+One asymmetry in that literature is worth stating, because the citations do
+not show it. Five of the eight COOLAIR sources cited here share a senior
+author, and they include the single-base experiments, the objection to the
+negative results, and the reconciliation proposed below. The two results
+finding COOLAIR unnecessary come from two other groups. A later study supplies
+the most likely reconciliation. The Polycomb route can silence FLC on its own.
+In COOLAIR-defective lines the active mark was removed more slowly during
+cold, and the locus still ended up fully silenced, whether the antisense
+pathway was crippled or driven hard [@nielsen2024coolairprc2]. Two parallel
+routes to one outcome would explain why the requirement appears and disappears
+with growth conditions.
 
 ### The clock splices itself unproductively
 
@@ -357,8 +366,23 @@ the preprint rather than from the published version.
 ### Resistance genes need their introns, except when they do not
 
 The largest body of functional evidence in plant isoform biology sits in
-disease resistance, and it does not resolve into a rule. Four genes have been
-tested by the same logic, and three of the answers disagree with the fourth.
+disease resistance, and it does not resolve into a rule. Five genes have been
+tested by removing the relevant introns, three say splicing is required and
+two say it is not, and a sixth gives an answer of a different kind.
+
+| Gene | What was removed | What happened to resistance |
+|---|---|---|
+| Tobacco *N* | the intron carrying the alternative exon, in stable transgenics | incomplete [@ngene2000alttranscripts] |
+| Tobacco *N* | the same intron, in transient assays | unchanged [@ikeda2021nintrons] |
+| Arabidopsis *RPS4* | either or both retained introns | lost [@rps42003truncatedorfs] |
+| Medicago *RCT1* | each transcript supplied alone | lost [@rct12013splicingrequired] |
+| Flax *L6* | every intron, as a cDNA transgene | unchanged [@l61999alternativetranscripts] |
+| Tomato *Bs4* | the introns | unchanged [@bs42004tirnblrr] |
+| Rice *RGA5* | nothing; the two isoforms were compared | carried by one isoform alone [@rga52013directbinding] |
+
+: Removing the introns of a resistance gene costs resistance in three of these
+genes and not in two others, and the one disagreement is between two assays of
+the same gene. {#tbl-rgene-introns}
 
 Tobacco *N* confers resistance to tobacco mosaic virus, and its transcripts
 include a shorter form that encodes a truncated receptor. A transgene built from
@@ -438,9 +462,11 @@ holding the alternative exon, developed full chalky white necrosis as fast as
 the construct with all four introns. It restricted virus spread in *N.
 benthamiana* as well [@ikeda2021nintrons]. The two experiments are not a clean
 head-to-head. The 2000 work used stable tobacco transgenics in the gene's own
-context. The 2021 work used transient constructs driven by a strong viral
-promoter in a different host. Which assay to believe is exactly the question a
-reader is left with.
+context, and its rescuing construct carried extra genomic sequence beyond the
+intron, so it differs from the cDNA transgene in more than the alternative
+exon. The 2021 work used transient constructs driven by a strong viral
+promoter, and scored infection-focus size in a different host. Which assay to
+believe is the question a reader is left with.
 
 A last caution applies to all of these cases. *RPS4*'s splicing pattern does
 change during the resistance response, and its expression is induced by the
@@ -463,12 +489,12 @@ allele needs its own introns to misbehave, since transgenic plants given the
 mutant coding sequence as cDNA never developed the dwarf stature the
 intron-containing allele causes [@xu2011mos14].
 
-### One isoform, at its own expression level
+### Supplying one isoform and watching a whole plant
 
 Three plant cases use a tighter design than the intron deletions above. Each
-supplies one isoform at close to native expression and then watches a whole
-plant. That design is worth naming, because it is what the resistance-gene
-literature has mostly lacked.
+supplies one isoform and then scores a whole plant, which is what the
+resistance-gene literature has mostly lacked. Two of the three supply it from
+the gene's own promoter, and the exception is noted below.
 
 The first is a brake on immune signalling. Losing the RNA-binding protein IRR
 raised the share of the intron-retaining *CPK28* transcript sixfold relative
@@ -484,7 +510,9 @@ regulator rather than not at all [@dressano2020irr].
 The second divides the jobs of a splicing factor between its own two isoforms.
 In an Arabidopsis mutant lacking both SR45 isoforms, the first restored normal
 flower petals but not root growth, and the second restored root growth but not
-petal shape [@sr452009distinctisoforms]. What distinguishes them is a
+petal shape [@sr452009distinctisoforms]. Both isoforms in that experiment were
+supplied as overexpressed fusion proteins rather than at native level, which
+is the exception to the design described above. What distinguishes them is a
 phosphorylation site inside the alternatively spliced segment. Mutating
 serine-219 on its own left the complementation pattern unchanged
 [@sr452009distinctisoforms]. Mutating it together with the adjacent
@@ -568,11 +596,12 @@ Bread wheat makes five splice variants of the G-protein gamma subunit gene
 TaGS3, and two of them pull in opposite directions. Overexpressing TaGS3.1 cut
 grain weight by 5.89 per cent and length by 5.04 per cent. Overexpressing
 TaGS3.5 raised grain weight by 5.70 per cent and length by 4.30 per cent
-[@ren2021tags3]. A second wheat locus makes the same point with a natural
-allele instead of a transgene, and at two ploidies. A G-to-A change at the
-splice acceptor of TaGW2-A1 exon 5 mis-splices the transcript. Backcrossed
-tetraploid and hexaploid lines carrying it gained 6.6 per cent in grain
-weight, 2.8 per cent in width and 2.1 per cent in length across thirteen
+[@ren2021tags3]. A second wheat locus makes the same point without a
+transgene, at two ploidies, and with an allele that was induced in a
+mutagenised population rather than found in a wild accession. A G-to-A change
+at the splice acceptor of TaGW2-A1 exon 5 mis-splices the transcript.
+Backcrossed tetraploid and hexaploid lines carrying it gained 6.6 per cent in
+grain weight, 2.8 per cent in width and 2.1 per cent in length across thirteen
 experiments [@simmonds2016tagw2]. One broken splice site can make two
 products, which is worth remembering before treating such an allele as a
 knockout. Nine of twelve sequenced cDNA clones used an acceptor four bases
@@ -611,11 +640,11 @@ split-fluorophore and co-immunoprecipitation assays it bound neither the bZIP
 partner nor any 14-3-3 protein that the full-length protein binds
 [@qin2017ft2splicing]. It still heterodimerised with the full-length protein
 and with the second florigen [@qin2017ft2splicing]. Tomato's master ripening
-transcription factor supplies the fourth case, more weakly. Its two spliced
-forms are not equivalent as activators, and only the first induced a reporter
-gene in a yeast assay [@slugina2021rinisoforms]. Whether a plant can make that
-form depends on whether its RIN locus carries the relevant 3' splice site,
-which several wild green-fruited species lack [@slugina2021rinisoforms].
+transcription factor supplies a third, more weakly. Its two spliced forms are
+not equivalent as activators, and only the first induced a reporter gene in a
+yeast assay [@slugina2021rinisoforms]. Whether a plant can make that form
+depends on whether its RIN locus carries the relevant 3' splice site, which
+several wild green-fruited species lack [@slugina2021rinisoforms].
 
 An oilseed *Brassica rapa* line shows the same kind of allele skipping
 vernalisation altogether. A 56 bp deletion at the fourth exon-intron boundary
@@ -654,11 +683,12 @@ four proteins. Two of them are directed to guard and subsidiary cells rather
 than the general epidermis, and one is sent to the endoplasmic reticulum
 [@lee2016oscyp194]. The recombinant form with altered active-site residues had
 significantly lower isomerase activity than the main form [@lee2016oscyp194].
-Nobody has yet supplied one of those isoforms on its own and scored a plant
-for cold tolerance. Against the flowering-time and immunity literature, where
-isoform-restricted alleles are routine, the abiotic stress literature is a
-collection of prevalence measurements. That gap is worth stating, because a
-reader scanning review articles would not guess it.
+No study in this book's corpus supplies one of those isoforms on its own and
+scores a plant for cold tolerance. Against the flowering-time and immunity
+literature, where isoform-restricted alleles are routine, the abiotic stress
+work read for this chapter is a collection of prevalence measurements. That
+gap is worth stating, because a reader scanning review articles would not
+guess it.
 
 ## Fungi {#sec-fungi}
 
@@ -793,12 +823,13 @@ then found Mmi1 holding meiotic messages in nuclear foci, keeping them away
 from the translation machinery. Its self-association through a partner protein
 was required for the foci. The same was true for the degradation, the nuclear
 retention and the block on protein output [@shichino2018mmi1foci]. On that
-account the splicing inhibition is not the primary mechanism, and a chapter
-should not assert it on one 2011 reading. One named locus does show the
-splicing step being withheld. The meiotic cyclin gene *crs1* is transcribed
-continuously in growing cells, while its transcripts are destroyed instead of
-spliced and polyadenylated. In a mutant lacking Mmi1 those same vegetative
-transcripts do get spliced and polyadenylated [@mcpheeters2009crs1].
+account the splicing inhibition is not the primary mechanism, so the earlier
+reading should be attributed rather than adopted. One named locus does show
+the splicing step being withheld. The meiotic cyclin gene *crs1* is
+transcribed continuously in growing cells, while its transcripts are destroyed
+instead of spliced and polyadenylated. In a mutant lacking Mmi1 those same
+vegetative transcripts do get spliced and polyadenylated
+[@mcpheeters2009crs1].
 
 ### A fungal clock set by which start codon is used
 
@@ -812,12 +843,13 @@ to make only the long protein or only the short one both keep a running clock,
 at different speeds: the long-only strain runs short and the short-only strain
 runs long [@frq2007longshortisoforms].
 
-That experiment also argues against the function the pair was assumed to serve.
-Having both proteins is not what keeps the period stable across temperatures,
-because each single-isoform strain is already temperature-compensated, and the
-ratio instead trims period length to the ambient temperature
-[@frq2007longshortisoforms]. A chapter that called this pair a temperature
-compensation device would be contradicted by its own primary source.
+That experiment also argues against the function the pair was assumed to
+serve. Having both proteins is not what keeps the period stable across
+temperatures, because each single-isoform strain is already
+temperature-compensated [@frq2007longshortisoforms]. The ratio instead trims
+period length to the ambient temperature [@frq2007longshortisoforms]. Calling
+the pair a temperature-compensation device, as the obvious reading would, is
+contradicted by that primary.
 
 The two proteins are not interchangeable biochemically either. The long form
 carries an extra 99 residues at its front end, and is the less stable of the
@@ -1070,9 +1102,10 @@ identical 35-nucleotide leader at the 5' end, present on many and probably all
 of them [@parsons1984splicedleader]. Genes are transcribed polycistronically,
 and individual mature mRNAs are carved out of that transcript by
 spliced-leader trans-splicing, obligatorily coupled to cleavage and
-polyadenylation in the intergenic regions [@kolev2026transsplicing]. The
-splicing reaction there sets transcript boundaries instead of choosing
-internal exon content.
+polyadenylation in the intergenic regions [@kolev2026transsplicing]. That
+account of the architecture is a preprint, and the experiment behind it is
+older. The splicing reaction there sets transcript boundaries instead of
+choosing internal exon content.
 
 That coupling was established by mutagenesis rather than inference. Blocks of
 the intergenic region between the beta- and alpha-tubulin genes were replaced
@@ -1157,15 +1190,15 @@ no cell death at all, and neither did the *Phytophthora* orthologue
 
 ### The supergroups with nothing to report
 
-Several eukaryotic supergroups have no isoform case at all, and the honest
-account of them is a count of introns. Amoebozoa is the clearest example of
-that emptiness. One comparison counted 441 exact intron losses in
-*Dictyostelium discoideum* and 202 in *D. purpureum* [@ma2015dictyostelium].
-The lost introns sat further from the 5' end of genes than the retained ones,
-and the higher-loss species carried significantly more reverse transcriptase
-genes [@ma2015dictyostelium]. Those authors read that as loss through gene
-conversion with reverse-transcribed cDNA, which is a model rather than a
-demonstration [@ma2015dictyostelium].
+Several eukaryotic supergroups have no isoform case at all in this book's
+corpus, and the honest account of them is a count of introns. Amoebozoa is the
+clearest example of that emptiness. One comparison counted 441 exact intron
+losses in *Dictyostelium discoideum* and 202 in *D. purpureum*
+[@ma2015dictyostelium]. The lost introns sat further from the 5' end of genes
+than the retained ones, and the higher-loss species carried significantly more
+reverse transcriptase genes [@ma2015dictyostelium]. Those authors read that as
+loss through gene conversion with reverse-transcribed cDNA, which is a model
+rather than a demonstration [@ma2015dictyostelium].
 
 *Giardia intestinalis* has almost no cis-spliced introns to splice
 alternatively. Strand-specific sequencing of four isolates confirmed the
@@ -1185,15 +1218,17 @@ seventeen growth and stress conditions, 2,924 of its 12,177 gene models showed
 intron retention and 2,444 showed exon skipping, with 1,335 showing both
 [@rastogi2018phaeodactylum]. Retention leads skipping there as it does in
 other single-celled eukaryotes. Under nitrogen starvation the genes retaining
-introns rose in expression while those skipping exons fell, which runs
-opposite to the negative relationship between retention and expression
-reported in the apicomplexans and in *Paramecium* [@rastogi2018phaeodactylum].
-Red algae mostly dismantled their splicing machinery as their genomes shrank,
-and *Galdieria* is the exception. Of 155 spliceosome-associated genes inferred
-for the red algal common ancestor it retains 150, against 53 to 145 across the
-other lineages examined [@qiu2018galdieria]. It carries about two introns per
-gene where others have under 0.34, and some of those introns are spliced
-differently at different culture temperatures [@qiu2018galdieria].
+introns rose in expression while those skipping exons fell
+[@rastogi2018phaeodactylum]. Those authors note that their intron-retaining
+genes are the more highly expressed, which is the opposite sign to what the
+apicomplexan and *Paramecium* work reports, and this chapter does not pick
+between them. Red algae mostly dismantled their splicing machinery as their
+genomes shrank, and *Galdieria* is the exception. Of 155
+spliceosome-associated genes inferred for the red algal common ancestor it
+retains 150, against 53 to 145 across the other lineages examined
+[@qiu2018galdieria]. It carries about two introns per gene where others have
+under 0.34, and some of those introns are spliced differently at different
+culture temperatures [@qiu2018galdieria].
 
 ## Whether any of this tracks complexity {#sec-trend}
 
@@ -1237,11 +1272,14 @@ ranking. The fungal survey's own random-sampling estimate for *Cryptococcus
 neoformans* is 18.2 and 19.9 per cent of genes for its two sequenced strains,
 against the 4.2 per cent its own introduction cites from a single-species
 study of the same fungus [@grutzmann2013fungal]. The gap is fourfold and sits
-inside one paper. Both strains drew on the same EST data, so this is one
-dataset measured two ways [@grutzmann2013fungal]. *Cryptococcus* is also well
-sampled, so sparse data cannot explain the gap [@grutzmann2013fungal]. Why the
-uniform method reproduces the two yeasts and overturns this fungus is not
-stated.
+inside one paper, and two bounds keep it from being read as a simple
+replication failure. The two strain figures rest on the same EST data, so they
+are one transcript dataset against two assemblies rather than an independent
+repeat [@grutzmann2013fungal]. Sparse sampling cannot explain the gap either,
+since this fungus is among the better-covered species in that survey
+[@grutzmann2013fungal]. What the episode shows is that a published species
+figure can survive for years as the only one available, and then move fourfold
+when somebody recounts it.
 
 ### The comparisons that survive
 
@@ -1254,9 +1292,9 @@ The reassuring result is that rankings outlive their numbers. Two studies that
 applied the same ten-transcript normalisation got different absolute
 percentages and the same ordering [@chen2014complexity]. The later and larger
 survey reported higher proportions for most clades, while the differences
-between clades agreed [@chen2014complexity]. Four studies spanning three
-generations of sequencing found the same confounder pointing the same way.
-Each time the absolute values moved while the order held.
+between clades agreed [@chen2014complexity]. Four of this chapter's sources
+found the same confounder, pointing the same way, across three generations of
+sequencing technology.
 
 The figures in this chapter are therefore measurements of experiments that
 happen to be about organisms. Any single number offered for an organism is a

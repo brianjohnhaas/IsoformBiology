@@ -4,16 +4,16 @@ date: 2026-11-21
 corpus: paperclip 0.8.23
 claims:
 - id: SCS-001
-  claim: 'Splice-isoform quantification split human blood classical monocytes into two subpopulations
-    that gene-expression clustering of the same cells did not resolve.
+  claim: 'Splice-isoform quantification split human blood classical monocytes into two subpopulations that
+    gene-expression clustering of the same cells did not resolve.
 
     '
   topic: cell-type-specific isoform usage
   source:
     doc_id: PMC8563012
     title: RNA splicing programs define tissue compartments and cell types at single-cell resolution
-    authors: Olivieri, J. E.; Dehghannasiri, R.; Wang, P. L.; Jang, S.; de Morree, A.; Tan, S. Y.; Ming,
-      J.; Ruohao Wu, A.; Tabula Sapiens Consortium; Quake, S. R.; Krasnow, M. A.; Salzman, J.
+    authors: Olivieri, J. E.; Dehghannasiri, R.; Wang, P. L.; Jang, S.; de Morree, A.; Tan, S. Y.; Ming, J.;
+      Ruohao Wu, A.; Tabula Sapiens Consortium; Quake, S. R.; Krasnow, M. A.; Salzman, J.
     journal: eLife
     year: 2021
     doi: 10.7554/eLife.70692
@@ -28,9 +28,9 @@ claims:
 
       '
   confidence: high
-  figure_idea: 'Two panels over the same cells: left, a gene-expression embedding in which one monocyte
-    cloud is uniform; right, the same cloud coloured by the isoform ratio of a single gene, showing two
-    separated lobes. The point is that the second structure exists in the first panel but is invisible.
+  figure_idea: 'Two panels over the same cells: left, a gene-expression embedding in which one monocyte cloud
+    is uniform; right, the same cloud coloured by the isoform ratio of a single gene, showing two separated
+    lobes. The point is that the second structure exists in the first panel but is invisible.
 
     '
 - id: SCS-002
@@ -43,8 +43,8 @@ claims:
   source:
     doc_id: PMC8563012
     title: RNA splicing programs define tissue compartments and cell types at single-cell resolution
-    authors: Olivieri, J. E.; Dehghannasiri, R.; Wang, P. L.; Jang, S.; de Morree, A.; Tan, S. Y.; Ming,
-      J.; Ruohao Wu, A.; Tabula Sapiens Consortium; Quake, S. R.; Krasnow, M. A.; Salzman, J.
+    authors: Olivieri, J. E.; Dehghannasiri, R.; Wang, P. L.; Jang, S.; de Morree, A.; Tan, S. Y.; Ming, J.;
+      Ruohao Wu, A.; Tabula Sapiens Consortium; Quake, S. R.; Krasnow, M. A.; Salzman, J.
     journal: eLife
     year: 2021
     doi: 10.7554/eLife.70692
@@ -54,15 +54,15 @@ claims:
     text_access: full_text
     lines: L236
     anchor: https://paperclip.gxl.ai/citations/papers/PMC8563012#L236
-    quote: 'cells from stromal, epithelial, and immune compartments in the first human individual were
-      classified with accuracies of 78, 84, and 95%
+    quote: 'cells from stromal, epithelial, and immune compartments in the first human individual were classified
+      with accuracies of 78, 84, and 95%
 
       '
   confidence: high
 - id: SCS-003
   claim: 'In CD8 T cells profiled with a 5-prime single-cell assay, naive and effector-memory-reexpressing-CD45RA
-    clusters carried the CD45RA form of PTPRC while central memory and MAIT cells carried CD45RO, so one
-    gene marked different subsets only through its splice form.
+    clusters carried the CD45RA form of PTPRC while central memory and MAIT cells carried CD45RO, so one gene
+    marked different subsets only through its splice form.
 
     '
   topic: PTPRC/CD45
@@ -108,8 +108,8 @@ claims:
     text_access: full_text
     lines: L57
     anchor: https://paperclip.gxl.ai/citations/papers/PMC11496083#L57
-    quote: 'Cd45RB is expressed by naïve and central memory T cells and NK cells. Cd45RC showed very low
-      expression in all subsets.
+    quote: 'Cd45RB is expressed by naïve and central memory T cells and NK cells. Cd45RC showed very low expression
+      in all subsets.
 
       '
   confidence: high
@@ -122,8 +122,8 @@ claims:
   source:
     doc_id: bio_6d51f05a6e54
     title: Single-cell splice isoform usage reveals distinct axes of cellular identity and senescence
-    authors: Mantri, M.; Detweiler, A. M.; Lee, J.; Kwon, J. H. Y.; Zhou, A.; Tong, L.; Jones, R. C.;
-      Neff, N. F.; Tabula Sapiens Consortium; Quake, S. R.
+    authors: Mantri, M.; Detweiler, A. M.; Lee, J.; Kwon, J. H. Y.; Zhou, A.; Tong, L.; Jones, R. C.; Neff,
+      N. F.; Tabula Sapiens Consortium; Quake, S. R.
     journal: bioRxiv
     year: 2026
     doi: 10.64898/2026.09.11.748700
@@ -137,24 +137,23 @@ claims:
 
       '
   confidence: medium
-  figure_idea: 'A two-way Venn of gene-cell-class pairs: differentially expressed, differentially used,
-    both. The chapter''s claim is the size of the isoform-only lobe, so that lobe should be labelled with
-    its count.
+  figure_idea: 'A two-way Venn of gene-cell-class pairs: differentially expressed, differentially used, both.
+    The chapter''s claim is the size of the isoform-only lobe, so that lobe should be labelled with its count.
 
     '
 - id: SCS-006
-  claim: 'In the same atlas, how widely a gene spreads its expression across isoforms tracked cell type
-    more strongly than tissue of residence (mean partial omega-squared 0.062 versus 0.047), although which
-    isoforms a gene used contributed comparably from cell type and from tissue once factor complexity
-    was accounted for.
+  claim: 'In the same atlas, how widely a gene spreads its expression across isoforms tracked cell type more
+    strongly than tissue of residence (mean partial omega-squared 0.062 versus 0.047), although which isoforms
+    a gene used contributed comparably from cell type and from tissue once factor complexity was accounted
+    for.
 
     '
   topic: isoform diversity within vs between cell types
   source:
     doc_id: bio_6d51f05a6e54
     title: Single-cell splice isoform usage reveals distinct axes of cellular identity and senescence
-    authors: Mantri, M.; Detweiler, A. M.; Lee, J.; Kwon, J. H. Y.; Zhou, A.; Tong, L.; Jones, R. C.;
-      Neff, N. F.; Tabula Sapiens Consortium; Quake, S. R.
+    authors: Mantri, M.; Detweiler, A. M.; Lee, J.; Kwon, J. H. Y.; Zhou, A.; Tong, L.; Jones, R. C.; Neff,
+      N. F.; Tabula Sapiens Consortium; Quake, S. R.
     journal: bioRxiv
     year: 2026
     doi: 10.64898/2026.09.11.748700
@@ -169,9 +168,9 @@ claims:
       '
   confidence: medium
 - id: SCS-007
-  claim: 'An annotation-free analysis of two large mouse single-cell atlases found splicing strongly tied
-    to cell identity yet, in the authors'' hands, never revealed a cell subpopulation that expression
-    clustering had missed.
+  claim: 'An annotation-free analysis of two large mouse single-cell atlases found splicing strongly tied to
+    cell identity yet, in the authors'' hands, never revealed a cell subpopulation that expression clustering
+    had missed.
 
     '
   topic: isoform diversity within vs between cell types
@@ -188,8 +187,8 @@ claims:
     text_access: full_text
     lines: L78
     anchor: https://paperclip.gxl.ai/citations/papers/PMC8975553#L78
-    quote: 'our analyses are yet to produce instances in which clustering in the splicing latent space
-      reveals new cell subpopulations
+    quote: 'our analyses are yet to produce instances in which clustering in the splicing latent space reveals
+      new cell subpopulations
 
       '
   confidence: high
@@ -214,8 +213,8 @@ claims:
     text_access: full_text
     lines: L22,L40
     anchor: https://paperclip.gxl.ai/citations/papers/PMC11133395#L22,L40
-    quote: 'while a cell-type specific isoform (IL23R-5) was identified in Th17 cells, another isoform
-      (IL23R-2) specific for activated-Treg cells was also identified
+    quote: 'while a cell-type specific isoform (IL23R-5) was identified in Th17 cells, another isoform (IL23R-2)
+      specific for activated-Treg cells was also identified
 
       '
   confidence: high
@@ -229,8 +228,8 @@ claims:
   source:
     doc_id: PMC12276307
     title: Single cell and spatial alternative splicing analysis with Nanopore long read sequencing
-    authors: Fu, Y.; Kim, H.; Roy, S.; Huang, S.; Adams, J. I.; Grimes, S. M.; Lau, B. T.; Sathe, A.;
-      Ji, H. P.; Zhang, N. R.
+    authors: Fu, Y.; Kim, H.; Roy, S.; Huang, S.; Adams, J. I.; Grimes, S. M.; Lau, B. T.; Sathe, A.; Ji, H.
+      P.; Zhang, N. R.
     journal: Nature Communications
     year: 2025
     doi: 10.1038/s41467-025-60902-2
@@ -240,29 +239,28 @@ claims:
     text_access: full_text
     lines: L78
     anchor: https://paperclip.gxl.ai/citations/papers/PMC12276307#L78
-    quote: 'we found that same-cell co-expression of multiple isoforms is common across highly expressed
-      genes
+    quote: 'we found that same-cell co-expression of multiple isoforms is common across highly expressed genes
 
       '
   confidence: high
-  figure_idea: 'One axis for the fraction of a gene''s molecules using isoform A inside a cell, one for
-    the spread of that fraction across cells: a single diagram can show that "every cell at 0.5" and "half
-    the cells at 0, half at 1" give the same bulk value, which is the whole argument.
+  figure_idea: 'One axis for the fraction of a gene''s molecules using isoform A inside a cell, one for the
+    spread of that fraction across cells: a single diagram can show that "every cell at 0.5" and "half the
+    cells at 0, half at 1" give the same bulk value, which is the whole argument.
 
     '
 - id: SCS-010
-  claim: 'In Visium spatial data from a mouse olfactory bulb slice, the authors report that each cell
-    within a layer used one or the other of a gene''s two isoforms exclusively, yet which one bore no
-    relation to the layer - an apparently sharp choice that is not a spatial program. The measurement
-    is per spot rather than per cell.
+  claim: 'In Visium spatial data from a mouse olfactory bulb slice, the authors report that each cell within
+    a layer used one or the other of a gene''s two isoforms exclusively, yet which one bore no relation to
+    the layer - an apparently sharp choice that is not a spatial program. The measurement is per spot rather
+    than per cell.
 
     '
   topic: mutually exclusive vs mixed isoform expression
   source:
     doc_id: PMC12276307
     title: Single cell and spatial alternative splicing analysis with Nanopore long read sequencing
-    authors: Fu, Y.; Kim, H.; Roy, S.; Huang, S.; Adams, J. I.; Grimes, S. M.; Lau, B. T.; Sathe, A.;
-      Ji, H. P.; Zhang, N. R.
+    authors: Fu, Y.; Kim, H.; Roy, S.; Huang, S.; Adams, J. I.; Grimes, S. M.; Lau, B. T.; Sathe, A.; Ji, H.
+      P.; Zhang, N. R.
     journal: Nature Communications
     year: 2025
     doi: 10.1038/s41467-025-60902-2
@@ -272,23 +270,23 @@ claims:
     text_access: full_text
     lines: L70,L74
     anchor: https://paperclip.gxl.ai/citations/papers/PMC12276307#L70,L74
-    quote: 'within each layer, each single cell exclusively expresses Mapre3-201 or Mapre3-202, but the
-      choice to express which isoform is not correlated to the layer
+    quote: 'within each layer, each single cell exclusively expresses Mapre3-201 or Mapre3-202, but the choice
+      to express which isoform is not correlated to the layer
 
       '
   confidence: medium
 - id: SCS-011
-  claim: 'Single-cell polyadenylation-site mapping in genetically and developmentally uniform stem cell
-    populations found cell-to-cell differences in 3-prime end preference larger than technical noise and
-    random molecule partitioning together could produce.
+  claim: 'Single-cell polyadenylation-site mapping in genetically and developmentally uniform stem cell populations
+    found cell-to-cell differences in 3-prime end preference larger than technical noise and random molecule
+    partitioning together could produce.
 
     '
   topic: mutually exclusive vs mixed isoform expression
   source:
     doc_id: PMC4501847
     title: Single-cell polyadenylation site mapping reveals 3' isoform choice variability
-    authors: Velten, L.; Anders, S.; Pekowska, A.; Järvelin, A. I.; Huber, W.; Pelechano, V.; Steinmetz,
-      L. M.
+    authors: Velten, L.; Anders, S.; Pekowska, A.; Järvelin, A. I.; Huber, W.; Pelechano, V.; Steinmetz, L.
+      M.
     journal: Molecular Systems Biology
     year: 2015
     doi: 10.15252/msb.20156198
@@ -298,23 +296,23 @@ claims:
     text_access: full_text
     lines: L53
     anchor: https://paperclip.gxl.ai/citations/papers/PMC4501847#L53
-    quote: 'This variability is beyond what can statistically be explained by either technical noise or
-      random partitioning of RNA molecules to isoforms
+    quote: 'This variability is beyond what can statistically be explained by either technical noise or random
+      partitioning of RNA molecules to isoforms
 
       '
   confidence: high
 - id: SCS-012
-  claim: 'Single-molecule imaging of one gene showed that an individual active transcription site in the
-    nucleus is dominated by one 3-prime isoform, which the authors offer as a first hint that a polyadenylation
-    site, once chosen, stays active for several rounds of transcription.
+  claim: 'Single-molecule imaging of one gene showed that an individual active transcription site in the nucleus
+    is dominated by one 3-prime isoform, which the authors offer as a first hint that a polyadenylation site,
+    once chosen, stays active for several rounds of transcription.
 
     '
   topic: mutually exclusive vs mixed isoform expression
   source:
     doc_id: PMC4501847
     title: Single-cell polyadenylation site mapping reveals 3' isoform choice variability
-    authors: Velten, L.; Anders, S.; Pekowska, A.; Järvelin, A. I.; Huber, W.; Pelechano, V.; Steinmetz,
-      L. M.
+    authors: Velten, L.; Anders, S.; Pekowska, A.; Järvelin, A. I.; Huber, W.; Pelechano, V.; Steinmetz, L.
+      M.
     journal: Molecular Systems Biology
     year: 2015
     doi: 10.15252/msb.20156198
@@ -329,9 +327,9 @@ claims:
       '
   confidence: high
 - id: SCS-013
-  claim: 'A reanalysis of human and mouse single-cell datasets together with a probabilistic model argued
-    that the apparently all-or-nothing splicing of single cells is produced almost entirely by technical
-    limitation rather than by biology.
+  claim: 'A reanalysis of human and mouse single-cell datasets together with a probabilistic model argued that
+    the apparently all-or-nothing splicing of single cells is produced almost entirely by technical limitation
+    rather than by biology.
 
     '
   topic: mutually exclusive vs mixed isoform expression
@@ -353,9 +351,8 @@ claims:
       '
   confidence: high
 - id: SCS-014
-  claim: 'A review of the single-cell isoform literature records that the bimodal picture survives for
-    only about a fifth of exons once later studies looked, with single-peaked distributions the commoner
-    outcome.
+  claim: 'A review of the single-cell isoform literature records that the bimodal picture survives for only
+    about a fifth of exons once later studies looked, with single-peaked distributions the commoner outcome.
 
     '
   topic: mutually exclusive vs mixed isoform expression
@@ -386,13 +383,11 @@ claims:
   topic: brain isoform atlas
   source:
     doc_id: PMC7815907
-    title: A spatially resolved brain region- and cell type-specific isoform atlas of the postnatal mouse
-      brain
-    authors: Joglekar, A.; Prjibelski, A.; Mahfouz, A.; Collier, P.; Lin, S.; Schlusche, A. K.; Marrocco,
-      J.; Williams, S. R.; Haase, B.; Hayes, A.; Chew, J. G.; Weisenfeld, N. I.; Wong, M. Y.; Stein, A.
-      N.; Hardwick, S. A.; Hunt, T.; Wang, Q.; Dieterich, C.; Bent, Z.; Fedrigo, O.; Sloan, S. A.; Risso,
-      D.; Jarvis, E. D.; Flicek, P.; Luo, W.; Pitt, G. S.; Frankish, A.; Smit, A. B.; Ross, M. E.; Tilgner,
-      H. U.
+    title: A spatially resolved brain region- and cell type-specific isoform atlas of the postnatal mouse brain
+    authors: Joglekar, A.; Prjibelski, A.; Mahfouz, A.; Collier, P.; Lin, S.; Schlusche, A. K.; Marrocco, J.;
+      Williams, S. R.; Haase, B.; Hayes, A.; Chew, J. G.; Weisenfeld, N. I.; Wong, M. Y.; Stein, A. N.; Hardwick,
+      S. A.; Hunt, T.; Wang, Q.; Dieterich, C.; Bent, Z.; Fedrigo, O.; Sloan, S. A.; Risso, D.; Jarvis, E.
+      D.; Flicek, P.; Luo, W.; Pitt, G. S.; Frankish, A.; Smit, A. B.; Ross, M. E.; Tilgner, H. U.
     journal: Nature Communications
     year: 2021
     doi: 10.1038/s41467-020-20343-5
@@ -406,28 +401,26 @@ claims:
 
       '
   confidence: high
-  figure_idea: 'Three stick diagrams of the competing explanations for a regional isoform difference -
-    one cell type changes, both change, neither changes and only abundance differs - with the measured
-    share of genes under each.
+  figure_idea: 'Three stick diagrams of the competing explanations for a regional isoform difference - one
+    cell type changes, both change, neither changes and only abundance differs - with the measured share of
+    genes under each.
 
     '
 - id: SCS-016
-  claim: 'Within one annotated cell type the authors found both behaviours at once: for a developmental
-    gene with a neuron-specific isoform, part of a granule neuroblast population used the excitatory-neuron
-    isoform while the rest used the non-neuronal one, which the authors suggest may mean the neuroblasts
-    are not one population.
+  claim: 'Within one annotated cell type the authors found both behaviours at once: for a developmental gene
+    with a neuron-specific isoform, part of a granule neuroblast population used the excitatory-neuron isoform
+    while the rest used the non-neuronal one, which the authors suggest may mean the neuroblasts are not one
+    population.
 
     '
   topic: isoform diversity within vs between cell types
   source:
     doc_id: PMC7815907
-    title: A spatially resolved brain region- and cell type-specific isoform atlas of the postnatal mouse
-      brain
-    authors: Joglekar, A.; Prjibelski, A.; Mahfouz, A.; Collier, P.; Lin, S.; Schlusche, A. K.; Marrocco,
-      J.; Williams, S. R.; Haase, B.; Hayes, A.; Chew, J. G.; Weisenfeld, N. I.; Wong, M. Y.; Stein, A.
-      N.; Hardwick, S. A.; Hunt, T.; Wang, Q.; Dieterich, C.; Bent, Z.; Fedrigo, O.; Sloan, S. A.; Risso,
-      D.; Jarvis, E. D.; Flicek, P.; Luo, W.; Pitt, G. S.; Frankish, A.; Smit, A. B.; Ross, M. E.; Tilgner,
-      H. U.
+    title: A spatially resolved brain region- and cell type-specific isoform atlas of the postnatal mouse brain
+    authors: Joglekar, A.; Prjibelski, A.; Mahfouz, A.; Collier, P.; Lin, S.; Schlusche, A. K.; Marrocco, J.;
+      Williams, S. R.; Haase, B.; Hayes, A.; Chew, J. G.; Weisenfeld, N. I.; Wong, M. Y.; Stein, A. N.; Hardwick,
+      S. A.; Hunt, T.; Wang, Q.; Dieterich, C.; Bent, Z.; Fedrigo, O.; Sloan, S. A.; Risso, D.; Jarvis, E.
+      D.; Flicek, P.; Luo, W.; Pitt, G. S.; Frankish, A.; Smit, A. B.; Ross, M. E.; Tilgner, H. U.
     journal: Nature Communications
     year: 2021
     doi: 10.1038/s41467-020-20343-5
@@ -442,9 +435,9 @@ claims:
       '
   confidence: high
 - id: SCS-017
-  claim: 'A mouse and human brain isoform map covering roughly 200,000 cells found that about seven in
-    ten genes carry isoforms whose variation across development, region or subtype is not explained by
-    variation in the gene''s own expression.
+  claim: 'A mouse and human brain isoform map covering roughly 200,000 cells found that about seven in ten
+    genes carry isoforms whose variation across development, region or subtype is not explained by variation
+    in the gene''s own expression.
 
     '
   topic: brain isoform atlas
@@ -453,8 +446,8 @@ claims:
     title: Single-cell long-read sequencing-based mapping reveals specialized splicing patterns in developing
       and adult mouse and human brain
     authors: Joglekar, A.; Hu, W.; Zhang, B.; Narykov, O.; Diekhans, M.; Marrocco, J.; Balacco, J.; Ndhlovu,
-      L. C.; Milner, T. A.; Fedrigo, O.; Jarvis, E. D.; Sheynkman, G.; Korkin, D.; Ross, M. E.; Tilgner,
-      H. U.
+      L. C.; Milner, T. A.; Fedrigo, O.; Jarvis, E. D.; Sheynkman, G.; Korkin, D.; Ross, M. E.; Tilgner, H.
+      U.
     journal: Nature Neuroscience
     year: 2024
     doi: 10.1038/s41593-024-01616-4
@@ -470,9 +463,8 @@ claims:
       '
   confidence: high
 - id: SCS-018
-  claim: 'Exons that distinguished mouse brain cell types tended to distinguish the same cell types in
-    human hippocampus, so cell-type splicing programs are conserved well enough to transfer between the
-    two species.
+  claim: 'Exons that distinguished mouse brain cell types tended to distinguish the same cell types in human
+    hippocampus, so cell-type splicing programs are conserved well enough to transfer between the two species.
 
     '
   topic: brain isoform atlas
@@ -481,8 +473,8 @@ claims:
     title: Single-cell long-read sequencing-based mapping reveals specialized splicing patterns in developing
       and adult mouse and human brain
     authors: Joglekar, A.; Hu, W.; Zhang, B.; Narykov, O.; Diekhans, M.; Marrocco, J.; Balacco, J.; Ndhlovu,
-      L. C.; Milner, T. A.; Fedrigo, O.; Jarvis, E. D.; Sheynkman, G.; Korkin, D.; Ross, M. E.; Tilgner,
-      H. U.
+      L. C.; Milner, T. A.; Fedrigo, O.; Jarvis, E. D.; Sheynkman, G.; Korkin, D.; Ross, M. E.; Tilgner, H.
+      U.
     journal: Nature Neuroscience
     year: 2024
     doi: 10.1038/s41593-024-01616-4
@@ -492,27 +484,25 @@ claims:
     text_access: full_text
     lines: L97
     anchor: https://paperclip.gxl.ai/citations/papers/PMC11156538#L97
-    quote: 'exons with cell-type specificity in mice (E3 and E5) tended to also exhibit high cell-type
-      specificity in humans
+    quote: 'exons with cell-type specificity in mice (E3 and E5) tended to also exhibit high cell-type specificity
+      in humans
 
       '
   confidence: high
 - id: SCS-019
   claim: 'Long-read sequencing of a spatially barcoded brain section reproduced the direction of the single-cell
-    regional splicing difference for 85 per cent of 40 region-specific exons, an orthogonal check that
-    single-cell isoform calls survive in intact tissue.
+    regional splicing difference for 85 per cent of 40 region-specific exons, an orthogonal check that single-cell
+    isoform calls survive in intact tissue.
 
     '
   topic: spatial isoform biology
   source:
     doc_id: PMC7815907
-    title: A spatially resolved brain region- and cell type-specific isoform atlas of the postnatal mouse
-      brain
-    authors: Joglekar, A.; Prjibelski, A.; Mahfouz, A.; Collier, P.; Lin, S.; Schlusche, A. K.; Marrocco,
-      J.; Williams, S. R.; Haase, B.; Hayes, A.; Chew, J. G.; Weisenfeld, N. I.; Wong, M. Y.; Stein, A.
-      N.; Hardwick, S. A.; Hunt, T.; Wang, Q.; Dieterich, C.; Bent, Z.; Fedrigo, O.; Sloan, S. A.; Risso,
-      D.; Jarvis, E. D.; Flicek, P.; Luo, W.; Pitt, G. S.; Frankish, A.; Smit, A. B.; Ross, M. E.; Tilgner,
-      H. U.
+    title: A spatially resolved brain region- and cell type-specific isoform atlas of the postnatal mouse brain
+    authors: Joglekar, A.; Prjibelski, A.; Mahfouz, A.; Collier, P.; Lin, S.; Schlusche, A. K.; Marrocco, J.;
+      Williams, S. R.; Haase, B.; Hayes, A.; Chew, J. G.; Weisenfeld, N. I.; Wong, M. Y.; Stein, A. N.; Hardwick,
+      S. A.; Hunt, T.; Wang, Q.; Dieterich, C.; Bent, Z.; Fedrigo, O.; Sloan, S. A.; Risso, D.; Jarvis, E.
+      D.; Flicek, P.; Luo, W.; Pitt, G. S.; Frankish, A.; Smit, A. B.; Ross, M. E.; Tilgner, H. U.
     journal: Nature Communications
     year: 2021
     doi: 10.1038/s41467-020-20343-5
@@ -522,15 +512,14 @@ claims:
     text_access: full_text
     lines: L67
     anchor: https://paperclip.gxl.ai/citations/papers/PMC7815907#L67
-    quote: 'for 85%, both single-cell and spatial HIPP vs. PFC splicing differences point in the same
-      direction
+    quote: 'for 85%, both single-cell and spatial HIPP vs. PFC splicing differences point in the same direction
 
       '
   confidence: high
 - id: SCS-020
-  claim: 'Isoform-resolved imaging of mouse brain sections caught one transcription-factor gene producing
-    a coding and a non-coding isoform that occupied different places in the tissue and different cell
-    types - a split no gene-level map could show.
+  claim: 'Isoform-resolved imaging of mouse brain sections caught one transcription-factor gene producing a
+    coding and a non-coding isoform that occupied different places in the tissue and different cell types -
+    a split no gene-level map could show.
 
     '
   topic: spatial isoform biology
@@ -543,19 +532,25 @@ claims:
     doi: 10.1016/j.cell.2026.06.027
     bibkey: cohen2025whole
     metadata_source: crossref
+    preprint: true
   evidence:
     text_access: full_text
     lines: L58
     anchor: https://paperclip.gxl.ai/citations/papers/bio_e34cad4f6cf8#L58
-    quote: 'which expressed a protein-coding isoform and a non-coding isoform with strikingly distinct
-      spatial distributions and cell-type specificity
+    quote: 'which expressed a protein-coding isoform and a non-coding isoform with strikingly distinct spatial
+      distributions and cell-type specificity
 
       '
   confidence: medium
+  note: 'preprint: true added 2026-11-22. The document read is a bioRxiv record while the DOI and the bibliography
+    carry the journal version, which is exactly the case SCHEMA.md requires the flag for. research/ALLOCATION.md
+    lists every source where the two differ.
+
+    '
 - id: SCS-021
-  claim: 'The same imaging data showed that isoform switching is not spread evenly over the brain: of
-    roughly 1,400 genes with spatially dependent isoform use, about 800 had a module tied to a hippocampal
-    subfield and about 100 to the choroid plexus.
+  claim: 'The same imaging data showed that isoform switching is not spread evenly over the brain: of roughly
+    1,400 genes with spatially dependent isoform use, about 800 had a module tied to a hippocampal subfield
+    and about 100 to the choroid plexus.
 
     '
   topic: spatial isoform biology
@@ -568,6 +563,7 @@ claims:
     doi: 10.1016/j.cell.2026.06.027
     bibkey: cohen2025whole
     metadata_source: crossref
+    preprint: true
   evidence:
     text_access: full_text
     lines: L63
@@ -577,23 +573,28 @@ claims:
 
       '
   confidence: medium
-  figure_idea: 'A coarse brain outline with structures shaded by how many genes switch dominant isoform
-    there - making the uneven spatial load the visual message, without copying any published panel.
+  figure_idea: 'A coarse brain outline with structures shaded by how many genes switch dominant isoform there
+    - making the uneven spatial load the visual message, without copying any published panel.
+
+    '
+  note: 'preprint: true added 2026-11-22. The document read is a bioRxiv record while the DOI and the bibliography
+    carry the journal version, which is exactly the case SCHEMA.md requires the flag for. research/ALLOCATION.md
+    lists every source where the two differ.
 
     '
 - id: SCS-022
-  claim: 'Reanalysing two published long-read spatial brain sections with a statistical model built for
-    sparse isoform counts more than doubled the number of genes called as spatially variable in their
-    processing, from 61 to 150 reproducible across replicates.
+  claim: 'Reanalysing two published long-read spatial brain sections with a statistical model built for sparse
+    isoform counts more than doubled the number of genes called as spatially variable in their processing,
+    from 61 to 150 reproducible across replicates.
 
     '
   topic: spatial isoform biology
   source:
     doc_id: bio_8065490174b9
-    title: A computational framework for mapping isoform landscape and regulatory mechanisms from spatial
-      transcriptomics data
-    authors: Su, J.; Qu, Y.; Schertzer, M.; Yang, H.; Jiang, J.; Lhakhang, T.; Nelson, T. M.; Park, S.;
-      Lai, Q.; Fu, X.; Choi, S. w.; Knowles, D. A.; Rabadan, R.
+    title: A computational framework for mapping isoform landscape and regulatory mechanisms from spatial transcriptomics
+      data
+    authors: Su, J.; Qu, Y.; Schertzer, M.; Yang, H.; Jiang, J.; Lhakhang, T.; Nelson, T. M.; Park, S.; Lai,
+      Q.; Fu, X.; Choi, S. w.; Knowles, D. A.; Rabadan, R.
     journal: bioRxiv
     year: 2025
     doi: 10.1101/2025.05.02.651907
@@ -608,18 +609,18 @@ claims:
       '
   confidence: medium
 - id: SCS-023
-  claim: 'In ordinary short-read spatial data from adult mouse brain, over eight hundred genes varied
-    spatially in which 3-prime end they used, more than five times the count the same framework recovered
-    from long-read spatial data of the same tissue.
+  claim: 'In ordinary short-read spatial data from adult mouse brain, over eight hundred genes varied spatially
+    in which 3-prime end they used, more than five times the count the same framework recovered from long-read
+    spatial data of the same tissue.
 
     '
   topic: spatial alternative polyadenylation
   source:
     doc_id: bio_8065490174b9
-    title: A computational framework for mapping isoform landscape and regulatory mechanisms from spatial
-      transcriptomics data
-    authors: Su, J.; Qu, Y.; Schertzer, M.; Yang, H.; Jiang, J.; Lhakhang, T.; Nelson, T. M.; Park, S.;
-      Lai, Q.; Fu, X.; Choi, S. w.; Knowles, D. A.; Rabadan, R.
+    title: A computational framework for mapping isoform landscape and regulatory mechanisms from spatial transcriptomics
+      data
+    authors: Su, J.; Qu, Y.; Schertzer, M.; Yang, H.; Jiang, J.; Lhakhang, T.; Nelson, T. M.; Park, S.; Lai,
+      Q.; Fu, X.; Choi, S. w.; Knowles, D. A.; Rabadan, R.
     journal: bioRxiv
     year: 2025
     doi: 10.1101/2025.05.02.651907
@@ -634,9 +635,9 @@ claims:
       '
   confidence: medium
 - id: SCS-024
-  claim: 'Across roughly two million nuclei spanning five stages of mouse embryonic development, 3-prime
-    UTRs lengthened globally in every cell type examined, while within each stage blood lineages sat at
-    the short end and neuronal cell types at the long end.
+  claim: 'Across roughly two million nuclei spanning five stages of mouse embryonic development, 3-prime UTRs
+    lengthened globally in every cell type examined, while within each stage blood lineages sat at the short
+    end and neuronal cell types at the long end.
 
     '
   topic: alternative polyadenylation
@@ -659,8 +660,8 @@ claims:
   confidence: high
 - id: SCS-025
   claim: 'Analysing 474 human and mouse cell types, the authors report that the dominant 3-prime UTR isoform
-    switches in 60 per cent of human genes in at least one cell type, and separately that only about a
-    tenth of differential 3-prime UTR events coincide with a change in that gene''s expression.
+    switches in 60 per cent of human genes in at least one cell type, and separately that only about a tenth
+    of differential 3-prime UTR events coincide with a change in that gene''s expression.
 
     '
   topic: alternative polyadenylation
@@ -686,15 +687,14 @@ claims:
 
     '
 - id: SCS-026
-  claim: 'Mining ordinary 3-prime-tag single-cell data from mouse T cells recovered 868 polyadenylation
-    shifts between resting and activated cells, skewed towards shorter 3-prime UTRs in the dividing population.
+  claim: 'Mining ordinary 3-prime-tag single-cell data from mouse T cells recovered 868 polyadenylation shifts
+    between resting and activated cells, skewed towards shorter 3-prime UTRs in the dividing population.
 
     '
   topic: alternative polyadenylation
   source:
     doc_id: PMC6821429
-    title: Cell-type-specific analysis of alternative polyadenylation using single-cell transcriptomics
-      data
+    title: Cell-type-specific analysis of alternative polyadenylation using single-cell transcriptomics data
     authors: Shulman, E. D.; Elkon, R.
     journal: Nucleic Acids Research
     year: 2019
@@ -718,8 +718,8 @@ claims:
   source:
     doc_id: PMC9470587
     title: Diverse cell-specific patterns of alternative polyadenylation in Drosophila
-    authors: Lee, S.; Chen, Y. C.; FCA Consortium; Gillen, A. E.; Taliaferro, J. M.; Deplancke, B.; Li,
-      H.; Lai, E. C.
+    authors: Lee, S.; Chen, Y. C.; FCA Consortium; Gillen, A. E.; Taliaferro, J. M.; Deplancke, B.; Li, H.;
+      Lai, E. C.
     journal: Nature Communications
     year: 2022
     doi: 10.1038/s41467-022-32305-0
@@ -729,22 +729,22 @@ claims:
     text_access: full_text
     lines: L45
     anchor: https://paperclip.gxl.ai/citations/papers/PMC9470587#L45
-    quote: 'a subset of genes consistently express distinct 3’ isoforms at the level of individual cells,
-      particularly in neurons
+    quote: 'a subset of genes consistently express distinct 3’ isoforms at the level of individual cells, particularly
+      in neurons
 
       '
   confidence: high
 - id: SCS-028
   claim: 'Sequencing soma and dendrite separately from the same single mouse neurons found 2,225 dendritically
-    localised RNAs, 298 of which were cases where one 3-prime UTR isoform of a gene localised and another
-    did not.
+    localised RNAs, 298 of which were cases where one 3-prime UTR isoform of a gene localised and another did
+    not.
 
     '
   topic: localised isoforms
   source:
     doc_id: PMC6344992
-    title: Comprehensive catalog of dendritically localized mRNA isoforms from sub-cellular sequencing
-      of single mouse neurons
+    title: Comprehensive catalog of dendritically localized mRNA isoforms from sub-cellular sequencing of single
+      mouse neurons
     authors: Middleton, S. A.; Eberwine, J.; Kim, J.
     journal: BMC Biology
     year: 2019
@@ -759,22 +759,21 @@ claims:
 
       '
   confidence: high
-  figure_idea: 'A single neuron drawn as soma plus one process, with a gene''s two 3-prime UTR isoforms
-    shown at different densities in the two compartments - the point being that the gene is present in
-    both but the isoform ratio is not.
+  figure_idea: 'A single neuron drawn as soma plus one process, with a gene''s two 3-prime UTR isoforms shown
+    at different densities in the two compartments - the point being that the gene is present in both but the
+    isoform ratio is not.
 
     '
 - id: SCS-029
   claim: 'For a small GTPase that shapes neuronal morphology, the two last-exon isoforms separated between
-    the neurite and the cell body as mRNA, not only as protein, so the compartment difference starts at
-    the transcript.
+    the neurite and the cell body as mRNA, not only as protein, so the compartment difference starts at the
+    transcript.
 
     '
   topic: localised isoforms
   source:
     doc_id: PMC6411841
-    title: Alternative 3' UTRs direct localization of functionally diverse protein isoforms in neuronal
-      compartments
+    title: Alternative 3' UTRs direct localization of functionally diverse protein isoforms in neuronal compartments
     authors: Ciolli Mattioli, C.; Rom, A.; Franke, V.; Imami, K.; Arrey, G.; Terne, M.; Woehler, A.; Akalin,
       A.; Ulitsky, I.; Chekulaeva, M.
     journal: Nucleic Acids Research
@@ -786,15 +785,14 @@ claims:
     text_access: full_text
     lines: L16
     anchor: https://paperclip.gxl.ai/citations/papers/PMC6411841#L16
-    quote: 'we found that isoforms of Cdc42 are differentially localized between neurites and soma not
-      only at the protein, but also at the mRNA level
+    quote: 'we found that isoforms of Cdc42 are differentially localized between neurites and soma not only
+      at the protein, but also at the mRNA level
 
       '
   confidence: high
 - id: SCS-030
-  claim: 'A simulation study that modelled dropout and quantification error explicitly concluded that
-    resolving which isoforms an individual cell expresses is not currently advisable with short-read single-cell
-    RNA-seq.
+  claim: 'A simulation study that modelled dropout and quantification error explicitly concluded that resolving
+    which isoforms an individual cell expresses is not currently advisable with short-read single-cell RNA-seq.
 
     '
   topic: limits of single-cell isoform analysis
@@ -816,17 +814,17 @@ claims:
       '
   confidence: high
 - id: SCS-031
-  claim: 'In the same human individual, droplet data yielded computable splicing scores for 1,416 genes
-    against 9,802 for plate-based full-length data, and the authors state that 3-prime-biased droplet
-    reads never reach some splicing events at all.
+  claim: 'In the same human individual, droplet data yielded computable splicing scores for 1,416 genes against
+    9,802 for plate-based full-length data, and the authors state that 3-prime-biased droplet reads never reach
+    some splicing events at all.
 
     '
   topic: limits of single-cell isoform analysis
   source:
     doc_id: PMC8563012
     title: RNA splicing programs define tissue compartments and cell types at single-cell resolution
-    authors: Olivieri, J. E.; Dehghannasiri, R.; Wang, P. L.; Jang, S.; de Morree, A.; Tan, S. Y.; Ming,
-      J.; Ruohao Wu, A.; Tabula Sapiens Consortium; Quake, S. R.; Krasnow, M. A.; Salzman, J.
+    authors: Olivieri, J. E.; Dehghannasiri, R.; Wang, P. L.; Jang, S.; de Morree, A.; Tan, S. Y.; Ming, J.;
+      Ruohao Wu, A.; Tabula Sapiens Consortium; Quake, S. R.; Krasnow, M. A.; Salzman, J.
     journal: eLife
     year: 2021
     doi: 10.7554/eLife.70692
@@ -836,15 +834,15 @@ claims:
     text_access: full_text
     lines: L271
     anchor: https://paperclip.gxl.ai/citations/papers/PMC8563012#L271
-    quote: 'resulting in only 1416 genes with computable SpliZ values in the first human individual based
-      on 10X data compared to 9802 genes
+    quote: 'resulting in only 1416 genes with computable SpliZ values in the first human individual based on
+      10X data compared to 9802 genes
 
       '
   confidence: high
 - id: SCS-032
-  claim: 'Because the alternatively spliced exons of PTPRC sit near the 5-prime end of the transcript,
-    3-prime gene-expression libraries left under a tenth of cells positive for either CD45 isoform even
-    at saturating depth.
+  claim: 'Because the alternatively spliced exons of PTPRC sit near the 5-prime end of the transcript, 3-prime
+    gene-expression libraries left under a tenth of cells positive for either CD45 isoform even at saturating
+    depth.
 
     '
   topic: limits of single-cell isoform analysis
@@ -867,9 +865,9 @@ claims:
   confidence: high
 - id: SCS-033
   claim: 'At a realistic depth of fifty thousand reads per cell in a deep combinatorial-indexing experiment,
-    an abundant airway cell type of about fifteen thousand cells recovered 158,786 of the junctions seen
-    in matched bulk, while the rarest type of 68 cells recovered 25,879 - so cell number, not depth, binds
-    for rare populations.
+    an abundant airway cell type of about fifteen thousand cells recovered 158,786 of the junctions seen in
+    matched bulk, while the rarest type of 68 cells recovered 25,879 - so cell number, not depth, binds for
+    rare populations.
 
     '
   topic: limits of single-cell isoform analysis
@@ -891,14 +889,14 @@ claims:
 
       '
   confidence: medium
-  figure_idea: 'Junctions recovered against cell-type abundance at fixed depth per cell, split by how
-    well expressed the junction is in bulk - the rare-cell curve flattening is the design lesson.
+  figure_idea: 'Junctions recovered against cell-type abundance at fixed depth per cell, split by how well
+    expressed the junction is in bulk - the rare-cell curve flattening is the design lesson.
 
     '
 - id: SCS-034
-  claim: 'In that same 3-prime-biased chemistry, junction recovery did not fall off towards the 5-prime
-    end of genes: recall was slightly lower close to the 3-prime terminus than tens of kilobases upstream,
-    which complicates the common assumption that 3-prime counting is uniformly blind to upstream splicing.
+  claim: 'In that same 3-prime-biased chemistry, junction recovery did not fall off towards the 5-prime end
+    of genes: recall was slightly lower close to the 3-prime terminus than tens of kilobases upstream, which
+    complicates the common assumption that 3-prime counting is uniformly blind to upstream splicing.
 
     '
   topic: limits of single-cell isoform analysis
@@ -916,27 +914,25 @@ claims:
     text_access: full_text
     lines: L48
     anchor: https://paperclip.gxl.ai/citations/papers/bio_828796766d83#L48
-    quote: 'recall of junctions within 500 bp of the 3’ terminus was 71.4%, slightly lower than the 80.2%
-      for junctions 50 to 100 kb away
+    quote: 'recall of junctions within 500 bp of the 3’ terminus was 71.4%, slightly lower than the 80.2% for
+      junctions 50 to 100 kb away
 
       '
   confidence: medium
 - id: SCS-035
-  claim: 'Testing exon by exon on single-cell long-read data from two mouse brain regions, only 31 of
-    2,132 testable genes - 1.45 per cent - survived a correction for dependent tests, which is why the
-    authors replaced the exon test with a single per-gene isoform test.
+  claim: 'Testing exon by exon on single-cell long-read data from two mouse brain regions, only 31 of 2,132
+    testable genes - 1.45 per cent - survived a correction for dependent tests, which is why the authors replaced
+    the exon test with a single per-gene isoform test.
 
     '
   topic: limits of single-cell isoform analysis
   source:
     doc_id: PMC7815907
-    title: A spatially resolved brain region- and cell type-specific isoform atlas of the postnatal mouse
-      brain
-    authors: Joglekar, A.; Prjibelski, A.; Mahfouz, A.; Collier, P.; Lin, S.; Schlusche, A. K.; Marrocco,
-      J.; Williams, S. R.; Haase, B.; Hayes, A.; Chew, J. G.; Weisenfeld, N. I.; Wong, M. Y.; Stein, A.
-      N.; Hardwick, S. A.; Hunt, T.; Wang, Q.; Dieterich, C.; Bent, Z.; Fedrigo, O.; Sloan, S. A.; Risso,
-      D.; Jarvis, E. D.; Flicek, P.; Luo, W.; Pitt, G. S.; Frankish, A.; Smit, A. B.; Ross, M. E.; Tilgner,
-      H. U.
+    title: A spatially resolved brain region- and cell type-specific isoform atlas of the postnatal mouse brain
+    authors: Joglekar, A.; Prjibelski, A.; Mahfouz, A.; Collier, P.; Lin, S.; Schlusche, A. K.; Marrocco, J.;
+      Williams, S. R.; Haase, B.; Hayes, A.; Chew, J. G.; Weisenfeld, N. I.; Wong, M. Y.; Stein, A. N.; Hardwick,
+      S. A.; Hunt, T.; Wang, Q.; Dieterich, C.; Bent, Z.; Fedrigo, O.; Sloan, S. A.; Risso, D.; Jarvis, E.
+      D.; Flicek, P.; Luo, W.; Pitt, G. S.; Frankish, A.; Smit, A. B.; Ross, M. E.; Tilgner, H. U.
     journal: Nature Communications
     year: 2021
     doi: 10.1038/s41467-020-20343-5
@@ -955,68 +951,67 @@ claims:
 
     '
 leads:
-- note: 'Direct conflict the chapter must present as such: SCS-001 (Olivieri 2021) reports a monocyte
-    subpopulation found only by splicing, while SCS-007 (Benegas 2022) reports that in their hands splicing
-    clustering never surfaced a subpopulation expression clustering had missed. Note also how thin the
-    SAT1 evidence is: the artefact control on Olivieri L314 rests on 16 cells that had exactly two reads
-    at the splice site. Attribute both and do not pick a winner.
+- note: 'Direct conflict the chapter must present as such: SCS-001 (Olivieri 2021) reports a monocyte subpopulation
+    found only by splicing, while SCS-007 (Benegas 2022) reports that in their hands splicing clustering never
+    surfaced a subpopulation expression clustering had missed. Note also how thin the SAT1 evidence is: the
+    artefact control on Olivieri L314 rests on 16 cells that had exactly two reads at the splice site. Attribute
+    both and do not pick a winner.
 
     '
   why: The single most load-bearing claim of this chapter has a published counter-result.
 - note: 'Unresolved conflict that the chapter must present as a conflict, not a settled fact: does a single
     cell express one isoform or a mixture? SCS-011/SCS-012 (Velten, poly(A) sites, 2015) and the bimodality
-    reports the review in SCS-014 summarises say cells have distinct per-cell preferences; SCS-013 (Buen
-    Abad Najar 2020) says the appearance is a coverage artefact; SCS-009 (Longcell 2025, long reads, UMI-deduplicated)
-    says same-cell co-expression is common for well-expressed genes; SCS-010 shows exclusive per-cell
-    choice for one gene in the same dataset. The honest reading is that the answer is gene-dependent and
-    still measurement-limited.
+    reports the review in SCS-014 summarises say cells have distinct per-cell preferences; SCS-013 (Buen Abad
+    Najar 2020) says the appearance is a coverage artefact; SCS-009 (Longcell 2025, long reads, UMI-deduplicated)
+    says same-cell co-expression is common for well-expressed genes; SCS-010 shows exclusive per-cell choice
+    for one gene in the same dataset. The honest reading is that the answer is gene-dependent and still measurement-limited.
 
     '
   why: This is the chapter's central open question; picking a side would misrepresent the literature.
-- note: 'Second conflict, on whether 3-prime-end protocols are structurally blind to internal splicing.
-    SCS-031 (Olivieri, 10x Chromium) and SCS-032 (IDEIS, 10x 3-prime) say yes in practice; SCS-034 (Saferali,
-    ScaleBio combinatorial indexing) measured no decay in junction recall towards the 5-prime end. These
-    are different chemistries with different gene-body coverage profiles, so any table or statement in
-    the book must name the chemistry rather than say "3-prime protocols".
+- note: 'Second conflict, on whether 3-prime-end protocols are structurally blind to internal splicing. SCS-031
+    (Olivieri, 10x Chromium) and SCS-032 (IDEIS, 10x 3-prime) say yes in practice; SCS-034 (Saferali, ScaleBio
+    combinatorial indexing) measured no decay in junction recall towards the 5-prime end. These are different
+    chemistries with different gene-body coverage profiles, so any table or statement in the book must name
+    the chemistry rather than say "3-prime protocols".
 
     '
   why: A blanket claim about 3-prime blindness would be wrong for at least one widely used platform.
-- note: 'Fansler et al. state in their discussion (L65) that the dominant isoform switches in 60 per cent
-    of human genes, but the figure that result points to is captioned as a fraction of multi-UTR genes,
-    and the same paper classifies only about 50 per cent of human genes as multi-UTR (L32). The 60 per
-    cent figure is therefore most likely a fraction of multi-UTR genes, not of all genes. Record it as
-    the authors phrase it and flag the denominator rather than silently rescaling.
+- note: 'Fansler et al. state in their discussion (L65) that the dominant isoform switches in 60 per cent of
+    human genes, but the figure that result points to is captioned as a fraction of multi-UTR genes, and the
+    same paper classifies only about 50 per cent of human genes as multi-UTR (L32). The 60 per cent figure
+    is therefore most likely a fraction of multi-UTR genes, not of all genes. Record it as the authors phrase
+    it and flag the denominator rather than silently rescaling.
 
     '
   why: A book table that prints 60% of all human genes would propagate the paper's own looseness.
-- note: 'Four of the records here are preprints whose figures and numbers should be re-checked against
-    a published version before the chapter goes out: SCS-020/SCS-021 (Cohen et al., read as bioRxiv 2025,
-    corpus lists a 2026 Cell DOI which is what source.doi records), SCS-022/SCS-023 (Su et al., SPLISOSM,
-    bioRxiv 2025), SCS-005/SCS-006 (Mantri et al. 2026) and SCS-033/SCS-034 (Saferali et al. 2026). The
-    Mantri and Saferali records also carry placeholder pub_date values in the corpus metadata (2026-01-01);
-    the real posting dates are 2026-09-11 and 2026-09-22 per their DOIs. For SCS-020/SCS-021 the orchestrator
-    must decide a convention: source.doi carries the journal (Cell) DOI taken from the corpus search listing,
-    while journal/year/bibkey still describe the bioRxiv version whose lines were actually read.
+- note: 'Four of the records here are preprints whose figures and numbers should be re-checked against a published
+    version before the chapter goes out: SCS-020/SCS-021 (Cohen et al., read as bioRxiv 2025, corpus lists
+    a 2026 Cell DOI which is what source.doi records), SCS-022/SCS-023 (Su et al., SPLISOSM, bioRxiv 2025),
+    SCS-005/SCS-006 (Mantri et al. 2026) and SCS-033/SCS-034 (Saferali et al. 2026). The Mantri and Saferali
+    records also carry placeholder pub_date values in the corpus metadata (2026-01-01); the real posting dates
+    are 2026-09-11 and 2026-09-22 per their DOIs. For SCS-020/SCS-021 the orchestrator must decide a convention:
+    source.doi carries the journal (Cell) DOI taken from the corpus search listing, while journal/year/bibkey
+    still describe the bioRxiv version whose lines were actually read.
 
     '
   why: Numbers move between preprint and journal version; two of these carry anchored quantities.
-- note: 'The PTPRC/CD45 story is usually told as "T-cell subsets are indistinguishable at gene level but
-    separable by isoform". The corpus supports the second half precisely (SCS-003, SCS-004) but no line
-    read here states that the subsets are indistinguishable by PTPRC gene expression - in fact these subsets
-    are separable by other marker genes. The chapter should say that PTPRC isoform usage adds subset information
-    that PTPRC gene counts do not carry, not that the cells are otherwise identical.
+- note: 'The PTPRC/CD45 story is usually told as "T-cell subsets are indistinguishable at gene level but separable
+    by isoform". The corpus supports the second half precisely (SCS-003, SCS-004) but no line read here states
+    that the subsets are indistinguishable by PTPRC gene expression - in fact these subsets are separable by
+    other marker genes. The chapter should say that PTPRC isoform usage adds subset information that PTPRC
+    gene counts do not carry, not that the cells are otherwise identical.
 
     '
   why: The stronger phrasing would be unanchored and is probably false as written.
 - note: 'Not found in the corpus searches run here: a single-cell isoform study of the Dscam-style mutually
-    exclusive exon clusters in a vertebrate (protocadherin alpha choice in individual neurons). If such
-    a paper exists it would be the cleanest possible case of stochastic exclusive isoform choice per cell.
+    exclusive exon clusters in a vertebrate (protocadherin alpha choice in individual neurons). If such a paper
+    exists it would be the cleanest possible case of stochastic exclusive isoform choice per cell.
 
     '
   why: Would anchor the stochastic-choice section on a system where exclusivity is the known mechanism.
-- note: 'Also absent from these searches: a study that puts a number on how much of the isoform variance
-    between single cells of one annotated type is technical versus biological, after UMI deduplication,
-    on a long-read platform. SCS-009 and SCS-010 come closest but report direction, not a variance partition.
+- note: 'Also absent from these searches: a study that puts a number on how much of the isoform variance between
+    single cells of one annotated type is technical versus biological, after UMI deduplication, on a long-read
+    platform. SCS-009 and SCS-010 come closest but report direction, not a variance partition.
 
     '
   why: The chapter's honest-limits section would be stronger with one such decomposition.

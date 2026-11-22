@@ -16,9 +16,10 @@ source, and some have got through and been corrected after the fact.
 
 Two limits on that traceability are worth knowing first. A hundred and one of
 the sources behind this book were read as abstracts rather than as full text,
-and twenty-four are preprints that have not been through review. Both sets are
-counted, named where the list is short enough, and regenerable from the records
-by commands given in
+and twenty-nine are cited as preprints that have not been through review. A
+further fifteen were read as preprints while being cited as the published
+versions they later became. All three sets are counted, named where the list is
+short enough, and regenerable from the records by commands given in
 [`research/ALLOCATION.md`](https://github.com/brianjohnhaas/IsoformBiology/blob/main/research/ALLOCATION.md),
 and the chapters that lean on them say so in their own first-draft notices.
 

@@ -47,8 +47,10 @@ section and saying which of those it is helps more than it sounds.
 
 **Full text for a source read as an abstract.** A hundred and one of the
 sources behind this book were read as abstracts rather than as full text, and
-twenty-four are preprints that have not been through peer review. Both sets are
-counted in `research/ALLOCATION.md`, with the commands that regenerate them. Telling the project that a preprint
+twenty-nine are cited as preprints that have not been through peer review. A
+further fifteen were read as preprints and are cited as the published versions
+they later became, which no automated check can see. All three sets are counted
+in `research/ALLOCATION.md`, with the commands that regenerate them. Telling the project that a preprint
 now has a published version, or that a paywalled paper says something other than
 its abstract implies, repairs a weakness the project already knows it has.
 

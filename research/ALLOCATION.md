@@ -152,9 +152,9 @@ EOF
 ```
 
 **Twenty-nine sources are preprint-only here**, up from seventeen before the
-deepening passes began, and ten more were read as preprints while being cited
-as their journal versions, giving thirty-nine sources whose text was unreviewed
-when it was read. The chapter 5 pass added most of the increase, because the
+deepening passes began, and fifteen more were read as preprints while being
+cited as their journal versions, giving forty-four sources whose text was
+unreviewed when it was read. The chapter 5 pass added most of the increase, because the
 quantification and benchmarking literature it drew on is substantially
 unreviewed: six of the thirteen sources behind its quantification records are
 preprints. Regenerate the preprint-only count with `grep -c '^@misc'
@@ -181,13 +181,28 @@ does not mean unpublished.
 preprint, and chapter 10 rests a large share of its argument on it: VAR-004,
 VAR-006, VAR-007, VAR-008 and VAR-024 were all read from preprint lines.
 
-**Ten sources were read in one version and are cited as another.** The record
-and the bibliography carry a journal DOI, but the lines read were a preprint:
-`buhring2024moypd1` (Communications Biology), `capella2020heh1` (Journal of Cell
-Science), `chen2023context`, `dong2022selfavoidance`, `dressano2020irr` (Nature
-Plants), `dscam2021splicingbias`, `james2024rve2` (New Phytologist),
-`kim2022brflc2` (Plant Molecular Biology), `rolfs2021proteoformclass` and
-`tung2019quantifying`. `betz2024mycorrhizal` left this list on 2026-11-22: its
+**Fifteen sources were read in one version and are cited as another.** The
+record and the bibliography carry a journal DOI, but the lines read were a
+preprint: `abood2024longread`, `alkhafaji2024highthroughput`,
+`buhring2024moypd1`, `capella2020heh1`, `chen2023context`, `cohen2025whole`,
+`dong2022selfavoidance`, `dressano2020irr`, `dscam2021splicingbias`,
+`james2024rve2`, `kerry2024rps24hypoxia`, `kim2022brflc2`,
+`patowary2024neocortexisoforms`, `rolfs2021proteoformclass` and
+`tung2019quantifying`. Five of those carried no `preprint: true` flag until
+2026-11-22, so the list regenerates only with the check below rather than from
+the flag alone:
+
+```
+python3 - <<'EOF'
+import yaml, pathlib, re
+for p in sorted(pathlib.Path('research').glob('*.yml')):
+    for c in (yaml.safe_load(p.read_text()).get('claims') or []):
+        s = c['source']
+        if str(s['doc_id']).startswith('bio_') and not re.match(
+                r'10\.(1101|64898)/', s.get('doi') or ''):
+            print(s['bibkey'], s.get('preprint'), p.name)
+EOF
+``` `betz2024mycorrhizal` left this list on 2026-11-22: its
 Nature Communications version turned out to be in the corpus as `PMC11333574`,
 a `lookup title` missed it because the published title differs from the
 preprint's, and both its records were re-anchored on the published text. This is a provenance defect no gate can see: `verify_claims.py` checks a
