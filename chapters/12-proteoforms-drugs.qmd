@@ -3,30 +3,30 @@
 ::: {.callout-warning}
 ## First draft
 Written from `research/12-proteoforms-drugs.yml` and not yet reviewed by a
-second reader.
+second reader. Four of its sources are FDA regulatory documents and one is a
+trial registry record, cited as primary evidence for an approval and its trials.
+Seven sources are abstract-only, and those carry the proteoform-scale estimate
+and two of the historical cases.
 :::
 
-A drug binds a molecule with a particular shape, and
-@sec-what-changes showed that one gene's isoforms can differ at exactly the
-surfaces a drug would touch. If a gene makes several proteins, the practical
-question is which one is the target, and whether anything can be aimed at that
-one alone.
+A drug binds a molecule with a particular shape, and @sec-what-changes showed
+that one gene's isoforms can differ at exactly the surfaces a drug would touch.
+If a gene makes several proteins, the practical question is which one is the
+target, and whether anything can be aimed at that one alone.
 
-The vocabulary shifts from RNA to protein here. A transcript isoform
-is an RNA molecule, while a proteoform is a distinct protein form from one gene,
-and it absorbs differences this book has treated separately: those from
+The vocabulary shifts from RNA to protein here. A transcript isoform is an RNA
+molecule, while a proteoform is a distinct protein form from one gene. The
+second term absorbs differences this book has treated separately: those from
 splicing, those from genetic variation, and those added after translation.
 
 ## Far more proteoforms estimated than measured {#sec-measuring}
 
 The gap between ambition and measurement is the largest in this book, and two
-numbers set its size.
-
-A single cell is estimated to carry upwards of a million different protein
-forms, built from about 20,000 coding genes [@proteoformmedicine2026]. A single
-intact-molecule study reports thousands of protein forms from a cell lysate
-[@xu2024topdown]. The estimate counts in millions and the measurement in
-thousands.
+numbers set its size. A single cell is estimated to carry upwards of a million
+different protein forms, built from about 20,000 coding genes
+[@proteoformmedicine2026]. A single intact-molecule study reports thousands of
+protein forms from a cell lysate [@xu2024topdown]. The estimate counts in
+millions and the measurement in thousands.
 
 ![Three quantities on one logarithmic axis. The gap between what is estimated to
 exist and what one experiment reports is what limits isoform-level drug
@@ -36,119 +36,482 @@ discovery. The measured quantity is drawn as a band because the source says only
 Two styles of mass spectrometry divide the problem. Reading fragments of a
 protein gives information about regions of it, while reading the intact molecule
 reports which combination of features one molecule actually carries
-[@xu2024topdown]. Only the second can confirm that two differences sit on
-the same protein.
+[@xu2024topdown]. Only the second can confirm that two differences sit on the
+same protein.
 
-The specific obstacle is abundance rather than principle. The peptide that
-distinguishes one isoform from another is usually the scarce one, so isoforms go
-unrecorded for want of signal [@korchak2024isprm]. @sec-is-it-translated showed
-the same effect from the other side: detection tracked how well a gene was
-covered.
+### Intact molecules, and the window they are read in
 
-Long reads from the same sample predict which isoform-specific peptides ought to
-exist, and the instrument is then pointed at those [@korchak2024isprm]. It
-works, raising isoform detectability 3.6-fold over the untargeted approach and
-finding five isoforms that no annotation listed [@korchak2024isprm].
+The best intact-molecule surveys are larger than the round figure of thousands
+suggests, and they are also narrower. A deep survey of two isogenic human
+colorectal cancer lines reported 23,622 proteoforms mapping to 2,332 distinct
+proteins. That took more than 400 raw files, at a one per cent proteoform-level
+false-discovery rate [@mccool2022topdown]. A survey of five human organs
+reported 11,466 proteoforms from 740 distinct proteins, of which 8,784 were
+unique to a single tissue [@drown2022tissueproteoforms]. Those two counts run in
+opposite directions on proteoforms and on proteins, because the first went deep
+on two cell lines while the second went wide across organs.
 
-It confirmed protein for 54 resolved isoforms across 43 of 55 genes, and
-required a synthetic standard for each of 192 peptides it hoped to find
-[@korchak2024isprm]. This is not yet a survey method.
+The same authors state the limitation that makes such numbers hard to read as
+coverage. Their survey was confined to proteoforms below 30 kDa on the
+instrument used, and most of what it identified was 10 kDa or smaller
+[@mccool2022topdown]. The reason offered is signal dilution rather than any
+property of the protein. A larger molecule spreads its ions across a wider range
+of charge states, so its signal-to-noise ratio falls sharply in a complex sample
+[@mccool2022topdown].
 
-The block on drug discovery has been stated directly. A candidate
-cannot be prioritised when it is unknown whether the splicing event yields a
-protein, what that protein's structure is, and what it does
+That ceiling is not absolute, and the exception shows what it depends on. In
+single muscle fibres dissected from rats, proteoforms above 200 kDa were
+resolved, including myosin heavy chain at about 223 kDa, well enough to classify
+each fibre by type [@melby2023singlemuscle]. One sample was a complex human
+lysate and the other a single fibre from another species, so the useful reading
+is that the window follows sample complexity rather than the technique.
+
+Depth at this resolution is bought with instrument time, and the price has been
+reported. Obtaining 13,975 proteoforms from 2,720 proteins in human Caco-2 cells
+required 257 separate liquid-chromatography mass-spectrometry runs, about 27
+days of net measuring time [@kaulich2024sampleprep]. At matched input the trade
+against the peptide workflow is stark. Lysate equivalent to about 250 HeLa cells
+gave 2,600 proteins by peptides, and about 250 proteins with about 780
+proteoforms by intact molecules [@gao2026topdownbottomup]. Peptides buy protein
+coverage, intact molecules buy proteoform identity, and nothing yet buys both.
+
+### Peptides rarely name an isoform
+
+The peptide workflow is the one almost every laboratory runs, and its failure
+for isoforms is structural rather than incidental. Three quarters of annotated
+human coding genes, 14,698 of 19,449 in RefSeq, carry more than one protein
+isoform, and 3,409 carry ten or more [@dou2023sepepquant]. An in-silico tryptic
+digest of that database gave 588,545 peptide sequences, 83.5 per cent of them
+from multi-isoform genes. About half of those map to every isoform of their
+gene, leaving 246,615 that can pin down one isoform or a subset
+[@dou2023sepepquant].
+
+Real data are worse than that arithmetic predicts. Across one stem-cell and two
+liver-cancer studies, peptides able to discriminate isoforms made up about 35
+per cent of multi-isoform peptides and about 27 per cent of all peptides
+identified [@dou2023sepepquant]. The shortfall is clearest counted per gene. Of
+10,444 genes with any peptide evidence in one human cell type, 5,993, or 57 per
+cent, had no isoform that could be confirmed at all. Every peptide found for
+them was shared between two or more isoforms [@mehlferber2022huvec].
+
+One further number from that experiment is the one a drug programme needs. Only
+106 genes, about one per cent, had two or more isoforms each supported by a
+uniquely mapping peptide [@mehlferber2022huvec]. A selective drug has to know
+whether the other isoform is also present in the tissue being treated. Direct
+evidence that two isoforms of a gene are present at once is almost never
+obtained.
+
+The bottleneck is not the one a spectroscopist would predict. Of 969,900 tryptic
+peptide precursors generated in silico from the canonical human proteome, only
+3,084, or 0.32 per cent, were predicted to be indistinguishable by retention
+time and fragmentation pattern on high-resolution instruments
+[@elhamraoui2024indistinguishable]. The instruments can tell the peptides apart.
+The specific obstacle is abundance, because the peptide that distinguishes one
+isoform from another is usually the scarce one and isoforms go unrecorded for
+want of signal [@korchak2024isprm].
+
+A named drug target shows how complete that failure can be. A targeted assay
+using isotope-labelled whole-protein standards measured about 290,000 Ras copies
+per cell in a colorectal line. It returned no signal at all for the
+KRAS4A-specific peptide at endogenous levels. Those authors read that as KRAS
+being almost entirely KRAS4B in those cells [@mageean2015rasisoform]. The gene
+is abundant, the assay was targeted, and one of its two forms was still
+invisible.
+
+### Prediction aimed at the instrument
+
+One response is to predict rather than search. Long reads from the same sample
+can say which isoform-specific peptides ought to exist, and the instrument is
+then pointed at those [@korchak2024isprm]. It works, raising isoform
+detectability 3.6-fold over the untargeted approach and finding five isoforms
+that no annotation listed [@korchak2024isprm]. The scale bounds what it can be
+used for. The experiment confirmed protein for 54 resolved isoforms across 43 of
+55 genes, and required a synthetic standard for each of 192 peptides it hoped to
+find [@korchak2024isprm]. This is not yet a survey method.
+
+The same move works without targeting, by changing the search database instead
+of the instrument. One search replaced reference protein models with
+long-read-derived ones, for the 6,653 genes where transcript sampling was
+confident. Run against Jurkat spectra, that changed 3,199 protein groups. In 673
+of those, 21 per cent, the identification became more specific about which
+isoform was present [@miller2022longreadproteogenomics]. Both results point the
+same way, and both are the protein-side return on @sec-three-axes.
+
+What the resulting numbers look like for one important gene is sobering. The
+first top-down study to cover both KRAS4A and KRAS4B completely characterised 39
+proteoforms across colorectal cancer cell lines and primary tumours
+[@adams2022krasproteoforms]. Among them was a KRAS4B lacking the C185 residue
+and its C-terminal modifications, which failed to reach the plasma membrane and
+reduced MAPK pathway activation [@adams2022krasproteoforms]. Proteoform
+resolution is not bookkeeping when one entry in the list is a form of the
+protein that no longer signals.
+
+Two pieces of infrastructure exist for this, and both describe the distance
+still to go. The community programme states its own scale. Assuming 5,000 human
+cell types surveyed to a depth of one million proteoforms each, it anticipates
+asserting about 50 million unique proteoforms, at a cost target of one dollar
+per proteoform [@smith2021proteoformproject]. A machine-readable notation sits
+alongside it, introduced in 2018 and extended as ProForma 2.0 so that
+modifications at specified or ambiguous positions can be written unambiguously
+[@leduc2022proforma]. The second is a prerequisite for the first, because a
+catalogue of fifty million ambiguous names would be unusable.
+
+Confidence is itself graded, and the grading is rarely reportable. A proteoform
+identification is not a single confident answer, and a five-level system exists
+to say how ambiguous one is. Among the top-down search programs tested, only one
+reported enough information for that grading to be applied
+[@rolfs2021proteoformclass]. A reader of this literature therefore often cannot
+tell how firmly a named proteoform was identified.
+
+### Single cells and tissue sections
+
+The RNA side of this book is strongly single-cell and the protein side is almost
+entirely bulk. That asymmetry is real, and it is no longer absolute. Proteoform
+resolution has reached single-cell throughput without reaching single-cell
+depth. About 400 proteoforms were surveyed across more than 17,000 individual
+nuclei from human keratinocytes, assigned by matching intact masses to a library
+built from bulk runs [@kanchustambham2026snpims]. Spatial measurement sits at a
+similar depth. Imaging of human kidney detected about 400 proteoforms below 70
+kDa at better than 80-micrometre resolution, and named 169 of them from a
+precompiled list of roughly 1,000 candidates [@su2022pims].
+
+Both work by matching against a list made elsewhere, which is the honest answer
+to whether single-cell proteoform biology is available. The throughput exists,
+the depth does not, and neither study discovers a proteoform it was not already
+looking for.
+
+Why this blocks drug discovery in particular has been stated directly. A
+candidate cannot be prioritised when it is unknown whether the splicing event
+yields a protein, what that protein's structure is, and what it does
 [@shaw2022multiomics]. Three therapeutic routes are already in use against
 splicing events, which are immunotherapy, oligonucleotides and small molecules
-[@shaw2022multiomics]. @sec-cancer-therapeutics and @sec-sma cover
-examples of the second and third.
+[@shaw2022multiomics]. @sec-cancer-therapeutics and @sec-sma cover examples of
+the second and third.
 
 ## Claudin-18: a drug that targets one isoform {#sec-isoform-selective}
 
 Claudin-18 settles the question of whether isoform-selective therapy is
-possible, because it already exists in the clinic.
+possible, because it already exists in the clinic. The licence is dated and its
+wording ties the drug to an isoform rather than to a gene. On 18 October 2024 a
+United States licence was issued for a claudin-18.2-directed cytolytic antibody.
+It covers first-line use with fluoropyrimidine and platinum chemotherapy, in
+adults whose HER2-negative gastric or gastro-oesophageal junction tumours are
+claudin-18.2 positive on an approved test [@fdavyloyapproval2024].
 
-The gene makes two forms that differ only at the front of the protein, and the
-difference traces to which first exon it uses. One belongs to stomach, the other
-to lung [@katoh2026cldn18]. This is the alternative-promoter mechanism of
+The two protein forms come from two promoters on one gene, each carrying its own
+first exon joined to the same exons 2 to 5 [@claudin18promoters2001]. Promoter
+choice rather than exon skipping is what makes the lung form and the stomach
+form distinct [@claudin18promoters2001]. One belongs to stomach and the other to
+lung [@katoh2026cldn18]. This is the alternative-promoter mechanism of
 @sec-what-changes, arriving as a drug target.
 
 ![Two first exons, two proteins differing only at one end, and an antibody that
 binds the loop present in one of
 them.](../figures/cldn18-isoform-target.svg){#fig-cldn18 width=100%}
 
-A monoclonal antibody against the stomach form, given with chemotherapy, holds
-approval in the United States for gastric and gastro-oesophageal junction cancer
-[@katoh2026cldn18]. Avoiding the other isoform was the design goal rather than a
-side benefit, because the lung form is present in healthy lung and binding it
-would do pulmonary harm [@katoh2026cldn18].
+Selectivity was a design requirement at discovery rather than a property noticed
+afterwards. The target-discovery work raised monoclonal antibodies that bind
+claudin-18 isoform 2 while not binding the lung-specific variant of the same
+gene [@claudin18pancancertarget2008]. That work also reported the narrow
+normal-tissue footprint the whole therapeutic argument rests on. In healthy
+tissue, isoform 2 appears only in differentiated epithelium of the gastric
+mucosa, and not in the gastric stem-cell zone [@claudin18pancancertarget2008].
+Avoiding the other isoform was the goal, because the lung form is present in
+healthy lung and binding it would do pulmonary harm [@katoh2026cldn18].
 
-The general principle is stated in the same review. The point of targeting an
-isoform rather than a gene is to leave the gene's other products alone
-[@katoh2026cldn18]. That is the therapeutic argument for everything in this
-book, and here it has a licensed drug attached to it.
+The discrimination was then measured rather than assumed, and the regulator's
+own pharmacology review records the experiment. Zolbetuximab bound two gastric
+cancer lines and isoform-2-transfected HEK-293 cells with dissociation constants
+in the low nanomolar range, and did not bind HEK-293 cells transfected with
+claudin-18 isoform 1 [@fdavyloyreview2024]. A binding reagent that distinguishes
+two products of one gene is what this book has been arguing is possible, and
+here it is characterised in a regulatory file.
 
-The companion target in that review is one this book has already met. FGFR2b is
-the epithelial form of a receptor whose IIIb and IIIc exons decide which growth
-factors it answers to, described in @sec-fgfr. Both it and claudin-18 have
-first-generation antibodies against them [@katoh2026cldn18].
+The trials behind the licence are worth stating with their denominators. In the
+larger one, 565 patients were randomised, 283 to antibody plus chemotherapy and
+282 to placebo plus chemotherapy. Median progression-free survival was 10.6
+against 8.7 months and median overall survival 18.2 against 15.5 months, each
+with a hazard ratio of 0.75 [@fdavyloyreview2024]. The second trial used a
+different chemotherapy backbone and met its primary endpoint across 507
+randomised patients, with median progression-free survival of 8.21 months
+against 6.80 and a hazard ratio of 0.687 [@shah2023glow]. Its survival analysis
+was reported at an interim point at which 318 of 507 patients had died, 144 of
+254 on antibody and 174 of 253 on placebo. Median overall survival was 14.39
+against 12.16 months, with a hazard ratio of 0.771 [@shah2023glow].
 
-How many patients the approach applies to depends on which antibody is used to
-ask, and the clinical cut-offs differ between trials [@katoh2026cldn18].
-Resistance is also expected to arrive by the mechanism that created the target,
-with the tumour switching to an isoform that no longer carries the epitope
-[@katoh2026cldn18].
+The isoform selects a large minority of patients rather than a rare subgroup. Of
+2,333 patients screened for that trial, status was assessable in 2,104, and 808
+of them, 38.4 per cent, met the staining threshold. Among HER2-negative tumours
+that rose to 729 of 1,701, or 42.9 per cent [@shah2023glow]. Eligibility is a
+staining rule rather than a measurement of the isoform. A tumour qualifies when
+at least 75 per cent of its cells show moderate to strong membranous claudin-18
+immunohistochemistry. The sponsor justified that cutoff from earlier phase 2
+efficacy data rather than from a prospective comparison [@fdavyloyreview2024].
 
-::: {.callout-important}
-## This narrows a verdict given earlier
+### The companion test cannot see the distinction
 
-@sec-cancer-therapeutics concludes that the isoform-level view of cancer has
-changed what counts as a driver but not yet what counts as a treatment. That
-holds for splicing-modulator drugs, which is the evidence it was drawn from. It
-does not hold as a general statement. An approved first-line therapy already
-depends on a distinction between two isoforms of one gene.
-:::
+The test approved alongside the drug is not itself isoform-selective. Its
+antibody was raised against a claudin-18 C-terminal sequence shared by both
+protein isoforms, and specificity testing confirmed it detects both
+[@fdacldn18cdx2024]. What closes the gap is a statistical argument about
+expression rather than a measurement of the right molecule. Isoform 1 messenger
+RNA sits near baseline in gastric adenocarcinoma. Where it is detectable,
+isoform 2 is higher in 99 per cent of samples, by a median factor of 93
+[@fdacldn18cdx2024].
 
-## Resistance by switching to another isoform {#sec-resistance}
+That argument is probably sound, and it is not the same thing as seeing the
+isoform. The book's one approved isoform-selective therapy is paired with a
+companion diagnostic that cannot resolve the distinction the drug depends on,
+and the gap is bridged by the expectation that the other isoform is not there.
+It is a measurement gap of exactly the kind @sec-measuring describes, sitting
+inside a licensed product.
 
-The resistance mechanism anticipated for claudin-18 has already been observed
-elsewhere, which is the strongest reason to take it seriously.
+One more caution belongs with the approval. The two registration trials were not
+conducted as planned. The regulator recorded 21 separate unblinding incidents.
+In one of them, unblinded treatment assignments sat on a shared site accessible
+to blinded staff for about 19 months. It concluded that it could not rule out
+bias or data integrity problems [@fdavyloyinspection2024].
 
-HER2 is among the most studied targets in oncology. Reading its transcripts at
-full length raised its protein-coding isoform count from 13 to 90
-[@guardia2025her2]. Much of that diversity is invisible to the assays used in
-the clinic, and went unrecognised until this survey of primary tumours
-[@guardia2025her2]. Even the two HER2 variants that were already well known
-turned out to be families: nine isoforms lacking exon 16 were found, of which
-only 1 appeared in the reference annotation [@guardia2025her2].
+### FGFR2b, the same argument with a harder outcome
 
-The functional result is the one that matters, and it comes from cell cultures
-rather than from treated patients. Lines made resistant to the antibody and to
-antibody-drug conjugates came to favour forms of the receptor that no longer
-carry the stretch the antibody grips [@guardia2025her2], so the target changed
-shape.
+The companion target is one this book has already met. FGFR2b is the epithelial
+form of a receptor whose IIIb and IIIc exons decide which growth factors it
+answers to, described in @sec-fgfr. The therapeutic side of it is a true splice
+isoform rather than a promoter choice. The IIIb form was reported overexpressed
+in roughly 30 per cent of HER2-negative gastric cancers [@wainberg2024fight].
+Discrimination between the two splice forms was shown functionally, since cells
+engineered to display IIIc were not killed through antibody-dependent cellular
+cytotoxicity while cells displaying IIIb were [@xiang2021bemarituzumab].
 
-The same lesson came first from cell therapy.
-Relapse after CD19-directed treatment has been
-attributed to the tumour switching which isoform of the target it makes
-[@barnkob2022carisoform]. Auditing the antigens proposed for solid tumours
-suggested the problem is general rather than specific to that one target
+Isoform selection costs a great deal of screening for a modest trial. Some 910
+patients were prescreened to randomise 155. At final analysis the whole
+randomised population showed median progression-free survival of 9.5 months
+against 7.4, and median overall survival of 19.2 against 13.5, with confidence
+intervals crossing one in both cases [@wainberg2024fight]. The benefit tracked
+how much of the isoform a tumour displayed. Among patients whose tumours stained
+for IIIb in at least a tenth of cells, median progression-free survival was 14.0
+against 7.3 months. Median overall survival was 24.7 against 11.1, hazard ratios
+of 0.43 and 0.52 [@wainberg2024fight].
+
+Choosing the right isoform did not spare the normal tissue that carries it.
+Corneal adverse events affected 51 of 76 patients given the antibody, against 8
+of 77 on placebo. They reached grade 3 in 21 patients with none on placebo, and
+caused 24 of the 31 discontinuations in the antibody arm [@wainberg2024fight].
+One of the two confirmatory phase 3 trials, the one combining the antibody with
+a checkpoint inhibitor, was stopped by its sponsor rather than completed
+[@nct05111626fortitude102].
+
+How common the isoform is depends on who measured it, by roughly an order of
+magnitude. Earlier retrospective series put it near 2.5, 3.7 and 4.9 per cent.
+Trial prescreening put it at 29 per cent and then 37.8 per cent. Those authors
+attribute the gap to study design, the age of the tissue, the antibody chosen
+and the scoring rule [@rha2025fgfr2bprevalence]. The largest estimate comes from
+prescreening for the confirmatory trial. Of 3,782 evaluable gastric tumours from
+37 countries, 1,428 or 37.8 per cent showed moderate to strong membranous IIIb
+staining in any proportion of tumour cells. Requiring at least a tenth of cells
+brought that to 612, or 16.2 per cent [@rha2025fgfr2bprevalence].
+
+On the measurement question the two programmes differ in the reader's favour.
+The antibody clone used to select patients for the receptor programme is
+specific for the IIIb form, whereas the claudin-18 clone recognises both forms
+of that gene [@rha2025fgfr2bprevalence]. An isoform-specific companion assay is
+therefore achievable, and the approved drug is the one that does not have it.
+
+### CD44v6, the precedent that killed a programme
+
+Picking a splice variant is not by itself a safety argument, and the precedent
+is older than either programme above. The larger CD44 proteins arise when
+variant exons are spliced into the extracellular part. An antibody raised
+against the sequence encoded by variant exon v6 stained the membranes of
+squamous cells in the upper layers of skin and tonsil epithelium, in work
+published in 1993 [@cd44v6isoforms1993]. An antibody-drug conjugate against the
+same variant exon later killed a patient with toxic epidermal necrolysis, after
+two infusions at the highest dose reached. The sponsor judged risk-benefit
+negative across four phase 1 trials and 70 patients, and stopped development
+[@bivatuzumabdoseescalation2006].
+
+Read against the claudin-18 case, the two make a single point. Isoform
+selectivity protects a patient only when the isoform's normal-tissue footprint
+is narrow, and establishing that footprint is separate work from establishing
+the selectivity. Claudin-18.2 had its footprint mapped at discovery. CD44v6 had
+its published thirteen years before the fatal trial.
+
+### Most drugs called isoform-selective are not
+
+A reader coming from pharmacology will have met the phrase in a different sense,
+and the distinction matters to the argument here. Most agents described as
+isoform-selective select between genes rather than between one gene's products.
+The class-I phosphoinositide 3-kinases comprise three class-Ia catalytic
+subunits and one class-Ib subunit. The one that alpelisib and its research
+precursors target is encoded by its own gene, so that selectivity does not bear
+on this argument [@jamieson2011p110alpha]. Nothing in this chapter turns on
+paralogue selectivity, and the two cases that turn on isoform selectivity are
+the two above.
+
+## Resistance by selecting a form already present {#sec-resistance}
+
+Resistance is anticipated to arrive through the same mechanism that created the
+target, by the tumour coming to carry an isoform that no longer holds the
+epitope [@katoh2026cldn18]. That expectation is reasonable, and the evidence for
+it is more complicated than the expectation in a way that changes how it should
+be stated.
+
+HER2 is among the most studied targets in oncology, and reading its transcripts
+at full length raised its protein-coding isoform count from 13 to 90
+[@guardia2025her2]. Much of that diversity had not been recognised before and is
+not assessed in routine practice, having surfaced only in a survey of 561
+primary breast cancer samples [@guardia2025her2]. Even the two variants already
+well known turned out to be families, since nine isoforms lacking exon 16 were
+found and only one was in the reference annotation [@guardia2025her2]. Lines
+made resistant to the antibody and to antibody-drug conjugates moved their
+expression toward isoforms lacking the region the antibody binds, in cell
+culture rather than in treated patients [@guardia2025her2].
+
+### CD19, and three readings of one relapse
+
+Cell therapy supplies the best-studied case, and it forces the qualification.
+Relapse accompanied by loss of the targeted epitope occurs in 10 to 20 per cent
+of children who responded to CD19-directed CAR T cells [@convergence2015cd19].
+That is the clinical frequency any molecular account has to explain. Relapse has
+been attributed to the tumour changing which isoform of the target it makes
+[@barnkob2022carisoform]. An audit of antigens proposed for solid tumours
+suggested the problem is general rather than particular to that one target
 [@barnkob2022carisoform].
 
-Those authors turned it into a selection rule, which is to aim at the isoforms a
-tumour gains rather than at the ones it can afford to lose
-[@barnkob2022carisoform].
+Three findings complicate that account without dismissing it.
 
-Reviewed across antibody therapy as a whole, the same mechanism recurs on many
-of the field's principal targets [@choi2025asresistance]. One recurring trick is
-to make the target soluble, so it leaves the cell surface and absorbs the drug
-or the immune signal while the cell goes unharmed [@choi2025asresistance]. The
-death receptor FAS is a worked example: skipping one exon removes the membrane
-anchor, and the soluble protein that results blocks the signal that would have
-killed the cell [@choi2025asresistance].
+The escape form is not manufactured by the therapy. In seventy-five untreated
+childhood leukaemia marrows and in healthy blood and spleen, inclusion of CD19
+exon 2 had a median near 96 to 97 per cent. A few per cent of transcripts
+therefore lack the exon before any drug is given [@dam2026cd19exon2]. In a
+re-analysis of four treated children, pre-treatment reads skipping exon 2 were
+highest in the patient who relapsed fastest, and absent in the one complete
+responder. Four patients support no inference of any kind [@dam2026cd19exon2].
+Selection of a pre-existing minor form is the supportable description, and
+switching is not.
 
-This reframes @sec-drug-targets, where AR-V7 was presented as a target that
-therapy creates. Isoform switching under drug pressure looks like the general
-form of that behaviour rather than a peculiarity of the androgen receptor.
+The protein does not behave as the simple story implies. Expressed in
+CD19-deleted leukaemia lines, the exon-2-skipped protein stayed inside the cell
+with the endoplasmic reticulum marker calnexin [@bagashev2018cd19er]. The splice
+form therefore causes loss of surface antigen rather than a visible receptor the
+CAR fails to grip, which is a different mechanism from the one the word
+switching suggests.
+
+The genetic explanation may be sufficient on its own. Deep exome sequencing of
+paired pre-treatment and relapse leukaemias found a genetic cause in seven of
+eight children whose relapse was CD19-negative. Each carried a coding variant
+undetectable before infusion, and none of five CD19-positive relapses did
+[@chen2022cd19genomic]. In the index patient whose relapse had been attributed
+partly to splicing, two frameshift deletions in exon 4 sat at close to half of
+reads each. Read phasing put them on opposite chromosomes in 484 of 520 reads
+covering both sites. That arrangement would inactivate both gene copies with no
+splicing change [@chen2022cd19genomic]. A separate series reported coding
+mutations with loss of heterozygosity in nearly all resistant cells, and read
+the absence of antigen as irreversible rather than as a reversible shift in
+splicing [@geneticmechanisms2018car19].
+
+The splicing reading has not been abandoned, and its defenders argue the genetic
+account does not close. One group re-read the same published relapse sample and
+noted that the exon 2 frameshift sat at roughly a third of reads, too low to
+explain a leukaemia uniformly surface-negative by flow cytometry
+[@asnani2019intron2]. That re-analysis also found a different splicing event
+dominating. Retention of CD19 intron 2 made up about three fifths of the reads
+joining into exon 3 in the relapse sample, and it introduces a premature stop
+codon [@asnani2019intron2].
+
+Those sources are less independent than a list of citations suggests. Several
+re-sequence or re-analyse the same patients from the same centre, so the
+disagreement is partly neighbours arguing over shared samples. What survives is
+narrower than the review-level claim. A splice form can contribute to antigen
+loss, the dominant mechanism in the one deeply sequenced series was genetic, and
+nobody has shown a drug inducing the splice form rather than enriching it.
+
+### BRAF, and whether it is a splicing case at all
+
+The second-best-known case may not belong in this chapter. Shortened BRAF
+messages lacking the exons encoding the RAS-binding domain were found in six of
+nineteen melanoma patients progressing on vemurafenib. They appeared in none of
+twenty-seven tumours from patients never exposed to the drug, and in neither of
+two patients with intrinsic resistance [@poulikakos2011braf]. The shorter
+protein does not resist because the drug cannot reach it. Vemurafenib inhibited
+truncated and full-length kinase at similar concentrations in vitro, and
+blocking dimerisation restored sensitivity in cells, so resistance comes from
+RAS-independent dimerisation [@poulikakos2011braf].
+
+The splicing attribution rested on a negative result. Array-based copy-number
+profiling of the BRAF locus in resistant clones showed no somatic deletion
+inside the gene, and patient tumours were not profiled that way
+[@poulikakos2011braf]. A mechanism for a splicing cause was supplied later. It
+is a single C-to-G substitution fifty-one nucleotides upstream of the intron 8
+acceptor, at a predicted branch point, on the mutant allele only
+[@salton2015braf].
+
+A 2024 report contradicts the whole account. It attributes the same variants to
+genomic deletions, having found matching deletions in melanoma cell models and
+in melanoma and breast tumours expressing them. The same report finds the
+variants in BRAF wild-type and in untreated melanoma
+[@genomicdeletions2024altbraf]. This book does not resolve the disagreement. If
+the variants are genomic then BRAF is not an isoform case at all. It is reported
+here with its conflict attached rather than used as support.
+
+### Soluble decoys
+
+One recurring route makes the target soluble, so that it leaves the cell surface
+and absorbs the drug or the immune signal while the cell goes unharmed
+[@choi2025asresistance]. Reviewed across antibody therapy as a whole, the
+mechanism recurs on many of the field's principal targets
+[@choi2025asresistance].
+
+The primary evidence is strongest for PD-L1. Two splice forms lacking the
+transmembrane domain were recovered from the relapsed tumours of two
+non-small-cell lung cancer patients who had progressed on anti-PD-L1 antibody.
+The same two variants turned up in two of fifteen further refractory patients
+[@gong2019spdl1]. How little is needed is the striking part. In mice carrying
+engineered colon adenocarcinoma tumours, a mixture in which only one cell in a
+hundred expressed the soluble form was already resistant, the rest expressing
+normal membrane protein [@gong2019spdl1]. A resistance mechanism that works at
+one per cent of cells does not need to sweep a tumour.
+
+Not every anchorless form comes from splicing, which bounds the generalisation.
+A second soluble PD-L1 form is thought to arise when transcription terminates
+early inside intron 4, upstream of the transmembrane exon. Across thirty-three
+tumour types in public data it was most frequent in lymphoma and thymoma, at
+roughly a third of cases [@sagawa2022pdl1vint4]. The death receptor FAS has the
+same architecture by the splicing route. Forcing a long non-coding RNA that
+pairs with Fas pre-messenger RNA in HeLa cells increased skipping of the exon
+encoding the transmembrane segment. Soluble Fas rose in the medium, and the
+cells were protected from ligand-induced death [@villamizar2016sfas]. A review
+states the FAS case in one line [@choi2025asresistance], and the primary
+supplies the mechanism and the direction of causation.
+
+### AR-V7, and what a biomarker has to do
+
+@sec-drug-targets presented AR-V7 as the shape of problem where therapy produces
+the isoform. The outcome data make the prognostic claim strong and the causal
+wording weaker. Among 118 men with castration-resistant prostate cancer starting
+abiraterone or enzalutamide, those whose circulating tumour cells carried AR-V7
+message did worse on both endpoints. Median progression-free survival was 3.1
+against 6.9 months, and median overall survival 10.8 against 27.2 months
+[@armstrong2019prophecy]. The response data separate the groups further. No man
+positive for AR-V7 protein had a confirmed antigen or tumour response, and 11
+per cent of men positive by the message assay did, against 26 to 28 per cent of
+negative men [@armstrong2019prophecy].
+
+The marker is specific to a treatment setting rather than general. Among the men
+from that study who went on to receive a taxane, AR-V7 status carried no
+disadvantage, on a comparison that was descriptive and unpowered
+[@armstrong2020taxane]. A single-centre cohort of 65 men dissents on the marker
+itself. A third of AR-V7-positive men, 11 of 33, still had an antigen response,
+against 20 of 32 negative men. The amount of message did not differ between
+responders and non-responders, and AR-V7 status carried no independent
+prognostic weight [@schlack2022arv7]. A prospective blinded multicentre study
+and a single-centre cohort disagree, and the first is the better design.
+
+One group turned the problem round into a selection rule worth repeating, which
+is to aim at the isoforms a tumour gains rather than at the ones it can afford
+to lose [@barnkob2022carisoform]. Isoform switching under drug pressure is
+better described as isoform selection, and on current evidence it is one
+mechanism among several rather than the general form of acquired resistance.
 
 ## Reagents that discriminate between proteoforms {#sec-modalities}
 
@@ -160,8 +523,9 @@ Single-domain antibodies keep full binding capacity at one-tenth the size of a
 conventional antibody [@vanfossen2025nanobodies]. The property that matters here
 is discrimination rather than affinity, since they can distinguish shapes of the
 same protein that differ only slightly [@vanfossen2025nanobodies]. RPS24 showed
-in @sec-rps24 that reagents of this selectivity can be made, for a difference of
-three residues.
+in @sec-rps24 that reagents of this selectivity can be made for a difference of
+three residues, and zolbetuximab shows the same for a difference at one protein
+end.
 
 Raising a reagent against one protein form requires having that form in quantity
 and purity first [@vanfossen2025nanobodies], so measurement and reagent
@@ -169,13 +533,12 @@ development are each waiting on the other.
 
 Targeted degradation inherits the same blind spot in a more dangerous form. A
 degrader designed against a protein does not distinguish that protein's forms,
-so it may remove the harmless one and leave the harmful one to take over,
-selecting for resistance [@cui2026proteoformdegradation]. Stated the other way
-round, a drug aimed at a gene's canonical product may work against some of that
-gene's protein forms and not others, so the result is adverse effects or a
-failure to achieve what was expected [@cui2026proteoformdegradation].
-
-A proteoform-blind drug need not fail outright to be failing part of the time.
+so it may remove the harmless one and leave the harmful one to take over
+[@cui2026proteoformdegradation]. Stated the other way round, a drug aimed at a
+gene's canonical product may work against some of that gene's protein forms and
+not others. The result is adverse effects, or a failure to achieve what was
+expected [@cui2026proteoformdegradation]. A proteoform-blind drug need not fail
+outright to be failing part of the time.
 
 ## Proteoform medicine as a programme {#sec-programme}
 
@@ -191,27 +554,45 @@ resolution requires measurement at this resolution [@proteoformmedicine2026].
 ::: {.callout-note collapse="true"}
 ## The review is here as an abstract only
 
-The review is in this corpus as an abstract only, so only its abstract-level
-statements are cited here. Its account of the network biology, its treatment of
-specific diseases, and any figure in it have not been read. Readers who want the
-argument in full should go to the paper rather than to this section.
+The review is in this corpus as an abstract, so only its abstract-level
+statements are cited. Its account of the network biology, its treatment of
+specific diseases, and any figure in it have not been read. The primary behind
+its million-proteoform estimate is not in the corpus either, so that figure
+reaches this book secondhand. Readers who want the argument in full should go to
+the paper rather than to this section.
 :::
 
 ## Where this leaves the argument
 
-The position has three parts that do not resolve into one verdict.
+The position has four parts and they do not resolve into one verdict.
 
 Isoform-selective therapy already works in the clinic. An approved drug draws
-its selectivity from which first exon a gene uses, and the design deliberately
-spared the other isoform to avoid harming healthy tissue.
+its selectivity from which first exon a gene uses, the discrimination is
+characterised in a regulatory file, and the design deliberately spared the other
+isoform to avoid harming healthy tissue. A second programme, against a true
+splice isoform, reached phase 3 with a stronger effect in the isoform-high
+subgroup than in the trial as a whole.
 
-Isoform-blind therapy fails in a characteristic way. Cells escape by switching
-to a form the drug cannot see, shown in culture for HER2, inferred from relapse
-after CD19-directed treatment, and reviewed across antibody therapy. A target
-defined at gene level carries that failure mode built in.
+Selecting the right isoform is not the same as being safe, and the record
+includes a death. CD44v6's presence in normal skin was published more than a
+decade before an antibody-drug conjugate against it proved fatal. The receptor
+programme produced corneal events in two thirds of treated patients, and one of
+its confirmatory trials was stopped by its sponsor. Isoform selectivity bounds
+the tissue a drug can harm, and only the normal-tissue map says where that bound
+lies.
 
-The measurement is also not yet adequate to the ambition. Confirming that a
+Resistance through isoform identity is real and narrower than it is usually
+stated. The evidence supports a drug selecting a form the tumour was already
+making rather than a tumour switching on demand. For CD19 the dominant mechanism
+in the one deeply sequenced series was genetic rather than a splicing change,
+and the best-known second case may be genomic rather than post-transcriptional.
+What survives is a mechanism with good primary evidence in soluble PD-L1 and
+FAS, and a selection rule that follows from it.
+
+The measurement is still not adequate to the ambition. Confirming that a
 particular protein form is present in a particular tissue, in enough copies,
 with its epitope intact, remains a targeted experiment rather than a survey.
-Until that changes, isoform-level drug discovery will proceed one gene at a
-time, which is roughly where @sec-rps24 found it.
+About one per cent of genes have two isoforms each confirmed by a unique
+peptide. That it matters anyway is shown by a licensed drug depending on a
+distinction its own companion test cannot make, with the gap covered by an
+argument about expression rather than by seeing the molecule.

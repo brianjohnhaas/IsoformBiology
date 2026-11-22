@@ -170,7 +170,8 @@ expansion cohort, crizotinib produced a confirmed objective response in 32 per
 cent of 65 evaluable patients. That is short of the 60 to 80 per cent seen with
 matched therapy for other lung cancer drivers [@drilon2020met].
 
-AR-V7 is the opposite shape of problem, an isoform that therapy creates.
+AR-V7 is the opposite shape of problem, an isoform that therapy brings to the
+fore.
 Immunohistochemistry across hundreds of prostate specimens found AR-V7 protein
 in under one per cent of untreated primary tumours, and in about three quarters
 of samples taken after androgen deprivation. The share rose further after

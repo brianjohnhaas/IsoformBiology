@@ -32,10 +32,23 @@ def tex(s: str) -> str:
     return re.sub(r"\b([A-Z]{2,}[0-9]*|[A-Z][a-z]*[0-9]+)\b", r"{\1}", s)
 
 
+PERSONAL_NAME = re.compile(r"^[^,]+,\s*(?:[A-Z]\.|[A-Z]$)")
+
+
 def authors_to_bibtex(s: str) -> str:
-    """'Lastname, A. B.; Other, C.' -> 'Lastname, A. B. and Other, C.'"""
+    """'Lastname, A. B.; Other, C.' -> 'Lastname, A. B. and Other, C.'
+
+    A corporate author is wrapped in an extra pair of braces so that BibTeX
+    treats it as one literal name. Without that, "US Food and Drug
+    Administration, Center for Drug Evaluation and Research" is parsed as three
+    people with the comma splitting surname from initials, and renders as
+    "Food, U., Drug Administration, C. for D. E. & Research".
+    """
     parts = [p.strip() for p in str(s or "").split(";") if p.strip()]
-    return " and ".join(parts)
+    out = []
+    for part in parts:
+        out.append(part if PERSONAL_NAME.match(part) else "{" + part + "}")
+    return " and ".join(out)
 
 
 def entry_type(journal: str, doc_id: str = "") -> str:
