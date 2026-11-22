@@ -1,15 +1,17 @@
 # Isoform Biology
 
-A community reference on why transcript isoforms matter — built as a book, from
+A community reference on why transcript isoforms matter, built as a book from
 the primary literature, with every claim traceable to the lines it came from.
 
-**Status: early draft.** The chapter scaffold and the research pipeline are in
-place; chapters are being written from verified claim records.
+**Status: first draft, unreviewed.** All thirteen chapters are drafted from
+verified claim records. No chapter has yet been read by a subject expert, which
+is the project's largest gap. See
+[how to contribute](https://brianjohnhaas.github.io/IsoformBiology/contributing.html).
 
 ## Why this exists
 
 A gene is not a transcript. Most human genes produce several, and the
-differences between them are frequently the biology — which domain is present,
+differences between them are frequently the biology: which domain is present,
 which cell type uses which form, whether a transcript is translated at all.
 Most transcriptomic analysis still collapses that to one number per gene.
 
@@ -18,7 +20,7 @@ Plenty of excellent material already covers *tools* for isoform analysis and
 landmark examples across the tree of life, the technology arc that made them
 visible, the disease biology that depends on isoform resolution, and the
 current efforts to catalog the isoform universe. That is the gap this fills.
-It is a biology book, not a tool catalogue — see
+It is a biology book rather than a tool catalogue, see
 [the resources appendix](chapters/99-glossary.qmd) for where the tool
 catalogues and training material live.
 

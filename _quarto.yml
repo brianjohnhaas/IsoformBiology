@@ -4,6 +4,12 @@ project:
 
 book:
   title: "Isoform Biology"
+  subtitle: "Functional Complexity from Alternative Transcriptional Processing"
+  description: >-
+    What transcript isoforms do in development and disease, across animals,
+    plants, fungi and protists: alternative splicing, start-site choice and
+    polyadenylation, and when gene-level analysis is enough. An AI-written
+    first draft, traced to the primary literature and awaiting expert review.
   date: today
   search: true
   repo-url: https://github.com/brianjohnhaas/IsoformBiology

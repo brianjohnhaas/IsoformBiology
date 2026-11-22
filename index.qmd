@@ -38,11 +38,11 @@ nothing finer was measurable. This book is an argument, built from the primary
 literature, that the finer resolution is where a great deal of the biology
 lives.
 
-It is organized as a book rather than a tool list because the case is
-cumulative, and it is ordered by what each step licenses. Landmark examples
-across the tree of life come first, then the measurement arc that made them
-visible and the catalogues it produced, then what an isoform difference does to
-the protein. Variation, disease and drug targets follow, because each of those
+It is organised as a book rather than a tool list because the case is
+cumulative, and it is ordered by what each step licenses. Foundations come
+first, then landmark examples across the tree of life, then the measurement arc
+that made them visible and the catalogues it produced, then what an isoform
+difference does to the protein. Variation, disease and drug targets follow, because each of those
 arguments depends on the measurement being trusted first.
 
 The aim is a resource the community can use and correct rather than a finished
