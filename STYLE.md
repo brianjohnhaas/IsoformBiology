@@ -31,27 +31,39 @@ enforced by `scripts/check_style.py`:
 over 45, and nothing under seven either. The energy in good prose comes from
 pace far more than from pronouns. Measured on the two drafts, dropping the mean
 from 22.2 to 14.9 words did almost all the work that switching to "we" appeared
-to do.  The lower bound was added later, and it matters as much as the upper
+to do.
+
+The lower bound was added later, and it matters as much as the upper
 one. A chapter written to the mean alone drifts into four- and five-word
 sentences placed for emphasis, and a run of those is the single most
 recognisable mark of generated prose. "The transcripts did not change. The
 question did." reads as a punchline rather than as a result. The two rules pull
 against each other, and the way to satisfy both is to split a long sentence
-rather than to manufacture a short one.  The lower bound does not apply to a
+rather than to manufacture a short one.
+
+The lower bound does not apply to a
 glossary cross-reference, a defined term standing as its own label, or an item
-in a list of links. It applies to running prose.  **End sections on a claim, not
+in a list of links. It applies to running prose.
+
+**End sections on a claim, not
 a summary.** A section that closes by restating what it just said has wasted its
 most emphatic position. Close on the thing the book is willing to defend, as a
 full sentence with its subject in it. "Forcing the splice choice has a large
 phenotype, and tumours do not make the switch." is a verdict; "the defensible
 statement is that forcing the choice has a phenotype" is the same verdict with a
 hedge about who finds it defensible. Drop the hedge. A verdict needs no
-narrator, only an author willing to stop qualifying.  What it must not become is
+narrator, only an author willing to stop qualifying.
+
+What it must not become is
 an aphorism. A paragraph that ends on a short, quotable, slightly paradoxical
 line has bought emphasis it did not earn, and a chapter where most paragraphs
 end that way reads as pattern rather than as argument. Fold the claim into the
-sentence that carries the evidence.  This checker cannot see the last two rules.
-A human has to.  See `chapters/02-animals.qmd` for the reference implementation.
+sentence that carries the evidence.
+
+This checker cannot see the last two rules.
+A human has to.
+
+See `chapters/02-animals.qmd` for the reference implementation.
 
 ## Who is reading
 
