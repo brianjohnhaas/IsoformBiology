@@ -188,6 +188,15 @@ the strongest single demonstration that a long read answers a question a short
 read cannot, so it closes that chapter; chapter 10 refers to it when it reaches
 isoform-level QTLs rather than restating the figures.
 
+The droplet-versus-full-length chemistry comparison moved from chapter 8 to
+chapter 5 `#sec-sc-chemistry`, which is where this table already assigns
+single-cell chemistry. It had been sitting in chapter 8's limits section, framed
+as a caveat about droplet data, which left the book arguing hard for long reads
+in bulk and leaving the single-cell case implicit. The same figures read as a
+capability where they now sit, and chapter 8 points at them. The Saferali
+counter-result moved with them, because it qualifies that comparison and nothing
+else.
+
 The single-cell long-read row was split. Chapter 5 keeps the chemistry and what
 it costs. What was found with it, which is the Joglekar brain atlas and the
 CD8 T cell atlas, belongs to chapter 8 with the rest of the single-cell

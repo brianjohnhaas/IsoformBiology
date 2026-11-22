@@ -183,6 +183,28 @@ Alzheimer brain state the ceiling directly: even with the gain from
 concatenation, depth per sequencing run remains lower and cost per read higher
 than for short-read sequencing [@shahnaee2026rna].
 
+## Full-length chemistry reaches more splicing {#sec-sc-chemistry}
+
+What the extra length buys in a single cell has been measured on one sample. In
+the same human individual, droplet data yielded computable splicing scores for
+1,416 genes against 9,802 for plate-based full-length data, and those authors
+state that 3'-biased droplet reads never reach some splicing events at all
+[@olivieri2021splicing]. Because the alternatively spliced exons of PTPRC sit
+near the 5' end of the transcript, 3' gene-expression libraries left under a
+tenth of cells positive for either CD45 isoform even at saturating depth
+[@michalik2024ideis].
+
+The bias is less simple than it sounds. In one 3'-biased chemistry, junction
+recovery did not fall off toward the 5' end of genes. Recall was slightly lower
+close to the 3' terminus than tens of kilobases upstream, which complicates the
+assumption that 3' counting is uniformly blind to upstream splicing
+[@saferali2026framework].
+
+What has been found with that reach sits later in the book. @sec-isoform-only
+has the share of isoform variation that gene-level counting cannot explain,
+@sec-brain-atlas charges regional differences to one compartment, and
+@sec-sc-methods separates two T cell states by one receptor's isoform.
+
 ## Long reads cost depth in cells, junctions in bulk {#sec-longread-cost}
 
 The two costs below were measured in different settings and should not be
