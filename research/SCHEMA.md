@@ -1,11 +1,53 @@
 # Research record contract
 
-Every chapter of this book is written from **claim records**, never from source prose.
+Every chapter of this book is written from **claim records**, never from source
+prose.
 
 The separation is deliberate: the agent (or person) who reads a paper produces
-structured records. A later writing pass turns records into original prose. Nobody
-writes book text while looking at source text. That is the single most effective
-guard against inadvertent plagiarism, and it also makes every sentence auditable.
+structured records. A later writing pass turns records into original prose.
+Nobody writes book text while looking at source text. That is the single most
+effective guard against inadvertent plagiarism, and it also makes every sentence
+auditable.
+
+## Sources that are not papers
+
+The corpus holds FDA regulatory documents under `/fda`, clinical trial records
+under `/trials` and protein entries under `/proteins`, and a claim may cite any
+of them. A regulatory primary is often the *right* source: `CONTRIBUTING.md`
+forbids citing a review for a primary finding, and for a drug approval the
+primary is the approval package, not a paper about it.
+
+Set `source_type:` to `fda`, `trials` or `proteins` on such a source. Three
+things follow from it:
+
+- **No DOI.** A regulatory document has none. It is cited by its issuing body
+  in `authors` and its application number in `journal`, as in "FDA BLA 761365
+  review documents" or "FDA PMA P230018". `verify_claims.py` requires those two
+  instead of a DOI. Record a `url:` only if you have retrieved it and it
+  resolves; four constructed `accessdata.fda.gov` links in this project all
+  returned 404.
+- **`build_bib.py` emits `@techreport`**, not `@article`, so an approval
+  package does not render as a peer-reviewed paper.
+- **`lines:` are labels, not positions.** Some FDA documents label the first
+  line `L0`, so a label is one ahead of the position `paperclip cat --lines`
+  addresses. `verify_claims.py` detects each document's first label and
+  converts; record the label, matching `grep -n` and the anchor.
+
+## Two optional keys the deepening passes added
+
+`note:` on a claim records a caveat that belongs to the record rather than to
+the claim sentence: a species the abstract does not mention, an absent limit of
+detection, a unit error in the source's own abstract. Writing passes must read
+it, because it is usually the reason a number cannot be stated as simply as it
+looks.
+
+`preprint: true` on a source marks a document read as a preprint. Set it
+whenever the text read was a preprint, including when `doi` carries the journal
+version, which is the case the gates cannot see: `verify_claims.py` checks the
+quote against the preprint it came from and `build_bib.py` emits the journal.
+`research/ALLOCATION.md` lists every source in the book where those two differ.
+
+`verify_claims.py` ignores both keys.
 
 ## File layout
 

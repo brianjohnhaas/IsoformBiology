@@ -38,8 +38,16 @@ def authors_to_bibtex(s: str) -> str:
     return " and ".join(parts)
 
 
-def entry_type(journal: str) -> str:
+def entry_type(journal: str, doc_id: str = "") -> str:
+    """BibTeX type for a source.
+
+    A regulatory document or a trial registry record is a report, not a journal
+    article. Typed as @article it renders in the reference list as though it had
+    been peer reviewed, which an approval package has not been.
+    """
     j = (journal or "").lower()
+    if doc_id.startswith("fda_") or doc_id.startswith("NCT"):
+        return "techreport"
     if any(k in j for k in ("biorxiv", "medrxiv", "arxiv", "research square")):
         return "misc"
     return "article"
@@ -101,7 +109,7 @@ def main() -> int:
     for key in sorted(sources):
         s = sources[key]
         journal = str(s.get("journal", "") or "")
-        kind = entry_type(journal)
+        kind = entry_type(journal, str(s.get("doc_id", "")))
         areas = ", ".join(sorted(used_by[key]))
         lines.append(f"% cited in: {areas}")
         lines.append(f"@{kind}{{{key},")
@@ -109,12 +117,19 @@ def main() -> int:
         lines.append(f"  title   = {{{tex(s.get('title'))}}},")
         if kind == "article":
             lines.append(f"  journal = {{{tex(journal)}}},")
+        elif kind == "techreport":
+            # The issuing body is the author here, so institution would repeat
+            # it; the series string carries the BLA, PMA or NCT identifier that
+            # a reader needs to find the document.
+            lines.append(f"  type    = {{{tex(journal)}}},")
         else:
             lines.append(f"  howpublished = {{{tex(journal) or 'Preprint'}}},")
         if s.get("year"):
             lines.append(f"  year    = {{{s['year']}}},")
         if s.get("doi"):
             lines.append(f"  doi     = {{{s['doi']}}},")
+        if s.get("url"):
+            lines.append(f"  url     = {{{s['url']}}},")
         lines.append("}")
         lines.append("")
 

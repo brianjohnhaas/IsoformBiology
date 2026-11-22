@@ -1,5 +1,5 @@
 area: proteoforms-drugs
-researcher: claude-opus-5
+researcher: 'claude-opus-5; deepening pass: msr, res, sel'
 date: 2026-11-21
 corpus: paperclip
 claims:
@@ -762,6 +762,1735 @@ claims:
     quote: the drug might be effective against some proteoforms but ineffective against the others, resulting
       in adverse effects or failure to achieve the expected therapeutic outcomes
   confidence: high
+- id: DRG-045
+  claim: A deep intact-molecule survey of two isogenic human colorectal cancer cell lines reported 23,622
+    proteoforms, which mapped to 2332 distinct proteins, and took more than 400 mass-spectrometry raw
+    files at a 1 per cent proteoform-level false-discovery rate.
+  topic: 'top-down proteomics: what it achieves'
+  source:
+    doc_id: PMC9770947
+    title: Deep top-down proteomics revealed significant proteoform-level differences between metastatic
+      and nonmetastatic colorectal cancer cells
+    authors: McCool, E. N.; Xu, T.; Chen, W.; Beller, N. C.; Nolan, S. M.; Hummon, A. B.; Liu, X.; Sun,
+      L.
+    journal: Science Advances
+    year: 2022
+    doi: 10.1126/sciadv.abq6348
+    bibkey: mccool2022topdown
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L20
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9770947#L20
+    quote: identified 23,622 proteoforms of 2332 proteins from the SW480 and SW620 cell lines with a 1%
+      proteoform-level FDR
+  confidence: high
+  figure_idea: Proteoform count beside protein count for the same experiment, so the reader sees tens
+    of thousands of proteoforms arising from a low thousands of proteins rather than from across the proteome.
+- id: DRG-046
+  claim: That survey was confined to proteoforms smaller than 30 kDa on the instrument used, and the authors
+    report that most of what it identified was 10 kDa or smaller, which they name as a main limitation
+    of the study.
+  topic: 'top-down proteomics: the mass window actually measured'
+  source:
+    doc_id: PMC9770947
+    title: Deep top-down proteomics revealed significant proteoform-level differences between metastatic
+      and nonmetastatic colorectal cancer cells
+    authors: McCool, E. N.; Xu, T.; Chen, W.; Beller, N. C.; Nolan, S. M.; Hummon, A. B.; Liu, X.; Sun,
+      L.
+    journal: Science Advances
+    year: 2022
+    doi: 10.1126/sciadv.abq6348
+    bibkey: mccool2022topdown
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L24
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9770947#L24
+    quote: we focused on the characterization of proteoforms smaller than 30 kDa using a Thermo Q-Exactive
+      HF mass spectrometer
+  confidence: high
+  figure_idea: Histogram of identified proteoform masses with the typical mass of a drug target marked,
+    showing where intact-molecule identifications sit relative to the proteins a drug programme cares
+    about.
+- id: DRG-047
+  claim: 'The authors attribute the loss of large proteoforms to signal dilution: a bigger protein spreads
+    its ions across a much wider range of charge states, so its signal-to-noise ratio falls sharply in
+    a complex sample.'
+  topic: 'top-down proteomics: the stated constraint'
+  source:
+    doc_id: PMC9770947
+    title: Deep top-down proteomics revealed significant proteoform-level differences between metastatic
+      and nonmetastatic colorectal cancer cells
+    authors: McCool, E. N.; Xu, T.; Chen, W.; Beller, N. C.; Nolan, S. M.; Hummon, A. B.; Liu, X.; Sun,
+      L.
+    journal: Science Advances
+    year: 2022
+    doi: 10.1126/sciadv.abq6348
+    bibkey: mccool2022topdown
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L57
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9770947#L57
+    quote: large proteoforms tend to have drastically lower signal-to-noise ratios than small proteoforms
+      due to the much wider charge state distributions
+  confidence: high
+  figure_idea: One protein drawn twice, small and large, each with its charge-state envelope, to show
+    why the same number of molecules gives a weaker peak when the protein is bigger.
+- id: DRG-048
+  claim: 'Depth at proteoform resolution is bought with instrument time: 13,975 proteoforms from 2,720
+    proteins in human Caco-2 cells required 257 separate liquid-chromatography mass-spectrometry runs,
+    about 27 days of net measuring time.'
+  topic: 'top-down proteomics: what it costs'
+  source:
+    doc_id: PMC11621018
+    title: Influence of different sample preparation approaches on proteoform identification by top-down
+      proteomics
+    authors: Kaulich, P. T.; Jeong, K.; Kohlbacher, O.; Tholey, A.
+    journal: Nature Methods
+    year: 2024
+    doi: 10.1038/s41592-024-02481-6
+    bibkey: kaulich2024sampleprep
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L55
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11621018#L55
+    quote: 257 LC–MS/MS runs were acquired, corresponding to a net instrument measuring time of approximately
+      27 days
+  confidence: high
+  figure_idea: Instrument days against proteoforms identified for the published deep top-down datasets,
+    to show the slope the field is working against.
+- id: DRG-049
+  claim: A top-down survey of five human organs reported 11,466 proteoforms drawn from 740 distinct proteins
+    at a 1 per cent conservative false-discovery rate, of which 8784 proteoforms were unique to a single
+    tissue type.
+  topic: 'top-down proteomics: tissue-level counts'
+  source:
+    doc_id: PMC9087339
+    title: Mapping the Proteoform Landscape of Five Human Tissues
+    authors: Drown, B. S.; Jooß, K.; Melani, R. D.; Lloyd-Jones, C.; Camarillo, J. M.; Kelleher, N. L.
+    journal: Journal of Proteome Research
+    year: 2022
+    doi: 10.1021/acs.jproteome.2c00034
+    bibkey: drown2022tissueproteoforms
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L46
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9087339#L46
+    quote: a total of 11,466 proteoforms from 740 proteins were identified
+  confidence: high
+  figure_idea: Proteoforms and source proteins as paired bars for a cell-line survey and a five-tissue
+    survey, making the point that more proteoforms does not mean more of the proteome.
+- id: DRG-050
+  claim: In a comparison at matched sample amounts, lysate equivalent to about 250 HeLa cells gave 2600
+    proteins by the peptide-based workflow but about 250 proteins and about 780 proteoforms by the intact-molecule
+    workflow.
+  topic: 'top-down versus bottom-up: the trade at matched input'
+  source:
+    doc_id: PMC13425565
+    title: Top-Down versus Bottom-Up Proteomics in Highly Sensitive LC-MS-Based Profiling of Limited Samples
+    authors: Gao, Y.; Greguš, M.; Kostas, J. C.; Marie, A. L.; Ivanov, A. R.
+    journal: Analytical Chemistry
+    year: 2026
+    doi: 10.1021/acs.analchem.6c01310
+    bibkey: gao2026topdownbottomup
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L12
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13425565#L12
+    quote: While TDP yielded fewer protein identifications (∼130 and ∼250 proteins for the same sample
+      amounts), it enabled the characterization of ∼270 and ∼780 proteoforms
+  confidence: high
+  figure_idea: 'A two-column comparison at matched cell input: proteins identified by each workflow, with
+    the proteoform count shown as a quantity only the intact-molecule column has.'
+  note: These figures come from the paper's own summary of its results at L12. Its abstract at L5 states
+    "Up to 500 proteoforms and nearly 1300 proteins" for the ~25-cell input, which does not match L12.
+    See leads.
+- id: DRG-051
+  claim: Three quarters of annotated human coding genes, 14,698 of 19,449 in RefSeq, carry more than one
+    protein isoform, and 3409 of them carry ten or more, so isoform ambiguity is the normal case rather
+    than an edge case.
+  topic: 'bottom-up proteomics: why isoforms are hard'
+  source:
+    doc_id: PMC10509223
+    title: SEPepQuant enhances the detection of possible isoform regulations in shotgun proteomics
+    authors: Dou, Y.; Liu, Y.; Yi, X.; Olsen, L. K.; Zhu, H.; Gao, Q.; Zhou, H.; Zhang, B.
+    journal: Nature Communications
+    year: 2023
+    doi: 10.1038/s41467-023-41558-2
+    bibkey: dou2023sepepquant
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L22
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC10509223#L22
+    quote: Among the 19,449 protein-coding genes annotated in the RefSeq database, 14,698 (75.6%) have
+      more than one protein isoforms
+  confidence: high
+- id: DRG-052
+  claim: An in-silico tryptic digest of the whole RefSeq protein database gave 588,545 peptide sequences,
+    83.5 per cent of them from multi-isoform genes; about half of those map to every isoform of their
+    gene, leaving 246,615 peptides able to pin down one isoform or a subset.
+  topic: 'bottom-up proteomics: why isoforms are hard'
+  source:
+    doc_id: PMC10509223
+    title: SEPepQuant enhances the detection of possible isoform regulations in shotgun proteomics
+    authors: Dou, Y.; Liu, Y.; Yi, X.; Olsen, L. K.; Zhu, H.; Gao, Q.; Zhou, H.; Zhang, B.
+    journal: Nature Communications
+    year: 2023
+    doi: 10.1038/s41467-023-41558-2
+    bibkey: dou2023sepepquant
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L24
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC10509223#L24
+    quote: another half, or 246,615 peptides, could be uniquely mapped to one isoform (i.e., fully discriminative
+      peptides) or a subset of isoforms
+  confidence: high
+  figure_idea: The theoretical tryptic peptide pool split once by gene multiplicity and again by whether
+    a peptide can tell isoforms apart, with the discriminating fraction drawn to scale.
+- id: DRG-053
+  claim: In real data from one stem-cell and two liver-cancer proteomics studies, peptides able to discriminate
+    isoforms made up about 35 per cent of multi-isoform peptides and about 27 per cent of all peptides
+    identified, below the in-silico expectation.
+  topic: 'bottom-up proteomics: what is actually observed'
+  source:
+    doc_id: PMC10509223
+    title: SEPepQuant enhances the detection of possible isoform regulations in shotgun proteomics
+    authors: Dou, Y.; Liu, Y.; Yi, X.; Olsen, L. K.; Zhu, H.; Gao, Q.; Zhou, H.; Zhang, B.
+    journal: Nature Communications
+    year: 2023
+    doi: 10.1038/s41467-023-41558-2
+    bibkey: dou2023sepepquant
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L25
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC10509223#L25
+    quote: they still accounted for about 35% of the multi-isoform peptides, or about 27% of all identified
+      peptides
+  confidence: high
+- id: DRG-054
+  claim: Of 969,900 tryptic peptide precursors generated in silico from the canonical human proteome,
+    only 3084, or 0.32 per cent, were predicted to be indistinguishable by retention time and fragmentation
+    pattern on high-resolution instruments.
+  topic: 'bottom-up proteomics: where the ambiguity is not'
+  source:
+    doc_id: PMC11465223
+    title: Theoretical Assessment of Indistinguishable Peptides in Mass Spectrometry-Based Proteomics
+    authors: Elhamraoui, Z.; Borràs, E.; Wilhelm, M.; Sabidó, E.
+    journal: Analytical Chemistry
+    year: 2024
+    doi: 10.1021/acs.analchem.4c02803
+    bibkey: elhamraoui2024indistinguishable
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L14-L15
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11465223#L14-L15
+    quote: the number of indistinguishable peptide precursors within the canonical human proteome represents
+      a small percentage (0.32%, 3084 peptide precursors)
+  confidence: high
+  note: The search space is the canonical proteome, one representative sequence per gene, so this bounds
+    spectral ambiguity between peptides and says nothing about ambiguity between isoforms of the same
+    gene.
+- id: DRG-055
+  claim: A targeted assay using isotope-labelled whole-protein standards and selected reaction monitoring
+    measured about 290,000 Ras copies per cell in a colorectal line, but returned no signal for the KRAS4A-specific
+    peptide at endogenous levels, which the authors read as KRAS being almost entirely KRAS4B there.
+  topic: 'targeted proteomics: an isoform-specific peptide that returns nothing'
+  source:
+    doc_id: PMC4641634
+    title: Absolute Quantification of Endogenous Ras Isoform Abundance
+    authors: Mageean, C. J.; Griffiths, J. R.; Smith, D. L.; Clague, M. J.; Prior, I. A.
+    journal: PLOS ONE
+    year: 2015
+    doi: 10.1371/journal.pone.0142674
+    bibkey: mageean2015rasisoform
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L27,L33
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4641634#L27,L33
+    quote: It is likely that KRAS consists almost entirely of KRAS4B in these cells since the KRAS4A-specific
+      peptide could not be detected at endogenous levels
+  confidence: high
+  figure_idea: Copies per cell for the four Ras isoforms in one cell line, with the undetected isoform
+    drawn as an upper bound rather than a bar, so the missing measurement stays visible.
+  note: No limit of detection is stated for the KRAS4A peptide, so the record cannot distinguish genuine
+    absence from an assay floor. The authors interpret it as absence.
+- id: DRG-056
+  claim: Searching Jurkat mass spectra against a database that replaced reference protein models with
+    long-read-derived ones for the 6653 genes where transcript sampling was confident changed 3199 protein
+    groups, and in 673 of those, 21 per cent, the identification became more specific about which isoform
+    was present.
+  topic: 'proteogenomics: what long reads buy the protein side'
+  source:
+    doc_id: PMC8892804
+    title: Enhanced protein isoform characterization through long-read proteogenomics
+    authors: Miller, R. M.; Jordan, B. T.; Mehlferber, M. M.; Jeffery, E. D.; Chatzipantsiou, C.; Kaur,
+      S.; Millikin, R. J.; Dai, Y.; Tiberi, S.; Castaldi, P. J.; Shortreed, M. R.; Luckey, C. J.; Conesa,
+      A.; Smith, L. M.; Deslattes Mays, A.; Sheynkman, G. M.
+    journal: Genome Biology
+    year: 2022
+    doi: 10.1186/s13059-022-02624-y
+    bibkey: miller2022longreadproteogenomics
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L53,L57,L64
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8892804#L53,L57,L64
+    quote: 673 cases (21%) result in increased specificity of protein isoform identification when using
+      the sample-derived PacBio-Hybrid database
+  confidence: high
+  note: 'The database is a hybrid: 35,119 long-read-derived entries for 6653 genes plus 48,413 GENCODE
+    entries for the remaining 13,276 genes, so it is only partly sample-derived.'
+- id: DRG-057
+  claim: 'This is the clearest measure of the shortfall: of 10,444 genes with any peptide evidence in
+    one human cell type, 5,993, or 57 per cent, had no isoform that could be confirmed, because every
+    peptide found was shared between two or more isoforms.'
+  topic: 'bottom-up proteomics: the proportion of genes with no resolvable isoform'
+  source:
+    doc_id: PMC9721438
+    title: Characterization of protein isoform diversity in human umbilical vein endothelial cells via
+      long-read proteogenomics
+    authors: Mehlferber, M. M.; Jeffery, E. D.; Saquing, J.; Jordan, B. T.; Sheynkman, L.; Murali, M.;
+      Genet, G.; Acharya, B. R.; Hirschi, K. K.; Sheynkman, G. M.
+    journal: RNA Biology
+    year: 2022
+    doi: 10.1080/15476286.2022.2141938
+    bibkey: mehlferber2022huvec
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L158
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9721438#L158
+    quote: we found that 5,993 genes (57%) were cases in which no isoform could be specifically confirmed
+      as expressed because all mapped peptides were shared
+  confidence: high
+  figure_idea: 'Genes with peptide evidence divided by how precisely their isoforms could be resolved:
+    none confirmable, one confirmed, two or more confirmed, drawn to scale.'
+- id: DRG-058
+  claim: 'Direct evidence that two isoforms of a gene are present at once is almost never obtained: in
+    the same experiment only 106 genes, 1 per cent, had two or more isoforms each supported by a uniquely
+    mapping peptide.'
+  topic: 'bottom-up proteomics: isoform co-expression is rarely observable'
+  source:
+    doc_id: PMC9721438
+    title: Characterization of protein isoform diversity in human umbilical vein endothelial cells via
+      long-read proteogenomics
+    authors: Mehlferber, M. M.; Jeffery, E. D.; Saquing, J.; Jordan, B. T.; Sheynkman, L.; Murali, M.;
+      Genet, G.; Acharya, B. R.; Hirschi, K. K.; Sheynkman, G. M.
+    journal: RNA Biology
+    year: 2022
+    doi: 10.1080/15476286.2022.2141938
+    bibkey: mehlferber2022huvec
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L161
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9721438#L161
+    quote: We found 106 (1%) genes with evidence of two or more co-expressing isoforms
+  confidence: high
+  note: This is the measurement that matters for drug targeting, since a selective drug needs to know
+    whether the other isoform is present in the same tissue.
+- id: DRG-059
+  claim: 'The community programme for the protein side states its own scale: assuming 5000 human cell
+    types surveyed to a depth of one million proteoforms each, it anticipates asserting about 50 million
+    unique proteoforms, with a cost target of one dollar per proteoform.'
+  topic: 'reference resources: the Human Proteoform Project'
+  source:
+    doc_id: PMC8589312
+    title: 'The Human Proteoform Project: Defining the human proteome'
+    authors: Smith, L. M.; Agar, J. N.; Chamot-Rooke, J.; Danis, P. O.; Ge, Y.; Loo, J. A.; Paša-Tolić,
+      L.; Tsybin, Y. O.; Kelleher, N. L.; The Consortium for Top-Down Proteomics
+    journal: Science Advances
+    year: 2021
+    doi: 10.1126/sciadv.abk0734
+    bibkey: smith2021proteoformproject
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L39
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8589312#L39
+    quote: perhaps ~50 million unique (nonredundant) proteoforms will be asserted with defined quality
+      metrics over the course of the project
+  confidence: high
+  figure_idea: The project target and a single deep experiment on the same logarithmic axis, continuing
+    the chapter figure that already contrasts estimate with measurement.
+- id: DRG-060
+  claim: 'For one named oncogene the measured total is small and countable: the first top-down study covering
+    both KRAS4A and KRAS4B completely characterised 39 proteoforms across colorectal cancer cell lines
+    and primary tumour samples.'
+  topic: 'reference resources: how little is mapped for a drug target'
+  source:
+    doc_id: PMC9808003
+    title: Mapping the KRAS proteoform landscape in colorectal cancer identifies truncated KRAS4B that
+      decreases MAPK signaling
+    authors: Adams, L. M.; DeHart, C. J.; Drown, B. S.; Anderson, L. C.; Bocik, W.; Boja, E. S.; Hiltke,
+      T. M.; Hendrickson, C. L.; Rodriguez, H.; Caldwell, M.; Vafabakhsh, R.; Kelleher, N. L.
+    journal: Journal of Biological Chemistry
+    year: 2023
+    doi: 10.1016/j.jbc.2022.102768
+    bibkey: adams2022krasproteoforms
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L13
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9808003#L13
+    quote: resulting in 39 completely characterized proteoforms across colorectal cancer cell lines and
+      primary tumor samples
+  confidence: high
+  figure_idea: A single gene drawn as a combinatorial tree of splice form, hotspot mutation and C-terminal
+    modification, with the experimentally characterised branches marked, to show how few are occupied
+    by data.
+- id: DRG-061
+  claim: 'Proteoform resolution can change what a target does: among those KRAS forms was a KRAS4B lacking
+    the C185 residue and its C-terminal modifications, which failed to reach the plasma membrane and reduced
+    MAPK pathway activation.'
+  topic: 'reference resources: a proteoform difference with a functional consequence'
+  source:
+    doc_id: PMC9808003
+    title: Mapping the KRAS proteoform landscape in colorectal cancer identifies truncated KRAS4B that
+      decreases MAPK signaling
+    authors: Adams, L. M.; DeHart, C. J.; Drown, B. S.; Anderson, L. C.; Bocik, W.; Boja, E. S.; Hiltke,
+      T. M.; Hendrickson, C. L.; Rodriguez, H.; Caldwell, M.; Vafabakhsh, R.; Kelleher, N. L.
+    journal: Journal of Biological Chemistry
+    year: 2023
+    doi: 10.1016/j.jbc.2022.102768
+    bibkey: adams2022krasproteoforms
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L13
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9808003#L13
+    quote: we identified a subset of KRAS4B proteoforms lacking the C185 residue and associated C-terminal
+      PTMs
+  confidence: high
+- id: DRG-062
+  claim: 'Proteoforms have a machine-readable naming standard: the Consortium for Top-Down Proteomics
+    introduced the ProForma notation in 2018, and the Proteomics Standards Initiative extended it into
+    ProForma 2.0 so that modifications at specified or ambiguous positions can be written unambiguously.'
+  topic: 'reference resources: nomenclature'
+  source:
+    doc_id: PMC7612572
+    title: 'Proteomics Standards Initiative’s ProForma 2.0: Unifying the Encoding of Proteoforms and Peptidoforms'
+    authors: LeDuc, R. D.; Deutsch, E. W.; Binz, P. A.; Fellers, R. T.; Cesnik, A. J.; Klein, J. A.; Van
+      Den Bossche, T.; Gabriels, R.; Yalavarthi, A.; Perez-Riverol, Y.; Carver, J.; Bittremieux, W.; Kawano,
+      S.; Pullman, B.; Bandeira, N.; Kelleher, N. L.; Thomas, P. M.; Vizcaíno, J. A.
+    journal: Journal of Proteome Research
+    year: 2022
+    doi: 10.1021/acs.jproteome.1c00771
+    bibkey: leduc2022proforma
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L22,L28
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7612572#L22,L28
+    quote: has developed a standard notation called ProForma 2.0, which is a substantial extension of
+      the original ProForma notation developed by the CTDP
+  confidence: high
+- id: DRG-063
+  claim: A proteoform identification is not a single confident answer, and a five-level system exists
+    to grade how ambiguous one is, yet among the top-down search programs tested only MetaMorpheus reported
+    enough information for that grading to be applied.
+  topic: 'reference resources: how confident a proteoform identification is'
+  source:
+    doc_id: bio_011b54626f2f
+    title: Automated Assignment of Proteoform Classification Levels
+    authors: Rolfs, Z.; Smith, L. M.
+    journal: Journal of Proteome Research
+    year: 2021
+    doi: 10.1021/acs.jproteome.1c00417
+    bibkey: rolfs2021proteoformclass
+    metadata_source: crossref
+    preprint: true
+  evidence:
+    text_access: full_text
+    lines: L11
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_011b54626f2f#L11
+    quote: We tested currently available top-down software programs and found that none of them other
+      than MetaMorpheus provided sufficient information regarding identification ambiguity
+  confidence: high
+  note: Text read is the bioRxiv preprint (doc id bio_011b54626f2f, preprint DOI 10.1101/2021.05.18.444659).
+    source.doi carries the journal version 10.1021/acs.jproteome.1c00417, which the corpus lists but does
+    not hold as a separate document.
+- id: DRG-064
+  claim: 'Intact-molecule measurement is not confined to small proteins in every setting: in single muscle
+    fibres dissected from rats, proteoforms above 200 kDa were resolved, including myosin heavy chain
+    at about 223 kDa, enough to classify each fibre by type.'
+  topic: single-cell proteoform measurement
+  source:
+    doc_id: PMC10175728
+    title: High sensitivity top–down proteomics captures single muscle cell heterogeneity in large proteoforms
+    authors: Melby, J. A.; Brown, K. A.; Gregorich, Z. R.; Roberts, D. S.; Chapman, E. A.; Ehlers, L.
+      E.; Gao, Z.; Larson, E. J.; Jin, Y.; Lopez, J. R.; Hartung, J.; Zhu, Y.; McIlwain, S. J.; Wang,
+      D.; Guo, W.; Diffee, G. M.; Ge, Y.
+    journal: Proceedings of the National Academy of Sciences
+    year: 2023
+    doi: 10.1073/pnas.2222081120
+    bibkey: melby2023singlemuscle
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L11,L29,L64
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC10175728#L11,L29,L64
+    quote: we develop a highly sensitive single-cell top–down proteomics method to reveal diverse molecular
+      variations in large proteins (>200 kDa) among individual single muscle cell
+  confidence: high
+  note: Rat, not human (male F344BN rats, L64). The myosin heavy chain forms compared here are products
+    of different genes rather than splice isoforms of one gene, and they share over 80 per cent sequence
+    homology (L29).
+- id: DRG-065
+  claim: 'Proteoform resolution has reached single-cell throughput but not single-cell depth: about 400
+    proteoforms were surveyed across more than 17,000 individual nuclei from human keratinocytes, assigned
+    by matching intact masses to a library built from bulk top-down runs.'
+  topic: single-cell proteoform measurement
+  source:
+    doc_id: PMC13487837
+    title: Proteoform Detection Across 17,000 Single Nuclei From Differentiating Skin Keratinocytes
+    authors: Kanchustambham, V. L.; Pla, I.; Xu, T.; Su, P.; Fisher, N. P.; Hollas, M. A.; Markiv, P.;
+      Agarwal, U.; Lysakowska, M.; Kafader, J. O.; Bao, X.; Kelleher, N. L.
+    journal: Molecular &amp; Cellular Proteomics
+    year: 2026
+    doi: 10.1016/j.mcpro.2026.101621
+    bibkey: kanchustambham2026snpims
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L8
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13487837#L8
+    quote: we surveyed ∼400 proteoforms across over 17,000 single nuclei isolated from human epidermal
+      keratinocytes
+  confidence: high
+  figure_idea: Cells measured against features per cell for single-cell RNA and single-cell proteoform
+    methods, which puts the two sides of the book on one plot.
+- id: DRG-066
+  claim: 'Spatial proteoform measurement exists but is shallow: imaging of human kidney detected about
+    400 proteoforms below 70 kDa at better than 80-micrometre resolution and named 169 of them, using
+    a precompiled list of roughly 1000 candidates.'
+  topic: spatial proteoform measurement
+  source:
+    doc_id: PMC9365283
+    title: Highly multiplexed, label-free proteoform imaging of tissues by individual ion mass spectrometry
+    authors: Su, P.; McGee, J. P.; Durbin, K. R.; Hollas, M. A. R.; Yang, M.; Neumann, E. K.; Allen, J.
+      L.; Drown, B. S.; Butun, F. A.; Greer, J. B.; Early, B. P.; Fellers, R. T.; Spraggins, J. M.; Laskin,
+      J.; Camarillo, J. M.; Kafader, J. O.; Kelleher, N. L.
+    journal: Science Advances
+    year: 2022
+    doi: 10.1126/sciadv.abp9929
+    bibkey: su2022pims
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L10
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9365283#L10
+    quote: annotating 169 of 400 proteoforms of <70 kDa using top-down MS and a database lookup of ~1000
+      kidney candidate proteoforms
+  confidence: high
+  figure_idea: A tissue section schematic annotated with proteoforms detected and proteoforms identified,
+    to separate detection from identification in imaging methods.
+- id: DRG-067
+  claim: Across paediatric B-cell acute lymphoblastic leukaemia treated with CD19-directed CAR T cells,
+    relapse accompanied by loss of the targeted epitope occurs in 10 to 20 per cent of the children who
+    responded, which is the clinical frequency any molecular account of escape has to explain.
+  topic: 'CD19 and CAR-T relapse: the frequency being explained'
+  source:
+    doc_id: '62242331'
+    title: Convergence of Acquired Mutations and Alternative Splicing of                     <i>CD19</i>                     Enables
+      Resistance to CART-19 Immunotherapy
+    authors: Sotillo, E.; Barrett, D. M.; Black, K. L.; Bagashev, A.; Oldridge, D.; Wu, G.; Sussman, R.;
+      Lanauze, C.; Ruella, M.; Gazzara, M. R.; Martinez, N. M.; Harrington, C. T.; Chung, E. Y.; Perazzelli,
+      J.; Hofmann, T. J.; Maude, S. L.; Raman, P.; Barrera, A.; Gill, S.; Lacey, S. F.; Melenhorst, J.
+      J.; Allman, D.; Jacoby, E.; Fry, T.; Mackall, C.; Barash, Y.; Lynch, K. W.; Maris, J. M.; Grupp,
+      S. A.; Thomas-Tikhonenko, A.
+    journal: Cancer Discovery
+    year: 2015
+    doi: 10.1158/2159-8290.cd-15-1020
+    bibkey: convergence2015cd19
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/62242331#L1
+    quote: relapses with epitope loss occur in 10% to 20% of pediatric responders
+  confidence: high
+- id: DRG-068
+  claim: The exon-2-skipped CD19 protein does not sit on the cell surface wearing an altered epitope.
+    Expressed in CD19-deleted Nalm6 and 697 leukaemia lines, it stayed inside the cell with the endoplasmic
+    reticulum marker calnexin, so the splice form causes loss of surface antigen rather than a visible
+    but unrecognised receptor.
+  topic: 'CD19: splicing change versus loss of surface antigen'
+  source:
+    doc_id: PMC6189457
+    title: CD19 Alterations Emerging after CD19-Directed Immunotherapy Cause Retention of the Misfolded
+      Protein in the Endoplasmic Reticulum
+    authors: Bagashev, A.; Sotillo, E.; Tang, C. H. A.; Black, K. L.; Perazzelli, J.; Seeholzer, S. H.;
+      Argon, Y.; Barrett, D. M.; Grupp, S. A.; Hu, C. C. A.; Thomas-Tikhonenko, A.
+    journal: Molecular and Cellular Biology
+    year: 2018
+    doi: 10.1128/MCB.00383-18
+    bibkey: bagashev2018cd19er
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L34
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6189457#L34
+    quote: the Δex2-GFP and 105R-GFP mutants strongly colocalized with calnexin
+  confidence: high
+  figure_idea: 'Two cells side by side with the secretory pathway drawn as a corridor: full-length CD19
+    reaches the membrane, the exon-2-skipped form stops at the endoplasmic reticulum. The CAR waits outside
+    and finds nothing to bind in either case.'
+- id: DRG-069
+  claim: 'Re-analysis of one patient''s leukaemia before and after CAR T-cell treatment, with an algorithm
+    that detects retained introns, found an event more prevalent than exon skipping: retention of CD19
+    intron 2 made up about three fifths of the reads joining into exon 3 in the relapse sample, and it
+    introduces a premature stop codon.'
+  topic: 'CD19: which splicing event, in a relapsed patient sample'
+  source:
+    doc_id: PMC7214268
+    title: Retention of CD19 intron 2 contributes to CART-19 resistance in leukemias with subclonal frameshift
+      mutations in CD19
+    authors: Asnani, M.; Hayer, K. E.; Naqvi, A. S.; Zheng, S.; Yang, S. Y.; Oldridge, D.; Ibrahim, F.;
+      Maragkakis, M.; Gazzara, M. R.; Black, K. L.; Bagashev, A.; Taylor, D.; Mourelatos, Z.; Grupp, S.
+      A.; Barrett, D.; Maris, J. M.; Sotillo, E.; Barash, Y.; Thomas-Tikhonenko, A.
+    journal: Leukemia
+    year: 2020
+    doi: 10.1038/s41375-019-0580-z
+    bibkey: asnani2019intron2
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L22
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7214268#L22
+    quote: accounted for ~61% of all reads connected to exon 3
+  confidence: high
+- id: DRG-070
+  claim: 'One group re-read another group''s published relapse sample and argued the genetic explanation
+    did not close: the exon 2 frameshift there sat at an allele frequency of roughly a third of reads,
+    too low to account for a leukaemia whose cells were uniformly surface-CD19-negative by flow cytometry.'
+  topic: 'counter-evidence: is the genetic explanation sufficient?'
+  source:
+    doc_id: PMC7214268
+    title: Retention of CD19 intron 2 contributes to CART-19 resistance in leukemias with subclonal frameshift
+      mutations in CD19
+    authors: Asnani, M.; Hayer, K. E.; Naqvi, A. S.; Zheng, S.; Yang, S. Y.; Oldridge, D.; Ibrahim, F.;
+      Maragkakis, M.; Gazzara, M. R.; Black, K. L.; Bagashev, A.; Taylor, D.; Mourelatos, Z.; Grupp, S.
+      A.; Barrett, D.; Maris, J. M.; Sotillo, E.; Barash, Y.; Thomas-Tikhonenko, A.
+    journal: Leukemia
+    year: 2020
+    doi: 10.1038/s41375-019-0580-z
+    bibkey: asnani2019intron2
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L18
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7214268#L18
+    quote: estimated to be mere 36% and taken at face value could not account for the complete loss of
+      surface CD19 expression
+  confidence: high
+- id: DRG-071
+  claim: A re-analysis of public RNA sequencing from four children treated with CD19 CAR T cells found
+    pre-treatment reads skipping exon 2 highest in the patient who relapsed fastest at twenty-one, detectable
+    in the non-responder at thirteen, and absent in the one complete responder. Four patients support
+    no statistical inference.
+  topic: CD19 exon 2 skipping and relapse timing
+  source:
+    doc_id: PMC12935319
+    title: CD19 exon 2 skipping is a potential prognostic correlate of anti-CD19 CAR-T therapy relapse
+    authors: Dam, S. H.; Moranzoni, G.; Høie, M. H.; Modvig, S.; Wadt, K. A. W.; Als-Nielsen, B.; Schmiegelow,
+      K.; Vitting-Seerup, K.; Barnkob, M. B.; Olsen, L. R.
+    journal: Frontiers in Molecular Medicine
+    year: 2026
+    doi: 10.3389/fmmed.2026.1763390
+    bibkey: dam2026cd19exon2
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L55
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12935319#L55
+    quote: substantial exon 1–3 coverage in the rapid-relapse patient (21 reads) and detectable usage
+      in the non-responder (13 reads)
+  confidence: medium
+  figure_idea: Four patient tracks on one timeline, each labelled with its pre-treatment exon-skipping
+    read count and its day of relapse. Four points is the honest width of this figure and the figure should
+    look that narrow.
+- id: DRG-072
+  claim: CD19 exon 2 skipping is not manufactured by the therapy. In seventy-five untreated childhood
+    leukaemia bone marrows and in healthy blood and spleen, inclusion of exon 2 had a median near 96 to
+    97 per cent, so a few per cent of CD19 transcripts already lack the exon before any drug is given.
+  topic: 'counter-evidence: the isoform exists before treatment'
+  source:
+    doc_id: PMC12935319
+    title: CD19 exon 2 skipping is a potential prognostic correlate of anti-CD19 CAR-T therapy relapse
+    authors: Dam, S. H.; Moranzoni, G.; Høie, M. H.; Modvig, S.; Wadt, K. A. W.; Als-Nielsen, B.; Schmiegelow,
+      K.; Vitting-Seerup, K.; Barnkob, M. B.; Olsen, L. R.
+    journal: Frontiers in Molecular Medicine
+    year: 2026
+    doi: 10.3389/fmmed.2026.1763390
+    bibkey: dam2026cd19exon2
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L58
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12935319#L58
+    quote: 'median PSI values of 96.3% (IQR: 94.9–98.6) in B-ALL, 96.9% (IQR: 95.2–98.4) in blood'
+  confidence: high
+  figure_idea: Four overlaid distributions of exon 2 inclusion, for untreated leukaemia, untreated lymphoma,
+    healthy blood and healthy spleen, with the low tail shaded. The argument of the figure is that the
+    tail is there before treatment.
+- id: DRG-073
+  claim: A series of CD19-negative relapses after CAR T-cell therapy reported CD19 coding mutations together
+    with loss of heterozygosity present in nearly all the resistant cells, and read the resulting absence
+    of surface antigen as irreversible rather than as a reversible shift in splicing.
+  topic: 'counter-evidence: antigen loss as a genetic event'
+  source:
+    doc_id: '37321207'
+    title: Genetic mechanisms of target antigen loss in CAR19 therapy of acute lymphoblastic leukemia
+    authors: Orlando, E. J.; Han, X.; Tribouley, C.; Wood, P. A.; Leary, R. J.; Riester, M.; Levine, J.
+      E.; Qayed, M.; Grupp, S. A.; Boyer, M.; De Moerloose, B.; Nemecek, E. R.; Bittencourt, H.; Hiramatsu,
+      H.; Buechner, J.; Davies, S. M.; Verneris, M. R.; Nguyen, K.; Brogdon, J. L.; Bitter, H.; Morrissey,
+      M.; Pierog, P.; Pantano, S.; Engelman, J. A.; Winckler, W.
+    journal: Nature Medicine
+    year: 2018
+    doi: 10.1038/s41591-018-0146-z
+    bibkey: geneticmechanisms2018car19
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/37321207#L1
+    quote: The mutations are present in the vast majority of resistant tumor cells
+  confidence: high
+- id: DRG-074
+  claim: 'Deep exome sequencing of paired pre-treatment and relapse leukaemias, expanded in mice before
+    sequencing, found a genetic explanation in seven of eight children whose relapse was CD19-negative:
+    each carried a CD19 coding variant at roughly heterozygous frequency or higher that was undetectable
+    before infusion, while none of five CD19-positive relapses did.'
+  topic: 'counter-evidence: antigen loss as a genetic event'
+  source:
+    doc_id: PMC9808313
+    title: Characterization of Leukemic Resistance to CD19-Targeted CAR T-cell Therapy through Deep Genomic
+      Sequencing
+    authors: Chen, G. M.; Chen, C. H.; Perazzelli, J.; Grupp, S. A.; Barrett, D. M.; Tan, K.
+    journal: Cancer Immunology Research
+    year: 2023
+    doi: 10.1158/2326-6066.CIR-22-0095
+    bibkey: chen2022cd19genomic
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L31
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9808313#L31
+    quote: seven were observed to harbor nonsynonymous CD19 variants with approximately heterozygous mutant
+      allele frequencies or higher (>45%)
+  confidence: high
+- id: DRG-075
+  claim: In the index patient whose relapse was attributed partly to splicing, deep sequencing found two
+    frameshift deletions in CD19 exon 4 at close to half of reads each, and read phasing put them on opposite
+    chromosomes in 484 of 520 reads covering both sites, which would inactivate both gene copies without
+    any splicing change.
+  topic: 'counter-evidence: the same patient, read the other way'
+  source:
+    doc_id: PMC9808313
+    title: Characterization of Leukemic Resistance to CD19-Targeted CAR T-cell Therapy through Deep Genomic
+      Sequencing
+    authors: Chen, G. M.; Chen, C. H.; Perazzelli, J.; Grupp, S. A.; Barrett, D. M.; Tan, K.
+    journal: Cancer Immunology Research
+    year: 2023
+    doi: 10.1158/2326-6066.CIR-22-0095
+    bibkey: chen2022cd19genomic
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L32,L33
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9808313#L32,L33
+    quote: Among the 520 reads covering both positions, 484/520 (∼93%) supported trans positioning
+  confidence: high
+  figure_idea: 'One patient''s CD19 locus drawn twice: the subclonal reading, with one mutated allele
+    and a spliced escape transcript, against the biallelic reading, with a different frameshift on each
+    chromosome. Same data, two incompatible pictures.'
+- id: DRG-076
+  claim: Shortened BRAF messages lacking the exons that encode the RAS-binding domain were found in six
+    of nineteen melanoma patients whose disease progressed on vemurafenib, in none of twenty-seven tumours
+    resected from patients never exposed to the drug, and in neither of two patients with intrinsic resistance.
+  topic: BRAF variants and vemurafenib resistance
+  source:
+    doc_id: PMC3266695
+    title: RAF inhibitor resistance is mediated by dimerization of aberrantly spliced BRAF(V600E)
+    authors: Poulikakos, P. I.; Persaud, Y.; Janakiraman, M.; Kong, X.; Ng, C.; Moriceau, G.; Shi, H.;
+      Atefi, M.; Titz, B.; Gabay, M. T.; Salton, M.; Dahlman, K. B.; Tadi, M.; Wargo, J. A.; Flaherty,
+      K. T.; Kelley, M. C.; Misteli, T.; Chapman, P. B.; Sosman, J. A.; Graeber, T. G.; Ribas, A.; Lo,
+      R. S.; Rosen, N.; Solit, D. B.
+    journal: Nature
+    year: 2011
+    doi: 10.1038/nature10662
+    bibkey: poulikakos2011braf
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L25
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3266695#L25
+    quote: BRAF splicing variants were not detected in two samples derived from patients with intrinsic
+      resistance (pt 20 shown) or in 27 additional melanomas
+  confidence: high
+  figure_idea: 'A horizontal exon map of BRAF with one row per resistant patient, shading the exons each
+    variant has lost. Six rows, four different deletion boundaries, one shared consequence: the RAS-binding
+    domain is gone.'
+- id: DRG-077
+  claim: The shortened BRAF protein was originally reported as a splicing product rather than a deleted
+    gene, on the evidence that array-based copy-number profiling of the BRAF locus in the vemurafenib-resistant
+    melanoma clones showed no sign of a somatic deletion inside the gene. Patient tumours were not profiled
+    this way.
+  topic: 'BRAF variants: the original reading was post-transcriptional'
+  source:
+    doc_id: PMC3266695
+    title: RAF inhibitor resistance is mediated by dimerization of aberrantly spliced BRAF(V600E)
+    authors: Poulikakos, P. I.; Persaud, Y.; Janakiraman, M.; Kong, X.; Ng, C.; Moriceau, G.; Shi, H.;
+      Atefi, M.; Titz, B.; Gabay, M. T.; Salton, M.; Dahlman, K. B.; Tadi, M.; Wargo, J. A.; Flaherty,
+      K. T.; Kelley, M. C.; Misteli, T.; Chapman, P. B.; Sosman, J. A.; Graeber, T. G.; Ribas, A.; Lo,
+      R. S.; Rosen, N.; Solit, D. B.
+    journal: Nature
+    year: 2011
+    doi: 10.1038/nature10662
+    bibkey: poulikakos2011braf
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L20
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3266695#L20
+    quote: array CGH data suggested no evidence of an intragenic somatic deletion within the BRAF gene
+  confidence: high
+- id: DRG-078
+  claim: The shorter BRAF kinase does not resist because the drug cannot reach it. Vemurafenib inhibited
+    the truncated and the full-length kinase at similar concentrations in vitro, and introducing a mutation
+    that blocks dimerisation restored drug sensitivity in cells, so resistance comes from RAS-independent
+    dimerisation of the shorter protein.
+  topic: 'BRAF variants: why the shorter form resists'
+  source:
+    doc_id: PMC3266695
+    title: RAF inhibitor resistance is mediated by dimerization of aberrantly spliced BRAF(V600E)
+    authors: Poulikakos, P. I.; Persaud, Y.; Janakiraman, M.; Kong, X.; Ng, C.; Moriceau, G.; Shi, H.;
+      Atefi, M.; Titz, B.; Gabay, M. T.; Salton, M.; Dahlman, K. B.; Tadi, M.; Wargo, J. A.; Flaherty,
+      K. T.; Kelley, M. C.; Misteli, T.; Chapman, P. B.; Sosman, J. A.; Graeber, T. G.; Ribas, A.; Lo,
+      R. S.; Rosen, N.; Solit, D. B.
+    journal: Nature
+    year: 2011
+    doi: 10.1038/nature10662
+    bibkey: poulikakos2011braf
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L22,L24
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3266695#L22,L24
+    quote: resistance of p61BRAF(V600E) to vemurafenib is not due to its inability to bind the inhibitor
+  confidence: high
+- id: DRG-079
+  claim: A splicing change can have a single-base cause. Comparing the BRAF gene in a vemurafenib-resistant
+    melanoma clone with its parent line found a C-to-G substitution fifty-one nucleotides upstream of
+    the intron 8 acceptor site, at a predicted branch point, on the mutant allele only.
+  topic: 'BRAF variants: a point mutation behind a splicing change'
+  source:
+    doc_id: PMC4435825
+    title: Inhibition of vemurafenib-resistant melanoma by interference with pre-mRNA splicing
+    authors: Salton, M.; Kasprzak, W. K.; Voss, T.; Shapiro, B. A.; Poulikakos, P. I.; Misteli, T.
+    journal: Nature Communications
+    year: 2015
+    doi: 10.1038/ncomms8103
+    bibkey: salton2015braf
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L16
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4435825#L16
+    quote: identified a C-to-G mutation 51nt upstream of the 3′ splice site (SS) of intron 8 in the BRAF(V600E)
+      allele
+  confidence: high
+  figure_idea: A close-up of one intron's three-prime end showing branch point, polypyrimidine tract and
+    acceptor, with the substituted base marked and the two cryptic branch points further upstream that
+    it brings into use.
+- id: DRG-080
+  claim: The splicing account of the resistance-associated BRAF variants was later contradicted. A 2024
+    report attributes them to genomic deletions instead, having found matching deletions in melanoma cell
+    models and in melanoma and breast tumours expressing the variants, and having found the variants in
+    BRAF wild-type and untreated melanoma samples.
+  topic: 'counter-evidence: the BRAF variants may be genomic after all'
+  source:
+    doc_id: '153452796'
+    title: Genomic deletions explain the generation of alternative BRAF isoforms conferring resistance
+      to MAPK inhibitors in melanoma
+    authors: Aya, F.; Lanuza-Gracia, P.; González-Pérez, A.; Bonnal, S.; Mancini, E.; López-Bigas, N.;
+      Arance, A.; Valcárcel, J.
+    journal: Cell Reports
+    year: 2024
+    doi: 10.1016/j.celrep.2024.114048
+    bibkey: genomicdeletions2024altbraf
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/153452796#L1
+    quote: Genomic deletions are also detected in tumor samples from melanoma and breast cancer patients
+      expressing altBRAFs
+  confidence: high
+  figure_idea: A single decision diagram with one observation at the top, the shortened transcript, and
+    two causes beneath it, an exon-skipping event and an intragenic genomic deletion, with the measurement
+    that distinguishes them written on each branch.
+- id: DRG-081
+  claim: Two PD-L1 splice forms lacking the transmembrane domain were recovered from the relapsed tumours
+    of two non-small-cell lung cancer patients who had progressed on anti-PD-L1 antibody, and sequencing
+    post-treatment samples from fifteen further refractory patients found the same two variants in two
+    of them.
+  topic: soluble decoy isoforms as a resistance route
+  source:
+    doc_id: PMC6446862
+    title: Secreted PD-L1 variants mediate resistance to PD-L1 blockade therapy in non–small cell lung
+      cancer
+    authors: Gong, B.; Kiyotani, K.; Sakata, S.; Nagano, S.; Kumehara, S.; Baba, S.; Besse, B.; Yanagitani,
+      N.; Friboulet, L.; Nishio, M.; Takeuchi, K.; Kawamoto, H.; Fujita, N.; Katayama, R.
+    journal: Journal of Experimental Medicine
+    year: 2019
+    doi: 10.1084/jem.20180870
+    bibkey: gong2019spdl1
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L19
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6446862#L19
+    quote: we identified two unique secreted PD-L1 (sPD-L1) splicing variants lacking the transmembrane
+      domain from two NSCLC patients
+  confidence: high
+  figure_idea: 'One schematic of the decoy geometry: a membrane-anchored target with the antibody bound
+    and the T cell released, beside the same tumour secreting the anchorless form with the antibody captured
+    in the space outside the cell.'
+- id: DRG-082
+  claim: The decoy protects cells that do not make it. In mice carrying engineered colon adenocarcinoma
+    tumours, a mixture in which only one cell in a hundred expressed the soluble PD-L1 form and the rest
+    expressed the normal membrane protein was already resistant to anti-PD-L1 antibody.
+  topic: 'soluble decoy isoforms: how little is enough'
+  source:
+    doc_id: PMC6446862
+    title: Secreted PD-L1 variants mediate resistance to PD-L1 blockade therapy in non–small cell lung
+      cancer
+    authors: Gong, B.; Kiyotani, K.; Sakata, S.; Nagano, S.; Kumehara, S.; Baba, S.; Besse, B.; Yanagitani,
+      N.; Friboulet, L.; Nishio, M.; Takeuchi, K.; Kawamoto, H.; Fujita, N.; Katayama, R.
+    journal: Journal of Experimental Medicine
+    year: 2019
+    doi: 10.1084/jem.20180870
+    bibkey: gong2019spdl1
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L45
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6446862#L45
+    quote: a mixture of only 1% of cells expressing PD-L1v242 and 99% of cells expressing PD-L1-WT successfully
+      induced PD-L1 blockade resistance
+  confidence: high
+  figure_idea: Resistance plotted against the fraction of tumour cells carrying the soluble form, with
+    the one-per-cent point marked. The shape of that curve is the whole argument for why a rare isoform
+    matters clinically.
+- id: DRG-083
+  claim: An anchorless isoform need not come from skipping an exon. A second soluble PD-L1 form is thought
+    to arise when transcription terminates early inside intron 4, upstream of the transmembrane exon,
+    and across thirty-three tumour types in public RNA sequencing it was most frequent in lymphoma and
+    thymoma, at roughly a third of cases.
+  topic: 'soluble isoforms: not every one comes from splicing'
+  source:
+    doc_id: PMC8765052
+    title: Soluble PD-L1 works as a decoy in lung cancer immunotherapy via alternative polyadenylation
+    authors: Sagawa, R.; Sakata, S.; Gong, B.; Seto, Y.; Takemoto, A.; Takagi, S.; Ninomiya, H.; Yanagitani,
+      N.; Nakao, M.; Mun, M.; Uchibori, K.; Nishio, M.; Miyazaki, Y.; Shiraishi, Y.; Ogawa, S.; Kataoka,
+      K.; Fujita, N.; Takeuchi, K.; Katayama, R.
+    journal: JCI Insight
+    year: 2022
+    doi: 10.1172/jci.insight.153323
+    bibkey: sagawa2022pdl1vint4
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L23,L30
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8765052#L23,L30
+    quote: patients with DLBCL and thymoma showed the highest frequency of PD-L1–vInt4 expression, accounting
+      for one-third of the patients
+  confidence: high
+- id: DRG-084
+  claim: The soluble death receptor has the same architecture. Forcing a long non-coding RNA that pairs
+    with Fas pre-messenger RNA in HeLa cells increased skipping of the exon encoding the transmembrane
+    segment, raised soluble Fas protein in the culture medium, and protected the cells from ligand-induced
+    death.
+  topic: 'soluble decoy isoforms: the death receptor case'
+  source:
+    doc_id: PMC4924680
+    title: Long noncoding RNA Saf and splicing factor 45 increase soluble Fas and resistance to apoptosis
+    authors: Villamizar, O.; Chambers, C. B.; Riberdy, J. M.; Persons, D. A.; Wilber, A.
+    journal: Oncotarget
+    year: 2016
+    doi: 10.18632/oncotarget.7329
+    bibkey: villamizar2016sfas
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L15,L22
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4924680#L15,L22
+    quote: Saf over-expression significantly enriched for Fas mRNA lacking exon 6 (FasΔEx6), which encodes
+      for a soluble Fas (sFas) protein
+  confidence: high
+- id: DRG-085
+  claim: AR-V7 status predicts outcome and not only prevalence. Among 118 men with castration-resistant
+    prostate cancer starting abiraterone or enzalutamide, those whose circulating tumour cells carried
+    AR-V7 messenger RNA had median progression-free survival of 3.1 against 6.9 months and median overall
+    survival of 10.8 against 27.2 months.
+  topic: AR-V7 and clinical outcome
+  source:
+    doc_id: PMC6494355
+    title: 'Prospective Multicenter Validation of Androgen Receptor Splice Variant 7 and Hormone Therapy
+      Resistance in High-Risk Castration-Resistant Prostate Cancer: The PROPHECY Study'
+    authors: Armstrong, A. J.; Halabi, S.; Luo, J.; Nanus, D. M.; Giannakakou, P.; Szmulewitz, R. Z.;
+      Danila, D. C.; Healy, P.; Anand, M.; Rothwell, C. J.; Rasmussen, J.; Thornburg, B.; Berry, W. R.;
+      Wilder, R. S.; Lu, C.; Chen, Y.; Silberstein, J. L.; Kemeny, G.; Galletti, G.; Somarelli, J. A.;
+      Gupta, S.; Gregory, S. G.; Scher, H. I.; Dittamore, R.; Tagawa, S. T.; Antonarakis, E. S.; George,
+      D. J.
+    journal: Journal of Clinical Oncology
+    year: 2019
+    doi: 10.1200/JCO.18.01731
+    bibkey: armstrong2019prophecy
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L41
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6494355#L41
+    quote: median OS for AR-V7–positive versus AR-V7–negative patients was 10.8 v 27.2 months, respectively
+      (HR, 3.9; 95% CI, 2.2 to 6.9)
+  confidence: high
+  figure_idea: Paired survival curves for AR-V7-positive and AR-V7-negative men on hormonal therapy, progression-free
+    survival above and overall survival below, with the medians marked. The gap widens from months to
+    years between the two panels.
+- id: DRG-086
+  claim: The response data separate the groups more sharply than the survival data. No man positive for
+    AR-V7 protein had a confirmed prostate-specific antigen or tumour response, and 11 per cent of men
+    positive by the messenger RNA assay had a confirmed antigen response, against 26 to 28 per cent of
+    AR-V7-negative men.
+  topic: 'AR-V7 and clinical outcome: response rates'
+  source:
+    doc_id: PMC6494355
+    title: 'Prospective Multicenter Validation of Androgen Receptor Splice Variant 7 and Hormone Therapy
+      Resistance in High-Risk Castration-Resistant Prostate Cancer: The PROPHECY Study'
+    authors: Armstrong, A. J.; Halabi, S.; Luo, J.; Nanus, D. M.; Giannakakou, P.; Szmulewitz, R. Z.;
+      Danila, D. C.; Healy, P.; Anand, M.; Rothwell, C. J.; Rasmussen, J.; Thornburg, B.; Berry, W. R.;
+      Wilder, R. S.; Lu, C.; Chen, Y.; Silberstein, J. L.; Kemeny, G.; Galletti, G.; Somarelli, J. A.;
+      Gupta, S.; Gregory, S. G.; Scher, H. I.; Dittamore, R.; Tagawa, S. T.; Antonarakis, E. S.; George,
+      D. J.
+    journal: Journal of Clinical Oncology
+    year: 2019
+    doi: 10.1200/JCO.18.01731
+    bibkey: armstrong2019prophecy
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L47
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6494355#L47
+    quote: there were 26% to 28% with confirmed PSA responses and 21% to 25% with soft tissue responses
+      in AR-V7–negative patients
+  confidence: high
+- id: DRG-087
+  claim: The prediction appears specific to the drug class the variant structurally evades. Of the same
+    118 men, the 51 who went on to docetaxel or cabazitaxel did no worse on chemotherapy if AR-V7 was
+    detectable at hormonal progression, although this comparison was descriptive and the trial was not
+    powered for it.
+  topic: 'AR-V7 and clinical outcome: which treatment setting'
+  source:
+    doc_id: PMC7608579
+    title: Prospective Multicenter Study of Circulating Tumor Cell AR-V7 and Taxane Versus Hormonal Treatment
+      Outcomes in Metastatic Castration-Resistant Prostate Cancer
+    authors: Armstrong, A. J.; Luo, J.; Nanus, D. M.; Giannakakou, P.; Szmulewitz, R. Z.; Danila, D. C.;
+      Healy, P.; Anand, M.; Berry, W. R.; Zhang, T.; Harrison, M. R.; Lu, C.; Chen, Y.; Galletti, G.;
+      Schonhoft, J. D.; Scher, H. I.; Wenstrup, R.; Tagawa, S. T.; Antonarakis, E. S.; George, D. J.;
+      Halabi, S.
+    journal: JCO Precision Oncology
+    year: 2020
+    doi: 10.1200/PO.20.00200
+    bibkey: armstrong2020taxane
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L17,L46
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7608579#L17,L46
+    quote: subsequent CTC AR-V7 detection was not associated with an inferior PSA or radiographic response
+      or worse PFS or OS
+  confidence: medium
+  figure_idea: 'A two-panel outcome comparison for one set of patients: AR-V7 status against hormonal
+    therapy outcome, then AR-V7 status against the subsequent taxane outcome. Separation in the first
+    panel and none in the second is the figure.'
+- id: DRG-088
+  claim: A single-centre cohort of 65 men on abiraterone or enzalutamide dissents. There a third of AR-V7-positive
+    men, 11 of 33, still had a prostate-specific antigen response against 20 of 32 AR-V7-negative men,
+    the amount of AR-V7 message did not differ between responders and non-responders, and AR-V7 status
+    carried no independent prognostic weight.
+  topic: 'counter-evidence: AR-V7 as a biomarker'
+  source:
+    doc_id: PMC9279395
+    title: Comparison of circulating tumor cells and AR-V7 as clinical biomarker in metastatic castration-resistant
+      prostate cancer patients
+    authors: Schlack, K.; Seifert, K. E.; Wüstmann, N.; Humberg, V.; Grundmann, N.; Steinestel, J.; Tiedje,
+      D.; Rahbar, K.; Krabbe, L. M.; Bögemann, M.; Schrader, A. J.; Bernemann, C.
+    journal: Scientific Reports
+    year: 2022
+    doi: 10.1038/s41598-022-16094-6
+    bibkey: schlack2022arv7
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L8,L66
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9279395#L8,L66
+    quote: we detected a PSA response in 11 (33.3%) of the AR-V7 + patients and 20 (62.5%) of the AR-V7-
+      patients
+  confidence: high
+- id: DRG-089
+  claim: 'The two claudin-18 proteins come from two promoters on one gene, each carrying its own first
+    exon that joins the same exons 2 to 5, so promoter choice rather than exon skipping is what makes
+    the lung form and the stomach form distinct.
+
+    '
+  topic: 'alt-promoter: where the CLDN18.1/18.2 difference comes from'
+  source:
+    doc_id: '29558776'
+    title: claudin-18, a Novel Downstream Target Gene for the T/EBP/NKX2.1 Homeodomain Transcription Factor,
+      Encodes Lung- and Stomach-Specific Isoforms through Alternative Splicing
+    authors: Niimi, T.; Nagashima, K.; Ward, J. M.; Minoo, P.; Zimonjic, D. B.; Popescu, N. C.; Kimura,
+      S.
+    journal: Molecular and Cellular Biology
+    year: 2001
+    doi: 10.1128/mcb.21.21.7380-7390.2001
+    bibkey: claudin18promoters2001
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/29558776#L1
+    quote: The claudin-18 gene has two promoters, each with its own unique exon 1 that is spliced to common
+      exons 2 through 5.
+  confidence: high
+  figure_idea: 'One gene drawn once, with two alternative first exons feeding a shared body of exons,
+    and the two resulting proteins placed side by side so the reader sees that the only difference sits
+    at the N-terminal end where the first extracellular loop is encoded.
+
+    '
+- id: DRG-090
+  claim: 'The target-discovery work that produced the antibody reported that in healthy tissue isoform
+    2 of claudin-18 appears only in differentiated epithelium of the gastric mucosa and not in the gastric
+    stem-cell zone, which is the narrow normal-tissue footprint the therapeutic argument rests on.
+
+    '
+  topic: 'splice/alt-promoter isoform: normal-tissue footprint of CLDN18.2'
+  source:
+    doc_id: '109218886'
+    title: Claudin-18 Splice Variant 2 Is a Pan-Cancer Target Suitable for Therapeutic Antibody Development
+    authors: Sahin, U.; Koslowski, M.; Dhaene, K.; Usener, D.; Brandenburg, G.; Seitz, G.; Huber, C.;
+      Türeci, O.
+    journal: Clinical Cancer Research
+    year: 2008
+    doi: 10.1158/1078-0432.ccr-08-1547
+    bibkey: claudin18pancancertarget2008
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/109218886#L1
+    quote: Its expression in normal tissues is strictly confined to differentiated epithelial cells of
+      the gastric mucosa, but it is absent from the gastric
+  confidence: high
+- id: DRG-091
+  claim: 'Isoform selectivity was a stated design requirement at the discovery stage, not something noticed
+    afterwards: the same study reports raising monoclonal antibodies that bind claudin-18 isoform 2 while
+    not binding the lung-specific variant of the same gene.
+
+    '
+  topic: 'splice/alt-promoter isoform: selectivity designed in at discovery'
+  source:
+    doc_id: '109218886'
+    title: Claudin-18 Splice Variant 2 Is a Pan-Cancer Target Suitable for Therapeutic Antibody Development
+    authors: Sahin, U.; Koslowski, M.; Dhaene, K.; Usener, D.; Brandenburg, G.; Seitz, G.; Huber, C.;
+      Türeci, O.
+    journal: Clinical Cancer Research
+    year: 2008
+    doi: 10.1158/1078-0432.ccr-08-1547
+    bibkey: claudin18pancancertarget2008
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/109218886#L1
+    quote: we were able to raise monoclonal antibodies that bind to CLDN18.2 but not to its lung-specific
+      splice variant
+  confidence: high
+- id: DRG-092
+  claim: 'The regulator''s own pharmacology review records the discrimination experiment directly: zolbetuximab
+    bound two gastric cancer lines and isoform-2-transfected HEK-293 cells with dissociation constants
+    in the low nanomolar range, and did not bind HEK-293 cells transfected with claudin-18 isoform 1.
+
+    '
+  topic: 'splice/alt-promoter isoform: measured isoform discrimination of zolbetuximab'
+  source:
+    doc_id: fda_29df95dfc0e2
+    title: Vyloy (zolbetuximab-clzb) BLA 761365 multi-discipline review
+    authors: US Food and Drug Administration, Center for Drug Evaluation and Research
+    journal: FDA BLA 761365 review documents
+    year: 2024
+    bibkey: fdavyloyreview2024
+    source_type: fda
+  evidence:
+    text_access: full_text
+    lines: L220
+    anchor: https://paperclip.gxl.ai/citations/fda/fda_29df95dfc0e2#L220
+    quote: zolbetuximab did not bind to HEK-293 cell lines transfected with the closely related isoform
+      CLDN18.1
+  confidence: high
+  figure_idea: 'A two-panel binding comparison: cells presenting isoform 2 versus cells presenting isoform
+    1 from the same gene, with measured binding on one axis, to show that the selectivity is an experimental
+    result and not an inference.
+
+    '
+- id: DRG-093
+  claim: 'The approval is dated and its wording ties the drug to an isoform rather than to a gene: on
+    18 October 2024 the US licence was issued for a claudin-18.2-directed cytolytic antibody, for first-line
+    use with fluoropyrimidine and platinum chemotherapy in adults whose HER2-negative gastric or gastro-oesophageal
+    junction tumours are claudin-18.2 positive on an approved test.
+
+    '
+  topic: 'regulatory: the approval itself'
+  source:
+    doc_id: fda_3205707f0511
+    title: VYLOY (zolbetuximab-clzb) BLA 761365 approval package and approval letter
+    authors: US Food and Drug Administration, Center for Drug Evaluation and Research
+    journal: FDA BLA 761365 approval documents
+    year: 2024
+    bibkey: fdavyloyapproval2024
+    source_type: fda
+  evidence:
+    text_access: full_text
+    lines: L7-L8
+    anchor: https://paperclip.gxl.ai/citations/fda/fda_3205707f0511#L7-L8
+    quote: VYLOY is a claudin 18.2-directed cytolytic antibody and is indicated in combination with fluoropyrimidine-
+      and platinum-containing chemotherapy
+  confidence: high
+- id: DRG-094
+  claim: 'In the larger of the two registration trials 565 patients were randomised, 283 to antibody plus
+    chemotherapy and 282 to placebo plus chemotherapy, and both endpoints moved: median progression-free
+    survival 10.6 against 8.7 months with a hazard ratio of 0.75, and median overall survival 18.2 against
+    15.5 months, again with a hazard ratio of 0.75.
+
+    '
+  topic: 'regulatory: SPOTLIGHT efficacy with denominators'
+  source:
+    doc_id: fda_29df95dfc0e2
+    title: Vyloy (zolbetuximab-clzb) BLA 761365 multi-discipline review
+    authors: US Food and Drug Administration, Center for Drug Evaluation and Research
+    journal: FDA BLA 761365 review documents
+    year: 2024
+    bibkey: fdavyloyreview2024
+    source_type: fda
+  evidence:
+    text_access: full_text
+    lines: L104
+    anchor: https://paperclip.gxl.ai/citations/fda/fda_29df95dfc0e2#L104
+    quote: A total of 565 patients were randomized in SPOTLIGHT, 283 to the zolbetuximab.clzb arm and
+      282 to the placebo arm.
+  confidence: high
+- id: DRG-095
+  claim: 'The second registration trial, which used a different chemotherapy backbone, met its primary
+    endpoint with median progression-free survival of 8.21 months against 6.80 months and a hazard ratio
+    of 0.687 across 507 randomised patients.
+
+    '
+  topic: 'trial: GLOW primary endpoint'
+  source:
+    doc_id: PMC10427418
+    title: 'Zolbetuximab plus CAPOX in CLDN18.2-positive gastric or gastroesophageal junction adenocarcinoma:
+      the randomized, phase 3 GLOW trial'
+    authors: Shah, M. A.; Shitara, K.; Ajani, J. A.; Bang, Y. J.; Enzinger, P.; Ilson, D.; Lordick, F.;
+      Van Cutsem, E.; Gallego Plazas, J.; Huang, J.; Shen, L.; Oh, S. C.; Sunpaweravong, P.; Soo Hoo,
+      H. F.; Turk, H. M.; Oh, M.; Park, J. W.; Moran, D.; Bhattacharya, P.; Arozullah, A.; Xu, R. H.
+    journal: Nature Medicine
+    year: 2023
+    doi: 10.1038/s41591-023-02465-7
+    bibkey: shah2023glow
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L70
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC10427418#L70
+    quote: PFS as the primary endpoint was statistically significantly prolonged in patients randomized
+      to receive zolbetuximab versus placebo
+  confidence: high
+- id: DRG-096
+  claim: 'Survival in that trial was reported at an interim point at which 318 of 507 patients had died,
+    144 of 254 in the antibody arm and 174 of 253 on placebo, giving median overall survival of 14.39
+    against 12.16 months and a hazard ratio of 0.771.
+
+    '
+  topic: 'trial: GLOW overall survival with denominators'
+  source:
+    doc_id: PMC10427418
+    title: 'Zolbetuximab plus CAPOX in CLDN18.2-positive gastric or gastroesophageal junction adenocarcinoma:
+      the randomized, phase 3 GLOW trial'
+    authors: Shah, M. A.; Shitara, K.; Ajani, J. A.; Bang, Y. J.; Enzinger, P.; Ilson, D.; Lordick, F.;
+      Van Cutsem, E.; Gallego Plazas, J.; Huang, J.; Shen, L.; Oh, S. C.; Sunpaweravong, P.; Soo Hoo,
+      H. F.; Turk, H. M.; Oh, M.; Park, J. W.; Moran, D.; Bhattacharya, P.; Arozullah, A.; Xu, R. H.
+    journal: Nature Medicine
+    year: 2023
+    doi: 10.1038/s41591-023-02465-7
+    bibkey: shah2023glow
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L73
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC10427418#L73
+    quote: 'At the interim analysis, 318 out of 507 (62.7%) patients had died: 144 of the 254 (56.7%)
+      patients randomized to receive zolbetuximab'
+  confidence: high
+- id: DRG-097
+  claim: 'The isoform selects a large minority of patients rather than a rare subgroup: of 2,333 patients
+    screened for that trial, isoform status was assessable in 2,104 and 808 of them, 38.4 per cent, met
+    the staining threshold, rising to 729 of 1,701, or 42.9 per cent, once attention is restricted to
+    HER2-negative tumours.
+
+    '
+  topic: 'biomarker: how many patients the isoform cutoff selects'
+  source:
+    doc_id: PMC10427418
+    title: 'Zolbetuximab plus CAPOX in CLDN18.2-positive gastric or gastroesophageal junction adenocarcinoma:
+      the randomized, phase 3 GLOW trial'
+    authors: Shah, M. A.; Shitara, K.; Ajani, J. A.; Bang, Y. J.; Enzinger, P.; Ilson, D.; Lordick, F.;
+      Van Cutsem, E.; Gallego Plazas, J.; Huang, J.; Shen, L.; Oh, S. C.; Sunpaweravong, P.; Soo Hoo,
+      H. F.; Turk, H. M.; Oh, M.; Park, J. W.; Moran, D.; Bhattacharya, P.; Arozullah, A.; Xu, R. H.
+    journal: Nature Medicine
+    year: 2023
+    doi: 10.1038/s41591-023-02465-7
+    bibkey: shah2023glow
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L32
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC10427418#L32
+    quote: CLDN18.2 tumor status was assessed in 2,104 patients, of whom 808 (38.4%) had tumors that met
+      the cutoff for CLDN18.2 positivity
+  confidence: high
+  figure_idea: 'A funnel with real denominators from screening to randomisation for one trial, so the
+    reader can see how much of the attrition is the isoform threshold and how much is everything else.
+
+    '
+- id: DRG-098
+  claim: 'The threshold that defines eligibility is a staining rule, not a measurement of the isoform:
+    tumours qualify when at least 75 per cent of tumour cells show moderate to strong membranous claudin-18
+    immunohistochemistry, a cutoff the sponsor justified from earlier phase 2 efficacy data rather than
+    from a prospective comparison of cutoffs.
+
+    '
+  topic: 'biomarker: the cutoff and what justified it'
+  source:
+    doc_id: fda_29df95dfc0e2
+    title: Vyloy (zolbetuximab-clzb) BLA 761365 multi-discipline review
+    authors: US Food and Drug Administration, Center for Drug Evaluation and Research
+    journal: FDA BLA 761365 review documents
+    year: 2024
+    bibkey: fdavyloyreview2024
+    source_type: fda
+  evidence:
+    text_access: full_text
+    lines: L580
+    anchor: https://paperclip.gxl.ai/citations/fda/fda_29df95dfc0e2#L580
+    quote: justification for the frequency of CLDN18.2 expression cutoff of 75% is supported by efficacy
+      data from Phase 2 studies
+  confidence: high
+- id: DRG-099
+  claim: 'The companion test approved alongside the isoform-selective antibody is not itself isoform-selective:
+    its antibody was raised against a claudin-18 C-terminal sequence shared by both protein isoforms,
+    and specificity testing confirmed it detects both.
+
+    '
+  topic: 'biomarker: the approved test cannot see the distinction the drug depends on'
+  source:
+    doc_id: fda_0a528a5f7f53
+    title: VENTANA CLDN18 (43-14A) RxDx Assay, PMA P230018 Summary of Safety and Effectiveness Data
+    authors: US Food and Drug Administration, Center for Devices and Radiological Health
+    journal: FDA PMA P230018 summary of safety and effectiveness data
+    year: 2024
+    bibkey: fdacldn18cdx2024
+    source_type: fda
+  evidence:
+    text_access: full_text
+    lines: L77
+    anchor: https://paperclip.gxl.ai/citations/fda/fda_0a528a5f7f53#L77
+    quote: which is a conserved region for CLDN18 protein that is common to both the CLDN18.1 and CLDN18.2
+      protein isoforms
+  confidence: high
+  figure_idea: 'The antibody epitope and the diagnostic epitope drawn on the same protein: one at the
+    isoform-specific end, one in the shared tail, which is the whole reason a selective drug can be paired
+    with a non-selective test.
+
+    '
+- id: DRG-100
+  claim: 'What closes the gap between a non-selective test and an isoform-selective drug is a statistical
+    argument about expression rather than a measurement of the right molecule: isoform 1 messenger RNA
+    sits near baseline in gastric adenocarcinoma, and where it is detectable isoform 2 is higher in 99
+    per cent of samples, by a median factor of 93.
+
+    '
+  topic: 'biomarker: the bioinformatic argument that makes the test adequate'
+  source:
+    doc_id: fda_0a528a5f7f53
+    title: VENTANA CLDN18 (43-14A) RxDx Assay, PMA P230018 Summary of Safety and Effectiveness Data
+    authors: US Food and Drug Administration, Center for Devices and Radiological Health
+    journal: FDA PMA P230018 summary of safety and effectiveness data
+    year: 2024
+    bibkey: fdacldn18cdx2024
+    source_type: fda
+  evidence:
+    text_access: full_text
+    lines: L77
+    anchor: https://paperclip.gxl.ai/citations/fda/fda_0a528a5f7f53#L77
+    quote: with a median CLDN18.2 mRNA expression level 93-fold higher than CLDN18.1
+  confidence: high
+- id: DRG-101
+  claim: 'The two trials behind the approval were not conducted as planned: the regulator recorded 21
+    separate unblinding incidents, including one in which unblinded treatment assignments sat on a shared
+    site accessible to blinded staff for about 19 months, and concluded it could not rule out bias or
+    data integrity problems.
+
+    '
+  topic: 'counter-evidence: conduct of the registration trials'
+  source:
+    doc_id: fda_c901861b1c6f
+    title: 'Vyloy (zolbetuximab-clzb) BLA 761365 other review: clinical inspection summary'
+    authors: US Food and Drug Administration, Center for Drug Evaluation and Research
+    journal: FDA BLA 761365 review documents
+    year: 2024
+    bibkey: fdavyloyinspection2024
+    source_type: fda
+  evidence:
+    text_access: full_text
+    lines: L129,L132
+    anchor: https://paperclip.gxl.ai/citations/fda/fda_c901861b1c6f#L129,L132
+    quote: we cannot exclude the potential introduction of bias into the studies and data integrity issues
+  confidence: high
+- id: DRG-102
+  claim: 'The antibody''s discrimination between the two splice forms was shown functionally rather than
+    asserted: cells engineered to display the IIIc form were not killed through antibody-dependent cellular
+    cytotoxicity, while cells displaying the IIIb form were.
+
+    '
+  topic: 'splice isoform: measured IIIb versus IIIc selectivity of bemarituzumab'
+  source:
+    doc_id: PMC8565817
+    title: Preclinical characterization of bemarituzumab, an anti-FGFR2b antibody for the treatment of
+      cancer
+    authors: Xiang, H.; Chan, A. G.; Ahene, A.; Bellovin, D. I.; Deng, R.; Hsu, A. W.; Jeffry, U.; Palencia,
+      S.; Powers, J.; Zanghi, J.; Collins, H.
+    journal: mAbs
+    year: 2021
+    doi: 10.1080/19420862.2021.1981202
+    bibkey: xiang2021bemarituzumab
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L40
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8565817#L40
+    quote: confirming bemarituzumab specificity for the FGFR2b isoform
+  confidence: high
+- id: DRG-103
+  claim: 'The therapeutic target is the same splice isoform the book describes structurally, and it is
+    common rather than rare: the IIIb form of the receptor was reported overexpressed in roughly 30 per
+    cent of HER2-negative gastric cancers.
+
+    '
+  topic: 'splice isoform: FGFR2b as a therapeutic target in gastric cancer'
+  source:
+    doc_id: PMC11016503
+    title: 'Bemarituzumab as first-line treatment for locally advanced or metastatic gastric/gastroesophageal
+      junction adenocarcinoma: final analysis of the randomized phase 2 FIGHT trial'
+    authors: Wainberg, Z. A.; Kang, Y. K.; Lee, K. W.; Qin, S.; Yamaguchi, K.; Kim, I. H.; Saeed, A.;
+      Oh, S. C.; Li, J.; Turk, H. M.; Teixeira, A.; Hitre, E.; Udrea, A. A.; Cardellino, G. G.; Sanchez,
+      R. G.; Zahlten-Kümeli, A.; Taylor, K.; Enzinger, P. C.
+    journal: Gastric Cancer
+    year: 2024
+    doi: 10.1007/s10120-024-01466-w
+    bibkey: wainberg2024fight
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L38
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11016503#L38
+    quote: The IIIb splice isoform of FGFR2 (FGFR2b) was observed to be overexpressed in approximately
+      30%
+  confidence: high
+- id: DRG-104
+  claim: 'Isoform selection cost a great deal of screening for a modest trial: 910 patients were prescreened
+    for the splice-isoform biomarker to randomise 155, and at final analysis the whole randomised population
+    showed median progression-free survival of 9.5 against 7.4 months and median overall survival of 19.2
+    against 13.5 months, with confidence intervals crossing one in both cases.
+
+    '
+  topic: 'trial: FIGHT prescreening denominator and intention-to-treat result'
+  source:
+    doc_id: PMC11016503
+    title: 'Bemarituzumab as first-line treatment for locally advanced or metastatic gastric/gastroesophageal
+      junction adenocarcinoma: final analysis of the randomized phase 2 FIGHT trial'
+    authors: Wainberg, Z. A.; Kang, Y. K.; Lee, K. W.; Qin, S.; Yamaguchi, K.; Kim, I. H.; Saeed, A.;
+      Oh, S. C.; Li, J.; Turk, H. M.; Teixeira, A.; Hitre, E.; Udrea, A. A.; Cardellino, G. G.; Sanchez,
+      R. G.; Zahlten-Kümeli, A.; Taylor, K.; Enzinger, P. C.
+    journal: Gastric Cancer
+    year: 2024
+    doi: 10.1007/s10120-024-01466-w
+    bibkey: wainberg2024fight
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L27,L55
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11016503#L27,L55
+    quote: Of the 910 patients prescreened for FGFR2b-positivity, 155 were eligible and were randomized
+  confidence: high
+- id: DRG-105
+  claim: 'The benefit tracked how much of the isoform a tumour displayed: in patients whose tumours stained
+    for the IIIb form in at least a tenth of tumour cells, median progression-free survival was 14.0 against
+    7.3 months and median overall survival 24.7 against 11.1 months, hazard ratios of 0.43 and 0.52, both
+    stronger than in the trial as a whole.
+
+    '
+  topic: 'trial: FIGHT isoform-high subgroup'
+  source:
+    doc_id: PMC11016503
+    title: 'Bemarituzumab as first-line treatment for locally advanced or metastatic gastric/gastroesophageal
+      junction adenocarcinoma: final analysis of the randomized phase 2 FIGHT trial'
+    authors: Wainberg, Z. A.; Kang, Y. K.; Lee, K. W.; Qin, S.; Yamaguchi, K.; Kim, I. H.; Saeed, A.;
+      Oh, S. C.; Li, J.; Turk, H. M.; Teixeira, A.; Hitre, E.; Udrea, A. A.; Cardellino, G. G.; Sanchez,
+      R. G.; Zahlten-Kümeli, A.; Taylor, K.; Enzinger, P. C.
+    journal: Gastric Cancer
+    year: 2024
+    doi: 10.1007/s10120-024-01466-w
+    bibkey: wainberg2024fight
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L121
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11016503#L121
+    quote: A prespecified subgroup efficacy analysis was performed for patients in the FGFR2b
+  confidence: high
+  figure_idea: 'Hazard ratio against isoform abundance threshold, for one trial, so the reader sees a
+    dose-of-target relationship rather than a single yes-or-no biomarker.
+
+    '
+- id: DRG-106
+  claim: 'Choosing the right isoform did not spare the normal tissue that carries it: corneal adverse
+    events affected 51 of 76 patients given the antibody against 8 of 77 on placebo, reached grade 3 in
+    21 patients with none on placebo, and caused 24 of the 31 discontinuations in the antibody arm.
+
+    '
+  topic: 'counter-evidence: on-target toxicity in normal epithelium expressing FGFR2b'
+  source:
+    doc_id: PMC11016503
+    title: 'Bemarituzumab as first-line treatment for locally advanced or metastatic gastric/gastroesophageal
+      junction adenocarcinoma: final analysis of the randomized phase 2 FIGHT trial'
+    authors: Wainberg, Z. A.; Kang, Y. K.; Lee, K. W.; Qin, S.; Yamaguchi, K.; Kim, I. H.; Saeed, A.;
+      Oh, S. C.; Li, J.; Turk, H. M.; Teixeira, A.; Hitre, E.; Udrea, A. A.; Cardellino, G. G.; Sanchez,
+      R. G.; Zahlten-Kümeli, A.; Taylor, K.; Enzinger, P. C.
+    journal: Gastric Cancer
+    year: 2024
+    doi: 10.1007/s10120-024-01466-w
+    bibkey: wainberg2024fight
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L126,L178
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11016503#L126,L178
+    quote: Grade 3 corneal AEs were reported in 21 (27.6%) patients in the bemarituzumab-mFOLFOX6 arm
+      and none were reported
+  confidence: high
+- id: DRG-107
+  claim: 'Prescreening for the confirmatory trial produced the largest isoform prevalence estimate available:
+    of 3,782 evaluable gastric tumours from 37 countries, 1,428 or 37.8 per cent showed moderate to strong
+    membranous staining for the IIIb isoform in any proportion of tumour cells, falling to 612 or 16.2
+    per cent once at least a tenth of tumour cells was required.
+
+    '
+  topic: 'biomarker: FGFR2b isoform prevalence with denominators'
+  source:
+    doc_id: PMC11781561
+    title: Prevalence of FGFR2b Protein Overexpression in Advanced Gastric Cancers During Prescreening
+      for the Phase III FORTITUDE-101 Trial
+    authors: Rha, S. Y.; Zhang, Y.; Elme, A.; Pazo Cid, R.; Alacacioglu, A.; Ziogas, D. C.; Shitara, K.;
+      Ranceva, A.; Nemecek, R.; Santoro, A.; Calderon, C. A.; Korphaisarn, K.; Davis, T.; Zahlten-Kuemeli,
+      A.; Conn, C.; Tan, M.; Honeycutt, H.; Wainberg, Z. A.
+    journal: JCO Precision Oncology
+    year: 2025
+    doi: 10.1200/PO-24-00710
+    bibkey: rha2025fgfr2bprevalence
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L25,L27
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11781561#L25,L27
+    quote: more than one third (37.8%) of patients with GC exhibiting FGFR2b protein overexpression
+  confidence: high
+- id: DRG-108
+  claim: 'Estimates of how common this isoform is differ by roughly an order of magnitude depending on
+    who measured it: earlier retrospective series put it near 2.5, 3.7 and 4.9 per cent, trial prescreening
+    put it at 29 per cent and then 37.8 per cent, and the authors attribute the gap to study design, the
+    age of the tissue, the antibody chosen and the scoring rule.
+
+    '
+  topic: 'conflict: FGFR2b prevalence estimates disagree by an order of magnitude'
+  source:
+    doc_id: PMC11781561
+    title: Prevalence of FGFR2b Protein Overexpression in Advanced Gastric Cancers During Prescreening
+      for the Phase III FORTITUDE-101 Trial
+    authors: Rha, S. Y.; Zhang, Y.; Elme, A.; Pazo Cid, R.; Alacacioglu, A.; Ziogas, D. C.; Shitara, K.;
+      Ranceva, A.; Nemecek, R.; Santoro, A.; Calderon, C. A.; Korphaisarn, K.; Davis, T.; Zahlten-Kuemeli,
+      A.; Conn, C.; Tan, M.; Honeycutt, H.; Wainberg, Z. A.
+    journal: JCO Precision Oncology
+    year: 2025
+    doi: 10.1200/PO-24-00710
+    bibkey: rha2025fgfr2bprevalence
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L34
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11781561#L34
+    quote: Prior retrospective studies have reported lower FGFR2b prevalence estimates of approximately
+      2.5%, 3.7%, and 4.9%.
+  confidence: high
+- id: DRG-109
+  claim: 'The two isoform-selective programmes differ in whether their companion assays can see the isoform
+    at all: the antibody clone used to select patients for the receptor programme is specific for the
+    IIIb form, whereas the claudin-18 clone recognises both forms of that gene.
+
+    '
+  topic: 'biomarker: an isoform-specific assay exists for one target and not the other'
+  source:
+    doc_id: PMC11781561
+    title: Prevalence of FGFR2b Protein Overexpression in Advanced Gastric Cancers During Prescreening
+      for the Phase III FORTITUDE-101 Trial
+    authors: Rha, S. Y.; Zhang, Y.; Elme, A.; Pazo Cid, R.; Alacacioglu, A.; Ziogas, D. C.; Shitara, K.;
+      Ranceva, A.; Nemecek, R.; Santoro, A.; Calderon, C. A.; Korphaisarn, K.; Davis, T.; Zahlten-Kuemeli,
+      A.; Conn, C.; Tan, M.; Honeycutt, H.; Wainberg, Z. A.
+    journal: JCO Precision Oncology
+    year: 2025
+    doi: 10.1200/PO-24-00710
+    bibkey: rha2025fgfr2bprevalence
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L40
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11781561#L40
+    quote: which is specific for the IIIb isoform of the FGFR2 protein
+  confidence: high
+- id: DRG-110
+  claim: 'One of the two confirmatory phase 3 trials of the receptor antibody, the one combining it with
+    an immune checkpoint inhibitor, was stopped by its sponsor rather than completed, and its registry
+    record carries that as the reason it ended.
+
+    '
+  topic: 'counter-evidence: a confirmatory isoform-selective trial was terminated'
+  source:
+    doc_id: NCT05111626
+    title: Bemarituzumab Plus Chemotherapy and Nivolumab Versus Chemotherapy and Nivolumab for FGFR2b
+      Overexpressing Untreated Advanced Gastric and Gastroesophageal Junction Cancer (FORTITUDE-102)
+    authors: Amgen
+    journal: ClinicalTrials.gov
+    year: 2026
+    url: https://clinicaltrials.gov/study/NCT05111626
+    bibkey: nct05111626fortitude102
+    source_type: trials
+  evidence:
+    text_access: full_text
+    lines: L2
+    anchor: https://paperclip.gxl.ai/citations/trials/NCT05111626#L2
+    quote: 'Why Stopped: Study was terminated by sponsor'
+  confidence: medium
+- id: DRG-111
+  claim: 'A splice-variant target was mapped to normal skin long before anyone aimed a drug at it: the
+    larger CD44 proteins arise when variant exons are spliced into the extracellular part, and an antibody
+    raised against the sequence encoded by variant exon v6 stained the membranes of squamous cells in
+    the upper layers of skin and tonsil epithelium.
+
+    '
+  topic: 'splice isoform: CD44v6 is a variant-exon isoform present in normal squamous epithelium'
+  source:
+    doc_id: PMC2119652
+    title: 'Regulated expression of exon v6 containing isoforms of CD44 in man: downregulation during
+      malignant transformation of tumors of squamocellular origin'
+    authors: Salmi, M.; Grön-Virta, K.; Sointu, P.; Grenman, R.; Kalimo, H.; Jalkanen, S.
+    journal: The Journal of cell biology
+    year: 1993
+    doi: 10.1083/jcb.122.2.431
+    bibkey: cd44v6isoforms1993
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L3
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2119652#L3
+    quote: strongly reacted with the plasma membranes of squamous cells in upper layers of skin and tonsil
+      surface epithelia
+  confidence: high
+- id: DRG-112
+  claim: 'Picking a splice variant is not by itself a safety argument: an antibody-drug conjugate against
+    that same CD44 variant exon killed a patient with toxic epidermal necrolysis after two infusions at
+    the highest dose reached, and the sponsor judged the risk-benefit across four phase 1 trials and 70
+    patients negative and stopped development.
+
+    '
+  topic: 'counter-evidence: a splice-variant-selective drug failed on normal-tissue expression'
+  source:
+    doc_id: '122025412'
+    title: A Phase I Dose Escalation Study with Anti-CD44v6 Bivatuzumab Mertansine in Patients with Incurable
+      Squamous Cell Carcinoma of the Head and Neck or Esophagus
+    authors: Tijink, B. M.; Buter, J.; de Bree, R.; Giaccone, G.; Lang, M. S.; Staab, A.; Leemans, C.
+      R.; van Dongen, G. A.
+    journal: Clinical Cancer Research
+    year: 2006
+    doi: 10.1158/1078-0432.ccr-06-0910
+    bibkey: bivatuzumabdoseescalation2006
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/122025412#L1
+    quote: one patient developed toxic epidermal necrolysis after two infusions and died
+  confidence: high
+- id: DRG-113
+  claim: 'Most drugs called isoform-selective are selective between genes rather than between a gene''s
+    products: the class I phosphoinositide 3-kinases comprise three class-Ia catalytic subunits and one
+    class-Ib subunit, and the one that alpelisib and its research precursors target is encoded by its
+    own gene, PIK3CA, so this selectivity does not bear on the book''s argument.
+
+    '
+  topic: 'paralog: PI3K isoform selectivity is between separate genes'
+  source:
+    doc_id: PMC3174055
+    title: A drug targeting only p110alpha can block phosphoinositide 3-kinase signalling and tumour growth
+      in certain cell types
+    authors: Jamieson, S.; Flanagan, J. U.; Kolekar, S.; Buchanan, C.; Kendall, J. D.; Lee, W. J.; Rewcastle,
+      G. W.; Denny, W. A.; Singh, R.; Dickson, J.; Baguley, B. C.; Shepherd, P. R.
+    journal: Biochemical Journal
+    year: 2011
+    doi: 10.1042/BJ20110502
+    bibkey: jamieson2011p110alpha
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L8,L12
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3174055#L8,L12
+    quote: amplifications of PIK3CA and mutations in two distinct regions of the PIK3CA gene
+  confidence: high
+  figure_idea: 'A two-column table drawn as a figure: on one side targets where selectivity is between
+    products of one gene, on the other side targets where it is between paralogous genes, with the approved
+    agents placed in the correct column.
+
+    '
 leads:
 - note: 'The Nature Reviews Genetics review is abstract-only in this corpus, so only its abstract-level
     statements are cited. Its author list and journal were not in meta.json and are marked RESOLVE_FROM_DOI
@@ -798,3 +2527,432 @@ leads:
 
     '
   why: A mechanism by which an intracellular difference becomes druggable from outside the cell.
+- note: 'CONFLICT INSIDE ONE PAPER, AND THE ABSTRACT IS THE MISLEADING ONE. Mehlferber et al. PMC9721438
+    abstract (L11) says "We found 2,597 protein isoforms supported through unique peptides". The body
+    (L160) shows 2,597 is a count of GENES, not isoforms: "For the remaining 2,703 (26%) of genes with
+    multiple isoforms annotated, 2,597 (25%) of genes have a single isoform with unique peptide evidence."
+    Anything that cites 2,597 as a number of protein isoforms is wrong by a unit.
+
+    '
+  why: 'This is a number a reader or a later pass would lift straight from the abstract. The records here
+    use the body figures (MSR-014, MSR-015) and never the abstract''s phrasing.
+
+    '
+- note: 'CONFLICT INSIDE ONE PAPER. Gao et al. PMC13425565 abstract (L5) reports "Up to 500 proteoforms
+    and nearly 1300 proteins" from lysate equivalent to about 25 HeLa cells, while its own results summary
+    (L12) reports over 600 and 2600 proteins for about 25 and about 250 cells, and about 270 and about
+    780 proteoforms for the same two inputs. The two statements for the 25-cell input do not agree. grep
+    -E "2600|780 proteoforms|~250 proteins" finds these numbers only at L12, so the Results section does
+    not restate them.
+
+    '
+  why: 'MSR-006 uses the L12 figures. A human should resolve which input the abstract''s 500 and 1300
+    refer to before either number reaches the chapter.
+
+    '
+- note: 'OPEN QUESTION, NOT A SETTLED ONE. McCool et al. (PMC9770947 L24, L57) cap their survey at 30
+    kDa on a Thermo Q-Exactive HF and attribute the loss of large proteoforms to signal-to-noise in a
+    complex sample; Melby et al. (PMC10175728 L11, L17) resolve proteoforms above 200 kDa in single muscle
+    fibres on a Bruker maXis II. The two differ in sample complexity, in species, and in instrument, so
+    this corpus does not establish which factor sets the ceiling.
+
+    '
+  why: 'A chapter sentence saying intact-molecule measurement cannot reach large proteins is false as
+    a general claim, and a sentence attributing the difference to sample complexity alone is not supported
+    by what was read. Both studies have to appear together, with the instrument difference stated.
+
+    '
+- note: 'THE ISOFORM-LEVEL PROPORTION, PARTLY FOUND. The question "what proportion of annotated isoforms
+    is distinguishable by any tryptic peptide" was not found stated per isoform in these sources with
+    these searches. The closest anchored figures are per gene, from Mehlferber et al. PMC9721438 L158
+    and L160-L161 (recorded as DRG-058 and DRG-059), and per peptide, from Dou et al. PMC10509223 L24-L25
+    (DRG-052, DRG-053). Searches run: search -s papers "proportion of protein isoforms distinguishable
+    by unique tryptic peptide bottom-up proteomics"; greps for "unique peptide", "isoform-specific peptide",
+    "distinguish", "indistinguishab", "cannot be distinguished" on PMC10509223 and PMC8892804.
+
+    '
+  why: 'The per-gene figure (57 per cent of genes with peptide evidence had no confirmable isoform) is
+    the strongest form of this number now available to the book. A true per-isoform denominator, if one
+    exists, would be stronger still.
+
+    '
+- note: 'Read in search results but never opened, and both bear directly on the per-isoform proportion:
+    PMC3424414 (Ezkurdia et al., Comparative Proteomics Reveals a Significant Bias Toward Alternative
+    Protein Isoforms with Conserved Structure and Function, 2012, matched at L49-50 on "Identifying Alternatively
+    Spliced Isoforms") and bio_7fd117fe7c04 (Kedan et al., An integrated landscape of mRNA and protein
+    isoforms, bioRxiv, matched at L111-112, journal DOI 10.1016/j.celrep.2026.117898 listed, preprint
+    text only).
+
+    '
+  why: 'Ezkurdia is a whole-proteome analysis of which annotated isoforms are detectable at all, which
+    is exactly the missing denominator. Kedan reports proteolytic processing as an underestimated source
+    of proteome complexity, which would complicate the chapter''s splicing-centred framing.
+
+    '
+- note: 'Cut at the 22-record budget, reusable without re-reading: Drown et al. PMC9087339 L48 - of 11,466
+    proteoforms identified across five human tissues, 7373 (64.3%) were absent from the Human Proteoform
+    Atlas, while at protein level only 198 of 740 (26.8%) were first reported there.
+
+    '
+  why: 'It quantifies how incomplete the reference resource is, and shows the new material is mostly new
+    modified forms of already-known proteins rather than new proteins.
+
+    '
+- note: 'Cut at the 22-record budget, reusable without re-reading: Dou et al. PMC10509223 L22 - most isoforms
+    of the same gene share more than 90 per cent sequence similarity, but among the 11,809 genes with
+    three or more isoforms, 6165 (52.2%) have at least one isoform pair below 90 per cent similarity.
+
+    '
+  why: 'The first half is the mechanistic reason the isoform-distinguishing peptide is scarce; the second
+    half is the counterweight that stops the section reading as a dead end.
+
+    '
+- note: 'Cut at the 22-record budget, reusable without re-reading: Miller et al. PMC8892804 L64 - besides
+    the 673 cases (21%) recorded in DRG-057, 873 cases (27%) gave partially overlapping protein isoform
+    groups and 382 (12%) gave groups entirely absent from the reference-database result.
+
+    '
+  why: 'The 12 per cent category is the strongest statement that a reference-database search can report
+    a protein group with no overlap at all with what the sample contains.
+
+    '
+- note: 'Not recorded because the chapter already carries "about 20,000 coding genes" from proteoformmedicine2026:
+    Hollas et al. PMC8728143 L13 puts the UniProt count of canonical human proteins at 20,386 and states
+    the proteoform number is larger and difficult to estimate. The same paper at L15 says KRAS admits
+    thousands of theoretical proteoforms with fewer than forty mapped, but attributes that to its own
+    reference 5 (Aebersold et al., How many human proteoforms are there, Nat. Chem. Biol. 2018, L60),
+    so it is secondhand. DRG-061 uses the primary (Adams et al., 39 completely characterised KRAS proteoforms)
+    instead.
+
+    '
+  why: 'Useful if the chapter wants the gene-count denominator attributed to UniProt rather than to a
+    review. The secondhand KRAS figure should not be cited to the atlas paper.
+
+    '
+- note: 'NOT IN THE CORPUS BY TITLE, both tried with lookup title and both central to the chapter''s premise:
+    Aebersold et al., "How many human proteoforms are there?", Nat. Chem. Biol. 14, 206-214 (2018), and
+    Ntai et al., "Precise characterization of KRAS4b proteoforms in human colorectal cells and tumors
+    reveals mutation/modification cross-talk", PNAS 115, 4140-4145 (2018). The Ntai paper exists only
+    as an abstract-only record, doc id 42005936, doi 10.1073/pnas.1716122115, found with search -s abstracts.
+
+    '
+  why: 'Aebersold et al. is the source of the million-proteoforms-per-cell estimate the chapter already
+    uses secondhand through proteoformmedicine2026. Getting it directly would put the chapter''s opening
+    number on its primary.
+
+    '
+- note: 'The Human Proteoform Atlas paper (PMC8728143) does not state a total proteoform count anywhere
+    the searches reached. grep -o -E "[0-9][0-9,.]+ (unique |experimentally verified |human )?proteoforms"
+    returned no matches; the text at L10 describes the registry without sizing it. The atlas size would
+    have to come from the live resource or a later paper, and a broader grep might still find it.
+
+    '
+  why: 'Priority 4 asked for a proteoform atlas with counts. The tissue and cell-line studies supply counts;
+    this atlas paper, as read, does not.
+
+    '
+- note: 'Tissue-level long-read proteogenomics, surfaced in search and not read, which would stop the
+    proteogenomic records here generalising from cell culture: PMC11450717 (proteogenomic atlas of the
+    human neural retina, reported as about 60,000 transcript isoforms with roughly one third novel), PMC13534637
+    (long-read proteogenomic atlas of human neuronal differentiation), PMC13725750 (LRP2, a long-read-informed
+    proteogenomics pipeline).
+
+    '
+  why: 'Every proteogenomic record in this file is from a cultured cell line, Jurkat or HUVEC.
+
+    '
+- note: 'bioRxiv preprints not read, all bearing on priority 3: bio_6c9a4c8ea043 (Lehe et al. 2026, targeted
+    proteomics informed by long-read RNA sequencing, protein isoform expression and bone mineral density;
+    shares authors with korchak2024isprm and is the direct follow-on), bio_2ae064717625 (ProteomeGenerator3,
+    reported as over 3,000 non-canonical proteoforms in cancer cells), bio_789f01e46fd4 (draft atlas of
+    the human plasma proteome at isoform resolution), bio_72300633db5d (a strategy for large proteoform
+    identification in top-down, 2026, which would show whether the 30 kDa constraint in DRG-046 has moved).
+
+    '
+  why: 'The targeted-methods priority is the thinnest part of this file: it rests on one Ras SRM assay
+    (MSR-012) and the chapter''s existing korchak2024isprm.
+
+    '
+- note: 'THE PER-PEPTIDE COST OF A SYNTHETIC STANDARD IS NOT ANCHORED. No source found gives a price or
+    a per-assay cost. Mageean et al. (PMC4641634 L27) state only that they used isotope-labelled whole-protein
+    standards spiked in at the start rather than synthetic peptides added at the end, and give the reason.
+    PMC4691067 (Rauniyar) covers internal peptide standards but is a review.
+
+    '
+  why: 'The chapter''s existing claim that korchak2024isprm needed a standard for each of 192 peptides
+    already carries the cost argument; a unit cost would make it concrete but must not come from memory.
+
+    '
+- note: 'The five-level proteoform classification system itself is not in the corpus. Only Rolfs and Smith''s
+    implementation paper was found (bio_011b54626f2f, bioRxiv), which cites the primary as its reference
+    3. lookup title "Automated Assignment of Proteoform Classification Levels" returns the preprint only,
+    so the journal version (10.1021/acs.jproteome.1c00417) is not held as a separate document.
+
+    '
+  why: 'MSR-020 therefore rests on a preprint for a standard that should be cited to its own primary paper.
+
+    '
+- note: CONFLICT, unresolved, and the most important thing in this file. Poulikakos et al. 2011 (PMC3266695,
+    L20) report no intragenic somatic deletion by array CGH in the vemurafenib-resistant clones and call
+    the shortened BRAF a splicing product; Salton et al. 2015 (PMC4435825, L16) locate a branch-point
+    mutation that shifts splicing; but Cell Reports 2024, doc_id 153452796, abstract-only, L1, reports
+    that the same alternative BRAF isoforms are generated through genomic deletions, found matching deletions
+    in patient tumours, and calls this a major shift in understanding. The 2024 paper is abstract-only
+    here, so the resolution cannot be read. Both accounts are recorded as claims (DRG-077 and DRG-080);
+    do not pick a winner.
+  why: If the BRAF case is genomic, it is not a second example of a drug selecting a splice isoform and
+    it cannot stand beside AR-V7 as the brief intends. The whole weight this section puts on BRAF depends
+    on which account holds.
+- note: The 2024 genomic-deletion paper (doc_id 153452796, L1) also reports alternative BRAF isoforms
+    in BRAF wild-type melanoma and in melanoma never exposed to MAPK inhibitors. Its author list and journal
+    are absent from meta.json and are marked RESOLVE_FROM_DOI; the DOI is 10.1016/j.celrep.2024.114048.
+    Full text was not reachable in this corpus.
+  why: It removes the clean before-and-after contrast that makes the Poulikakos result persuasive, and
+    it needs the full text to assess.
+- note: 'Poulikakos et al. 2011, PMC3266695, L25, close their patient analysis with a caveat: their assay
+    cannot exclude that the BRAF splice variants were expressed in small amounts before treatment and
+    then selected under continuous drug. Set beside DRG-072 on pre-existing CD19 exon 2 skipping, neither
+    anchor case has demonstrated de novo induction of an isoform, only enrichment of one.'
+  why: It fixes what the chapter may claim. 'The drug selects an isoform the tumour was already making'
+    is supported; 'the tumour switches isoform under the drug' is not, in either case.
+- note: 'Sotillo et al. 2015, doc_id 62242331, L1, abstract-only, frame the mechanism as selection for
+    pre-existing alternatively spliced CD19 isoforms with a compromised CAR epitope, and report that exon
+    2 skipping bypasses exon 2 mutations and allows a truncated CD19 that fails to trigger CAR killing
+    but partly rescues the defects of losing CD19 altogether. They identify SRSF3 as the splicing factor
+    involved and report lower SRSF3 in relapsed leukaemia. Verified quote available: ''the selection for
+    preexisting alternatively spliced CD19 isoforms with the compromised CART-19 epitope'' at L1.'
+  why: It is the conceptual framing the section needs and the only place a splicing factor is named for
+    CD19, but it is abstract-only and its claims overlap RES-006, so it was cut for budget rather than
+    for doubt.
+- note: Chen et al. 2022, PMC9808313, L10, state in their introduction that there is little evidence alternative
+    splicing represents an independent mechanism of antigen escape from somatic mutations, and that splicing
+    was seen at very low frequencies in the Orlando cohort. Verified quote available at L10. Recorded
+    here rather than as a claim because it is an introduction-level assessment of the field rather than
+    a result of that paper.
+  why: It is the most direct published statement that this mechanism is less established than the chapter
+    implies, and a human may well decide it belongs in the text as an attributed opinion.
+- note: Antonarakis et al. 2014 (New England Journal of Medicine, doi 10.1056/nejmoa1315815) is the origin
+    of the AR-V7 outcome literature and sits in the corpus as abstract-only, doc_id 73435914, full abstract
+    at L1. The abstract states the variant lacks the ligand-binding domain targeted by enzalutamide and
+    abiraterone while remaining constitutively active as a transcription factor. Author list and journal
+    are absent from meta.json. Author names were NOT read and must not be written from memory.
+  why: It is the paper this clinical argument is normally attributed to, and the structural reason AR-V7
+    escapes these two drugs but not a taxane.
+- note: Bernemann et al. 2017 (European Urology, doi 10.1016/j.eururo.2016.07.021), abstract-only, doc_id
+    56600556, L1. Six of 21 AR-V7-positive men benefited from abiraterone or enzalutamide, four with a
+    prostate-specific antigen decline over 50 per cent, progression-free survival 26 to 188 days; only
+    one of the six had received a next-generation antiandrogen before the blood draw. Conflicts in direction
+    with PROPHECY and supplies the prior-treatment confounder that may reconcile them. Anchored and reusable
+    without re-reading. Author names were NOT read.
+  why: Priority-five counter-evidence, already located, and the cleanest argument against using AR-V7
+    as a rule-out test.
+- note: 'Cheng et al. 1994 (Science, doi 10.1126/science.7510905), abstract-only, doc_id 122434460, L1.
+    The original soluble Fas: a human Fas messenger RNA variant lacking the transmembrane-encoding exon,
+    whose secreted product blocked anti-Fas antibody-induced apoptosis, with raised levels in lupus patients
+    and autoimmune features in injected mice. Author names were NOT read.'
+  why: The chapter currently takes the FAS example from the review choi2025asresistance, and CONTRIBUTING
+    forbids citing a review for a primary finding. This is the primary.
+- note: 'Armstrong et al. 2019, PMC6494355, carry three numbers not recorded as claims: AR-V7 positivity
+    in 10 to 24 per cent of men depending on assay and 82 per cent agreement between the two assays (L15,
+    L54); multivariable adjusted hazard ratios of 1.9 and 2.4 for progression and 4.2 and 3.5 for death
+    (L15, L45, L46); and the statement that AR-V7 likely explains up to 25 per cent of resistance to androgen
+    receptor therapy (L55). The 2020 paper (PMC7608579, L50, L51) updates the same 118 men with longer
+    follow-up to adjusted hazard ratios of 1.7 and 2.1 for progression and 3.3 and 3.0 for death.'
+  why: 'The 25 per cent bounds the claim: isoform switching is one route among several. The assay-dependent
+    prevalence parallels the antibody-dependent CLDN18.2 positivity range already noted in this file''s
+    leads, and the two should be made in the same breath.'
+- note: Salton et al. 2015, PMC4435825, L24 and L28, give an estimated 30 per cent of vemurafenib-resistant
+    patient tumours expressing resistance-mediating BRAF splicing isoforms, but attribute that to their
+    references 9, 13 and 19 rather than measuring it; the 2024 genomic-deletion abstract repeats 'up to
+    30%' for the same quantity. Poulikakos's own six of nineteen is 32 per cent in one series. These may
+    all be the same observation.
+  why: A sentence putting 6 of 19 and 'about 30 per cent' side by side as independent would be double-counting.
+- note: Salton et al. 2015 (PMC4435825, L20 to L26) show that the SF3B1-directed compounds spliceostatin
+    A and meayamycin B reduce the resistance-causing BRAF isoform, resensitise the resistant line to vemurafenib,
+    and block xenograft formation at doses far below those used in the E7107 trials. Read but not recorded,
+    because it belongs to therapeutics rather than resistance.
+  why: It is the one place in this material where a splicing-directed drug reverses an isoform-mediated
+    resistance, which would join this chapter to the spliceosome-modulator material in chapter 6.
+- note: 'Cortes-Lopez et al. exists in this corpus only as bioRxiv preprint bio_73c5008c6bf6 (preprint
+    DOI 10.1101/2021.10.08.463671); the journal version is Nature Communications, doi 10.1038/s41467-022-31818-y,
+    and paperclip lookup title does not resolve it. The preprint has a results section headed ''CART-19
+    patients show increased CD19 intron 2 retention after relapse'' at L30 and reports roughly 200 mutations
+    altering CD19 splicing from high-throughput mutagenesis. Not recorded: a section heading is not evidence,
+    and the body text under it was not read.'
+  why: It is the only systematic map of which sequence changes shift CD19 splicing, and it would independently
+    support the Asnani intron 2 result in patients.
+- note: Gong et al. 2019, PMC6446862, L45, report that the soluble PD-L1 decoy did not reduce the efficacy
+    of anti-PD-1 antibody in the same mouse model, so the resistance is specific to the drug whose binding
+    site the soluble form carries. Verified text available at L45.
+  why: 'It turns the mechanism from a warning into a treatment rule: when the target isoform is soluble,
+    aim at the receptor rather than the ligand.'
+- note: Gong et al. (PMC6446862, L50, L53) also report a third PD-L1 variant, PD-L1v178, which lacks the
+    transmembrane region but is unstable, barely secreted, and does not cause resistance, which they attribute
+    to its missing N-glycosylation sites. They separately found TDP-43 mutations previously seen in ALS
+    patients in the relapsed tumours and showed TDP-43 can shift PD-L1 splicing.
+  why: 'The negative variant is the useful half: losing the membrane anchor is not sufficient to make
+    a decoy, the product also has to be stable and secreted. Without it the section overgeneralises.'
+- note: Kemper et al. 2016 (PMC4929150) report BRAF V600E kinase-domain duplication in therapy-refractory
+    melanoma patient-derived xenografts, a genomic rearrangement that produces a similarly RAS-independent
+    dimerising protein. Read only from search output; not opened.
+  why: A reader told that a drug selects for a shorter BRAF protein will ask whether the shortening is
+    genomic or post-transcriptional. Naming the genomic case is what makes the post-transcriptional case
+    credible.
+- note: Ajiro and Zheng 2015 (PMC4687071) report that vemurafenib-resistant BRAF selects branch points
+    in intron 8 different from those used by wild-type BRAF, the same intron and mechanism class as the
+    Salton substitution. Bokharaie et al. 2022 (PMC9312936) profile splicing genome-wide in vemurafenib-resistant
+    cells carrying a truncated BRAF transcript. Neither opened.
+  why: Two independent groups converging on intron 8 would be the strongest available evidence that this
+    is a reproducible splicing lesion rather than one cell line's accident, and it bears directly on the
+    genomic-deletion conflict above.
+- note: Rabilloud et al. 2021 (PMC7870924) use single-cell profiling to show a pre-existing CD19-negative
+    subclone in a patient who relapsed CD19-negative after CAR T-cell therapy. Not read beyond the search
+    summary. This is selection of cells that were already antigen-negative, a third mechanism distinct
+    from coding mutation and from splicing.
+  why: The section needs three labelled mechanisms, not two, or the counter-evidence reads as a quarrel
+    about one gene rather than three different things being called antigen escape.
+- note: Ng et al. 2019 (PMC6877088) report that soluble PD-L1 produced by exaptation of an endogenous
+    retroelement in CD274 acts as a receptor antagonist, which runs opposite to the Gong and Sagawa decoys.
+    Not read; direction of effect unverified.
+  why: If a soluble PD-L1 form can antagonise the pathway rather than shield it, the generalisation that
+    soluble isoforms absorb the signal needs a qualifier.
+- note: Secreted CD20 as a mechanism of rituximab resistance is cited twice by Gong et al. (PMC6446862,
+    L36 and L51) as Smith 2003, and is the precedent their decoy argument is built on. Not located in
+    this corpus; no search was run for it.
+  why: It would be the earliest antibody-therapy decoy case and the natural opening for the soluble-isoform
+    passage, which currently opens on FAS by way of a review.
+- note: 'SOURCE INDEPENDENCE. DRG-067 to DRG-070, DRG-074 and DRG-075 draw on overlapping patients from
+    one centre: Sotillo, Asnani and Bagashev share the Thomas-Tikhonenko group and the Children''s Hospital
+    of Philadelphia trial cohort, and Chen et al. re-sequence six of the same samples (PMC9808313, L27).
+    DRG-071 and DRG-072 come from Dam et al., who share an author with barnkob2022carisoform, the review
+    the chapter already cites for CD19, and who re-analyse a public four-patient dataset rather than new
+    patients. DRG-081 to DRG-083 share the Katayama group, and DRG-085 to DRG-087 are two reports of one
+    trial.'
+  why: A deepening pass that holds two or three sources against each other inside a paragraph will otherwise
+    present one laboratory's cohort as independent corroboration. The CD19 disagreement in particular
+    is partly a disagreement between neighbours about the same samples.
+- note: No record here anchors how often CD19-negative relapse is caused by isoform loss rather than by
+    loss of the whole antigen, because no source in this corpus reports that denominator. Sotillo gives
+    10 to 20 per cent of responders relapsing with epitope loss; Chen attributes seven of eight CD19-negative
+    relapses to coding mutation; Asnani argues some of those calls are subclonal; Dam shows the isoform
+    exists untreated. These cannot be combined into a share.
+  why: The chapter should state that the split is unresolved rather than imply a proportion. This is the
+    most likely place in the section for a number to be invented during the writing pass.
+- note: 'The SPOTLIGHT primary publication (Lancet 2023, 401:1655-1668, doi:10.1016/S0140-6736(23)00620-7)
+    is NOT in the corpus as a document. It appears only inside other papers'' reference lists. Tried:
+    lookup title with the full and truncated titles; search -s abstracts with the full title phrasing;
+    grep --source abstracts "gastro-oesophageal junction adenocarcinoma \(SPOTLIGHT\)"; grep --source
+    abstracts "SPOTLIGHT" --exhaustive; grep "NCT03504397" /papers/. All SPOTLIGHT numbers in this file
+    therefore come from the FDA multi-discipline review (fda_29df95dfc0e2), which is a primary regulatory
+    document, not from a review. The ASCO primary-results abstract is doc_id 170883097 and the final-OS
+    abstract is 151565424, both abstract-only, if an author-attributed citation is wanted.
+
+    '
+  why: the chapter's headline trial has no journal-article anchor in this corpus; a human may want to
+    fetch the Lancet paper into the clipboard
+- note: 'THE VERIFIER FAILS ON EIGHT RECORDS, FOR A PATH REASON ONLY. Running `python3 scripts/verify_claims.py`
+    on this file gives "25 claims checked, 8 with problems", every one of them "QUOTE NOT FOUND in cited
+    lines": DRG-092, DRG-093, DRG-094, DRG-098, DRG-099, DRG-100 and DRG-101 (four FDA documents: fda_29df95dfc0e2,
+    fda_3205707f0511, fda_0a528a5f7f53, fda_c901861b1c6f) and DRG-110 (the trial registry record NCT05111626).
+    The cause is that verify_claims.py hardcodes `/papers/{doc_id}/content.lines`, which does not exist
+    for these documents; it also requires a non-empty `source.doi`, which regulatory and registry documents
+    do not have, so I put the literal placeholders NO_DOI_FDA_DOCUMENT and NO_DOI_TRIAL_REGISTRY in that
+    field plus a real `url` and a `source_type`, to make this detectable rather than silent. I verified
+    all eight by hand against /fda/<id>/content.lines and /trials/<id>/content.lines with `paperclip grep
+    -c -F`, each returning exactly 1, and separately confirmed each quote sits inside its cited label
+    range. No other research/*.yml in the repo cites an fda_ or trials document, so there is no precedent
+    to copy, and build_bib.py will also need a rule for a source with no DOI.'
+  why: 'a decision is needed: teach verify_claims.py and build_bib.py the /fda/ and /trials/ paths and
+    allow DOI-less regulatory sources, or lose the only primary evidence for the approval itself and for
+    the trial numbers that have no journal version in this corpus'
+- note: 'Trimmed to stay inside the 25-record brief; each is reusable without re-reading. (a) fda_0a528a5f7f53
+    L82: HEK293 cells transfected separately with CLDN18.1 and CLDN18.2 both stained, so "the VENTANA
+    CLDN18 (43-14A) antibody cannot distinguish between CLDN18.1 and CLDN18.2" - the blunt statement of
+    DRG-099. (b) fda_0a528a5f7f53 L167 and L169: within-block overall percent agreement 94.5%, and only
+    6 of 9 cases (66.7%) held their CLDN18 status across multiple blocks, overall agreement 89.3% (25/28)
+    - direct evidence that the selecting assay is heterogeneous within a patient. (c) fda_0a528a5f7f53
+    L201 and L203: SPOTLIGHT screened 2,735 patients, tested 2,433 with the assay, randomised 565. (d)
+    PMC8565817 L77 and L91: in rats, incisor dysgenesis at every dose level, explained by FGFR2b signalling
+    controlling rodent incisor regeneration - on-target normal-tissue toxicity seen before the cornea.
+    (e) PMC11016503 L208: the FIGHT overall-survival hazard ratio moved from 0.58 at primary analysis
+    to 0.77 at final analysis, and in the isoform-high subgroup from 0.41 to 0.52.
+
+    '
+  why: five anchored findings the section could use immediately; (e) in particular is a conflict between
+    two analyses of one trial
+- note: 'FORTITUDE-101 (NCT05052801) is marked COMPLETED with "Has Results: false" in the registry, and
+    I could find no primary report of its outcome in the corpus. The only corpus statement about it is
+    a 2026 review, doc_id 1001561033 (doi:10.1007/s11912-026-01845-9, abstract-only), which says first-line
+    bemarituzumab development ended despite a statistically positive primary overall-survival analysis,
+    that hazard-ratio estimates in both FIGHT and FORTITUDE-101 drifted toward the null at later cutoffs,
+    that the nivolumab-backbone trial was stopped for inadequate efficacy per sponsor communications,
+    and that neither phase 3 has been fully reported in a peer-reviewed publication. I did not record
+    any of that as a claim because it is a review reporting primary findings, which CONTRIBUTING.md forbids.
+
+    '
+  why: this is probably the single most important counter-example for the section - an isoform-selective
+    drug that won its trial and was still abandoned - and it currently has no citable primary source
+- note: 'Searched for but did not anchor, so not in the corpus as far as I got, or not reachable as a
+    primary: the EU approval of the fibronectin extra-domain-B agents (L19-based; EDB is an alternatively
+    spliced fibronectin domain) - search -s papers "extradomain B fibronectin alternatively spliced domain
+    antibody L19 tumour neovasculature targeting" returned only preclinical radioimmunotherapy work (PMC2359968,
+    PMC2709218) and a review (PMC7332215), no approval document; rindopepimut and the ACT IV trial for
+    EGFRvIII, which in any case is a genomic deletion rather than a splice isoform and belongs to neither
+    category the chapter contrasts; isoform-selective HDAC and AKT inhibitors, where I found no primary
+    establishing selectivity and where the selectivity is in any case between paralogous genes.
+
+    '
+  why: avoids a repeat of the same searches, and records that the EDB/L19 line would give the section
+    a second approved agent whose epitope is an alternatively spliced domain
+- note: 'A splice-isoform contrast the section may want and that I did not pursue for lack of budget:
+    MET exon 14 skipping, where tepotinib and capmatinib are approved for patients whose tumours make
+    the exon-14-skipped receptor, but the drugs inhibit both forms. The selectivity there lives in patient
+    selection rather than in the molecule, which is a third category alongside "selective between a gene''s
+    isoforms" and "selective between paralogues". Same structure for AR-V7 in prostate cancer. Neither
+    searched.
+
+    '
+  why: the chapter's taxonomy of isoform-directed therapy is incomplete with only two categories, and
+    conflating selection with selectivity is the kind of error the brief warns about
+- note: 'PMC12317400 (MONSTAR-SCREEN-2, 2025) is a corpus full-text primary that measured CLDN18 expression
+    and isoform distribution by immunohistochemistry and whole-transcriptome sequencing across solid tumours,
+    and PMC11563798 is a pan-cancer multi-omic analysis of CLDN18.2. Neither was read. Both bear on whether
+    the isoform is gastric-restricted in tumours as well as in normal tissue, which is the premise of
+    the pan-cancer claim in DRG-090''s source.
+
+    '
+  why: would let the section test a 2008 discovery claim against 2024-2025 transcriptome data instead
+    of restating it
+- note: Four anchored records were cut only to stay inside the 20-to-25 brief; each is verified byte-exact
+    and can be promoted without re-reading. (1) fda_29df95dfc0e2 L114, quote "Interpretation of findings
+    is confounded by different thresholds used to defined CLDN18.2 positivity." - the regulator's own
+    statement that the published CLDN18.2 prevalence figures (27% of 203 Caucasian patients, 29% of 367
+    Korean patients, 52% of Japanese primary tumours) disagree because the thresholds differ. (2) PMC8565817
+    L19, quote "tissues of epithelial origin such as the stomach and skin express the fibroblast growth
+    factor receptor 2 IIIb isoform" - the normal-tissue map of FGFR2b, which is where the corneal and
+    skin toxicity comes from. (3) 122025412 L1, quote "The main toxicity of bivatuzumab mertansine was
+    directed against the skin, most probably due to CD44v6 expression in this tissue." - the authors'
+    own on-target reading of the failure. (4) 114760713 L1, quote "which led to the termination of the
+    development program of bivatuzumab mertansine and the present study" - the parallel CD44v6 trial,
+    maximum tolerated dose 300 mg/m2 in 31 patients with three partial responses, ended by the death in
+    the companion study rather than by lack of activity.
+  why: four ready-to-use records, two of them the mechanistic core of the CD44v6 counter-example
+- note: 'LINE LABELS AND `cat --lines` POSITIONS CAN DIFFER BY ONE, PER DOCUMENT. Some documents'' content.lines
+    starts at the label L0 and some at L1, and `cat --lines N-N` indexes by position, so for an L0-starting
+    document the label equals the position minus one: `cat /fda/fda_29df95dfc0e2/content.lines --lines
+    581-581` prints the line labelled L580. Of the documents cited here, fda_29df95dfc0e2, fda_3205707f0511
+    and fda_c901861b1c6f start at L0, while fda_0a528a5f7f53, NCT05111626 and every /papers/ document
+    start at L1. The `lines` fields in this file are LABELS, matching the anchor URLs and the rest of
+    research/. scripts/verify_claims.py fetches by `cat --lines` and assumes label equals position, so
+    it must detect the first label per document and shift, or it will read the neighbouring line and report
+    false failures. I checked all 25 records this way and every quote sits inside its cited label range;
+    the detection is simply `cat --lines 1-1` and read the L<n> prefix.'
+  why: without the per-document shift, three of the four FDA-anchored records look mis-anchored to the
+    verifier even though every quote is byte-exact
+- note: 'The four FDA documents carry no url. The accessdata.fda.gov links first recorded for them were
+    constructed rather than retrieved and all four returned 404, so they were removed rather than published
+    as dead links. The citable identifiers are in the records: BLA 761365 for the Vyloy approval package,
+    multi-discipline review and clinical inspection summary, and PMA P230018 for the VENTANA CLDN18 companion
+    diagnostic. A real url for each should be retrieved and checked before the bibliography is treated
+    as final.'
+  why: A dead link in a published reference list is worse than no link, and an invented one is worse still.

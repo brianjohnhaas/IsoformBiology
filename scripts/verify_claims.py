@@ -30,6 +30,51 @@ def norm(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
+def corpus_root(doc_id: str) -> str:
+    """Which paperclip directory holds this document.
+
+    The corpus is not only papers. It holds FDA regulatory documents under
+    /fda, clinical trial records under /trials, and protein entries under
+    /proteins, and a claim may legitimately cite any of them. This function
+    existed implicitly as the hardcoded string "/papers", which meant every
+    quote taken from an approval letter, a review memo or a trial record was
+    reported as QUOTE NOT FOUND. Eight such claims were flagged on one chapter,
+    all eight byte-exact, and the risk was that someone would resolve the
+    failure by deleting the best primary sources in the chapter.
+    """
+    if doc_id.startswith("fda_"):
+        return "/fda"
+    if doc_id.startswith("NCT"):
+        return "/trials"
+    if re.fullmatch(r"[OPQ][0-9][A-Z0-9]{3}[0-9](-\d+)?", doc_id):
+        return "/proteins"
+    return "/papers"
+
+
+_FIRST_LABEL: dict[str, int] = {}
+
+
+def first_label(doc_id: str) -> int:
+    """The line label the document starts at, which is not always 1.
+
+    `cat --lines N-N` addresses lines by POSITION while `lines:` in a claim
+    record, the anchor URL and `grep -n` all use the document's own LABEL.
+    Most documents label the first line L1 and the two agree. Some FDA
+    documents start at L0, so every label is one ahead of its position and a
+    position-based read silently returns the wrong line. That reported five
+    byte-exact quotes as QUOTE NOT FOUND.
+    """
+    if doc_id not in _FIRST_LABEL:
+        res = subprocess.run(
+            ["paperclip", "cat",
+             f"{corpus_root(doc_id)}/{doc_id}/content.lines", "--lines", "1-1"],
+            capture_output=True, text=True, timeout=120,
+        )
+        m = re.match(r"\s*L(\d+):", res.stdout or "")
+        _FIRST_LABEL[doc_id] = int(m.group(1)) if m else 1
+    return _FIRST_LABEL[doc_id]
+
+
 def fetch(doc_id: str, lines: str) -> str:
     """Return the text of the cited lines. `lines` is 'L12-L18' or 'L12,L14'."""
     nums: list[int] = []
@@ -44,12 +89,17 @@ def fetch(doc_id: str, lines: str) -> str:
             nums.append(int(part))
     if not nums:
         return ""
+    # Labels to positions. Read one line either side too, because a quote can
+    # be split across a line boundary by the extractor.
+    off = first_label(doc_id) - 1
+    nums = sorted({n for x in nums for n in (x - 1, x, x + 1)})
     chunks = []
-    for n in sorted(set(nums)):
+    for n in [x - off for x in nums if x - off >= 1]:
         # A single --lines N returns a section index on some documents, so always
         # request a range, even a degenerate one.
         res = subprocess.run(
-            ["paperclip", "cat", f"/papers/{doc_id}/content.lines",
+            ["paperclip", "cat",
+             f"{corpus_root(doc_id)}/{doc_id}/content.lines",
              "--lines", f"{n}-{n}"],
             capture_output=True, text=True, timeout=120,
         )
@@ -96,8 +146,24 @@ def main() -> int:
                 fails.append("no audit quote")
             if len(quote.split()) > MAX_QUOTE_WORDS:
                 fails.append(f"quote is {len(quote.split())} words (max {MAX_QUOTE_WORDS})")
-            if not src.get("doi"):
-                fails.append("no DOI")
+            # Every source needs an identifier a reader can follow, but what
+            # counts as one depends on the kind of document. A paper has a DOI.
+            # A regulatory document has none and never will: it is cited by its
+            # issuing body and its application number, which is what a reader
+            # actually searches for. Demanding a DOI of an FDA review is how
+            # four invented accessdata.fda.gov links got into this file, all
+            # four of which returned 404.
+            stype = str(src.get("source_type", "")).lower()
+            doc = str(src.get("doc_id", ""))
+            regulatory = (stype in {"fda", "trials", "registry"}
+                          or doc.startswith(("fda_", "NCT")))
+            if regulatory:
+                if not src.get("url") and not (
+                        src.get("journal") and src.get("authors")):
+                    fails.append("regulatory source needs a url, or an issuing "
+                                 "body and an application identifier")
+            elif not src.get("doi") and not src.get("url"):
+                fails.append("no DOI and no url")
             if not src.get("bibkey"):
                 fails.append("no bibkey")
             if ev.get("text_access") not in ("full_text", "abstract_only"):
