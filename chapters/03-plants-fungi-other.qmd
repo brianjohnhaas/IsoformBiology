@@ -84,13 +84,15 @@ orthologues of LHY and PRR7, which puts the mechanism in a monocot crop as well
 
 ### Stress responses and a shoot-to-root signal
 
-Salt stress raises the total amount of alternative splicing. An Arabidopsis
-experiment
-sequenced to roughly 200-fold coverage found about 49 per cent of its
-intron-containing genes alternatively spliced under salt. Of those, 10 per cent
-showed a significant stress-driven shift in isoform ratio [@ding2014salt]. Maize
-grown through realistic daily temperature cycles did the same as maximum daily
-temperature rose. Retained introns and skipped exons increased most, and the
+An Arabidopsis experiment found 49.4 per cent of its intron-containing genes
+alternatively spliced under salt, pooled across three salt concentrations, and a
+tenth of those shifted their isoform ratio significantly with the stress
+[@ding2014salt]. The figure has no companion measurement in untreated
+plants, so it cannot be read as an increase. The depth usually quoted for the
+study is not the depth at which its splicing was counted either. The authors
+drew 18 million read pairs at random from each library first, so that every
+condition was measured alike [@ding2014salt]. Maize grown through realistic daily temperature
+cycles raised its splicing frequency as maximum daily temperature rose. Retained introns and skipped exons increased most, and the
 splicing regulators were themselves among the genes most often affected, SR45a
 among them [@li2021maize].
 

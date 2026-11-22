@@ -23,6 +23,7 @@ Sends a generic User-Agent and no personal information.
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import pathlib
 import re
@@ -77,10 +78,16 @@ def personal_surnames(msg: dict) -> list[str]:
 
 
 def journal(msg: dict) -> str:
+    """Crossref's journal name, with its HTML entities decoded.
+
+    Crossref returns "Genes &amp; Development", and a filled field carrying
+    that reached nine references.bib entries before anybody looked at a
+    rendered bibliography.
+    """
     for key in ("container-title", "short-container-title"):
         v = msg.get(key)
         if v:
-            return v[0] if isinstance(v, list) else str(v)
+            return html.unescape(v[0] if isinstance(v, list) else str(v))
     # Preprints report their server here instead.
     inst = msg.get("institution")
     if inst:

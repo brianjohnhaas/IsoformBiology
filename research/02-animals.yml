@@ -2050,7 +2050,7 @@ claims:
     title: Loss of hnRNPLL-dependent splicing of Ptprc has no impact on B-cell development, activation
       and terminal differentiation into antibody-secreting cells
     authors: Yabas, M.; Yazicioglu, Y. F.; Hoyne, G. F.; Goodnow, C. C.; Enders, A.
-    journal: Immunology &amp; Cell Biology
+    journal: Immunology & Cell Biology
     year: 2021
     doi: 10.1111/imcb.12433
     bibkey: hnrnpll2021bcellnoimpact
@@ -2184,7 +2184,7 @@ claims:
     doc_id: '130726938'
     title: Bak but not Bax is essential for Bcl-xS-induced apoptosis
     authors: Lindenboim, L.; Kringel, S.; Braun, T.; Borner, C.; Stein, R.
-    journal: Cell Death &amp; Differentiation
+    journal: Cell Death & Differentiation
     year: 2005
     doi: 10.1038/sj.cdd.4401638
     bibkey: bclx2005bakessential
@@ -2210,7 +2210,7 @@ claims:
     title: Disruption of the VDAC2-Bak interaction by Bcl-xS mediates efficient induction of apoptosis
       in melanoma cells
     authors: Plötz, M.; Gillissen, B.; Hossini, A. M.; Daniel, P. T.; Eberle, J.
-    journal: Cell Death &amp; Differentiation
+    journal: Cell Death & Differentiation
     year: 2012
     doi: 10.1038/cdd.2012.71
     bibkey: bclx2012vdac2bak
@@ -3415,7 +3415,7 @@ claims:
     title: PKM2 is not required for colon cancer initiated by APC loss
     authors: Lau, A. N.; Israelsen, W. J.; Roper, J.; Sinnamon, M. J.; Georgeon, L.; Dayton, T. L.; Hillis,
       A. L.; Yilmaz, O. H.; Di Vizio, D.; Hung, K. E.; Vander Heiden, M. G.
-    journal: Cancer &amp; Metabolism
+    journal: Cancer & Metabolism
     year: 2017
     doi: 10.1186/s40170-017-0172-1
     bibkey: lau2017pkm2colon
@@ -3450,7 +3450,7 @@ claims:
     title: PKM2 is not required for pancreatic ductal adenocarcinoma
     authors: Hillis, A. L.; Lau, A. N.; Devoe, C. X.; Dayton, T. L.; Danai, L. V.; Di Vizio, D.; Vander
       Heiden, M. G.
-    journal: Cancer &amp; Metabolism
+    journal: Cancer & Metabolism
     year: 2018
     doi: 10.1186/s40170-018-0188-1
     bibkey: hillis2018pkm2pdac
