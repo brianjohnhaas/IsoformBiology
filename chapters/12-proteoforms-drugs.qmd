@@ -17,7 +17,7 @@ is an RNA molecule, while a proteoform is a distinct protein form from one gene,
 and it absorbs differences this book has treated separately: those from
 splicing, those from genetic variation, and those added after translation.
 
-## What can be measured {#sec-measuring}
+## The gap between estimate and measurement {#sec-measuring}
 
 The gap between ambition and measurement is the largest in this book, and two
 numbers set its size.
@@ -108,7 +108,7 @@ does not hold as a general statement. An approved first-line therapy already
 depends on a distinction between two isoforms of one gene.
 :::
 
-## When the tumour changes isoform {#sec-resistance}
+## Resistance by switching to another isoform {#sec-resistance}
 
 The resistance mechanism anticipated for claudin-18 has already been observed
 elsewhere, which is the strongest reason to take it seriously.
@@ -150,7 +150,7 @@ This reframes @sec-drug-targets, where AR-V7 was presented as a target that
 therapy creates. Isoform switching under drug pressure looks like the general
 form of that behaviour rather than a peculiarity of the androgen receptor.
 
-## Modalities being built {#sec-modalities}
+## Reagents that discriminate between proteoforms {#sec-modalities}
 
 If a target is an isoform, the binding reagent has to discriminate at that
 resolution. Two approaches are being developed, and both run into the same
@@ -189,7 +189,7 @@ is framed as a dependency rather than an aspiration. Treatment at this
 resolution requires measurement at this resolution [@proteoformmedicine2026].
 
 ::: {.callout-note collapse="true"}
-## What this book can and cannot say about that review
+## The review is here as an abstract only
 
 The review is in this corpus as an abstract only, so only its abstract-level
 statements are cited here. Its account of the network biology, its treatment of

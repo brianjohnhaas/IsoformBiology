@@ -1,4 +1,4 @@
-# How transcripts get compared, and why novel-isoform counts move
+# Transcript comparison and the moving novelty count
 
 Novel-isoform percentages in the literature range from a few per cent to more
 than half of everything detected, sometimes for the same input data. The spread
@@ -11,7 +11,7 @@ You do not need this to follow the argument anywhere in the book. Read it if you
 want to know why a claim like "a third of detected transcripts were novel"
 is incomplete without its denominator.
 
-## What a transcript model actually is
+## A transcript model is a list of coordinates
 
 Strip away the sequence and a transcript model is a short list of coordinates:
 the start, the end, and the positions where introns were removed. For a
@@ -59,7 +59,7 @@ observation is just shorter. A read that stops early because the molecule
 fragmented produces exactly this, and so does a genuinely shorter transcript.
 The comparison cannot tell them apart, which is why the categories below exist.
 
-## The categories, and what each one is sensitive to
+## The categories and what each is sensitive to
 
 Transcript comparison tools sort observations into classes. The names vary, but
 the distinctions are consistent:
@@ -111,7 +111,7 @@ A transcript absent from an annotation but present in hundreds of independent
 samples is unannotated rather than novel, which is a statement about the
 annotation.
 
-## What to take back to the chapters
+## Three things that determine any novelty figure
 
 When you read a novel-isoform percentage anywhere, three things determine it
 before biology gets a say: which annotation was the denominator, what

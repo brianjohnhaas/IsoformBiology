@@ -1,4 +1,4 @@
-# How technology shaped what we could see
+# Methods and the claims they licensed
 
 ::: {.callout-warning}
 ## First draft
@@ -81,7 +81,7 @@ in transcripts such as Dscam, required new approaches
 bulk assay cannot report. Inclusion frequencies measured one exon at a time are
 compatible with combinations across molecules that contradict each other.
 
-## ESTs, and the first genome-scale numbers {#sec-est-era}
+## ESTs and the first genome-scale numbers {#sec-est-era}
 
 Expressed sequence tags made a genome-scale count possible, and the counts did
 not settle.
@@ -112,7 +112,7 @@ isoforms [@sorek2004howprevalent]. The headline number was a function of
 library depth and of the threshold applied to it, and @fig-prevalence shows
 what that does to a decade of published estimates.
 
-## Arrays {#sec-arrays}
+## Arrays moved discovery to a designed survey {#sec-arrays}
 
 Arrays moved the measurement from discovery to a designed survey. Junction
 microarrays monitored every exon-exon junction in more than 10,000 multi-exon
@@ -174,7 +174,7 @@ one.](../figures/prevalence-estimates.svg){#fig-prevalence width=100%}
 What that figure counts, and under which conditions, is taken up in
 @sec-how-functional.
 
-## What short reads could not do {#sec-short-read-limit}
+## Short reads could not reconstruct a molecule {#sec-short-read-limit}
 
 The full-length reconstruction problem was named in the EST era. The
 high-throughput methods of the day returned detailed information about short

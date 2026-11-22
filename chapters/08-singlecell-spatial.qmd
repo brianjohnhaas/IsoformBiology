@@ -100,7 +100,7 @@ alongside a separate form restricted to activated regulatory T cells
 [@inamo2024trails]. The receptor is the same gene in both states and a
 different molecule.
 
-## Where in the cell the molecule sits {#sec-localisation}
+## Isoform identity predicts location in a neuron {#sec-localisation}
 
 Isoform identity predicts location inside a neuron. Sequencing soma and
 dendrite separately from the same single mouse neurons found 2,225
@@ -174,7 +174,7 @@ to the layer [@fu2025longcell]. That measurement is per spot rather than per
 cell, and an apparently sharp choice with no spatial pattern is hard to read as
 a programme.
 
-## Space {#sec-spatial}
+## Spatial data as an orthogonal check {#sec-spatial}
 
 Spatial methods give an orthogonal check on single-cell isoform calls. Long-read
 sequencing of a spatially barcoded brain section reproduced the direction of
@@ -200,7 +200,7 @@ eight hundred genes varied spatially in which 3' end they used, more than five
 times the count recovered from long-read spatial data of the same tissue
 [@su2025splisosm], so the cheaper assay returned more.
 
-## What these measurements cannot do {#sec-sc-limits}
+## The chemistry decides how much is reachable {#sec-sc-limits}
 
 A simulation study that modelled dropout and quantification error explicitly
 concluded that resolving which isoforms an individual cell expresses is not

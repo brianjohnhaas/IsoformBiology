@@ -73,7 +73,7 @@ reflected in gene-level allelic expression data [@aguet2019gtex]. Gene-level
 allelic expression is a good proxy for expression QTLs and a poor one for
 splicing QTLs.
 
-## What splicing QTLs find {#sec-sqtl-finds}
+## Splicing QTLs name genes expression QTLs miss {#sec-sqtl-finds}
 
 The argument for them was made early. A study in Yoruba
 lymphoblastoid cell lines reported 2,893 splicing QTLs, most of which had little
@@ -99,7 +99,7 @@ transcriptome-wide association study of rheumatoid arthritis run on
 intron-excision phenotypes named 18 candidate genes, 13 of which the same
 analysis on gene expression levels did not find [@li2017annotation].
 
-## How much it explains, stated carefully {#sec-how-much}
+## The aggregate case is weaker than the per-variant one {#sec-how-much}
 
 The case above is easy to overstate, and the same datasets support a more
 measured reading.

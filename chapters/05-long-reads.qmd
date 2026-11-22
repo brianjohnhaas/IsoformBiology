@@ -35,7 +35,7 @@ exon 5 was separately confirmed by aggregated short-read junction data
 A heavily studied disease gene had most of its transcript structures outside
 the annotation, and they were reachable by reading whole molecules.
 
-## What one molecule asserts {#sec-one-molecule}
+## One molecule carries its own splice chain {#sec-one-molecule}
 
 An entire complex splice chain can be observed rather than inferred. In
 Arabidopsis, a single uninterrupted nanopore alignment of 12.7 kb spanning 63
@@ -80,7 +80,7 @@ Long non-coding RNAs and pseudogenes were far less variable
 [@reese2023encode4].
 
 ::: {.callout-note collapse="true"}
-## A note on the ENCODE4 and GTEx long-read citations
+## ENCODE4 and GTEx long reads are preprints here
 
 Both the ENCODE4 long-read collection and the GTEx long-read transcriptome
 appear in this book's corpus only as preprints, and are cited as such. Every
@@ -127,7 +127,7 @@ long reads corrected gene models rather than merely adding to them. RGH3 had
 been mis-annotated because of a genome assembly error, and CSR1 was present in
 the reference sequence with no annotation at all [@wang2016unveiling].
 
-## Which chromosome the transcript came from {#sec-phasing}
+## Phasing comes free with read length {#sec-phasing}
 
 A read long enough to span a heterozygous site carries its own phase
 information. In a polymorphic mouse cross, one heterozygous site inside a read
@@ -183,7 +183,7 @@ Alzheimer brain state the ceiling directly: even with the gain from
 concatenation, depth per sequencing run remains lower and cost per read higher
 than for short-read sequencing [@shahnaee2026rna].
 
-## What long reads still cost {#sec-longread-cost}
+## Long reads are bought with depth and filtering {#sec-longread-cost}
 
 Isoform resolution is bought with sequencing depth. In a matched comparison on
 the same cells, PacBio concatenation libraries averaged roughly 21,000 to 97,000
@@ -207,7 +207,7 @@ reached the roughly 3 kb median human transcript length. Events far from the
 poly(A) end were correspondingly harder to quantify [@han2024contrasting]. A
 long read is often not long enough to reach them.
 
-## What becomes answerable {#sec-gtex-lr}
+## Haplotype-resolved reads settle ambiguous associations {#sec-gtex-lr}
 
 Transcript structure changes what a variant is predicted to do. Adding
 long-read transcripts to the reference annotation changed the predicted most

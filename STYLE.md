@@ -109,6 +109,66 @@ Analogies earn their place only when they map structurally, and you must say
 where they stop mapping. The test: can the reader derive a new true statement
 from the analogy? If not, cut it.
 
+## Headings
+
+**A heading states the section's claim where it has one, and names the open
+question where it does not.** Those are the only two jobs. A heading that names
+the topic instead ("Arrays", "Therapeutics", "Space") makes the reader open the
+section to find out whether they need it.
+
+This was the last part of the book nobody checked. Every gate strips headings
+before it looks at anything, so for most of the project's life no rule reached
+them, and the habits that were being removed from sentences sat untouched in the
+titles. At the worst point 39 of 131 section headings opened with a Wh- word,
+"What" alone began 18 of them, and a chapter title contained "we".
+
+Prefer the claim. The retitles that improved most were the ones that moved a
+verdict out of the body and into the heading:
+
+| Instead of | Write |
+|---|---|
+| Where isoform differences actually sit | Most isoform differences sit at the transcript ends |
+| What short reads could not do | Short reads could not reconstruct a molecule |
+| How an annotation actually grows | An annotation grows by revision, not only addition |
+| What benchmarking established | LRGASP separated structure from abundance |
+| Which chromosome the transcript came from | Phasing comes free with read length |
+| Arrays | Arrays moved discovery to a designed survey |
+
+A claim in a heading is a claim. Check it against the section's records like any
+sentence, because `check_citations.py` blanks headings and will not. Keep digits
+out of headings for the same reason.
+
+Keep the question where the section is genuinely open. "How much of this is
+functional", "Whether any of this tracks complexity" and "Does one cell use one
+isoform or several" are the honest titles for sections that report a live
+disagreement, and turning them into assertions would misrepresent the evidence.
+`check_style.py` therefore caps Wh- openers per chapter rather than banning
+them, and caps any one repeated opening word. A cap is harder to game than a
+ban: a forbidden "What X cannot do" just becomes "The things X cannot do".
+
+Two more rules the checker enforces on headings, because they are the prose
+rules and there was never a reason headings escaped them: no first person, no
+banned vocabulary, no em dash.
+
+Three rules it cannot enforce, so they need a human:
+
+Keep siblings in one register. If three subsections under a heading are claims,
+the fourth should not be a bare noun. A matched pair can be short, as "The
+five-prime leader" and "The three-prime tail" are, provided both are.
+
+Do not open a heading with a comma-tail. "Tau, and a ratio that has to be held"
+and "ESTs, and the first genome-scale numbers" are the heading form of the
+rhythm tic the prose rules already forbid, and dropping the comma usually fixes
+them outright.
+
+Read a chapter's headings as a list before calling it done, the way a reader
+meets them in the sidebar. Most of the defects above are invisible one heading
+at a time and obvious in a column.
+
+A retitle is display text only. Never change a `{#sec-...}` identifier to match
+a new title: cross-references point at the identifier, and the filenames and
+identifiers in this book already record history rather than reading order.
+
 ## AI tells to avoid
 
 These are the patterns that make prose read as generated. Most of them are
@@ -221,3 +281,7 @@ without a gloss?
 
 Then confirm every number still carries its meaning and every claim still traces
 to a record in `research/`.
+
+Then read the headings on their own, as a list, and ask of each one whether it
+states a claim or names an open question. A chapter can pass every mechanical
+check and still have a sidebar that tells a reader nothing.

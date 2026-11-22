@@ -169,7 +169,7 @@ cannot [@xu2024topdown]. See @sec-measuring.
 : A within-sample abundance unit, normalised for transcript length and then for
 sequencing depth.
 
-## What this book deliberately does not do
+## Resources this book does not duplicate
 
 <!-- numbers-ok: the dates below describe the resources themselves, not
      claims drawn from papers, so they have no claim record to match. -->

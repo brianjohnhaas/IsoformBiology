@@ -16,7 +16,7 @@ Three answers all turn up often: the protein changes at one end, its sequence
 stays the same while the amount made changes, or the transcript yields no
 protein at all.
 
-## Which mechanism changes which part of the protein {#sec-what-changes}
+## The mechanism predicts which part of the protein changes {#sec-what-changes}
 
 The mechanism is largely predictable from the region of the protein affected,
 and establishing that took a systematic comparison. Across
@@ -51,13 +51,13 @@ were predicted to be destroyed rather than translated [@murali2025biosurfer].
 That is a hint about what long reads add to this question, and
 @sec-is-it-translated takes it up.
 
-## When the difference is outside the protein {#sec-utr-only}
+## Differences that touch no amino acid {#sec-utr-only}
 
 An isoform pair can differ in no amino acid whatsoever. This is the common case,
 and the regulatory consequences are real but smaller and less consistent than
 the literature's enthusiasm suggests.
 
-### The leader
+### The five-prime leader
 
 Start-site choice changes the length of the untranslated leader, and the leader
 affects how efficiently a ribosome gets going. Measured directly in mouse
@@ -85,7 +85,7 @@ and any pipeline that filters variants to the coding sequence would discard it.
 @sec-vus covers how clinical interpretation handles variants that act through
 splicing.
 
-### The tail
+### The three-prime tail
 
 The three-prime untranslated region is where the field most often asserts
 consequence and most often disagrees about it.
@@ -124,7 +124,7 @@ stress, and at one gene whose dosage is tightly held, it mattered a great
 deal. @sec-sc-apa gives the cell-type
 dimension of the same choice.
 
-## Whether the isoform is translated at all {#sec-is-it-translated}
+## Evidence that an annotated isoform reaches protein {#sec-is-it-translated}
 
 @sec-how-functional sets out the three-way disagreement about how much
 alternative splicing matters. Protein-level evidence bears on it directly, and
@@ -169,7 +169,7 @@ and the conclusion that most frame-preserving alternative isoforms are
 translated follows [@sinitcyn2023deepproteome].
 
 ::: {.callout-note collapse="true"}
-## Why the undetected cases are the interesting ones
+## Why some variants never appear in protein
 
 For the single-residue variants that were expected from RNA and never seen in
 protein, those authors offered a mechanism rather than filing them as a
@@ -209,7 +209,7 @@ ubiquitination and acetylation as possibilities and do not demonstrate either
 interest. It lies beside the channel through which messenger RNA enters the
 ribosome [@magadi2025rps24].
 
-### The naming is a mess, and that is a finding {#sec-rps24-naming}
+### Five incompatible naming schemes for one gene {#sec-rps24-naming}
 
 Reading these papers together runs into a wall. The groups do not label the gene
 the same way. Junction names
@@ -230,7 +230,7 @@ from its own text. Settling it would take the annotated transcript and protein
 sequences rather than the papers. Each result below is therefore reported in its
 own paper's labels.
 
-### Which form a cell makes {#sec-rps24-regulation}
+### The proportions differ by tissue and are held {#sec-rps24-regulation}
 
 The proportions differ by tissue, and by tumour type within a tissue
 [@park2024rps24]. One combination behaves like a tissue marker that disease
@@ -252,7 +252,7 @@ compartment [@olivieri2021splicing]. @sec-sc-structure gives the accuracies, the
 two genes behind that result are RPS24 and ATP5F1C, and the same compartment
 pattern was found again in mouse and in mouse lemur [@olivieri2021splicing].
 
-### What the choice does {#sec-rps24-consequence}
+### Consequences under hypoxia and in the brain {#sec-rps24-consequence}
 
 The two protein forms are not equally durable, and the difference appears only
 under stress. They lasted equally long in normal oxygen and unequally when
@@ -275,7 +275,7 @@ proline-lysine-glutamate form and not the ones ending in lysines
 three residues is a proteoform-level reagent, and @sec-measuring explains why
 such things are rare.
 
-### In cancer, and as a drug readout {#sec-rps24-cancer}
+### RPS24 junctions as a cancer drug readout {#sec-rps24-cancer}
 
 Across 135 lung cancer cell lines, two of the four junctions were present in
 over 98 per cent of them, a third appeared in 89 lines, or 66 per cent, and the
@@ -305,7 +305,7 @@ purpose: the text and the figure legend give different counts for the
 Alzheimer's sections, and neither can be preferred from what was read.
 :::
 
-## What this chapter settles and what it does not
+## Where this chapter leaves the protein question
 
 Three things are now on firmer ground. The mechanism that produces an isoform
 difference predicts which part of the protein changes. A difference confined to

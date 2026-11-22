@@ -29,7 +29,7 @@ A normalised deep-coverage survey of Arabidopsis put alternative splicing at
 without stress, and those authors treat the figure as a floor
 [@marquez2012arabidopsis].
 
-### A different mixture of events {#sec-class-balance}
+### Intron retention leads outside the animals {#sec-class-balance}
 
 The flavour differs as much as the amount. Cassette exons predominate in
 animals, while intron retention is the more frequent class in other taxa
@@ -82,7 +82,7 @@ shifted to low temperature change the splicing of core clock genes including the
 orthologues of LHY and PRR7, which puts the mechanism in a monocot crop as well
 [@calixto2016barley].
 
-### Stress, and where the signal comes from
+### Stress responses and a shoot-to-root signal
 
 Salt stress raises the total amount of alternative splicing. An Arabidopsis
 experiment
@@ -99,7 +99,7 @@ light. The signal traces to sugars made by photosynthesis in the shoot, acting
 through the TOR kinase pathway. Those authors describe it as a shoot-to-root
 route coordinating splicing across the whole plant [@riegler2021light].
 
-### Isoform alleles that breeders care about
+### Isoform alleles with agronomic effect sizes
 
 Two crop loci show the effect sizes involved. In tropical japonica rice, six
 SNPs at the OsLG3b locus change how the OsMADS1 transcript is spliced, and that

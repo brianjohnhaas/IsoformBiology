@@ -10,7 +10,7 @@ down. A large fraction of what changes in a tumour does not move a gene total
 at all, and this chapter is about that fraction and about how much of it holds
 up.
 
-## Changes a gene-level analysis retires {#sec-invisible-switches}
+## Changes a gene-level analysis cannot see {#sec-invisible-switches}
 
 Treatment-naive oesophageal tissue was scored for isoform switches during
 progression from low-grade to high-grade Barrett's dysplasia. Between 42 and 46
@@ -34,7 +34,7 @@ erythroleukaemia model, over a thousand significant alternative splicing events
 were called, two thirds of them cassette exons, while overall gene expression
 between mutant and wild-type cells barely moved [@liang2018srsf2].
 
-### Two reasons to discount part of that
+### Not every called switch is an exchange
 
 Not every called switch is an exchange of one isoform for another. In about half
 of the switches that were not concordant in usage and expression, one partner
@@ -177,7 +177,7 @@ of samples taken after androgen deprivation. The share rose further after
 abiraterone or enzalutamide [@sharp2019arv7]. The receptor form that dominates
 after treatment was almost absent before it.
 
-## Neoantigens, and how much survives a wider reference {#sec-neoantigens}
+## Neoantigens and a wider normal reference {#sec-neoantigens}
 
 Aberrant junctions dwarf point mutations as a source of recurrent, shareable
 tumour antigens. Across 8,705 TCGA tumours about 251,000 tumour-enriched
@@ -207,7 +207,7 @@ cells. Naturally occurring reactivity in patients was detected in only one of
 three glioma patients tested [@kwok2025public], so the mechanism works while the
 in-patient evidence stays thin.
 
-## Therapeutics {#sec-cancer-therapeutics}
+## Therapies aimed at the splicing machinery {#sec-cancer-therapeutics}
 
 The SRSF2 motif switch connects to a named target exon. The poison exon of EZH2
 contains three copies of the CCWG motif that mutant SRSF2 prefers, and none of

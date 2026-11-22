@@ -63,7 +63,7 @@ substantial remainder, part of which reflects transcript-ID mismatch between
 the GENCODE releases used rather than real disagreement about which isoform is
 highest [@tung2022texmst].
 
-## How an annotation actually grows {#sec-gencode}
+## An annotation grows by revision, not only addition {#sec-gencode}
 
 GENCODE's human and mouse annotation was originally produced by human curators
 working locus by locus along each chromosome, and only became project-based
@@ -109,7 +109,7 @@ view, while the full comprehensive set stays available
 ## The long-read catalogues {#sec-encode4}
 
 ::: {.callout-note collapse="true"}
-## Preprint status
+## Both long-read catalogues here are preprints
 
 The ENCODE4 long-read collection and the GTEx long-read transcriptome appear in
 this book's corpus only as preprints, and the bibliography emits them as such.
@@ -164,7 +164,7 @@ run over 32 bovine tissues yielded 99,044 transcript isoforms at 31,824 loci.
 Only 21 per cent exactly matched an existing reference transcript, while 61 per
 cent were novel isoforms of known genes [@halstead2021bovine].
 
-### Who was sequenced changes what is in the catalogue
+### The catalogue records who has been sequenced
 
 A diverse-ancestry long-read cohort collapsed 380,519 candidate transcript
 models to 155,875 after reproducibility filtering. Of those, 41,297 were novel
@@ -177,7 +177,7 @@ those found only in non-European samples were enriched for novel ones
 [@clavellrevelles2025ancestry]. The annotation is a record of who has been
 sequenced.
 
-## What novel means {#sec-what-novel-means}
+## Novel means absent from one chosen reference {#sec-what-novel-means}
 
 Novelty defined against an evolving annotation is circular, because a
 transcript can be called novel purely for not yet having been curated into a
@@ -194,7 +194,7 @@ fraction fell from roughly 27 to 52 per cent down to 2 to 5 per cent, a
 reduction of up to 26-fold [@zheng2026isopedia]. The transcripts are the same in
 both scorings, and only the question changed.
 
-## What benchmarking established {#sec-lrgasp}
+## LRGASP separated structure from abundance {#sec-lrgasp}
 
 LRGASP was a community exercise rather than one lab's comparison. Participants
 worked from a shared body of over 427 million long reads spanning cDNA and

@@ -12,7 +12,7 @@ become a pathology-specific marker, and a splice-modulating oligonucleotide has
 been designed for a single patient. It is also where the field disagrees most
 sharply about how large the underlying phenomenon is.
 
-## Why the brain {#sec-brain-splicing}
+## The brain splices more than other tissues {#sec-brain-splicing}
 
 Of the human tissues compared on genomically aligned EST evidence, brain
 carried the highest fraction of alternatively spliced genes. More than 40 per
@@ -29,7 +29,7 @@ in GENCODE, plus more than 7,000 novel exons. That expanded the inferred
 proteome by 92,422 putative proteoforms from one developing tissue
 [@patowary2024neocortexisoforms].
 
-## Tau, and a ratio that has to be held {#sec-mapt}
+## Tau and a ratio the cell has to hold {#sec-mapt}
 
 Adult human brain holds 3R-tau and 4R-tau at roughly a one-to-one ratio.
 Whether MAPT exon 10 is included or skipped is what sets that balance, because
@@ -53,7 +53,7 @@ neurodegeneration and dementia. Most such mutations push toward 4R, a minority
 toward 3R [@liu2008tauexon10]. Both directions are pathogenic, so the
 phenotype is the ratio rather than either isoform.
 
-## TDP-43, and exons that should not exist {#sec-tdp43}
+## TDP-43 and exons that should not exist {#sec-tdp43}
 
 TDP-43's role in splicing is negative, in that it suppresses the splicing of
 non-conserved cryptic exons and so preserves intron integrity. When it is
@@ -227,7 +227,7 @@ attributed to low or absent coverage of the gene [@oquendo2026hifirnaseq].
 Coverage of the specific disease gene mattered more than read length in
 those four cases.
 
-## What the prediction tools deliver {#sec-splice-prediction}
+## Prediction tools rank better than they quantify {#sec-splice-prediction}
 
 Interpretation now leans on tools whose accuracy has been measured against
 experimentally characterised variants. On NF1 spliceogenic variants, SpliceAI

@@ -25,7 +25,7 @@ book:
       chapters:
         - chapters/04-technology-arc.qmd
         - chapters/05-long-reads.qmd
-    - part: "What the catalogues contain"
+    - part: "Reference annotation"
       chapters:
         - chapters/09-catalogs.qmd
     - part: "Resolving cells and tissues"
