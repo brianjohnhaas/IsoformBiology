@@ -25,7 +25,7 @@ Deepening order, and why:
 |---|---|---|
 | 1 | 12 proteoforms and drugs | Thinnest in the book at 1,426 words, carries the forward argument, and its central review is abstract-only so the research pass fixes that too |
 | 2 | 5 long reads | The reader's own field. STYLE.md promises full explanations of EM-based quantification, internal priming and read-support thresholds, and the book explains none of them |
-| 3 | 2 animals | STYLE.md calls it the reference implementation and it has the worst provenance: fifteen abstract-only sources, most of the Dscam1 section among them |
+| 3 | 2 animals | **Done.** 1,865 to 7,087 words from 125 records. The full-text recovery pass failed: of thirteen abstract-only sources named for recovery, one was recovered, through the authors' own preprint. Abstract-only sources in this chapter rose from fifteen to thirty-eight, because deepening a chapter whose literature is largely pre-PMC adds abstracts |
 | 4 | 6 cancer | Widest audience, and the leads list CD44, RAC1b, EGFRvIII and BRAF splice variants as unanchored |
 | 5 | later | 1, 3, 4, 7, 8, 9, 10, 11, 13 |
 

@@ -45,7 +45,7 @@ paper behind it, say so and name the claim.
 is thin, and others because the research pass stopped early. Pointing at a
 section and saying which of those it is helps more than it sounds.
 
-**Full text for a source read as an abstract.** Forty-eight of the sources
+**Full text for a source read as an abstract.** Seventy-one of the sources
 behind this book were read as abstracts rather than as full text, and
 twenty-seven are preprints that have not been through peer review. Both sets are
 listed by name in `research/ALLOCATION.md`. Telling the project that a preprint

@@ -2,8 +2,14 @@
 
 ::: {.callout-warning}
 ## First draft
+
 Written from `research/02-animals.yml` and not yet reviewed by a second reader.
-Several of the Dscam1 and CD45 claims rest on abstracts rather than full text.
+
+Two limits are worth carrying through the chapter. Thirteen of its sources were
+read as abstracts rather than as full text, and the Dscam1 material leans heavily
+on one laboratory, which @sec-one-lab states where it matters. Several Dscam1
+records are anchored on the authors' own preprints because no full text of the
+journal version exists in this book's corpus.
 :::
 
 Almost every human gene is alternatively spliced, which on its own settles
@@ -11,6 +17,14 @@ nothing. A gene can make twenty transcripts that all do the same job, and a gene
 can make two that do opposite jobs. The cases in this chapter are ones where
 someone tied an isoform difference to a phenotype, because those are the cases
 that carry weight.
+
+They are also the cases where the evidence is thickest, which means they are
+where disagreement shows up. Three of the examples below were presented as
+settled in an earlier draft of this chapter and are presented as contested here,
+because reading further into each one turned up a primary paper pointing the
+other way. That pattern is worth noticing in its own right. An isoform story
+told from reviews tends to be tidier than the same story told from the
+experiments.
 
 ## Dscam1: diversity by combination {#sec-dscam}
 
@@ -27,7 +41,7 @@ generate the *Dscam1* repertoire. A single neuron uses a small, probabilisticall
 drawn slice of it.](../figures/dscam-combinatorics.svg){#fig-dscam width=100%}
 
 The arithmetic deserves the space because the repertoire size is a functional
-specification, and not, as it is usually quoted, a curiosity about how far
+specification. Not, as it is usually quoted, a curiosity about how far
 splicing can be pushed. Each Dscam1 ectodomain binds homophilically with
 near-absolute specificity, recognising itself and barely touching the others
 [@dscam2004homophilicbinding].
@@ -47,10 +61,48 @@ each [@dscam2004stochasticbiased], a vanishing slice of the repertoire. The
 repertoire exists to make collisions between unrelated neurons unlikely, not to
 assign meanings to individual isoforms.
 
-Selection among variants happens in *cis*, through RNA structure, with no
-trans-acting factor adjudicating. One intronic docking site pairs with the
-selector sequence upstream of a single variable exon, physically presenting that
-exon and no other to the upstream constitutive exon [@dscam2005dockingselector].
+That picture needs one qualification, because the draws are not independent
+between cells. In situ detection of individual variants from all three clusters
+found neighbouring neuroblasts carrying the same variant, along with the neurons
+descended from them [@liu2020dscamcolumns]. A lineage therefore shares part of
+its label, which makes the collision probability between two nearby neurons
+higher than independent sampling from the repertoire would imply.
+
+### One exon from each cluster, by geometry rather than by choice
+
+Mutual exclusivity is the part of this system most often stated and least often
+explained. It is not a decision taken by a regulator. It is a geometric
+consequence of how the RNA folds.
+
+A single intronic docking site pairs with the selector sequence lying upstream
+of one variable exon at a time, which physically presents that exon, and no
+other, to the upstream constitutive exon [@dscam2005dockingselector]. The direct
+test of that model used minigene constructs built to mimic the loop the pairing
+creates. Only the variable exon lying immediately outside the loop was spliced
+in, and every other was silenced [@wang2012dscamlcr]. Exclusivity on this
+account is a matter of what the splicing machinery can reach.
+
+Two genome-level experiments support the same mechanism. Mutating the selector
+sequence in front of a single exon 6 variant in the fly reduced that variant's
+use and left every other exon 6 variant unchanged, so a selector acts only on
+the exon it precedes [@dong2022dscambalancer]. A second and separate intronic
+pairing holds down the exon 6 variants nearest the docking site, with
+suppression strongest for the closest exons [@dong2022dscambalancer].
+
+Timing fits a mechanism that works on the folded molecule rather than on the
+emerging one. Introns around the variable clusters persist in newly made
+transcripts while constitutive introns have already gone, so variable exon
+splicing is substantially the slower process [@dong2026dscamrnastructures].
+
+Two findings keep this from being the whole story. Fly nulls for the
+non-canonical SR-related protein Srrm234 lose inclusion of many exon 9 variants,
+with compensating gains at a few, so a trans-acting protein does shape the
+outcome [@ustaoglu2019dscamsrrm234]. The same group disputes the pairing model
+for that cluster, reporting that an inspection of the aligned cluster found no
+conserved intronic element in front of every variable exon that could pair with
+the proposed docking site [@ustaoglu2019dscamsrrm234]. The mechanism is
+therefore well established for exon 6 and argued over for exon 9. An earlier
+draft of this chapter asserted one clean mechanism for all three clusters.
 
 ### A count for dendrites, identities for axons
 
@@ -69,24 +121,135 @@ present [@dong2023dscamscreen].
 Diversity does two jobs in two currencies, since self/non-self discrimination
 needs a sufficient count while axon patterning needs particular identities.
 
+Pushing the repertoire lower makes the second job fail outright. Flies left with
+one exon 6 variant, giving 396 possible ectodomains, or one exon 9 variant,
+giving 576, had mushroom body defects at 64 to 100 per cent penetrance. Flies
+left with one exon 4 variant and 1,584 ectodomains had them at 0 to 8 per cent
+[@dong2022selfavoidance]. At those smallest repertoires a single neuron could
+not reliably send its two sister branches into different lobes. Segregation
+failed about as often as in flies with no Dscam1 at all
+[@dong2022selfavoidance].
+
+Two things about that experiment complicate the straightforward reading. The
+reduced repertoires produced two classes of defect that a self-avoidance account
+does not predict, truncated lobes and simultaneous thinning of both lobes.
+Together those made up 10 to 48 per cent of defects in most single-variant
+mutants [@dong2022selfavoidance]. And halving the amount of Dscam1 protein
+rescued much of the damage, lifting survival to adulthood from 2 to 55 per cent
+in homozygotes to 40 to 79 per cent when the same allele was placed opposite a
+null [@dong2022selfavoidance]. A phenotype that improves when protein is removed
+is hard to describe purely as a shortage of labels.
+
 ### Changing usage bias alone disrupts wiring
 
-Isoform usage is skewed, and the skew does work. Flies with normal Dscam1
-protein levels and an unchanged number of possible isoforms, but a shifted exon
-9 usage distribution, showed marked mushroom-body defects. The same shift at
-exon 4 did nothing [@dscam2021splicingbias]. Changing bias damaged axonal wiring
-while leaving the self-avoidance of axonal branches intact, which is the
-function the isoform count is supposed to underwrite [@dscam2021splicingbias].
+Isoform usage is skewed, and the skew does work.
 
-The same authors name the problem their own result creates, in the preprint of
-that work: heavy, reproducible bias restricts access to the diversity that
-self-avoidance is supposed to exploit [@hong2019dscamsplicingbias], and they
-leave that tension unresolved.
+The experiment that shows it was built so that usage distribution is the only
+variable that moves. Both docking-site deletion alleles encode the same number
+of possible isoforms as wild type and express the same overall amount of Dscam1
+protein [@dscam2021splicingbias]. Deleting the exon 9 docking site then left up
+to 20 per cent of mutant adult brains with defective mushroom body lobes,
+against none in wild type [@dscam2021splicingbias]. The equivalent deletion at
+exon 4 rarely did damage, with defects in roughly 2 per cent of brain
+hemispheres. The requirement for a particular usage distribution is specific to
+some clusters rather than general [@dscam2021splicingbias].
 
-## Sex determination: a chain of splice choices
+What the deletion does to usage is redistribution rather than loss. Of the 33
+exon 9 variants, 19 were used significantly more than in wild type and five
+significantly less [@dscam2021splicingbias]. How much a given variant gained or
+lost was predicted better by base-pairing strength and looping distance taken
+together than by either alone, which is what a pairing-based mechanism requires
+[@dscam2021splicingbias].
+
+The damage spares the function the repertoire is supposed to underwrite. In
+single-cell clones carrying the exon 9 deletion, sister branches of one neuron
+still never crossed or bundled [@dscam2021splicingbias]. Shifting the
+distribution damaged wiring without breaking self-recognition.
+
+### The resolution rests on one laboratory {#sec-one-lab}
+
+The result above creates a problem for the standard account, and those authors
+say so themselves. Strong and reproducible splicing bias is hard to reconcile
+with a pure self-avoidance model, because heavy bias restricts access to the
+diversity self-avoidance is supposed to exploit [@dscam2021splicingbias].
+
+Their proposed resolution splits the job in two. Isoform number underwrites
+self-avoidance, while a reproducible usage skew suits recognition and synaptic
+choice by particular isoforms, which self-avoidance cannot use
+[@dscam2021splicingbias].
+
+That resolution is coherent and it is close to unreplicated. Of the sources
+behind this section, the great majority come from one laboratory. That includes
+every record challenging the self-avoidance account. A search of this book's
+corpus for independent tests found one primary study from another group.
+Knocking Dscam1 down in LC4 visual interneurons left dendrite length, branching,
+coverage and spacing indistinguishable from control
+[@wilhelm2022dscamneurontypes]. That agrees Dscam1 does something beyond
+self-avoidance, and it does not test the bias claim.
+
+So the honest summary is that one group has produced a careful argument that
+usage distribution matters independently of repertoire size. Nobody else in this
+corpus has tried to reproduce that argument. The argument is reported here as
+theirs.
+
+### Dscam1 diversity and surviving infection
+
+The repertoire has a dimension outside the nervous system, and the evidence
+there points two ways as well.
+
+After ten days of *Metarhizium robertsii* infection, 12 per cent of flies
+carrying a large exon 6 cluster deletion survived, against 71 per cent of wild
+type, with no difference between the uninfected controls of either genotype
+[@dong2025dscamfitness]. That is a large effect for a gene usually discussed as
+a wiring molecule.
+
+It does not follow that the immune system reads isoform identity the way neurons
+do. After live *Escherichia coli* exposure, adult flies showed no statistically
+significant change in the relative use of variants in any of the three clusters
+[@armitage2014dscambacterial]. Diversity mattering for survival and usage
+shifting on challenge are different claims, and only the first has support here.
+
+### Clustered protocadherins reach the same end by other means
+
+Vertebrates have no Dscam1 repertoire, and they have something that does a
+similar job. The parallel is worth drawing carefully, because it is functional
+rather than structural.
+
+The two families share none of their protein architecture, yet both make many
+isoforms at one locus, express them stochastically and combinatorially, and bind
+homophilically [@lefebvre2012pcdhselfavoidance]. The mechanism differs at the
+first step: clustered protocadherins depend on stochastic promoter activity
+rather than on splice-site competition within one pre-mRNA
+[@dscam2021splicingbias]. Expression in those cells is also allele-specific. Of
+18 Pcdh-beta transcripts reliably detected in single mouse Purkinje cells, 17
+came from one allele only, while a control gene was biallelic in every cell
+[@hirano2012pcdhbetasingleneuron].
+
+Where the parallel holds least is in what diversity buys. In mouse starburst
+amacrine cells, deleting either of two groups of gamma-protocadherin variable
+exons left dendritic self-avoidance intact. Replacing all 22 isoforms with
+either one of two single isoforms restored it, which led those authors to
+conclude that no isoform is necessary and one is enough
+[@lefebvre2012pcdhselfavoidance]. The repertoire instead buys discrimination
+between cells. When every starburst amacrine cell carried the same single
+isoform, dendrites of neighbouring cells began avoiding each other instead of
+overlapping as they normally do [@lefebvre2012pcdhselfavoidance].
+
+Two later results qualify the "one is enough" conclusion. Starburst amacrine
+cells left with gamma-C4 as their only gamma-protocadherin failed at
+self-avoidance, unlike cells left with other single isoforms. The repertoire
+contains at least one member that is not interchangeable
+[@mcleod2025pcdhgc4]. And recognition needs the proteins to pair sideways within
+one membrane as well as across the gap between two. Cells carrying matched plus
+mismatched isoforms stayed apart, while deleting the domain that mediates the
+sideways pairing made the same mismatched combinations adhere indiscriminately
+[@wiseglass2024pcdhcis]. Dscam1 has no counterpart to that step, so the two
+systems are least alike exactly where the recognition happens.
+
+## Sex determination in Drosophila: a chain of splice choices {#sec-sexdet-fly}
 
 *Dscam1* uses splicing to generate variety, while the *Drosophila*
-sex-determination cascade uses it to make a decision, and that cascade remains
+sex-determination cascade uses it to make a decision. That cascade remains
 the cleanest example of a splicing switch running a developmental programme.
 
 The cascade is a chain of splice choices. Female Sex-lethal binds the
@@ -94,28 +257,318 @@ The cascade is a chain of splice choices. Female Sex-lethal binds the
 of the downstream female-productive acceptor [@sxl1990trasplicesite]. At the
 bottom of the chain, Tra and Tra2 act positively, recruiting SR-family factors to
 an element downstream of the female-specific 3' splice site of *doublesex*, and
-that complex commits the pre-mRNA [@dsx1993spliceenhancercomplex].
+that complex commits the pre-mRNA [@dsx1993spliceenhancercomplex]. That set of
+proteins is sufficient for the female pattern rather than merely associated with
+it. The individual SR proteins differ substantially in how well they join the
+committed complex [@dsx1993spliceenhancercomplex].
 
 *doublesex* also supplies the cleanest case anywhere of two isoforms doing
 opposite things. The female product represses male differentiation, and the
 male product represses female differentiation. Both are functional products of
-the same primary transcript [@dsx1989sexspecificpolypeptides].
+the same primary transcript [@dsx1989sexspecificpolypeptides]. The two products
+come from one primary transcript processed two ways at once, since the
+sex-specific messages differ by alternative splicing and alternative
+polyadenylation together, sharing a common 5' end and three common exons while
+differing in their 3' exons [@dsx1989sexspecificpolypeptides].
+
+### Sex-lethal blocks a site rather than activating one
+
+The top of the cascade works by subtraction, which is the opposite of how it is
+usually drawn.
+
+Deleting the male-used acceptor of *transformer* makes the female-specific
+acceptor fire with no Sex-lethal activity at all. What Sxl does is block the
+default site rather than switch on the female one
+[@tra1989splicesiteblockage]. The block is competitive occupancy of a splicing
+signal. Sxl binds the polypyrimidine tract of the non-sex-specific acceptor and
+keeps U2AF off it, which leaves U2AF free to activate the weaker female-specific
+acceptor instead [@sxl1993u2afantagonism].
+
+At the bottom of the chain the activators are unusually strong rather than
+typical. Measured by quantitative kinetics, Tra, Tra2 and 9G8 recruit the
+spliceosome far more effectively than other SR-family proteins, and more
+effectively than their serine-arginine content predicts
+[@sciabica2006traactivators].
+
+A chemical mark on the RNA contributes as well. Female flies mutant for either
+of the two m6A methyltransferase subunits *ime4* or *mettl14* accumulated both
+the male and the female Sxl isoform in heads, instead of the female one alone
+[@kan2017m6asexdetermination]. How much the switch leans on the m6A reader shows
+only under stress. With one wild-type copy of *Sxl* removed, homozygotes for the
+strong YT521-B allele NP3 produced just 16 per cent of the expected number of
+surviving adult females, against 74 and 71 per cent for two weaker alleles
+[@kan2017m6asexdetermination].
+
+### A loop that remembers which decision was made
+
+A developmental switch has to hold its position after the signal that set it has
+gone. In this cascade the memory is a splicing loop, and the loop is the part of
+the system an earlier draft of this chapter asserted without evidence.
+
+Sex-lethal drives the splicing of its own transcript. Expressing a female *Sxl*
+cDNA in transgenic males switched splicing from the male to the female pattern
+and trans-activated the endogenous gene, which closes a loop in which Sxl
+protein causes more Sxl protein to be made [@sxl1991positiveautoregulation]. The
+two states are then held by different means. The female state is kept by that
+autoregulation, while the male state is what the default machinery produces when
+no Sxl protein is present [@sxl1991positiveautoregulation].
+
+Autoregulation does not reuse the mechanism Sxl applies to *transformer*.
+Skipping the male exon of *Sxl* requires several cis elements both upstream and
+downstream of that exon, sitting too far from the splice sites for direct
+competition. Regulation acts mainly on the exon's 5' splice site rather than
+its 3' [@sxl1993autoregulationciselements].
+
+What that architecture buys is a threshold. A stochastic model built on the
+measured molecular details gives all-or-none bistable behaviour, so the loop
+both commits the cell and remembers the commitment. A small early pulse of Sxl
+protein leaves the loop switched off [@sxl2003theoreticalmodel]. That last
+result is a model rather than a measurement, and is recorded here as one.
+
+### Holding the male state takes work too
+
+The account above makes the male state passive, a default that needs no
+maintaining. A later result makes that description doubtful.
+
+Flies of both sexes carry a paralogue that competes for the same RNA sites Sxl
+uses. In gel-shift experiments the RNA-binding domains of Sxl and of
+Sister-of-Sex-lethal bound a uridine-rich element one at a time rather than
+together, and either protein could displace the other
+[@moschall2018ssx]. Removing that competitor lets the switch leak. Roughly 5 per
+cent of males hemizygous for a transposon insertion in *ssx* produced *Sxl*
+messages lacking the poison exon, which encode functional protein
+[@moschall2018ssx].
+
+The leak stops short of the phenotype, since splicing of the downstream target
+*transformer* stayed male in those animals [@moschall2018ssx]. So the male state
+is actively guarded at the top of the cascade and buffered further down, which is
+a more robust arrangement than a bare default and a less tidy one.
+
+### The memory sits elsewhere in other insects
+
+The cascade is often presented as the insect sex-determination pathway. It is
+better described as one arrangement of a conserved bottom half.
+
+On the tephritid model, *transformer* rather than *Sex-lethal* holds the state
+through an autoregulatory function. A comparative survey of twelve
+*Anastrepha* species led those authors to conclude that this arrangement was
+likely already present in the common ancestor of three tephritid genera
+[@ruiz2007traanastrepha]. In the honeybee the regulator may be what sharpens the
+decision rather than what makes it. Am-Tra2 is required for the female splice of
+*fem*, and is proposed also to push *fem* toward the non-productive male form
+when heteroallelic Csd protein is absent, a double role its authors read as
+stabilising the binary outcome [@nissen2012amtra2].
+
+That system also gives a direct demonstration that the splice choice carries the
+decision. Injecting 4 picograms of double-stranded RNA against *Am-tra2* per
+embryo produced male-spliced *Am-dsx* message in females, a product entirely
+absent from control embryos, which made only the female form
+[@nissen2012amtra2].
+
+## Sex determination in humans: WT1 and three amino acids {#sec-wt1}
+
+The fly cascade is a switch demonstrated by genetics. The clearest human case
+has a different character, because the evidence runs from a mutation that shifts
+an isoform ratio to a phenotype, with the direction of causation established in
+mouse afterwards.
+
+*WT1* uses two donor sites at one position, and the choice inserts or omits three
+amino acids. Inserting lysine, threonine and serine between the last two zinc
+fingers abolishes DNA binding and sends the protein to nuclear speckles. The
+shorter form acts as a transcriptional activator or repressor depending on
+context [@gregoire2023ktsovarian]. Three residues out of a protein of several
+hundred change what the molecule binds.
+
+### Frasier syndrome shifts a ratio without losing a protein
+
+Frasier syndrome is a splicing defect rather than a lost protein. Intronic point
+mutations at the exon 9 donor site stop the mutant allele from making the
+normally more abundant +KTS form. No mutant protein is produced, which those
+authors contrast with Denys-Drash syndrome, where the mutations are heterozygous
+and dominant-negative [@wt11998frasierktsratio].
+
+The shift has been measured in a patient. In a boy with focal segmental
+glomerulosclerosis and genital anomalies carrying the 1228+4 C-to-T mutation, the
++KTS to -KTS transcript ratio was 0.43, against 1.50 to 2.00 in healthy controls
+[@wt12000splicesiterarefsgs]. He was the only such carrier among 37 children
+screened [@wt12000splicesiterarefsgs], so the denominator here is one patient
+rather than a series.
+
+### The mouse experiments make the ratio causal
+
+A human ratio measured alongside a human phenotype leaves the direction of
+causation open. The mouse work settles the direction of causation.
+
+Raising -KTS to the level seen in Frasier syndrome made ovaries differentiate
+early regardless of the embryo's genetic sex. In XY embryos it suppressed
+*Sry* and produced male-to-female sex reversal, while losing -KTS blocked gonadal
+differentiation altogether [@gregoire2023ktsovarian]. That is an isoform ratio
+determining which gonad an embryo builds.
+
+Two further results from the same work sharpen what the ratio is doing. The
+gene's output changed composition rather than falling, since the knockout gonads
+held twice the -KTS message that controls did, while their total WT1 protein was
+no different [@gregoire2023ktsovarian]. This is a case where dosage of the gene
+is held constant and only the mix changes, which is the distinction
+@sec-how-functional turns on.
+
+Within that shift the active ingredient is the level of one isoform rather than
+the absence of the other. Embryos lacking +KTS but carrying one -KTS allele had
+more SRY-positive cells than embryos lacking +KTS with two -KTS alleles, so *Sry*
+is suppressed in proportion to how much -KTS is present and does not require
++KTS at all [@gregoire2023ktsovarian].
+
+### A counter-case the ratio model does not explain
+
+Two findings sit outside the account above, and neither has been resolved in
+this book's corpus.
+
+The ratio is not necessary for the syndrome. Two unrelated patients with Frasier
+syndrome carried new mutations in *WT1* exon 9 that left the +KTS to -KTS ratio
+unaltered, in the same exon where Denys-Drash mutations occur, which led those
+authors to treat the two syndromes as one condition
+[@wt11999exon9nonratio]. What those mutations do instead is not stated in the
+material available here.
+
+And the phenotype is sex-specific in a way the ratio alone does not predict. Two
+sisters carrying identical *WT1* intron 9 mutations differed in outcome. The
+46,XY proband had Frasier syndrome with gonadal dysgenesis, while her 46,XX
+sister had the same progressive kidney disease with entirely normal female
+development [@wt11999frasiersisters]. One molecular lesion produced a kidney
+phenotype in both and a gonadal phenotype in only one. Whatever the ratio does,
+it acts on a substrate that already differs between the two.
+
+Not every splicing mutation in a sex-development gene works this way, and the
+distinction matters for how such cases are counted. In a 46,XY patient the
+*NR5A1* change c.244G>T was predicted to be a missense substitution but left
+transcriptional activity intact. A minigene assay showed it instead deletes
+exon 2 or 19 nucleotides of it [@yu2021nr5a1splicing]. That is a
+loss-of-function splicing defect rather than an isoform-ratio case, and only the
+second kind bears on this chapter's argument.
 
 ## CD45: a switch on T cell activation {#sec-cd45}
 
-Developmental cascades set an isoform once, whereas CD45 runs the same machinery
-reversibly, as routine immune function.
+A developmental cascade sets an isoform once and leaves it. CD45 runs comparable
+machinery repeatedly, as routine immune function, and the evidence for what the
+switch achieves is thinner than the evidence that it happens.
 
 Human CD45 makes five transmembrane phosphatase isoforms differing only in their
 extracellular domains, by including or skipping variable exons 4, 5 and 6.
 Resting T cells carry long forms retaining two or three of those exons.
 Activated T cells drop most or all of them [@cd452005variableexonelements].
-Length is consequential: in T cell lines carrying a defined receptor, the short
-exon-null isoform typical of memory CD4 cells supported antigen recognition best
-[@cd451994isoformsrecognition].
 
-The splice choice tunes signalling sensitivity and leaves receptor specificity
-untouched, giving one receptor two response thresholds.
+What is conserved in that extracellular region is its shape rather than any
+binding site. Sequence identity across mammalian CD45 ectodomains is under 15
+per cent, against over 90 per cent for the ectodomains of type II receptor
+phosphatases. The conservation that does exist falls at the interfaces between
+domains rather than on any surface likely to bind a ligand
+[@chang2016cd45segregation]. That is the profile of a molecule selected for how
+far it holds something from the membrane.
+
+Direct measurement of the ectodomains supports that reading. Isolated
+ectodomains of both the long and the short isoform, anchored to a supported
+lipid bilayer, held their N-terminal tags further from the surface than the
+distance spanned by a T cell receptor bound to its ligand
+[@chang2016cd45segregation]. Both forms are tall enough to be excluded from a
+close contact, which is the usual explanation for why length should matter at
+all.
+
+### The ectodomain's effect on signalling is disputed
+
+An earlier draft of this chapter stated that the short isoform supports antigen
+recognition best, and that the splice choice tunes signalling sensitivity. The
+first half has a primary behind it, and so do three results pointing the other
+way.
+
+The supporting result: in T cell lines carrying a defined receptor, the short
+exon-null isoform characteristic of memory CD4 cells supported antigen
+recognition best [@cd451994isoformsrecognition]. An isoform comparison published
+the same year runs the other way. Raising CD45RABC, the long form of resting
+cells, increased CD4 thymic T cell proliferation, calcium mobilisation and
+phosphotyrosine. CD45R0 did neither and needed a second stimulus even to
+raise proliferation [@cd451994specificisoforms].
+
+Shortening the ectodomain does not simply raise signalling. A chimeric CD45
+carrying the large ectodomain of CD43 restored receptor signalling in CD45-null
+T cells, while chimeras carrying small ectodomains from other phosphatases did
+not. Both resting Lck activity and the receptor-induced rise in zeta-chain
+phosphorylation required a CD45 with a large ectodomain
+[@cd452003ectodomaingems].
+
+Two experiments then suggest the variable that matters is amount rather than
+identity. Transgenic mice expressed only CD45RABC or only CD45R0 on a CD45-null
+background. T cell development and peripheral function, tested by influenza and
+lymphocytic choriomeningitis virus challenge, tracked the amount of CD45 rather
+than which isoform supplied it [@cd452004tgisoformlevel]. Comparing
+CD45RO, CD45RB and CD45RABC transgenes directly, all three gave CD4 T cell
+hyper-reactivity at intermediate expression, so that effect follows dose rather
+than splice form [@cd452008isoformindependent].
+
+The mechanism usually invoked to explain why length should matter also has a
+timing problem. On bilayers presenting a high-affinity anti-CD3 single-chain
+antibody elongated with a CD43 stalk, CD45 was still largely colocalised with
+receptor microclusters at one minute and only partly segregated between three
+and ten minutes. A length-matched low-affinity ligand that cannot activate T
+cells kept CD45 colocalised throughout [@alaghbar2018cd45segregation]. On that
+evidence phosphatase exclusion can follow receptor triggering rather than cause
+it.
+
+The defensible statement is narrower than the one this chapter used to make. The
+splice choice changes the ectodomain, the ectodomain is built to set a height,
+and what that height does to signalling is contested, with at least one strand
+of evidence suggesting the dominant variable is how much CD45 is present.
+
+### hnRNPLL drives the switch, and costimulation induces it
+
+The regulation is better settled than the function, and it answers a question
+this chapter previously left open: what makes the switch run in one direction.
+
+A short-hairpin screen picked out hnRNPLL as a critical inducible regulator.
+Levels of it climbed on stimulation, it attached to CD45 message, and it proved
+both necessary and sufficient for the switch. Depletion and overexpression moved
+CD45RA and CD45RO in opposite directions [@cd452008hnrnpllregulation]. It is the
+major repressor of the variable exons, acting through two CA elements in exon 6,
+and its action is combinatorial rather than exon-by-exon
+[@preussner2012hnrnpllcd45]. The three variable exons are not controlled as a
+unit: in cells carrying a minigene with all three, hnRNP L repressed only exon
+4, hnRNP LL repressed exons 4 and 6. Exon 5 was never repressed on its own by
+either protein [@preussner2012hnrnplcd45].
+
+The repressor is induced rather than constitutive, and costimulation sets the
+pace. In sorted naive mouse CD4 T cells, hnRNPLL message stayed low with
+anti-CD3 alone and rose about twofold by 12 hours and about fivefold by 24 hours
+when anti-CD28 costimulation was added [@butte2012cd28splicing]. The protein
+followed the same pattern: negligible in unstimulated cells and detected only at
+72 hours with anti-CD3 alone, but present by 24 hours with costimulation, higher
+by 48 and sustained at 72 [@butte2012cd28splicing].
+
+Deranging the switch is not sufficient for a phenotype, which is a useful
+control on how much to read into it. Mice carrying a point mutation in hnRNPLL
+failed to silence *Ptprc* exons 4 to 6 and their plasmablasts could not
+downregulate B220. B cell development, mature B cell numbers, proliferation
+to receptor and Toll-like receptor stimuli, and plasmablast generation were all
+normal [@hnrnpll2021bcellnoimpact].
+
+### The switch runs backwards as well
+
+Calling the switch reversible needs evidence that it returns, and that evidence
+is recent.
+
+After live attenuated yellow fever vaccination, cells recognising one epitope
+were 21 per cent CD45RA positive at two weeks and 51.5 per cent at four weeks.
+Cells recognising a second epitope went from 22.5 per cent to 44.4 per cent over
+the same interval [@mcguire2025cd45reexpression]. Withdrawing antigen is
+what drives the return. Sorted CD45RO effector CD8 T cells from vaccinees held
+CD45RO when cultured with their peptide. Without it 20 to 70 per cent
+re-expressed CD45RA within four days, and hnRNP LL message was higher in the
+peptide-stimulated cells [@mcguire2025cd45reexpression].
+
+So the cycle closes, which the fly cascade's does not. One proposed human
+consequence of the switch does not hold up, though. The silent 77C-to-G change
+in CD45 exon 4, reported to raise CD45RA expression in carriers, was found in 10
+of 347 controls and 7 of 454 multiple sclerosis patients, with no association
+overall and none within clinical or HLA-DRB1*15 subgroups
+[@miterski2002ptprcms].
 
 ## Bcl-x: two products that oppose each other
 
@@ -124,16 +577,40 @@ against each other, with the short form actively opposing bcl-2 rather than
 merely failing to protect cells [@bclx1993dominantregulator].
 
 Bcl-xS lacks 63 amino acids spanning the conserved BH1 and BH2 regions, which is
-the stretch that makes Bcl-xL most resemble Bcl-2.
+the stretch that makes Bcl-xL most resemble Bcl-2 [@bclx1996santagonizesl]. The
+functional reversal reduces to one deleted block.
 
-The mechanism is shakier than the antagonism. The original characterisation
-found Bcl-xS binding Bcl-xL only weakly in vitro, observed no heterodimers in
-cells, and argued on that basis that its mechanism differs from other
-pro-apoptotic family members [@bclx1996santagonizesl]. A 2019 review states it
-as direct inhibition, with Bcl-xS binding Bcl-xL and Bcl-2 and thereby releasing
-Bak [@stevens2019bclxsplicing]. The antagonism is settled, but the heterodimer
-model rests on the review and not on the primary report, and should be cited
-that way.
+### Two primaries disagree about the mechanism
+
+The antagonism between the two products is settled. How it works has been
+answered twice, in opposite directions, and an earlier draft of this chapter
+reported the disagreement incorrectly by saying no primary report supported the
+heterodimer model.
+
+The report that established the antagonism argued against that model. Bcl-xS
+bound Bcl-xL only weakly in vitro compared with Bax, coimmunoprecipitation from
+mammalian cells showed no detectable heterodimers with other family members.
+Overexpressing Bcl-xS left Bax able to heterodimerise with Bcl-xL in vivo
+[@bclx1996santagonizesl]. Three years later the same question was answered the
+other way. Bcl-xS did form heterodimers with Bcl-xL in mammalian cells, its
+ability to block survival tracked its ability to heterodimerise, and deletion
+mutants retaining an intact BH3 domain kept that ability
+[@bclx1999bh3heterodimer]. A 2019 review states the mechanism as direct
+inhibition [@stevens2019bclxsplicing], which repeats the second of those results
+rather than resting on nothing.
+
+What happens downstream is better established than the first step. In mouse
+embryonic fibroblasts deficient in Bax, Bak, Apaf-1 or caspase-9, Bak but not
+Bax proved essential for Bcl-xS-induced apoptosis [@bclx2005bakessential]. How
+the short isoform reaches Bak was then answered without direct contact between
+them. In melanoma cells Bcl-xS coimmunoprecipitated reciprocally with the
+channel protein VDAC2 but showed no direct interaction with Bak, and
+overexpressing VDAC2 strongly reduced the killing [@bclx2012vdac2bak].
+
+Two decades of work on one isoform pair have produced a settled phenotype, a
+settled downstream requirement, and a first step still argued over. All four of
+those reports were read here as abstracts, which is a limit on how finely the
+disagreement can be characterised.
 
 ## Titin: splicing sets cardiac stiffness
 
@@ -169,9 +646,64 @@ can respond to at all [@holzmann2011fgfrigiiisplicing].
 
 Deleting IIIb in mouse is lethal, while deleting IIIc instead produces skeletal
 malformations [@holzmann2011fgfrigiiisplicing], so the two forms are not
-interchangeable. Usage splits by compartment, IIIb in epithelia and IIIc in
-mesenchyme, and a IIIb-to-IIIc switch in an epithelial tumour tracks with
-invasiveness in bladder and prostate cancer [@holzmann2011fgfrigiiisplicing].
+interchangeable.
+
+How absolute the discrimination is has been measured for one ligand pair. FGF7
+and FGF10 activate only the IIIb form of FGFR2. The crystal structure of FGFR2b
+bound to FGF10 traces that to contacts between divergent regions of FGF10 and
+two loops specific to the IIIb exon, with a rotation of the second
+immunoglobulin domain adding further contacts [@fgfr2003structuralspecificity].
+No comparable matrix across the rest of the family appears in this book's
+corpus. The general claim that the switch repartitions ligand responsiveness
+rests on a small number of measured pairs.
+
+### ESRP1 and ESRP2 make the choice
+
+Both regulators have been identified, and how they behave with respect to dose
+is unusual enough to be worth stating precisely, because the picture in cultured
+cells and the picture in the animal are not the same.
+
+In cultured cells the choice can be driven either way by one pair of proteins.
+Expressing either ESRP1 or ESRP2 in cells making FGFR2-IIIc switched endogenous
+splicing to the epithelial IIIb form. Knocking both down in cells making
+FGFR2-IIIb switched it to the mesenchymal form [@esrp2009fgfr2regulators].
+
+In the animal the same pair behaves as a threshold rather than a dial. Across
+nine genotype combinations, mouse epidermal Fgfr2-IIIb splicing did not shift at
+all until both *Esrp1* and *Esrp2* were deleted, so a single copy of *Esrp2*
+holds it. In the double knockout, Fgfr1, Fgfr2 and Fgfr3 each switched
+completely to the IIIc form [@bebee2015esrpprogram].
+
+The two paralogues are not equivalent in the animal. Mice with a germline
+*Esrp1* knockout were born with clefts of the lip and palate on both sides, in
+every one of more than forty embryos examined, and died the day they were born.
+*Esrp2*-null mice were viable and fertile with no detectable abnormality
+[@bebee2015esrpprogram]. The same factor is needed to build a kidney.
+Three-dimensional reconstruction of serially sectioned E13.5 embryos counted
+34.25 plus or minus 7.27 developing glomeruli in four *Esrp1*-null kidneys,
+against 49.75 plus or minus 7.13 in four wild-type littermates. That is 69 per
+cent of control at p equal to 0.0227 [@bebee2016esrp1kidney].
+
+### The tumour evidence points both ways
+
+Usage splits by compartment, with IIIb forms in epithelia and IIIc forms in
+mesenchyme. A IIIb-to-IIIc switch in an epithelial tumour is associated with
+increased invasiveness in bladder and prostate cancer
+[@holzmann2011fgfrigiiisplicing].
+
+A large prostate series complicates that for one of those tissues. On a tissue
+microarray, nuclear ESRP1 staining was seen in 38.6 per cent of 12,140
+interpretable cancers and nuclear ESRP2 in 41.9 per cent of 12,962. High
+staining for either went with advanced tumour stage, high Gleason grade, lymph
+node metastasis and early PSA recurrence, each at p below 0.0001
+[@freytag2020esrpprostate]. High ESRP is the condition under which the
+epithelial IIIb form is made, so that association runs opposite to the
+IIIb-to-IIIc account.
+
+The two results are not strictly contradictory, because the prostate study
+measured the splicing factors by immunohistochemistry and never measured FGFR2
+isoforms. It does mean the direction of the switch in prostate cancer should not
+be stated from splicing-factor levels alone.
 
 ## PKM: the switch tumours do not make
 
@@ -189,8 +721,122 @@ controls found PKM2 predominant in tumours and equally predominant in the
 matched normal tissue, and those authors reject the switch
 [@bluemlein2011pkmnoshift].
 
-Forcing the splice choice has a large phenotype, and tumours do not make the
-switch.
+### Four experiments, four different signs
+
+Deleting the tumour-associated isoform in mouse has now been done in several
+tissues, and the results do not agree on a direction.
+
+In mice carrying conditional *Apc* and *Pkm2* alleles, the fraction developing
+one or more colon tumours was no different with or without PKM2 at three weeks,
+at six weeks or later. PKM2 loss also left overall survival and nuclear
+beta-catenin staining unchanged [@lau2017pkm2colon]. The same null result holds
+in a second tumour type and a different driver genotype: in a *Kras* and *Trp53*
+model of pancreatic ductal adenocarcinoma, deletion of *Pkm2* changed neither
+overall survival nor tumour size. PKM1 appeared in its place without altering
+the number of proliferating cells [@hillis2018pkm2pdac].
+
+In one tissue the deletion pushed the phenotype the opposite way. Deleting
+*Pkm2* in Lgr5-positive intestinal stem cells significantly increased both the
+incidence and the size of colon tumours in a colitis-associated model, compared
+with vehicle-treated animals of the same genotype [@kim2019pkm2colitis].
+
+Forcing the splice choice has a large phenotype in a cell line, tumours do not
+make the switch. Removing the isoform in vivo gives no effect twice and a
+protective effect once. The lesson from this gene generalises past it. A
+phenotype that follows from forcing an isoform ratio in culture does not
+establish that the ratio is doing that job where it occurs naturally.
+
+## Two more cases at a ligand-binding surface
+
+The FGFR pattern, where a small alternative segment sits in a binding surface
+and changes what the protein will respond to, is not unique to that family. Two
+further cases are worth stating because the evidence in each reaches a different
+depth.
+
+### A splice insert that selects a receptor class
+
+Neurexins carry an alternatively spliced segment at splice site 4, and switching
+it changes which postsynaptic receptor responds.
+
+Conditional knockin mice that switch the segment on and off showed the insert in
+neurexin-1 raising NMDA receptor currents without touching AMPA receptor
+currents, the insert in neurexin-3 suppressing AMPA currents without touching
+NMDA currents. The insert in neurexin-2 doing neither, with synapse density
+unchanged throughout [@neurexin2019ss4receptors]. Three closely related proteins
+carrying the same insert therefore do three different things with it, and one
+does nothing measurable.
+
+The mechanism is recruitment of a secreted partner rather than a change to the
+synapse itself. Deleting cerebellin-2 completely abolished the effect of the
+presynaptic neurexin-1 and neurexin-3 splice variants on NMDA and AMPA receptor
+currents at CA1-to-subiculum synapses. None of these manipulations altered
+paired-pulse ratios, so release probability was untouched
+[@dai2022neurexincerebellin].
+
+### A risk allele that shifts a ratio
+
+The interleukin-7 receptor supplies a case where a common human variant changes
+a splice choice. Where the size of the effect has been measured and then
+reversed in culture.
+
+A polymorphism inside the alternatively spliced exon 6 of *IL7R* was associated
+with multiple sclerosis across four independent family-based or case-control
+datasets at a combined p of 2.9 times ten to the minus seven. It shifts the
+balance between the soluble and membrane-bound forms of the receptor
+[@il7r2007mssplicing]. In reporter cell lines differing only at that variant,
+exon 6 was skipped in 78.2 per cent of transcripts with the risk allele against
+57.2 per cent with the protective allele. Two antisense oligonucleotides
+brought the risk-allele line to 44.3 and 62.8 per cent
+[@galarzamunoz2022il7raso].
+
+The genetic half of that story has not held everywhere. A case-control study of
+200 patients and 200 healthy controls found no association between the exon 6
+variant and disease. A promoter variant in the same gene was significantly
+associated, and those authors describe their result as contrary to earlier
+reports [@il7r2014promoternotsplicing]. That study is small beside the four
+datasets behind the original association. It is recorded here because a single
+non-replication is part of the evidence rather than a footnote to it.
+
+## fruitless: one splice choice specifies a behaviour
+
+The strongest sufficiency experiment in this chapter concerns a behaviour rather
+than a cell or a tissue.
+
+Alleles of *fruitless* locked into the male or the female splice form showed
+that male splicing is necessary for male courtship and sexual orientation. That
+it is sufficient to make otherwise normal female flies court other females
+[@fru2005splicingcourtship]. The splice form rather than the chromosomal sex
+predicts the behaviour, which is as direct a demonstration as this chapter
+contains that an isoform choice can be the decision.
+
+### Three isoforms within the male programme
+
+Inside that programme the isoforms are not interchangeable either. Most
+*fruitless*-expressing cells make all three alternative zinc-finger isoforms, yet
+the strongest behavioural impairment came from losing FruC, whose mutants failed
+to copulate and lacked sine song. The sexually dimorphic cell shapes depended
+on FruC rather than on any other single isoform
+[@vonphilipsborn2014fruisoforms]. A repertoire can be both redundant in
+expression and non-redundant in function.
+
+## Splicing regulators as developmental switches
+
+In the cases above the isoform is the unit of interest. A related body of work
+changes the regulator instead, and it bears on this chapter with one caveat
+attached. Deleting a splicing factor changes many targets at once, so a
+phenotype belongs to the programme rather than to any single isoform.
+
+Three results show how far that approach reaches. CRISPR removal of the elements
+controlling *Pbx1* exon 7 in mouse embryonic stem cells forced expression of the
+neuronal Pbx1a isoform and switched on transcription of neuronal genes
+[@linares2015ptbp1pbx1]. That is a cis-element deletion rather than a gene
+deletion, which puts it closer to an isoform experiment. Ablating *Esrp1* gave
+cleft lip and palate, and removing *Esrp2* as well produced widespread
+developmental defects including failure to build a skin barrier
+[@bebee2015esrpdevelopment]. And two highly homologous regulators are not
+equivalent in vivo: mice lacking *Nova2* had no corpus callosum and specific
+axon outgrowth failures in ventral motoneurons, while mice lacking *Nova1* did
+not [@saito2016nova2axon].
 
 ## How much of this is functional {#sec-how-functional}
 
@@ -237,6 +883,17 @@ are switch-like, frame-preserving and conserved, and a further portion sets
 expression level through decay. Every case earlier in this chapter comes from
 the second group. Nothing here licenses treating an annotated isoform as a
 functional entity merely because it is annotated.
+
+One distinction runs through every case in this chapter and is worth naming
+before the chapter closes. Several of the examples above turn on a change in the
+*mix* of isoforms while the total output of the gene stays put. The WT1 mouse
+work established that directly, and the Dscam1 docking-site alleles were built
+to isolate it. Others turn out, on examination, to be changes in how much
+protein is present, which is the reading two CD45 transgene experiments support
+and the one the PKM deletions are hardest to escape. A gene-level measurement
+cannot tell those apart, and neither can a sentence that says a gene is
+"alternatively spliced in disease". The question is always whether the mix
+changed, and whether the mix changing is what did the work.
 
 ::: {.callout-note collapse="true"}
 ## The 95 per cent figure and its denominators

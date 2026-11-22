@@ -31,10 +31,17 @@ Working targets, not gates:
 
 | Unit | Now | Target |
 |---|---|---|
-| Whole book | about 22,500 words | 70,000 to 85,000 |
+| Whole book | about 37,500 words | 70,000 to 85,000 |
 | Chapter | 1,400 to 2,300 words | 5,500 to 6,500 |
 | Section | 150 to 350 words | 600 to 750 |
-| Claim records | 455 | roughly 1,500 |
+| Claim records | 705 | roughly 1,500 |
+
+Three chapters are now at target or past it: 12 at 5,131 words, 5 at 6,376 and 2
+at 7,087. Chapters 2 and 3 are a deliberate exception to the per-chapter
+target. "Across the tree of life" is the part of the book most worth growing, so
+depth there is limited by the evidence rather than by a word count, and the
+selection criterion is how well a case is evidenced rather than how many cases
+are covered.
 
 At the current rate of about one claim record per fifty words of prose, a
 chapter at target needs on the order of 120 records rather than 35.

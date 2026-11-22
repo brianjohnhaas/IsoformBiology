@@ -212,6 +212,21 @@ checks that the field is non-empty.
 
 Note the key is `pub_year`, not `year`.
 
+## Two records may share an anchor when the document is one line
+
+Records normally must not reuse the same `(doc_id, lines)` anchor, because two
+claims resting on one line usually means the same evidence counted twice.
+
+Abstract-only sources are the exception, and it is a common one. Where a
+document exists in the corpus only as its abstract, that whole abstract is often
+a single line labelled `L1`, so two genuinely different findings from it have
+nowhere else to sit. Chapter 2 has five such pairs. In every case the two records
+quote different spans and state different findings, which is what the rule
+actually cares about.
+
+When you do this, say so in a `note:` naming the other record. Two records
+sharing a line *and* quoting overlapping text is still double-counting.
+
 ## Quotes: slice, never retype
 
 Build the audit quote by re-reading the cited line and slicing between two ASCII

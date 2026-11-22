@@ -14,7 +14,7 @@ and several automated checks run on every change. Those checks compare numbers
 and wording. They cannot catch a sentence that says slightly more than its
 source, and some have got through and been corrected after the fact.
 
-Two limits on that traceability are worth knowing first. Forty-eight of the
+Two limits on that traceability are worth knowing first. Seventy-one of the
 sources behind this book were read as abstracts rather than as full text, and
 twenty-seven are preprints that have not been through review. Both sets are listed
 by name in [`research/ALLOCATION.md`](https://github.com/brianjohnhaas/IsoformBiology/blob/main/research/ALLOCATION.md),
