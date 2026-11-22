@@ -26,8 +26,9 @@ Deepening order, and why:
 | 1 | 12 proteoforms and drugs | Thinnest in the book at 1,426 words, carries the forward argument, and its central review is abstract-only so the research pass fixes that too |
 | 2 | 5 long reads | The reader's own field. STYLE.md promises full explanations of EM-based quantification, internal priming and read-support thresholds, and the book explains none of them |
 | 3 | 2 animals | **Done.** 1,865 to 7,087 words from 125 records. The full-text recovery pass failed: of thirteen abstract-only sources named for recovery, one was recovered, through the authors' own preprint. Abstract-only sources in this chapter rose from fifteen to thirty-eight, because deepening a chapter whose literature is largely pre-PMC adds abstracts |
-| 4 | 6 cancer | Widest audience, and the leads list CD44, RAC1b, EGFRvIII and BRAF splice variants as unanchored |
-| 5 | later | 1, 3, 4, 7, 8, 9, 10, 11, 13 |
+| 4 | 3 plants, fungi, protists | **Done.** 1,861 to 11,576 words from 236 records, the longest chapter in the book. Selection was by evidence tier rather than by coverage: a named gene, an isoform-specific perturbation, a measured phenotype. Transcriptome-wide prevalence counts went to leads unless they bound a named case. Abstract-only sources rose from one to thirty-one |
+| 5 | 6 cancer | Widest audience, and the leads list CD44, RAC1b, EGFRvIII and BRAF splice variants as unanchored |
+| 6 | later | 1, 4, 7, 8, 9, 10, 11, 13 |
 
 A chapter is not finished when it hits a word count. It is finished when its
 sections cover their subject and its paragraphs hold more than one source each.
@@ -133,8 +134,8 @@ wang2008alternative                  01, 02, 04
 ## What was actually read, and in which version
 
 The preface says every statement traces to the lines it was read from. For a
-large minority of sources those lines are an abstract, and for seventeen the
-document is a preprint. Counted 2026-11-22, and regenerable:
+large minority of sources those lines are an abstract, and for some the document
+is a preprint. Recounted 2026-11-22 after the chapter 3 pass, and regenerable:
 
 ```
 # preprint-only in this corpus (emitted as @misc by build_bib.py)
@@ -150,9 +151,9 @@ print(len(ab)); print(*sorted(ab), sep='\n')
 EOF
 ```
 
-**Twenty-four sources are preprint-only here**, up from seventeen before the
-deepening passes began, and two more were read as preprints while being cited
-as their journal versions, giving twenty-six sources whose text was unreviewed
+**Twenty-nine sources are preprint-only here**, up from seventeen before the
+deepening passes began, and ten more were read as preprints while being cited
+as their journal versions, giving thirty-nine sources whose text was unreviewed
 when it was read. The chapter 5 pass added most of the increase, because the
 quantification and benchmarking literature it drew on is substantially
 unreviewed: six of the thirteen sources behind its quantification records are
@@ -180,31 +181,42 @@ does not mean unpublished.
 preprint, and chapter 10 rests a large share of its argument on it: VAR-004,
 VAR-006, VAR-007, VAR-008 and VAR-024 were all read from preprint lines.
 
-**Nine sources were read in one version and are cited as another.** The record
+**Ten sources were read in one version and are cited as another.** The record
 and the bibliography carry a journal DOI, but the lines read were a preprint:
-`kerry2024rps24hypoxia` (FEBS Letters), `betz2024mycorrhizal` (Nature
-Communications), `alkhafaji2024highthroughput` (Nature Biotechnology),
-`abood2024longread` (AJHG), `islam2026ezh2` (Genes & Development),
-`patowary2024neocortexisoforms` (Science), `cohen2025whole` (Cell), plus the two
-above. This is a provenance defect no gate can see: `verify_claims.py` checks a
+`buhring2024moypd1` (Communications Biology), `capella2020heh1` (Journal of Cell
+Science), `chen2023context`, `dong2022selfavoidance`, `dressano2020irr` (Nature
+Plants), `dscam2021splicingbias`, `james2024rve2` (New Phytologist),
+`kim2022brflc2` (Plant Molecular Biology), `rolfs2021proteoformclass` and
+`tung2019quantifying`. `betz2024mycorrhizal` left this list on 2026-11-22: its
+Nature Communications version turned out to be in the corpus as `PMC11333574`,
+a `lookup title` missed it because the published title differs from the
+preprint's, and both its records were re-anchored on the published text. This is a provenance defect no gate can see: `verify_claims.py` checks a
 quote against the document it was taken from, which is the preprint, and
 `build_bib.py` emits the journal. Either confirm each number against the
 published text or cite the preprint.
 
-**Forty-two sources are abstract-only**, and none appears with fuller access
-anywhere else in the records. Fifteen are pre-2000 and fall under the corpus
-limitation recorded in `research/04-technology-arc.yml`. The other twenty-seven
-do not, and they are concentrated:
+**A hundred and one sources are abstract-only**, and none appears with fuller
+access anywhere else in the records. The count more than doubled across the
+chapter 2 and chapter 3 passes, for the reason given in the deepening table:
+deepening a chapter whose literature is largely pre-PMC adds abstracts. They are
+concentrated:
 
 ```
+02-animals             38
+03-plants-fungi-other  31
 04-technology-arc      18
-02-animals             15
+12-proteoforms-drugs    7
 07-neuro-mendelian      5
 06-cancer               2
-03-plants-fungi-other   1
 10-variants-qtl         1
-12-proteoforms-drugs    1
 ```
+
+In chapter 3 the concentration is in plant flowering time. Both 2013 reports on
+FLM, the tobacco *N* and Arabidopsis *RPS4* resistance primaries, the flax *L6*
+negative result, the tomato *Bs4* negative result, the HAB1 isoform pair and the
+whole JAZ10 case are abstract-only. Each of those is a case the chapter presents
+as evidence for an isoform doing a job, so full text for them is the single most
+useful thing a contributor could supply to that chapter.
 
 Chapter 2 is the worst case and STYLE.md names it the reference implementation.
 Its Dscam1 section stands on abstracts for homophilic binding, stochastic
@@ -214,7 +226,7 @@ are abstracts as well. Chapter 6 calls the H3B-8800 phase 1 outcome "the
 counterweight to everything above" from an abstract. ENDEAR's 37 of 73 and
 SpliceAI's 9 to 11 per cent are abstracts too.
 
-Chapters 2 and 4 now say so in their first-draft callouts. The ordered fix is
+Chapters 2, 3 and 4 now say so in their first-draft callouts. The ordered fix is
 full text for chapter 2 first, then chapter 7, then chapter 4, whose
 abstract-only count is largest but whose claims are mostly historical firsts
 rather than live quantities.

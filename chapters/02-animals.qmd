@@ -5,9 +5,9 @@
 
 Written from `research/02-animals.yml` and not yet reviewed by a second reader.
 
-Two limits are worth carrying through the chapter. Thirteen of its sources were
-read as abstracts rather than as full text, and the Dscam1 material leans heavily
-on one laboratory, which @sec-one-lab states where it matters. Several Dscam1
+Two limits are worth carrying through the chapter. Thirty-eight of its sources
+were read as abstracts rather than as full text, and the Dscam1 material leans
+heavily on one laboratory, which @sec-one-lab states where it matters. Several Dscam1
 records are anchored on the authors' own preprints because no full text of the
 journal version exists in this book's corpus.
 :::
