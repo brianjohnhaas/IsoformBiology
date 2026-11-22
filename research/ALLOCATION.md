@@ -12,6 +12,26 @@ figures. Section identifiers are fixed here before drafting, so that a
 cross-reference written in chapter 1 still resolves when chapter 9 is written
 six commits later.
 
+## Depth per chapter
+
+`CONTRIBUTING.md` has the policy and the arithmetic. In short: the book is a
+quarter of the size a book of this kind should be, the 35-claim figure that
+shaped every chapter was a research-pass budget rather than a decision, and
+there is no cap now.
+
+Deepening order, and why:
+
+| Order | Chapter | Why it is here |
+|---|---|---|
+| 1 | 12 proteoforms and drugs | Thinnest in the book at 1,426 words, carries the forward argument, and its central review is abstract-only so the research pass fixes that too |
+| 2 | 5 long reads | The reader's own field. STYLE.md promises full explanations of EM-based quantification, internal priming and read-support thresholds, and the book explains none of them |
+| 3 | 2 animals | STYLE.md calls it the reference implementation and it has the worst provenance: fifteen abstract-only sources, most of the Dscam1 section among them |
+| 4 | 6 cancer | Widest audience, and the leads list CD44, RAC1b, EGFRvIII and BRAF splice variants as unanchored |
+| 5 | later | 1, 3, 4, 7, 8, 9, 10, 11, 13 |
+
+A chapter is not finished when it hits a word count. It is finished when its
+sections cover their subject and its paragraphs hold more than one source each.
+
 ## Contested topics
 
 | Topic | Claims | Home | Section id | Referenced from |

@@ -20,6 +20,53 @@ from papers. This makes close paraphrase structurally unlikely rather than a
 matter of individual discipline, and it means every sentence in the book can be
 traced to the lines it came from.
 
+## How deep a section goes
+
+**Depth is set by the subject, and the book is sized like a book.** A specialist
+scientific book of this kind runs 70,000 to 85,000 words. This one stands at
+about 22,500, which is a quarter of one, so every chapter is expected to grow by
+roughly three to four times rather than to be polished at its current length.
+
+Working targets, not gates:
+
+| Unit | Now | Target |
+|---|---|---|
+| Whole book | about 22,500 words | 70,000 to 85,000 |
+| Chapter | 1,400 to 2,300 words | 5,500 to 6,500 |
+| Section | 150 to 350 words | 600 to 750 |
+| Claim records | 455 | roughly 1,500 |
+
+At the current rate of about one claim record per fifty words of prose, a
+chapter at target needs on the order of 120 records rather than 35.
+
+### There was a cap, and it was an accident
+
+Ten of the twelve research files hold between 34 and 38 claims. That is a quota,
+not a property of the literature, and it was never an editorial decision: it was
+a working budget inside each research pass that became the book's shape because
+nobody wrote it down. Four files record the consequence in their own leads,
+naming findings that were "cut at the 36-claim cap", "trimmed at the 35-claim
+cap" and "dropped for the claim cap", each with a document id and line numbers
+and each marked reusable without re-reading.
+
+The two files that ignored the cap are the two best chapters. Chapter 11 ran to
+55 records and is the deepest in the book; chapter 9 ran to 44.
+
+So there is no cap. A section stops when the subject is covered, and a chapter
+that needs 150 records gets 150.
+
+### Depth without synthesis makes the book worse
+
+304 of the book's 358 cited paragraphs cite exactly one source. The shape is
+topic sentence, one study, bracket, moral, and it is the clearest remaining sign
+that the prose was assembled from records rather than written by someone who had
+read the field.
+
+Adding records at that rhythm multiplies the defect. A deepening pass has to
+hold two or three sources against each other inside a paragraph, say where they
+agree, and say what differs between them. A section that triples in length and
+keeps one source per paragraph has got longer without getting better.
+
 ## Writing
 
 Read [STYLE.md](STYLE.md) before drafting. It covers the voice the book aims
