@@ -6,8 +6,9 @@ Written from `research/09-catalogs.yml` and not yet reviewed by a second
 reader.
 :::
 
-Long reads settled whether unannotated transcripts are real. They did not
-settle what a reference annotation is for, and that is now the harder question.
+Long reads settled whether unannotated transcripts are real, without settling
+what a reference annotation is for, and that second question is now the harder
+one.
 Depth alone could inflate reference transcript sets by millions of models, so
 the decision facing every catalogue is editorial rather than technical
 [@monzo2025challenges].
@@ -18,7 +19,7 @@ Clinical reporting needed a default transcript and had none. MANE Select names
 exactly one representative transcript per human protein-coding gene, identical
 in exon structure between Ensembl/GENCODE and RefSeq [@morales2022mane].
 
-The scale of the problem it fixed is measurable. When the two annotation groups
+When the two annotation groups
 first compared their independent choices, they agreed on the same transcript
 for only 14 per cent of protein-coding genes [@morales2022mane]. By the June
 2021 release MANE had a Select transcript for 97 per cent of human
@@ -47,10 +48,10 @@ MANE Select curation [@rodriguez2021appris].
 dominant. The two convenience heuristics are the ones people reach for when no
 curated set is to hand.](../figures/representative-transcript.svg){#fig-representative width=100%}
 
-Benchmarking against the dominant isoform in proteomics puts numbers on the
-cost of the shortcuts. Agreement was about 96.1 per cent for APPRIS core
-principal isoforms and 94.6 per cent for MANE Select, against 86.4 per cent for
-simply taking the longest isoform and 70.1 per cent for taking the
+Benchmarking against the dominant isoform in proteomics puts numbers on the cost
+of the shortcuts. Agreement was about 96.1 per cent for APPRIS core principal
+isoforms and 94.6 per cent for MANE Select. The convenience heuristics gave 86.4
+per cent for simply taking the longest isoform and 70.1 per cent for taking the
 most-expressed transcript. Those four rates are computed over different gene
 subsets, and a randomly chosen isoform agreed about 30 per cent of the time
 [@pozo2022appris].
@@ -77,18 +78,18 @@ human and 132,000 new mouse lncRNA transcript models in a single annotation
 generation, which the project describes as roughly three-fold and six-fold
 increases [@mudge2024gencode].
 
-Annotation is not purely additive. Over the same period more than 37,000
-existing human and mouse models were modified, while protein-coding counts
-moved only incrementally [@mudge2024gencode].
+Annotation is not purely additive, and over the same period more than 37,000
+existing human and mouse models were modified, while protein-coding counts moved
+only incrementally [@mudge2024gencode].
 
-The instability is long-standing and quantified. Across the first 24 GENCODE
-releases, only 54,840 of the 251,614 transcript models ever annotated, about
-21.7 per cent, kept the same annotation in every release. Biotype reassignment
-and outright deletion affected the rest [@jalali2016gencode]. Over those same
-releases the human transcript count grew from 87,852 to 199,005, and most of
-the added models were not protein-coding: 43,415 protein-coding at v1 against
-79,865 at V24, with 119,140 transcripts of other biotypes at V24
-[@jalali2016gencode].
+The instability is long-standing and has been quantified. Across the first 24
+GENCODE releases, only 54,840 of the 251,614 transcript models ever annotated,
+about 21.7 per cent, kept the same annotation in every release. Biotype
+reassignment and outright deletion affected the rest [@jalali2016gencode]. Over
+those same releases the human transcript count grew from 87,852 to 199,005, and
+most of the added models were not protein-coding. Protein-coding models went
+from 43,415 at v1 to 79,865 at V24, alongside 119,140 transcripts of other
+biotypes at V24 [@jalali2016gencode].
 
 GENCODE is candid about what it does and does not know. Its coding-isoform
 annotation is deliberately permissive, since an alternative transcript is
@@ -117,7 +118,7 @@ Numbers taken from either need re-checking against the peer-reviewed version.
 :::
 
 ENCODE4 built its long-read transcriptome from 264 PacBio libraries drawn from
-81 human and mouse tissue or cell-line samples, which reduce to 49 unique
+81 human and mouse tissue or cell-line samples. Those reduce to 49 unique
 tissues or cell types once mouse developmental time-points are collapsed
 [@reese2023encode4].
 
@@ -137,29 +138,27 @@ assumption, naming it explicitly before testing it [@reese2023encode4].
 
 That three-quarters figure sits above the one in @sec-how-functional, where
 about 35 per cent of genes switch which transcript dominates between tissues
-[@gonzalezporta2013dominanttranscript].
-The two are measuring different things. The earlier number counts genes whose
-dominant transcript changes between primary tissues in short-read data; this
-one counts genes with no single top transcript stable across a long-read panel
-that includes cell lines. Neither is wrong, and quoting either without its
-panel is.
+[@gonzalezporta2013dominanttranscript]. The two numbers are measuring different
+things. The earlier one counts genes whose dominant transcript changes between
+primary tissues in short-read data. This one counts genes with no single top
+transcript stable across a long-read panel that includes cell lines. Neither is
+wrong, and quoting either without its panel is.
 
 Other catalogues give the same shape at different scales. The GTEx long-read
 survey covered 88 samples on Nanopore and added just under 100,000 previously
-unannotated transcripts to already-annotated genes
-[@glinos2021transcriptome]. In that dataset 127,478 transcripts were quantified
-across 27,461 genes, and 77 per cent had intron chains matching nothing in the
-GENCODE release used, with intron retention strongly enriched among the novel
-set [@glinos2021transcriptome].
+unannotated transcripts to already-annotated genes [@glinos2021transcriptome].
+In that dataset 127,478 transcripts were quantified across 27,461 genes, and 77
+per cent had intron chains matching nothing in the GENCODE release used. Intron
+retention was strongly enriched among the novel set [@glinos2021transcriptome].
 
 The TRAILS immune atlas catalogued 159,369 isoforms from 17,496 loci across 29
-human immune cell subsets, with 78 per cent carrying either a novel splice-site
-combination or an outright novel splice site relative to GENCODE
-[@inamo2024trails]. It also reports its own ceiling. The whole atlas comes from
-one healthy donor. A single independent PBMC sample from a second individual
-reproduced 85.0 per cent of the isoforms expressed in PBMC, and only 30.6 per
-cent of the catalogued isoforms across all cell types. That is why the resource
-ships as both an exploratory and a validated set [@inamo2024trails].
+human immune cell subsets. Of those, 78 per cent carried either a novel
+splice-site combination or an outright novel splice site relative to GENCODE
+[@inamo2024trails]. It also reports its own ceiling, since the whole atlas comes
+from one healthy donor. A single independent PBMC sample from a second
+individual reproduced 85.0 per cent of the isoforms expressed in PBMC, and only
+30.6 per cent of the catalogued isoforms across all cell types. That is why the
+resource ships as both an exploratory and a validated set [@inamo2024trails].
 
 Non-human catalogues start lower and behave the same. One multiplexed Nanopore
 run over 32 bovine tissues yielded 99,044 transcript isoforms at 31,824 loci.
@@ -173,9 +172,9 @@ models to 155,875 after reproducibility filtering. Of those, 41,297 were novel
 and 31,097 were absent from the GTEx, ENCODE4 and CHESS3 catalogues
 [@clavellrevelles2025ancestry].
 
-The gap is not ancestry-neutral. Population-specific transcripts found only in
-European samples were enriched for already-annotated structures, while those
-found only in non-European samples were enriched for novel ones
+The gap is not ancestry-neutral, because population-specific transcripts found
+only in European samples were enriched for already-annotated structures, while
+those found only in non-European samples were enriched for novel ones
 [@clavellrevelles2025ancestry]. The annotation is a record of who has been
 sequenced.
 
@@ -190,11 +189,11 @@ alignments from 1,007 public human transcriptomes, 603 PacBio and 404 Nanopore,
 across 37 tissue contexts [@zheng2026isopedia].
 
 Changing the denominator changes the answer by more than an order of magnitude.
-Re-scoring the same benchmark sample against a population of long-read
-transcriptomes instead of against a reference annotation cut the apparent novel
-fraction from roughly 27 to 52 per cent down to 2 to 5 per cent, a reduction of
-up to 26-fold [@zheng2026isopedia]. The transcripts did not change. The
-question did.
+One benchmark sample was re-scored against a population of long-read
+transcriptomes instead of against a reference annotation. Its apparent novel
+fraction fell from roughly 27 to 52 per cent down to 2 to 5 per cent, a
+reduction of up to 26-fold [@zheng2026isopedia]. The transcripts are the same in
+both scorings, and only the question changed.
 
 ## What benchmarking established {#sec-lrgasp}
 
@@ -209,7 +208,8 @@ and accuracy drive correct transcript structures, while raw depth drives
 accurate abundance estimates, so one library design cannot be optimal for both
 [@pardopalacios2024lrgasp].
 
-The reproducibility numbers are stark. In one human cell line nearly 280,000
+The reproducibility numbers across pipelines are stark. In one human cell line
+nearly 280,000
 novel isoforms were reported in total, of which only 743 were called
 consistently across pipelines, while 242,125 were seen by only one or two
 [@pardopalacios2024lrgasp].
@@ -243,14 +243,14 @@ The successor catalogue shows what an inclusion rule does to a number. By
 excluding anything judged non-functional, CHESS 3 lists 19,839 protein-coding
 genes with 99,202 transcripts, about five per gene, against roughly 110,000
 protein-coding transcripts in the contemporaneous GENCODE release
-[@varabyou2023chess3]. The gene counts agree. The transcript counts diverge
-because the projects are answering different questions.
+[@varabyou2023chess3]. The gene counts agree, while the transcript counts
+diverge because the projects are answering different questions.
 
 A single right annotation is incoherent as a goal, because the uses conflict.
 Maximal transcript representation helps gene-level read assignment and
 transcript discovery, and degrades isoform-level quantification by spreading
 reads across near-identical models [@monzo2025challenges].
 
-That is the state of the field. The catalogues are no longer limited by what
-can be observed. They are limited by having to decide, for each use, which
+That is the state of the field. The catalogues can now observe more than they
+can justify including, and each use needs its own decision about which
 observations belong in a reference at all.

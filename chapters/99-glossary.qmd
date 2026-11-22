@@ -86,8 +86,8 @@ transcripts match at intron-chain level when every intron has identical
 coordinates and the counts agree, which implies that all internal exons match
 and says nothing about the terminal boundaries
 [@pertea2020gffutilities]. *The term is in wide use and no paper coins it; the
-earliest operational definition located for this book is the one cited.
-Flagged for review.* See @sec-transcript-classes and
+earliest operational definition located for this book is the one cited, and the
+entry is flagged for review.* See @sec-transcript-classes and
 [the comparison walkthrough](../walkthroughs/intron-chain-comparison.qmd).
 
 **Intron retention**
@@ -180,9 +180,10 @@ sequencing depth.
 <!-- numbers-ok: the dates below describe the resources themselves, not
      claims drawn from papers, so they have no claim record to match. -->
 
-This is a biology book. It does not catalogue software, benchmark tools, or teach
-pipelines. That work is done well elsewhere, and duplicating it would both
-waste effort and date the book quickly. What exists as of November 2026:
+This is a biology book, and it does not catalogue software, benchmark tools, or
+teach pipelines. That work is done well elsewhere, and duplicating it would both
+waste effort and date the book quickly. The resources below are what existed as
+of November 2026:
 
 ### Tool catalogues
 
@@ -203,8 +204,8 @@ waste effort and date the book quickly. What exists as of November 2026:
 
 ### Databases and knowledge bases
 
-Where this book makes a biological case, these are where a reader goes to look up
-a specific gene or isoform.
+Where this book makes a biological case, these are where a reader goes to look
+up a specific gene or isoform.
 
 - [**APPRIS**](https://appris.bioinfo.cnio.es/). Principal isoform selection,
   plus annotation of known functional alternative isoforms.

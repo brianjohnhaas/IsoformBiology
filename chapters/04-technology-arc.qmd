@@ -8,13 +8,11 @@ reader.
 
 Every claim about alternative splicing has an assay behind it, and the assay
 fixes what kind of claim it can be. A method that measures a length can
-establish that a transcript is discontinuous. It cannot establish that the
+establish that a transcript is discontinuous without establishing that the
 discontinuity is regulated. A method that counts junctions can establish
 prevalence, and cannot establish which junctions occurred in the same molecule.
-
-This chapter follows that constraint rather than the chronology. Each section
-covers one generation of method, what it licensed, and the specific thing it
-could not reach.
+The sections below follow that constraint rather than the chronology, taking one
+generation of method at a time with the specific thing it could not reach.
 
 ## Seeing a discontinuity {#sec-1977}
 
@@ -22,9 +20,9 @@ Splicing was established by a physical measurement rather than by a sequence.
 Berget, Moore and Sharp located adenovirus hexon mRNA on the viral genome by
 examining RNA-DNA hybrids in the electron microscope [@berget1977spliced].
 
-What carried the inference was a length. About 160 nucleotides at the mRNA's 5'
-end failed to pair with the single-stranded DNA encoding the rest of the
-message [@berget1977spliced].
+The inference rested on a length of unpaired RNA. About 160 nucleotides at the
+mRNA's 5' end failed to pair with the single-stranded DNA encoding the rest of
+the message [@berget1977spliced].
 
 A second group reached the same place by a different hybridisation geometry.
 R-loops formed between viral DNA and unfractionated polysomal RNA resolved
@@ -32,8 +30,8 @@ three short segments from distant map positions, fused into one leader of 150
 to 200 nucleotides [@chow1977amazing].
 
 Two unlike physical assays put the same segments at the same coordinates.
-Neither could give a sequence or an exact splice boundary. What they licensed
-was that a transcript can be discontinuous.
+Neither could give a sequence or an exact splice boundary, so the claim they
+licensed was the narrow one that a transcript can be discontinuous.
 
 ## Showing that the choice is regulated {#sec-regulated}
 
@@ -61,10 +59,10 @@ gene. RT-PCR was the conventional approach, and retrospectives written three
 decades later still name it as such [@park2018expanding].
 
 Solution hybridisation with nuclease protection was the more quantitative
-alternative to RNA blot analysis. Its own practitioners recorded the catch. At
-a locus making several mRNAs by alternative splicing, the protected-fragment
-pattern from a uniformly labelled cRNA probe became hard to interpret
-[@nucleaseprotection1989solution].
+alternative to RNA blot analysis. Its own practitioners recorded the catch,
+which was that at a locus making several mRNAs by alternative splicing the
+protected-fragment pattern from a uniformly labelled cRNA probe became hard to
+interpret [@nucleaseprotection1989solution].
 
 An assay can be sensitive without being diagnostic. In the S1 nuclease
 configuration best suited to demonstrating a splice, unspliced and spliced RNA
@@ -101,8 +99,8 @@ raised the estimate again, to 42 per cent of human genes or more
 Then the dependence was demonstrated rather than suspected. With sufficient EST
 coverage, nearly every gene examined showed some alternative form. Requiring a
 variant above five per cent with statistical support collapsed the yield to 17
-to 28 per cent of genes [@kan2002selecting]. One dataset, two defensible numbers, and the threshold is the whole
-difference between them.
+to 28 per cent of genes [@kan2002selecting]. One dataset therefore supports two
+defensible numbers, and the threshold is the whole difference between them.
 
 By 2004 the counter-argument was in print. Cassette exons seen only in EST
 databases differed systematically from cross-species conserved ones, and a
@@ -126,20 +124,19 @@ probes for 203,672 exons and for 178,351 junctions, across 17,939 genes
 [@castle2008differential]. That coverage is large, and it is fixed before the
 experiment begins.
 
-Two limitations are worth carrying forward. Arrays had a structural blind spot
-by event class, because alternative 5' and 3' splice sites shift the message by
-a region often too small to interrogate with a probe
-[@wang2008alternative]. The splicing index, on which most array splicing calls
-rested, assumes that a gene's exons move together when its transcription
+Arrays had a structural blind spot by event class, because alternative 5' and 3'
+splice sites shift the message by a region often too small to interrogate with a
+probe [@wang2008alternative]. The splicing index, on which most array splicing
+calls rested, assumes that a gene's exons move together when its transcription
 changes. That assumption was shown not to hold on real exon-array data,
 substantially inflating the apparent number of alternatively spliced exons for
 technical reasons [@gaidatzis2009overestimation].
 
 ## RNA-seq arrives {#sec-rnaseq-arrives}
 
-RNA-seq removed the design step. The 2008 mouse reference datasets rested on 41
-to 52 million mapped 25-base reads from poly(A)-selected RNA of three tissues.
-What they yielded was a junction census: about 145,000 distinct splices, with
+RNA-seq removed the design step, and the 2008 mouse reference datasets rested on
+41 to 52 million mapped 25-base reads from poly(A)-selected RNA of three
+tissues. They yielded a junction census of about 145,000 distinct splices, with
 roughly 3,500 genes expressing one or more alternate internal splice
 [@mortazavi2008mapping].
 
@@ -150,9 +147,9 @@ study behind the near-universality claim sequenced 12 to 29 million 32-base
 cDNA fragments per sample, from ten human tissues and five mammary epithelial
 or breast cancer cell lines [@wang2008alternative].
 
-The figure everyone quotes needs its provenance attached. The claim that about
-95 per cent of multi-exon human genes are alternatively spliced is not a pure
-RNA-seq result. Its source states that the estimate came from combining
+The most-quoted figure needs its provenance attached, because the claim that
+about 95 per cent of multi-exon human genes are alternatively spliced is not a
+pure RNA-seq result. Its source states that the estimate came from combining
 mRNA-Seq with EST and cDNA sequence data [@pan2008deepsurveying].
 
 The companion number is an extrapolation over a stated denominator. Multi-exon
@@ -161,9 +158,9 @@ sigmoid was fitted. The asymptote lands near 98 to 100 per cent of multi-exon
 genes [@wang2008alternative].
 
 The same paper carries a more conservative figure bounded by a threshold.
-Requiring a minor isoform to exceed 15 per cent of the gene's output in at
-least one sample gives 92 per cent of multi-exon genes, which those authors
-rescale to about 86 per cent of all human genes [@wang2008alternative].
+Requiring a minor isoform to exceed 15 per cent of the gene's output in at least
+one sample gives 92 per cent of multi-exon genes. Those authors rescale that to
+about 86 per cent of all human genes [@wang2008alternative].
 
 ![Ten years of estimates of how many human genes are alternatively spliced. The
 denominators differ, the abundance thresholds differ, and two of the values are
@@ -178,35 +175,35 @@ What that figure counts, and under which conditions, is taken up in
 
 The full-length reconstruction problem was named in the EST era. The
 high-throughput methods of the day returned detailed information about short
-fragments rather than complete forms, and recovering whole isoform structures
-from a fragment mixture was posed as a separate inference task
+fragments only. Recovering whole isoform structures from a
+fragment mixture was posed as a separate inference task
 [@xing2004multiassembly].
 
-Short reads inherited it. The Cufflinks authors state the limitation in their
-own opening paragraph: assembly and abundance estimation are hard because a
-read generally cannot be attributed to one isoform [@trapnell2010transcript].
-They also record what they had done instead in earlier work, which was to
-quantify genes without allocating reads among alternative isoforms, while still
-reporting evidence that several forms were co-expressed
-[@trapnell2010transcript].
+Short reads inherited that problem, and the Cufflinks authors state the
+limitation in their own opening paragraph: assembly and abundance estimation are
+hard because a read generally cannot be attributed to one isoform
+[@trapnell2010transcript]. They also record what they had done instead in
+earlier work, which was to quantify genes without allocating reads among
+alternative isoforms, while still reporting evidence that several forms were
+co-expressed [@trapnell2010transcript].
 
-A community assessment measured the cost. Best-method transcript-level recovery
-fell as the genome got more complex, from 56 to 59 per cent of spliced
-protein-coding transcripts in *C. elegans*, to 43 per cent in *D.
+A community assessment put numbers on the cost. Best-method transcript-level
+recovery fell as the genome got more complex. It ran from 56 to 59 per cent of
+spliced protein-coding transcripts in *C. elegans*, to 43 per cent in *D.
 melanogaster*, to 21 per cent in *H. sapiens* [@steijger2013assessment]. The
 same assessment separated the two failure modes and found both active. For most
 transcripts not every constituent exon was detected, and even where all exons
-were reported the methods frequently could not link them into a complete
-isoform [@steijger2013assessment].
+were reported the methods frequently could not link them into a complete isoform
+[@steijger2013assessment].
 
 Read length buys assignment, and the amount is measurable. Comparing two
 Illumina paired-end libraries from the same cell line, 25.04 per cent of
 assignable 75-base reads matched exactly one annotated isoform, against 32.98
 per cent at 262 bases [@cho2014highresolution].
 
-Depth does not substitute for length. Reads that map to several places stay
-common however deeply a library is sequenced, so more data does not remove that
-uncertainty [@zheng2022nonidentifiability]. The limitation
+Depth does not substitute for length, since reads that map to several places
+stay common however deeply a library is sequenced, so more data does not remove
+that uncertainty [@zheng2022nonidentifiability]. The limitation
 is formal as well as practical. Different sets of transcript abundances can
 generate the observed reads with equal likelihood, so the maximum-likelihood
 answer is not unique, and the underlying true expression cannot be determined
@@ -219,5 +216,5 @@ whole molecule [@park2018expanding]. That is where PSI comes from, and
 @sec-psi gives what it costs.
 
 Thirty years of method development had converged on a measurement that
-answers a smaller question very well. What the smaller question leaves out is a
+answers a smaller question very well. The smaller question leaves out the
 molecule, and getting it back took a longer read, which is @sec-one-molecule.

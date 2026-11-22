@@ -26,16 +26,17 @@ plants despite wide variation in plant genome composition
 
 A normalised deep-coverage survey of Arabidopsis put alternative splicing at
 61.2 per cent of intron-containing genes, in flower and seedling tissue grown
-without stress. Those authors treat the figure as a floor
+without stress, and those authors treat the figure as a floor
 [@marquez2012arabidopsis].
 
 ### A different mixture of events {#sec-class-balance}
 
-The flavour differs as much as the amount. Cassette exons predominate in animals, while intron
-retention is the more frequent class in other taxa [@grutzmann2013fungal]. The
-five event names are defined in @sec-event-classes. Arabidopsis follows the second pattern. Intron retention
-was the single commonest event class in that survey, at roughly two fifths of
-everything the transcript assembly detected [@marquez2012arabidopsis].
+The flavour differs as much as the amount. Cassette exons predominate in
+animals, while intron retention is the more frequent class in other taxa
+[@grutzmann2013fungal]. The five event names are defined in @sec-event-classes.
+Arabidopsis follows the second pattern, with intron retention the single
+commonest event class in that survey, at roughly two fifths of everything the
+transcript assembly detected [@marquez2012arabidopsis].
 
 The same authors then qualified their own result. Most retained introns were
 supported by far fewer reads than the junction that removes them, and about 73
@@ -44,8 +45,9 @@ events overstates how much retained-intron RNA a plant cell is actually holding.
 
 ### Temperature read through splicing
 
-Flowering time in Arabidopsis is set partly by how two genes are spliced. FLM is the better known. FLM transcripts were cloned and sequenced at
-three growth temperatures. The share of non-canonical isoforms, which mostly
+Flowering time in Arabidopsis is set partly by how two genes are spliced. FLM is
+the better known of them, and its transcripts were cloned and sequenced at three
+growth temperatures. The share of non-canonical isoforms, which mostly
 carry premature stop codons, rose from 30 per cent at 16 degrees to over 50 per
 cent at 27 degrees [@capovilla2017flm].
 
@@ -60,7 +62,7 @@ produce early flowering, so the effect depends on dose
 MAF2 arrived at the same trick independently. At low temperature its abundant
 variant encodes a protein that partners SVP to repress flowering. Warming shifts
 the balance toward an intron-retaining variant carrying a premature stop, whose
-product can neither bind SVP nor repress [@airoldi2015maf2]. One gene family
+product can neither bind SVP nor repress [@airoldi2015maf2], so one gene family
 evolved thermosensory splicing twice.
 
 ### Cold, antisense transcripts and the clock
@@ -82,19 +84,20 @@ orthologues of LHY and PRR7, which puts the mechanism in a monocot crop as well
 
 ### Stress, and where the signal comes from
 
-Salt stress raises total alternative splicing. An Arabidopsis experiment
-sequenced to roughly 200-fold coverage found about 49 per cent of
+Salt stress raises the total amount of alternative splicing. An Arabidopsis
+experiment
+sequenced to roughly 200-fold coverage found about 49 per cent of its
 intron-containing genes alternatively spliced under salt. Of those, 10 per cent
-showed a significant stress-driven shift in isoform ratio [@ding2014salt]. Maize grown through realistic daily temperature cycles did the
-same as maximum daily temperature rose. Retained introns and skipped exons
-increased most, and the splicing regulators were themselves among the genes
-most often affected, SR45a among them [@li2021maize].
+showed a significant stress-driven shift in isoform ratio [@ding2014salt]. Maize
+grown through realistic daily temperature cycles did the same as maximum daily
+temperature rose. Retained introns and skipped exons increased most, and the
+splicing regulators were themselves among the genes most often affected, SR45a
+among them [@li2021maize].
 
 Light changes splicing in Arabidopsis roots, and not as a direct response to
-light. The signal traces to sugars made by photosynthesis in the shoot, acting through
-the TOR kinase pathway. Those authors describe it as a shoot-to-root route
-coordinating splicing across the whole plant [@riegler2021light]. Splicing state
-in one organ is set by metabolic status in another.
+light. The signal traces to sugars made by photosynthesis in the shoot, acting
+through the TOR kinase pathway. Those authors describe it as a shoot-to-root
+route coordinating splicing across the whole plant [@riegler2021light].
 
 ### Isoform alleles that breeders care about
 
@@ -122,8 +125,8 @@ intron are structurally plain, typically two exons and one intron. The same
 reanalysis nonetheless reports pervasive use of alternative splice sites within
 that small set [@schreiber2015yeast].
 
-Some of that simplicity was acquired. The widely conserved alternatively spliced
-gene SKI7/HBS1 was replaced in *Saccharomyces* by a pair of duplicated,
+Some of that simplicity was acquired, in that the widely conserved alternatively
+spliced gene SKI7/HBS1 was replaced in *Saccharomyces* by a pair of duplicated,
 intronless genes during whole-genome doubling, converting one isoform choice
 into two separate loci [@hurtig2020budding]. Gene duplication and alternative
 splicing can reach the same destination.
@@ -149,11 +152,11 @@ neoformans* reaching 18 per cent. Basidiomycota averaged 8.6 per cent against
 6.0 per cent for Ascomycota, a difference those authors call not significant
 [@grutzmann2013fungal].
 
-Within that dataset the rate rises with structural complexity. It runs from
-0.26 per cent in the mostly single-celled Saccharomycotina and
-Taphrinomycotina, through 2.3 per cent in Mucoromycotina and 7.2 per cent in
-the filamentous Pezizomycotina, to 8.6 per cent in the fruiting-body-forming
-Basidiomycota [@grutzmann2013fungal]. *Cryptococcus* is intron-rich by any measure, carrying
+Within that dataset the rate rises with structural complexity. It runs from 0.26
+per cent in the mostly single-celled Saccharomycotina and Taphrinomycotina,
+through 2.3 per cent in Mucoromycotina and 7.2 per cent in the filamentous
+Pezizomycotina, to 8.6 per cent in the fruiting-body-forming Basidiomycota
+[@grutzmann2013fungal]. *Cryptococcus* is intron-rich by any measure, carrying
 40,946 introns, with 99.5 per cent of its expressed genes containing at least
 one [@janbon2014cryptococcus].
 
@@ -183,22 +186,23 @@ counting that deliberately ignores intron retention put alternative splicing at
 22.6 per cent of annotated genes in uninduced parasites, against roughly 5 per
 cent from earlier studies built on reconstructing transcript models. The same
 authors note that detection depends heavily on sequencing depth, and that their
-own data probably captured well under half of all junctions [@yeoh2015toxoplasma].
-The organism did not change between those two numbers.
+own data probably captured well under half of all junctions
+[@yeoh2015toxoplasma], and the organism did not change between those two
+numbers.
 
 Splicing regulation in the same parasite is a virulence determinant. Deleting
 the splicing factor SR2 cut brain cyst burden in infected mice by about 80 per
-cent, from roughly 216 cysts per brain in wild type to 46 in the knockout.
-Complementation restored the wild-type level [@wu2023sr2].
+cent, from roughly 216 cysts per brain in wild type to 46 in the knockout, and
+complementation restored the wild-type level [@wu2023sr2].
 
 Ciliates run splicing close to its physical minimum. Every *Paramecium* intron
 falls in a narrow 25 to 45 base pair range, among the shortest known, which
 those authors read as a functional limit for spliceosomal recognition
 [@bondarenko2016ciliate].
 
-Trypanosomes rearranged the problem altogether. Trypanosome messenger RNAs were
-shown to share an identical 35-nucleotide leader at their 5' ends, present on
-many and probably all of them [@parsons1984splicedleader]. Genes are transcribed
+Trypanosomes rearranged the problem altogether, and their messenger RNAs were
+shown to share an identical 35-nucleotide leader at the 5' end, present on many
+and probably all of them [@parsons1984splicedleader]. Genes are transcribed
 polycistronically, and individual mature mRNAs are carved out of that transcript
 by spliced-leader trans-splicing, obligatorily coupled to cleavage and
 polyadenylation in the intergenic regions [@kolev2026transsplicing]. The
@@ -207,8 +211,8 @@ exon content.
 
 ## Whether any of this tracks complexity {#sec-trend}
 
-The green lineage gives a baseline. *Chlamydomonas reinhardtii*, which split
-from land plants around a billion years ago, shows alternative splicing at 498
+*Chlamydomonas reinhardtii*, which split from land plants around a billion years
+ago, gives the green lineage a baseline, showing alternative splicing at 498
 transcriptional units and 611 events, about 3 per cent of its gene count
 [@labadorf2010chlamydomonas].
 

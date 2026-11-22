@@ -6,20 +6,15 @@ Written from `research/01-foundations.yml` and not yet reviewed by a second
 reader.
 :::
 
-One gene, one protein was always an approximation. It stopped being a useful one
-as soon as transcripts could be counted directly. The question that replaced it
-is harder to answer: a gene produces several transcripts, and which of them
-matter, and why?
+One gene, one protein was always an approximation, and it stopped being a useful
+one as soon as transcripts could be counted directly. The harder question that
+replaced it is which of a gene's several transcripts matter, and why.
 
-Three processes generate those transcripts. Exons can be spliced in different
-combinations, transcription can start in different places, and polyadenylation
-can end the molecule in different places. Each of the three affects at least
-half of human protein-coding genes [@carrion2023alternativetranscripts]. So
-isoform is not a synonym for splice variant, and this book keeps the two terms
-apart.
-
-The rest of this chapter fixes the vocabulary and the measurements that the
-later chapters use without re-explaining.
+Three processes generate those transcripts: exons spliced in different
+combinations, transcription starting in different places, and polyadenylation
+ending the molecule in different places. Each of the three affects at least half
+of human protein-coding genes [@carrion2023alternativetranscripts]. So isoform
+is not a synonym for splice variant, and this book keeps the two terms apart.
 
 ## The machine that removes an intron {#sec-mechanism}
 
@@ -30,8 +25,9 @@ ordered series of intermediates named E, A, B and C, and only the E complex
 forms without ATP [@borao2021earlyspliceosome].
 
 The two ends of an intron are recognised by different machinery, in a definite
-order. U1 engages the 5' splice site. SF1 and U2AF recognise the 3' splice site
-together, and U2 arrives later by displacing SF1 [@borao2021earlyspliceosome].
+order. U1 engages the 5' splice site, while SF1 and U2AF recognise the 3' splice
+site together and U2 arrives later by displacing SF1
+[@borao2021earlyspliceosome].
 
 What usually gets written as a single 3' splice site is three sequence elements
 working together. The branchpoint supplies the acceptor nucleotide for the first
@@ -55,7 +51,7 @@ Splice site motifs degenerated over evolution in a way that permitted regulated
 splicing, and spliceosome complexity increased alongside them. Budding yeast
 splices mainly constitutively, humans alternatively
 [@borao2021earlyspliceosome]. Constitutive and alternative splicing are two
-regimes of one mechanism, not two mechanisms.
+regimes of one mechanism.
 
 ### A second spliceosome, running in parallel
 
@@ -70,11 +66,11 @@ minor 3' splice site is read by ZRSR2 in place of the U2AF heterodimer. U12
 signals are much better conserved, and they support correspondingly less
 alternative splicing [@akinyi2021minorspliceosome].
 
-The share is not settled. A review of the same system puts U12-type introns
-below 0.4 per cent of all human introns, and names the machinery that removes
-them as U11, U12, U4atac, U5 and U6atac [@elmarabti2021minorintron]. Both
-figures are small. The difference between them matters only where a count of
-minor introns is being used as a denominator.
+A review of the same system puts the share lower, below 0.4 per cent of all
+human introns, and names the machinery that removes them as U11, U12, U4atac, U5
+and U6atac [@elmarabti2021minorintron]. Both figures are small, and the
+difference between them matters only where a count of minor introns is being
+used as a denominator.
 
 ## The five event names, and what they leave out {#sec-event-classes}
 
@@ -87,16 +83,16 @@ real annotations contain many patterns none of the five describes
 
 Across three human reference annotations the four simple classes fall in the
 same rank order. Exon skipping is commonest, then alternative donor, then
-alternative acceptor, with intron retention last. The denominator is stated
-rather than assumed: events with a simple splicing pattern, involving at most two
+alternative acceptor, with intron retention last. Those authors state their
+denominator: events with a simple splicing pattern, involving at most two
 alternative splice sites, and uncorrelated with a variable transcription start
 or polyadenylation site [@sammeth2008nomenclature].
 
-The omitted remainder is large. Patterns too complex for any of the five names
-run from 23.18 per cent of annotated events in RefSeq to 35.4 per cent in
-Ensembl [@sammeth2008nomenclature]. Roughly a quarter to a third of annotated alternative splicing
-has no textbook label. Which classes dominate also varies by lineage, and
-@sec-class-balance gives the plant and fungal picture.
+Patterns too complex for any of the five names run from 23.18 per cent of
+annotated events in RefSeq to 35.4 per cent in Ensembl
+[@sammeth2008nomenclature]. Roughly a quarter to a third of annotated
+alternative splicing has no textbook label. Which classes dominate also varies
+by lineage, and @sec-class-balance gives the plant and fungal picture.
 
 Mutual exclusivity is rarer than its prominence in the literature suggests.
 Mutually exclusive exons make up 12 to 14.5 per cent of the complex event pool
@@ -112,11 +108,10 @@ selection against in-frame stop codons [@sammeth2008nomenclature].
 
 One class is different in kind from the other four. An unspliced intron seen in
 polyadenylated RNA does not establish that a splicing decision was taken. It is
-compatible with a finished mRNA. It is equally compatible with an intermediate
-accumulating ahead of a slow rate-limiting step, or with a transcript
-deliberately stalled while a later decision is pending
-[@jacob2017intronretention]. Intron retention is the only one of the five whose
-observation leaves the question open.
+equally compatible with a finished mRNA, with an intermediate accumulating ahead
+of a slow rate-limiting step, and with a transcript deliberately stalled while a
+later decision is pending [@jacob2017intronretention]. Intron retention is the
+only one of the five whose observation leaves the question open.
 
 ## Where isoform differences actually sit {#sec-ends}
 
@@ -155,12 +150,12 @@ phenomenon.
 Percent spliced-in, written PSI or Ψ, is the fraction of a gene's mRNAs that
 contain a given exon. It was defined on read densities rather than on raw read
 counts: the density of inclusion reads, divided by the sum of the inclusion and
-exclusion densities [@wang2008alternative]. The metric asks nothing about full transcripts, which is why
-the short-read era settled on it. @sec-short-read-limit gives the constraint
-that made that necessary.
+exclusion densities [@wang2008alternative]. The metric asks nothing about full
+transcripts, which is why the short-read era settled on it.
+@sec-short-read-limit gives the constraint that made that necessary.
 
-It hides one thing. A single PSI value sits across two separate splicing acts,
-one at each end of the intron. The intron-centric reformulation splits it into a
+A single PSI value also conflates two separate splicing acts, one at each end of
+the intron. The intron-centric reformulation splits it into a
 5' and a 3' index, one per intron end, so that the choice made at the donor and
 the choice made at the acceptor are scored separately
 [@pervouchine2013introncentric]. Where the two
@@ -194,9 +189,9 @@ makes.
 Transcript identity has to be settled mechanically, and the unit that makes it
 checkable is the intron chain. Two transcripts match at intron-chain level when
 every intron has identical coordinates and the counts agree, which implies that
-all internal exons match. The definition says nothing about where the transcript starts and ends.
-Terminal boundaries are deliberately left outside it [@pertea2020gffutilities],
-and @sec-three-axes shows what sits in that gap.
+all internal exons match. The definition says nothing about where the transcript
+starts and ends. Terminal boundaries are deliberately left outside it
+[@pertea2020gffutilities], and @sec-three-axes shows what sits in that gap.
 
 Long-read classification is built on the same comparison. A full splice match
 reproduces every splice junction of some reference transcript. An incomplete
@@ -238,8 +233,8 @@ counted as alternatively spliced, where alternatively spliced means producing
 two or more expressed isoforms, including the decay targets themselves
 [@french2020asnmdsurvey].
 
-An isoform that never reaches protein can still be the reason the gene's protein
-level is what it is.
+The amount of protein a gene makes is therefore set partly by isoforms that
+never become protein.
 
 ## How many isoforms does a gene have {#sec-scale}
 

@@ -4,10 +4,10 @@ Every chapter in this book is written to be read straight through. Where a
 methodological point is worth understanding but not required to follow the
 argument, it lives here instead, and the chapter links to it in one sentence.
 
-Walkthroughs are allowed to be slow. They can work through a numeric example
+Walkthroughs are allowed to be slow, so they can work through a numeric example
 step by step, show the intermediate state, and restate a definition that a
 chapter would assume. That is their purpose, and it is why the main text does
 not have to do it.
 
-If you are reading a chapter and hit a term you want unpacked, check here
-first. If it is not covered and should be, open an issue.
+Check here first for a term in a chapter that you want
+unpacked, and open an issue if it is not covered.

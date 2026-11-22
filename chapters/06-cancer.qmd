@@ -15,15 +15,16 @@ up.
 The size of the effect is measurable, and several groups have measured it in
 different ways.
 
-In treatment-naive oesophageal tissue, between 42 and 46 per cent of the genes
-called as isoform switches during progression from low-grade to high-grade
-Barrett's dysplasia showed no significant difference in total gene-level
-expression between the same two conditions [@zhang2022esophageal].
+Treatment-naive oesophageal tissue was scored for isoform switches during
+progression from low-grade to high-grade Barrett's dysplasia. Between 42 and 46
+per cent of the genes called that way showed no significant difference in total
+gene-level expression between the same two conditions [@zhang2022esophageal].
 
-A reanalysis of twelve TCGA cancer types using differential transcript
-usage, in the sense of @sec-dtu, found that roughly a quarter of the tumour-side transcripts that changed in
-usage were not themselves called differentially expressed. Only a few per cent
-of the normal-side transcripts behaved that way [@dolgalev2023switching].
+A reanalysis of twelve TCGA cancer types using differential transcript usage, in
+the sense of @sec-dtu, found that roughly a quarter of the tumour-side
+transcripts that changed in usage were not themselves called differentially
+expressed. Only a few per cent of the normal-side transcripts behaved that way
+[@dolgalev2023switching].
 
 Among the isoform pairs distinguishing basal-like from luminal breast tumours
 in TCGA, 49 of 229 pairs showed no accompanying difference in gene-level
@@ -37,10 +38,10 @@ between mutant and wild-type cells barely moved [@liang2018srsf2].
 
 ### Two reasons to discount part of that
 
-Not every called switch is an exchange of one isoform for another. In about
-half of the switches that were not concordant in usage and expression, one
-partner transcript did not change expression at all, which those authors say
-makes the event better described as a single-transcript expression change
+Not every called switch is an exchange of one isoform for another. In about half
+of the switches that were not concordant in usage and expression, one partner
+transcript did not change expression at all. Those authors say that makes the
+event better described as a single-transcript expression change
 [@dolgalev2023switching].
 
 Relative transcript measurements also inherit every coverage bias in the
@@ -72,7 +73,7 @@ cohort [@kesarwani2017cryptic].
 
 How mutant SF3B1 actually chooses its cryptic sites is contested. Those same
 authors count three published and mutually incompatible mechanistic models
-[@kesarwani2017cryptic]. None should be presented as settled.
+[@kesarwani2017cryptic], none of which should be presented as settled.
 
 ### U2AF1 and a changed preference at one position
 
@@ -85,17 +86,17 @@ the intron-exon boundary. In HeLa cells expressing the S34F mutant, 57 per cent
 of competing CAG-versus-TAG 3' splice site pairs shifted, against 36 per cent
 with a wild-type construct [@brooks2014u2af1].
 
-The rule is a preference. The same authors note that many UAG 3' splice sites
-were unaffected, and that nonsense-mediated decay of aberrant products could
-make affected sites look unaffected [@brooks2014u2af1].
+The rule is a preference, and the same authors note that many UAG 3' splice
+sites were unaffected, and that nonsense-mediated decay of aberrant products
+could make affected sites look unaffected [@brooks2014u2af1].
 
 ### SRSF2 and a re-weighted enhancer code
 
 The SRSF2 P95 hotspot works by re-weighting an exonic splicing enhancer code
 rather than by abolishing binding. The mutant RNA-binding domain binds the CCNG
 motif with three- to four-fold higher affinity than GGNG, where the wild-type
-domain treats the two about equally [@liang2018srsf2]. One changed binding preference is enough to redistribute splicing across the
-transcriptome.
+domain treats the two about equally [@liang2018srsf2]. One changed binding
+preference is enough to redistribute splicing across the transcriptome.
 
 Reproducibility across SRSF2 studies is a problem. When nine published RNA-seq
 datasets were overlapped at the level of differentially spliced gene lists, not
@@ -114,13 +115,13 @@ enhanced haematopoietic stem cell self-renewal, whereas published hotspot
 knock-ins of Sf3b1, Srsf2 and U2af1 all impaired it under comparable
 transplantation assays [@inoue2021minor].
 
-Their target sets differ too. Mis-splicing of the kinase MAP3K7 is specific to
-SF3B1 among the spliceosome genes, and the same isogenic K562 panel showed
-extensive cryptic 3' splice site use in the SF3B1 mutant and not in SRSF2- or
-U2AF1-mutant cells [@lieu2021map3k7]. Even that case is partial. Its authors
-claim the misspliced kinase accounts only partly for the severe anaemia of
-SF3B1-mutant MDS, and explicitly not for ring sideroblast formation
-[@lieu2021map3k7].
+Their target sets differ as well as their phenotypes. Mis-splicing of the kinase
+MAP3K7 is specific to SF3B1 among the spliceosome genes. The same isogenic K562
+panel showed extensive cryptic 3' splice site use in the SF3B1 mutant and not in
+SRSF2- or U2AF1-mutant cells [@lieu2021map3k7]. Even that case is partial,
+since its authors claim the misspliced kinase accounts only partly for the
+severe anaemia of SF3B1-mutant MDS, and explicitly not for ring sideroblast
+formation [@lieu2021map3k7].
 
 ## Isoform-level inactivation that exome sequencing cannot see {#sec-lztr1}
 
@@ -145,12 +146,13 @@ splicing-regulatory flanks of exons than in exon cores. The depletion was
 absent in tumour suppressors, where losing function is advantageous
 [@hurst2017depletion].
 
-The candidate pool is large. A pan-cancer screen of 8,320 exomes across 22
-tumour types nominated 22,948 synonymous single-nucleotide variants as
-post-transcriptionally consequential, distributed over 2,042 genes
+A pan-cancer screen of 8,320 exomes
+across 22 tumour types nominated 22,948 synonymous single-nucleotide variants as
+post-transcriptionally consequential, spread over 2,042 genes
 [@teng2020synonymous].
 
-One case shows the clinical stakes. A synonymous c.936T>G change in BAP1 exon
+A synonymous c.936T>G change in
+BAP1 exon
 11 of a clear-cell renal carcinoma caused exon skipping and loss of BAP1
 protein. The patient died at 56 months, against a TCGA median of 117 months for
 the group her exome had placed her in [@niersch2021bap1]. That report also
@@ -164,18 +166,18 @@ used.
 Two cases show an isoform, rather than a gene, defining the target.
 
 MET exon 14 skipping is reached by structurally diverse DNA lesions converging
-on one RNA outcome. The underlying mutations sat mostly at the splice donor
-side of exon 14, at 57 per cent, or the acceptor side, at 25 per cent. In the
-phase 1 expansion cohort, crizotinib produced a confirmed objective response in
-32 per cent of 65 evaluable patients, short of the 60 to 80 per cent seen with
+on one RNA outcome. The underlying mutations sat mostly at the splice donor side
+of exon 14, at 57 per cent, or the acceptor side, at 25 per cent. In the phase 1
+expansion cohort, crizotinib produced a confirmed objective response in 32 per
+cent of 65 evaluable patients. That is short of the 60 to 80 per cent seen with
 matched therapy for other lung cancer drivers [@drilon2020met].
 
 AR-V7 is the opposite shape of problem, an isoform that therapy creates.
 Immunohistochemistry across hundreds of prostate specimens found AR-V7 protein
 in under one per cent of untreated primary tumours, and in about three quarters
-of samples taken after androgen deprivation, rising further after abiraterone
-or enzalutamide [@sharp2019arv7]. The drug target disappears from the protein
-the drug binds.
+of samples taken after androgen deprivation. The share rose further after
+abiraterone or enzalutamide [@sharp2019arv7]. The receptor form that dominates
+after treatment was almost absent before it.
 
 ## Neoantigens, and how much survives a wider reference {#sec-neoantigens}
 
@@ -195,17 +197,17 @@ Tumour-enriched junctions were not enriched in the cancer gene census, which
 those authors take as evidence that much of the extra splicing diversity is
 passenger noise from degraded splicing fidelity [@kahles2018splicing].
 
-The tumour-specificity itself does not survive a wider comparison. Averaged
-over cancer types, 80.6 per cent of junctions called cancer-specific against
-tissue-matched normals turn up in other adult non-cancer tissues, and a further
+The tumour-specificity itself does not survive a wider comparison. Averaged over
+cancer types, 80.6 per cent of junctions called cancer-specific against
+tissue-matched normals turn up in other adult non-cancer tissues. A further
 share of those absent from all adult normals appear in developmental samples
-[@david2020junctions]. The denominator is most of the argument.
+[@david2020junctions]. The choice of normal comparison sets most of that number.
 
 The functional evidence has been taken as far as T cell receptors. Clones
 reactive to aberrant GNAS and RPL22 junctions were isolated and killed tumour
 cells. Naturally occurring reactivity in patients was detected in only one of
-three glioma patients tested [@kwok2025public]. The mechanism works; the
-in-patient evidence is thin.
+three glioma patients tested [@kwok2025public], so the mechanism works while the
+in-patient evidence stays thin.
 
 ## Therapeutics {#sec-cancer-therapeutics}
 
@@ -236,4 +238,4 @@ view of cancer has changed what counts as a driver without yet changing what
 counts as a treatment.
 
 Aiming a drug at one isoform directly is a different proposition, and it has
-already succeeded. @sec-isoform-selective gives that case.
+already succeeded, as @sec-isoform-selective describes.

@@ -9,8 +9,8 @@ reader.
 This is where isoform biology has gone furthest into the clinic.
 Splicing-directed drugs hold approval in two diseases, a cryptic exon has
 become a pathology-specific marker, and a splice-modulating oligonucleotide has
-been designed for a single patient. The same chapter contains the clearest evidence
-that the field does not agree on how large the underlying phenomenon is.
+been designed for a single patient. It is also where the field disagrees most
+sharply about how large the underlying phenomenon is.
 
 ## Why the brain {#sec-brain-splicing}
 
@@ -55,7 +55,7 @@ phenotype is the ratio rather than either isoform.
 
 ## TDP-43, and exons that should not exist {#sec-tdp43}
 
-TDP-43's role in splicing is negative. It suppresses the splicing of
+TDP-43's role in splicing is negative, in that it suppresses the splicing of
 non-conserved cryptic exons and so preserves intron integrity. When it is
 depleted, those exons enter mRNAs, frequently disrupting translation and
 triggering nonsense-mediated decay, and that repression is already impaired in
@@ -68,9 +68,10 @@ mutation. When TDP-43 levels fall, its binding to the first intron is lost, a
 cryptic polyadenylation site there is used, and the gene produces a truncated
 transcript that is not functional [@melamed2019stathmin2].
 
-The association is close to absolute. Exon 2a was present in laser-captured
-lumbar motor neurons from every one of thirteen sporadic ALS patients examined,
-and absent from all seven non-ALS individuals tested [@melamed2019stathmin2].
+The association with disease is close to absolute. Exon 2a was present in
+laser-captured lumbar motor neurons from every one of thirteen sporadic ALS
+patients examined. It was absent from all seven non-ALS individuals tested
+[@melamed2019stathmin2].
 
 The lesion carries the phenotype rather than accompanying it. Re-expressing
 stathmin-2 from a construct lacking the cryptic polyadenylation site restored
@@ -78,11 +79,12 @@ axonal regeneration after axotomy in TDP-43-depleted human iPSC motor neurons,
 even though TDP-43 affects the levels or splicing of many RNAs
 [@melamed2019stathmin2].
 
-There is a reason this took so long to find. Neither the cryptic polyadenylation signal nor the three GU-rich TDP-43 binding
-sites of human STMN2 intron 1 exist in the corresponding mouse intron. The
-abnormal processing is correspondingly not reproduced in TDP-43 transgenic or
-TDP-43-deficient mice [@melamed2019stathmin2]. The mechanism is absent from the
-standard model organism.
+There is a reason this took so long to find. Neither the cryptic polyadenylation
+signal nor the three GU-rich TDP-43 binding sites of human STMN2 intron 1 exist
+in the corresponding mouse intron. The abnormal processing is correspondingly
+not reproduced in TDP-43 transgenic or TDP-43-deficient mice
+[@melamed2019stathmin2], so the mechanism is absent from the standard model
+organism.
 
 ### UNC13A
 
@@ -140,11 +142,12 @@ of the FIREFISH and SUNFISH trials [@belancic2025smatrials].
 
 ## Duchenne: skipping an exon on purpose {#sec-dmd}
 
-The therapeutic logic came from reading a natural experiment. DMD deletions that leave the reading frame intact generate variants able to
-produce a functional if truncated dystrophin, and the milder Becker phenotype.
-That is read as showing that the nature of the deletion determines severity
-[@lim2017eteplirsen]. Removing more sequence can therefore help, if what is
-removed restores the frame.
+The therapeutic logic came from reading a natural experiment. DMD deletions that
+leave the reading frame intact generate variants able to produce a functional if
+truncated dystrophin, and the milder Becker phenotype. That is read as showing
+that the nature of the deletion determines severity [@lim2017eteplirsen].
+Removing more sequence can therefore help, if what is removed restores the
+frame.
 
 Four exon-skipping antisense drugs hold FDA approval on that basis. These were
 accelerated approvals resting mainly on a biomarker, modest increases in
@@ -176,15 +179,18 @@ literature as one group's summary of previous studies rather than as a
 measurement they report, so it should not be counted as an independent estimate
 [@soemedi2017mapsy].
 
-Splice-region variants have been apportioned directly. A de novo mutation
-burden analysis across 7,833 developmental disorder probands and their parents
-gave 73 per cent of the pathogenic contribution to the canonical dinucleotides,
-and 27 per cent to flanking non-canonical positions [@lord2019splicesites].
+Splice-region variants have been apportioned between positions directly. A de
+novo mutation burden analysis across 7,833 developmental disorder
+probands and their parents gave 73 per cent of the pathogenic contribution to
+the canonical dinucleotides, and 27 per cent to flanking non-canonical positions
+[@lord2019splicesites].
 
-That non-canonical share is itself contested by more than twofold. The same paper's discussion sets its trio-based 27 per cent against three
-others: roughly 30 per cent from HGMD, roughly 43 per cent from another
-curation, and roughly 17 per cent in ClinVar. It attributes the spread to how
-each set's variants were ascertained [@lord2019splicesites]. Ascertainment orders those four numbers, not biology.
+That non-canonical share is itself contested by more than twofold. The same
+paper's discussion sets its trio-based 27 per cent against three others: roughly
+30 per cent from HGMD, roughly 43 per cent from another curation, and roughly 17
+per cent in ClinVar. It attributes the spread to how each set's variants were
+ascertained [@lord2019splicesites], which means ascertainment orders those four
+numbers.
 
 ## RNA sequencing as a diagnostic {#sec-rnaseq-diagnosis}
 
@@ -197,20 +203,23 @@ validating candidate splice-disrupting variants, and by finding variants that
 altered splicing from exonic positions and from deep inside introns
 [@cummings2016musclernaseq].
 
-Fibroblasts give a lower number for mitochondrial disease. Transcriptome sequencing of 48 exome-undiagnosed mitochondriopathy patients
-produced a molecular diagnosis in 10 per cent, 5 of 48, and candidate genes for
-the remainder. Per-sample medians were one aberrantly expressed gene and five
-aberrant splicing events [@kremer2017rnaseqdiagnosis]. The same approach was then scaled into a clinical workflow, on skin fibroblasts
-from 303 individuals with suspected mitochondrial disease who had already had
-exome sequencing. It established a genetic diagnosis in 16 per cent of the 205
-exome-inconclusive cases [@yepez2022rnaseqclinical].
+Fibroblasts give a lower number for mitochondrial disease. Transcriptome
+sequencing of 48 exome-undiagnosed mitochondriopathy patients produced a
+molecular diagnosis in 10 per cent, 5 of 48, and candidate genes for the
+remainder. Per-sample medians were one aberrantly expressed gene and five
+aberrant splicing events [@kremer2017rnaseqdiagnosis]. The same approach was
+then scaled into a clinical workflow. Skin fibroblasts from 303 individuals with
+suspected mitochondrial disease who had already had exome sequencing gave a
+genetic diagnosis in 16 per cent of the 205 exome-inconclusive cases
+[@yepez2022rnaseqclinical].
 
 Targeted long reads reach cases with no candidate gene at all. A disease-panel
 assay produced molecular diagnoses in two such patients, including a Leigh
 syndrome case resolved by two unproductive MTFMT splicing events, partial exon
 4 skipping and a 53-bp pseudoexon in intron 6 [@wang2026stripe].
 
-Long reads are not uniformly better. Across 27 distinct splicing outcomes
+Long reads are not uniformly better than short ones. Across 27 distinct splicing
+outcomes
 collated from short- and long-read data in a rare disorder cohort, PacBio
 long-read RNA-seq recovered 18 variant-linked aberrant splicing events and
 three normal outcomes, and failed to capture four. Three of the four are
@@ -221,10 +230,11 @@ those four cases.
 ## What the prediction tools deliver {#sec-splice-prediction}
 
 Interpretation now leans on tools whose accuracy has been measured against
-experimentally characterised variants. On NF1 spliceogenic variants, SpliceAI reached an ROC area under the curve of
-0.972 for de novo or cryptic splice site prediction. That was ahead of every
-other tool tested except SpliceRover at 0.924, and the difference from
-SpliceRover was not statistically significant [@jang2022splicetools].
+experimentally characterised variants. On NF1 spliceogenic variants, SpliceAI
+reached an ROC area under the curve of 0.972 for de novo or cryptic splice site
+prediction. That was ahead of every other tool tested except SpliceRover at
+0.924. The difference from SpliceRover was not statistically significant
+[@jang2022splicetools].
 
 Agreement with measured effects is lower than those curves suggest. On the
 OpenSplice massively parallel reporter benchmark, SpliceAI2 agreed with
@@ -240,9 +250,9 @@ Proof-of-concept experiments in cell lines from a single patient were the basis
 for launching an n-of-1 study of the splice-modulating oligonucleotide milasen,
 within one year of first contact with that patient [@kim2019milasen].
 
-The clinical result was partial. Seizure frequency and duration fell to half
-their pre-treatment values. The drug did not impede progressive brain volume
-loss, and the patient died three years after treatment began
+The clinical result was partial, with seizure frequency and duration falling to
+half their pre-treatment values. The drug did not impede progressive brain
+volume loss, and the patient died three years after treatment began
 [@wiltonclark2024nof1aso].
 
 The route from a splicing lesion to a molecule that corrects it is now short
