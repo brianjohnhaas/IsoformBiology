@@ -93,14 +93,14 @@ chapters read as one system.
 
 - [ ] Every claim traces to a record in `research/`
 - [ ] Every number has a line-anchored citation
-- [ ] All five checks below pass
+- [ ] All six checks below pass
 - [ ] All figures accounted for under one of the three routes above
 - [ ] `quarto render` clean, no unresolved cross-references
 - [ ] Read by someone who did not write it, for the things no check can see
 
-### The five checks
+### The six checks
 
-Four run in CI on every push. The fifth needs the paperclip corpus, which the
+Five run in CI on every push. The sixth needs the paperclip corpus, which the
 build machine does not have, so run it locally before a research file is
 committed and after any edit to a quote or an anchor.
 
@@ -132,10 +132,10 @@ not against the sentence you started with.
 
 ### Overlap check
 
-`scripts/check_overlap.py` compares chapter prose against the audit quotes stored
-in `research/*.yml` and flags any shared span of 8+ consecutive words. It is a
-smoke alarm, not a plagiarism detector: it only sees text we recorded. A hit means
-go back and restate, or make it an explicit attributed quotation.
+`scripts/check_overlap.py` compares chapter prose against the audit quotes
+stored in `research/*.yml` and flags any shared span of 8+ consecutive words. It
+is a smoke alarm, not a plagiarism detector: it only sees text we recorded. A
+hit means go back and restate, or make it an explicit attributed quotation.
 
 ## Licensing
 

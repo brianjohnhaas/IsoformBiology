@@ -11,6 +11,7 @@ fixes what kind of claim it can be. A method that measures a length can
 establish that a transcript is discontinuous without establishing that the
 discontinuity is regulated. A method that counts junctions can establish
 prevalence, and cannot establish which junctions occurred in the same molecule.
+
 The sections below follow that constraint rather than the chronology, taking one
 generation of method at a time with the specific thing it could not reach.
 

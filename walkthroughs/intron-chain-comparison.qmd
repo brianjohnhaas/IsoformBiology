@@ -119,5 +119,5 @@ read-support threshold was applied, and how the aligner placed splice sites. A
 number without those is not comparable to another number.
 
 This is also why pipeline-to-pipeline agreement is low in benchmarking studies
-while PCR validation rates stay high. Pipelines disagree about which novel
-isoforms to report, and the ones they report are frequently real.
+while PCR validation rates stay high. @sec-lrgasp gives the figures behind that
+pair of results.

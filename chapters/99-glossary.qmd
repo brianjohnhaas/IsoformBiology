@@ -6,14 +6,14 @@ Definitions here match the usage the chapters rely on, and each points at the
 section where the term does its work. Where a definition rests on a published
 source, that source is cited.
 
-Ten entries carry no citation, in two different situations.
+Nine entries carry no citation, in two different situations.
 
-Four of them are the ones to look at first, marked in italics in place. For
-these the absence of a defining source is itself a finding: the term is in use
-and no paper establishes it. They are **intron chain**, **isoform fraction and
-dIF**, **cassette exon** as a synonym for skipped exon, and the stated limits
-of **event-level metrics**. Those four definitions are written on this book's
-authority and need a reader's sign-off.
+Three of them are the ones to look at first, marked in italics in place. For
+these no defining source was found in the corpus this book was built from,
+though one may well exist outside it. They are **intron chain**, **cassette
+exon** as a synonym for skipped exon, and the stated limits of **event-level
+metrics**. Those three definitions are written on this book's authority and
+need a reader's sign-off.
 
 The remaining six are standard terms that no particular paper owns:
 **colocalisation**, **microexon**, **poison exon**, **pseudoexon**, the **QTL**
@@ -101,12 +101,6 @@ it is equally compatible with an unfinished intermediate
 variant, since alternative transcription start sites and alternative
 polyadenylation generate isoforms without any splicing difference
 [@carrion2023alternativetranscripts].
-
-**Isoform fraction (IF), and dIF**
-: The share of a gene's output carried by one of its isoforms, and the change in
-that share between two conditions. *No source defines these terms; the
-definitions here are the book's own and are flagged for review.* The quantity
-is what differential transcript usage tests. See @sec-dtu.
 
 **Microexon**
 : An exon only a few to a few dozen bases long, so that including or excluding

@@ -200,6 +200,7 @@ argument in full should go to the paper rather than to this section.
 ## Where this leaves the argument
 
 The position has three parts that do not resolve into one verdict.
+
 Isoform-selective therapy already works in the clinic. An approved drug draws
 its selectivity from which first exon a gene uses, and the design deliberately
 spared the other isoform to avoid harming healthy tissue.

@@ -44,7 +44,7 @@ time.
 The checks that run on every commit, and the things they cannot see, are listed
 in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Four glossary terms rest on no citable source and are written on this book's
-own authority. They are marked in place, and they are the entries most in need
-of a reader.
+Three glossary terms rest on no source found in this book's corpus and are
+written on its own authority. They are marked in place, and they are the
+entries most in need of a reader.
 :::

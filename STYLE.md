@@ -120,16 +120,22 @@ section we will explore". Begin with content.
 Do not use the binary contrast. "Not X. Y." and "This isn't about X, it's about
 Y" are the single loudest tell. State Y. Keep a negation only where X is a
 position some source or some earlier chapter actually holds, so that the
-sentence is correcting a real belief rather than staging a reveal. Do not open a
-paragraph with an announcement of what it will contain. "Two limitations are
-worth carrying forward.", "Three results are worth putting side by side." and
-"The scale of the problem is measurable." all say nothing the paragraph does not
-go on to say better. Start with the content. Do not pair two sentences as mirror
-images. "A short read reports a fragment. A long read reports a molecule." is
-one sentence pretending to be two, and the same shape used twice in a chapter
-becomes conspicuous. Do not address the reader. No "Take a gene nominated as
+sentence is correcting a real belief rather than staging a reveal.
+
+Do not open a paragraph with an announcement of what it will contain. "Two
+limitations are worth carrying forward.", "Three results are worth putting side
+by side." and "The scale of the problem is measurable." all say nothing the
+paragraph does not go on to say better. Start with the content.
+
+Do not pair two sentences as mirror images. "A short read reports a fragment. A
+long read reports a molecule." is one sentence pretending to be two, and the
+same shape used twice in a chapter becomes conspicuous.
+
+Do not address the reader. No "Take a gene nominated as
 causal", no "The second row is worth sitting with", no "Keep this in mind".
-Walkthroughs in `walkthroughs/` may use "you"; chapters may not. Ration "rather
+Walkthroughs in `walkthroughs/` may use "you"; chapters may not.
+
+Ration "rather
 than", along with the forms a careless edit turns it into: "and not", ", not",
 "instead of", "without doing X". Each is a useful contrast on its own and a tic
 at ten to a chapter. Keep it where the rejected alternative is what a reader
@@ -165,7 +171,8 @@ Vary rhythm. Mixed sentence lengths, two-item lists more often than three-item
 ones, and paragraph endings that are not all punchy one-liners.
 
 Prefer active voice with a named actor. "Kahles and colleagues found" beats "it
-was found that". Use "we" for judgements this book is making.
+was found that". A judgement the book itself makes is stated as a statement,
+without being attributed to a narrator.
 
 Do not restate. One point per section, made once. No telling the reader what you
 are about to say, saying it, then summarising it.

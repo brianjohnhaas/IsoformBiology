@@ -1,5 +1,11 @@
 # Animals and humans
 
+::: {.callout-warning}
+## First draft
+Written from `research/02-animals.yml` and not yet reviewed by a second reader.
+Several of the Dscam1 and CD45 claims rest on abstracts rather than full text.
+:::
+
 Almost every human gene is alternatively spliced, which on its own settles
 nothing. A gene can make twenty transcripts that all do the same job, and a gene
 can make two that do opposite jobs. The cases in this chapter are ones where
@@ -72,10 +78,11 @@ exon 4 did nothing [@dscam2021splicingbias]. Changing bias damaged axonal wiring
 while leaving the self-avoidance of axonal branches intact, which is the
 function the isoform count is supposed to underwrite [@dscam2021splicingbias].
 
-Those authors name the problem their own result creates: heavy, reproducible
-bias restricts access to the diversity that self-avoidance is supposed to
-exploit [@hong2019dscamsplicingbias]. No resolution is available, and the
-standard self-avoidance account is incomplete as it stands.
+The same authors name the problem their own result creates, in the preprint of
+that work: heavy, reproducible bias restricts access to the diversity that
+self-avoidance is supposed to exploit [@hong2019dscamsplicingbias]. No
+resolution is available, and the standard self-avoidance account is incomplete
+as it stands.
 
 ## Splicing as a developmental switch
 
