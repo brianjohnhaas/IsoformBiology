@@ -33,6 +33,32 @@ def tex(s: str) -> str:
 
 
 PERSONAL_NAME = re.compile(r"^[^,]+,\s*(?:[A-Z]\.|[A-Z]$)")
+# A corporate author is recognised positively, so that a personal name written
+# in the wrong order is not silently braced into an institution. That happened:
+# a research pass recorded "Yu Hu; Li Fang" instead of "Hu, Y.; Fang, L.", and
+# an earlier version of this heuristic emitted {Yu Hu} and {Li Fang}, which
+# renders every author as though it were an organisation.
+CORPORATE = re.compile(
+    r"Consortium|Administration|Collaborat|Initiative|Network|Project|Group\b"
+    r"|Center|Centre|Institute|Program(me)?\b|Committee|Society|Working Party"
+    r"|\bInc\b|\bLtd\b|\bLLC\b|on behalf of|Amgen|Genentech", re.I)
+
+
+def author_format_problems(sources: dict) -> list[str]:
+    """Author strings that do not follow SCHEMA.md's 'Lastname, A. B.' form.
+
+    Checked here because the bibliography is where a wrong format becomes
+    visible to a reader, and because nothing else looks at this field.
+    """
+    out = []
+    for key in sorted(sources):
+        for part in str(sources[key].get("authors", "") or "").split(";"):
+            part = part.strip()
+            if not part or CORPORATE.search(part) or PERSONAL_NAME.match(part):
+                continue
+            out.append(f"{key}: author {part!r} is neither "
+                       "'Lastname, A. B.' nor a recognisable organisation")
+    return out
 
 
 def authors_to_bibtex(s: str) -> str:
@@ -47,7 +73,8 @@ def authors_to_bibtex(s: str) -> str:
     parts = [p.strip() for p in str(s or "").split(";") if p.strip()]
     out = []
     for part in parts:
-        out.append(part if PERSONAL_NAME.match(part) else "{" + part + "}")
+        corporate = CORPORATE.search(part) or " and " in part
+        out.append("{" + part + "}" if corporate else part)
     return " and ".join(out)
 
 
@@ -148,6 +175,15 @@ def main() -> int:
 
     text = "\n".join(lines)
     out = ROOT / "references.bib"
+
+    problems = author_format_problems(sources)
+    if problems:
+        print(f"{len(problems)} author-format problem(s):")
+        for p in problems[:20]:
+            print(f"  - {p}")
+        if len(problems) > 20:
+            print(f"  ... and {len(problems) - 20} more")
+        return 1
 
     if check:
         current = out.read_text(encoding="utf-8") if out.exists() else ""

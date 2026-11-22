@@ -124,7 +124,18 @@ print(len(ab)); print(*sorted(ab), sep='\n')
 EOF
 ```
 
-**Seventeen sources are preprint-only here.** `aguet2019gtex`,
+**Twenty-four sources are preprint-only here**, up from seventeen before the
+deepening passes began, and two more were read as preprints while being cited
+as their journal versions, giving twenty-six sources whose text was unreviewed
+when it was read. The chapter 5 pass added most of the increase, because the
+quantification and benchmarking literature it drew on is substantially
+unreviewed: six of the thirteen sources behind its quantification records are
+preprints. Regenerate the preprint-only count with `grep -c '^@misc'
+references.bib` and the wider count by looking for `preprint: true` in
+`research/*.yml`. The names below are the original seventeen and are no longer
+the whole list.
+
+`aguet2019gtex`,
 `chang2025isoform`, `cummings2016musclernaseq`, `french2020asnmdsurvey`,
 `glinos2021transcriptome`, `hong2019dscamsplicingbias`,
 `jaganathan2026spliceai2`, `kolev2026transsplicing`, `liu2025transcriptional`,
