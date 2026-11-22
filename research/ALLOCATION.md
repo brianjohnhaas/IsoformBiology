@@ -65,10 +65,12 @@ tardaguila2018sqanti                 01, 05
 wang2008alternative                  01, 02, 04
 ```
 
-## Two sources are preprints
+## Three sources are preprints
 
-`reese2023encode4` and `glinos2021transcriptome` exist in this corpus only as
-preprints. The research records say so, the bibliography emits them as `@misc`,
+`reese2023encode4`, `glinos2021transcriptome` and `magadi2025rps24` exist in
+this corpus only as preprints. A fourth, `kerry2024rps24hypoxia`, was read as
+its preprint although the FEBS Letters version exists and is what the
+bibliography cites; its numbers need the same re-checking. The research records say so, the bibliography emits them as `@misc`,
 and the prose must not describe them as published. Every number taken from
 either one needs re-checking against the peer-reviewed version when it appears.
 

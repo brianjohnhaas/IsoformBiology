@@ -73,19 +73,19 @@ def draw(mode: str) -> None:
     # ---- the gene ----------------------------------------------------
     y = 0.0
     ax.plot([E1A[0], SHARED[-1][1]], [y, y], color=c["muted"], lw=1.0, zorder=2)
-    for (a0, a1), col, lab in ((E1A, c["lung"], "first exon 1a"),
-                               (E1B, c["stomach"], "first exon 1b")):
+    for (a0, a1), col, lab in ((E1A, c["lung"], "lung-specific\nfirst exon"),
+                               (E1B, c["stomach"], "stomach-specific\nfirst exon")):
         ax.add_patch(plt.Rectangle((a0, y - H / 2), a1 - a0, H, facecolor=col,
                                    edgecolor="none", zorder=3))
-        ax.text((a0 + a1) / 2, y - H / 2 - 0.26, lab, ha="center", va="top",
-                color=c["ink"], fontsize=9)
+        ax.text((a0 + a1) / 2, y - H / 2 - 0.30, lab, ha="center", va="top",
+                color=c["ink"], fontsize=8.8, linespacing=1.35)
     for a0, a1 in SHARED:
         ax.add_patch(plt.Rectangle((a0, y - H / 2), a1 - a0, H,
                                    facecolor=c["neutral"], edgecolor="none",
                                    zorder=3))
-    ax.text((SHARED[0][0] + SHARED[-1][1]) / 2, y - H / 2 - 0.26,
+    ax.text((SHARED[0][0] + SHARED[-1][1]) / 2, y - H / 2 - 0.30,
             "exons shared by both isoforms", ha="center", va="top",
-            color=c["muted"], fontsize=9)
+            color=c["muted"], fontsize=8.8)
 
     # splice arcs: 1a skips 1b; 1b starts its own transcript
     ax.add_patch(FancyArrowPatch((E1A[1], y + H / 2), (SHARED[0][0], y + H / 2),
@@ -97,7 +97,7 @@ def draw(mode: str) -> None:
                                  arrowstyle="-", color=c["stomach"], lw=1.5,
                                  zorder=4))
     ax.set_xlim(-4, 100)
-    ax.set_ylim(-1.5, 1.7)
+    ax.set_ylim(-1.9, 1.7)
 
     # ---- the two proteins --------------------------------------------
     DIFF = 26          # drawn length of the isoform-specific portion

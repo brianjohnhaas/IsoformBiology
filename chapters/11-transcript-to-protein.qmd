@@ -41,12 +41,12 @@ and the rest in the downstream one. Splicing to a different partner then rebuild
 that codon from different pieces and changes a single amino acid, without
 inserting or deleting anything. Those authors found this behind 17 per cent of
 internal sequence changes and called the pattern ragged codons
-[@murali2025biosurfer]. A one-residue difference is the kind of thing an
-event-level metric records as nothing at all, which is the limitation
-@sec-psi describes.
+[@murali2025biosurfer]. A one-residue difference is not the kind of change an
+event-level metric is built to report; @sec-psi gives what that metric does
+measure.
 
 Running the same comparison on a proteome predicted from long reads of a human
-cell line gave the same proportions, with one difference: more of the transcripts
+cell line showed similar trends, with one difference: more of the transcripts
 were predicted to be destroyed rather than translated [@murali2025biosurfer].
 That is a hint about what long reads add to this question, and @sec-is-it-translated
 takes it up.
@@ -80,9 +80,9 @@ protein forms without altering a single base of coding sequence
 
 That mechanism reaches inherited disease. A deletion inside the VHL leader was
 found to push translation toward the shorter of that gene's two protein forms
-[@ly2026utrlength]. A variant in an untranslated region changed a protein. Any
-pipeline that filters variants to the coding sequence would discard it, which is
-the practical point @sec-vus returns to.
+[@ly2026utrlength]. A variant in an untranslated region changed a protein. Any pipeline that filters variants to the coding
+sequence would discard it. @sec-vus covers how clinical interpretation handles
+variants that act through splicing.
 
 ### The tail
 
@@ -107,20 +107,21 @@ methodological conclusion from it. A microRNA site validated in a gene's
 untranslated region may not act on the isoforms that actually carry that gene's
 output [@thivierge2018ptenapa].
 
-Stress reconciles part of the disagreement by showing when the choice matters.
-Arsenic exposure shortened tails across the transcriptome by two separate routes,
+A third result suggests when the choice matters, though it does not settle the
+disagreement. Arsenic exposure shortened tails across the transcriptome by two separate routes,
 a shift toward the near site during the stress and selective destruction of the
-long forms during recovery [@zheng2018stressapa]. A named protein does the
-selecting. TIA1 binds uracil-rich stretches that exist only in the extended part
-of the tail, which ties the long forms to stress granules and to decay
+long forms during recovery [@zheng2018stressapa]. A named protein is implicated. TIA1 binds uracil-rich stretches that
+exist only in the extended part of the tail, and that binding correlates with
+stress granule association and with decay of the long forms
 [@zheng2018stressapa]. The consequence inverts the usual intuition about
 regulatory elements. Carrying fewer of them is protective, because a transcript
 that had already switched to the near site survived the clean-up
 [@zheng2018stressapa].
 
-So the honest summary is conditional. In a resting cell, which tail a gene uses
-is mostly inconsequential. Under stress, or at a gene whose dosage is tightly
-held, it decides how much protein there is. @sec-sc-apa gives the cell-type
+So the honest summary is conditional, and rests on few systems. In unstressed
+mouse fibroblasts, which tail a gene uses was mostly inconsequential. Under
+stress, and at one gene whose dosage is tightly held, it mattered a great
+deal. @sec-sc-apa gives the cell-type
 dimension of the same choice.
 
 ## Whether the isoform is translated at all {#sec-is-it-translated}
@@ -152,8 +153,8 @@ about 80 per cent of each protein's length [@sinitcyn2023deepproteome].
 are counted. Detection of alternative junctions in protein rises with how well
 the gene is covered.](../figures/translated-denominator.svg){#fig-translated width=100%}
 
-The result is usually quoted as proof that the proteome does carry the
-transcriptome's splicing diversity, and that quotation needs its denominator. Across everything
+The result is usually quoted as settling whether splicing diversity reaches the
+proteome, and that quotation needs its denominator. Across everything
 compared against RNA, about 80 per cent of single-residue variants were seen in
 protein but only about 20 per cent of the junctions expected from splicing
 [@sinitcyn2023deepproteome]. Restricted to genes expressed highly enough to be
@@ -185,7 +186,7 @@ when both are measured well.
 Most of this chapter is about proportions across thousands of genes. One gene
 shows the whole argument at once, and it is small enough to hold in mind.
 
-RPS24 is one of the structural proteins of the small ribosomal subunit. Between two exons that
+The RPS24 gene contributes a protein to the small ribosomal subunit. Between two exons that
 are always present, it carries three very short exons of 3, 18 and 22 base pairs
 [@park2024rps24]. They sit at the end of the coding sequence, so including or
 excluding them changes the last few amino acids rather than an internal domain
@@ -226,11 +227,11 @@ and protein length run in opposite directions here. The shortest transcript
 encodes the longest protein [@magadi2025rps24].
 
 This book does not assert a single table mapping each exon combination to each
-protein end. Reconciling the schemes requires the exon numbering each paper used,
-and the reconciliation published so far is internally inconsistent about which
-exon of the original numbering the largest of the three microexons corresponds
-to. Each result below is therefore reported
-in its own paper's labels.
+protein end. Reconciling the schemes means tracking the exon numbering each
+paper used, and the published reconciliation cannot be followed unambiguously
+from its own text. Settling it would take the annotated transcript and protein
+sequences rather than the papers. Each result below is therefore reported in its
+own paper's labels.
 
 ### Which form a cell makes {#sec-rps24-regulation}
 
@@ -292,9 +293,8 @@ nothing here shows it works in patients.
 
 Resolving a three-base-pair difference took a deliberate method rather than a
 standard pipeline. Separating the fragments by size distinguished isoforms
-differing by a single base [@nam2025rps24kras]. The gene has a separate claim on
-clinical attention too, since mutations in it cause one of the inherited bone
-marrow failure syndromes [@magadi2025rps24].
+differing by a single base [@nam2025rps24kras]. The gene has a separate claim on clinical attention too, since
+mutations in it are linked to Diamond-Blackfan anaemia [@magadi2025rps24].
 
 ::: {.callout-note collapse="true"}
 ## Both RPS24 sources need re-checking

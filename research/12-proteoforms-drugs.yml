@@ -115,9 +115,8 @@ claims:
     quote: TDP deciphers the combinatorial PTMs and amino acid variations in individual proteoforms
   confidence: high
 - id: DRG-011
-  claim: What the intact-molecule approach currently delivers is thousands of protein forms from one cell
-    lysate, which is three orders of magnitude below the estimate of more than one million for a single
-    cell.
+  claim: What a single intact-molecule study delivers is thousands of protein forms identified and quantified
+    from one cell lysate.
   topic: measuring proteoforms
   source:
     doc_id: PMC11257149
@@ -446,10 +445,9 @@ claims:
     quote: We expand the catalog of known HER2 protein-coding isoforms from 13 to 90
   confidence: high
 - id: DRG-031
-  claim: 'Cells made resistant to the antibody and to antibody-drug conjugates moved their expression
-    toward isoforms that lack the region the antibody binds.
-
-    '
+  claim: Breast cancer cell lines made resistant to the antibody and to antibody-drug conjugates moved
+    their expression toward isoforms that lack the region the antibody binds. The evidence is from cell
+    culture, not from treated patients.
   topic: isoform switching as resistance
   source:
     doc_id: PMC12400952
@@ -469,10 +467,8 @@ claims:
     quote: drug-resistant cells shift their expression toward isoforms lacking antibody-binding domains
   confidence: high
 - id: DRG-032
-  claim: 'Most of that diversity is invisible to the assays used in the clinic, having been found only
-    by reading full-length transcripts across hundreds of primary tumours.
-
-    '
+  claim: Much of that diversity had not been recognised before, and is not assessed in routine clinical
+    practice, having surfaced only in a survey that profiled 561 primary breast cancer samples.
   topic: isoform switching as resistance
   source:
     doc_id: PMC12400952
@@ -746,11 +742,9 @@ claims:
       clones
   confidence: high
 - id: DRG-044
-  claim: 'Stated the other way round, a drug aimed at a gene''s canonical product may work against some
-    of that gene''s protein forms and not others, which shows up as variable response rather than as a
-    design error.
-
-    '
+  claim: Stated the other way round, a drug aimed at a gene's canonical product may work against some
+    of that gene's protein forms and not others, resulting in adverse effects or a failure to achieve
+    the expected outcome.
   topic: emerging modalities
   source:
     doc_id: PMC13159605

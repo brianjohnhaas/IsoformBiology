@@ -46,11 +46,13 @@ M22 = M18 + 18 + GAP
 X6 = M22 + 22 + GAP
 
 MICRO = [(M3, 3, "3 bp"), (M18, 18, "18 bp"), (M22, 22, "22 bp")]
-# The third field is how many residues the published name itself specifies,
-# which is the only length difference this figure is entitled to draw.
-TERMINI = [("S24-3K", "ends in three lysines", 3),
-           ("S24-2K", "ends in two lysines", 2),
-           ("S24-PKE", "ends proline-lysine-glutamate", 3)]
+# The published names state the terminal residues; they do not state how the
+# three whole proteins compare in length, and one source reports a length
+# relationship that cannot be assigned to these names from what was read. So the
+# terminal residues are spelled out and NO bar length is drawn.
+TERMINI = [("S24-3K", "K-K-K"),
+           ("S24-2K", "K-K"),
+           ("S24-PKE", "P-K-E")]
 
 THEME = {
     "light": {"surface": "#fcfcfb", "series": "#2a78d6", "neutral": "#c3c9ce",
@@ -107,26 +109,30 @@ def draw(mode: str) -> None:
     ax.set_ylim(-1.5, 1.5)
 
     # ---- protein ends ------------------------------------------------
-    UNIT = 0.021          # drawn width of one named terminal residue
-    for i, (name, gloss, nres) in enumerate(TERMINI):
+    for i, (name, residues) in enumerate(TERMINI):
         yy = len(TERMINI) - 1 - i
-        bx.plot([0.06, 0.34], [yy, yy], color=c["neutral"], lw=4.5,
-                solid_capstyle="butt", zorder=3)
-        bx.plot([0.34, 0.34 + nres * UNIT], [yy, yy], color=c["series"],
-                lw=4.5, solid_capstyle="butt", zorder=3)
-        bx.text(0.45, yy, name, va="center", ha="left", color=c["ink"],
-                fontsize=10, fontweight="medium")
-        bx.text(0.62, yy, gloss, va="center", ha="left", color=c["muted"],
-                fontsize=9.2)
-    bx.text(0.06, -0.85,
+        bx.text(0.30, yy, name, va="center", ha="right", color=c["ink"],
+                fontsize=10.5, fontweight="medium")
+        bx.text(0.36, yy, "\u2026", va="center", ha="left", color=c["muted"],
+                fontsize=11)
+        for j, r in enumerate(residues.split("-")):
+            bx.add_patch(plt.Rectangle((0.41 + j * 0.055, yy - 0.22), 0.045,
+                                       0.44, facecolor=c["series"],
+                                       edgecolor="none", zorder=3))
+            bx.text(0.41 + j * 0.055 + 0.0225, yy, r, va="center",
+                    ha="center", color=c["surface"], fontsize=9.5,
+                    fontweight="bold", zorder=4)
+    bx.text(0.06, -0.92,
             "Which exon combination yields which end is labelled differently by "
-            "each study; the chapter explains why.",
+            "each study; the chapter explains why.\n"
+            "Nothing here is drawn to indicate how the three whole proteins "
+            "compare in length.",
             ha="left", va="center", color=c["muted"], fontsize=8.6,
-            style="italic")
+            style="italic", linespacing=1.4)
     bx.text(0.06, 2.85, "the three reported protein ends", ha="left",
             va="center", color=c["muted"], fontsize=9, style="italic")
     bx.set_xlim(0, 1.18)
-    bx.set_ylim(-1.4, 3.2)
+    bx.set_ylim(-1.6, 3.2)
 
     fig.subplots_adjust(left=0.02, right=0.99, top=0.97, bottom=0.03, hspace=0.1)
     suffix = "" if mode == "light" else "-dark"

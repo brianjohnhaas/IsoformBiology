@@ -32,7 +32,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 BARS = [
     ("All genes compared\nagainst RNA", 20),
-    ("Only genes covered\nend to end", 64),
+    ("Only the genes with the highest\nproteomics sequence coverage", 64),
 ]
 NOTE = ("Here, alternative junctions\n"
         "were detected about as often\n"

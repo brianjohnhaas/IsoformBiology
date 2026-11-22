@@ -93,11 +93,9 @@ claims:
       termed “ragged codons.”
   confidence: high
 - id: PRO-005
-  claim: 'Applying the same comparison to a proteome predicted from long-read sequencing of a human cell
-    line reproduced the annotation-derived proportions, with the one difference that more transcripts
+  claim: Applying the same comparison to a proteome predicted from long-read sequencing of a human cell
+    line showed similar trends to the annotation-derived analysis, with the one difference that more transcripts
     were predicted to be degraded rather than translated.
-
-    '
   topic: mechanism to protein terminus
   source:
     doc_id: PMC12047184
@@ -419,10 +417,9 @@ claims:
       sites during stress and enhanced degradation of long 3′UTR isoforms during recovery
   confidence: high
 - id: PRO-026
-  claim: 'A named protein does the selecting. TIA1 bound uracil-rich stretches that sit only in the extended
-    part of the untranslated region, which tied the long forms to stress granules and to decay.
-
-    '
+  claim: A named protein is implicated. TIA1 bound uracil-rich stretches that sit only in the extended
+    part of the untranslated region, and that binding correlated with stress granule association and with
+    decay of the long forms.
   topic: three prime UTR consequences
   source:
     doc_id: PMC5995920

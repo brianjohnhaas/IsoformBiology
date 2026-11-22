@@ -109,9 +109,10 @@ definitions here are the book's own and are flagged for review.* The quantity
 is what differential transcript usage tests. See @sec-dtu.
 
 **Microexon**
-: A very short exon, short enough that including or excluding it changes only a
-residue or two of protein. Isoforms differing by one are easily missed, both by
-short reads and by tools that assume exons are longer. See @sec-rps24.
+: An exon only a few to a few dozen bases long, so that including or excluding
+it changes a short stretch of protein rather than a domain. Isoforms differing
+by one are easily missed, both by short reads and by tools that assume exons are
+longer. See @sec-rps24.
 
 **MANE Select, MANE Plus Clinical**
 : One representative transcript per human protein-coding gene, identical in exon

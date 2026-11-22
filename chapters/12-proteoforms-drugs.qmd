@@ -23,21 +23,21 @@ The gap between ambition and measurement is the largest in this book, and it is
 worth stating numerically before anything else.
 
 A single cell is estimated to carry upwards of a million different protein
-forms, built from about 20,000 coding genes [@proteoformmedicine2026]. What the best
-available method delivers is thousands of protein forms from a cell lysate
-[@xu2024topdown]. The estimate and the measurement are three orders of magnitude
-apart.
+forms, built from about 20,000 coding genes [@proteoformmedicine2026]. A single
+intact-molecule study reports thousands of protein forms from a cell lysate
+[@xu2024topdown]. The estimate counts in millions and the measurement in
+thousands.
 
-![Three quantities on one logarithmic axis. What is estimated to exist and what
-one experiment can see differ by three orders of magnitude, and that gap is what
-limits isoform-level drug
-discovery.](../figures/proteoform-scale.svg){#fig-proteoform-scale width=100%}
+![Three quantities on one logarithmic axis. The gap between what is estimated to
+exist and what one experiment reports is what limits isoform-level drug
+discovery. The measured quantity is drawn as a band because the source says only
+"thousands".](../figures/proteoform-scale.svg){#fig-proteoform-scale width=100%}
 
 Two styles of mass spectrometry divide the problem. Reading fragments of a
 protein gives information about regions of it. Reading the intact molecule
 reports which combination of features one molecule actually carries
-[@xu2024topdown]. Only the second can confirm that two differences sit on the
-same protein, and it is the expensive one.
+[@xu2024topdown]. Only the second can confirm that two differences sit on
+the same protein.
 
 The specific obstacle is abundance rather than principle. The peptide that
 distinguishes one isoform from another is usually the scarce one, so isoforms go
@@ -112,20 +112,20 @@ depends on a distinction between two isoforms of one gene.
 
 ## When the tumour changes isoform {#sec-resistance}
 
-The resistance mechanism anticipated for claudin-18 has already been documented
+The resistance mechanism anticipated for claudin-18 has already been observed
 elsewhere, which is the strongest reason to take it seriously.
 
 HER2 is among the most studied targets in oncology. Reading its transcripts at
 full length raised its protein-coding isoform count from 13 to 90
-[@guardia2025her2]. Most of that diversity is invisible to the assays used in
-the clinic, having been found only across hundreds of primary tumours
-[@guardia2025her2]. Even the two HER2 variants that were already well known
+[@guardia2025her2]. Much of that diversity is invisible to the assays used in the clinic, having
+gone unrecognised until this survey of primary tumours [@guardia2025her2]. Even the two HER2 variants that were already well known
 turned out to be families: nine isoforms lacking exon 16 were found, of which
 only 1 appeared in the reference annotation [@guardia2025her2].
 
-The functional result is the one that matters. Cells made resistant to the
-antibody and to antibody-drug conjugates came to favour forms of the receptor
-that no longer carry the stretch the antibody grips [@guardia2025her2]. The target did not
+The functional result is the one that matters, and it comes from cell cultures
+rather than from treated patients. Lines made resistant to the antibody and to
+antibody-drug conjugates came to favour forms of the receptor that no longer
+carry the stretch the antibody grips [@guardia2025her2]. The target did not
 disappear. It changed shape.
 
 Cell therapy learned this first. Relapse after CD19-directed treatment has been
@@ -173,11 +173,11 @@ degrader designed against a protein does not distinguish that protein's forms, s
 it may remove the harmless one and leave the harmful one to take over, selecting
 for resistance [@cui2026proteoformdegradation]. Stated the other way round, a
 drug aimed at a gene's canonical product may work against some of that gene's
-protein forms and not others, which presents as variable response rather than as
-a design error [@cui2026proteoformdegradation].
+protein forms and not others, so the result is adverse effects or a failure to achieve what
+was expected [@cui2026proteoformdegradation].
 
 That last point deserves emphasis because of where it leads. A proteoform-blind
-drug does not fail loudly. It works in some patients.
+drug need not fail outright to be failing part of the time.
 
 ## Proteoform medicine as a programme {#sec-programme}
 
@@ -196,9 +196,8 @@ requires measurement at this resolution [@proteoformmedicine2026].
 
 The review is in this corpus as an abstract only, so only its abstract-level
 statements are cited here. Its account of the network biology, its treatment of
-specific diseases, and any figure in it have not been read. Readers who want the
-argument in full should go to the paper rather than to this section, which is
-what @sec-what-novel-means says about secondhand summaries generally.
+specific diseases, and any figure in it have not been read. Readers who want the argument in full should go to the paper
+rather than to this section.
 :::
 
 ## Where this leaves the argument
@@ -209,9 +208,9 @@ Isoform-selective therapy works. There is an approved drug whose selectivity
 rests on which first exon a gene uses, and the design deliberately spared the
 other isoform to avoid harming healthy tissue.
 
-Isoform-blind therapy fails in a characteristic way. Tumours escape by switching
-to a form the drug cannot see, which has been documented for HER2, for CD19 and
-across antibody therapy generally. A target defined at gene level carries that
+Isoform-blind therapy fails in a characteristic way. Cells escape by switching
+to a form the drug cannot see, shown in culture for HER2, inferred from relapse
+after CD19-directed treatment, and reviewed across antibody therapy. A target defined at gene level carries that
 failure mode built in.
 
 And the measurement is not yet adequate to the ambition. Confirming that a

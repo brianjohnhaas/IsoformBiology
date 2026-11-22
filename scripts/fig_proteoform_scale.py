@@ -71,9 +71,9 @@ def draw(mode: str) -> None:
                 fontsize=9.5, linespacing=1.35, zorder=4,
                 transform=ax.get_yaxis_transform())
 
-    ax.annotate("", xy=(1_000_000, 0.78), xytext=(10_000, 0.78),
+    ax.annotate("", xy=(1_000_000, 0.78), xytext=(1_000, 0.78),
                 arrowprops=dict(arrowstyle="<->", color=c["muted"], lw=1.1))
-    ax.text(100_000, 0.60, "the gap this chapter is about",
+    ax.text(31_600, 0.60, "the gap this chapter is about",
             ha="center", va="top", color=c["muted"], fontsize=8.8,
             style="italic", zorder=4)
 
