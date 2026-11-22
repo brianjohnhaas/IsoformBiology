@@ -10,6 +10,8 @@ What is checked:
   - mean sentence length (target < 19 words)
   - no sentence over 45 words
   - no running-prose sentence under 7 words
+
+Tables are skipped: they are data, and only this gate ignores them.
   - no first person (the book has no narrator)
   - banned AI-tell vocabulary and constructions
   - no em dashes
@@ -63,6 +65,11 @@ def prose_only(text: str) -> str:
     text = re.sub(r"(?s):::.*?:::", " ", text)           # callouts and asides
     text = re.sub(r"(?s)```.*?```", " ", text)           # code
     text = re.sub(r"!\[[^\]]*\]\([^)]*\)[^\n]*", " ", text)  # figures+captions
+    # A markdown table is data, not running prose. Left in, a whole table reads
+    # as one enormous sentence and trips the length cap. check_citations.py and
+    # check_overlap.py do their own text handling, so the numbers and the words
+    # in a table stay visible to both of them.
+    text = re.sub(r"^[ \t]*\|.*$", " ", text, flags=re.M)
     text = re.sub(r"^#.*$", " ", text, flags=re.M)       # headings
     text = re.sub(r"\[@[^\]]*\]", "", text)              # citations
     text = re.sub(r"\*+", "", text)                      # emphasis markers

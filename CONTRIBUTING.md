@@ -93,14 +93,14 @@ chapters read as one system.
 
 - [ ] Every claim traces to a record in `research/`
 - [ ] Every number has a line-anchored citation
-- [ ] All six checks below pass
+- [ ] All seven checks below pass
 - [ ] All figures accounted for under one of the three routes above
 - [ ] `quarto render` clean, no unresolved cross-references
 - [ ] Read by someone who did not write it, for the things no check can see
 
-### The six checks
+### The seven checks
 
-Five run in CI on every push. The sixth needs the paperclip corpus, which the
+Six run in CI on every push. The seventh needs the paperclip corpus, which the
 build machine does not have, so run it locally before a research file is
 committed and after any edit to a quote or an anchor.
 
@@ -112,6 +112,7 @@ committed and after any edit to a quote or an anchor.
 | `build_bib.py --check` | `references.bib` is exactly what the claim records generate | CI |
 | `check_style.py` | Sentence length upper and lower bounds, first person, banned constructions, em dashes, metronomic runs | CI |
 | `check_figures.py` | Every figure has a manifest entry with its provenance, and every entry names files that exist | CI |
+| `check_accounting.py` | Every row of the accounting tables carries a figure recorded against the source that row names | CI |
 
 ### What the checks cannot see
 

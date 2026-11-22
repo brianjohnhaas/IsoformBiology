@@ -47,6 +47,25 @@ six commits later.
 | Emerging proteoform-selective modalities | DRG-* | ch12 | `#sec-modalities` | ch6, ch7 |
 | Proteoform medicine as a programme | DRG-* | ch12 | `#sec-programme` | ch9, glossary |
 
+## The closing chapter is an explicit exception to the one-home rule
+
+`chapters/13-accounting.qmd` restates figures that belong to chapters 6, 8, 9,
+10, 11, 2 and 1. That is the point of it: the book states the thesis one study
+at a time and never totals it, which is the fault it charges the 95 per cent
+figure with. One chapter has to put the figures in one place.
+
+The exception is bounded. The closing chapter adds no new source and no new
+number. Every row restates a figure its home chapter states in full, in the
+unit the source used, and names that home section. It must not compute a range,
+an average or a total across rows, because the rows have different
+denominators, different assays and different units, and the leads in
+`research/10-variants-qtl.yml` record that these fractions must not be
+averaged. A row carries the provenance of its source, so a preprint or an
+abstract-only figure says so in the table itself.
+
+If a number in that chapter disagrees with its home chapter, the home chapter
+is right and the table is the bug.
+
 ## Sources recorded in more than one area
 
 Each of these has one bibkey, verified consistent by `scripts/verify_claims.py`.

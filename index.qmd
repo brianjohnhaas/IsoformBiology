@@ -46,7 +46,7 @@ arguments depends on the measurement being trusted first.
 
 ::: {.callout-note}
 ## Status
-All twelve chapters are drafted, from research records built one paper at a
+All thirteen chapters are drafted, from research records built one paper at a
 time.
 The checks that run on every commit, and the things they cannot see, are listed
 in [CONTRIBUTING.md](CONTRIBUTING.md).

@@ -1,0 +1,119 @@
+# What gene-level analysis misses, and when it does not
+
+::: {.callout-warning}
+## First draft
+Assembled from the claim records the earlier chapters were written from, and not
+yet reviewed by a second reader. It introduces no source and no number that is
+not already stated in full somewhere earlier in the book.
+:::
+
+Every chapter so far has argued the same proposition one study at a time, and
+none of them has added the figures up. That is the fault this book charges the prevalence figure with in
+@sec-how-functional, so it is worth not repeating.
+The two tables below put the quantities side by side with the unit each one was
+measured in.
+
+They are tables rather than a chart on purpose. The rows do not share a denominator, so there is no axis they can all sit on. A
+bar chart would invite the comparison the numbers cannot support.
+
+## What is invisible at gene level {#sec-the-tally}
+
+Each row gives a figure exactly as its source states it, what that figure
+counts, and the section where the result is stated in full, and nothing in it is averaged or
+pooled.
+
+| Figure | What it counts | Assay | Home | Source |
+|---|---|---|---|---|
+| 42 to 46 per cent | genes called as isoform switches that showed no gene-level difference | bulk short read, Barrett's progression | @sec-invisible-switches | [@zhang2022esophageal] |
+| 49 of 229 | isoform pairs separating two breast subtypes with no gene-level difference | bulk short read, TCGA | @sec-invisible-switches | [@zhao2016switching] |
+| roughly a quarter | tumour-side transcripts differentially used but not differentially expressed | bulk short read, twelve TCGA types | @sec-invisible-switches | [@dolgalev2023switching] |
+| about seven in ten | genes carrying isoform variation not explained by the gene's own expression | single-cell long read, brain | @sec-isoform-only | [@joglekar2024singlecell] |
+| about a third | cases of differing isoform proportions with no significant change in gene total | single-cell long read, cross-tissue | @sec-isoform-only | [@mantri2026splice], preprint |
+| about half | isoforms differentially expressed in a cluster whose gene was also differentially expressed | single-cell long read, CD8 T cells | @sec-isoform-only | [@tzaban2025rna], preprint |
+| about a tenth | differential three-prime UTR events that coincide with a change in the gene's expression | 3'-end single cell, 474 cell types | @sec-sc-apa | [@fansler2024quantifying] |
+| 70.6 per cent | isoform-level expression QTLs absent from the gene-level list on the same reads | nanopore long read, 67 B cell lines | @sec-gtex-lr | [@nagura2025longread] |
+| a fifth | cis associations on isoform-to-gene ratios with no significant gene-level association | short read, Framingham whole blood | @sec-isoform-qtl | [@liu2025integrating] |
+
+Two rows point the opposite way from the rest and are easy to misread. The
+Fansler figure is the share of three-prime UTR events that *do* coincide with an
+expression change, so it is the small number that makes the point. The Tzaban
+figure is the share that *was* also visible at gene level, so again the
+remainder is the claim.
+
+The configuration that makes a gene total actively misleading is narrower than
+any of these rows. In the B cell data, 1,135 variants had significantly
+different effect sizes on different isoforms of one gene and 153 pushed two
+isoforms in opposite directions [@nagura2025longread]. Summing isoform counts
+into a gene total cancels that second group exactly, and no amount of depth
+recovers it.
+
+## What the same datasets say against the thesis {#sec-the-other-side}
+
+The deflationary results are scattered across the book in the same way, and
+collecting them is the only honest way to read the table above.
+
+| Figure | What it counts | Assay | Home | Source |
+|---|---|---|---|---|
+| 1.12 | expressed transcripts per gene, averaged | bulk short read, primary tissues | @sec-scale | [@gonzalezporta2013dominanttranscript] |
+| roughly 85 per cent | protein-coding mRNA coming from each gene's major transcript | bulk short read, primary tissues | @sec-how-functional | [@gonzalezporta2013dominanttranscript] |
+| about 2,000 | alternatively spliced exons predicted conserved between human and mouse | EST-era comparison | @sec-how-functional | [@conservedas2005humanmouseexons], abstract only |
+| 13.9 against 2.8 per cent | heritability explained by the expression-QTL and splicing-QTL annotations | SBayesRC on blood | @sec-how-much | [@liu2025transcriptional], preprint |
+| 32 against 4 per cent | repression of stability and of translation by the strongest three-prime UTR element | one mouse cell line | @sec-utr-only | [@spies2013utrisoform] |
+| two of 7 and two of 36 | patients reaching one interval of eight-week transfusion independence | phase 1 dose expansion | @sec-cancer-therapeutics | [@h3b8800phase1lrmds2025], abstract only |
+
+One result belongs here and carries no number. An annotation-free analysis of two large mouse single-cell atlases found
+splicing strongly tied to cell identity. In those authors' hands it never
+revealed a cell subpopulation that expression clustering had missed
+[@benegas2022robust]. The positive case for
+isoform data finding new populations rests on one monocyte split
+[@olivieri2021splicing], and @sec-sc-structure gives both sides.
+
+## What follows for an analysis {#sec-the-rule}
+
+The tables do not resolve into a single fraction, and a reader looking for one
+should stop here. What they support is narrower and more useful, which is a set
+of conditions under which a gene total is the wrong unit.
+
+A gene total is the wrong unit when two isoforms move in opposite directions,
+because the sum is unchanged by construction and the effect cannot be recovered
+downstream. It is the wrong unit when the question is which protein the gene makes.
+Start-site and terminal-exon choice reach the protein ends far more often than
+internal splicing does, as @sec-what-changes sets out. It is the
+wrong unit when the isoform carries the regulatory elements rather than the
+coding sequence, which is the three-prime UTR case of @sec-utr-only. And it is
+the wrong unit when the phenotype is a ratio held between two forms, as
+@sec-mapt shows for tau.
+
+A gene total is defensible, and often preferable, in the ordinary case. Most
+genes express about one transcript, one transcript carries most of the output,
+and most annotated splicing is unconserved and probably inconsequential. Those
+three statements are the subject of @sec-how-functional and they have not been
+overturned by anything in the chapters since.
+
+Between those two sets sits the decision that actually matters, which is which
+null hypothesis a study is testing. @sec-dtu separates total output, isoform composition and individual transcript
+abundance into three different questions. Most of the disagreement collected
+above is really a disagreement about which of the three a given number answers.
+
+## What this book cannot tell you {#sec-the-gap}
+
+Three gaps are worth stating plainly, because each one bounds how far the
+tables above can be taken.
+
+The fractions cannot be combined with each other. They count genes, isoform
+pairs, transcripts, events, QTLs and associations, measured on different assays
+in different tissues. The leads behind @sec-isoform-qtl record explicitly that
+they must not be averaged. Anyone wanting one number for how much isoform biology matters
+will have to define the denominator first, and that choice will do more work
+than the data.
+
+The protein layer is thinner than the RNA layer. @sec-is-it-translated gets as far as showing that a well-covered gene's
+alternative products are seen about as often as its main one. @sec-measuring
+explains why confirming a particular proteoform in a particular tissue remains a
+targeted experiment.
+
+Several of the strongest figures above are preprints or abstracts. The table
+marks each one, and `research/ALLOCATION.md` lists every source in the book
+whose provenance is weaker than its DOI suggests. A number from a preprint is
+not wrong, and it is not yet checked by anyone outside the group that produced
+it.

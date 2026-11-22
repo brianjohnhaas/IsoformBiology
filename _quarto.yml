@@ -44,6 +44,9 @@ book:
     - part: "Targeting isoforms"
       chapters:
         - chapters/12-proteoforms-drugs.qmd
+    - part: "Taking stock"
+      chapters:
+        - chapters/13-accounting.qmd
     - chapters/99-glossary.qmd
     - part: "Walkthroughs"
       chapters:

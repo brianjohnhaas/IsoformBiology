@@ -43,6 +43,9 @@ jobs:
       - name: Check prose style
         run: python3 scripts/check_style.py
 
+      - name: Check each accounting-table row against its own source
+        run: python3 scripts/check_accounting.py
+
       - name: Render book
         run: quarto render --to html
 
