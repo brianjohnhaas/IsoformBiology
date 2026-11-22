@@ -529,7 +529,7 @@ both necessary and sufficient for the switch. Depletion and overexpression moved
 CD45RA and CD45RO in opposite directions [@cd452008hnrnpllregulation]. It is the
 major repressor of the variable exons, acting through two CA elements in exon 6,
 and its action is combinatorial rather than exon-by-exon
-[@preussner2012hnrnpllcd45]. The three variable exons are not controlled as a
+[@preussner2012hnrnplcd45]. The three variable exons are not controlled as a
 unit: in cells carrying a minigene with all three, hnRNP L repressed only exon
 4, hnRNP LL repressed exons 4 and 6. Exon 5 was never repressed on its own by
 either protein [@preussner2012hnrnplcd45].
@@ -833,7 +833,7 @@ neuronal Pbx1a isoform and switched on transcription of neuronal genes
 deletion, which puts it closer to an isoform experiment. Ablating *Esrp1* gave
 cleft lip and palate, and removing *Esrp2* as well produced widespread
 developmental defects including failure to build a skin barrier
-[@bebee2015esrpdevelopment]. And two highly homologous regulators are not
+[@bebee2015esrpprogram]. And two highly homologous regulators are not
 equivalent in vivo: mice lacking *Nova2* had no corpus callosum and specific
 axon outgrowth failures in ventral motoneurons, while mice lacking *Nova1* did
 not [@saito2016nova2axon].

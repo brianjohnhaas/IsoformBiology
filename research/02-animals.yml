@@ -3211,7 +3211,7 @@ claims:
     journal: Nucleic Acids Research
     year: 2012
     doi: 10.1093/nar/gks221
-    bibkey: preussner2012hnrnpllcd45
+    bibkey: preussner2012hnrnplcd45
     metadata_source: crossref
   evidence:
     text_access: full_text
@@ -3347,7 +3347,7 @@ claims:
     journal: eLife
     year: 2015
     doi: 10.7554/eLife.08954
-    bibkey: bebee2015esrpdevelopment
+    bibkey: bebee2015esrpprogram
     metadata_source: crossref
   evidence:
     text_access: full_text
