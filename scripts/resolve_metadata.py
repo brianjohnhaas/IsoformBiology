@@ -99,9 +99,21 @@ def year(msg: dict) -> int | None:
 
 
 def norm_surnames(s: str) -> list[str]:
-    """Surnames only, lowercased, for comparison that ignores initial style."""
-    return [re.split(r"[,\s]", p.strip())[0].lower()
-            for p in str(s).split(";") if p.strip()]
+    """Surnames only, lowercased, for comparison that ignores initial style.
+
+    SCHEMA.md's form is "Surname, A. B.", so the surname is everything before
+    the comma and it may contain spaces: "Natraj Gayathri", "Zare Jousheghani",
+    "van Dijk", "de Klerk". Splitting on whitespace truncated those to their
+    first word and reported a mismatch against Crossref's full family name,
+    which made the mismatch count untrustworthy and therefore ignorable.
+    """
+    out = []
+    for part in str(s).split(";"):
+        part = part.strip()
+        if not part:
+            continue
+        out.append(part.split(",")[0].strip().lower())
+    return out
 
 
 def main() -> int:

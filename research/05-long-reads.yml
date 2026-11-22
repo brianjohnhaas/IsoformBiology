@@ -1560,9 +1560,9 @@ claims:
 
     '
 - id: LR-061
-  claim: 'The two platforms fail in different places on the same cDNA: 41 per cent of PacBio errors but
-    only 23 per cent of nanopore errors fell inside homopolymers, so a filter tuned to one platform''s
-    error model is not transferable to the other.
+  claim: 'The two platforms fail in different places on the same cDNA molecules: of the errors called
+    against a three-way majority truth, 41 per cent of the PacBio errors but 23 per cent of the nanopore
+    errors fell inside homopolymers.
 
     '
   topic: platform error profile and splice-junction calling
@@ -1687,11 +1687,15 @@ claims:
     basecalled with Albacore 2.1.10 or Guppy 2.3.5 (L120). This is the oldest nanopore chemistry in this
     file and the per-base figure is superseded by RNA004 (see PLT-018, PLT-021); the ranking of cDNA below
     native RNA on canonical-junction recovery has not been re-measured on current chemistry in this corpus.
+    Two qualifications on the same line: the authors attribute the native-RNA advantage over cDNA to native-RNA
+    reads being strand-specific, which helps the aligner, not to the cDNA step inventing junctions; and
+    feeding the aligner error-free annotated coding sequences instead of reads still returned only 96.4
+    per cent of GT-AG introns, so part of the shortfall is the aligner rather than the reads.
 
     '
-  figure_idea: 'Three bars on one axis - annotated introns, native-RNA reads, cDNA reads - showing the
-    share called canonical, with the gap between bars labelled as error plus library artefact rather than
-    biology.
+  figure_idea: 'Four bars on one axis - annotated introns, error-free sequences put through the aligner,
+    native-RNA reads, cDNA reads - showing the share of introns called canonical, so the reader can see
+    how much of the gap is the aligner, how much the read error, and how much the library.
 
     '
 - id: LR-065
@@ -1730,10 +1734,10 @@ claims:
 
     '
 - id: LR-066
-  claim: 'Read length on a long-read platform is set by the protocol rather than by the molecules: across
-    matched libraries, median mapped read length was 2,338 bp for standard PacBio Iso-Seq, 1,677 bp for
-    the Kinnex concatenation protocol, 1,477 bp for nanopore direct RNA on Kit 14 chemistry, and 530 bp
-    for nanopore cDNA on R9.4.1.
+  claim: 'Read length differs several-fold between long-read protocols: in one cross-platform evaluation
+    median mapped read length was 2,338 bp for standard PacBio Iso-Seq, 1,677 bp for the Kinnex concatenation
+    protocol and 530 bp for nanopore cDNA on R9.4.1 in a mouse tissue cohort, against 1,477 bp for nanopore
+    direct RNA on Kit 14 chemistry in a cell-line cohort.
 
     '
   topic: read length against transcript length
@@ -1747,6 +1751,7 @@ claims:
     doi: 10.64898/2026.10.10.757893
     bibkey: paniagua2026systematic
     metadata_source: crossref
+    preprint: true
   evidence:
     text_access: full_text
     lines: L10
@@ -1755,12 +1760,11 @@ claims:
       in a median read length of 1,677 bp
 
       '
-  preprint: true
   confidence: high
   note: 'Read as a bioRxiv preprint; no journal version was visible in the corpus. The mouse-tissue nanopore
-    cDNA libraries are R9.4.1 on PromethION (L48) and the cell-line cohort uses R10.4.1, so the 530 bp
-    figure belongs to the older chemistry; the dRNA figure is a single Kit 14 dataset, which the authors
-    themselves flag as a limitation (L45).
+    cDNA libraries are R9.4.1 on PromethION (L48), so the 530 bp figure belongs to the older chemistry,
+    and the cell-line cohort uses R10.4.1. The direct-RNA figure rests on a single Kit 14 dataset, which
+    the authors flag as a limitation of their own evaluation (L45), so it is the weakest of the four numbers.
 
     '
   figure_idea: 'Median mapped read length per protocol on one axis with the abundance-weighted human transcript
@@ -1834,9 +1838,10 @@ claims:
 
     '
 - id: LR-069
-  claim: 'PacBio accuracy is bought with passes over the same molecule, which is why insert length and
-    accuracy trade against each other: the protocol that produced 99.8 per cent accurate reads averaging
-    13.5 kb was designed around needing about ten passes to reach Q30.
+  claim: 'PacBio accuracy is bought with repeated passes over the same molecule, which is why insert length
+    and accuracy trade against each other: the 2019 Sequel circular consensus protocol that produced 99.8
+    per cent accurate genomic DNA reads averaging 13.5 kb was designed around needing about ten passes
+    to reach Q30.
 
     '
   topic: accuracy-raising strategies and their cost
@@ -1863,8 +1868,10 @@ claims:
   confidence: high
   note: 'This is a genomic DNA library on the PacBio Sequel with ccs 3.0.0, not cDNA, and the 13.5 kb
     insert was chosen for a 150 kb polymerase read. The arithmetic is what carries over to transcript
-    work: accuracy per read is polymerase read length divided by insert length. The corpus holds no equivalent
-    primary per-base accuracy measurement for current Revio or Kinnex cDNA reads (see leads).
+    work: the number of passes a molecule gets is roughly the polymerase read length divided by the insert
+    length, and accuracy follows from the number of passes, so a longer transcript is read fewer times
+    and less accurately on the same run. The corpus holds no equivalent primary per-base accuracy measurement
+    for current Revio or Kinnex cDNA reads (see leads).
 
     '
   figure_idea: 'Predicted read accuracy against number of passes, with a second axis showing the insert
@@ -1873,9 +1880,10 @@ claims:
 
     '
 - id: LR-070
-  claim: 'Measured on the same synthetic cDNA pool, median read accuracy ran from 87 per cent for single-pass
-    nanopore reads, through 94 per cent for rolling-circle consensus reads and 95.6 per cent for paired-strand
-    nanopore reads, to 98.9 per cent for PacBio circular consensus reads.
+  claim: 'Measured in 2018 on the same synthetic cDNA pool, median read accuracy ran from 87 per cent
+    for single-pass nanopore MinION reads, through 94 per cent for rolling-circle consensus reads and
+    95.6 per cent for paired-strand nanopore reads, to 98.9 per cent for PacBio Sequel circular consensus
+    reads.
 
     '
   topic: accuracy-raising strategies and their cost
@@ -1898,17 +1906,20 @@ claims:
 
       '
   confidence: high
-  note: 'Generation: ONT MinION 1D and 1D2 ligation kits and the RAD004 rapid kit, against PacBio Sequel
-    Iso-Seq, 2018; the 94 per cent figure for R2C2 consensus reads is in the same line. Yield is the hidden
-    cost - the same line reports that the 1D2 run returned 5,904 full-length single-strand reads but only
-    1,142 paired-strand reads, and the authors note that filtering harder on subread count would raise
-    accuracy further at the expense of read number.
+  note: 'Generation: the synthetic-RNA rolling-circle run used the ONT 1D sample prep kit on a single
+    9.5 flow cell, with the 1D2 kit for the paired-strand run, against PacBio Sequel Iso-Seq, 2018; the
+    RAD004 rapid kit and four 9.5 flow cells were used for the separate single-cell B cell runs (L66).
+    The 94 per cent figure for consensus reads is in the same cited line. Yield is the hidden cost - the
+    same line reports that the 1D2 run returned 5,904 full-length single-strand reads but only 1,142 paired-strand
+    reads, and the authors note that filtering harder on subread count would raise accuracy further at
+    the expense of read number.
 
     '
 - id: LR-071
-  claim: 'Accuracy translated into splice-site precision on the same libraries: the share of splice sites
-    in reads that matched an annotated site exactly was 80.4 per cent for single-pass nanopore reads,
-    91.3 per cent after rolling-circle consensus, and 96.9 per cent for PacBio circular consensus reads.
+  claim: 'Accuracy translated into splice-site precision on the same 2018 libraries: the share of splice
+    sites in reads that matched an annotated site exactly was 80.4 per cent for single-pass nanopore reads,
+    91.3 per cent after rolling-circle consensus, and 96.9 per cent for PacBio Sequel circular consensus
+    reads.
 
     '
   topic: accuracy-raising strategies and their cost
@@ -1958,25 +1969,28 @@ claims:
     doi: 10.64898/2026.10.10.757893
     bibkey: paniagua2026systematic
     metadata_source: crossref
+    preprint: true
   evidence:
     text_access: full_text
-    lines: L9
-    anchor: https://paperclip.gxl.ai/citations/papers/bio_fc171bff3556#L9
+    lines: L9,L10
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_fc171bff3556#L9,L10
     quote: 'generated a median of 45.3 million reads per library (range 35.7-54.1 million), representing
       a ten-fold increase in read count over standard PacBio Iso-Seq runs
 
       '
-  preprint: true
   confidence: high
-  note: 'Read as a bioRxiv preprint. Denominators: 21 Kinnex and 20 Iso-Seq samples in the mouse tissue
-    cohort (L8). The read-length half of the claim is on L10, which PLT-007 anchors; the authors also
-    note that Kinnex libraries carry size-selection and loading bias toward shorter molecules (L3).
+  note: 'Read as a bioRxiv preprint. The tenfold figure is the mouse tissue cohort; the sample counts
+    on L8 (20 Iso-Seq, 21 Kinnex, 32 ONT cDNA, 6 ONT dRNA) are totals across cohorts, not per cohort.
+    The same line gives the nanopore side, which runs the other way on current chemistry: ONT cDNA returned
+    a median 8.6 million reads per library on R9.4.1 in the mouse cohort but 50.6 million on R10.4.1 in
+    the human cohort, against 22.5 million for Kinnex in that same human cohort. The authors also note
+    that Kinnex libraries carry size-selection and loading bias toward shorter molecules (L3).
 
     '
 - id: LR-073
-  claim: 'Reading both strands of a duplex to raise nanopore accuracy only ever applies to a minority
-    of molecules: on the Q20+ kit with R10.4 flow cells, the accuracy gain came from 5 to 10 per cent
-    of the data being duplex.
+  claim: 'Reading both strands of the same molecule raises nanopore accuracy for only a small share of
+    molecules: on the 2022 Q20+ ligation kit with R10.4 flow cells, duplex reads were 3.33 per cent of
+    one amplicon run''s data and averaged Q26.1, against a 1 to 10 per cent range quoted by the vendor.
 
     '
   topic: accuracy-raising strategies and their cost
@@ -1991,23 +2005,25 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L123
-    anchor: https://paperclip.gxl.ai/citations/papers/PMC9612837#L123
-    quote: 'The improvement in accuracy derived from the increased 5 to 10% of duplex data
+    lines: L109
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC9612837#L109
+    quote: 'duplex data accounted 3.33% of the sequencing data of method A (Figure 3), which was relatively
+      in line with the 1-10% range given by ONT
 
       '
   confidence: medium
-  note: 'This is SARS-CoV-2 amplicon DNA on the LSK112 Q20+ kit with R10.4 flow cells in 2022, not RNA
-    or cDNA, and the same line attributes part of the gain to slower translocation improving homopolymer
-    calling. No duplex yield figure for a cDNA or direct-RNA library was found in this corpus (see leads),
-    so the chapter should treat the 5 to 10 per cent as an order of magnitude for the method rather than
-    a transcriptomics measurement.
+  note: 'This is SARS-CoV-2 amplicon DNA on the SQK-LSK112 Q20+ kit with R10.4 flow cells (L40, L49),
+    not RNA or cDNA. Q26.1 corresponds to the 99.75 per cent the authors report on the same line. Their
+    discussion at L123 attributes the kit''s overall accuracy gain to "the increased 5 to 10% of duplex
+    data" together with slower translocation improving homopolymer calling, which is a looser statement
+    than the measured 3.33 per cent; the measurement is the citable number. No duplex yield figure for
+    a cDNA or direct-RNA library was found in this corpus (see leads).
 
     '
 - id: LR-074
-  claim: 'Nanopore direct RNA sequencing costs input material as well as throughput: it needed more than
-    10 micrograms of starting total RNA to leave the 500 nanograms of messenger RNA a run requires after
-    ribosomal depletion.
+  claim: 'Nanopore direct RNA sequencing costs input material as well as throughput: on the RNA002 kit
+    in Escherichia coli it took more than 10 micrograms of starting total RNA to leave the 500 nanograms
+    of messenger RNA a run requires after ribosomal depletion.
 
     '
   topic: direct RNA against cDNA
@@ -2030,10 +2046,13 @@ claims:
       '
   confidence: high
   note: 'Species is Escherichia coli K-12, chemistry R9.4.1 with SQK-RNA002, DCS109 and PCB109 kits, 2022.
-    The bacterial setting matters for the ribosomal-depletion step but not for the library input arithmetic.
-    The same paper''s L19 records ONT''s own listed per-flow-cell yields for that generation - 1 to 4
-    Gb for direct RNA against about 10 Gb for PCR-cDNA - which are vendor figures, not measurements, and
-    should be labelled as such if used.
+    The ribosomal-depletion step is what makes the bacterial input so large, since the kits are not designed
+    for those quantities, so the figure does not transfer to a poly(A)-selected human library; the current
+    human equivalent is Lane 2026''s 1 microgram for direct RNA against 500 nanograms for PCR-cDNA (PMC13647511
+    L64, L66, recorded in PLT-016''s note). The same line also charges direct RNA with slower sequencing
+    and no vendor barcoding option. L19 records ONT''s own listed per-flow-cell yields for that generation
+    - 1 to 4 Gb for direct RNA against about 10 Gb for PCR-cDNA - which are vendor figures, not measurements,
+    and must be labelled as such if used.
 
     '
 - id: LR-075
@@ -2063,10 +2082,11 @@ claims:
       '
   confidence: high
   note: 'Generation: SQK-RNA004 direct RNA against the SQK-PCB114.24 PCR-cDNA kit, 2026, in SKMM2 myeloma
-    cells, three replicates per condition per protocol, with PCR-cDNA input of 500 ng against 1 µg for
-    direct RNA. Totals on the same line are about 63,425 transcripts for direct RNA against 46,993 for
-    PCR-cDNA with 35,673 shared. Confidence tiers are the authors'' own read-support thresholds, so this
-    is a detection comparison under their definition rather than a validated-transcript count.
+    cells, three replicates per condition per protocol, with RNA input of 500 ng for PCR-cDNA against
+    1 µg for direct RNA (L64, L66). Totals on the same line are about 63,425 transcripts for direct RNA
+    against 46,993 for PCR-cDNA with 35,673 shared. Confidence tiers are the authors'' own read-support
+    thresholds, so this is a detection comparison under their definition rather than a validated-transcript
+    count.
 
     '
 - id: LR-076
@@ -2097,7 +2117,8 @@ claims:
   confidence: high
   note: 'Same libraries as PLT-016. The next line reports a log2 fold-change correlation of 0.73 between
     protocols with PCR-cDNA compressing the dynamic range, and L39 gives a worked case, GRB2, where the
-    two protocols support opposite isoform switches.
+    two protocols support different isoform switches, the direct-RNA one with limited evidence for switching
+    at all.
 
     '
   figure_idea: 'A two-set diagram of differentially expressed genes and, beside it, the same for isoforms,
@@ -2106,9 +2127,10 @@ claims:
 
     '
 - id: LR-077
-  claim: 'Nanopore direct-RNA accuracy moved a long way in one chemistry step: on the same cell line''s
-    RNA, median alignment identity was 90.65 per cent for RNA002 basecalled with Guppy and 98.67 per cent
-    for RNA004 basecalled with Dorado, counting only reads with at least 200 aligned bases.
+  claim: 'Nanopore direct-RNA accuracy moved a long way between the 2019 and 2024 kits: on the same cell
+    line''s RNA, median alignment identity was 90.65 per cent for RNA002 basecalled with Guppy v6.38 and
+    98.67 per cent for RNA004 basecalled with Dorado v1.0, counting only reads with at least 200 aligned
+    bases.
 
     '
   topic: direct RNA against cDNA
@@ -2140,9 +2162,9 @@ claims:
 
     '
 - id: LR-078
-  claim: 'The throughput side of the same chemistry step was larger still: the 2019 native-RNA dataset
-    needed 30 MinION flow cells for 9,729,412 passing reads, while one PromethION flow cell on the newer
-    chemistry returned 26,820,281 reads from the same cell line.
+  claim: 'The throughput side of that move was larger still: the 2019 native-RNA dataset took 30 MinION
+    flow cells to produce 9.4 million aligned reads, while a single PromethION flow cell on the 2024 kit
+    produced 16.6 million aligned reads from the same cell line.
 
     '
   topic: direct RNA against cDNA
@@ -2164,11 +2186,14 @@ claims:
 
       '
   confidence: high
-  note: 'Device and chemistry both change between the two numbers, so this is not a clean chemistry comparison;
-    read N50 rose from 1.36 kb to 1.88 kb on the same line. The counter-evidence is in the same line:
-    median per-gene coverage was comparable at 124 and 121 reads and per-gene expression correlated at
-    Pearson 0.80 across 11,562 shared genes, so the accuracy and throughput gain did not move gene-level
-    expression estimates.
+  note: 'Device, kit and basecaller all change between the two numbers, so this is a generational comparison
+    and not a chemistry experiment; for a device-controlled version see the leads. The aligned fractions
+    also differ sharply, 96.8 per cent of 9,729,412 passing reads for RNA002 against 61.94 per cent of
+    26,820,281 reads for RNA004, which is why the claim uses aligned reads rather than raw counts. Read
+    N50 rose from 1.36 kb to 1.88 kb on the same line. The counter-evidence is in the same line: median
+    per-gene coverage was comparable at 124 and 121 reads and per-gene expression correlated at Pearson
+    0.80 across 11,562 shared genes, so the accuracy and throughput gain did not move gene-level expression
+    estimates.
 
     '
 - id: LR-079
@@ -2197,15 +2222,15 @@ claims:
       '
   confidence: high
   note: 'Generation: SQK-RNA001 and SQK-RNA002, re-analysed from raw signal across several species, published
-    2024. Matters for splicing because a deletion is the error that pulls an alignment across a junction
-    boundary, and because the same paper reports cytosine- and uracil-rich contexts as the least accurate,
-    which is the composition of many polypyrimidine tracts upstream of acceptors.
+    2024. Matters for splicing because a deletion is the error class that shifts an aligned junction boundary.
+    The same paper reports cytosine- and uracil-rich regions as the most error-prone; whether that bears
+    on acceptor-side sequence is an inference the paper does not make and the chapter should not either.
 
     '
 - id: LR-080
-  claim: 'A chemistry change raised nanopore direct-RNA accuracy without changing which positions were
-    wrong: on synthetic transcripts the newer RNA004 kit read at 93.5 per cent against 92.1 per cent for
-    RNA002, and the authors report the systematic error patterns as largely unchanged.
+  claim: 'The newer kit''s accuracy gain did not touch the error type that matters most for junctions:
+    on synthetic transcripts RNA004 read at 93.5 per cent against 92.1 per cent for RNA002, and the improvement
+    came from fewer mismatches and insertions while the deletion rate stayed high.
 
     '
   topic: counter-evidence on accuracy gains
@@ -2229,11 +2254,12 @@ claims:
   confidence: high
   note: 'Measured on four synthetic "curlcake" in vitro transcribed RNAs of roughly 2,000 to 3,000 nucleotides
     designed to contain every 5-mer, basecalled with Dorado 0.4.3 using the rna004_130bps_sup@v3.0.1 model.
-    This is the conflict with PLT-018: same kit, 93.5 per cent here against 98.67 per cent there, differing
-    in sample (synthetic against cellular poly(A) RNA), metric (read accuracy against median alignment
-    identity with a 200-base filter) and basecaller version (Dorado 0.4.3 against 1.0). Record both; do
-    not average them. L91 adds that cytosine and uracil remained the least accurate bases and deletion
-    errors barely improved.
+    The paper''s own summary at L13 puts it more broadly: overall read accuracy increased while the systematic
+    errors remained largely identical to the previous kits. This is the conflict with PLT-018: same kit,
+    93.5 per cent here against 98.67 per cent there, differing in sample (synthetic against cellular poly(A)
+    RNA), metric (read accuracy against median alignment identity with a 200-base filter) and basecaller
+    version (Dorado 0.4.3 against 1.0). Record both; do not average them. L91 adds that cytosine and uracil
+    remained the least accurate bases and deletion errors barely improved.
 
     '
 - id: LR-081
@@ -2364,8 +2390,9 @@ claims:
 - id: LR-085
   claim: 'Tools disagree on whether an ambiguously placed read should be counted at all: several quantifiers
     apply no mapping-quality filter and let expectation maximisation spread each read''s weight over all
-    its candidate transcripts, whereas one widely used pipeline adopted a minimum mapping quality of 1,
-    which in that pipeline''s own spike-in benchmark excluded 5,469 of 21,456 reads, or 25.5 per cent.'
+    its candidate transcripts, whereas one long-read isoform pipeline adopted a minimum mapping quality
+    of 1, which in that pipeline''s own spike-in benchmark excluded 5,469 of 21,456 reads, or 25.5 per
+    cent.'
   note: The 25.5 per cent figure is this preprint's account of the FLAIR authors' own SIRV benchmark,
     not a new measurement; the original should be checked before the number is quoted as FLAIR's.
   topic: read filtering versus probabilistic assignment
@@ -2387,32 +2414,34 @@ claims:
       read’s weight across all of its candidate transcripts
   confidence: high
 - id: LR-086
-  claim: There is no shared convention for reporting how an ambiguous read was divided, and some pipelines
-    record a read as belonging to several transcripts without stating what fraction went to each, which
-    leaves a user unable to down-weight or audit the weakest assignments.
-  topic: what a quantifier reports about an ambiguous read
+  claim: The assumption a quantifier starts from is that an isoform contributes reads in proportion to
+    how many copies of it are present multiplied by how long it is, so the length term is doing the work
+    of turning a read count into a molecule count, and it is that term long-read methods then remove.
+  note: Stated as the consequence of fragmentation in the short-read generative model that long-read tools
+    inherit; the same paper's L33, recorded as QNT-006, is what follows when the term is deleted.
+  topic: what EM-based quantification assumes
   source:
-    doc_id: PMC12392579
-    title: Enhancing transcriptome expression quantification through accurate assignment of long RNA sequencing
-      reads with TranSigner
-    authors: Ji, H. J.; Pertea, M.
-    journal: Genome Biology
+    doc_id: PMC12261437
+    title: 'Oarfish: enhanced probabilistic modeling leads to improved accuracy in long read transcriptome
+      quantification'
+    authors: Zare Jousheghani, Z.; Singh, N. P.; Patro, R.
+    journal: Bioinformatics
     year: 2025
-    doi: 10.1186/s13059-025-03723-2
-    bibkey: ji2025enhancing
+    doi: 10.1093/bioinformatics/btaf240
+    bibkey: zarejousheghani2025oarfish
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L14
-    anchor: https://paperclip.gxl.ai/citations/papers/PMC12392579#L14
-    quote: when a read is assigned to multiple transcripts, tools often do not specify how the read fraction
-      is distributed
+    lines: L32
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12261437#L32
+    quote: reads generated from a particular isoform to be proportional to the product of the number of
+      copies of that isoform and the isoform’s length
   confidence: high
 - id: LR-087
-  claim: Short-read quantification draws much of its power to separate similar isoforms from a transcript-length
-    term in the model, so long-read methods that simply delete that term lose discriminating power along
-    with it; one replacement is a term that favours read assignments making coverage along a transcript
-    more uniform.
+  claim: Long-read quantifiers generally remove the transcript-length term that the short-read model carries,
+    and the authors of one method argue that removing it also costs the model some of its ability to tell
+    apart reads compatible with several transcripts; their replacement is a term that favours assignments
+    making coverage along a transcript more uniform.
   topic: what long-read EM changes relative to short-read EM
   source:
     doc_id: PMC12261437
@@ -2432,10 +2461,10 @@ claims:
       in the ability of the model to distinguish ambiguous fragments
   confidence: high
 - id: LR-088
-  claim: 'Length alone did not reduce average per-read ambiguity in the first careful test of it: with
-    the same annotation and the same index, the mean number of transcripts in the equivalence class a
-    read fell into was almost identical for nanopore and for Illumina reads, although fewer nanopore reads
-    landed in the very largest classes.'
+  claim: 'Length alone did not reduce average per-read ambiguity in one early test: with the same annotation
+    and the same index, the mean number of transcripts in the equivalence class a read fell into was almost
+    identical for nanopore and for Illumina reads, although fewer nanopore reads landed in the very largest
+    classes.'
   note: 'Three caveats, all from the same paper: the reads were 2019 nanopore chemistry, they were matched
     with a short-read quasi-mapper at k=31 so sequencing error inflates class membership, and duplicate
     transcripts were deliberately retained in the index (L66).'
@@ -2518,7 +2547,9 @@ claims:
     rank-deficient at every read length below 600 base pairs, and the maximum-likelihood solution is then
     a line of equally good answers rather than a point.'
   note: The quantity is computed from annotation and read length alone, with no data, so it bounds what
-    any quantifier could recover rather than describing one tool's error.
+    any quantifier could recover rather than describing one tool's error. The framework takes a single
+    fixed read length as its parameter (L49, and 300 base pairs in the tests at L76 and L79) and was validated
+    against short-read tools, so it does not model reads that are truncated from one end.
   topic: non-identifiability as a function of read length
   source:
     doc_id: PMC13023374
@@ -2539,10 +2570,12 @@ claims:
 - id: LR-092
   claim: 'Lengthening reads relieves that ill-conditioning for most genes but not for all: the condition
     number falls monotonically with read length for most genes and rises transiently for a minority, so
-    longer reads usually improve identifiability without guaranteeing it anywhere.'
-  note: The paper's illustrative range at L91 reads 'the CN decreases from 109 to 1' in the corpus text,
-    which is almost certainly 10 to the ninth with the exponent lost in conversion, so that figure was
-    not recorded.
+    longer reads usually improve the conditioning of the problem but do not improve it for every gene.'
+  note: 'Conditioning is not the same thing as identifiability: a full-rank but badly conditioned system
+    has a unique optimum that is unstable, while the rank-deficient case in QNT-010 has no unique optimum
+    at all. The paper''s illustrative range at L91 reads ''the CN decreases from 109 to 1'' in the corpus
+    text, which is almost certainly 10 to the ninth with the exponent lost in conversion, so that figure
+    was not recorded. Here too one fixed read length parametrises the matrix.'
   topic: non-identifiability as a function of read length
   source:
     doc_id: PMC13023374
@@ -2563,11 +2596,13 @@ claims:
 - id: LR-093
   claim: 'Residual ambiguity is measurable on a named gene: FAM219A, whose exon-isoform structure scores
     156.08 on a condition-number index, had a mean absolute relative difference of 0.7094 when quantified
-    from 150 base-pair paired short reads and 0.5858 from long reads alone, so the long-read estimate
-    improved but remained wrong by more than half.'
-  note: Simulated reads with GENCODE annotation; the same line reports the error falling to 0.1696 when
-    a long-read-derived sample-specific annotation is used instead, which separates the annotation's contribution
-    from the reads'.
+    from 150 base-pair paired short reads and 0.5858 from long reads alone, so long reads improved the
+    estimate without bringing this gene''s error near zero.'
+  note: Simulated reads with GENCODE annotation. The error measure is a mean absolute relative difference,
+    whose exact definition sits in that paper's Methods under performance evaluation and was not read
+    here, so the two values should be compared with each other and not read as percentages. The same line
+    reports the error falling to 0.1696 when a long-read-derived sample-specific annotation is used instead,
+    which separates the annotation's contribution from the reads'.
   topic: non-identifiability as a function of read length
   source:
     doc_id: PMC12346831
@@ -2588,6 +2623,34 @@ claims:
       kallisto, while long reads reduce MARD to 0.5858
   confidence: high
 - id: LR-094
+  claim: 'One way a quantifier handles a read that stops short of a transcript end is to treat the read''s
+    length as a censored observation: a read whose end falls within a tolerance of a known isoform end
+    is called complete, every other read is called truncated, and the two groups are fitted together with
+    a survival model so that an isoform-specific read-length distribution can weight each assignment.'
+  note: The tolerance is 20 base pairs by default on the cited line, and the same line says truncated
+    reads arise either from incomplete sequencing or from isoforms missing from the annotation, which
+    the model cannot separate because the annotation is treated as the gold standard.
+  topic: why an incomplete match is ambiguous for quantification
+  source:
+    doc_id: PMC8212471
+    title: 'LIQA: long-read isoform quantification and analysis'
+    authors: Hu, Y.; Fang, L.; Chen, X.; Zhong, J. F.; Li, M.; Wang, K.
+    journal: Genome Biology
+    year: 2021
+    doi: 10.1186/s13059-021-02399-8
+    bibkey: hu2021liqa
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L64
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8212471#L64
+    quote: true length of truncated read is censored. Given the observed lengths of all complete and truncated
+      reads, we fit them into a survival model
+  confidence: high
+  figure_idea: A truncated read against the two isoforms it fits, with the read-length distribution drawn
+    beside them, so a reader sees that the shorter isoform explains the read without any censoring and
+    the longer one needs it.
+- id: LR-095
   claim: 'Truncation is the normal case rather than the exception: in a deeply sequenced nanopore cDNA
     dataset only 25.7 per cent of reads covered at least 95 per cent of the bases of the transcript they
     were assigned to, and the mean coverage of a transcript by one read was 50.4 per cent.'
@@ -2613,11 +2676,12 @@ claims:
     quote: Although only 25.7% reads were found to be full length (covering at least 95% of the bases
       of the corresponding transcripts)
   confidence: high
-- id: LR-095
-  claim: 'The incomplete-match problem is explicit in how reads are bookkept: reads sharing a compatible
-    transcript set are pooled into classes, and one of the five classes is reads whose junction chain
-    matches one transcript exactly while also being a subset of one or more longer transcripts, which
-    is exactly the case where a genuinely short isoform and a truncated copy of a long one cannot be distinguished.'
+- id: LR-096
+  claim: 'The incomplete-match problem is explicit in how reads are bookkept: reads compatible with the
+    same set of transcripts are pooled into one class, and one of the five classes is reads whose junction
+    chain matches one transcript exactly while also being a subset of one or more longer transcripts,
+    which is exactly the case where a genuinely short isoform and a truncated copy of a long one cannot
+    be distinguished.'
   topic: why an incomplete match is ambiguous for quantification
   source:
     doc_id: bio_b55d14c66e9f
@@ -2631,14 +2695,14 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L131
-    anchor: https://paperclip.gxl.ai/citations/papers/bio_b55d14c66e9f#L131
+    lines: L130,L131
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_b55d14c66e9f#L130,L131
     quote: equally aligned to a transcript while partially aligned to one or more longer transcripts;
       this occurs when transcripts are subsets of other (longer) transcripts
   confidence: high
   figure_idea: A short isoform and a long isoform whose junctions it shares, with one read drawn below
     that is compatible with both, and the two abundance assignments that read would support.
-- id: LR-096
+- id: LR-097
   claim: 'A reference isoform that is not expressed at all can still be assigned expression: artificial
     exon-skipping isoforms inserted into the annotation received non-zero estimates through probabilistic
     read assignment and approximate matching, and raising a counts-per-million threshold reduced how many
@@ -2664,8 +2728,8 @@ claims:
     quote: These artificial isoforms are not expressed, however, due to probabilistic read-assignment
       and approximate read matching in Bambu, they can still be estimated to be active
   confidence: high
-- id: LR-097
-  claim: 'Read-support thresholds usually act before a catalogue exists rather than on it: one joint-calling
+- id: LR-098
+  claim: 'A read-support threshold can act before a catalogue exists rather than on it: one joint-calling
     method discards by default any group of identically spliced reads with fewer than three reads of support
     summed across the whole cohort, so a structure seen once or twice never reaches the stage where it
     could be quantified.'
@@ -2691,7 +2755,7 @@ claims:
     quote: read bundles with total support below 3 reads are excluded from the analysis (min_reads_per_isoform
       parameter)
   confidence: high
-- id: LR-098
+- id: LR-099
   claim: 'Raising a minimum-support filter mostly deletes novel isoforms rather than annotated ones: filters
     of 5, 10 and 20 supporting reads progressively cut the number of novel transcripts while annotated
     transcripts were comparatively unaffected, because the novel calls are the lowly expressed ones.'
@@ -2714,7 +2778,7 @@ claims:
     quote: applying expression filters of 5, 10 and 20 supporting reads was a progressive reduction in
       the number of novel transcripts, while annotated transcripts
   confidence: high
-- id: LR-099
+- id: LR-100
   claim: 'A minimum-fraction threshold can behave backwards when samples are combined: because such filters
     require a transcript to hold some minimum share of its gene''s expression, pooling reads across samples
     raises the gene total and can push below the threshold a transcript that passed in each sample analysed
@@ -2740,7 +2804,7 @@ claims:
     quote: when reads are pooled in J&C, the gene’s total expression increases, causing the same transcript
       to fall below the relative threshold
   confidence: high
-- id: LR-100
+- id: LR-101
   claim: 'An alignment-quality filter is also an abundance filter: on spike-in transcripts with known
     input proportions, raising the minimum mapping quality progressively over-represented single-isoform
     genes and under-represented genes with four annotated isoforms, which is the direction that makes
@@ -2766,13 +2830,13 @@ claims:
     quote: static MAPQ thresholding biases towards keeping reads mapping to single-isoform genes and biases
       against multi-isoform genes
   confidence: high
-- id: LR-101
+- id: LR-102
   claim: Against spike-ins with known abundances, a short-read quantifier recovered the truth better than
     any long-read method entered, with an average Spearman correlation of 0.84 against 0.29 to 0.78 and
     a median relative difference of 0.12 against 0.13 to 1.00.
-  note: Chapter 9 owns this consortium's design; recorded here only for the quantification result. The
-    comparison is on SIRV-Set 4 spike-ins, where the short-read tool was run on matched Illumina data
-    from the same RNA, so it is a platform-plus-tool comparison rather than a tool comparison.
+  note: Chapter 9 owns this consortium's design; recorded here only for the quantification result. L113
+    states that the short-read tool was run as a control on cDNA-Illumina datasets with the GENCODE annotation,
+    so this compares a platform-and-tool pair rather than two tools on one dataset.
   topic: quantification accuracy benchmarks
   source:
     doc_id: PMC11543605
@@ -2797,12 +2861,12 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L117
-    anchor: https://paperclip.gxl.ai/citations/papers/PMC11543605#L117
+    lines: L113,L117
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11543605#L113,L117
     quote: RSEM outperformed other long-read-based tools with higher average SCC (0.84 versus 0.29–0.78),
       lower MRD (0.12 versus 0.13–1.00)
   confidence: high
-- id: LR-102
+- id: LR-103
   claim: 'Long-read protocols do not fully agree with each other on which isoform dominates: across three
     long-read protocols run on the same eight cell lines, the protocols picked the same major isoform
     for only 67 to 69 per cent of multi-isoform genes.'
@@ -2977,9 +3041,14 @@ leads:
     "Iso-Seq HiFi read accuracy transcriptome Revio median read quality Q30 full-length transcripts human"
     on -s papers, and corpus greps for "Kinnex[^.]{0,140}(accurac|identit|Q[0-9]{2}|read length|full-length)"
     and "(Iso-Seq|Kinnex|HiFi)[^.]{0,120}(median (read )?(accuracy|quality|identity) |99\.[0-9]%|Q30)".
-    Every numeric hit was genomic DNA, a review, or an arXiv false positive. The only PacBio cDNA accuracy
-    figure anchored in this file is Volden 2018''s 98.9 per cent median on a Sequel (LR-070), which is
-    two instrument generations old. The chapter must not present it as current.
+    Also greped "LongBench" (the benchmark cohort Paniagua names at L10) and "SG-?NEx[^.]{0,140}(accurac|identit|error)",
+    which returned natural-language-processing benchmarks and nothing respectively, and opened bio_3dde5de16cc0
+    and bio_6d09c3676c8b, neither of which gives a per-platform cDNA accuracy figure; the first does report
+    nanopore direct-RNA mean Phred rising from Q17.5 to Q31.7 between runs on a bacterium with a newer
+    basecaller (L104). Every other numeric hit was genomic DNA, a review, or an arXiv false positive.
+    The only PacBio cDNA accuracy figure anchored in this file is Volden 2018''s 98.9 per cent median
+    on a Sequel (LR-070), which is two instrument generations old. The chapter must not present it as
+    current.
 
     '
   why: 'A section that names RNA004 at 98.67 per cent and PacBio at 98.9 per cent from 2018 invites the
@@ -2987,14 +3056,27 @@ leads:
 
     '
 - note: 'No duplex yield or accuracy figure from a cDNA or direct-RNA library was located. LR-073 uses
-    SARS-CoV-2 amplicon DNA on R10.4 as a stand-in. Searched "duplex nanopore R10.4.1 basecalling accuracy
-    Q20 single-read accuracy" on -s papers, which returned only DNA genotyping, assembly and simulator
-    papers. Volden 2018''s 1D2 run (PMC6166824 L22, 5,904 single-strand against 1,142 paired-strand full-length
-    reads) is the closest cDNA measurement of the same idea and is anchored in LR-070''s note rather than
-    as its own claim.
+    SARS-CoV-2 amplicon DNA on R10.4 as a stand-in, anchored on its measured 3.33 per cent duplex fraction
+    (PMC9612837 L109) rather than the looser 5 to 10 per cent in that paper''s discussion. Searched "duplex
+    nanopore R10.4.1 basecalling accuracy Q20 single-read accuracy" on -s papers, which returned only
+    DNA genotyping, assembly and simulator papers. Volden 2018''s 1D2 run (PMC6166824 L22, 5,904 single-strand
+    against 1,142 paired-strand full-length reads) is the closest cDNA measurement of the same idea and
+    is anchored in LR-070''s note rather than as its own claim.
 
     '
   why: Duplex is one of the four accuracy strategies the section is meant to cover.
+- note: 'Read but not anchored, and it fixes a confound in LR-078. PMC12663090 (Hewel et al., Nucleic
+    Acids Research 2025, doi 10.1093/nar/gkaf1314) sequenced the same samples with RNA002 and RNA004 on
+    one PromethION device: L106 states the design, L108 that RNA004 gave higher yields for every matched-composition
+    sample, and L109 that HEK293T libraries reached about 17.3 and 21.94 Gb with more than 18 million
+    reads on RNA004 while the same samples on RNA002 yielded under 35 per cent of that throughput and
+    fewer than 7 million reads. That is the device-controlled version of the throughput claim and should
+    replace or accompany LR-078 if the section needs a clean comparison.
+
+    '
+  why: 'PLT-019 changes device, kit and basecaller at once; this source changes only the kit.
+
+    '
 - note: 'Conflict, recorded not resolved. RNA004 direct-RNA accuracy is 93.5 per cent in PMC11134706 L89
     (synthetic curlcake RNA, Dorado 0.4.3, rna004_130bps_sup@v3.0.1) and 98.67 per cent median alignment
     identity in PMC13251006 L27 (GM12878 poly(A) RNA, Dorado v1.0, reads with 200 or more aligned bases).
@@ -3084,6 +3166,17 @@ leads:
 
     '
   why: Records which anchors need re-checking if a journal version appears.
+- note: 'Removed from the claim list only to stay inside the record budget, and verified so it can be
+    promoted in one step: TranSigner (PMC12392579) L14 states that when a read is assigned to multiple
+    transcripts, tools often do not specify how the read fraction is distributed, which prevents a user
+    from ignoring assignments with low read fractions; L34 adds that two of the five tools benchmarked
+    record a read as belonging to several transcripts without any fractions, so the benchmarkers split
+    such reads evenly themselves, and L35 that two pipelines assigned under 80 per cent of available reads
+    while three exceeded 90 per cent. The 19-word span beginning ''when a read is assigned to multiple
+    transcripts'' is byte-exact at L14 (paperclip grep -c -F returns 1). Metadata: Hyun Joo Ji; Mihaela
+    Pertea, Genome Biology 2025, doi 10.1186/s13059-025-03723-2, suggested bibkey ji2025enhancing.'
+  why: A section that explains EM has to say that what a tool reports about an ambiguous read is not standardised,
+    or the reader will assume the fractions are always available.
 - note: 'Read and verified but not recorded as a claim, so a later pass can lift it without re-reading:
     LongBench (bio_a4290325739b) L14 states that short-read data reported significantly more transcripts
     than long-read data at matched read depth, which those authors attribute to higher ambiguity in isoform
@@ -3092,37 +3185,49 @@ leads:
     L14 (paperclip grep -c -F returns 1).'
   why: It is the cleanest statement that ambiguous assignment inflates a catalogue, and it is a benchmark
     observation rather than a tool paper's self-assessment.
-- note: 'The corpus does not settle whether formal non-identifiability survives truncation. The nearest
-    primary results are recorded here as LR-091 and LR-092 (rank deficiency of a read-length-dependent
-    matrix, PMC13023374 L64 and L18). Searches run: ''identifiability of transcript abundances from long
-    reads degenerate maximum likelihood ambiguous assignment'' and ''minimum read count threshold for
-    calling a novel isoform false positive transcripts single read support''. Those surfaced Zheng, Ma
-    and Kingsford on ranges of optimal estimates under non-identifiability (bio_39515ab0703f and PMC8892959),
-    which is short-read and was not read here, and Fan, Chan and Patro on perplexity without ground truth
-    (PMC8951746), also not read. No paper was found that re-derives the short-read non-identifiability
-    result for truncated long reads.'
-  why: This is the question the chapter most needs answered and the honest answer is that the corpus gives
-    a quantitative weakening, not a formal result.
-- note: Recorded conflict between two sources on the same question. Soneson et al. (PMC6668388, L40) find
-    the mean number of transcripts per read equivalence class almost identical between nanopore and Illumina
-    reads. Dong et al. (bio_5ad22e916d23, L31) find assignment-ambiguity over-dispersion between 1 and
-    1.15 for every nanopore transcript against more than 3.56 for two-thirds of Illumina transcripts,
+- note: 'The corpus does not settle whether the short-read non-identifiability result survives truncated
+    long reads. A formal result does exist and is recorded as LR-091: rank deficiency of the matrix relating
+    abundances to expected counts leaves the maximum-likelihood solution non-unique, and read length enters
+    it. What is missing is any derivation of it for reads that are long but truncated from one end, which
+    is the actual long-read case; PMC13023374 parametrises its matrix by a single fixed read length (L49,
+    L76, L79). Searches run: ''identifiability of transcript abundances from long reads degenerate maximum
+    likelihood ambiguous assignment'' and ''minimum read count threshold for calling a novel isoform false
+    positive transcripts single read support''. Surfaced but not opened: Zheng, Ma and Kingsford on ranges
+    of optimal estimates under non-identifiability (bio_39515ab0703f and PMC8892959, short-read), and
+    Fan, Chan and Patro on perplexity without ground truth (PMC8951746). Opened and read: DELongSeq (PMC9985341)
+    L13, which uses the information matrix of the EM algorithm to put an uncertainty on each isoform estimate
+    rather than to ask whether the estimate is unique; a record on per-isoform uncertainty could be built
+    from it without re-reading.'
+  why: This is the question the chapter most needs answered, and the honest answer is a quantitative weakening
+    plus a formal result derived under an assumption long reads violate.
+- note: 'Recorded conflict between two sources on the same question. Soneson et al. (PMC6668388, L40)
+    find the mean number of transcripts per read equivalence class almost identical between nanopore and
+    Illumina reads. Dong et al. (bio_5ad22e916d23, L31) find assignment-ambiguity over-dispersion between
+    1 and 1.15 for every nanopore transcript against more than 3.56 for two-thirds of Illumina transcripts,
     and conclude nanopore far outperforms short reads at assigning reads to transcripts. The two use different
     measures (compatibility-set size versus bootstrap over-dispersion), different mappers (short-read
-    quasi-mapping at k=31 versus Salmon bootstraps) and chemistries three years apart. Both are recorded,
-    attributed, as LR-088 and LR-090; do not average them.
+    quasi-mapping at k=31 versus Salmon bootstraps) and chemistries three years apart. A third source
+    sides with Dong: Chen et al. (bio_6924e19b6e9e, L56) report that nanopore long reads cover significantly
+    more junctions and that significantly more reads can be uniquely assigned to a transcript than with
+    short reads, though the comparison is figure-based with no number on that line. The 22-word span beginning
+    ''Nanopore long reads cover significantly more junctions'' is byte-exact at L56 (paperclip grep -c
+    -F returns 1), so it can be promoted to a claim without re-reading; note that it was read as a preprint
+    whose journal version is 10.1038/s41592-025-02623-4 per the listing line. Both of the first two are
+    recorded, attributed, as LR-088 and LR-090; do not average them.'
   why: A chapter that cites only one of these will state the opposite of what the other shows.
 - note: 'Further verified lines in sources already cited here, kept out of the claim list only for its
     size: bio_b55d14c66e9f L22 (a minimum read count depends on sequencing depth, so the same threshold
     gives vastly different results across samples) and L127 (the definition of a full-length read class
     as one whose splice junctions are all present in, and compatible with, the transcript); bio_d94acebf6da2
-    L20 (on SIRV spike-ins one filtering preset produced 582 false positives per sample against two for
-    another, on a panel of 69 known SIRV transcripts across seven genes, L9); PMC11543605 L121 (mean percentage
-    of ERCC transcripts quantified above zero TPM was 33.01 against 82.17 for regular SIRVs) and L117
-    (tools reported between 28 and 136 SIRV transcripts above zero TPM); PMC12346831 L44 (long-read quantification
-    error plateaus at 20 million reads for both low- and high-complexity genes, while short-read error
-    plateaus at 60 and 120 million respectively); PMC12392579 L35 (two pipelines assigned fewer than 80
-    per cent of available reads while three exceeded 90 per cent).'
+    L20 (on SIRV spike-ins, where every called transcript outside the panel of 69 known SIRV transcripts
+    across seven genes is a false positive by construction, the IsoSeq cluster-and-collapse workflow produced
+    582 false positives per sample on the four-fold concentration mix against two for Isocall at its default
+    filters, L9 and L20); PMC11543605 L121 (mean percentage of ERCC transcripts quantified above zero
+    TPM was 33.01 against 82.17 for regular SIRVs) and L117 (tools reported between 28 and 136 SIRV transcripts
+    above zero TPM); PMC12346831 L44 (long-read quantification error plateaus at 20 million reads for
+    both low- and high-complexity genes, while short-read error plateaus at 60 and 120 million respectively);
+    PMC12392579 L35 (two pipelines assigned fewer than 80 per cent of available reads while three exceeded
+    90 per cent).'
   why: Each is a number with a line anchor that a deepening pass can use without a second research pass.
 - note: 'Not anchored: a transcript-count ladder showing how many transcripts survive at one, two and
     three supporting reads with a common denominator. No single source in the corpus gives it. The nearest
@@ -3130,8 +3235,11 @@ leads:
     counts on that line) and bio_d94acebf6da2 L29 (a hard default of three reads). Searches run: ''effect
     of requiring two or three supporting long reads on number of transcripts detected singleton read isoforms
     filtering''. A boolean corpus grep was attempted as paperclip grep --bool ''"at least two reads" AND
-    "at least three reads"'' /papers/ --from 2015 and failed with ''results not found: 2015'', so --from
-    takes a result-set id rather than a year in this build; the scan was not retried.'
+    "at least three reads"'' /papers/ --from 2015 and failed with ''results not found: 2015'', because
+    --from takes a result-set id rather than a year in this build. Retried without it, the grep matched
+    seven documents (result set s_1536d187); six are unrelated (duplex consensus calling, hashtag demultiplexing,
+    circRNA filters, consensus pileups, structural variants, repeat genes) and the seventh is PMC13702348,
+    described in the last lead.'
   why: The chapter promises read support thresholds and a ladder with one denominator is the figure that
     section wants.
 - note: Conflict of interest observed. The corpus contains bio_1e10d9ed6e09, the LRAA preprint, written
@@ -3143,8 +3251,10 @@ leads:
     corpus search listing's 'Published (2023)' line, not from meta.json, which carries only the preprint
     DOI. Dong et al. (bio_5ad22e916d23), LongBench (bio_a4290325739b), CALMeR (bio_92d1de4e4802), Isocall
     (bio_d94acebf6da2) and the replicate-handling preprint (bio_e8d1d5ea6ea9) show no journal version
-    in the corpus and are recorded as bioRxiv. LongBench's meta.json carries no year; 2025 was taken from
-    its DOI string 10.1101/2025.09.11.675724 while the listing shows a first-public date of 2026-01-01.
+    in the corpus and are recorded as bioRxiv. A paperclip lookup title was run for both the Bambu and
+    the Dong journal titles and returned No documents found, so no PMC copy is reachable to re-anchor
+    those five claims as non-preprint. LongBench's meta.json carries no year; 2025 was taken from its
+    DOI string 10.1101/2025.09.11.675724 while the listing shows a first-public date of 2026-01-01.
   why: A DOI or year taken from a listing line should be confirmed before it is published as a reference.
 - note: Authors and journals in this file were read from each document's meta.json, so metadata_source
     is left unset except on PMC11543605, whose block was copied from research/09-catalogs.yml to keep
@@ -3152,15 +3262,20 @@ leads:
     scripts/resolve_metadata.py --write should be run over this file.
   why: verify_claims.py compares bibkeys and DOIs across files, and a second spelling of the same author
     list would read as a discrepancy.
-- note: Full text not reached for the published version of three works whose preprint was read, and for
-    Mikheenko et al. 2022 on splice-site accuracy, which research/05-long-reads.yml already lists as missing.
-    Not retrieved here either.
-  why: Keeps the known gaps in one place rather than rediscovering them.
-- note: 'Read and judged out of scope for this section, listed so the next pass does not repeat the search:
+- note: 'Still not retrieved, and already listed as missing in research/05-long-reads.yml: Mikheenko et
+    al. 2022 on long-read splice-site accuracy. No attempt was made here, since this section is about
+    quantification rather than alignment accuracy.'
+  why: Keeps a known gap in one place rather than rediscovering it.
+- note: 'Surfaced by search and deliberately not opened, listed so the next pass does not repeat the search:
     PMC12680354 (lr-kallisto), PMC9858503 (ESPRESSO), PMC11345431 (Isosceles), PMC13113378 (IFDlong),
     PMC12276307 (Longcell), bio_1035f55d7367 (MPAQT, short- and long-read integration) and bio_9847a2e78026,
     a modular long-read quantification benchmark whose L21 states that method performance can depend critically
     on the cleanness of the underlying simulation and reports discrepancies with published results. The
-    last of these is worth a claim if the section argues about how benchmarks are built.'
+    last of these is worth a claim if the section argues about how benchmarks are built, and its L21 was
+    read. Also found and not pursued: PMC13702348, the only document located that reports a read-floor
+    ladder with common denominators (L114: with both floors at one read the eligible set is 649 junctions,
+    492 of them carried by one tumour, against 1,551 at three reads), but it is a short-read splice-junction
+    panel study in liver cancer, not long-read transcript quantification, so it does not answer the question
+    the section asks.'
   why: CONTRIBUTING.md scopes the book away from a tools catalogue, so each of these needs a reason beyond
     existing.

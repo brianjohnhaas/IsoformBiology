@@ -808,8 +808,8 @@ claims:
   source:
     doc_id: PMC3851240
     title: Assessment of transcript reconstruction methods for RNA-seq
-    authors: The RGASP Consortium; Steijger, T.; Abril, J. F.; Engström, P. G.; Kokocinski, F.; Hubbard,
-      T. J.; Guigó, R.; Harrow, J.; Bertone, P.
+    authors: Steijger, T.; Abril, J. F.; Engström, P. G.; Kokocinski, F.; Hubbard, T. J.; Guigó, R.; Harrow,
+      J.; Bertone, P.; The RGASP Consortium
     journal: Nature Methods
     year: 2013
     doi: 10.1038/nmeth.2714
@@ -838,8 +838,8 @@ claims:
   source:
     doc_id: PMC3851240
     title: Assessment of transcript reconstruction methods for RNA-seq
-    authors: The RGASP Consortium; Steijger, T.; Abril, J. F.; Engström, P. G.; Kokocinski, F.; Hubbard,
-      T. J.; Guigó, R.; Harrow, J.; Bertone, P.
+    authors: Steijger, T.; Abril, J. F.; Engström, P. G.; Kokocinski, F.; Hubbard, T. J.; Guigó, R.; Harrow,
+      J.; Bertone, P.; The RGASP Consortium
     journal: Nature Methods
     year: 2013
     doi: 10.1038/nmeth.2714
