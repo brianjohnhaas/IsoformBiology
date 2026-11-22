@@ -16,7 +16,7 @@ Three answers all turn up often: the protein changes at one end, its sequence
 stays the same while the amount made changes, or the transcript yields no
 protein at all.
 
-## The mechanism predicts which part of the protein changes {#sec-what-changes}
+## The two protein ends change by different routes {#sec-what-changes}
 
 The mechanism is largely predictable from the region of the protein affected,
 and establishing that took a systematic comparison. Across
@@ -124,7 +124,7 @@ stress, and at one gene whose dosage is tightly held, it mattered a great
 deal. @sec-sc-apa gives the cell-type
 dimension of the same choice.
 
-## Evidence that an annotated isoform reaches protein {#sec-is-it-translated}
+## Deep proteomics detects alternative junctions {#sec-is-it-translated}
 
 @sec-how-functional sets out the three-way disagreement about how much
 alternative splicing matters. Protein-level evidence bears on it directly, and
@@ -209,7 +209,7 @@ ubiquitination and acetylation as possibilities and do not demonstrate either
 interest. It lies beside the channel through which messenger RNA enters the
 ribosome [@magadi2025rps24].
 
-### Five incompatible naming schemes for one gene {#sec-rps24-naming}
+### Conflicting names for the same molecules {#sec-rps24-naming}
 
 Reading these papers together runs into a wall. The groups do not label the gene
 the same way. Junction names
@@ -275,7 +275,7 @@ proline-lysine-glutamate form and not the ones ending in lysines
 three residues is a proteoform-level reagent, and @sec-measuring explains why
 such things are rare.
 
-### RPS24 junctions as a cancer drug readout {#sec-rps24-cancer}
+### A proposed readout of KRAS inhibition {#sec-rps24-cancer}
 
 Across 135 lung cancer cell lines, two of the four junctions were present in
 over 98 per cent of them, a third appeared in 89 lines, or 66 per cent, and the

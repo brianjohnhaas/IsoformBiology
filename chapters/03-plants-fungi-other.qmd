@@ -29,7 +29,7 @@ A normalised deep-coverage survey of Arabidopsis put alternative splicing at
 without stress, and those authors treat the figure as a floor
 [@marquez2012arabidopsis].
 
-### Intron retention leads outside the animals {#sec-class-balance}
+### Intron retention is the commonest event {#sec-class-balance}
 
 The flavour differs as much as the amount. Cassette exons predominate in
 animals, while intron retention is the more frequent class in other taxa
@@ -43,7 +43,7 @@ supported by far fewer reads than the junction that removes them, and about 73
 per cent had a retention ratio below 1 [@marquez2012arabidopsis]. Counting
 events overstates how much retained-intron RNA a plant cell is actually holding.
 
-### Temperature read through splicing
+### Thermosensory splicing in FLM and MAF2
 
 Flowering time in Arabidopsis is set partly by how two genes are spliced. FLM is
 the better known of them, and its transcripts were cloned and sequenced at three
@@ -65,7 +65,7 @@ the balance toward an intron-retaining variant carrying a premature stop, whose
 product can neither bind SVP nor repress [@airoldi2015maf2], so one gene family
 evolved thermosensory splicing twice.
 
-### Cold, antisense transcripts and the clock
+### COOLAIR and the clock genes
 
 Vernalisation at the FLC locus runs through isoform choice on the antisense
 strand. The cold-induced COOLAIR transcripts exist as several isoforms
@@ -99,7 +99,7 @@ light. The signal traces to sugars made by photosynthesis in the shoot, acting
 through the TOR kinase pathway. Those authors describe it as a shoot-to-root
 route coordinating splicing across the whole plant [@riegler2021light].
 
-### Isoform alleles with agronomic effect sizes
+### Splice variants that change grain size
 
 Two crop loci show the effect sizes involved. In tropical japonica rice, six
 SNPs at the OsLG3b locus change how the OsMADS1 transcript is spliced, and that
@@ -173,7 +173,7 @@ Expressed in potato, it shifts the host alternative splicing programme
 [@betz2024mycorrhizal]. A symbiont establishes itself by changing which isoforms
 its host makes.
 
-## Protists, parasites and the limits of the mechanism {#sec-protists}
+## Protists and parasites {#sec-protists}
 
 *Plasmodium falciparum* is not the intron-poor organism it is often taken for.
 Over half its genes carry predicted introns, and gene-model-independent analysis

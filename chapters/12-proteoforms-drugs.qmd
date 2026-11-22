@@ -17,7 +17,7 @@ is an RNA molecule, while a proteoform is a distinct protein form from one gene,
 and it absorbs differences this book has treated separately: those from
 splicing, those from genetic variation, and those added after translation.
 
-## The gap between estimate and measurement {#sec-measuring}
+## Far more proteoforms estimated than measured {#sec-measuring}
 
 The gap between ambition and measurement is the largest in this book, and two
 numbers set its size.
@@ -62,7 +62,7 @@ splicing events, which are immunotherapy, oligonucleotides and small molecules
 [@shaw2022multiomics]. @sec-cancer-therapeutics and @sec-sma cover
 examples of the second and third.
 
-## A drug that targets one isoform {#sec-isoform-selective}
+## Claudin-18: a drug that targets one isoform {#sec-isoform-selective}
 
 Claudin-18 settles the question of whether isoform-selective therapy is
 possible, because it already exists in the clinic.

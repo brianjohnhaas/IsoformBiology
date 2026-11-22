@@ -19,7 +19,7 @@ made bluntly by the authors of an isoform-stability method: isoform-level
 stability cannot be estimated from short reads, because the reads cannot be
 assigned to isoforms in the first place [@maier2020native].
 
-## A six-exon gene with 41 isoforms {#sec-snca}
+## SNCA: forty-one isoforms from six exons {#sec-snca}
 
 SNCA is central to Parkinson disease and has six exons. Targeted PacBio
 sequencing resolved 41 distinct full-length isoforms from it. The diversity
@@ -35,7 +35,7 @@ exon 5 was separately confirmed by aggregated short-read junction data
 A heavily studied disease gene had most of its transcript structures outside
 the annotation, and they were reachable by reading whole molecules.
 
-## One molecule carries its own splice chain {#sec-one-molecule}
+## Distant choices on one molecule can be coupled {#sec-one-molecule}
 
 An entire complex splice chain can be observed rather than inferred. In
 Arabidopsis, a single uninterrupted nanopore alignment of 12.7 kb spanning 63
@@ -89,7 +89,7 @@ The claim records say so, and the bibliography emits them as preprints rather
 than as journal articles.
 :::
 
-## Reading the molecule itself {#sec-direct-rna}
+## Direct RNA sequencing {#sec-direct-rna}
 
 Nanopore can sequence the native RNA strand rather than a cDNA copy of it.
 Applied to the GM12878 cell line, that yielded 33,984 isoforms over 10,793
@@ -146,7 +146,7 @@ X-linked long reads came from the inactive chromosome, which is 0.54 per cent.
 Xist plus the two known escape genes accounted for 39 of those few
 [@lemoine2025longread].
 
-## Things that look like isoforms and are not {#sec-artifacts}
+## Artefacts that pass for isoforms {#sec-artifacts}
 
 A long read can report a structure that was never in the cell.
 
@@ -183,7 +183,7 @@ Alzheimer brain state the ceiling directly: even with the gain from
 concatenation, depth per sequencing run remains lower and cost per read higher
 than for short-read sequencing [@shahnaee2026rna].
 
-## Long reads are bought with depth and filtering {#sec-longread-cost}
+## Long reads cost depth and junction sensitivity {#sec-longread-cost}
 
 Isoform resolution is bought with sequencing depth. In a matched comparison on
 the same cells, PacBio concatenation libraries averaged roughly 21,000 to 97,000
@@ -207,7 +207,7 @@ reached the roughly 3 kb median human transcript length. Events far from the
 poly(A) end were correspondingly harder to quantify [@han2024contrasting]. A
 long read is often not long enough to reach them.
 
-## Haplotype-resolved reads settle ambiguous associations {#sec-gtex-lr}
+## Variants read against full-length transcripts {#sec-gtex-lr}
 
 Transcript structure changes what a variant is predicted to do. Adding
 long-read transcripts to the reference annotation changed the predicted most

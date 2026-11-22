@@ -10,7 +10,7 @@ down. A large fraction of what changes in a tumour does not move a gene total
 at all, and this chapter is about that fraction and about how much of it holds
 up.
 
-## Changes a gene-level analysis cannot see {#sec-invisible-switches}
+## Switches that leave the gene total unchanged {#sec-invisible-switches}
 
 Treatment-naive oesophageal tissue was scored for isoform switches during
 progression from low-grade to high-grade Barrett's dysplasia. Between 42 and 46
@@ -34,7 +34,7 @@ erythroleukaemia model, over a thousand significant alternative splicing events
 were called, two thirds of them cassette exons, while overall gene expression
 between mutant and wild-type cells barely moved [@liang2018srsf2].
 
-### Not every called switch is an exchange
+### One-sided switches and degraded RNA
 
 Not every called switch is an exchange of one isoform for another. In about half
 of the switches that were not concordant in usage and expression, one partner
@@ -101,7 +101,7 @@ datasets were overlapped at the level of differentially spliced gene lists, not
 a single gene appeared in all nine, and only 446 genes recurred in three or
 more [@liang2018srsf2].
 
-### ZRSR2 and the other spliceosome
+### ZRSR2 and the minor spliceosome
 
 ZRSR2 mutations act on the minor spliceosome. In primary MDS marrow, more than
 a third of all U12-type introns were significantly more retained in
@@ -121,7 +121,7 @@ since its authors claim the misspliced kinase accounts only partly for the
 severe anaemia of SF3B1-mutant MDS, and explicitly not for ring sideroblast
 formation [@lieu2021map3k7].
 
-## Isoform-level inactivation that exome sequencing cannot see {#sec-lztr1}
+## LZTR1 is inactivated by intron retention {#sec-lztr1}
 
 The tumour suppressor LZTR1 is inactivated post-transcriptionally far more
 often than by coding mutation. Retention of its single minor intron exceeded
@@ -131,7 +131,7 @@ samples, across nearly all cancer types profiled [@inoue2021minor].
 A gene can be functionally lost in a tenth of tumours with nothing in the exome
 to show for it.
 
-## Silent mutations that are not silent {#sec-silent}
+## Synonymous mutations that disrupt splicing {#sec-silent}
 
 How often an exonic point mutation disrupts splicing is contested. The figures
 in circulation range from a quarter to over three quarters of exonic mutations,
@@ -159,7 +159,7 @@ cites an earlier pan-cancer estimate putting synonymous changes at roughly 6 to
 [@niersch2021bap1]. The primary analysis should be read before that figure is
 used.
 
-## Isoform-defined drug targets {#sec-drug-targets}
+## MET and AR-V7: targets defined by isoform {#sec-drug-targets}
 
 Two cases show an isoform, rather than a gene, defining the target.
 
@@ -177,7 +177,7 @@ of samples taken after androgen deprivation. The share rose further after
 abiraterone or enzalutamide [@sharp2019arv7]. The receptor form that dominates
 after treatment was almost absent before it.
 
-## Neoantigens and a wider normal reference {#sec-neoantigens}
+## Junction neoantigens and the choice of normal {#sec-neoantigens}
 
 Aberrant junctions dwarf point mutations as a source of recurrent, shareable
 tumour antigens. Across 8,705 TCGA tumours about 251,000 tumour-enriched

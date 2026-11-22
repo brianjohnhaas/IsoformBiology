@@ -111,59 +111,91 @@ from the analogy? If not, cut it.
 
 ## Headings
 
-**A heading states the section's claim where it has one, and names the open
-question where it does not.** Those are the only two jobs. A heading that names
-the topic instead ("Arrays", "Therapeutics", "Space") makes the reader open the
-section to find out whether they need it.
+**A heading does one of three jobs.** It names the thing the section is about,
+where that thing has a name a reader would look for. It states the section's
+claim, where the section has one. It asks the open question, where the section
+reports a disagreement. Most good headings do the first and one of the others at
+once: "Titin: splicing sets cardiac stiffness", "LZTR1 is inactivated by intron
+retention".
 
 This was the last part of the book nobody checked. Every gate strips headings
 before it looks at anything, so for most of the project's life no rule reached
-them, and the habits that were being removed from sentences sat untouched in the
-titles. At the worst point 39 of 131 section headings opened with a Wh- word,
-"What" alone began 18 of them, and a chapter title contained "we".
+them, and the habits being removed from sentences sat untouched in the titles.
+At the worst point 39 of 131 section headings opened with a Wh- word, "What"
+alone began 18 of them, and a chapter title contained "we".
 
-Prefer the claim. The retitles that improved most were the ones that moved a
-verdict out of the body and into the heading:
+**Name the handle.** A reader who knows the field scans a sidebar for genes,
+methods and consortia, and a heading that describes one without naming it hides
+the section from the reader best placed to use it. This is the commonest defect
+and it survived a first pass that fixed everything else, because a title can be
+a perfectly good claim and still withhold the one word being looked for.
 
 | Instead of | Write |
 |---|---|
+| Isoforms that set tissue mechanics | Titin: splicing sets cardiac stiffness |
+| Isoform-level inactivation that exome sequencing cannot see | LZTR1 is inactivated by intron retention |
+| Picking one transcript per gene | MANE and APPRIS: one transcript per gene |
+| What benchmarking established | LRGASP: length for structure, depth for abundance |
 | Where isoform differences actually sit | Most isoform differences sit at the transcript ends |
-| What short reads could not do | Short reads could not reconstruct a molecule |
-| How an annotation actually grows | An annotation grows by revision, not only addition |
-| What benchmarking established | LRGASP separated structure from abundance |
 | Which chromosome the transcript came from | Phasing comes free with read length |
-| Arrays | Arrays moved discovery to a designed survey |
+| Arrays | Arrays and the designed survey |
 
-A claim in a heading is a claim. Check it against the section's records like any
-sentence, because `check_citations.py` blanks headings and will not. Keep digits
-out of headings for the same reason.
+A bare label is right when the section surveys several findings about one named
+thing: "Direct RNA sequencing", "Fungi", "STMN2". It is wrong when the label is
+the whole topic of the chapter's argument and the section has a verdict it could
+carry, which is what was wrong with "Arrays" and "Therapeutics".
 
-Keep the question where the section is genuinely open. "How much of this is
+**Do not promote the section's first sentence into its heading.** The reader
+meets it twice in two lines. Moving the closing verdict up is a different move
+and is encouraged.
+
+**A claim has to say something a reader could disagree with.** "Decides",
+"predicts", "records", "does work", "settles" and "moved" make a heading
+claim-shaped without telling anyone what was found. Prefer the finding itself,
+at the strength of its record and no stronger.
+
+A claim in a heading is still a claim. Check it against the section's records
+like any sentence, because `check_citations.py` blanks headings and will not.
+Keep quantities out of headings as digits for the same reason; a gene symbol
+that contains a digit, such as RPS24, CD45 or TDP-43, is a name and is fine.
+
+**Keep the question where the section is genuinely open.** "How much of this is
 functional", "Whether any of this tracks complexity" and "Does one cell use one
-isoform or several" are the honest titles for sections that report a live
+isoform or several" are the honest titles for sections reporting a live
 disagreement, and turning them into assertions would misrepresent the evidence.
-`check_style.py` therefore caps Wh- openers per chapter rather than banning
-them, and caps any one repeated opening word. A cap is harder to game than a
-ban: a forbidden "What X cannot do" just becomes "The things X cannot do".
+`check_style.py` therefore caps Wh- openers per chapter rather than banning them,
+and caps any one repeated opening word. A cap is harder to game than a ban: a
+forbidden "What X cannot do" just becomes "The things X cannot do".
 
 Two more rules the checker enforces on headings, because they are the prose
 rules and there was never a reason headings escaped them: no first person, no
 banned vocabulary, no em dash.
 
-Three rules it cannot enforce, so they need a human:
+Four rules it cannot enforce, so they need a human:
 
-Keep siblings in one register. If three subsections under a heading are claims,
-the fourth should not be a bare noun. A matched pair can be short, as "The
-five-prime leader" and "The three-prime tail" are, provided both are.
+**Watch for a repeated shape as well as a repeated first word.** Sixteen
+headings were once built as "X that Y cannot see", and chapter 6 carried two
+ending in the same three words. The checker counts opening words and cannot see
+a template.
 
-Do not open a heading with a comma-tail. "Tau, and a ratio that has to be held"
-and "ESTs, and the first genome-scale numbers" are the heading form of the
+**Keep siblings in one register, and use a parallel form on purpose where the
+chapter is a list.** Chapter 2 is a sequence of cases and runs "Gene: what it
+shows" throughout; chapter 4 is a sequence of methods and runs "Method and what
+it gave". Both are deliberate ladders. Elsewhere, do not let the colon form
+spread. If three subsections under a heading are claims, the fourth should not be
+a bare noun, and a matched pair can be short, as "The five-prime leader" and "The
+three-prime tail" are, provided both are.
+
+**Do not open a heading with a comma-tail.** "Tau, and a ratio that has to be
+held" and "ESTs, and the first genome-scale numbers" are the heading form of the
 rhythm tic the prose rules already forbid, and dropping the comma usually fixes
 them outright.
 
-Read a chapter's headings as a list before calling it done, the way a reader
-meets them in the sidebar. Most of the defects above are invisible one heading
-at a time and obvious in a column.
+**Read a chapter's headings as a list before calling it done**, the way a reader
+meets them in the sidebar. Most of the defects above are invisible one heading at
+a time and obvious in a column. Keep a heading short enough not to wrap there,
+which is about fifty characters; the sidebar adds a section number in front of
+it.
 
 A retitle is display text only. Never change a `{#sec-...}` identifier to match
 a new title: cross-references point at the identifier, and the filenames and

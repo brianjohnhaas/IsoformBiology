@@ -1,4 +1,4 @@
-# Methods and the claims they licensed
+# Methods before long reads
 
 ::: {.callout-warning}
 ## First draft
@@ -17,7 +17,7 @@ prevalence, and cannot establish which junctions occurred in the same molecule.
 The sections below follow that constraint rather than the chronology, taking one
 generation of method at a time with the specific thing it could not reach.
 
-## Seeing a discontinuity {#sec-1977}
+## Electron microscopy and a split transcript {#sec-1977}
 
 Splicing was established by a physical measurement rather than by a sequence.
 Berget, Moore and Sharp located adenovirus hexon mRNA on the viral genome by
@@ -36,7 +36,7 @@ Two unlike physical assays put the same segments at the same coordinates.
 Neither could give a sequence or an exact splice boundary, so the claim they
 licensed was the narrow one that a transcript can be discontinuous.
 
-## Showing that the choice is regulated {#sec-regulated}
+## cDNA clones and a regulated choice {#sec-regulated}
 
 Immunoglobulin was one route to the next claim. The membrane and secreted forms
 of the mu heavy chain travel on two different mRNAs, one of 2.7 and one of 2.4
@@ -55,7 +55,7 @@ with no prior structural or biological information about the product it would
 find [@rosenfeld1983production]. The method had become a way of discovering
 biology rather than confirming it.
 
-## One locus at a time {#sec-low-throughput}
+## RT-PCR and one locus at a time {#sec-low-throughput}
 
 For roughly two decades after that, measuring splicing meant one locus and one
 gene. RT-PCR was the conventional approach, and retrospectives written three
@@ -112,7 +112,7 @@ isoforms [@sorek2004howprevalent]. The headline number was a function of
 library depth and of the threshold applied to it, and @fig-prevalence shows
 what that does to a decade of published estimates.
 
-## Arrays moved discovery to a designed survey {#sec-arrays}
+## Arrays and the designed survey {#sec-arrays}
 
 Arrays moved the measurement from discovery to a designed survey. Junction
 microarrays monitored every exon-exon junction in more than 10,000 multi-exon
@@ -135,7 +135,7 @@ changes. That assumption was shown not to hold on real exon-array data,
 substantially inflating the apparent number of alternatively spliced exons for
 technical reasons [@gaidatzis2009overestimation].
 
-## RNA-seq arrives {#sec-rnaseq-arrives}
+## RNA-seq and the near-universal estimate {#sec-rnaseq-arrives}
 
 RNA-seq removed the design step, and the 2008 mouse reference datasets rested on
 41 to 52 million mapped 25-base reads from poly(A)-selected RNA of three

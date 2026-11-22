@@ -16,7 +16,7 @@ measured in.
 They are tables rather than a chart on purpose. The rows do not share a denominator, so there is no axis they can all sit on. A
 bar chart would invite the comparison the numbers cannot support.
 
-## Figures that gene-level analysis cannot reach {#sec-the-tally}
+## Isoform effects with no gene-level signal {#sec-the-tally}
 
 Each row gives a figure exactly as its source states it, what that figure
 counts, and the section where the result is stated in full, and nothing in it is averaged or
@@ -47,7 +47,7 @@ isoforms in opposite directions [@nagura2025longread]. Summing isoform counts
 into a gene total cancels that second group exactly, and no amount of depth
 recovers it.
 
-## The deflationary results from the same datasets {#sec-the-other-side}
+## The deflationary results {#sec-the-other-side}
 
 The deflationary results are scattered across the book in the same way, and
 collecting them is the only honest way to read the table above.
@@ -68,7 +68,7 @@ revealed a cell subpopulation that expression clustering had missed
 isoform data finding new populations rests on one monocyte split
 [@olivieri2021splicing], and @sec-sc-structure gives both sides.
 
-## Conditions under which a gene total fails {#sec-the-rule}
+## Choosing the unit for an analysis {#sec-the-rule}
 
 The tables do not resolve into a single fraction, and a reader looking for one
 should stop here. What they support is narrower and more useful, which is a set
@@ -95,7 +95,7 @@ null hypothesis a study is testing. @sec-dtu separates total output, isoform com
 abundance into three different questions. Most of the disagreement collected
 above is really a disagreement about which of the three a given number answers.
 
-## Three gaps that bound the tables {#sec-the-gap}
+## Limits on reading the two tables {#sec-the-gap}
 
 Three gaps are worth stating plainly, because each one bounds how far the
 tables above can be taken.

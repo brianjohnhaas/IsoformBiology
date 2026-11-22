@@ -12,7 +12,7 @@ numbers of both, the bulk answer is a fifty-fifty mixture that no cell produces.
 Single-cell and spatial methods exist to break that average open. The list of
 questions they have actually settled is narrower.
 
-## One gene marking subsets by its splice form {#sec-ptprc}
+## CD45 splice forms mark T cell subsets {#sec-ptprc}
 
 @sec-cd45 treated CD45 as a receptor whose splice choice tunes signalling. In
 single-cell data the same gene works as a subset marker, and gene-level
@@ -28,7 +28,7 @@ Mouse leukocytes behave the same way, with Cd45RB marking naive and central
 memory T cells plus NK cells, and Cd45RC essentially unused
 [@michalik2024ideis].
 
-## Structure that expression clustering misses {#sec-sc-structure}
+## Whether splicing finds new cell populations {#sec-sc-structure}
 
 Splice-isoform quantification split human blood classical monocytes into two
 subpopulations that gene-expression clustering of the same cells did not
@@ -74,7 +74,7 @@ mean partial omega-squared 0.062 against 0.047. Which isoforms a gene used
 contributed comparably from cell type and from tissue, once factor complexity
 was accounted for [@mantri2026splice].
 
-## The brain atlas {#sec-brain-atlas}
+## Brain cell types at isoform resolution {#sec-brain-atlas}
 
 Single cells let a regional difference be charged to a compartment. In postnatal
 mouse hippocampus against prefrontal cortex, three quarters of the isoform
@@ -100,7 +100,7 @@ alongside a separate form restricted to activated regulatory T cells
 [@inamo2024trails]. The receptor is the same gene in both states and a
 different molecule.
 
-## Isoform identity predicts location in a neuron {#sec-localisation}
+## Isoforms sorted between soma and dendrite {#sec-localisation}
 
 Isoform identity predicts location inside a neuron. Sequencing soma and
 dendrite separately from the same single mouse neurons found 2,225
@@ -174,7 +174,7 @@ to the layer [@fu2025longcell]. That measurement is per spot rather than per
 cell, and an apparently sharp choice with no spatial pattern is hard to read as
 a programme.
 
-## Spatial data as an orthogonal check {#sec-spatial}
+## Isoform use mapped in tissue sections {#sec-spatial}
 
 Spatial methods give an orthogonal check on single-cell isoform calls. Long-read
 sequencing of a spatially barcoded brain section reproduced the direction of
@@ -200,7 +200,7 @@ eight hundred genes varied spatially in which 3' end they used, more than five
 times the count recovered from long-read spatial data of the same tissue
 [@su2025splisosm], so the cheaper assay returned more.
 
-## The chemistry decides how much is reachable {#sec-sc-limits}
+## Limits from chemistry, cell number and testing {#sec-sc-limits}
 
 A simulation study that modelled dropout and quantification error explicitly
 concluded that resolving which isoforms an individual cell expresses is not

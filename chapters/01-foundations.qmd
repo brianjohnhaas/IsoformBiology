@@ -1,4 +1,4 @@
-# Foundations
+# Mechanisms and measures
 
 ::: {.callout-warning}
 ## First draft
@@ -53,7 +53,7 @@ splices mainly constitutively, humans alternatively
 [@borao2021earlyspliceosome]. Constitutive and alternative splicing are two
 regimes of one mechanism.
 
-### A second spliceosome, running in parallel
+### The minor spliceosome
 
 About 0.5 per cent of introns are removed by a different machine entirely.
 Roughly 700 human genes carry a U12-type intron, against 19 genes in
@@ -145,7 +145,7 @@ diversify [@shabalina2014proteinends]. A treatment of isoform biology that
 discussed splicing and nothing else would be describing the smaller half of the
 phenomenon.
 
-## Measuring how much an exon is used {#sec-psi}
+## PSI: how much an exon is used {#sec-psi}
 
 Percent spliced-in, written PSI or Ψ, is the fraction of a gene's mRNAs that
 contain a given exon. It was defined on read densities rather than on raw read
@@ -162,7 +162,7 @@ the choice made at the acceptor are scored separately
 indices disagree, a single number reports the average of two decisions that were
 never taken together.
 
-## Three study designs, three different nulls {#sec-dtu}
+## Expression and usage test different nulls {#sec-dtu}
 
 Three study designs ask three different things of the same data. Differential
 gene expression asks whether a gene's total transcriptional output changed.
@@ -184,7 +184,7 @@ boundaries differ between the isoforms containing them [@baldoni2025dtu].
 A gene whose total output never moves can still have reversed which protein it
 makes.
 
-## The intron chain decides when two transcripts match {#sec-transcript-classes}
+## Matching transcripts by intron chain {#sec-transcript-classes}
 
 Transcript identity has to be settled mechanically, and the unit that makes it
 checkable is the intron chain. Two transcripts match at intron-chain level when
@@ -236,7 +236,7 @@ two or more expressed isoforms, including the decay targets themselves
 The amount of protein a gene makes is therefore set partly by isoforms that
 never become protein.
 
-## A gene's isoform count depends on which genes are counted {#sec-scale}
+## How many isoforms does a gene have {#sec-scale}
 
 The answer depends entirely on which genes are counted. Across all Ensembl gene
 bodies the median is one isoform. For protein-coding genes the median is six,

@@ -52,7 +52,7 @@ trans-acting factor adjudicating. One intronic docking site pairs with the
 selector sequence upstream of a single variable exon, physically presenting that
 exon and no other to the upstream constitutive exon [@dscam2005dockingselector].
 
-### Diversity does two different jobs
+### A count for dendrites, identities for axons
 
 Two experiments take this from correlation to requirement.
 
@@ -69,7 +69,7 @@ present [@dong2023dscamscreen].
 Diversity does two jobs in two currencies, since self/non-self discrimination
 needs a sufficient count while axon patterning needs particular identities.
 
-### Isoform bias does work the count cannot explain
+### Changing usage bias alone disrupts wiring
 
 Isoform usage is skewed, and the skew does work. Flies with normal Dscam1
 protein levels and an unchanged number of possible isoforms, but a shifted exon
@@ -83,7 +83,7 @@ that work: heavy, reproducible bias restricts access to the diversity that
 self-avoidance is supposed to exploit [@hong2019dscamsplicingbias], and they
 leave that tension unresolved.
 
-## Splicing as a developmental switch
+## Sex determination: a chain of splice choices
 
 *Dscam1* uses splicing to generate variety, while the *Drosophila*
 sex-determination cascade uses it to make a decision, and that cascade remains
@@ -101,7 +101,7 @@ opposite things. The female product represses male differentiation, and the
 male product represses female differentiation. Both are functional products of
 the same primary transcript [@dsx1989sexspecificpolypeptides].
 
-## Isoform switching within a cell's lifetime {#sec-cd45}
+## CD45: a switch on T cell activation {#sec-cd45}
 
 Developmental cascades set an isoform once, whereas CD45 runs the same machinery
 reversibly, as routine immune function.
@@ -117,7 +117,7 @@ exon-null isoform typical of memory CD4 cells supported antigen recognition best
 The splice choice tunes signalling sensitivity and leaves receptor specificity
 untouched, giving one receptor two response thresholds.
 
-## Opposing functions from one gene
+## Bcl-x: two products that oppose each other
 
 The *bcl-x* locus was described from the outset as making two products that pull
 against each other, with the short form actively opposing bcl-2 rather than
@@ -135,7 +135,7 @@ Bak [@stevens2019bclxsplicing]. The antagonism is settled, but the heterodimer
 model rests on the review and not on the primary report, and should be cited
 that way.
 
-## Isoforms that set tissue mechanics
+## Titin: splicing sets cardiac stiffness
 
 Titin is the case where a spliced product's physical properties are the
 phenotype. The adult human heart runs a long compliant N2BA form of roughly
@@ -160,7 +160,7 @@ restoring force. Splicing here sets how much polymer sits between two anchors
 instead of tuning an enzyme's activity.
 :::
 
-## Ligand specificity by mutually exclusive exon {#sec-fgfr}
+## FGFR: one exon pair decides the ligand {#sec-fgfr}
 
 In FGFR1 through FGFR3, the mutually exclusive IIIb and IIIc exons encode the
 C-terminal half of immunoglobulin loop III, which sits in the ligand-binding
@@ -173,7 +173,7 @@ interchangeable. Usage splits by compartment, IIIb in epithelia and IIIc in
 mesenchyme, and a IIIb-to-IIIc switch in an epithelial tumour tracks with
 invasiveness in bladder and prostate cancer [@holzmann2011fgfrigiiisplicing].
 
-## A cautionary case: PKM1 and PKM2
+## PKM: the switch tumours do not make
 
 Pyruvate kinase M is the textbook illustration of how much can ride on one
 mutually exclusive exon pair. It is also the clearest case of an isoform story

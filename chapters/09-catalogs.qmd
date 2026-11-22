@@ -1,4 +1,4 @@
-# Cataloguing the isoform universe
+# Annotations and catalogues
 
 ::: {.callout-warning}
 ## First draft
@@ -12,7 +12,7 @@ one. Depth alone could inflate reference transcript sets by millions of models,
 so the decision facing every catalogue is editorial rather than technical
 [@monzo2025challenges].
 
-## Picking one transcript per gene {#sec-mane}
+## MANE and APPRIS: one transcript per gene {#sec-mane}
 
 Clinical reporting needed a default transcript and had none. MANE Select names
 exactly one representative transcript per human protein-coding gene, identical
@@ -63,7 +63,7 @@ substantial remainder, part of which reflects transcript-ID mismatch between
 the GENCODE releases used rather than real disagreement about which isoform is
 highest [@tung2022texmst].
 
-## An annotation grows by revision, not only addition {#sec-gencode}
+## GENCODE grows by revision as well as addition {#sec-gencode}
 
 GENCODE's human and mouse annotation was originally produced by human curators
 working locus by locus along each chromosome, and only became project-based
@@ -164,7 +164,7 @@ run over 32 bovine tissues yielded 99,044 transcript isoforms at 31,824 loci.
 Only 21 per cent exactly matched an existing reference transcript, while 61 per
 cent were novel isoforms of known genes [@halstead2021bovine].
 
-### The catalogue records who has been sequenced
+### Ancestry and the annotation gap
 
 A diverse-ancestry long-read cohort collapsed 380,519 candidate transcript
 models to 155,875 after reproducibility filtering. Of those, 41,297 were novel
@@ -194,7 +194,7 @@ fraction fell from roughly 27 to 52 per cent down to 2 to 5 per cent, a
 reduction of up to 26-fold [@zheng2026isopedia]. The transcripts are the same in
 both scorings, and only the question changed.
 
-## LRGASP separated structure from abundance {#sec-lrgasp}
+## LRGASP: length for structure, depth for abundance {#sec-lrgasp}
 
 LRGASP was a community exercise rather than one lab's comparison. Participants
 worked from a shared body of over 427 million long reads spanning cDNA and
