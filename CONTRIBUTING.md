@@ -55,6 +55,29 @@ The two files that ignored the cap are the two best chapters. Chapter 11 ran to
 So there is no cap. A section stops when the subject is covered, and a chapter
 that needs 150 records gets 150.
 
+### Running a deepening pass with research agents
+
+Three procedural rules, each learned by breaking it.
+
+**Wait for the agent's report, not for its file.** A research file that exists
+and parses is not a finished one. On the chapter 5 pass all three agents had
+written their files before any of them reported, and two then ran correction
+passes. The merge taken from those files carried a truncated author list, a
+claim anchored on a discussion line rather than the measured one, a claim mixing
+two denominators, and one record missing entirely.
+
+**Give each agent its own scratch directory.** Two agents on that pass wrote
+same-named working files into one shared directory and clobbered each other's.
+No research was lost, because every quote was re-verified from the written file,
+but only because of that.
+
+**Write prose from the records, not from the agent's report.** A report
+summarises and sometimes carries numbers from a record's `note:` field rather
+than its claim. Two sentences written that way reached a draft of chapter 5: one
+cited a record that a correction pass had removed, and one used a figure that
+appears only in a note. `check_citations.py` caught both, which is luck rather
+than process, since it only checks digits.
+
 ### Depth without synthesis makes the book worse
 
 304 of the book's 358 cited paragraphs cite exactly one source. The shape is

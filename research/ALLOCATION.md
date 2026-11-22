@@ -86,6 +86,32 @@ abstract-only figure says so in the table itself.
 If a number in that chapter disagrees with its home chapter, the home chapter
 is right and the table is the bug.
 
+## Isoform identification methods, and one disclosure
+
+`#sec-identification` in chapter 5 covers how isoforms are identified from
+RNA-seq data by short-read and by long-read methods. It was requested directly
+and the book had no such section.
+
+It sits in chapter 5 rather than chapter 4 because current practice is
+long-read, and because chapter 4 owns the chronology and the non-identifiability
+result that the section refers back to. Chapter 9 keeps LRGASP's design; the
+section records method findings only.
+
+The glossary states that this book does not catalogue software. That stands. The
+unit here is an approach, with what it assumes and what it costs, and an
+implementation is named only as an example of one. No feature comparison, no
+recommendation, no tool-selection guidance.
+
+**One disclosure is required in the prose.** LRAA is among the long-read methods
+named, and the person directing this book wrote it. An earlier research pass
+recorded the conflict and deliberately left the LRAA preprint unread; that was
+reversed by the director, who asked for it to be included. Inclusion is
+therefore by request, and the text must say in its own voice that the book's
+director is an author of one of the methods it describes. A reader cannot audit
+a conflict that is not stated. The method gets no more records and no more
+space than comparable methods, and no claim that it outperforms anything may
+rest on its own preprint.
+
 ## Sources recorded in more than one area
 
 Each of these has one bibkey, verified consistent by `scripts/verify_claims.py`.

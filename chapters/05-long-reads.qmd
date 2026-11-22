@@ -3,7 +3,13 @@
 ::: {.callout-warning}
 ## First draft
 Written from `research/05-long-reads.yml` and not yet reviewed by a second
-reader.
+reader. Three cautions specific to this chapter. Many of its sources are
+preprints, because the quantification and benchmarking literature it draws on is
+largely unreviewed. Every head-to-head platform comparison in this book's corpus
+predates the current nanopore chemistry, so the numbers below describe what was
+measured rather than the present state. And @sec-identification names a method
+whose authors include the person directing this project, which that section
+states where it names it.
 :::
 
 A short read reports a fragment, while a long read reports a molecule, and every
@@ -15,7 +21,7 @@ transcript. A start site and a poly(A) site, or a splice choice and a chemical
 modification, can be seen on the same molecule or seen to be absent from it.
 Fragmenting the molecule destroys that pairing, which is why a short-read
 protocol cannot substitute for one [@workman2019nanopore]. The same point is
-made bluntly by the authors of an isoform-stability method: isoform-level
+made bluntly by the authors of an isoform-stability method. Isoform-level
 stability cannot be estimated from short reads, because the reads cannot be
 assigned to isoforms in the first place [@maier2020native].
 
@@ -89,6 +95,224 @@ The claim records say so, and the bibliography emits them as preprints rather
 than as journal articles.
 :::
 
+## The two ends are not equally trustworthy {#sec-ends-evidence}
+
+@sec-three-axes treats a start site, a splice chain and an end site as three
+things that vary independently. It does not say how either end is established,
+and the two are not established equally well.
+
+The asymmetry is measurable on the same data. Among features in the ENCODE4
+human long-read collection that were novel relative to GENCODE, 42.8 per cent of
+start sites had CAGE or RAMPAGE support. 79.0 per cent of end sites had
+support from PAS-seq or a poly(A) atlas [@reese2023encode4]. A novel 5' end was
+about half as likely as a novel 3' end to be corroborated by anything other than
+the long reads themselves.
+
+Part of the reason is where reads actually begin. In a reanalysis of published
+human long-read data from five cell lines, more than 50 per cent of nanopore
+direct-cDNA read starts and more than 40 per cent of direct-RNA read starts fell
+outside the gene's first exon [@calvoroitberg2024challenges]. Measured on the
+same molecules rather than across datasets, about 80 per cent of nanopore
+native-RNA molecules per transcript reached their 3' end while only about 32 per
+cent reached the 5' end [@ibrahim2021teraseq].
+
+Selecting for the cap helps and does not solve it. Restricting to molecules
+carrying both a cap and a ligated 5' adapter, only about 29 per cent per
+transcript reach the annotated 5' end [@ibrahim2021teraseq]. Across ONT
+libraries from the same human brain and heart RNA, cap-trapping protocols led on
+the share of reads corroborated at both ends, at 43 per cent for one protocol
+against 34 per cent for another [@carbonellsala2024captrapseq].
+
+Two bounds keep this from becoming a rule that every short 5' end is an
+artefact. The corroborating evidence is itself imperfect and borrowed. The CAGE clusters
+used to certify these ends came from samples other than the ones sequenced, so a
+read without CAGE support has not been shown to be truncated. Those authors call
+their completeness estimates indicative rather than definitive
+[@carbonellsala2024captrapseq]. In a head-to-head comparison of six 5'-end sequencing methods on one human RNA
+sample, CAGE ranked best for mRNA. It still placed 24 per cent of its reads for
+an average gene further from the transcript 5' end than a tenth of the
+transcript's length [@adiconis2018comprehensive].
+
+The other bound is biological rather than technical. Cellular stress triggers
+decay from the 5' end of
+messenger RNAs, and the shortened ends that result leave a signature visible in
+short-read data as reduced read density at the 5' end [@dar2023fulllength]. A
+molecule that starts downstream of the annotated start may be reporting its own
+state accurately.
+
+## Internal priming, and the filter that discards real sites {#sec-internal-priming}
+
+The 3' end has the better evidence and it has a specific failure mode. An
+oligo-dT primer cannot tell a poly(A) tail from a run of adenines encoded inside
+a transcript, and when it anneals internally the adenines it contributes are
+copied into the read. The resulting 3' end is indistinguishable in sequence from
+a genuine cleavage and polyadenylation site [@hoque2012analysis].
+
+Because the artefact and the real site look alike in the read, detection has to
+use the genome instead. Long-read quality control scores a called 3' end by the
+percentage of adenines in a window of genomic sequence immediately downstream of
+it [@tardaguila2018sqanti]. In practice that test is a fixed threshold combined
+with a reproducibility requirement. One large human and mouse collection kept
+only transcripts whose last 20 genomic bases were under 50 per cent adenine, and
+separately required five supporting reads across at least two libraries
+[@reese2023encode4].
+
+How often it happens depends on the chemistry rather than on the sequence. A mouse 3'-end sequencing study put reads attributable either to internal A-rich
+sequence or to short non-templated oligo(A) tails at about 60 per cent of all
+reads with a conventional oligo-dT capture. That fell to about 17 per cent with
+a 45-thymidine chimeric capture oligo [@hoque2012analysis]. In an Arabidopsis
+dataset sequenced without reverse transcription or oligo-dT priming at all, only
+27 of 20,972 runs of six or more genomic adenines, 0.13 per cent, had ten or
+more read ends just upstream [@sherstnev2012direct].
+
+The filter has a cost that is rarely stated. Genuine poly(A) sites do sit in
+A-rich genomic sequence: 5,392 of the mouse sites mapped by a method that avoids
+oligo-dT priming, 7.6 per cent of the total, lie in such sequence and would be
+discarded by a standard internal-priming filter [@hoque2012analysis]. Those same
+authors support them with crosslinking of a cleavage factor around them. The
+routine correction is therefore both incomplete and lossy, removing authentic 3'
+ends along with artefacts without excluding every artefact
+[@sherstnev2012direct].
+
+## Artefacts that pass for isoforms {#sec-artifacts}
+
+A long read can report a structure that was never in the cell.
+
+An intron-within-an-exon event in CD19 turned out to be a reverse transcription
+product. On reporter-transfected cells it made up over 25 per cent of PCR-free
+direct-cDNA reads and nearly 30 per cent of PCR-amplified cDNA reads, and it
+was undetectable in direct RNA reads. Those authors generalise the warning:
+any RT-dependent protocol can invent such events [@schulz2021direct].
+
+Spurious 3' ends have a similar explanation. Comparing cDNA and native-RNA
+libraries across two species and three platforms, one group argues that the
+spurious poly(A) sites usually blamed on internal priming are produced by
+template switching instead. Many appeared at sites carrying only three to five
+adenines, too few for an oligo-dT primer to bind [@balazs2019template].
+
+An apparent intron can be made by the enzyme rather than by the spliceosome. A
+117-nucleotide intron seemingly removed from about 30 per cent of one yeast
+non-coding RNA's transcripts was produced by reverse transcription, appearing
+with an MMLV-derived enzyme and not with an AMV-derived one
+[@houseley2010apparent]. The junction need never have existed in a cell: two
+RNAs transcribed separately in vitro, then mixed and reverse transcribed,
+reproducibly yielded apparent trans-spliced products [@houseley2010apparent].
+
+Tested experimentally, most reported non-co-linear junctions did not survive. Of
+13 previously published human candidates that could be examined, seven were in
+vitro artefacts, and some of those had already passed RT-PCR validation
+[@yu2014observed]. The same study confirmed others as genuine, so the lesson is
+not that non-co-linear junctions are all artefacts.
+
+Removing reverse transcription does not remove the problem. Internal sequencing
+adapters, the mark of two molecules joined during library preparation, were found
+inside 0.67 to 1.25 per cent of reads in each of five human cell lines from one
+public nanopore direct-RNA dataset [@li2026genomic]. Those adapter-bridged joins
+were the dominant source of apparent rearrangement rather than a minor one,
+accounting for 63 to 85 per cent of all chimeric reads in those samples
+[@li2026genomic]. Direct RNA is the right control for an artefact of reverse
+transcription, and it is not an artefact-free baseline.
+
+Sequencing error is also not the only explanation for non-canonical novel
+junctions. In a PacBio mouse neural transcriptome, template-switching evidence
+was enriched in transcripts carrying at least one novel splice site, flagging
+7.24 per cent of them against 1.98 per cent of transcripts built only from
+annotated splice sites [@tardaguila2018sqanti].
+
+The asymmetry that makes novel structures hard to trust is measurable.
+Quality-control analysis of a PacBio mouse neural transcriptome found that 99.9
+per cent of junctions already in the annotation used canonical dinucleotides,
+against only 69 per cent of the 3,837 novel junctions, leaving 1,188
+non-canonical [@tardaguila2018sqanti]. Novel long-read junctions need filtering
+before they can be interpreted.
+
+## Platforms, with a date attached {#sec-platforms}
+
+Everything above says a long read reports a molecule. Two instruments do the
+reporting, they fail differently, and the numbers that compare them all have a
+chemistry and a year attached.
+
+They do not agree on what the molecule was. Sequencing PCR copies of the same
+reverse-transcription event on both platforms, a quarter of the paired reads
+disagreed on at least one of transcription start site, poly(A) site or a splice
+site [@mikheenko2022sequencing]. The errors sit in different places: of those
+called against a three-way majority truth, 41 per cent of the PacBio errors and
+23 per cent of the nanopore errors fell inside homopolymers
+[@mikheenko2022sequencing].
+
+Most of that disagreement about exon structure is slack rather than a different
+splice chain. Allowing junctions to differ by up to 6 bp removed 48 per cent of
+the disagreements between paired reads. It also reclassified as annotated 43 per
+cent of the nanopore mappings and 15 per cent of the PacBio mappings that had
+looked annotation-inconsistent at single-base resolution
+[@mikheenko2022sequencing]. Where a nanopore splice site lands depends on the
+sequence around it as well as on read quality. Annotated donors with a GUGU two
+bases downstream were mis-called at that offset in 6.48 per cent of assigned read
+introns, against 3.06 per cent at the far commoner GUNNGU donors
+[@mikheenko2022sequencing].
+
+Some of the gap belongs to the aligner. With around 10 per cent per-read error
+on nanopore R9.4.1 native RNA, spliced alignment recovered 80.7 per cent of mouse
+introns as canonical against 98.5 per cent in the reference annotation. Nanopore cDNA from the same samples did worse at 67.7 per cent
+[@sessegolo2019transcriptome]. That matters for the canonical-dinucleotide gap
+reported in @sec-artifacts, which this chapter had left to sequencing error
+alone.
+
+Accuracy can be raised, and each route costs something. Measured in 2018 on one synthetic cDNA pool, median read accuracy ran from 87
+per cent for single-pass nanopore to 98.9 per cent for PacBio circular
+consensus. In between sat rolling-circle consensus at 94 per cent and
+paired-strand nanopore at 95.6 per cent
+[@volden2018improving]. Splice-site precision followed it: the share of splice
+sites matching an annotated site exactly was 80.4 per cent for single-pass
+nanopore, 91.3 per cent after rolling-circle consensus and 96.9 per cent for
+PacBio circular consensus [@volden2018improving].
+
+The PacBio route buys accuracy with passes over the same molecule, so insert
+length and accuracy trade against each other. The 2019 circular consensus
+protocol that produced 99.8 per cent accurate reads averaging 13.5 kb was
+designed around needing about ten passes [@wenger2019accurate]. Concatenating
+cDNAs trades the other way: its libraries returned 45.3 million reads at the median, where standard Iso-Seq
+returned 4.3 million, roughly tenfold. Median mapped read length fell from 2,338 bp to 1,677 bp
+[@paniagua2026systematic]. Reading both strands helps only a minority of
+molecules, with duplex reads making up 3.33 per cent of one 2022 amplicon run
+[@luo2022systematic].
+
+Read length against transcript length is the constraint underneath all of this.
+Median mapped read length was 2,338 bp for standard PacBio Iso-Seq, 1,677 bp for
+the concatenation protocol and 530 bp for nanopore cDNA on R9.4.1 in one mouse
+cohort [@paniagua2026systematic]. In nanopore native-RNA libraries, transcripts
+under 2 kb were often covered completely by one read while longer ones rarely
+were [@soneson2019comprehensive]. The spike-in sets used to show that long reads
+capture whole molecules cannot settle this, because every SIRV and ERCC
+transcript is shorter than 2.5 kb while about 17 per cent of Ensembl GRCh38.90
+transcripts are longer [@soneson2019comprehensive].
+
+Nanopore accuracy moved a long way between kit generations. On the same cell
+line's RNA, median alignment identity was 90.65 per cent for the 2019 kit and
+98.67 per cent for the 2024 kit [@ghohabiesfahani2026assessment]. Throughput
+moved further: the 2019 dataset took 30 MinION flow cells for 9.4 million aligned
+reads. A single PromethION flow cell on the 2024 kit produced 16.6 million
+from the same cell line [@ghohabiesfahani2026assessment]. Device, kit and
+basecaller all change between those two figures, so it is a generational
+comparison rather than a chemistry experiment.
+
+Two results stop that from reading as a clean march forward. The characteristic
+nanopore error is a deletion rather than a mismatch, and on the earlier kits
+median read accuracy was 87 to 92 per cent with deletions outnumbering both
+mismatches and insertions [@liuwei2024sequencing]. The newer kit improved the
+error types that matter least here. On synthetic transcripts it read at 93.5 per
+cent against 92.1 per cent, and the gain came from fewer mismatches and
+insertions while the deletion rate stayed high [@liuwei2024sequencing]. That 93.5
+per cent and the 98.67 per cent above are not the same measurement, being
+different RNA, different metric and different basecaller, and this book does not
+reconcile them.
+
+Raising accuracy also did not improve quantification. In a cell-mixing benchmark
+the rolling-circle consensus protocol scored below 0.60 mean Spearman correlation
+against expected abundances, while five ordinary cDNA and direct-RNA combinations
+reached 0.73 to 0.83 [@pardopalacios2024lrgasp]. Accuracy and depth buy different
+things, and the protocols that buy one spend the other.
+
 ## Direct RNA sequencing {#sec-direct-rna}
 
 Nanopore can sequence the native RNA strand rather than a cDNA copy of it.
@@ -110,7 +334,7 @@ globally relative to the combined RNA of their gene [@maier2020native].
 
 Modifications become locatable on identified transcripts, and mapping m6A from
 basecalling error on native Arabidopsis RNA connected the modification to a
-whole-organism phenotype: the writer mutant had a lengthened circadian period
+whole-organism phenotype. The writer mutant had a lengthened circadian period
 alongside altered abundance of oscillator transcripts [@parker2020nanopore].
 
 Accuracy was the other half of the problem. An accuracy-boosting
@@ -120,12 +344,311 @@ transcripts in the mammalian genome. They offer it as an unbiased replacement
 for the dedicated HLA typing and immune-repertoire assays such work normally
 requires [@cole2020complete].
 
+Native RNA costs input material as well as throughput. On the 2022 kit in
+Escherichia coli it took more than 10 micrograms of starting total RNA to leave
+the 500 nanograms of messenger RNA a run requires after ribosomal depletion
+[@grunberger2022nanopore]. What it buys, on matched depth-normalised libraries
+from one cell line, is transcripts: native-RNA sequencing uniquely detected
+12,047 high-confidence transcripts against 2,149 for PCR-cDNA
+[@lane2026distinct]. The choice changes the biological answer and not only the
+read statistics, since on the same stimulated cells the two protocols shared
+only 173 differentially expressed genes out of 218 called from PCR-cDNA and 899
+from direct RNA [@lane2026distinct].
+
+Selecting on the poly(A) tail decides what can appear at all. A
+non-polyadenylated synthetic transcript spiked into total RNA before oligo-dT
+purification was not detected by the subsequent nanopore sequencing, and about
+98 per cent of molecules in those libraries carried tails
+[@ibrahim2021teraseq]. Depleting ribosomal RNA instead changes which transcripts
+exist in the data: in blood libraries only the ribosomal-depleted ones detected
+any transcript longer than 50 kb [@natrajgayathri2026polya].
+
 Annotation is still catching up, including in genomes that have been available
 for a long time. The Arabidopsis authors note that a genome sequence available
 since 2000 still had annotation left to fix [@parker2020nanopore]. In maize,
 long reads corrected gene models rather than merely adding to them. RGH3 had
 been mis-annotated because of a genome assembly error, and CSR1 was present in
 the reference sequence with no annotation at all [@wang2016unveiling].
+
+## Identifying isoforms from RNA-seq {#sec-identification}
+
+Everything so far concerns what the reads are. This section concerns what is done
+with them, because an isoform is not read off a dataset but decided by a
+procedure. The approaches below differ in what they assume, and those assumptions
+are where the answers diverge.
+
+### Short reads: a graph and a parsimony rule
+
+Reference-guided short-read assembly turns reconstruction into a graph problem
+with an explicitly parsimonious objective. Fragment alignments become nodes, an
+edge joins two overlapping fragments whose implied introns agree exactly, and the
+isoform set reported is the smallest collection of paths covering every fragment
+[@trapnell2010transcript]. The general form is a per-locus splice graph. Its vertices are whole or partial
+exons and its edges are the junctions seen in spliced alignments, with coverage
+as weights. A candidate isoform is a path through it, so reconstruction is the
+choice of a path set [@shao2017scallop].
+
+Minimising the number of transcripts does not pick a single answer. Several
+smallest path covers can explain the same fragments, so the approach needs a
+second criterion, and uneven coverage along the locus supplies it. Per-fragment
+inclusion ratios weight the choice among equally parsimonious assemblies
+[@trapnell2010transcript]. That tie-break is the practical face of the formal
+result in @sec-short-read-limit. Where the likelihood has a flat optimum, the
+answer reported is whichever one the secondary criterion prefers.
+
+Parsimony need not be applied everywhere in a splice graph. At least one design applies it only
+where the reads leave a branch point undetermined, following the reads where they
+span enough exons to constrain how a vertex decomposes, and minimising the
+mismatch between inferred and observed coverage otherwise [@shao2017scallop].
+The assumption is doing visible work, and it can be narrowed.
+
+### Without a reference genome
+
+Assembly without a genome replaces the splice graph with a de Bruijn graph over
+short overlapping subsequences of the reads, in which a candidate transcript is
+any path [@grabherr2011trinity]. The method assumes no genome, no gene boundary
+and no known splice site, and inherits instead a graph whose enumerable paths are
+mostly not transcripts.
+
+Its ceiling is set by the library rather than by the algorithm. A k-mer graph can
+only reconstruct a transcript whose whole sequence is covered by adjacent
+overlapping k-mers present in the read set, so the recoverable set is fixed
+before any assembler runs [@grabherr2011trinity]. What it achieves on
+near-identical sequences depends on expression rather than on similarity alone.
+Across 77 fission yeast gene families holding 185 paralogues, every member was
+recovered at full length for 33 families and some members for another 33. All 26 genes of the remaining 11 families were missed, the misses often being
+lowly expressed [@grabherr2011trinity].
+
+### Long reads: collapsing, correcting, clustering
+
+The obvious long-read procedure is to collapse reads sharing an intron chain and
+call each group an isoform. It under-reports, because the premise that a long
+read is a whole molecule often fails. Whether a sequenced cDNA carries all the
+splice sites of its template depends on how completely reverse transcription ran,
+which is why assembling long reads recovers structures that collapsing them does
+not [@tung2019quantifying].
+
+Collapsing also needs a tolerance, since exact agreement is unattainable at
+long-read error rates. One rule merges predicted transcripts carrying the same
+number of splice positions when each position agrees to within ten base pairs,
+trading structural resolution for precision [@tung2019quantifying]. A consensus
+across reads is required rather than optional. Alignments of reads from one locus
+routinely disagree about where the splice sites are, and about whether short
+exons are present at all [@kovaka2019stringtie2].
+
+Error-tolerant clustering decides which differences between reads are real. One
+method corrects reads only half of the way to their cluster's consensus, then
+re-partitions and repeats until no cluster holds internal differences, so the
+surviving distinct sequences become the candidates [@sahlin2018isocon]. Whether
+two near-identical candidates are separate isoforms is then a statistical
+question rather than a threshold. The reads assigned to each are tested at the
+positions where the candidates differ, for whether sequencing error explains the
+evidence better. A candidate keeps the least significant result from all its
+pairwise tests [@sahlin2018isocon].
+
+Correcting against the annotation carries an annotation-shaped bias. In one
+pipeline a non-canonical junction survives into the output only if the reference
+annotation already contains it. So a genuinely novel non-canonical junction is
+removed by the same rule that removes a sequencing error
+[@wyman2019technology]. Discovery can also hold novelty and familiarity to
+different standards by design. In that pipeline a structure already in the
+annotation is accepted on sight. An unannotated structure must be seen by
+at least five reads in each of at least two biological replicates
+[@wyman2019technology]. @sec-quantification returns to what such thresholds cost.
+
+How much of an answer belongs to the annotation is measurable, and the
+dependence is steep. With only a fifth of one chromosome's annotation supplied, a
+method that identifies isoforms by reporting annotated transcripts covered by
+reads fell to 30 per cent sensitivity and 50 per cent precision. Assembling
+the same reads gave 74 and 80 per cent [@kovaka2019stringtie2].
+
+One framework makes the ambiguity of partial reads explicit before any isoform is
+proposed. Each strand-specific alignment to the reference genome is decomposed into its
+path through a splice graph. That graph's nodes include exon segments, junctions
+and inferred start and end sites. Reads structurally indistinguishable on it are
+grouped into compatibility classes, and candidate isoforms are built by merging
+compatible classes [@yu2026lraa]. The same framework runs in
+three regimes differing only in how much of the annotation is trusted, from
+assigning reads to a supplied annotation without discovery, through using known
+structures to guide discovery, to discovery from alignments and genome sequence
+alone [@yu2026lraa]. Annotation dependence is a settable input there rather than
+a fixed property of the method.
+
+::: {.callout-important}
+## A disclosure
+
+That last method is LRAA, and the preprint describing it lists the person
+directing this book as an author and gives his address as one of two
+corresponding addresses for the work [@yu2026lraa]. It is named here because he
+asked for it to be included among the long-read methods. The two records behind
+the description above are its authors' own account of what the approach does, no
+claim that it outperforms anything is made or cited, and the preprint's own
+comparative claim was deliberately not used.
+:::
+
+### Short reads against long reads, measured
+
+On the same RNA from the same four donors, short-read and long-read
+reconstruction agreed about most novel splicing inside known genes. Of 2,999
+such transcripts found in total, 2,377, or 79.2 per cent, were seen by both
+platforms in at least one sample [@iwabuchi2026systematic]. The disagreement was
+lopsided: 464 novel spliced transcripts came only from short reads against 158
+only from long reads. Those authors offer inference-driven short-read false
+positives or insufficient long-read coverage without choosing between them
+[@iwabuchi2026systematic].
+
+That comparison carries a confound worth stating with it. The long-read libraries
+returned about 7.6 million reads in total, against an average of 138.2 million
+per sample across four short-read libraries [@iwabuchi2026systematic]. Any count
+favouring short reads there has a depth explanation available.
+
+Comparing whole intron chains rather than single junctions shows how partly each
+captures the other. With a twenty-base tolerance a short-read assembly held 64.6
+per cent of the PacBio chains from the same sample. A nanopore sample and
+its short-read assembly held 83.5 and 72.3 per cent of each other
+[@wilks2020longtron]. The tolerance is necessary because imprecision in one
+junction coordinate does not stay local. It compounds along the chain, so an
+exactly matching whole structure becomes less likely the more junctions it has
+[@wilks2020longtron].
+
+Where no reference genome exists the two split on completeness rather than on
+count. From the same sugarcane experiment, long-read isoform sequencing yielded
+39,999 full-length isoforms against 33,762 from short-read de novo assembly. 93.5 per cent of its transcripts carried an open reading frame against 54.2 per
+cent of the assembled contigs [@hoang2017survey]. The two datasets were not
+matched, so the comparison bounds nothing tightly.
+
+One result should discourage the obvious remedy. Sequencing more deeply does not
+make long-read identification more precise. For methods that do not correct
+read errors before deciding structures it makes precision worse, because extra
+depth supplies extra error-bearing reads from which extra false structures can be
+built [@su2024assessment].
+
+### A tension this book has to own
+
+Every long-read method above identifies an isoform by its splice chain, with a
+coordinate tolerance. @sec-three-axes argues that a transcript has three
+independent parts and that collapsing a splice chain onto one transcript is
+exactly what an annotation should not do. The methods the field actually uses
+make that collapse, and then recover the ends separately or not at all. The
+argument of this chapter and the practice of its tools are not aligned, and
+@sec-ends-evidence is the reason the practice persists.
+
+## Quantification apportions rather than counts {#sec-quantification}
+
+Identifying isoforms produces a list of structures. Attaching numbers to them is a separate
+procedure, and the number a quantifier reports is not a count.
+
+Before any abundance is estimated, the data for one gene are reduced to a
+read-by-isoform compatibility matrix, with an entry of one where that read could
+have come from that isoform. The unknowns are one relative abundance per isoform,
+constrained to sum to one across the gene [@hu2021liqa]. The iteration that
+solves for them starts from the assumption that every isoform is equally
+expressed, and stops when the log likelihood stops rising appreciably
+[@hu2021liqa]. What is reported is the fixed point of alternating between
+apportioning ambiguous reads and re-estimating abundances.
+
+Ambiguous reads are not a corner case. Between 13.8 and 49.5 per cent of reads
+matched more than one transcript across the nanopore samples examined in one
+study, and those reads are apportioned rather than discarded
+[@chen2023context]. Truncation is the reason that ambiguity is common. In a deeply sequenced nanopore cDNA
+dataset only 25.7 per cent of reads covered at least 95 per cent of the bases of
+the transcript they were assigned to. The mean coverage of a transcript by
+one read was 50.4 per cent [@dong2022benchmarking].
+
+The incomplete-match case of @sec-transcript-classes is explicit in the
+bookkeeping. Reads are pooled into classes by their compatible transcript set,
+and one class holds reads whose junction chain matches one transcript exactly
+while also being a subset of longer ones [@chen2023context]. That is precisely
+where a genuinely short isoform and a truncated copy of a long one cannot be
+told apart.
+
+Long reads also lose a term that short-read methods rely on. Short-read
+quantification draws much of its power to separate similar isoforms from a
+transcript-length term. So long-read methods that simply delete that term lose
+discriminating power with it; one replacement favours assignments that make
+coverage along a transcript more uniform [@zarejousheghani2025oarfish].
+
+Two incompatible conventions exist for an ambiguous read. Several quantifiers
+apply no mapping-quality filter and let the apportioning spread each read's
+weight over all its candidates. One widely used pipeline instead adopted a
+minimum mapping quality of one, which in its own spike-in benchmark excluded
+5,469 of 21,456 reads [@parthiban2026transcript]. A quality filter is also an
+abundance filter: on spike-ins with known input proportions, raising the minimum
+progressively over-represented single-isoform genes and under-represented genes
+with four annotated isoforms [@parthiban2026transcript]. That is the direction
+that makes a complex locus look quieter than it is.
+
+### Read-support thresholds and what they cost
+
+Thresholds exist because probabilistic assignment will give expression to
+something that has none. Artificial exon-skipping isoforms inserted into an
+annotation received non-zero estimates, and raising a counts-per-million
+threshold reduced how many of them appeared [@chen2023context].
+
+They usually act before a catalogue exists rather than on one. One joint-calling
+method discards by default any group of identically spliced reads with fewer
+than three reads of support summed across the whole cohort. So a structure seen
+once or twice never reaches the stage where it could be quantified
+[@dolzhenko2026isocall]. Raising the bar mostly deletes novel isoforms rather
+than annotated ones, because the novel calls are the lowly expressed ones
+[@jetzinger2025join].
+
+One threshold behaves backwards when samples are combined. A minimum-fraction
+filter requires a transcript to hold some minimum share of its gene's
+expression. So pooling reads across samples raises the gene total and can push
+below the threshold a transcript that passed in every sample analysed separately
+[@jetzinger2025join].
+
+### Does non-identifiability survive longer reads
+
+@sec-short-read-limit records that different sets of transcript abundances can
+generate the same short-read data with equal likelihood. The honest answer for
+long reads has three layers that point different ways, and the book states them
+separately rather than averaging them.
+
+Per-read ambiguity partly survives the move to long reads. In the one head-to-head test of class size,
+the mean number of transcripts in the equivalence class a read fell into was
+almost identical for nanopore and for Illumina reads, on the same annotation and
+index [@soneson2019comprehensive]. Part of that belongs to the annotation rather
+than to the reads. When error-free full-length transcript sequences were used as
+idealised reads, 87 per cent fell into classes holding a single transcript,
+leaving about an eighth compatible with more than one annotated isoform even in
+that ideal case [@soneson2019comprehensive].
+
+Measured uncertainty mostly collapses once reads are longer. By a variance-based measure of assignment
+ambiguity on matched libraries from the same cell lines, every transcript in the
+nanopore data had an over-dispersion coefficient between 1 and 1.15, while
+two-thirds of transcripts in the Illumina data exceeded 3.56
+[@dong2022benchmarking]. Those two results use different measures, different
+mappers and chemistries three years apart, which is why they are reported side by
+side.
+
+The formal version makes read length the variable. Non-identifiability can be
+stated as a rank condition. For a worked four-transcript gene with 200 base-pair
+exons, the matrix relating isoform abundances to expected read counts stays
+rank-deficient at every read length below 600 base pairs. The
+maximum-likelihood solution is then a line of equally good answers rather than a
+point [@zhang2026quantifying]. Lengthening reads relieves that for most genes
+and not for all, with the condition number falling monotonically for most and
+rising transiently for a minority [@zhang2026quantifying].
+
+Residual error is measurable on a named gene. FAM219A had a mean absolute
+relative difference of 0.7094 when quantified from 150 base-pair paired short
+reads and 0.5858 from long reads alone. So the long-read estimate improved and
+remained wrong by more than half [@li2025improving]. Long reads improved the estimate for that gene without bringing its error near
+zero [@li2025improving].
+
+So the problem is weakened sharply in practice and not dissolved in principle.
+The formal result is derived for reads of one fixed length. Nothing in this
+book's corpus re-derives it for reads that are long but truncated from one end,
+which is the actual long-read case.
+
+Two benchmarks keep the practical claim modest. Against spike-ins with known
+abundances, a short-read quantifier recovered the truth better than any long-read
+method entered, with an average Spearman correlation of 0.84 against 0.29 to
+0.78 [@pardopalacios2024lrgasp]. And across three long-read protocols run on the
+same eight cell lines, the protocols picked the same major isoform for only 67 to
+69 per cent of multi-isoform genes [@you2025longbench].
 
 ## Phasing comes free with read length {#sec-phasing}
 
@@ -146,29 +669,6 @@ X-linked long reads came from the inactive chromosome, which is 0.54 per cent.
 Xist plus the two known escape genes accounted for 39 of those few
 [@lemoine2025longread].
 
-## Artefacts that pass for isoforms {#sec-artifacts}
-
-A long read can report a structure that was never in the cell.
-
-An intron-within-an-exon event in CD19 turned out to be a reverse transcription
-product. On reporter-transfected cells it made up over 25 per cent of PCR-free
-direct-cDNA reads and nearly 30 per cent of PCR-amplified cDNA reads, and it
-was undetectable in direct RNA reads. Those authors generalise the warning:
-any RT-dependent protocol can invent such events [@schulz2021direct].
-
-Spurious 3' ends have a similar explanation. Comparing cDNA and native-RNA
-libraries across two species and three platforms, one group argues that the
-spurious poly(A) sites usually blamed on internal priming are produced by
-template switching instead. Many appeared at sites carrying only three to five
-adenines, too few for an oligo-dT primer to bind [@balazs2019template].
-
-The asymmetry that makes novel structures hard to trust is measurable.
-Quality-control analysis of a PacBio mouse neural transcriptome found that 99.9
-per cent of junctions already in the annotation used canonical dinucleotides,
-against only 69 per cent of the 3,837 novel junctions, leaving 1,188
-non-canonical [@tardaguila2018sqanti]. Novel long-read junctions need filtering
-before they can be interpreted.
-
 ## Single-cell long reads {#sec-sc-longread}
 
 The barrier to single-cell isoform work was arithmetic, and its authors set it
@@ -179,7 +679,7 @@ PacBio output more than fifteenfold, to roughly 40 million reads per run
 
 @sec-brain-atlas takes up what that throughput bought. It fixes throughput and
 leaves cost where it was, though. Authors applying the same approach to
-Alzheimer brain state the ceiling directly: even with the gain from
+Alzheimer brain state the ceiling directly. Even with the gain from
 concatenation, depth per sequencing run remains lower and cost per read higher
 than for short-read sequencing [@shahnaee2026rna].
 
@@ -187,7 +687,7 @@ than for short-read sequencing [@shahnaee2026rna].
 
 What the extra length buys in a single cell has been measured on one sample. In
 the same human individual, droplet data yielded computable splicing scores for
-1,416 genes against 9,802 for plate-based full-length data, and those authors
+1,416 genes against 9,802 for plate-based full-length data. Those authors
 state that 3'-biased droplet reads never reach some splicing events at all
 [@olivieri2021splicing]. Because the alternatively spliced exons of PTPRC sit
 near the 5' end of the transcript, 3' gene-expression libraries left under a
@@ -227,7 +727,7 @@ libraries, short-read splicing analysis still recovered about 30 per cent more
 splice junctions than either long-read platform [@han2024contrasting], so long
 reads add structure at a cost in junction sensitivity. That comparison ran on
 bulk data only. It used human cell line replicates from LRGASP, heart, brain and
-liver samples from GTEx, and one patient-derived leukaemia line, subsampled so
+liver samples from GTEx. One patient-derived leukaemia line, subsampled so
 that total bases sequenced were comparable across platforms, and no single-cell
 data entered it at all [@han2024contrasting].
 
@@ -248,7 +748,7 @@ long reads buy in single cells is the subject of @sec-isoform-only and
 
 Transcript structure changes what a variant is predicted to do. Adding
 long-read transcripts to the reference annotation changed the predicted most
-severe consequence for 0.67 per cent of GTEx genome variants, and the
+severe consequence for 0.67 per cent of GTEx genome variants. The
 reassigned variants carried higher average CADD scores than those whose
 annotation was unchanged [@glinos2021transcriptome].
 

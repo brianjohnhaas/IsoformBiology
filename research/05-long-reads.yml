@@ -1,5 +1,5 @@
 area: long-reads
-researcher: 'agent-05-long-reads; deepening pass: art, plt, qnt'
+researcher: 'agent-05-long-reads; deepening pass: art, plt, qnt; mth'
 date: 2026-11-21
 corpus: paperclip 0.8.23
 claims:
@@ -2896,6 +2896,766 @@ claims:
   confidence: high
   figure_idea: Agreement on the dominant isoform between protocol pairs, as a matrix, with the number
     of multi-isoform genes compared printed in each cell.
+- id: LR-104
+  claim: 'Reference-guided short-read assembly turns reconstruction into a graph problem with an explicitly
+    parsimonious objective: fragment alignments become nodes, an edge joins two overlapping fragments
+    whose implied introns agree exactly, and the isoform set reported is the smallest collection of paths
+    that covers every fragment.'
+  note: The representative implementation is Cufflinks. trapnell2010transcript is already recorded in
+    research/04-technology-arc.yml at TECH-028 and TECH-029, both anchored to L13 for the statement that
+    a read cannot be attributed to one isoform; this record anchors a different line, L42, for the mechanism
+    of the assembly step, which chapter 4 does not describe. The same line names the compatibility rule
+    and the minimum path cover that Dilworth's theorem supplies, and says that fragments from incompletely
+    spliced RNA are filtered out before the graph is built.
+  topic: 'short-read reconstruction: the splice-compatibility graph and the parsimony objective'
+  source:
+    doc_id: PMC3146043
+    title: Transcript assembly and abundance estimation from RNA-Seq reveals thousands of new transcripts
+      and switching among isoforms
+    authors: Trapnell, C.; Williams, B. A.; Pertea, G.; Mortazavi, A.; Kwan, G.; van Baren, M. J.; Salzberg,
+      S. L.; Wold, B. J.; Pachter, L.
+    journal: Nature Biotechnology
+    year: 2010
+    doi: 10.1038/nbt.1621
+    bibkey: trapnell2010transcript
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L42
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3146043#L42
+    quote: The assembler was designed to find the minimal number of transcripts that “explain” the reads
+  confidence: high
+  figure_idea: Four spliced fragment alignments over one locus, the compatibility graph they induce, and
+    two different path covers that explain them equally well, with the parsimonious one marked. The point
+    is that the choice is made by the objective, not by the data.
+- id: LR-105
+  claim: 'Minimising the number of transcripts does not pick a single answer, because several smallest
+    path covers can explain the same fragments, so this approach needs a second criterion, and uneven
+    coverage along the locus supplies it: per-fragment inclusion ratios weight the choice among equally
+    parsimonious assemblies.'
+  note: Cufflinks again. The same line states that the tie-break cost is built from the percent-spliced-in
+    metric and that the assembler selects the minimum-cost maximum matching. This is where a reconstruction
+    result starts depending on an assumption about coverage, which research/04-technology-arc.yml TECH-032
+    states formally as non-identifiability.
+  topic: 'short-read reconstruction: choosing among equally parsimonious answers'
+  source:
+    doc_id: PMC3146043
+    title: Transcript assembly and abundance estimation from RNA-Seq reveals thousands of new transcripts
+      and switching among isoforms
+    authors: Trapnell, C.; Williams, B. A.; Pertea, G.; Mortazavi, A.; Kwan, G.; van Baren, M. J.; Salzberg,
+      S. L.; Wold, B. J.; Pachter, L.
+    journal: Nature Biotechnology
+    year: 2010
+    doi: 10.1038/nbt.1621
+    bibkey: trapnell2010transcript
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L43
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3146043#L43
+    quote: not guaranteed to be unique. In order to “phase” distant exons, we leveraged the fact that
+      abundance inhomogeneities could link distant exons
+  confidence: high
+  figure_idea: One splice graph with two path covers of equal size and the coverage profile that discriminates
+    them, drawn so the reader sees that the discrimination is statistical rather than structural.
+- id: LR-106
+  claim: The shared machinery of reference-guided short-read assembly is a per-locus splice graph in which
+    vertices are whole or partial exons, edges are the splice junctions seen in spliced alignments, and
+    read coverage becomes vertex and edge weights; a candidate isoform is a path through that graph, so
+    reconstruction becomes the choice of a path set fitting both topology and weights.
+  note: Stated by the authors of Scallop while surveying the field; the cited line names ten earlier implementations
+    of the same paradigm, which is the evidence that the splice graph is the approach rather than one
+    tool's feature. Recorded as the paradigm, not as a list of software.
+  topic: 'short-read reconstruction: what a splice graph is and what a path means'
+  source:
+    doc_id: PMC5722698
+    title: Accurate assembly of transcripts through phase-preserving graph decomposition
+    authors: Shao, M.; Kingsford, C.
+    journal: Nature Biotechnology
+    year: 2017
+    doi: 10.1038/nbt.4020
+    bibkey: shao2017scallop
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L8
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5722698#L8
+    quote: use the read alignments to build a splice graph for each gene locus, in which vertices correspond
+      to (partial) exons, edges correspond to junctions
+  confidence: high
+  figure_idea: 'A splice graph built from spliced alignments at one locus, with each graph element labelled
+    by the observation that produced it: exon segment from coverage, edge from a spliced read, weight
+    from a count.'
+- id: LR-107
+  claim: 'Parsimony need not be applied unconditionally in splice-graph assembly, and at least one design
+    applies it only where the reads leave a branch point undetermined: where reads span enough exons to
+    constrain how a vertex decomposes, that design follows the reads and only minimises the mismatch between
+    inferred and observed coverage.'
+  note: The design is Scallop; the contrast is with the unconditional parsimony of MTH-001 and MTH-002.
+    The same work defines a phasing path as the ordered edge sequence of a read or read pair spanning
+    more than two exons and requires each such path to be contained whole in some reconstructed transcript,
+    on the ground that a read comes from a single molecule (L22). That line also says alignment and sequencing
+    errors produce false phasing paths the algorithm must detect and discard, so even the read-driven
+    branch is not taken on trust.
+  topic: 'short-read reconstruction: where the parsimony assumption actually bites'
+  source:
+    doc_id: PMC5722698
+    title: Accurate assembly of transcripts through phase-preserving graph decomposition
+    authors: Shao, M.; Kingsford, C.
+    journal: Nature Biotechnology
+    year: 2017
+    doi: 10.1038/nbt.4020
+    bibkey: shao2017scallop
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L28
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5722698#L28
+    quote: when the phasing information is missing for some vertices, then our algorithm emphasizes minimizing
+      |P| to produce a more parsimonious solution
+  confidence: high
+  figure_idea: The same branch point decomposed two ways, once with a read spanning it and once without,
+    showing the answer is evidence-driven in one case and objective-driven in the other.
+- id: LR-108
+  claim: Assembly without a reference genome replaces the splice graph with a de Bruijn graph over short
+    overlapping subsequences of the reads, in which a candidate transcript is any path, so the method
+    assumes no genome, no gene boundary and no known splice site, and inherits instead a graph whose enumerable
+    paths are mostly not transcripts.
+  note: The representative implementation is Trinity. L18 of the same source states that sequencing errors
+    introduce large numbers of false nodes and so millions of mostly implausible paths, and lists recovering
+    all plausible splice forms and paralogous transcripts as an open problem, which is why this approach
+    needs explicit scoring and pruning rather than path enumeration alone.
+  topic: 'de novo assembly without a reference genome: the graph and what a path means'
+  source:
+    doc_id: PMC3571712
+    title: 'Trinity: reconstructing a full-length transcriptome without a genome from RNA-Seq data'
+    authors: Grabherr, M. G.; Haas, B. J.; Yassour, M.; Levin, J. Z.; Thompson, D. A.; Amit, I.; Adiconis,
+      X.; Fan, L.; Raychowdhury, R.; Zeng, Q.; Chen, Z.; Mauceli, E.; Hacohen, N.; Gnirke, A.; Rhind,
+      N.; di Palma, F.; Birren, B. W.; Nusbaum, C.; Lindblad-Toh, K.; Friedman, N.; Regev, A.
+    journal: Nature Biotechnology
+    year: 2011
+    doi: 10.1038/nbt.1883
+    bibkey: grabherr2011trinity
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L17,L18
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3571712#L17,L18
+    quote: For transcriptome assembly, each path in the graph represents a possible transcript.
+  confidence: high
+  figure_idea: The same three-isoform locus drawn twice, as a genome-anchored splice graph and as a de
+    Bruijn graph over k-mers, so the reader sees that one carries coordinates and the other only sequence
+    overlap.
+- id: LR-109
+  claim: Reference-free assembly has a ceiling no algorithm can lift, because a k-mer graph can only reconstruct
+    a transcript whose whole sequence is covered by adjacent overlapping k-mers present in the read set,
+    so the recoverable set is fixed by the library before any assembler runs.
+  note: Trinity's authors call the resulting bound an Oracle set and state that it is optimistic in one
+    direction, since a sequence can be covered by k-mers without being covered by whole reads, and pessimistic
+    in another, since it is computed against annotated transcripts only.
+  topic: 'de novo assembly: the limit set by the read set rather than the algorithm'
+  source:
+    doc_id: PMC3571712
+    title: 'Trinity: reconstructing a full-length transcriptome without a genome from RNA-Seq data'
+    authors: Grabherr, M. G.; Haas, B. J.; Yassour, M.; Levin, J. Z.; Thompson, D. A.; Amit, I.; Adiconis,
+      X.; Fan, L.; Raychowdhury, R.; Zeng, Q.; Chen, Z.; Mauceli, E.; Hacohen, N.; Gnirke, A.; Rhind,
+      N.; di Palma, F.; Birren, B. W.; Nusbaum, C.; Lindblad-Toh, K.; Friedman, N.; Regev, A.
+    journal: Nature Biotechnology
+    year: 2011
+    doi: 10.1038/nbt.1883
+    bibkey: grabherr2011trinity
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L35
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3571712#L35
+    quote: Any k-mer-based assembly approach is limited to those sequences that are represented by the
+      exact k-mer composition of the RNA-Seq read set.
+  confidence: high
+  figure_idea: A transcript drawn as a line with the k-mers present in a read set laid under it, with
+    one gap, so the reader sees why that transcript is unreachable at any depth with that library.
+- id: LR-110
+  claim: 'Reference-free assembly does recover near-identical paralogues, and how completely depends on
+    expression rather than on similarity alone: across 77 fission yeast gene families holding 185 paralogs,
+    every member was recovered at full length for 33 families, some members for another 33, and all 26
+    genes of the remaining 11 families were missed, those misses often involving lowly expressed genes.'
+  note: Numbers are from the authors' own evaluation of Trinity, so they describe what that approach achieved
+    rather than a bound on what any method could. The source frames this as success, noting that highly
+    expressed near-identical ribosomal protein paralogues were resolved, and attributes the failures to
+    low expression; the denominators are families, 33 of 77 complete, 33 of 77 partial, 11 of 77 entirely
+    missing.
+  topic: 'de novo assembly: how far near-identical sequences can be separated, measured'
+  source:
+    doc_id: PMC3571712
+    title: 'Trinity: reconstructing a full-length transcriptome without a genome from RNA-Seq data'
+    authors: Grabherr, M. G.; Haas, B. J.; Yassour, M.; Levin, J. Z.; Thompson, D. A.; Amit, I.; Adiconis,
+      X.; Fan, L.; Raychowdhury, R.; Zeng, Q.; Chen, Z.; Mauceli, E.; Hacohen, N.; Gnirke, A.; Rhind,
+      N.; di Palma, F.; Birren, B. W.; Nusbaum, C.; Lindblad-Toh, K.; Friedman, N.; Regev, A.
+    journal: Nature Biotechnology
+    year: 2011
+    doi: 10.1038/nbt.1883
+    bibkey: grabherr2011trinity
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L41
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3571712#L41
+    quote: Out of 77 gene families containing 185 paralogs[21], Trinity recovered at full length all members
+      of 33 families (68 genes)
+  confidence: high
+  figure_idea: Recovery of paralogous family members against expression level, so the reader sees that
+    the binding constraint is read depth at the locus rather than sequence identity.
+- id: LR-111
+  claim: Reference-guided correction of long-read splice sites carries an annotation-shaped bias, because
+    in one widely used pipeline a non-canonical junction survives into the output only if the reference
+    annotation already contains it, so a genuinely novel non-canonical junction is removed by the same
+    rule that removes a sequencing error.
+  note: 'The pipeline is TALON and the correction step it calls is TranscriptClean; the rule is stated
+    for that pipeline, not shown to be general. The same line describes the correction as removing microindels,
+    mismatches and non-canonical junctions from alignments in a variant-aware way, and a separate labelling
+    step that records the fraction of adenines following each alignment so internal-priming artefacts
+    can be filtered later. Read as a preprint. Note the conflict flagged at MTH-023: a later benchmark
+    classes TALON among the methods lacking an error correction step.'
+  topic: 'long-read identification: reference-guided splice-site correction and what it costs'
+  source:
+    doc_id: bio_768dce506cd0
+    title: A technology-agnostic long-read analysis pipeline for transcriptome discovery and quantification
+    authors: Wyman, D.; Balderrama-Gutierrez, G.; Reese, F.; Jiang, S.; Rahmanian, S.; Forner, S.; Matheos,
+      D.; Zeng, W.; Williams, B.; Trout, D.; England, W.; Chu, S. H.; Spitale, R. C.; Tenner, A. J.; Wold,
+      B. J.; Mortazavi, A.
+    journal: bioRxiv
+    year: 2019
+    doi: 10.1101/672931
+    bibkey: wyman2019technology
+    preprint: true
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L27
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_768dce506cd0#L27
+    quote: Noncanonical splice junctions are permitted in the final output only if they are supported
+      by the splice annotation.
+  confidence: high
+  figure_idea: A read carrying one true non-canonical junction and one error-induced shifted junction,
+    with the correction rule applied to both, showing the rule cannot tell them apart without the annotation.
+- id: LR-112
+  claim: 'Long-read discovery can hold novelty and familiarity to different standards of evidence by design:
+    in one pipeline a structure already present in the annotation is accepted on sight, while an unannotated
+    structure must be seen by at least five reads in each of at least two biological replicates before
+    it is reported.'
+  note: 'TALON again, read as a preprint; the five-read and two-replicate values are that pipeline''s
+    defaults and adjustable. Chapter 5 already carries read-support thresholds from another pass: research/05-long-reads.yml
+    LR-098 records a three-read floor summed across a cohort, LR-099 the effect of 5, 10 and 20 read filters
+    on novel against annotated transcripts, and LR-100 a relative-abundance filter behaving backwards
+    when samples are pooled. What this record adds is the asymmetry between annotated and novel structures.
+    The same line also requires all five supporting reads to pass an internal-priming cutoff of at most
+    0.5 fraction adenines.'
+  topic: 'long-read identification: the decision rules that separate a transcript from an artefact'
+  source:
+    doc_id: bio_768dce506cd0
+    title: A technology-agnostic long-read analysis pipeline for transcriptome discovery and quantification
+    authors: Wyman, D.; Balderrama-Gutierrez, G.; Reese, F.; Jiang, S.; Rahmanian, S.; Forner, S.; Matheos,
+      D.; Zeng, W.; Williams, B.; Trout, D.; England, W.; Chu, S. H.; Spitale, R. C.; Tenner, A. J.; Wold,
+      B. J.; Mortazavi, A.
+    journal: bioRxiv
+    year: 2019
+    doi: 10.1101/672931
+    bibkey: wyman2019technology
+    preprint: true
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L31
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_768dce506cd0#L31
+    quote: we require that novel transcripts be supported by at least 5 reads each in at least two biological
+      replicate samples
+  confidence: high
+- id: LR-113
+  claim: 'Error-tolerant clustering decides which differences between reads are real by correcting reads
+    only part of the way to their cluster''s consensus: one such method corrects half of the columns that
+    look erroneous, then re-partitions and repeats until no cluster contains internal differences, so
+    the surviving distinct sequences become the candidate isoforms.'
+  note: 'The representative implementation is IsoCon, developed for transcripts of near-identical multigene
+    families and operating without a reference genome. The half-correction rule is the explicit trade-off
+    the brief asks about: correcting fully would merge true low-frequency variants into the consensus,
+    and correcting not at all would leave every sequencing error looking like a variant. L99 states the
+    two-step structure, clustering to find candidates and then statistical removal of unsupported ones.'
+  topic: 'long-read identification: error-tolerant clustering of reads into isoform groups'
+  source:
+    doc_id: PMC6214943
+    title: Deciphering highly similar multigene family transcripts from Iso-Seq data with IsoCon
+    authors: Sahlin, K.; Tomaszkiewicz, M.; Makova, K. D.; Medvedev, P.
+    journal: Nature Communications
+    year: 2018
+    doi: 10.1038/s41467-018-06910-x
+    bibkey: sahlin2018isocon
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L99,L100
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6214943#L99,L100
+    quote: only half of the potentially erroneous columns are corrected. Then, the process iterates—the
+      modified reads are repartitioned into potentially different clusters
+  confidence: high
+  figure_idea: Reads from two transcripts differing at three positions, with the consensus of a mixed
+    cluster drawn beside it, so the reader sees that full correction to that consensus would erase the
+    distinction the method exists to find.
+- id: LR-114
+  claim: 'The decision to call two long-read clusters separate isoforms can be made as a statistical test
+    rather than a threshold: for each pair of near-identical candidates, the reads assigned to them are
+    tested at the positions where the candidates differ for whether that evidence is better explained
+    by sequencing error, and a candidate keeps the least significant result from all its pairwise tests.'
+  note: 'IsoCon again. Reads are first assigned to their closest matching candidate, so the test is conditional
+    on that assignment. Taking the least significant p-value across all pairwise tests is a conservative
+    rule: a candidate that cannot be separated from any one neighbour is discarded even if it separates
+    cleanly from the rest. The source also reports that recall depends strongly on read depth, with most
+    transcripts of one gene family captured above three reads and about ten needed for another (L31).'
+  topic: 'long-read identification: when a read group becomes a separate isoform'
+  source:
+    doc_id: PMC6214943
+    title: Deciphering highly similar multigene family transcripts from Iso-Seq data with IsoCon
+    authors: Sahlin, K.; Tomaszkiewicz, M.; Makova, K. D.; Medvedev, P.
+    journal: Nature Communications
+    year: 2018
+    doi: 10.1038/s41467-018-06910-x
+    bibkey: sahlin2018isocon
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L101
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6214943#L101
+    quote: formulate a hypothesis test to infer how likely it is that the reads supporting these variants
+      are due to sequencing errors
+  confidence: high
+- id: LR-115
+  claim: 'Collapsing reads onto shared intron chains under-reports isoforms because the premise that a
+    long read is a whole molecule often fails: whether a sequenced cDNA carries all the splice sites of
+    its template depends on how completely reverse transcription ran, which is why assembling long reads
+    recovers structures that collapsing them alone does not.'
+  note: 'Argued by the authors of Scallop-LR, a long-read adaptation of the assembler in MTH-003 and MTH-004,
+    so the framing favours assembly; the cited line supports the premise by citing earlier work finding
+    full-length reads less likely for transcripts above 2.5 kb than below. Read as a preprint. Related
+    but distinct records exist in research/05-long-reads.yml: LR-066 to LR-068 measure read length against
+    transcript length, and LR-094 to LR-096 explain why a partial match is ambiguous for quantification,
+    which is the other half of the same problem.'
+  topic: 'long-read identification: why collapsing alone is not enough'
+  source:
+    doc_id: bio_2bf435c36c09
+    title: Quantifying the Benefit Offered by Transcript Assembly on Single-Molecule Long Reads
+    authors: Tung, L. H.; Shao, M.; Kingsford, C.
+    journal: Genome Biology
+    year: 2019
+    doi: 10.1186/s13059-019-1883-0
+    bibkey: tung2019quantifying
+    preprint: true
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L17
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_2bf435c36c09#L17
+    quote: the success rate of the sequenced cDNA molecules containing all splice sites of the original
+      transcripts depends on the completeness of cDNA synthesis
+  confidence: high
+  figure_idea: A transcript with four introns and the partial reads covering it, showing that no single
+    read carries the whole chain while the union of them determines it.
+- id: LR-116
+  claim: Long-read methods need an explicit tolerance for calling two structures the same isoform, because
+    exact agreement is unattainable at long-read error rates; one such rule merges predicted transcripts
+    carrying the same number of splice positions when each position agrees to within a default of ten
+    base pairs, trading structural resolution for precision.
+  note: Scallop-LR again, read as a preprint. The ten base pair default is stated on the same line and
+    applies to the sum of the absolute start and end differences at a splice position, not to each separately.
+    The same work defines a transcript boundary only where at least three boundary-bearing reads agree
+    within a tolerance (L29), which is the matching rule for ends rather than for junctions. MTH-024 measures
+    what such a tolerance is absorbing.
+  topic: 'long-read identification: when two reads become one isoform'
+  source:
+    doc_id: bio_2bf435c36c09
+    title: Quantifying the Benefit Offered by Transcript Assembly on Single-Molecule Long Reads
+    authors: Tung, L. H.; Shao, M.; Kingsford, C.
+    journal: Genome Biology
+    year: 2019
+    doi: 10.1186/s13059-019-1883-0
+    bibkey: tung2019quantifying
+    preprint: true
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L32
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_2bf435c36c09#L32
+    quote: For transcripts with very similar splice positions, the algorithm clusters them into a single
+      transcript.
+  confidence: high
+  figure_idea: Three reads whose splice positions differ by a few bases, with the merge tolerance drawn
+    as a window, and the single collapsed structure they produce.
+- id: LR-117
+  claim: Error-tolerant treatment of long reads is necessary rather than optional, because alignments
+    of reads from the same locus routinely disagree with one another about where the splice sites are,
+    and about whether short exons are present at all, so a consensus across reads has to stand in for
+    the structure that no single read reports reliably.
+  note: Stated by the authors of StringTie2 about their own consensus-calling design, so the claim recorded
+    here is their problem statement rather than their performance result. The same line reports that such
+    alignments also disagree about the presence of particular exons, especially small ones. Read as the
+    published Genome Biology article; the bioRxiv version is bio_aed311e76c02, where the same text sits
+    at L46.
+  topic: 'long-read identification: why a consensus across reads is required'
+  source:
+    doc_id: PMC6912988
+    title: Transcriptome assembly from long-read RNA-seq alignments with StringTie2
+    authors: Kovaka, S.; Zimin, A. V.; Pertea, G. M.; Razaghi, R.; Salzberg, S. L.; Pertea, M.
+    journal: Genome Biology
+    year: 2019
+    doi: 10.1186/s13059-019-1910-1
+    bibkey: kovaka2019stringtie2
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L46
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6912988#L46
+    quote: Alignments of high-error long reads generated from the same locus usually disagree with one
+      another, particularly surrounding splice sites
+  confidence: high
+- id: LR-118
+  claim: 'An approach that identifies isoforms by reporting annotated transcripts covered by reads inherits
+    the completeness of the annotation as an upper bound, and the dependence is steep: with only a fifth
+    of one chromosome''s annotation supplied, such a method fell to 30 per cent sensitivity and 50 per
+    cent precision, while assembling the same reads gave 74 and 80 per cent.'
+  note: 'The selection-based method is FLAIR and the assembly-based one StringTie2, and the measurement
+    was made by StringTie2''s authors on human chromosome 19 nanopore data with the annotation randomly
+    subsampled from 1 to 100 per cent, so the comparison is not independent and the prose must say whose
+    it is. What it establishes is the shape of a dependence, not a ranking: the two approaches differ
+    in what they assume about the reference, and that assumption is testable by withholding annotation.'
+  topic: 'long-read identification: how much of a method''s answer belongs to the annotation'
+  source:
+    doc_id: PMC6912988
+    title: Transcriptome assembly from long-read RNA-seq alignments with StringTie2
+    authors: Kovaka, S.; Zimin, A. V.; Pertea, G. M.; Razaghi, R.; Salzberg, S. L.; Pertea, M.
+    journal: Genome Biology
+    year: 2019
+    doi: 10.1186/s13059-019-1910-1
+    bibkey: kovaka2019stringtie2
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L39
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6912988#L39
+    quote: when only 20% of the annotation is provided, FLAIR’s sensitivity and precision dropped to 30%
+      and 50% respectively
+  confidence: high
+  figure_idea: Sensitivity and precision against the fraction of annotation supplied, for a selection-based
+    and an assembly-based approach, so the reader sees one curve collapse and the other stay flat.
+- id: LR-119
+  claim: 'One long-read framework makes the ambiguity of partial reads explicit before any isoform is
+    proposed: each strand-specific alignment to the reference genome is decomposed into its path through
+    a splice graph whose nodes include exon segments, junctions and inferred start and end sites, reads
+    that are structurally indistinguishable on that graph are grouped into compatibility classes, and
+    candidate isoforms are then built by merging compatible classes.'
+  note: 'The framework is LRAA, read as a bioRxiv preprint. Its stated assumptions are on L37: it needs
+    strand-specific spliced alignments to a reference genome, and it builds separate splice graphs for
+    multi-exonic and single-exon alignments so that spliced and unspliced structures are not coupled.
+    L39 adds that a smaller compatibility class fully consistent with a larger one may be subsumed into
+    it, which is this design''s answer to the partial-read problem in MTH-012. research/ALLOCATION.md
+    records that the person directing this book is an author; MTH-018 anchors the authorship, and the
+    prose must disclose it where the method is named.'
+  topic: 'long-read identification: representing read ambiguity before deciding isoforms'
+  source:
+    doc_id: bio_1e10d9ed6e09
+    title: Accurate strand-specific long-read transcript isoform discovery and quantification at bulk,
+      single-cell, and single-nucleus resolution
+    authors: Yu, H.; Georgescu, C. H.; Khorgade, A.; Al-Eryani, G.; Bartlett, D. A.; Brookhart, A.; Kockan,
+      C.; Webber, J. T.; Shin, A.; White, E.; Reed, X.; Hu, F.; Bromberek, S.; Ndayambaje, S.; Aryal,
+      S.; Dickson, D. W.; Prudencio, M.; Lagier-Tourenne, C.; Ward, M. E.; Blainey, P. C.; Popic, V.;
+      Haas, B. J.; Al’Khafaji, A. M.
+    journal: bioRxiv
+    year: 2026
+    doi: 10.64898/2026.02.12.705617
+    bibkey: yu2026lraa
+    preprint: true
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L37,L38,L39
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_1e10d9ed6e09#L37,L38,L39
+    quote: Read alignments are grouped into read compatibility classes (RCCs), which represent sets of
+      reads that are structurally indistinguishable with respect to exon–intron architecture
+  confidence: high
+  figure_idea: Four partial reads over one locus, the compatibility classes they fall into, and the two
+    candidate isoforms consistent with those classes, so the reader sees ambiguity represented rather
+    than resolved by fiat.
+- id: LR-120
+  claim: The same long-read framework runs in three regimes differing only in how much of the annotation
+    is trusted, from assigning reads to a supplied annotation without discovery, through using known structures
+    to guide discovery of further ones, to discovery from alignments and genome sequence with no annotation
+    at all, which makes annotation dependence a settable input rather than a fixed property.
+  note: LRAA, read as a bioRxiv preprint, and the description is the authors' own. This record states
+    what the approach offers, not that it works better than anything; no comparative claim about this
+    method is recorded from its own preprint. The three modes share one splice-graph representation, one
+    read-compatibility model and one expectation-maximisation step. The measured consequence of annotation
+    dependence for a different pair of approaches is MTH-015.
+  topic: 'long-read identification: annotation dependence as an explicit setting'
+  source:
+    doc_id: bio_1e10d9ed6e09
+    title: Accurate strand-specific long-read transcript isoform discovery and quantification at bulk,
+      single-cell, and single-nucleus resolution
+    authors: Yu, H.; Georgescu, C. H.; Khorgade, A.; Al-Eryani, G.; Bartlett, D. A.; Brookhart, A.; Kockan,
+      C.; Webber, J. T.; Shin, A.; White, E.; Reed, X.; Hu, F.; Bromberek, S.; Ndayambaje, S.; Aryal,
+      S.; Dickson, D. W.; Prudencio, M.; Lagier-Tourenne, C.; Ward, M. E.; Blainey, P. C.; Popic, V.;
+      Haas, B. J.; Al’Khafaji, A. M.
+    journal: bioRxiv
+    year: 2026
+    doi: 10.64898/2026.02.12.705617
+    bibkey: yu2026lraa
+    preprint: true
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L43
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_1e10d9ed6e09#L43
+    quote: LRAA supports three execution modes within the same algorithmic framework.
+  confidence: high
+- id: LR-121
+  claim: The preprint describing the long-read framework recorded at MTH-016 and MTH-017 lists Brian J.
+    Haas as its twenty-second of twenty-three authors and gives his Broad Institute address as one of
+    the two corresponding addresses for the work.
+  note: research/ALLOCATION.md states that the person directing this book is an author of LRAA, that an
+    earlier research pass deliberately left the preprint unread for that reason, and that its inclusion
+    was then requested by that person. Which author that is was not established from any source read here,
+    so the prose should rest the disclosure on the project's own record rather than on an inference from
+    this author list. L15 carries the corresponding-author line, bhaas@broadinstitute.org and aalkhafa@broadinstitute.org.
+    The same name appears second on the author list of the reference-free assembler recorded at MTH-005
+    to MTH-007, so if the identification holds the disclosure covers two of the methods in this section.
+  topic: authorship of one of the methods described
+  source:
+    doc_id: bio_1e10d9ed6e09
+    title: Accurate strand-specific long-read transcript isoform discovery and quantification at bulk,
+      single-cell, and single-nucleus resolution
+    authors: Yu, H.; Georgescu, C. H.; Khorgade, A.; Al-Eryani, G.; Bartlett, D. A.; Brookhart, A.; Kockan,
+      C.; Webber, J. T.; Shin, A.; White, E.; Reed, X.; Hu, F.; Bromberek, S.; Ndayambaje, S.; Aryal,
+      S.; Dickson, D. W.; Prudencio, M.; Lagier-Tourenne, C.; Ward, M. E.; Blainey, P. C.; Popic, V.;
+      Haas, B. J.; Al’Khafaji, A. M.
+    journal: bioRxiv
+    year: 2026
+    doi: 10.64898/2026.02.12.705617
+    bibkey: yu2026lraa
+    preprint: true
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L2,L15
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_1e10d9ed6e09#L2,L15
+    quote: Victoria Popic, Brian J. Haas *, Aziz M. Al’Khafaji *
+  confidence: high
+- id: LR-122
+  claim: 'On the same RNA from the same four donors, short-read and long-read reconstruction agreed about
+    most but not all novel splicing inside known genes: of 2,999 such transcripts found in total, 2,377,
+    or 79.2 per cent, were seen by both platforms in at least one sample.'
+  note: 'Both platforms were processed through one commercial transcript-discovery pipeline against the
+    T2T-CHM13v2.0 reference, so this comparison holds the analysis software constant and varies the data,
+    which is the opposite of the usual benchmark design. The agreement criterion is permissive: detection
+    in at least one of four samples per platform. Read with MTH-021, which gives the depth difference
+    between the two libraries.'
+  topic: short-read against long-read reconstruction on one sample, measured
+  source:
+    doc_id: PMC12862385
+    title: Systematic evaluation of long- and short-read RNA-seq for human peripheral blood
+    authors: Iwabuchi, S.; Nasti, A.; Okada, H.; Takeshita, Y.; Sato, T. A.; Urabe, T.; Takamura, T.;
+      Tamura, T.; Tajima, A.; Matsubara, K.; Kaneko, S.
+    journal: NAR Molecular Medicine
+    year: 2026
+    doi: 10.1093/narmme/ugag006
+    bibkey: iwabuchi2026systematic
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L49
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12862385#L49
+    quote: A total of 2999 transcripts were identified from known genes, of which 2377 (79.2%) were detected
+      at least one sample in both platforms
+  confidence: high
+  figure_idea: A two-way split of one novel-transcript set into shared, short-read-only and long-read-only,
+    with counts on the segments and the total stated, so the reader can see the denominator.
+- id: LR-123
+  claim: 'The disagreement between the two reconstructions was lopsided: 464 novel spliced transcripts
+    were reported only from short reads against 158 only from long reads, and the source offers two explanations
+    for the larger share without choosing between them, inference-driven false positives from short reads
+    or insufficient long-read coverage.'
+  note: Neither explanation was tested; no validation of the platform-specific calls is reported. MTH-021
+    shows the libraries differed about seventy-two-fold in total reads, which makes the coverage explanation
+    the one with independent support. The same source separately reports more variants per unannotated
+    transcript cluster from short reads, a mean of 2.76 against 2.34, which it attributes to fragmentation
+    or over-splitting in short-read assembly (L48), again without testing that attribution.
+  topic: 'short-read against long-read reconstruction: which way the disagreement runs'
+  source:
+    doc_id: PMC12862385
+    title: Systematic evaluation of long- and short-read RNA-seq for human peripheral blood
+    authors: Iwabuchi, S.; Nasti, A.; Okada, H.; Takeshita, Y.; Sato, T. A.; Urabe, T.; Takamura, T.;
+      Tamura, T.; Tajima, A.; Matsubara, K.; Kaneko, S.
+    journal: NAR Molecular Medicine
+    year: 2026
+    doi: 10.1093/narmme/ugag006
+    bibkey: iwabuchi2026systematic
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L49
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12862385#L49
+    quote: In contrast, 464 transcripts were specific to short-read data, possibly reflecting false positives
+      due to inference-based splicing prediction or lower coverage in long-read.
+  confidence: high
+- id: LR-124
+  claim: 'Comparisons of the two reconstruction approaches on one sample are confounded by depth unless
+    the depth is stated, and in this one it differed by a large factor: the long-read libraries returned
+    about 7.6 million reads in total, against an average of 138.2 million per sample across four short-read
+    libraries.'
+  note: The same line puts the ratio at about seventy-two-fold in total reads. Any count favouring short
+    reads in this comparison, including the 464 short-read-only transcripts in MTH-020, is therefore partly
+    a statement about depth. The matched-bases design that avoids this problem is recorded in research/05-long-reads.yml
+    at LR-036.
+  topic: 'honest limits: the depth confound inside a platform comparison'
+  source:
+    doc_id: PMC12862385
+    title: Systematic evaluation of long- and short-read RNA-seq for human peripheral blood
+    authors: Iwabuchi, S.; Nasti, A.; Okada, H.; Takeshita, Y.; Sato, T. A.; Urabe, T.; Takamura, T.;
+      Tamura, T.; Tajima, A.; Matsubara, K.; Kaneko, S.
+    journal: NAR Molecular Medicine
+    year: 2026
+    doi: 10.1093/narmme/ugag006
+    bibkey: iwabuchi2026systematic
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L40
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12862385#L40
+    quote: The long-read data yielded ~7.6 million reads in total, whereas the short-read platform generated
+      an average of 138.2 million reads per sample
+  confidence: high
+- id: LR-125
+  claim: 'Where no reference genome exists, the two approaches split along full-length recovery rather
+    than along total count: from the same sugarcane experiment, long-read isoform sequencing yielded 39,999
+    full-length transcript isoforms against 33,762 from short-read de novo assembly, and 93.5 per cent
+    of its transcripts carried an open reading frame against 54.2 per cent of the assembled contigs.'
+  note: 'The two datasets are not matched: the long-read library pooled leaf, internode and root RNA from
+    22 varieties and was normalised, while the short-read library came from internode only, and the short-read
+    contig set was built by pooling four assemblers and then clustering at 95 per cent identity to 906,566
+    contigs (L42) against 107,598 long-read isoforms. The open-reading-frame percentages are on the cited
+    line. The source attributes 38 per cent of long-read-only and 33 per cent of assembly-only transcripts
+    to library and RNA-class differences rather than to reconstruction error (L158).'
+  topic: short-read against long-read reconstruction without a reference genome
+  source:
+    doc_id: PMC5440902
+    title: A survey of the complex transcriptome from the highly polyploid sugarcane genome using full-length
+      isoform sequencing and de novo assembly from short read sequencing
+    authors: Hoang, N. V.; Furtado, A.; Mason, P. J.; Marquardt, A.; Kasirajan, L.; Thirugnanasambandam,
+      P. P.; Botha, F. C.; Henry, R. J.
+    journal: BMC Genomics
+    year: 2017
+    doi: 10.1186/s12864-017-3757-8
+    bibkey: hoang2017survey
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L160
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5440902#L160
+    quote: on the other hand, was shown to be better in recovering full-length transcript isoforms (39,999
+      transcript isoforms compared to 33,762 transcripts
+  confidence: high
+  figure_idea: Counts of total reconstructed sequences beside counts of full-length ones for the two approaches
+    on one sample, so the reader sees that the approach producing far more sequences produced fewer complete
+    ones.
+- id: LR-126
+  claim: 'Comparing whole reconstructed intron chains rather than single junctions shows the two approaches
+    capture each other only partly even once coordinate tolerance is allowed: with a twenty-base tolerance
+    a short-read assembly held 64.6 per cent of the PacBio long-read chains from the same sample, while
+    a nanopore sample and its short-read assembly held 83.5 and 72.3 per cent of each other.'
+  note: Read as a bioRxiv preprint. The percentages are directional, each the fraction of one set captured
+    by the other, not a single overlap figure, and the authors attribute the low PacBio figures partly
+    to that read set being much smaller, so this carries the same depth caveat as MTH-021. The same line
+    reports 61.4 and 87.6 per cent cross-capture between the two long-read platforms at exact matching,
+    both rising to about 94 per cent with the tolerance. L63 adds that even without tolerance both long-read
+    samples captured more annotated intron chains than their short-read assembled counterparts.
+  topic: 'short-read against long-read reconstruction: how much structure each misses'
+  source:
+    doc_id: bio_841a781f7079
+    title: 'LongTron: Automated Analysis of Long Read Spliced Alignment Accuracy'
+    authors: Wilks, C.; Schatz, M. C.
+    journal: bioRxiv
+    year: 2020
+    doi: 10.1101/2020.11.10.376871
+    bibkey: wilks2020longtron
+    preprint: true
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L64
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_841a781f7079#L64
+    quote: short read assembly is capturing a majority of the PacBio long read intron chains (64.6%) with
+      fuzz
+  confidence: high
+  figure_idea: Directional capture rates between long-read and short-read reconstructions of the same
+    sample, drawn as arrows with percentages, so the reader sees that overlap is two numbers and not one.
+- id: LR-127
+  claim: Imprecision in a single junction coordinate does not stay local, it compounds along the intron
+    chain, so an exactly matching whole structure becomes less likely the more junctions it has; allowing
+    a twenty-base tolerance around junction boundaries raised the number of matching intron chains in
+    almost every comparison category.
+  note: Read as a bioRxiv preprint; the corpus shows no journal version. The twenty base pair tolerance
+    is defined at L55, which also reports that exact matching leaves only a minority of annotated splice
+    junctions matching between long reads and short-read-derived sites. The authors state the same conclusion
+    in their abstract, that long-read alignment lacks precision in determining exact splice sites on both
+    platforms (L15), but that text is duplicated verbatim at L22 and so is not uniquely anchorable. This
+    is the measurement that the merge tolerances of MTH-013 exist to absorb. research/05-long-reads.yml
+    lists Mikheenko et al. 2022 on long-read splice-site accuracy as not retrieved; this is a different
+    source answering part of the same question.
+  topic: 'honest limits: coordinate error compounds when junctions are chained'
+  source:
+    doc_id: bio_841a781f7079
+    title: 'LongTron: Automated Analysis of Long Read Spliced Alignment Accuracy'
+    authors: Wilks, C.; Schatz, M. C.
+    journal: bioRxiv
+    year: 2020
+    doi: 10.1101/2020.11.10.376871
+    bibkey: wilks2020longtron
+    preprint: true
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L55,L62
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_841a781f7079#L55,L62
+    quote: any difficulties computing the exact coordinates of a single junction correctly are magnified
+      when chaining together multiple of those junctions into isoforms
+  confidence: high
+  figure_idea: Match rate for intron chains against the number of junctions in the chain, at exact matching
+    and with a twenty-base tolerance, so the reader sees the gap widen with chain length.
+- id: LR-128
+  claim: Sequencing more deeply does not make long-read isoform identification more precise, and for methods
+    that do not correct read errors before deciding structures it makes precision worse, because extra
+    depth supplies extra error-bearing reads from which extra false structures can be built.
+  note: 'From a benchmark of thirteen analysis modes across nine tools. The depth result is from simulated
+    reads at 10, 25, 40, 55 and 70-fold coverage under six error models (L43, L46), not from real libraries.
+    The cited line names TALON and unguided FLAIR as methods lacking a correction step, which conflicts
+    with MTH-008: TALON''s own preprint describes reference-based correction as part of the pipeline.
+    Recorded as a conflict, not resolved. The short-read analogue, that depth does not substitute for
+    length, is in research/04-technology-arc.yml at TECH-032 and TECH-033.'
+  topic: 'honest limits: depth is not a remedy for structural error'
+  source:
+    doc_id: PMC11087464
+    title: Comprehensive assessment of mRNA isoform detection methods for long-read sequencing data
+    authors: Su, Y.; Yu, Z.; Jin, S.; Ai, Z.; Yuan, R.; Chen, X.; Xue, Z.; Guo, Y.; Chen, D.; Liang, H.;
+      Liu, Z.; Liu, W.
+    journal: Nature Communications
+    year: 2024
+    doi: 10.1038/s41467-024-48117-3
+    bibkey: su2024assessment
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L73
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11087464#L73
+    quote: some tools exhibited an increase in the detection of false positive isoforms as the read depth
+      increased.
+  confidence: high
+  figure_idea: Precision against sequencing depth for methods with and without a read-correction step,
+    so the reader sees one family flat and the other falling as depth rises.
 leads:
 - note: 'The ENCODE4 long-read collection (LR-021, LR-022) exists in this corpus only as the 2023 bioRxiv
     preprint. Its meta.json and a lookup by exact title both return only the preprint DOI, so no journal
@@ -3279,3 +4039,139 @@ leads:
     the section asks.'
   why: CONTRIBUTING.md scopes the book away from a tools catalogue, so each of these needs a reason beyond
     existing.
+- note: 'Duplication avoided, recorded so the next pass does not re-add it. Two records on the splice-junction-based
+    classification of long-read transcripts were drafted here and dropped because research/01-foundations.yml
+    already carries them: FND-031 at PMC5848618 L25,L37 defines full and incomplete splice match on junctions
+    alone and says neither category asserts the ends agree, and FND-032 at L26 grades the two novel categories
+    by whether they use annotated splice sites. Both were read and both state exactly what this section
+    needs, so the section should cite them rather than duplicate them. The collision worth flagging to
+    the writing pass: treating one intron chain as one isoform is the same collapse that chapters/05-long-reads.qmd
+    #sec-three-axes argues an annotation should not make.'
+  why: A second record of the same lines under a new id would become a second reference to one paper.
+- note: 'Not anchored and available if the section wants a second decision rule from the method at LR-119
+    and LR-120: bio_1e10d9ed6e09 L41 states that isoforms estimated below a default minimum of 1 per cent
+    of their gene''s expression are removed and the remainder re-quantified, so filtered read support
+    is reabsorbed into the surviving models, iterating until every retained isoform clears the threshold.
+    L119 describes reconstruction as trellis-based dynamic programming with iterative best-path extraction,
+    L117 caps a locus at the 1,000 best-supported compatibility classes to avoid combinatorial explosion,
+    and L129 refines unannotated terminal boundaries from the 10th and 90th percentiles of read end positions
+    with a minimum of 7 terminating reads. All read; left out to keep this method''s method-record count
+    at or below that of comparable methods.'
+  why: It is the long-read parallel of the parsimony tie-break at MTH-002 and of the thresholds in research/05-long-reads.yml
+    LR-097 to LR-100.
+- note: Conflict between sources, recorded rather than resolved. PMC11087464 L73 classes TALON among the
+    long-read methods that do not incorporate an error correction step before isoform detection, and explains
+    TALON's loss of precision at higher depth that way. bio_768dce506cd0 L27 describes TALON's pipeline
+    as performing reference-based error correction with TranscriptClean before annotation. The two can
+    be reconciled if the benchmark ran TALON without that upstream step, which the cited lines do not
+    say. The prose must not state that TALON lacks error correction, nor that the depth result is unexplained.
+  why: A sentence attributing a measured failure to a missing step needs the step to be actually missing.
+- note: Conflict inside one source, recorded rather than resolved. PMC12862385 L47 reports that short-read
+    RNA-seq found more entirely unannotated transcript clusters than long-read did, a mean of 7,764 genes
+    carrying one against 6,634, not significant at P = 0.16, while L49 reports that long reads found significantly
+    more novel spliced transcripts inside known genes, P = 0.002. The two point opposite ways because
+    they count different objects, and LR-124 shows the libraries differed about seventy-two-fold in depth.
+    Any sentence saying one approach finds more novelty than the other has to say more of what.
+  why: A reader who sees only one of the two numbers will conclude the opposite of the other.
+- note: 'Preprint provenance to confirm before these reach references.bib. Four sources here were read
+    as preprints: bio_768dce506cd0 (TALON), bio_2bf435c36c09 (Scallop-LR), bio_841a781f7079 (LongTron)
+    and bio_1e10d9ed6e09 (LRAA). For bio_2bf435c36c09 the journal DOI 10.1186/s13059-019-1883-0 recorded
+    here came from the corpus search listing''s ''Published (2019)'' line, not from meta.json, which carries
+    only the preprint DOI 10.1101/632703; the journal field is therefore left as RESOLVE_FROM_DOI for
+    scripts/resolve_metadata.py rather than written from memory. For bio_768dce506cd0, bio_841a781f7079
+    and bio_1e10d9ed6e09 the listing''s ''Published'' line repeats the preprint DOI, so no journal version
+    is reachable in this corpus and all three are recorded as bioRxiv. StringTie2 is NOT recorded as a
+    preprint: the published Genome Biology article is in the corpus as PMC6912988 (DOI 10.1186/s13059-019-1910-1)
+    and both its anchors here are taken from it, with the bioRxiv version bio_aed311e76c02 noted only
+    for provenance.'
+  why: A DOI or year taken from a listing line should be confirmed before it is published.
+- note: 'Full text not reached for the first description of StringTie, which introduced the network-flow
+    formulation of reference-guided assembly. Searches run: paperclip lookup title ''StringTie enables
+    improved reconstruction of a transcriptome from RNA-seq reads'' returned No documents found, and paperclip
+    search -s papers ''StringTie reference-guided transcriptome assembly network flow simultaneous assembly
+    and quantification 2015'' (s_056d96c4) returned StringTie2, StringTie3, Strawberry and two reviews
+    but not the 2015 paper. A corpus grep -c -F on its exact title returns 100 documents, all of which
+    are papers citing it rather than the paper itself. The formulation is therefore recorded here only
+    secondhand, from PMC6912988 L67, which calls it a network flow algorithm reconstructing and quantitating
+    transcripts simultaneously; that line was read and is a usable anchor if the section needs it, attributed
+    as a later paper''s description of an earlier one. Flow formulations that ARE in the corpus as full
+    text and were not opened: PMC3622638 (min-cost flow for transcript expression), PMC5720828 (Strawberry,
+    flow network optimisation) and PMC7266320 (RefShannon, sparse flow decomposition).'
+  why: Chapter 4 names the parsimony lineage; a section on mechanism should anchor the flow formulation
+    to a source that states it, not to a competitor's summary of it.
+- note: 'Needed by the section and not found as one source in the corpus: a measured statement of how
+    much of a short-read assembly''s transcript set survives when the same sample is sequenced long, with
+    one denominator. The three P3 sources here give agreement on novel spliced transcripts (PMC12862385
+    L49, 2,377 of 2,999), full-length recovery without a reference genome (PMC5440902 L160, 39,999 against
+    33,762) and directional intron-chain capture (bio_841a781f7079 L64), but none reports a single intersection
+    of complete transcript structures from the two approaches. LRGASP is the obvious place and chapter
+    9 owns it; research/09-catalogs.yml CAT-024 to CAT-030 carry no such figure either.'
+  why: It is the number a reader will expect from a section that says the two approaches disagree.
+- note: 'Read and not anchored, available as a published journal article: PMC13020369, an evaluation of
+    reference-free long-read assembly. Its L24 states the general short-read limitation plainly, that
+    fragmentation decouples splicing at one end of a gene from splicing at the other so the exon structure
+    must be inferred; a record on it was drafted and dropped because chapters/04-technology-arc.qmd already
+    owns that point at #sec-short-read-limit via TECH-030 and TECH-031. Its L29 to L34 tabulate the algorithmic
+    families for reference-free long-read reconstruction, which are read clustering with consensus calling,
+    Bloom-filter overlap graphs, and hybrid designs using short reads either to correct long reads or
+    to build the graph long reads then scaffold. Its L16 states that reference-free long-read assembly
+    still trails reference-guided analysis on accuracy and redundancy. Bibkey not yet minted.'
+  why: It is the one source in the corpus that sets out the reference-free long-read families rather than
+    one tool, if the section wants a third de novo approach.
+- note: 'Read and not anchored: PMC11087464 L49 reports that precision under read truncation held at 20
+    per cent truncation from either end but fell sharply at 40 per cent, and fell further for 3'' than
+    for 5'' truncation; L51 reports that every annotation-guided method improved as annotation completeness
+    rose; L62 attributes an excess of novel and intergenic monoexonic calls in mammalian data to transposable
+    element content. PMC5778448 was also read: its L44 states that no one of five short-read de novo assemblers
+    performed consistently well across its statistics, and its L11 describes the overlap-graph alternative
+    to the de Bruijn graph, which this file does not cover. Each is a usable claim; all were cut to keep
+    the file at 25 records.'
+  why: They are the measured form of assumptions recorded qualitatively at MTH-008, MTH-015 and MTH-005.
+- note: 'Surfaced and deliberately not opened, listed so the next pass does not repeat the search. Long-read
+    identification: PMC9858503 (ESPRESSO), PMC11345431 (Isosceles), bio_bee2da6170df (Assembly Arena,
+    nanopore reconstruction benchmark), PMC13315946 (TUSCO, benchmarking with endogenous single-isoform
+    controls), PMC13435227 (ISAtools), bio_34bdd1636d3f (I-CONVEX, alignment-free clustering), bio_1bf8f8b76c7d
+    (isoformant, k-mer-density clustering with no reference), bio_e3fea5787c8b (SCOTCH, iterative exon
+    profile clustering), PMC4820869 and PMC4271567 (earlier read-clustering pipelines) and bio_0bd11ad48196,
+    which collapses 107,260,570 full-length reads to 199,406 isoforms. Short-read assembly: PMC5722698''s
+    own reference list names Scripture, IsoLasso, CLIIQ, CLASS, Traph, Bayesembler, CIDANE and TransComb;
+    bio_f91a90c86c1c (Scallop2), PMC8958329 (Tiglon), PMC3287467 (multiple k-mer strategies), bio_326f4b956ea9
+    and PMC9700332 (minimum flow decomposition theory). Searches run: ''reference-guided transcript assembly
+    splice graph enumerate paths maximum flow short-read RNA-seq'' (s_b2b0b9df), ''de novo transcriptome
+    assembly without reference genome de Bruijn graph Trinity full-length transcripts'' (s_3866c7f6),
+    ''long-read isoform identification collapse reads shared intron chain novel isoform classification
+    TALON FLAIR'' (s_8de8fec6), ''error-tolerant clustering of long reads into isoform clusters consensus
+    correction splice site'' (s_c1c5074f), ''short-read transcript assembly compared with long-read isoform
+    reconstruction same sample overlap of transcript sets'' (s_83119e5b), ''StringTie reference-guided
+    transcriptome assembly network flow simultaneous assembly and quantification 2015'' (s_056d96c4).
+    Each needs a reason beyond existing, because CONTRIBUTING.md scopes the book away from a tools catalogue.'
+  why: The section is one approach per record; a second implementation of an approach adds nothing.
+- note: 'Metadata correction for an existing file, found while checking preprint provenance here. research/05-long-reads.yml
+    records jetzinger2025join (LR-099, LR-100) from bio_e8d1d5ea6ea9 as bioRxiv with DOI 10.64898/2025.12.09.693269,
+    and its own leads say no journal version is reachable in this corpus. PMC13627694 is that journal
+    version: same title, Nature Communications, pub_year 2026, DOI 10.1038/s41467-026-77367-6, matching
+    author list. Those records should be re-anchored against it, or the DOI updated with preprint: true
+    retained, and research/ALLOCATION.md updated.'
+  why: A preprint recorded as unpublished becomes a wrong reference once the journal version exists.
+- note: 'Authors and journals in this file were read from each document''s meta.json, so metadata_source
+    is left unset except on PMC3146043, whose source block was copied from research/04-technology-arc.yml
+    to keep the shared bibkey trapnell2010transcript and its Crossref-resolved author list identical across
+    files. scripts/resolve_metadata.py --write should be run over this file, and it is what must fill
+    the RESOLVE_FROM_DOI journal on tung2019quantifying. New bibkeys introduced: shao2017scallop, grabherr2011trinity,
+    wyman2019technology, sahlin2018isocon, tung2019quantifying, kovaka2019stringtie2, yu2026lraa, iwabuchi2026systematic,
+    hoang2017survey, su2024assessment, wilks2020longtron. Checked against every research/*.yml: no bibkey
+    and no DOI collides, and the two reused keys resolve to the same DOI as the existing records.'
+  why: verify_claims.py compares bibkeys and DOIs across files, and a second spelling reads as a conflict.
+- note: Shared-author note for the overlap table in research/ALLOCATION.md. The reference-free assembler
+    recorded at LR-108 to LR-110 (PMC3571712) lists Brian J. Haas as its second author, and the long-read
+    framework at LR-119 to LR-121 (bio_1e10d9ed6e09) lists the same name among its authors and corresponding
+    authors. If that is the book's director, as research/ALLOCATION.md implies without naming anyone,
+    then the required disclosure covers two of the methods described here, not one, and should be made
+    once. This pass did not establish the identification from any source.
+  why: A disclosure naming one of two methods by the same author reads as a partial disclosure.
+- note: 'RESOLVED by the identification-methods pass. jetzinger2025join was recorded as bioRxiv with a
+    lead saying no journal version was reachable. PMC13627694 is that journal version: same title and
+    author list, Nature Communications 2026, doi 10.1038/s41467-026-77367-6. The records still cite the
+    preprint text that was read, which is correct, but the journal version should be confirmed and the
+    preprint flag kept so the two do not get conflated.'
+  why: So the earlier lead is not believed twice.

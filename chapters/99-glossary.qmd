@@ -175,7 +175,9 @@ sequencing depth.
      claims drawn from papers, so they have no claim record to match. -->
 
 This is a biology book, and it does not catalogue software, benchmark tools, or
-teach pipelines. That work is done well elsewhere, and duplicating it would both
+teach pipelines. @sec-identification is not an exception to that: its unit is a
+method rather than a product, and it names implementations only as examples of
+an approach. That work is done well elsewhere, and duplicating it would both
 waste effort and date the book quickly. The resources below are what existed as
 of November 2026:
 
