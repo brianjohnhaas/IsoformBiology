@@ -10,8 +10,12 @@ What is checked:
   - mean sentence length (target < 19 words)
   - no sentence over 45 words
   - no running-prose sentence under 7 words
+  - headings: no first person, banned vocabulary or em dash, and no chapter
+    leaning on Wh- openers or one repeated first word
 
-Tables are skipped: they are data, and only this gate ignores them.
+Tables are skipped: they are data, and only this gate ignores them. Headings are
+stripped from the prose checks and get their own pass, because every other gate
+blanks them too and for most of this book's life nothing looked at one.
   - no first person (the book has no narrator)
   - banned AI-tell vocabulary and constructions
   - no em dashes
@@ -41,6 +45,16 @@ SENTENCE_MAX = 45
 # Labels are exempt: list items, bolded defined terms, glossary pointers.
 SENTENCE_MIN = 7
 RUN_LEN = 4
+
+# Headings. A question title is the honest one for a section that reports an
+# open disagreement, so these are caps and not bans: the defect was 39 of 131
+# headings opening with What/Which/How, not any single one of them.
+HEAD_WH_MAX = 2          # Wh- openers per chapter
+HEAD_FIRST_WORD_MAX = 3  # same opening word per chapter, articles excepted
+HEAD_ARTICLES = {"the", "a", "an"}
+HEAD_WH = re.compile(
+    r"^(What|Which|Whether|Why|How|Where|When|Does|Who)\b", re.I)
+HEADING = re.compile(r"^(#{1,4}) +(.*?)(?:\s*\{[^}]*\})?\s*$")
 
 FIRST_PERSON = re.compile(
     r"(?<![\w-])(?:[Ww]e|[Oo]ur|[Oo]urs|us|I|my|mine)(?![\w-])")
@@ -106,6 +120,68 @@ def sentences(text: str) -> list[str]:
 POINTER = re.compile(r"^(See|Reviewed in)\b.*@", re.I)
 
 
+def headings(raw: str) -> list[tuple[int, str, bool]]:
+    """Every heading as (level, display text, is_callout_title).
+
+    Code fences are skipped so a commented-out heading inside an example does
+    not count. A callout title is a heading inside a ::: block; those are
+    allowed to be questions, because an explanatory aside is often answering
+    one, so they get the vocabulary checks and not the shape caps.
+    """
+    out: list[tuple[int, str, bool]] = []
+    fence = False
+    depth = 0
+    for line in raw.splitlines():
+        stripped = line.strip()
+        if stripped.startswith("```"):
+            fence = not fence
+            continue
+        if fence:
+            continue
+        if stripped.startswith(":::"):
+            depth = depth + 1 if stripped != ":::" else max(0, depth - 1)
+            continue
+        m = HEADING.match(line)
+        if m and m.group(2).strip():
+            out.append((len(m.group(1)), m.group(2).strip(), depth > 0))
+    return out
+
+
+def check_headings(raw: str) -> list[str]:
+    heads = headings(raw)
+    fails = []
+
+    for _, text, _ in heads:
+        if FIRST_PERSON.search(text):
+            fails.append(f"heading has first person: {text!r}")
+        for m in BANNED_WORDS.finditer(text):
+            fails.append(f"heading has banned vocabulary {m.group(0)!r}: "
+                         f"{text!r}")
+        if "\u2014" in text:
+            fails.append(f"heading has an em dash: {text!r}")
+
+    sections = [t for _, t, call in heads
+                if not call and t.lower() != "first draft"]
+    wh = [t for t in sections if HEAD_WH.search(t)]
+    if len(wh) > HEAD_WH_MAX:
+        fails.append(
+            f"{len(wh)} headings open with What/Which/How (max "
+            f"{HEAD_WH_MAX}); state the section's claim instead: "
+            + "; ".join(repr(t) for t in wh[:4]))
+
+    firsts: dict[str, list[str]] = {}
+    for t in sections:
+        w = t.split()[0].lower().strip(",:")
+        if w not in HEAD_ARTICLES:
+            firsts.setdefault(w, []).append(t)
+    for w, ts in sorted(firsts.items()):
+        if len(ts) > HEAD_FIRST_WORD_MAX:
+            fails.append(f"{len(ts)} headings open with {w!r} (max "
+                         f"{HEAD_FIRST_WORD_MAX}); vary the opening")
+
+    return fails
+
+
 def running_prose_paragraphs(text: str) -> list[str]:
     """Paragraphs that are running prose, with labels and lists left out.
 
@@ -159,6 +235,8 @@ def check(path: pathlib.Path) -> list[str]:
     for s, n in zip(sents, lens):
         if n > SENTENCE_MAX:
             fails.append(f"{n}-word sentence: {s[:90]}...")
+
+    fails += check_headings(raw)
 
     for para in running_prose_paragraphs(raw):
         for s in sentences(para):
