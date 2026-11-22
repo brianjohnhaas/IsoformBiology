@@ -1,0 +1,48 @@
+name: A case the book is missing
+description: A gene whose isoforms have a demonstrated specialised function
+title: "[case] "
+labels: ["missing-case"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The book is trying to track the best-established cases where a
+        particular isoform does a particular job. Naming the gene and one
+        paper is enough to act on; the fields below are all useful but none
+        beyond the first two is required.
+  - type: input
+    id: gene
+    attributes:
+      label: Gene or locus
+      placeholder: "e.g. BCL2L1, DSCAM, PTPRC"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What the isoform difference does
+      description: >
+        What differs between the isoforms, and what that difference does. The
+        book is looking for a demonstrated function rather than a measured
+        expression difference.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: DOIs or PMIDs. Primary papers are preferred over reviews.
+  - type: dropdown
+    id: strength
+    attributes:
+      label: How well established is it
+      options:
+        - A phenotype attributable to the isoform, not to gene dosage
+        - A measured biochemical or signalling difference
+        - Strong association, causation not established
+        - Contested, and the disagreement is the interesting part
+  - type: input
+    id: chapter
+    attributes:
+      label: Where it might belong
+      description: Optional. A chapter, if one is obviously the right home.

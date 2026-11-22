@@ -14,6 +14,7 @@ book:
   # the order chapters were added, so they can diverge from reading order.
   chapters:
     - index.qmd
+    - contributing.qmd
     - part: "Foundations"
       chapters:
         - chapters/01-foundations.qmd

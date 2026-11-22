@@ -1,0 +1,48 @@
+name: Correction
+description: A claim that is wrong, overstated, or stronger than its source
+title: "[correction] "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Overstatement is the failure mode this project expects of itself. The
+        automated checks compare numbers and wording, so they cannot see a
+        sentence that says slightly more than the paper behind it. Those are
+        the most useful corrections to receive.
+  - type: input
+    id: location
+    attributes:
+      label: Where it is
+      description: Chapter and section, or a link to the published page. A quoted sentence is ideal.
+      placeholder: "Chapter 5, 'Quantification apportions rather than counts'"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong with it
+      description: What the text says, and what it should say instead.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: What establishes that
+      description: >
+        A DOI, PMID, or citation. If the book cites a paper and reads it wrongly,
+        saying so is enough and no new source is needed.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of problem
+      options:
+        - Says more than its source supports
+        - A number is wrong, or has the wrong denominator
+        - Attributed to the wrong source
+        - Out of date, superseded by later work
+        - Wrong on the biology
+        - Unclear or badly explained rather than incorrect
+        - Something else
+    validations:
+      required: true

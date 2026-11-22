@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: How to contribute
+    url: https://brianjohnhaas.github.io/IsoformBiology/contributing.html
+    about: What would help most, and what a pull request needs
+  - name: Offer to read a chapter
+    url: https://github.com/brianjohnhaas/IsoformBiology/issues/new?title=%5Breview%5D+&labels=expert-review
+    about: No chapter has yet been read by a subject expert. This is the biggest gap.

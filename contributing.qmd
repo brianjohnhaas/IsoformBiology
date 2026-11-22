@@ -1,0 +1,97 @@
+# How to contribute {#sec-contributing .unnumbered}
+
+This book is meant to be a working resource rather than a finished statement,
+and it is short of the things only other people can supply. This page says what
+would help most and how to send it.
+
+## Four things the book is for
+
+Four things, and a contribution is useful to the extent it serves one of them.
+
+A record of why isoform-level resolution matters, argued from the primary
+literature rather than asserted.
+
+A catalogue of the best-established cases where a particular isoform of a gene
+does a particular job, with the evidence that establishes it and the denominator
+that bounds it.
+
+A plain account of how isoforms are measured, including what each method assumes
+and where those assumptions fail, so that a reader can judge a number rather
+than only read it.
+
+An argument that transcriptome studies should decide deliberately whether to
+work at gene level, because the collapse to one number per gene is often
+inherited rather than chosen.
+
+## The contributions that would help most
+
+**A chapter read by someone who knows the field.** No chapter has had this, and
+it is the gap that matters more than all the others together. Every chapter
+carries a first-draft notice saying so. A read that returns three real problems
+is worth more to this project than a new section.
+
+**A case the book is missing.** The book wants genes where an isoform difference
+has a demonstrated specialised function, not merely a measured expression
+difference. If a case you know is absent, naming the gene and one paper is
+enough to act on.
+
+**A correction.** Overstatement is the failure mode this project expects of
+itself, because the automated checks compare numbers and wording and cannot see
+a sentence that says slightly more than its source. Several such sentences have
+been caught and fixed after publication. If a claim reads as stronger than the
+paper behind it, say so and name the claim.
+
+**An area that needs building out.** Some sections are thin because the subject
+is thin, and others because the research pass stopped early. Pointing at a
+section and saying which of those it is helps more than it sounds.
+
+**Full text for a source read as an abstract.** Forty-eight of the sources
+behind this book were read as abstracts rather than as full text, and
+twenty-seven are preprints that have not been through peer review. Both sets are
+listed by name in `research/ALLOCATION.md`. Telling the project that a preprint
+now has a published version, or that a paywalled paper says something other than
+its abstract implies, repairs a weakness the project already knows it has.
+
+**A method the book explains badly.** The style guide commits this book to
+explaining its own machinery completely, on the grounds that naming a method is
+not explaining it. Where that promise is not kept, the gap is a defect and worth
+reporting as one.
+
+## Routes in, from an issue to a pull request
+
+The low-effort route is an issue, and it is the preferred one for anything short
+of a written section. Issue templates exist for a missing case, a correction and
+an area to build out, at the
+[issue tracker](https://github.com/brianjohnhaas/IsoformBiology/issues/new/choose).
+A plain issue is equally welcome if none of them fits.
+
+A pull request is welcome too, and it has one unusual requirement worth knowing
+before you start. Prose in this book is not written from papers directly.
+Reading a paper produces a claim record instead, holding the finding in the
+reader's own words, the source, the exact lines read, and a short verbatim quote
+kept only as an audit trail. A later writing pass then works from those records
+rather than from source text. That separation is what makes close paraphrase
+structurally unlikely instead of a matter of individual care, and it is why
+every sentence can be traced to the lines behind it.
+
+The full contract is in
+[CONTRIBUTING.md](https://github.com/brianjohnhaas/IsoformBiology/blob/main/CONTRIBUTING.md),
+along with the record schema, the automated checks that run on every push and an
+explicit list of the things those checks cannot see. A contribution that adds
+prose without adding records will fail the checks, which is the intended
+behaviour rather than an obstacle to work around.
+
+Corrections to prose alone, where no new source is involved, need none of that
+machinery.
+
+## Deliberately out of scope
+
+It does not catalogue software, benchmark tools or teach pipelines. That work is
+done well elsewhere and duplicating it would both waste effort and date the book
+quickly. The glossary lists resources that do it properly. Where methods appear,
+the unit is an approach and what it assumes, and an implementation is named only
+as an example of one.
+
+It also does not aim at completeness. A case earns its place by having evidence
+behind it that a reader can check, so a well-evidenced small set is the goal
+rather than a long list.

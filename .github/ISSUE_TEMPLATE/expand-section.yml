@@ -1,0 +1,35 @@
+name: An area to build out
+description: A section that is too thin, or a subject the book does not cover
+title: "[expand] "
+labels: ["expand"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Some sections are thin because the subject is thin, and others because
+        the research pass stopped early. Saying which of those it is helps more
+        than it sounds.
+  - type: input
+    id: where
+    attributes:
+      label: Section, or subject if there is no section for it yet
+    validations:
+      required: true
+  - type: textarea
+    id: missing
+    attributes:
+      label: What is missing
+      description: >
+        What a reader of that section needs and does not get. If specific papers
+        would cover it, naming them turns this straight into a research task.
+    validations:
+      required: true
+  - type: dropdown
+    id: why
+    attributes:
+      label: Your read on why it is thin
+      options:
+        - The research pass stopped early, the literature is there
+        - The subject is genuinely unsettled, and the section should say so
+        - It is covered somewhere else in the book and should be cross-referenced
+        - Not sure

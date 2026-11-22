@@ -14,15 +14,16 @@ and several automated checks run on every change. Those checks compare numbers
 and wording. They cannot catch a sentence that says slightly more than its
 source, and some have got through and been corrected after the fact.
 
-Two limits on that traceability are worth knowing first. Forty-two of the
+Two limits on that traceability are worth knowing first. Forty-eight of the
 sources behind this book were read as abstracts rather than as full text, and
-seventeen are preprints that have not been through review. Both sets are listed
+twenty-seven are preprints that have not been through review. Both sets are listed
 by name in [`research/ALLOCATION.md`](https://github.com/brianjohnhaas/IsoformBiology/blob/main/research/ALLOCATION.md),
 and the chapters that lean on them say so in their own first-draft notices.
 
 Read this as a referenced starting point rather than as a reviewed secondary
-source, and go to the cited paper before relying on anything. Corrections are
-welcome as [issues](https://github.com/brianjohnhaas/IsoformBiology/issues).
+source, and go to the cited paper before relying on anything. Corrections and
+additions are wanted, and [how to contribute](contributing.qmd) says what would
+help most.
 :::
 
 A gene is not a transcript, and most human genes produce several, sometimes
@@ -43,6 +44,17 @@ across the tree of life come first, then the measurement arc that made them
 visible and the catalogues it produced, then what an isoform difference does to
 the protein. Variation, disease and drug targets follow, because each of those
 arguments depends on the measurement being trusted first.
+
+The aim is a resource the community can use and correct rather than a finished
+statement, and four things follow from that. A record of why isoform-level
+resolution matters, argued from the literature rather than asserted. A catalogue of the best-established cases
+where one isoform of a gene does a particular job. A plain account of how
+isoforms are measured and where each method fails. And an argument that a
+transcriptome study should choose its resolution deliberately rather than
+inherit it.
+
+[How to contribute](contributing.qmd) says what would help most, whether that is
+a case the book is missing, a correction, or an area that needs building out.
 
 ::: {.callout-note}
 ## Status
