@@ -14,6 +14,12 @@ and several automated checks run on every change. Those checks compare numbers
 and wording. They cannot catch a sentence that says slightly more than its
 source, and some have got through and been corrected after the fact.
 
+Two limits on that traceability are worth knowing first. Forty-two of the
+sources behind this book were read as abstracts rather than as full text, and
+seventeen are preprints that have not been through review. Both sets are listed
+by name in [`research/ALLOCATION.md`](https://github.com/brianjohnhaas/IsoformBiology/blob/main/research/ALLOCATION.md),
+and the chapters that lean on them say so in their own first-draft notices.
+
 Read this as a referenced starting point rather than as a reviewed secondary
 source, and go to the cited paper before relying on anything. Corrections are
 welcome as [issues](https://github.com/brianjohnhaas/IsoformBiology/issues).

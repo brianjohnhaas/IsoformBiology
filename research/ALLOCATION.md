@@ -65,14 +65,83 @@ tardaguila2018sqanti                 01, 05
 wang2008alternative                  01, 02, 04
 ```
 
-## Three sources are preprints
+## What was actually read, and in which version
 
-`reese2023encode4`, `glinos2021transcriptome` and `magadi2025rps24` exist in
-this corpus only as preprints. A fourth, `kerry2024rps24hypoxia`, was read as
-its preprint although the FEBS Letters version exists and is what the
-bibliography cites; its numbers need the same re-checking. The research records say so, the bibliography emits them as `@misc`,
-and the prose must not describe them as published. Every number taken from
-either one needs re-checking against the peer-reviewed version when it appears.
+The preface says every statement traces to the lines it was read from. For a
+large minority of sources those lines are an abstract, and for seventeen the
+document is a preprint. Counted 2026-11-22, and regenerable:
+
+```
+# preprint-only in this corpus (emitted as @misc by build_bib.py)
+grep -c '^@misc' references.bib
+
+# distinct sources whose claims are all abstract_only
+python3 - <<'EOF'
+import yaml, pathlib
+ab = {c['source']['bibkey'] for p in pathlib.Path('research').glob('*.yml')
+      for c in (yaml.safe_load(p.read_text()).get('claims') or [])
+      if (c.get('evidence') or {}).get('text_access') == 'abstract_only'}
+print(len(ab)); print(*sorted(ab), sep='\n')
+EOF
+```
+
+**Seventeen sources are preprint-only here.** `aguet2019gtex`,
+`chang2025isoform`, `cummings2016musclernaseq`, `french2020asnmdsurvey`,
+`glinos2021transcriptome`, `hong2019dscamsplicingbias`,
+`jaganathan2026spliceai2`, `kolev2026transsplicing`, `liu2025transcriptional`,
+`magadi2025rps24`, `mantri2026splice`, `reese2023encode4`,
+`saferali2026framework`, `su2025splisosm`, `tzaban2025rna`,
+`walker2023application`, `zheng2026isopedia`. The bibliography emits them as
+`@misc`, the prose must not describe them as published, and every number taken
+from one needs re-checking against the peer-reviewed version.
+
+Two of those have a published version the corpus does not hold:
+`cummings2016musclernaseq` appeared in Science Translational Medicine in 2017,
+and `glinos2021transcriptome` in Nature in 2022. Preprint-only in this corpus
+does not mean unpublished.
+
+`aguet2019gtex` deserves separate notice. GTEx v8 is here only as the 2019
+preprint, and chapter 10 rests a large share of its argument on it: VAR-004,
+VAR-006, VAR-007, VAR-008 and VAR-024 were all read from preprint lines.
+
+**Nine sources were read in one version and are cited as another.** The record
+and the bibliography carry a journal DOI, but the lines read were a preprint:
+`kerry2024rps24hypoxia` (FEBS Letters), `betz2024mycorrhizal` (Nature
+Communications), `alkhafaji2024highthroughput` (Nature Biotechnology),
+`abood2024longread` (AJHG), `islam2026ezh2` (Genes & Development),
+`patowary2024neocortexisoforms` (Science), `cohen2025whole` (Cell), plus the two
+above. This is a provenance defect no gate can see: `verify_claims.py` checks a
+quote against the document it was taken from, which is the preprint, and
+`build_bib.py` emits the journal. Either confirm each number against the
+published text or cite the preprint.
+
+**Forty-two sources are abstract-only**, and none appears with fuller access
+anywhere else in the records. Fifteen are pre-2000 and fall under the corpus
+limitation recorded in `research/04-technology-arc.yml`. The other twenty-seven
+do not, and they are concentrated:
+
+```
+04-technology-arc      18
+02-animals             15
+07-neuro-mendelian      5
+06-cancer               2
+03-plants-fungi-other   1
+10-variants-qtl         1
+12-proteoforms-drugs    1
+```
+
+Chapter 2 is the worst case and STYLE.md names it the reference implementation.
+Its Dscam1 section stands on abstracts for homophilic binding, stochastic
+expression, the docking and selector mechanism, the 22,176-isoform allele, the
+dendrite self-avoidance result and the splicing-bias result; both CD45 sources
+are abstracts as well. Chapter 6 calls the H3B-8800 phase 1 outcome "the
+counterweight to everything above" from an abstract. ENDEAR's 37 of 73 and
+SpliceAI's 9 to 11 per cent are abstracts too.
+
+Chapters 2 and 4 now say so in their first-draft callouts. The ordered fix is
+full text for chapter 2 first, then chapter 7, then chapter 4, whose
+abstract-only count is largest but whose claims are mostly historical firsts
+rather than live quantities.
 
 ## Changes made while drafting
 

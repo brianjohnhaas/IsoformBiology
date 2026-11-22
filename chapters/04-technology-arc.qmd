@@ -4,6 +4,8 @@
 ## First draft
 Written from `research/04-technology-arc.yml` and not yet reviewed by a second
 reader.
+Eighteen of this chapter's sources were read as abstracts rather than as full
+text, more than in any other chapter.
 :::
 
 Every claim about alternative splicing has an assay behind it, and the assay
