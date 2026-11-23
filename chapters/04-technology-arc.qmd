@@ -71,7 +71,7 @@ An assay can be sensitive without being diagnostic. In the S1 nuclease
 configuration best suited to demonstrating a splice, unspliced and spliced RNA
 both protect the probe across the junction. The assay was reported as not
 diagnostic, and needed an RNase H pre-digestion to become one
-[@rnaseh1987s1artefact].
+[@sisodia1987s1artefact].
 
 The deeper limitation was combinatorial, and it outlasted the era. As late as
 2010, authors building a single-molecule splicing readout opened by stating it

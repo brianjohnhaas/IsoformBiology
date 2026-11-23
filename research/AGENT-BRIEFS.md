@@ -34,10 +34,19 @@ else writes the book prose from your records and will never see the source text.
 - `-s` is required on search: `paperclip search -s papers "query" -n 8`.
 - **A failed lookup is not evidence of absence.** `lookup doi` and `lookup pmid`
   silently fail on papers that ARE present. `lookup title` misses a paper whose
-  *published* title differs from its preprint title; an agent reported such a
-  paper "genuinely absent" twice, and it was there. Before concluding a paper is
-  not held, try `search -s abstracts`, then a keyword `search -s papers`, then a
-  grep for a distinctive phrase.
+  *published* title differs from its preprint title, and it also returns "No
+  documents found" for papers that are simply there: one agent hit this on three
+  well-known papers in a single pass and `search -s abstracts` on the same titles
+  found all three at once. Before concluding a paper is not held, try
+  `search -s abstracts`, then a keyword `search -s papers`, then a grep for a
+  distinctive phrase, and prefer `grep --source abstracts "<exact title phrase>"`,
+  which has been the fastest route of all.
+- **Semantic search fails under load.** When every `search` prints "semantic
+  search was too slow or failed; results are from keyword search only", title-word
+  queries still work and conceptual ones often do not. Say so in your report, and
+  scope your negative results as "not found by keyword search" rather than as
+  absence. There is also a rate limit of roughly 25 calls per 60 seconds, shared
+  across every agent running at once, and corpus `grep` has its own.
 - **A document's body is `papers/<id>/content.lines`, not `papers/<id>`.**
   `cat papers/PMC123 --lines 1-8` fails with "Cannot read path".
   A read failure here looks exactly like a missing document.

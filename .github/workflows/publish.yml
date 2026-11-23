@@ -31,6 +31,9 @@ jobs:
       - name: Check prose against recorded source quotes
         run: python3 scripts/check_overlap.py
 
+      - name: Check no claim record reuses its own audit quote
+        run: python3 scripts/check_claim_echo.py
+
       - name: Check bibliography is in sync with claim records
         run: python3 scripts/build_bib.py --check
 

@@ -176,14 +176,14 @@ chapters read as one system.
 
 - [ ] Every claim traces to a record in `research/`
 - [ ] Every number has a line-anchored citation
-- [ ] All seven checks below pass
+- [ ] All eight checks below pass
 - [ ] All figures accounted for under one of the three routes above
 - [ ] `quarto render` clean, no unresolved cross-references
 - [ ] Read by someone who did not write it, for the things no check can see
 
-### The seven checks
+### The eight checks
 
-Six run in CI on every push. The seventh needs the paperclip corpus, which the
+Seven run in CI on every push. The eighth needs the paperclip corpus, which the
 build machine does not have, so run it locally before a research file is
 committed and after any edit to a quote or an anchor.
 
@@ -191,6 +191,7 @@ committed and after any edit to a quote or an anchor.
 |---|---|---|
 | `verify_claims.py` | Every stored quote is still a byte-exact substring of the lines it cites, and bibkeys and DOIs agree across files | local only |
 | `check_overlap.py` | No chapter reuses 8+ consecutive words from a recorded source quote | CI |
+| `check_claim_echo.py` | No claim record reuses 8+ consecutive words from its own audit quote, which is how a source's wording reaches the book through a field nobody reads | CI |
 | `check_citations.py` | Every number in a section appears in a claim for a source that section cites | CI |
 | `build_bib.py --check` | `references.bib` is exactly what the claim records generate, one work has one bibkey, and author strings parse | CI |
 | `check_style.py` | Sentence length upper and lower bounds, first person, banned constructions, em dashes, metronomic runs | CI |
