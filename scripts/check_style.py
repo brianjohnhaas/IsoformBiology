@@ -56,8 +56,14 @@ HEAD_WH = re.compile(
     r"^(What|Which|Whether|Why|How|Where|When|Does|Who)\b", re.I)
 HEADING = re.compile(r"^(#{1,4}) +(.*?)(?:\s*\{[^}]*\})?\s*$")
 
+# The bare "I" arm needs the Roman-numeral exceptions. "MHC class I",
+# "type I interferon" and "phase I" are domain vocabulary, not a narrator, and
+# flagging them sent a cancer chapter back for rewriting sentences that were
+# correct. Hyphenated forms (MHC-I, RIG-I) are already excluded by the
+# surrounding character classes.
 FIRST_PERSON = re.compile(
-    r"(?<![\w-])(?:[Ww]e|[Oo]ur|[Oo]urs|us|I|my|mine)(?![\w-])")
+    r"(?<![\w-])(?:[Ww]e|[Oo]ur|[Oo]urs|us|my|mine)(?![\w-])"
+    r"|(?<![\w-])(?<!class )(?<!type )(?<!phase )(?<!grade )I(?![\w-])")
 BANNED_WORDS = re.compile(
     r"\b(delve|delving|leverage[ds]?|landscape|ecosystem|tapestry|nuanced|"
     r"crucially|importantly|notably|quietly|seamless(ly)?|paradigm|"

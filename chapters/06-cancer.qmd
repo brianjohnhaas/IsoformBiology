@@ -2,13 +2,23 @@
 
 ::: {.callout-warning}
 ## First draft
-Written from `research/06-cancer.yml` and not yet reviewed by a second reader.
+Written from `research/06-cancer.yml`. Its claims have been checked against the
+records by a second reader, and the records against their sources, but no
+subject-matter expert has read the chapter.
 :::
 
 Cancer transcriptomes are usually read for which genes went up and which went
 down. A large fraction of what changes in a tumour does not move a gene total
-at all, and this chapter is about that fraction and about how much of it holds
+at all. This chapter is about that fraction, and about how much of it holds
 up.
+
+Three questions run through it, and the first is whether a measured isoform
+change is real at all. The alternative is an artefact of degraded RNA or of an
+assay that manufactures the product it detects. Whether a real change does
+anything, which takes an experiment that supplies one isoform and scores a
+consequence. And whether anything that does something can be treated, which so
+far has a clearer answer than either of the others, and not the answer the
+mechanism predicts.
 
 ## Switches that leave the gene total unchanged {#sec-invisible-switches}
 
@@ -17,8 +27,8 @@ progression from low-grade to high-grade Barrett's dysplasia. Between 42 and 46
 per cent of the genes called that way showed no significant difference in total
 gene-level expression between the same two conditions [@zhang2022esophageal].
 
-A reanalysis of twelve TCGA cancer types using differential transcript usage, in
-the sense of @sec-dtu, found that roughly a quarter of the tumour-side
+A reanalysis of twelve TCGA cancer types using differential transcript usage,
+in the sense of @sec-dtu. It found that roughly a quarter of the tumour-side
 transcripts that changed in usage were not themselves called differentially
 expressed. Only a few per cent of the normal-side transcripts behaved that way
 [@dolgalev2023switching]. That figure counts transcripts and the one above
@@ -26,12 +36,12 @@ counts genes, so the two do not combine.
 
 Among the isoform pairs distinguishing basal-like from luminal breast tumours
 in TCGA, 49 of 229 pairs showed no accompanying difference in gene-level
-expression, so splicing was the only signal available for those genes
+expression. Splicing was the only signal available for those genes
 [@zhao2016switching].
 
 The cleanest version is an engineered one. In an isogenic SRSF2 P95H
-erythroleukaemia model, over a thousand significant alternative splicing events
-were called, two thirds of them cassette exons, while overall gene expression
+erythroleukaemia model, over a thousand significant alternative splicing
+events were called, two thirds of them cassette exons. Overall gene expression
 between mutant and wild-type cells barely moved [@liang2018srsf2].
 
 ### One-sided switches and degraded RNA
@@ -45,9 +55,247 @@ event better described as a single-transcript expression change
 Relative transcript measurements also inherit every coverage bias in the
 library. In one breast cancer cohort an initial 2,110 inversely correlated
 isoform pairs collapsed to 470 once RNA integrity number was modelled as a
-covariate, because degraded RNA inflates the apparent abundance of short
-isoforms [@zhao2016switching]. Nearly four in five of those pairs were a
-property of the samples.
+covariate. Degraded RNA inflates the apparent abundance of short isoforms
+[@zhao2016switching]. Nearly four in five of those pairs were a property of
+the samples.
+
+## Isoforms that do a job, and the experiments that bound them {#sec-oncogenic-isoforms}
+
+A list of cancer genes with alternative isoforms is easy to assemble and worth
+little. The question is which isoform does something, and the experiment that
+answers it supplies one form and scores a consequence. That design is rarer in
+this literature than the number of review articles suggests, and where it has
+been run it has often returned a narrower answer than the gene's reputation.
+
+What follows takes the best-evidenced cases in turn. Several of them are
+textbook examples, and in nearly every instance the strongest experiment is
+also the one that cut the claim down.
+
+### MDM2-ALT1, where context sets the sign
+
+MDM2 restrains p53, and a short splice form of it called MDM2-ALT1 has been
+argued to restrain MDM2 in turn. A transgene carrying only that form, switched
+on throughout the body of p53-null mice, shortened median survival from 193 to
+147 days. It also moved the tumour spectrum away from lymphoma and towards
+spindle cell sarcoma. Rhabdomyosarcoma appeared in 42 per cent of the
+transgenic animals and in none of the controls [@comiskey2018mdm2alt1].
+
+The same transgene in a different context did much less. Restricted to B cells
+in mice with two intact p53 alleles, it left life expectancy unchanged.
+Lymphoma had appeared by 18 months in 19 of 34 transgenic animals against 11
+of 41 controls. The spleens of those mice held fewer cells carrying B cell
+markers rather than more [@comiskey2018mdm2alt1]. One isoform, two genetic
+backgrounds, two different answers.
+
+An independent laboratory found no cellular phenotype at all. Overexpressing
+MDM2-ALT1 and two sibling splice forms in MCF-7 breast cancer cells changed
+where the proteins sat and how long they lasted after chemotherapy, and raised
+the pro-apoptotic transcript PUMA. Apoptosis and senescence were unchanged, with
+or without doxorubicin [@huun2017mdm2variants].
+
+### RAC1B, and the mouse built to test the claim
+
+RAC1B carries an extra exon that leaves the small GTPase constitutively
+active, and for twenty years it was described as a driver of invasion. A human
+RAC1B complementary DNA knocked into the Rosa26 locus and switched on in mouse
+intestinal epithelium lacking Apc and Trp53. It shortened survival and raised
+tumour number. By 31 days after induction the animals already carried more
+microscopic adenomas and fewer apoptotic cells in them [@gudino2021rac1b].
+Organoids from those animals survived doses of TGF-beta that disrupted
+controls, holding lower SMAD4 and lower levels of the pro-apoptotic protein
+BIM [@gudino2021rac1b].
+
+The same mouse answered the invasion question and answered it no. Neither
+genotype produced an invasive tumour, and the RAC1B animals had to be killed
+early because they carried too many tumours rather than because the tumours had
+spread [@gudino2021rac1b]. The laboratory that built the model to test the
+field's central claim about this isoform reported that the claim failed.
+
+Direction of effect turns out to depend on the insult. An independent Rosa26
+line expressing Rac1b in intestinal epithelium grew no tumours alone. It
+worsened Apc-driven tumour formation and colitis-associated carcinogenesis in
+interleukin-10 null animals, and it reduced carcinogenesis in the azoxymethane
+and dextran sulfate model [@kotelevets2018rac1b]. In pancreatic ductal cells
+it ran the other way again. Knocking RAC1B down made the cells migrate more in
+response to TGF-beta, putting it back reduced their movement. The isoform was
+higher in chronic pancreatitis than in carcinoma and higher in patients who
+lived longer [@ungefroren2013rac1bpancreatic].
+
+A third laboratory separated the two forms properly. One short interfering RNA
+was aimed at the sequence unique to RAC1B and another at the sequence flanking
+it, so either could be removed while the other stayed. Removing RAC1, or both
+together, stopped K-ras-driven lung cancer cells proliferating; removing RAC1B
+alone did nothing to proliferation [@zhou2012rac1blung]. Switching Rac1b on in
+mouse lung at a physiological level produced no tumours by itself, and raised
+proliferation only alongside a mutant K-ras allele [@zhou2012rac1blung].
+
+The cases agree on mechanism and disagree on consequence. Blunting the
+TGF-beta response is what the isoform does in both the intestinal and the
+pancreatic work; whether that spares a transforming cell or restrains a moving
+one depends on the tissue.
+
+### Cyclin D1b, which is identity rather than dose
+
+Cyclin D1b is made by retaining intron 4. Fibroblasts from mice whose own
+cyclin D1 locus had been rebuilt to make only that form grew colonies in soft
+agar, which wild-type littermate cells could not. They also kept dividing
+after an activated RAS gene was introduced instead of entering senescence
+[@augello2015ccnd1b].
+
+The dose experiment in the same paper is the useful one. Raising cyclin D1b
+above its endogenous amount did not increase tumour formation at all, while
+raising cyclin D1a added about twenty per cent [@augello2015ccnd1b]. What
+mattered was which form the locus made.
+
+The animals did not follow their own fibroblasts. Mice making only cyclin D1b
+were no more likely to carry hyperplastic or neoplastic lesions up to nine
+months than wild-type littermates [@augello2015ccnd1b]. An independent
+transgenic line expressing human cyclin D1b in mouse skin grew no spontaneous
+tumours and escaped the fatal thymic overgrowth that the D1a transgene causes.
+It produced more papillomas under a two-stage chemical carcinogenesis protocol,
+and failed to restore carcinogen sensitivity to cyclin D1 knockout mice
+[@rojas2009ccnd1bskin].
+
+Both mouse results carry a caveat that the same authors supply. They searched
+the mouse cyclin D1 gene for an equivalent of the human D1b transcript and
+found none [@rojas2009ccnd1bskin]. The isoform whose oncogenic role is argued
+over does not exist in the standard laboratory animal and has to be engineered
+into it. In human disease the picture thins further. In mantle cell lymphoma
+and multiple myeloma the D1b protein, where present, sat in both nucleus and
+cytoplasm and turned over as fast as D1a. The two properties held necessary
+for its transforming activity were absent, and the splice-site polymorphism
+did not change splicing in those cells [@krieger2006ccnd1bmcl].
+
+### CD44, the first demonstration of the shape
+
+The earliest clean demonstration that one isoform can do a job the gene cannot
+is also one of the oldest. A complementary DNA for a single CD44 variant,
+carrying an extra 162 amino acid extracellular stretch, was put into a rat
+pancreatic carcinoma line that does not metastasise. That one change was
+enough to make the cells metastasise fully [@gunthert1991cd44variant]. The
+variant was absent from the non-metastasising lines and from most normal rat
+tissues.
+
+The follow-up weakens the single-exon reading rather than strengthening it.
+The metastatic line makes several CD44 variants, and the two most abundant
+differ by 162 and by 85 extra amino acids. When each was expressed alone in
+the non-metastatic line, either one sufficed [@rudy1993cd44variants]. What
+matters may be the extra extracellular stretch rather than any particular
+variant exon.
+
+An antibody against the variant-specific part of the protein slowed lymph node
+and lung metastases and prevented metastasis from the transfected line
+altogether. It worked only when given before the cells had colonised the lymph
+node, and it did so without reducing how much variant protein the cells carried
+[@seiter1993cd44antibody].
+
+The human direction is the opposite of the rat one. Staining 30 human squamous
+carcinoma specimens with an antibody against the v6-encoded sequence showed
+the epitope reduced or gone in the malignant tissue. The constant part of the
+protein was mostly retained [@cd44v6isoforms1993]. In that tumour type the
+variant form fell as the disease advanced. @sec-isoform-selective follows what
+happened when a drug was aimed at that epitope anyway.
+
+### VEGF-A165b, where the argument is about the isoform's existence
+
+The VEGF-A locus can use a downstream site in its final exon, producing a
+family of forms written with a b suffix and described as anti-angiogenic.
+Human prostate cancer cells transfected to make VEGF165b grew into smaller
+tumours in nude mice than control-transfected cells. The same construct
+reduced tumour size in Ewing sarcoma and renal carcinoma xenografts
+[@rennel2008vegf165b].
+
+A second laboratory made the same comparison and got the opposite result. Lung
+and prostate carcinoma cells engineered to overexpress VEGF121b or VEGF165b
+grew larger, better vascularised tumours than empty-vector controls. The
+recombinant proteins activated VEGFR2 and made endothelial cells proliferate,
+more weakly than VEGF165 did [@catena2010vegfxxxb]. Same isoform, same assay,
+same host, opposite sign.
+
+Underneath that disagreement is a harder one about whether the transcript is
+there. Fibrosarcoma lines were engineered so that exon 7 joins directly to the
+conventional terminal exon, which makes the b-form splice physically
+impossible. Those cells still yielded apparent VEGFxxxb products from the
+isoform-specific polymerase chain reaction assays in use. The products
+appeared only when the reverse primer overhung the junction by more than five
+bases [@harris2012vegfxxxbartefact].
+
+Deep sequencing agrees with that engineered control. Searching five billion
+reads from one public dataset for exact matches to the two possible
+terminal-exon junctions returned 10,188 reads across the conventional junction
+and none across the b junction. Two further datasets of 6.9 billion and 2.8
+billion reads gave the same split. So did roughly 50,000 sequenced products of
+a polymerase chain reaction spanning that junction in ten tissues
+[@bridgett2017vegfaxxxb].
+
+The originating laboratory replied that a failure to amplify is
+uninterpretable without positive controls. In five samples of normal human
+lung fibroblast complementary DNA both forms amplified and the b-form product
+was confirmed by sequencing. The same template failed to give that product on
+a different thermal cycler [@bates2013vegfaxxxbdetection]. The dispute has
+stayed about controls rather than about biology, which is itself the finding.
+A phenotype measured for an isoform that may be an assay artefact is a
+phenotype measured for nothing, and no later experiment can repair that.
+
+### Three shorter cases, and one that does not belong
+
+A truncated p53 isoform shows the same context dependence as MDM2-ALT1, inside
+one laboratory. Mice carrying a knock-in modelling human Delta133p53 are
+tumour-prone. Removing interleukin-6 cut the proportion dying with a malignant
+tumour from 26 of 28 animals to 14 of 20, which places the effect downstream
+of an inflammatory signal rather than inside the cell
+[@campbell2018delta133p53]. The authors note that their cohorts were too small
+to show a survival difference and that time to tumour detection did not differ
+[@campbell2018delta133p53]. The same laboratory then crossed the allele with a
+weakened p53 mutant and found the opposite of what it expected. Double mutants
+lived between 92 and 495 days, against 120 to 250 days for the weak mutant
+alone [@slatter2015delta122p53]. Some of the longest-lived animals carried
+only benign tumours.
+
+RON exon 11 skipping makes a receptor that signals without its ligand.
+Overexpressing the splicing factor SF2/ASF drove an epithelial to mesenchymal
+change and increased motility. That effect disappeared when the short
+transcript alone was knocked down while the factor stayed overexpressed
+[@ghigna2005ronmotility]. The switch runs in reverse as well. hnRNP A1
+competes with SF2/ASF at the regulatory element, keeps exon 11 in, and drives
+cells back toward the epithelial state [@bonomi2013hnrnpa1ron]. The whole case
+is cell culture; no animal experiment anchors it.
+
+Survivin illustrates how a transcript-level story can fail at the protein. A
+pancreatic carcinoma line driven to 40-fold gemcitabine resistance carried all
+six survivin splice forms at raised levels, the 2-beta form by about
+eightfold. An interfering RNA against that form alone restored sensitivity
+[@fuller2022survivin2b]. A complementation test points the other way. When
+endogenous survivin was depleted, none of four splice forms put back at the
+level of the full-length protein rescued the resulting defects in chromosome
+segregation and cytokinesis. The variant proteins could not be detected at
+endogenous level in any cell examined [@jacob2012survivinvariants].
+
+EGFRvIII is absent from this section on purpose. The exon 2 to 7 deleted EGFR
+protein of glioblastoma is described in a 610-gene sequencing series of 4,331
+advanced solid tumours. It is called there a recurrent intragenic fusion of
+EGFR exon 1 to exon 8, arising from deletion of the intervening DNA. It was
+found in 17 of those tumours, 16 of them brain tumours [@zheng2023egfrviii].
+The junction is novel and the protein is real. The lesion is genomic, so it
+belongs to a different chapter of cancer genetics than this one, however often
+the literature files it under splice variants.
+
+The pattern across these cases is worth stating as a table, because it is the
+same pattern each time. Where an isoform-specific experiment exists, it supports
+a narrower claim than the one the gene is known for.
+
+| Case | Isoform-specific experiment | What it showed | What bounds it |
+|---|---|---|---|
+| MDM2-ALT1 | Transgene of that form alone, two genetic backgrounds [@comiskey2018mdm2alt1] | Shorter survival and a changed tumour spectrum in p53-null mice | No change in life expectancy with p53 intact; no cellular phenotype in an independent laboratory [@huun2017mdm2variants] |
+| RAC1B | Knock-in at Rosa26, three tissues, three laboratories [@gudino2021rac1b; @kotelevets2018rac1b; @zhou2012rac1blung] | Faster tumour initiation in intestine; blunted TGF-beta response | No invasive tumours in the mouse built to test invasion; opposite direction in pancreas [@ungefroren2013rac1bpancreatic] |
+| Cyclin D1b | Locus rebuilt to make only that form [@augello2015ccnd1b] | Soft-agar growth and escape from RAS senescence, set by identity rather than dose | No excess lesions in the animals; no mouse counterpart of the transcript [@rojas2009ccnd1bskin] |
+| CD44 variants | One variant cDNA into a non-metastatic line [@gunthert1991cd44variant] | Full metastatic behaviour from one change | Two different variants each sufficed [@rudy1993cd44variants]; the epitope falls with malignancy in human tumours [@cd44v6isoforms1993] |
+| VEGF-A165b | Overexpression and xenograft [@rennel2008vegf165b] | Smaller tumours | A second laboratory saw larger tumours [@catena2010vegfxxxb]; the transcript may be an assay artefact [@harris2012vegfxxxbartefact; @bridgett2017vegfaxxxb] |
+| Delta133p53 | Knock-in allele [@campbell2018delta133p53] | Tumour-prone mice, effect removed by deleting interleukin-6 | The same laboratory found the allele lengthening survival on another background [@slatter2015delta122p53] |
+| Delta-Ron | Isoform-specific knockdown under factor overexpression [@ghigna2005ronmotility] | The isoform carries the motility effect | Cell culture throughout; no animal experiment |
+| Survivin-2B | Isoform-specific interfering RNA [@fuller2022survivin2b] | Gemcitabine sensitivity restored | No splice form rescued survivin depletion, and the proteins are undetectable at endogenous level [@jacob2012survivinvariants] |
+
+: Oncogenic isoform cases with an isoform-specific experiment, and the result that limits each one. {#tbl-isoform-cases}
 
 ## Splicing factor mutations {#sec-splicing-factors}
 
@@ -55,23 +303,100 @@ SF3B1 is the single most commonly mutated gene in myelodysplastic syndromes,
 carried by roughly a fifth to somewhat over a quarter of all patients
 [@dolatshad2016abcb7].
 
+Three properties of this class of mutation were reported in the exome study that
+first found it, and they constrain every model built since. The mutations fall
+on genes acting at 3' splice site recognition, and they occur in a mutually
+exclusive pattern, so a cell takes one and not two [@yoshida2011splicingmachinery].
+They are also not loss of function. Mutant SRSF2 impairs blood cell
+differentiation in a way that deleting SRSF2 does not, through altered
+recognition of specific exonic enhancer motifs and the mis-splicing of blood
+regulators [@kim2015srsf2].
+
 The ring-sideroblast phenotype traces to one splicing lesion. A cryptic 3'
 splice site inserts 21 intronic bases into the iron transporter ABCB7
 transcript, creating a premature stop codon. The aberrant transcript was
 detected in every SF3B1-mutant patient sample tested, and in none of the
 wild-type or healthy controls [@dolatshad2016abcb7].
 
-The genome-wide picture is larger than one gene. Mutant SF3B1 activates several
-hundred novel 3' splice sites, with closely matched counts in an engineered
-K700E cell line and in primary MDS samples [@kesarwani2017cryptic]. One
-mechanistic account holds that those cryptic sites are normally base-paired
-inside RNA secondary structure and therefore invisible to the scanning
-spliceosome, and the reduced-accessibility signature held in an independent CLL
-cohort [@kesarwani2017cryptic].
+The genome-wide picture is larger than one gene. Mutant SF3B1 activates
+several hundred novel 3' splice sites, with closely matched counts in an
+engineered K700E cell line and in primary MDS samples [@kesarwani2017cryptic].
+One mechanistic account holds that those cryptic sites are normally
+base-paired inside RNA secondary structure and therefore invisible to the
+scanning spliceosome. The reduced-accessibility signature held in an
+independent CLL cohort [@kesarwani2017cryptic].
 
 How mutant SF3B1 actually chooses its cryptic sites is contested. Those same
 authors count three published and mutually incompatible mechanistic models
-[@kesarwani2017cryptic], none of which should be presented as settled.
+[@kesarwani2017cryptic], none of which should be presented as settled. A
+fourth has since been proposed from the protein's structure. Nearly all the
+cancer mutations fall in the C-terminal HEAT-repeat domain and most in repeats
+four to seven. Modelling with affinity purification identified the splicing
+factor SUGP1 as the strongest partner contacting that stretch. SUGP1 variants
+that weaken the contact partly reproduced the splicing defects of the mutant
+[@zhang2023sugp1]. The docking is modelled rather than observed, and no
+structure of the complex exists.
+
+### BRD9, the clearest path from mutation to phenotype
+
+The strongest downstream target of mutant SF3B1 was found by a screen rather
+than by a candidate approach. Among genes predicted to be mis-spliced into
+nonsense-mediated decay, knocking out Brd9 was one of only two hits that let a
+cytokine-dependent mouse cell line grow without its cytokine, the other hit
+being a positive control [@inoue2019brd9].
+
+The lesion itself is unusual in origin. Mutant SF3B1 causes a primate-specific
+endogenous retroviral sequence inside a BRD9 intron to be spliced in as an
+exon that interrupts the reading frame. The exon is recognised through an
+unusually close branch point, and mutating that branch point abolished its
+inclusion [@inoue2019brd9]. What the resulting loss costs the cell is
+specific. Expressing mutant but not wild-type SF3B1 lowered BRD9 protein and
+abolished the interaction between BRG1 and GLTSCR1 that defines the
+non-canonical BAF complex, while leaving canonical BAF intact
+[@inoue2019brd9].
+
+The gene was then tested in both directions. Knocking Brd9 down in
+non-tumorigenic mouse melanocytes produced growing tumours, restoring it in
+established tumours suppressed their growth. Putting full-length BRD9 back
+into uveal melanoma cells suppressed xenograft growth, while versions lacking
+either the bromodomain or the DUF3512 domain did not [@inoue2019brd9].
+Antisense oligonucleotides that blocked the poison exon restored the protein
+and shrank an SF3B1-mutant melanoma xenograft and a patient-derived rectal
+melanoma carrying R625C. The same oligonucleotide had no effect on a
+patient-derived uveal melanoma lacking an SF3B1 mutation [@inoue2019brd9].
+
+Two limits sit against that therapeutic reading. The same experiments showed
+MLL-rearranged acute myeloid leukaemia cells needing BRD9 to grow, so a
+therapy restoring it in one disease would be attacking a dependency in another
+[@inoue2019brd9]. And the poison exon is primate-specific, which bounds what
+any mouse model of this axis can show.
+
+### The wild-type copy a mutant cell cannot lose
+
+The hotspot mutations are heterozygous, and the reason is testable. Mice
+engineered to express SRSF2 P95H with the wild-type copy deleted, so that
+mutant protein was the only SRSF2 present, died sooner than controls. They
+developed severe marrow failure, while mice keeping one wild-type copy did not
+[@lee2016splicingcatalysis]. Supplying a powerful oncogene did not rescue
+them. Of ten mice whose blood cells carried MLL-AF9 and the mutant allele
+without a wild-type copy, five developed leukaemia, and every leukaemia had
+escaped deletion of the wild-type allele, while all the control animals became
+leukaemic [@lee2016splicingcatalysis].
+
+An independent laboratory reached the same conclusion for a second gene.
+Deleting the wild-type U2af1 allele in mouse blood cells expressing the S34F
+mutant was lethal, whereas deleting one allele in otherwise normal mice left
+blood formation and splicing essentially unchanged. Mice carrying mutant
+leukaemia cells lived longer with lower tumour burden once the wild-type allele
+was removed [@wadugu2020u2af1haploessential]. Two laboratories, two genes, one
+answer: the cell needs the splicing it has left.
+
+That dependency is the entire rationale for attacking the spliceosome with a
+drug, and it has a named mechanism in at least one setting. In SRSF2-mutant
+leukaemia, a splicing inhibitor caused more exon skipping and intron retention
+in the region encoding the catalytic domain of Dot1l than it did in wild-type
+leukaemia. Supplying DOT1L from a cDNA partly restored proliferation under the
+drug, while supplying Meis1 did not [@lee2016splicingcatalysis].
 
 ### U2AF1 and a changed preference at one position
 
@@ -84,9 +409,23 @@ the intron-exon boundary. In HeLa cells expressing the S34F mutant, 57 per cent
 of competing CAG-versus-TAG 3' splice site pairs shifted, against 36 per cent
 with a wild-type construct [@brooks2014u2af1].
 
-The rule is a preference, and the same authors note that many UAG 3' splice
-sites were unaffected, and that nonsense-mediated decay of aberrant products
-could make affected sites look unaffected [@brooks2014u2af1].
+The rule is a preference rather than a switch. The same authors note that many
+UAG 3' splice sites were unaffected, and that nonsense-mediated decay of
+aberrant products could make affected sites look unaffected
+[@brooks2014u2af1].
+
+One U2AF1 phenotype has been assigned to one isoform of one target. Mice
+expressing S34F lose B cells, and the mutant lowers the H2AFY1.1 isoform of
+the histone variant macroH2A1. Deleting that gene reproduces the B cell
+defect, and forcing H2AFY1.1 back into mutant cells restored both the
+transcription factor EBF1 and B cell numbers in the animal [@kim2021h2afy].
+
+The field routinely pools the gene's two hotspots, and they are not the same
+lesion. Mice carrying U2af1 S34F had lower blood and marrow counts and weaker
+stem cell repopulation than mice carrying Q157R. The two mutants changed largely
+non-overlapping sets of genes and splicing events in both mouse and human
+samples, and they co-occur with different partner mutations in patients
+[@alberti2026u2af1hotspots].
 
 ### SRSF2 and a re-weighted enhancer code
 
@@ -96,9 +435,18 @@ motif with three- to four-fold higher affinity than GGNG, where the wild-type
 domain treats the two about equally [@liang2018srsf2]. One changed binding
 preference is enough to redistribute splicing across the transcriptome.
 
+The cleanest demonstration that the motif is what matters is a swap. In a
+minigene carrying the poison exon of EZH2, mutant SRSF2 drove inclusion when
+the exon held the CCWG motifs it prefers. Wild-type SRSF2 drove inclusion when
+those motifs had been changed to the GGWG form. Each protein was inactive on
+the other minigene [@rahman2020srsf2nmd]. The resulting transcript is
+destroyed rather than merely altered: knocking down UPF1 in an SRSF2 P95H
+leukaemia line raised the level of the poison-exon-containing message with
+each of two independent hairpins [@rahman2020srsf2nmd].
+
 Reproducibility across SRSF2 studies is a problem. When nine published RNA-seq
-datasets were overlapped at the level of differentially spliced gene lists, not
-a single gene appeared in all nine, and only 446 genes recurred in three or
+datasets were overlapped at the level of differentially spliced gene lists,
+not a single gene appeared in all nine. Only 446 genes recurred in three or
 more [@liang2018srsf2].
 
 ### ZRSR2 and the minor spliceosome
@@ -121,6 +469,108 @@ since its authors claim the misspliced kinase accounts only partly for the
 severe anaemia of SF3B1-mutant MDS, and explicitly not for ring sideroblast
 formation [@lieu2021map3k7].
 
+### The same codon, read differently in different organs
+
+SF3B1 mutation does not mean one thing. In 102 primary uveal melanomas every
+SF3B1 mutation fell on arginine 625, mutation went with younger patients and
+with the low-risk transcriptomic class. It was almost never found alongside
+BAP1 mutation, and none of five metastatic samples carried it
+[@harbour2013sf3b1uveal]. In 27 Australian mucosal melanomas the same R625
+hotspot was the commonest mutation. Patients carrying it had shorter median
+overall and progression-free survival, although neither difference reached
+conventional significance at that cohort size [@quek2019mucosalmelanoma].
+
+The uveal study is also a cautionary tale about negative results. It looked for
+the splicing consequences of the mutation and did not find them. Only ten genes
+differed in expression between mutant and wild-type tumours, none matching the
+myelodysplasia results, and RNA sequencing showed no global difference in splice
+donor or acceptor retention [@harbour2013sf3b1uveal]. The BRD9 poison exon was
+later found in that same tumour type.
+
+In chronic lymphocytic leukaemia the hotspot behaves as an accelerator. Mouse
+B cells carrying K700E alone did not start the disease, but combining it with
+the chromosome 13q deletion raised the proportion with circulating leukaemic
+cells by twenty-four months, from two of twenty-seven to six of twenty-five
+[@zhang2025sf3b1cll]. The acceleration was attributed to altered splicing of
+Nfatc1, with activation of mTOR and MYC programmes. Combining splicing
+inhibition with mTOR inhibition killed the double-lesion cells where either
+alone did less [@zhang2025sf3b1cll]. That attribution is weaker than the
+genetic result it explains.
+
+## Splicing regulators that are not mutated {#sec-regulators}
+
+The four hotspot genes above are mutated in patients. Most of the splicing
+machinery's involvement in cancer is a matter of level instead, and the
+evidence for it is older and assembled differently.
+
+A splicing factor can be an oncogene in the classical assay sense. Modest
+overexpression of SF2/ASF, now called SRSF1, transformed immortal rodent
+fibroblasts, and those cells formed sarcomas in nude mice [@karni2007sf2asf].
+The transforming activity was then pinned to a named downstream isoform rather
+than to the factor at large: knocking down isoform-2 of the kinase S6K1
+reversed the transformation, in culture and in animals. Knocking down SRSF1
+itself did the same [@karni2007sf2asf].
+
+In three-dimensional culture of non-transformed human mammary epithelial cells,
+putting back the tumour-suppressing BIN1 isoform that SRSF1 overexpression had
+suppressed shrank the enlarged acini and raised apoptosis [@anczukow2012srsf1].
+The same study bounds its own explanation. Across the four SRSF1 targets whose
+splicing was followed in a deletion-mutant panel, only BIN1 tracked the acinar
+phenotype well, while BIM and MKNK2 tracked it weakly
+[@anczukow2012srsf1]. Measured splicing changes and measured phenotype do not
+line up gene by gene.
+
+More recent work from the same laboratory complicates the direction. In a
+mouse model of pancreatic ductal adenocarcinoma driven by mutant KRAS, SRSF1
+protein fell in the pancreatic cells that stayed morphologically normal.
+Knocking SRSF1 down in a human pancreatic cancer line reduced proliferation
+and metastasis [@wan2021srsf1kras]. The factor's level reads as a brake
+applied by normal cells and a requirement of established ones. The effect
+there was traced to a specific exon: SRSF1 promotes inclusion of exon 3 in the
+5' untranslated region of the interleukin-1 receptor Il1r1, inclusion
+lengthens the message's half-life. Mutating the two SRSF1 binding motifs
+inside that exon abolished the factor's ability to promote it
+[@wan2021srsf1kras].
+
+A second SR protein gives the same shape of result in whole animals.
+Overexpressing SRSF6 in adult mouse skin and small intestine produced
+epithelial hyperplasia with full penetrance in skin. Grafted skin showed the
+lesion only where the graft itself carried the transgene, which makes the
+effect cell-autonomous [@jensen2014srsf6]. The phenotype was tied to one
+target isoform: SRSF6 overexpression increased cell migration, and that
+increase was abolished by a hairpin depleting the long tenascin-C isoform
+specifically. Knocking SRSF6 down in a human melanoma line lowered both the
+isoform and migration [@jensen2014srsf6].
+
+Two regulators work in the other direction. RBM10 is among the most frequently
+mutated genes in lung adenocarcinoma, and it behaves as a tumour suppressor in
+whole animals in both directions. Knocking it down in human cancer cells made
+xenografts grow faster, while knocking down a cancer-derived mutant version
+made them grow more slowly [@hernandez2016rbm10]. A single lung-cancer
+substitution, valine 354 to glutamate, abolished RBM10's repression of the
+NUMB variable exon in a minigene assay, while the two natural RBM10 isoforms
+that differ at that very residue behaved identically. Modelling put the
+residue away from the RNA-binding surface [@hernandez2016rbm10].
+
+QKI, lost in non-small-cell lung cancer, was put back into lung cancer lines
+and suppressed anchorage-independent growth. Colony numbers fell sharply in
+two lines, and the same cells grew smaller subcutaneous tumours in nude mice
+[@zong2014qki]. Its phenotype was assigned to a particular NUMB isoform by two
+complementary perturbations. Hairpins against the variable exon itself slowed
+proliferation, and re-expressing the exon-containing protein in QKI-restored
+cells partly cancelled the growth suppression, while the exon-lacking protein
+deepened it [@zong2014qki]. The two isoforms act in opposite directions on the
+pathway they regulate: in myoblasts, the exon-lacking protein blocked release
+of the Notch intracellular domain altogether, while the exon-containing one
+enhanced it [@zong2014qki].
+
+The mechanism by which QKI holds the exon out is worth stating, because it is
+competition with the core machinery rather than recruitment of a repressor.
+Its two binding sites flank the 3' splice site, one of them overlapping the
+branch point. In crosslinking assays QKI displaced the branch-point binding
+protein SF1 from the wild-type sequence but not from a sequence whose first
+site had been mutated [@zong2014qki].
+
 ## LZTR1 is inactivated by intron retention {#sec-lztr1}
 
 The tumour suppressor LZTR1 is inactivated post-transcriptionally far more
@@ -131,12 +581,19 @@ samples, across nearly all cancer types profiled [@inoue2021minor].
 A gene can be functionally lost in a tenth of tumours with nothing in the exome
 to show for it.
 
-## Synonymous mutations that disrupt splicing {#sec-silent}
+## Mutations an exome report calls silent {#sec-silent}
 
 How often an exonic point mutation disrupts splicing is contested. The figures
-in circulation range from a quarter to over three quarters of exonic mutations,
-a disagreement of more than threefold, so no single headline fraction in this
-area should be quoted as settled [@hurst2017depletion].
+in circulation range from a quarter to over three quarters of exonic
+mutations, a disagreement of more than threefold. No single headline fraction
+in this area should be quoted as settled [@hurst2017depletion].
+
+The top of that range is narrower than it sounds. The 77 per cent figure comes
+from comprehensive minigene testing of 22 single-nucleotide variants in exon
+10 of MLH1, with patient RNA analysed where available. The disruptive
+mutations included many that altered exonic regulatory elements rather than
+the splice sites themselves [@soukarieh2016exonic]. One exon of one gene sets
+the upper bound that the field quotes as a general rate.
 
 Selection inside tumours leaves a measurable trace. Across 15 TCGA cancer
 types, synonymous mutation density was about 17 per cent lower in the
@@ -144,39 +601,178 @@ splicing-regulatory flanks of exons than in exon cores. The depletion was
 absent in tumour suppressors, where losing function is advantageous
 [@hurst2017depletion].
 
-A pan-cancer screen of 8,320 exomes
-across 22 tumour types nominated 22,948 synonymous single-nucleotide variants as
-post-transcriptionally consequential, spread over 2,042 genes
-[@teng2020synonymous].
+A pan-cancer screen of 8,320 exomes across 22 tumour types nominated 22,948
+synonymous single-nucleotide variants as post-transcriptionally consequential,
+spread over 2,042 genes [@teng2020synonymous].
 
-A synonymous c.936T>G change in
-BAP1 exon
-11 of a clear-cell renal carcinoma caused exon skipping and loss of BAP1
-protein. The patient died at 56 months, against a TCGA median of 117 months for
-the group her exome had placed her in [@niersch2021bap1]. That report also
-cites an earlier pan-cancer estimate putting synonymous changes at roughly 6 to
-8 per cent of single-nucleotide driver mutations in oncogenes, secondhand
-[@niersch2021bap1]. The primary analysis should be read before that figure is
-used.
+The most-quoted estimate of how much of this reaches driver status rests on an
+abstract. Chapter sources have cited roughly 6 to 8 per cent of
+single-nucleotide driver mutations in oncogenes as synonymous, at second hand
+[@niersch2021bap1]. The primary puts the share of silent mutations in
+oncogenes under positive selection at somewhere between a fifth and a half,
+and converts that to the 6 to 8 per cent figure. The selection is cancer-type
+specific, and those authors say the functional consequences may be diverse
+[@supek2014synonymous]. It is therefore not a fraction acting through
+splicing. In the same analysis the recurrent synonymous mutations of TP53
+behave unlike those of oncogenes. They sit next to splice sites and inactivate
+them, where the oncogene mutations hit exonic regulatory motifs instead
+[@supek2014synonymous].
+
+A fitness screen bounds the whole idea from the other side. Across 8,558
+possible synonymous mutations in 128 highly essential human genes, synonymous
+changes altered cell growth 165-fold less often than non-synonymous ones, with
+a 95 per cent confidence interval of 35 to 2,929 fold. Those authors read that
+as upholding the neutrality assumption for spontaneous synonymous mutations
+[@rao2025synonymous].
+
+### A single worked case, and what it cost
+
+A synonymous c.936T>G change in BAP1 exon 11 of a clear-cell renal carcinoma
+caused exon skipping and loss of BAP1 protein. The patient died at 56 months,
+against a TCGA median of 117 months for the group her exome had placed her in
+[@niersch2021bap1].
+
+### Measured rather than predicted
+
+Prediction is what the contested range is mostly made of. Three bodies of work
+replace it with measurement, and they agree that the effect concentrates by
+position and by gene.
+
+A massively parallel splicing assay found MLH1 exon 8 and BRCA1 exon 18 each
+carrying a significantly higher fraction of splice-disrupting mutations than
+expected, at adjusted P values of 2.26 x 10-3 and 4.18 x 10-6 by two-sided
+binomial test. The same assay found exonic splicing mutations about threefold
+more common in genes intolerant of protein-truncating variants
+[@soemedi2017mapsy].
+
+Lynch syndrome genes are unusually exposed to this class of mutation. Of 36
+coding mutations tested across five MLH1 exons, 11 disrupted splicing, and
+canonical splice-site changes account for 36 per cent of reported MLH1
+mutations, far more than expected. MLH1, MSH2 and PMS2 all fall inside a set
+of 86 disease genes enriched for splicing mutations [@rhine2018hereditary].
+
+Saturation genome editing at the native locus turns the question into a
+measurement with a position attached. Across 3,893 single-nucleotide variants
+in 13 BRCA1 exons, 89.5 per cent of variants at the two intronic positions
+flanking an exon were non-functional. The figure was 22.9 per cent for
+amino-acid-neutral variants 1 to 3 bases inside the exon or 3 to 8 bases
+inside the intron, 1.8 per cent for deeper intronic variants and 1.3 per cent
+of synonymous variants away from junctions [@findlay2018brca1]. The curve
+across positions is the result; any single percentage drawn from it is a
+choice of window.
+
+Some assays cannot see this class of variant at all, by construction. The MSH2
+map covering more than 94 per cent of 17,746 possible missense variants was
+built from a complementary-DNA deep mutational scan, which removes the introns.
+Among 31 MSH2 missense variants already classified as pathogenic, four were
+flagged as splice-disruptive by prediction rather than by the protein-function
+measurement [@scott2022lynch].
+
+Germline TP53 shows what the gap costs in the clinic. Re-evaluating exonic
+single-nucleotide variants identified 58 spliceogenic ones, 40 of them
+missense and 18 silent. Minigene assays reproduced a splicing defect for 15 of
+the 17 tested, mostly by activating a cryptic site that throws the reading
+frame. Carriers whose variants protein-based assays had called mild showed
+earlier onset and Li-Fraumeni-pattern cancers [@schonegger2026tp53].
+
+### Mutations outside the exome altogether
+
+Matched whole genomes and transcriptomes find the lesions exome sequencing
+cannot. Across 1,134 pan-cancer tumours with 3,022 normal controls, 678
+somatic intronic mutations were associated with mis-splicing, 46 per cent of
+them deep inside introns. Of 309 deep intronic single-nucleotide variants, 245
+altered a core splicing feature, and 64 tumour suppressors were affected. Of
+those, 38 per cent created a cryptic splice site, 36 per cent destroyed a
+polypyrimidine tract and 12 per cent hit a branch point [@jung2021intronic].
+
+One of those lesions was taken apart. In the telomere-maintenance tumour
+suppressor POT1, deep intronic mutations accounted for half the inactivating
+somatic variants seen in lymphoid tumours. Deleting the splicing silencer
+motif that one such mutation disrupts, by CRISPR in K562 cells, was enough to
+make a cryptic exon appear in the mature RNA [@jung2021intronic].
+
+### An RNA assay in the clinic
+
+The point at which all of this reaches a patient is variant classification.
+In commercial hereditary-cancer testing, blood RNA sequencing was run on 411
+variants of uncertain significance in 52 genes that had been predicted to
+affect splicing. It resolved 26.3 per cent of them, 108 of 411, upgrading 28 to
+pathogenic or likely pathogenic and downgrading 80. Of the 28 upgraded, 17 were
+intronic, nine were exonic missense and two were exonic synonymous
+[@sha2024rnaseq].
+
+Four times more variants were downgraded than upgraded. An RNA assay is not a
+machine for finding hidden pathogenicity; it is a machine for replacing a
+prediction with a measurement. Most predictions it checks turn out to be wrong
+in the reassuring direction.
+
+One gap is worth naming, and nothing above closes it. The research pass behind
+this chapter found no study that measured, in tumours, what fraction of
+somatic synonymous mutations actually changes splicing. Every estimate above
+is predicted, inferred from selection, or assayed on germline alleles in
+reporters.
 
 ## MET and AR-V7: targets defined by isoform {#sec-drug-targets}
 
 Two cases show an isoform, rather than a gene, defining the target.
 
+### MET exon 14, and many genotypes with one outcome
+
 MET exon 14 skipping is reached by structurally diverse DNA lesions converging
-on one RNA outcome. The underlying mutations sat mostly at the splice donor side
-of exon 14, at 57 per cent, or the acceptor side, at 25 per cent. In the phase 1
-expansion cohort, crizotinib produced a confirmed objective response in 32 per
-cent of 65 evaluable patients. That is short of the 60 to 80 per cent seen with
-matched therapy for other lung cancer drivers [@drilon2020met].
+on one RNA outcome. Genomic profiling of 38,028 patient tumours found 221
+cases with MET exon 14 alterations, 0.6 per cent overall and 3 per cent of
+lung adenocarcinomas. Those 221 cases carried 126 distinct sequence variants
+[@frampton2015metex14]. A later screen of 11,330 Chinese lung cancer samples
+found 45 different DNA-level variants producing the skip, spread across a
+197-base-pair window rather than clustered on two bases
+[@liao2025metlandscape].
+
+What the skipped product does differently was shown before the drugs existed.
+Somatic intronic MET mutations produce a transcript lacking the juxtamembrane
+domain and therefore the Cbl E3-ligase binding site. The resulting receptor is
+less ubiquitinated, is down-regulated more slowly, sustains phospho-MET and
+MAP-kinase signalling after ligand, and gives both enhanced ligand-driven
+proliferation and tumour growth in vivo [@kongbeltran2006metdeletion].
+
+A second mechanism sits in the same exon. It encodes a caspase cleavage site
+as well as the CBL-binding motif, and removing it prevents production of the
+pro-apoptotic p40MET fragment. Genome editing showed that mutating the caspase
+and CBL sites together, but neither alone, reproduced the skipping phenotype.
+Inducible re-expression of p40MET in skipped cells restored apoptosis and
+suppressed tumour formation [@tellier2025met].
+
+The bounding result is the one that asks whether skipping is sufficient. When
+exon 14 skipping was created by CRISPR at the endogenous locus in immortalised
+human tracheobronchial epithelial cells, the skipped mRNA appeared and activated
+MET protein did not. Only cells overexpressing the skipped isoform gained an
+advantage in a growth-in-low-attachment assay, which matches the observation
+that lung adenocarcinomas with the mutation express the mutant allele in excess
+[@durham2023metallele]. The driver is the skipped isoform at a raised level
+rather than the skip itself.
+
+The assay used to find it matters too. Among 379 non-small-cell lung cancers
+carrying mutations in or beside exon 14, 171 distinct mutations were seen. Of
+114 analysed by both DNA- and RNA-based sequencing, two large deletions and
+one synonymous variant that caused skipping were found only by the RNA assay.
+Seven single-nucleotide variants inside the exon turned out not to induce
+skipping at all [@heydt2026metdetection]. A DNA report can miss the lesion and
+can also overcall it.
+
+In the phase 1 expansion cohort, crizotinib produced a confirmed objective
+response in 32 per cent of 65 evaluable patients. The underlying mutations sat
+mostly at the splice donor side of exon 14, at 57 per cent, or the acceptor
+side, at 25 per cent. That response rate is short of the 60 to 80 per cent seen
+with matched therapy for other lung cancer drivers [@drilon2020met].
+
+### AR-V7, an isoform that therapy brings forward
 
 AR-V7 is the opposite shape of problem, an isoform that therapy brings to the
-fore.
-Immunohistochemistry across hundreds of prostate specimens found AR-V7 protein
-in under one per cent of untreated primary tumours, and in about three quarters
-of samples taken after androgen deprivation. The share rose further after
-abiraterone or enzalutamide [@sharp2019arv7]. The receptor form that dominates
-after treatment was almost absent before it.
+fore. Immunohistochemistry across hundreds of prostate specimens found AR-V7
+protein in under one per cent of untreated primary tumours, and in about three
+quarters of samples taken after androgen deprivation. The share rose further
+after abiraterone or enzalutamide [@sharp2019arv7]. The receptor form that
+dominates after treatment was almost absent before it. What a clinical test
+built on that observation can and cannot do is @sec-resistance.
 
 ## Junction neoantigens and the choice of normal {#sec-neoantigens}
 
@@ -202,39 +798,319 @@ tissue-matched normals turn up in other adult non-cancer tissues. A further
 share of those absent from all adult normals appear in developmental samples
 [@david2020junctions]. The choice of normal comparison sets most of that number.
 
-The functional evidence has been taken as far as T cell receptors. Clones
-reactive to aberrant GNAS and RPL22 junctions were isolated and killed tumour
-cells. Naturally occurring reactivity in patients was detected in only one of
-three glioma patients tested [@kwok2025public], so the mechanism works while the
-in-patient evidence stays thin.
+### What survives to the cell surface
+
+Recurrence is not presentation, and the distance between them is large. From a
+median of 539,925 junction-spanning polypeptides generated per donor,
+requiring both mass-spectrometry confirmation and predicted MHC-I binding left
+on average 1.7 splicing-derived candidates per tumour. That was measured
+across 63 breast and ovarian samples, against 0.6 candidates from point
+mutations. At least one splicing-derived candidate was found in 43 of 63
+samples, against 19 of 63 for point mutations. The authors attribute the small
+numbers to mass spectrometry retaining only about 1 per cent of otherwise
+viable peptides [@kahles2018splicing].
+
+Those authors also state the limit of their own evidence. The tandem mass
+spectrometry they used was whole-proteome and tryptic. It can show that a
+peptide exists in a cell, and cannot show that it was processed and loaded
+onto MHC. They name immunopeptidomics as the step they did not take, and note
+that junction-spanning peptides are under-represented in such data because of
+where trypsin cuts [@kahles2018splicing].
+
+Where immunopeptidomics has been done, the yield is small but real. In six
+tumour cell lines, immunoprecipitated MHC-I peptides matched predicted
+retained-intron neoepitopes from KCNAB2, SMARCD1, LRSAM1, CYB561A3, TAF1 and
+ZCCHC6 [@smart2018intronretention]. One of those identifications rested on a
+single peptide-spectrum match in one of five replicate experiments, from an
+intron retained in about 1 per cent of that gene's transcripts
+[@smart2018intronretention]. Against the whole repertoire the share stays small.
+HLA class I immunopeptidomics of mouse CT26 colon carcinoma identified 72
+distinct retained-intron peptides alongside 5,314 canonical peptides and 195
+from long non-coding RNAs [@blaszczak2026prmt5].
+
+The functional evidence has been taken as far as T cell receptors, through an
+attrition worth stating in full. Of 789 recurrent tumour junctions
+characterised, 302 yielded peptides detectable in public glioma
+mass-spectrometry data from 447 patients and 315 were predicted to produce
+strong class I binders. The intersection of transcriptomic, proteomic and
+binding evidence was 81 junctions. Of those, 32 predicted to bind HLA-A*02:01
+were carried forward, four were tested for T cell reactivity and two gave a
+response [@kwok2025public]. Clones reactive to aberrant GNAS and RPL22
+junctions were isolated and killed tumour cells. Naturally occurring
+reactivity in patients was detected in only one of three glioma patients
+tested [@kwok2025public].
+
+### Neoepitope load against clinical benefit
+
+The clinical correlate of all this is negative. Across 48 melanomas from two
+cohorts treated with checkpoint inhibitors, predicted retained-intron
+neoepitope load showed no association with clinical benefit and no correlation
+with CD8A, GZMA or PRF1 expression. The non-significant trend ran toward high
+load in the patients who did not benefit, at Mann-Whitney p of 0.29 in one
+cohort and 0.61 in the other [@smart2018intronretention].
+
+### Isoforms the immune system reads directly
+
+Two checkpoint molecules are themselves alternatively spliced, and they point
+in opposite directions. B16F10 melanoma cells engineered to secrete the
+soluble, transmembrane-exon-skipped form of CTLA-4 grew faster than
+empty-vector controls in immunocompetent mice. They grew identically in
+culture, and gained nothing in an immunocompromised host [@kennedy2023sctla4].
+An antibody raised against the C-terminal epitope unique to the soluble form,
+which does not engage the membrane receptor, slowed MC38 tumour growth. That
+held across three independent experiments with 16 to 18 animals per group, and
+the antibody raised the activation and cytolytic markers of intratumoural CD8
+T cells [@kennedy2023sctla4].
+
+The soluble form of PD-1 does the reverse. It is made by skipping exon 3.
+Blocking SRSF1 phosphorylation, either by SRPK1 knockdown or with the
+inhibitor SPHINX31, switched splicing toward it and reversed the suppression
+of T cell interleukin-2 by co-cultured cholangiocarcinoma cells, which those
+authors report as equivalent to pembrolizumab in their assay
+[@wahid2023pd1splicing]. A soluble checkpoint isoform can shield a tumour or
+antagonise the pathway, and which it does is not predictable from the fact
+that it is soluble.
+
+### Modulating splicing to be seen
+
+A drug that perturbs the spliceosome generates new peptides, and two separate
+arguments have been built on that. Pharmacological splicing modulation slowed
+mouse tumours and improved the effect of checkpoint blockade. Both effects
+depended on host T cells and on peptides presented by tumour MHC class I. The
+drug shifted the presented repertoire to include splicing-derived neoepitopes
+that drew a T cell response in vivo [@lu2021splicingmodulation].
+
+The innate arm is a different mechanism reaching a similar place. In MYC-driven
+triple-negative breast cancer, spliceosome-targeted drugs caused mis-spliced
+messenger RNAs to accumulate in the cytoplasm, many forming double-stranded
+structures that sensors recognised, triggering antiviral signalling and
+extrinsic apoptosis [@bowling2021antiviral]. That response runs through one
+sensor and not the other: CRISPR deletion of RIG-I largely abolished the type I
+interferon response to pladienolide B, deletion of MDA5 had no effect, and
+knocking down IRF3 also cut the response [@chang2021rigi]. The same effect
+appears without a drug. Knocking down hnRNPM in human mammary epithelial cells
+admitted more than a thousand cryptic exons, many from intronic LINE elements
+that can pair into long double-stranded RNA, and the rise in interferon-
+stimulated genes fell significantly when RIG-I, MDA5 and TLR3 were depleted
+[@zheng2024hnrnpm]. Expressing the cryptic exon of NUDT19 or of MED15 alone was
+enough to raise those genes [@zheng2024hnrnpm].
+
+The bound comes from inside the same paper that built the sensor argument.
+Pladienolide B killed cells whether or not they expressed RIG-I, so the
+interferon arm is not how the drug is cytotoxic, and although drug and RIG-I
+agonist synergised strongly for interferon induction, they did not synergise for
+killing [@chang2021rigi].
+
+### The clinical column is empty
+
+Peptides from retained introns have been made into a vaccine that works in mice.
+A ChAdOx1 vector carrying 29 mouse retained-intron peptides, given as a single
+intravenous dose to BALB/c mice bearing CT26 tumours, delayed growth and
+lengthened survival against a GFP-vector control, with roughly a 60 per cent
+reduction in tumour growth by day 17 [@blaszczak2026prmt5]. Two results in the
+same paper bound it. Combining the vaccine with a PRMT5 inhibitor gave no better
+tumour control and no larger interferon-gamma signal than the vaccine alone, and
+in human colorectal cancer higher expression of retained introns from CDK10,
+DDX55 and HDAC6 went with worse survival [@blaszczak2026prmt5]. That survival
+direction is the opposite of what the argument predicts, and those authors call
+it unexpected.
+
+The research pass behind this chapter searched the trial registry twice and
+found no therapy aimed at a genuinely splice-derived antigen. The nearest
+analogue used a junction that is not a splicing product. Rindopepimut, a peptide
+vaccine against the novel exon junction of EGFRvIII, was assigned with
+temozolomide to 371 of 745 randomised patients with newly diagnosed
+EGFRvIII-positive glioblastoma, across 165 hospitals in 22 countries. Among the
+405 patients with minimal residual disease, median overall survival was 20.1
+months on the vaccine against 20.0 on control, hazard ratio 1.01, and the trial
+stopped for futility at a preplanned interim analysis [@weller2017rindopepimut].
+
+That trial does not test the splicing argument. It tests the part of the
+argument that splicing shares with every other source of tumour-specific
+junctions: that a recurrent, shareable, tumour-restricted epitope is worth
+vaccinating against. On that question the largest randomised answer so far is no.
 
 ## Therapies aimed at the splicing machinery {#sec-cancer-therapeutics}
 
-The SRSF2 motif switch connects to a named target exon. The poison exon of EZH2
-contains three copies of the CCWG motif that mutant SRSF2 prefers, and none of
-the GGWG motif the wild-type protein prefers. Blocking that exon with antisense
+The mechanism in @sec-splicing-factors predicts a therapy. Spliceosome-mutant
+cells depend on the splicing they have left, so perturbing splicing further
+should kill them selectively. That prediction has now been tested in people
+across five drug classes, and the results are consistent enough to be stated
+plainly.
+
+### Two compounds against SF3b
+
+The first SF3b-targeting compound given to humans reached its pharmacological
+goal and missed its clinical one. Across 40 patients with refractory solid
+tumours, intravenous E7107 produced a reversible 10- to 25-fold rise in unspliced
+pre-mRNA of marker genes in blood cells at the maximum tolerated dose, and no
+patient had a complete or partial response while on treatment [@eskens2013e7107].
+
+The second trial of the same compound stopped for a different reason. Among 26
+patients dosed on a 30-minute infusion schedule, the best response was stable
+disease in eight. Two patients lost vision, in cycles 2 and 7, which put the
+study on clinical hold and then ended it [@hong2014e7107]. The ocular toxicity,
+rather than the lack of efficacy, is what closed that programme.
+
+H3B-8800 was designed to be selective for spliceosome-mutant cells, and its
+selectivity does not come from where it binds. The compound bound SF3b complexes
+containing wild-type or mutant SF3B1 and altered splicing similarly in both, yet
+killed SF3B1- or SRSF2-mutant cells preferentially, which those authors
+attribute to the dependency described above rather than to differential binding
+[@buonamici2016h3b8800].
+
+In patients that selectivity did not translate. Across 84 patients with MDS,
+chronic myelomonocytic leukaemia or AML, 62 of them red-cell transfusion
+dependent at entry, no patient met International Working Group criteria for a
+complete or partial response. Nine of the 62 transfusion-dependent patients
+had an interval of more than 56 days free of transfusion, and five of the 15
+MDS patients carrying a missense SF3B1 mutation became transfusion independent
+[@steensma2021h3b8800]. The dose-expansion cohorts in transfusion-dependent
+SF3B1-mutant lower-risk MDS reached the same conclusion. Of 7 and of 36
+patients, two in each cohort achieved even one interval of eight-week
+transfusion independence, and the investigators concluded the drug was
+insufficiently effective at the doses tested [@h3b8800phase1lrmds2025].
+
+The one encouraging signal was itself a splicing measurement rather than a
+response. Among the seven transfusion-free patients with expression data, the
+pre-treatment ratio of aberrant to canonical junctions in the heme transporter
+TMEM14C separated those who later became transfusion independent from those who
+did not [@steensma2021h3b8800].
+
+### Three other routes, and the same answer
+
+Attacking splicing indirectly did no better than attacking it head on. The
+phase 1b expansion of the PRMT5 inhibitor PRT543 treated 40 patients with
+relapsed or refractory splicing factor-mutant myeloid disease. The best
+responses were one erythroid improvement among 18 lower-risk MDS patients, one
+marrow complete remission with two haematological improvements among 15
+higher-risk patients, and one complete remission with incomplete count
+recovery among seven with AML [@bewersdorf2025prt543].
+
+Those investigators offered a mechanical reason for their own negative result.
+Treatment demonstrably engaged PRMT5 in patients, and the number of splicing
+changes measured in patient blood cells was far smaller than in cell lines
+treated at 10 micromolar, a concentration well above the 1.48 micromolar peak
+reached in people. They name that shortfall as the likely explanation
+[@bewersdorf2025prt543].
+
+The molecular-glue route gives the opposite explanation for the same outcome.
+The investigator-initiated phase 2 of E7820, which degrades RBM39, enrolled 12
+patients with relapsed or refractory splicing factor-mutant myeloid disease in
+its first stage, none of whom responded, and the study closed
+[@bewersdorf2023e7820]. Failure there was not failure to hit the target. Blood
+cells taken before and on treatment showed more than 50 per cent degradation of
+RBM39 by the first day of cycle 2, and the ligase adaptor the drug needs was
+expressed at every timepoint [@bewersdorf2023e7820].
+
+The same chemical class had already failed twice before anyone knew what it did.
+Indisulam was given to 28 patients with metastatic melanoma at 700 mg per square
+metre every three weeks, and independent radiological review found only minor
+responses [@smyth2005indisulam]. A randomised second-line test in 44 patients
+with platinum-treated non-small cell lung cancer compared two schedules. Flow
+cytometry of endobronchial and metastatic biopsies showed fewer cycling cells
+and more apoptosis after dosing, and neither schedule produced more than minor
+responses [@talbot2007indisulam].
+
+Preclinically that compound looks like a cure. In neuroblastoma, indisulam
+stripped out RBM39 in a DCAF15-dependent way, splicing errors accumulated, and
+eight days of dosing at 25 mg per kilogram produced complete regression of
+IMR-32 xenografts with no relapse for 66 days after treatment stopped, repeated
+in a transgenic model [@nijhuis2022indisulam]. The doses are not comparable to
+the clinical ones, and the gap between the two panels is the subject of this
+section.
+
+The kinase route has now been tested in humans as well. The first-in-human phase
+1 of the CLK inhibitor rogocekib dosed 46 patients in Japan with advanced solid
+tumours, found a maximum tolerated dose of 140 mg twice weekly, recorded two
+treatment-related deaths, and produced a partial response in three patients, all
+with ovarian cancer [@sato2026rogocekib].
+
+### Oligonucleotides, which are a different proposition
+
+Changing one exon is a narrower intervention than changing the spliceosome,
+and the chapter's own mechanism supplies a target. The poison exon of EZH2
+contains three copies of the CCWG motif that mutant SRSF2 prefers and none of
+the GGWG motif the wild-type protein prefers, and blocking it with antisense
 oligonucleotides was tested as a way to restore EZH2 protein in SRSF2-mutant
-cancer cells [@islam2026ezh2]. The whole therapeutic logic fits inside one
-exon's worth of sequence.
+cells [@islam2026ezh2]. Two caveats travel with that sentence, and both narrow
+it. The three motifs are three tabulated occurrences rather than three
+independent sites, and the work stops in culture. The lead oligonucleotide
+restored EZH2 protein, raised H3K27 trimethylation and improved viability in a
+leukaemia line carrying an inherent P95H mutation, and those authors state
+that animal and patient-derived evaluation is still to come [@islam2026ezh2].
+The same exon can be removed from the genome instead. Paired guide RNAs
+deleting it in the same cells produced EZH2 messenger RNA without the exon,
+restored the protein, re-formed its association with SUZ12 and raised global
+H3K27 trimethylation [@nagar2026crispr].
 
-Modulating the spliceosome itself is less targeted than it sounds. The
-SF3B1-directed compound H3B-8800 bound SF3b complexes containing wild-type or
-mutant SF3B1 and altered splicing similarly in both, yet killed SF3B1- or
-SRSF2-mutant cells preferentially. Those authors attribute the selectivity to
-those cells' dependence on normal expression of spliceosome genes rather than
-to differential drug binding [@seiler2016h3b8800].
+Two oligonucleotides aimed at a splicing event have reached an animal. One of
+them forces a poison exon into a transcript rather than out, which is the
+mirror of the EZH2 strategy. ASO-1570 drives inclusion of the autoregulatory
+poison exon of the splicing factor TRA2B. Injected directly into
+triple-negative breast cancer patient-derived xenografts, it raised inclusion
+in the tumour and lowered the fold change in tumour volume by day 16 against a
+control oligonucleotide [@leclair2025tra2b]. The route of administration is
+the qualifier. The other moves a checkpoint protein off the cell surface.
+Oligonucleotides blocking hnRNP A1 sites at exons 9 and 10 of CD47 shifted
+ovarian cancer cells to a truncated isoform that cannot reach the membrane or
+bind SIRPA. In cell-derived and patient-derived xenografts given that
+oligonucleotide in lipid nanoparticles alongside macrophages, tumour burden
+fell and pro-inflammatory infiltration rose [@wang2025cd47aso]. That second
+result is reported in a preprint rather than in a journal.
 
-The clinical result is the counterweight to everything above. In the phase 1
-dose-expansion cohorts in transfusion-dependent SF3B1-mutant lower-risk MDS, of
-7 and 36 patients, only two patients in each reached even one interval of
-eight-week red cell transfusion independence. The investigators concluded the
-drug was insufficiently effective at the doses tested
-[@h3b8800phase1lrmds2025].
+Aiming an oligonucleotide at AR-V7 hits the same ceiling as EZH2. Sequences
+designed against the cryptic splicing signals that create the variant knocked it
+down specifically and killed cells in three castration-resistant prostate cancer
+lines, and the authors close by saying the approach warrants investigation in an
+animal, which they did not do [@lunavelez2019arv7aso].
 
-A mechanism can be correct, specific and well characterised, and still not
-yield a drug. For therapy that works by modulating splicing, the isoform-level
-view of cancer has changed what counts as a driver without yet changing what
-counts as a treatment.
+Getting an oligonucleotide into a solid tumour is a separate problem from
+designing one. An antisense drug against the androgen receptor and its
+variants suppressed tumour growth far more effectively when it was carried in
+liposomes decorated with the tumour-penetrating peptide iRGD. Free
+oligonucleotide at the same dose did less, and the liposomes gave measured
+increases in accumulation inside subcutaneous xenografts and inside
+intra-tibial tumours modelling bone metastasis [@guan2021irgdaso]. The barrier
+can be measured without an animal. In multicellular spheroids about 400
+micrometres across, splice-switching oligonucleotides complexed into cationic
+lipid particles of 870 nanometres or polymer particles of 336 nanometres
+reached only the cells at the outer surface, while free and peptide-conjugated
+oligonucleotides distributed throughout [@carver2014spheroidoligo]. The
+formulations that take up most oligonucleotide in monolayer culture are the
+ones that penetrate least in three dimensions.
+
+For scale, the best clinical result for any antisense oligonucleotide in cancer
+is not isoform-directed at all. The phase 1b expansion of danvatirsen, a gapmer
+that cuts total STAT3 messenger RNA, treated 30 heavily pretreated lymphoma
+patients, and the only responses were in diffuse large B-cell lymphoma: two
+complete responses with a median duration of 10.7 months and two partial
+responses [@reilley2018danvatirsen]. Following it up did not improve matters.
+Combined with acalabrutinib in 17 evaluable patients with relapsed or refractory
+disease, it gave an objective response rate of 23.5 per cent, a median response
+duration of 1.9 months and median progression-free survival of 2.0 months
+[@roschewski2023danvatirsen].
+
+### What the trials add up to
+
+Every programme above dosed patients, and none produced a protocol-defined
+response rate worth reporting. The reasons given are not the same reason. One
+set of investigators says the dose a person tolerates produces far less splicing
+change than the dose a cell line gets. Another says the target was degraded by
+more than half and nothing followed. A third programme stopped because two
+patients lost their sight. Those explanations do not reconcile with each other,
+and forcing them into one story would misrepresent all three.
+
+What the mechanism did deliver is narrower and more durable. An isoform can
+define a drug target, as the skipped MET exon does. An isoform can be corrected at one
+exon, as BRD9 was in a mouse. And an isoform-level view found drivers that exome
+sequencing cannot see, which is the claim this chapter has the best evidence for.
+
+A mechanism can be correct, specific and well characterised, and still not yield
+a drug. For therapy that works by modulating splicing, the isoform-level view of
+cancer has changed what counts as a driver without yet changing what counts as a
+treatment.
 
 Aiming a drug at one isoform directly is a different proposition, and it has
 already succeeded, as @sec-isoform-selective describes.
+
