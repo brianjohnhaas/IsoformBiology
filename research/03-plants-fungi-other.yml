@@ -7805,6 +7805,726 @@ claims:
     how often those two differ.
 
     '
+- id: PFO-401
+  claim: The word "every" in the Cryptococcus complementation result needs one exception. Supplying the pre-spliced
+    HXL1 allele to an ire1 mutant left that strain still not fully restored for growth at high temperature,
+    and the strain deleted for HXL1 itself was more heat-sensitive than the strain deleted for the kinase,
+    so the splicing event does not account for the whole thermotolerance phenotype.
+  topic: Fungal pathogen isoform function
+  source:
+    doc_id: PMC3154848
+    title: Unique Evolution of the UPR Pathway with a Novel bZIP Transcription Factor, Hxl1, for Controlling
+      Pathogenicity of Cryptococcus neoformans
+    authors: Cheon, S. A.; Jung, K. W.; Chen, Y. L.; Heitman, J.; Bahn, Y. S.; Kang, H. A.
+    journal: PLoS Pathogens
+    year: 2011
+    doi: 10.1371/journal.ppat.1002177
+    bibkey: cheon2011hxl1
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L77
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3154848#L77
+    quote: the introduction of HXL1 s did not completely suppress the thermosensitivity conferred by ire1 mutation
+  confidence: high
+  note: Worklist row 1. Serves PFO-206, whose claim follows the abstract in saying all growth defects were
+    suppressed; this record is the body text that narrows it, and the narrowing is the same paper's own results
+    section. Sibling records on this document are PFO-206 (L9), PFO-207 (L82) and PFO-208 (L59); L77 is not
+    used by any of them. PFO-207's note already paraphrases this line, which is exactly the defect being repaired.
+- id: PFO-402
+  claim: The Ll-2 transgenics were not uniformly intact, which bounds what any flowering score from them can
+    mean. Transgene expression was checked with one primer pair at each end of the insert; both the genomic
+    clone and the cold-abundant variant were overexpressed at the five-prime end, but only a subset of lines
+    expressed both ends, and the authors conclude from the association between proper expression and phenotype
+    that the late flowering they see under short days is caused by the transgenes.
+  topic: MAF2 isoforms and the FLC clade
+  source:
+    doc_id: PMC3527738
+    title: Functional analysis of splice variant expression of MADS AFFECTING FLOWERING 2 of Arabidopsis thaliana
+    authors: Rosloski, S. M.; Singh, A.; Jali, S. S.; Balasubramanian, S.; Weigel, D.; Grbic, V.
+    journal: Plant Molecular Biology
+    year: 2013
+    doi: 10.1007/s11103-012-9982-2
+    bibkey: rosloski2012maf2variants
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L46
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3527738#L46
+    quote: only a subset of transgenic plants have normal transgene expression by expressing both parts of
+      the transgene
+  confidence: high
+  note: 'Worklist row 2. Serves PFO-145, whose note carries this qualifier. PFO-145 anchors L43,L45,L46 and
+    quotes from L45; this record anchors L46 alone and quotes a span PFO-145 does not use. Flagged for the
+    merge: the two anchors overlap at L46, which SCHEMA discourages, and L46 is the only line that states the
+    partial-expression finding. PARTLY CLOSED: what the line itself concludes is about SHORT days, and it does
+    not say which photoperiod the sampled early and late plants came from. The further inference in the PFO-145
+    note, that this weakens the long-day null for the cold-abundant variant, is the annotator''s and is not
+    stated here, so the chapter can state the uneven expression and the authors'' short-day reading but not
+    that the long-day null is thereby undermined.'
+- id: PFO-403
+  claim: The 2021 tobacco N-gene resistance comparison is a transient assay, not a plant-level one. Resistance
+    was scored as the size of virus infection foci seen by fluorescence microscopy in agroinfiltrated Nicotiana
+    benthamiana leaves, a host chosen because it mounts N-mediated resistance without visible cell death, rather
+    than as the resistance of a stable transgenic tobacco plant to inoculation.
+  topic: Disease resistance requiring alternative splicing
+  source:
+    doc_id: PMC8322402
+    title: Cooperative roles of introns 1 and 2 of tobacco resistance gene N in enhanced N transcript expression
+      and antiviral defense responses
+    authors: Ikeda, C.; Taku, K.; Miyazaki, T.; Shirai, R.; Nelson, R. S.; Nyunoya, H.; Matsushita, Y.; Sasaki,
+      N.
+    journal: Scientific Reports
+    year: 2021
+    doi: 10.1038/s41598-021-94713-4
+    bibkey: ikeda2021nintrons
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L80,L82
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8322402#L80,L82
+    quote: Changes in the size of infection foci indicated by GFP fluorescence were monitored under a fluorescent
+      microscope.
+  confidence: high
+  note: Worklist row 3, first of two. Serves PFO-184 (and PFO-153), whose note carries the assay qualifier.
+    PFO-184 anchors L36, the cell-death result; this record anchors L80 and L82, the design and the scoring
+    of the virus-resistance experiment, neither used by any PFO record. L82 is included because it is where
+    the authors call the expression transient. This is the paper's own description of its own assay, not a
+    report of earlier work.
+- id: PFO-404
+  claim: The constructs ran from the cauliflower mosaic virus 35S promoter rather than from the N gene's own
+    promoter, and the authors name the substitution themselves. They invoke it to explain why their result
+    differs from their own earlier work at the native promoter, where elicitor-responsive upregulation of N
+    needed both the four introns and a functional N protein, whereas under 35S the introns raise transcript
+    with or without the elicitor. Promoter is therefore a live variable in any comparison across these experiments.
+  topic: Disease resistance requiring alternative splicing
+  source:
+    doc_id: PMC8322402
+    title: Cooperative roles of introns 1 and 2 of tobacco resistance gene N in enhanced N transcript expression
+      and antiviral defense responses
+    authors: Ikeda, C.; Taku, K.; Miyazaki, T.; Shirai, R.; Nelson, R. S.; Nyunoya, H.; Matsushita, Y.; Sasaki,
+      N.
+    journal: Scientific Reports
+    year: 2021
+    doi: 10.1038/s41598-021-94713-4
+    bibkey: ikeda2021nintrons
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L88
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8322402#L88
+    quote: with the 35S promoter instead of the native N gene promoter (NP2.3)
+  confidence: high
+  note: 'Worklist row 3, second of two. Serves PFO-184. Separate record because the promoter substitution and
+    the transient-assay design are separate limits. L88 is in the discussion and is the paper''s own statement
+    about its own design. CORRECTION to the worklist framing: the earlier work L88 contrasts itself with is
+    this group''s own recent native-promoter study, its reference 16, not the 2000 Dinesh-Kumar experiment
+    behind PFO-150. The 2000 abstract never states which promoter its stable transgenics used, so a chapter
+    sentence saying the 2021 experiment changed the promoter relative to the 2000 one is NOT closed by anything
+    I read.'
+- id: PFO-405
+  claim: 'The tobacco construct that restored complete TMV resistance differed from the failing construct in
+    more than the alternative exon: alongside intron III it carried three-prime N genomic sequence, so the
+    rescue does not isolate the intron as the element supplied and the experiment cannot assign the restored
+    resistance to the alternative transcript alone.'
+  topic: Disease resistance requiring alternative splicing
+  source:
+    doc_id: '158958710'
+    title: 'Alternatively spliced N resistance gene transcripts: Their possible role in tobacco mosaic virus
+      resistance'
+    authors: Dinesh-Kumar, S. P.; Baker, B. J.
+    journal: Proceedings of the National Academy of Sciences
+    year: 2000
+    doi: 10.1073/pnas.020367497
+    bibkey: ngene2000alttranscripts
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/158958710#L1
+    quote: Transgenic plants containing a cDNA-N(S)-bearing intron III and containing 3' N-genomic sequences,
+      encoding both N(S) and N(L) transcripts, exhibit complete resistance to TMV.
+  confidence: high
+  note: Worklist row 4. Serves PFO-150, whose note carries this confound. Third record drawn from this abstract-only
+    document's single L1 line, after PFO-150 and PFO-151, under the SCHEMA exception; the quoted span does
+    not overlap either sibling's. The corpus holds only the abstract, so nothing further about the construct
+    can be stated.
+- id: PFO-406
+  claim: The division of labour between the two SR45 isoforms was measured under overexpression. Each isoform
+    was supplied to the sr45-1 mutant as an overexpressed green fluorescent protein fusion, so the petal and
+    root phenotypes separate two tagged proteins made at non-native amounts rather than two isoforms expressed
+    at the levels the plant normally uses.
+  topic: Splicing regulators with named targets
+  source:
+    doc_id: '108917874'
+    title: Two Alternatively Spliced Isoforms of the Arabidopsis SR45 Protein Have Distinct Roles during Normal
+      Plant Development
+    authors: Zhang, X. N.; Mount, S. M.
+    journal: Plant Physiology
+    year: 2009
+    doi: 10.1104/pp.109.138180
+    bibkey: sr452009distinctisoforms
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/108917874#L1
+    quote: We also tested the ability of each SR45 isoform to complement the sr45-1 mutant by overexpression
+      of isoform-specific green fluorescent protein (GFP) fusion proteins.
+  confidence: high
+  note: Worklist row 5. Serves PFO-190, whose note carries this qualifier. Third record on this abstract-only
+    document's L1 line after PFO-190 and PFO-191, under the SCHEMA exception; the quoted span does not overlap
+    either. The abstract states overexpression and GFP fusions in the authors' own words; it does not itself
+    contrast this with native-level expression, so that contrast is the limit the record draws and not a sentence
+    the paper writes.
+- id: PFO-407
+  claim: The nanopore survey misses retention that a short-read method finds in the same organisms. Illumina
+    data identified 1,272 intron-retention events in 856 Toxoplasma gondii genes and 2,008 events in 1,117
+    Plasmodium falciparum genes that the nanopore data did not, at the threshold used throughout, while between
+    78 and 87 per cent of the junction reads the nanopore data did flag were supported by Illumina reads. The
+    authors attribute the missed events to nanopore read depth, the Illumina coverage being about four times
+    the nanopore coverage for Toxoplasma and about forty times for Plasmodium, and expect more isoform quantification
+    from more sequencing runs.
+  topic: Apicomplexan splicing
+  source:
+    doc_id: PMC8561664
+    title: Direct Nanopore Sequencing of mRNA Reveals Landscape of Transcript Isoforms in Apicomplexan Parasites
+    authors: Lee, V. V.; Judd, L. M.; Jex, A. R.; Holt, K. E.; Tonkin, C. J.; Ralph, S. A.
+    journal: mSystems
+    year: 2021
+    doi: 10.1128/mSystems.01081-20
+    bibkey: lee2021apicomplexan
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L48
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8561664#L48
+    quote: 2,008 intron retention events corresponding to 1,117 genes in P. falciparum, in the Illumina data
+      set but not in the ONT data set
+  confidence: high
+  note: 'Worklist row 6, the part that is not already in PFO-253''s claim. Serves PFO-253, which anchors L42
+    and already carries the 1,887 and 1,446 expressed-gene denominators in its claim sentence; this record
+    anchors L48, which no PFO record uses. PARTLY CLOSED: the authors nowhere call their figure a floor, and
+    that word is the annotator''s. What they state is the missed events, the depth explanation and the expectation
+    of diminishing returns from more flow cells, and L42 separately reports that the proportions did not move
+    when the threshold was raised to ten reads. A chapter sentence may say the short-read comparison found
+    retained introns the nanopore data did not; it should not put the word floor in these authors'' mouths.'
+- id: PFO-408
+  claim: The trypanosome isoform knockdown has no fitness readout behind it. Removing only the mitochondrial
+    isoform left growth unaffected even as mitochondrial isoleucine transfer RNA accumulated uncharged, a result
+    the authors call surprising and explain either by residual mitochondrial enzyme or by import of transfer
+    RNA charged in the cytosol, so what the experiment demonstrates is a compartment-specific biochemical consequence
+    and not a cost to the cell.
+  topic: Alternative trans-splicing with a function
+  source:
+    doc_id: PMC3273800
+    title: Dual targeting of isoleucyl-tRNA synthetase in Trypanosoma brucei is mediated through alternative
+      trans-splicing
+    authors: Rettig, J.; Wang, Y.; Schneider, A.; Ochsenreiter, T.
+    journal: Nucleic Acids Research
+    year: 2012
+    doi: 10.1093/nar/gkr794
+    bibkey: rettig2011dualtargeting
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L44
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3273800#L44
+    quote: Despite the loss of charged tRNAIle in the mitochondrion we did not detect any growth defect.
+  confidence: high
+  note: Worklist row 7. Serves PFO-262, whose note carries this qualifier. PFO-262 anchors L38, the knockdown
+    result; this record anchors L44, the discussion, which no PFO record uses. The fact and the authors' two
+    explanations are both on the cited line. The framing of this as molecular rather than fitness is the limit
+    the record draws; the authors state the absent growth defect and their surprise at it, and say it does
+    not affect their conclusion about trans-splicing and dual targeting.
+- id: PFO-409
+  claim: The oomycete effector isoform comparison was run in a surrogate plant. Because the pathogen is obligate,
+    which the authors give as the reason such systems were developed, the two isoforms were compared by transient
+    heterologous expression in Nicotiana benthamiana rather than in Pseudoperonospora cubensis on cucumber,
+    so the experiment establishes a difference in what the two proteins do to a plant and not a requirement
+    for either during infection.
+  topic: Isoform-specific perturbation outside animals and plants
+  source:
+    doc_id: PMC3320632
+    title: Alternative Splicing of a Multi-Drug Transporter from Pseudoperonospora cubensis Generates an RXLR
+      Effector Protein That Elicits a Rapid Cell Death
+    authors: Savory, E. A.; Zou, C.; Adhikari, B. N.; Hamilton, J. P.; Buell, C. R.; Shiu, S. H.; Day, B.
+    journal: PLoS ONE
+    year: 2012
+    doi: 10.1371/journal.pone.0034701
+    bibkey: savory2012oomycete
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L42
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3320632#L42
+    quote: we utilized heterologous expression in N. benthamiana as means to characterize and determine the
+      function of PscRXLR1
+  confidence: high
+  note: Worklist row 8, first of two recordable parts. Serves PFO-277, whose note carries three qualifiers.
+    PFO-277 anchors L49; this record anchors L42, which no PFO record uses, and where the authors state both
+    the reason for the surrogate system and its use here.
+- id: PFO-410
+  claim: The infection time course behind this effector cannot be read isoform by isoform. The roughly tenfold
+    induction at one, two and four days after inoculation of cucumber was measured by quantitative reverse-transcription
+    PCR that the authors state could not distinguish the two isoforms, so the transcript shown to rise during
+    infection is not shown to be the intron-retained short form that is active in the leaf assay.
+  topic: Isoform-specific perturbation outside animals and plants
+  source:
+    doc_id: PMC3320632
+    title: Alternative Splicing of a Multi-Drug Transporter from Pseudoperonospora cubensis Generates an RXLR
+      Effector Protein That Elicits a Rapid Cell Death
+    authors: Savory, E. A.; Zou, C.; Adhikari, B. N.; Hamilton, J. P.; Buell, C. R.; Shiu, S. H.; Day, B.
+    journal: PLoS ONE
+    year: 2012
+    doi: 10.1371/journal.pone.0034701
+    bibkey: savory2012oomycete
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L54
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3320632#L54
+    quote: While we were unable to distinguish between isoforms, expression was induced nearly 10-fold at 1,
+      2 and 4 days post-inoculation
+  confidence: high
+  note: 'Worklist row 8, second of two recordable parts. Serves PFO-277. Anchored on L54, which no PFO record
+    uses. The third qualifier in PFO-277''s note, that cell death in Nicotiana can mean recognition rather
+    than toxicity, is NOT recorded: it is not stated anywhere in this paper, whose only treatment of recognition
+    and the hypersensitive response is generic introduction material at L11 about effector-triggered immunity,
+    with nothing said about this assay. It must be sourced elsewhere or dropped.'
+- id: PFO-411
+  claim: Snf2 acts twice on the same meiotic pathway with opposite signs. In diploid cells it is required for
+    expression of MER1 itself, the activator whose downstream splicing Snf2 otherwise suppresses through competition
+    for spliceosomes, and the authors place that requirement before Snf2 is itself downregulated and read it
+    as Snf2 being needed to overcome Ume6-dependent repression at the MER1 promoter. In the efficiently sporulating
+    SK1 strain, deleting SNF2 is lethal, so Mer1-dependent splicing could not be tested there at all.
+  topic: Meiosis-specific splicing regulation
+  source:
+    doc_id: PMC5570110
+    title: The chromatin remodeling complex Swi/Snf regulates splicing of meiotic transcripts in Saccharomyces
+      cerevisiae
+    authors: Venkataramanan, S.; Douglass, S.; Galivanche, A. R.; Johnson, T. L.
+    journal: Nucleic Acids Research
+    year: 2017
+    doi: 10.1093/nar/gkx373
+    bibkey: venkataramanan2017meiotic
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L75,L82
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC5570110#L75,L82
+    quote: Snf2 is required for MER1 expression in the diploid cells
+  confidence: high
+  note: Worklist row 9. Serves PFO-231, whose note carries both signs. PFO-231 anchors L48; this record anchors
+    L75 and L82, neither used by any PFO record. Both lines are the paper's own results and discussion of its
+    own diploid deletion, not a restatement of earlier work. The SK1 lethality is on L75 and bounds how general
+    the second role is.
+- id: PFO-412
+  claim: The yeast alternative-splice-site counts have a constructed denominator. From 880,312 mapped split
+    reads the pipeline defined 5,093 candidate junctions, of which 1,147 passed splice-signal and length tests,
+    698 survived the read-support cut and 447 the junction-quality cut, so the 447 predicted introns are what
+    the filters kept. They are not a count of introns in the genome, which the same paper puts at 400 annotated,
+    or 306 once mitochondrial, transfer-RNA and small-nucleolar introns are set aside.
+  topic: The intron-poor yeast contrast
+  source:
+    doc_id: PMC4607428
+    title: Alternative Splicing in Next Generation Sequencing Data of Saccharomyces cerevisiae
+    authors: Schreiber, K.; Csaba, G.; Haslbeck, M.; Zimmer, R.
+    journal: PLOS ONE
+    year: 2015
+    doi: 10.1371/journal.pone.0140487
+    bibkey: schreiber2015yeast
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L30,L32
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4607428#L30,L32
+    quote: After applying the junction quality filter to those, 447 predicted introns (8.8% of all potential
+      introns) remain
+  confidence: high
+  note: 'Worklist row 10. Serves PFO-219, whose note carries the denominator. PFO-219 anchors L33; this record
+    anchors L30 and L32, neither used by any PFO record: L32 carries the filtering cascade and L30 the 400
+    and 306 genome figures, and the record needs both because its point is the contrast between the two denominators.'
+- id: PFO-413
+  claim: 'The coverage-independent cross-species comparison rests on eight organisms, and almost none of them
+    belong to the lineages this chapter covers: Arabidopsis thaliana, Caenorhabditis elegans, Drosophila melanogaster,
+    Ciona intestinalis, chicken, mouse, rat and human, chosen for the depth of their expressed-sequence and
+    messenger-RNA data. That is one flowering plant, no fungus, no protist and no alga, so the vertebrate-over-invertebrate
+    ranking cannot be carried over to fungi or protists.'
+  topic: A coverage-independent cross-lineage result
+  source:
+    doc_id: PMC1802581
+    title: Different levels of alternative splicing among eukaryotes
+    authors: Kim, E.; Magen, A.; Ast, G.
+    journal: Nucleic Acids Research
+    year: 2007
+    doi: 10.1093/nar/gkl924
+    bibkey: kim2006eukaryotes
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L10
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC1802581#L10
+    quote: 'Our analysis included eight eukaryotic organisms that represent distinct evolutionary lineages:
+      flowering plants (Arabidopsis thaliana); nematodes (Caenorhabditis elegans)'
+  confidence: high
+  note: Worklist row 11. Serves PFO-305, whose note names the species list. PFO-305 anchors L5 and PFO-031
+    anchors L63 on the same document; this record anchors L10, which neither uses. The species list and the
+    selection criterion are both on the cited line.
+- id: PFO-414
+  claim: The viable overexpressors in the 2025 study contradict an earlier report, and the paper says so rather
+    than resolving it. A 2007 molecular characterisation of the Arabidopsis STRUBBELIG receptor family is reported
+    as having found overexpression of the full-length SRF1 product lethal to seedlings while overexpression
+    of the short product gave no obvious phenotype; this group obtained viable plants overexpressing the same
+    full-length product. The discrepancy is the earlier work as this paper reports it, not a result repeated
+    here.
+  topic: Splicing regulators with named targets
+  source:
+    doc_id: PMC12615492
+    title: A splicing regulator, SR45, suppresses plant immunity by regulating salicylic acid pathway in Arabidopsis
+      thaliana
+    authors: Bui, A.; Bui, A.; Gujral, I.; Fan, S.; Long, A.; Hu, A.; Chin, C.; Powers, J.; Yang, R.; Gao,
+      M.; Zhang, C.; Lu, H.; Cooper, B.; Zhang, X. N.
+    journal: Frontiers in Plant Science
+    year: 2025
+    doi: 10.3389/fpls.2025.1704701
+    bibkey: bui2025sr45immunity
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L80,L129
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12615492#L80,L129
+    quote: this study reported that an overexpression of SRF1.6/SRF1B gave no obvious phenotype, while an overexpression
+      of SRF1.5/SRF1A led to seedling lethality
+  confidence: high
+  note: 'Worklist row 12. Serves PFO-178, whose note carries this. ANSWERING THE ROW''S QUESTION: this is the
+    paper reporting earlier work, not its own experiment; the earlier study is Eyuboglu et al. 2007, BMC Plant
+    Biology 7:16, doi 10.1186/1471-2229-7-16, named in this document''s reference list at L129, and I did not
+    check whether it is in the corpus. Anchor is L80,L129 rather than L80 alone because L80 is already PFO-178''s
+    anchor and L129 is where the cited study is identified; the quoted span does not overlap PFO-178''s. L80
+    is the only line in the document that carries the seedling-lethality statement.'
+- id: PFO-415
+  claim: A 2014 review of alternative splicing in plant immunity raises the objection that flax L6 may not
+    be a clean negative. Because the homologous M rust-resistance locus is itself alternatively spliced, the
+    review suggests that splicing at M could functionally substitute for splicing at L6 in plants carrying
+    the intronless L6 transgene, reasoning from a case in which a potato Rx derivative lacking its coiled-coil
+    domain was complemented in trans by the related protein Gpa2.
+  topic: Disease resistance requiring alternative splicing
+  source:
+    doc_id: PMC4100160
+    title: Alternative Splicing in Plant Immunity
+    authors: Yang, S.; Tang, F.; Zhu, H.
+    journal: International Journal of Molecular Sciences
+    year: 2014
+    doi: 10.3390/ijms150610424
+    bibkey: yang2014plantimmunity
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L33
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4100160#L33
+    quote: it is possible that AS of the M locus could functionally substitute for AS of L6
+  confidence: high
+  note: 'Worklist row 13, first of four. Serves PFO-158, whose note and the file''s leads block say this caveat
+    could not be anchored. It can: it is in the corpus at PMC4100160, which no record in the book cites, so
+    this source block and the bibkey yang2014plantimmunity are new. Cited as a review for its own argument,
+    which CONTRIBUTING permits; it is not cited here for any primary finding. The claim is worded as the review''s
+    suggestion because that is what the line says.'
+- id: PFO-416
+  claim: The same review then reports evidence against the objection it has just raised. Transient co-expression
+    of the intronless L6 transgene with its matching effector in tobacco still produced an apparent hypersensitive
+    response, which the review takes as arguing that the flax M locus is not propping up the intronless result
+    in trans.
+  topic: Disease resistance requiring alternative splicing
+  source:
+    doc_id: PMC4100160
+    title: Alternative Splicing in Plant Immunity
+    authors: Yang, S.; Tang, F.; Zhu, H.
+    journal: International Journal of Molecular Sciences
+    year: 2014
+    doi: 10.3390/ijms150610424
+    bibkey: yang2014plantimmunity
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L34,L148
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4100160#L34,L148
+    quote: Transient co-expression of L6RT and AvrL6 in tobacco gives rise to apparent HR, which argues against
+      any interference by the M locus
+  confidence: high
+  note: 'Worklist row 13, second of four, and the surprise in this task. The leads block and the PFO-158 note
+    treat the M-locus substitution as an unresolved caveat the chapter must carry; the review that states it
+    rebuts it in the very next sentence. The rebuttal is weak twice over and the chapter must not be flipped
+    the other way on it. First, it rests on a transient tobacco assay, and the same paragraph then argues that
+    transient assays have not been established as a way to test splicing roles in resistance genes, which is
+    PFO-417. Second, the source the review cites for it, its reference 86 at L148, is itself another review:
+    Gassmann W., Alternative splicing in plant defense, Current Topics in Microbiology and Immunology 326:219-233
+    (2008), doi 10.1007/978-3-540-76776-3_12, which I did not look for in the corpus. Anchored L34,L148 so
+    the cited source is part of the record. Shares L34 with PFO-417 and PFO-425, with three non-overlapping
+    quoted spans.'
+- id: PFO-417
+  claim: The review's standing objection to both negative resistance-gene cases is the assay rather than the
+    locus. It holds that transient expression, however well it has served for isolating resistance genes, has
+    not been established as a way to test what splicing does for one; that the hypersensitive response seen
+    could come instead from partial resistance conferred by an endogenous full-length resistance protein such
+    as tobacco N; and that the alternative L6 and Bs4 isoforms were themselves never put through a transient
+    assay, so these experiments may not reflect what splicing does physiologically.
+  topic: Disease resistance requiring alternative splicing
+  source:
+    doc_id: PMC4100160
+    title: Alternative Splicing in Plant Immunity
+    authors: Yang, S.; Tang, F.; Zhu, H.
+    journal: International Journal of Molecular Sciences
+    year: 2014
+    doi: 10.3390/ijms150610424
+    bibkey: yang2014plantimmunity
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L34
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4100160#L34
+    quote: whether this system can reliably be used to analyze functional roles for AS of R genes remains to
+      be established
+  confidence: high
+  note: Worklist row 13, third of four, and the published source for the transient-assay objection that the
+    PFO-188 note attributes to this document. All of the claim is on L34. Shares that line with PFO-416 and
+    PFO-425, with three non-overlapping quoted spans; flagged for the merge. This is the review's argument,
+    not a primary finding, and it applies to the L6 and Bs4 negatives together.
+- id: PFO-418
+  claim: 'The premise of the substitution objection is a real finding: the flax M rust-resistance gene was
+    reported in 2007 to make twelve splice isoforms predicted to encode at least nine polypeptides, only one
+    of them full length, plus a leader intron whose retention is predicted to suppress translation of the full-length
+    product. The study assigned no function to any isoform.'
+  topic: Disease resistance requiring alternative splicing
+  source:
+    doc_id: '118626359'
+    title: The M flax rust resistance pre-mRNA is alternatively spliced and contains a complex upstream untranslated
+      region
+    authors: Schmidt, S.; Lombardi, M.; Gardiner, D. M.; Ayliffe, M.; Anderson, P. A.
+    journal: Theoretical and Applied Genetics
+    year: 2007
+    doi: 10.1007/s00122-007-0571-8
+    bibkey: mlocus2007alternativesplicing
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/118626359#L1
+    quote: We report 12 splice isoforms of the M flax rust resistance gene, a TIR-NBS-LRR class of R gene.
+  confidence: high
+  note: 'Worklist row 13, fourth of four. Recorded against the primary rather than against the review, because
+    the existence of alternative splicing at M is a primary finding and CONTRIBUTING forbids citing a review
+    for one. Abstract-only record, new to the book, so the source block and the bibkey mlocus2007alternativesplicing
+    are new and title-derived: meta.json carries no author list or journal, so both are RESOLVE_FROM_DOI per
+    SCHEMA. Note that the abstract explicitly says the function of the isoforms is unclear, which weakens the
+    trans-substitution hypothesis further.'
+- id: PFO-419
+  claim: The tomato Bs4 negative rests on effector detection and not on infection alone. The paper's hypersensitive-response
+    tests delivered the avirulence proteins into the plant through Agrobacterium transfer DNA, and under that
+    delivery Bs4 responded to AvrBs3 as well as to AvrBs4, a response that Xanthomonas infection tests did
+    not produce. The abstract does not say which delivery route was used for the intron-deprived derivative.
+  topic: Disease resistance requiring alternative splicing
+  source:
+    doc_id: '136548158'
+    title: The tomato resistance protein Bs4 is a predicted non-nuclear TIR-NB-LRR protein that mediates defense
+      responses to severely truncated derivatives of AvrBs4 and overexpressed AvrBs3
+    authors: Schornack, S.; Ballvora, A.; Gürlebeck, D.; Peart, J.; Ganal, M.; Baker, B.; Bonas, U.; Lahaye,
+      T.
+    journal: The Plant Journal
+    year: 2004
+    doi: 10.1046/j.1365-313x.2003.01937.x
+    bibkey: bs42004tirnblrr
+    metadata_source: crossref
+  evidence:
+    text_access: abstract_only
+    lines: L1
+    anchor: https://paperclip.gxl.ai/citations/papers/136548158#L1
+    quote: when delivered via Agrobacterium T-DNA transfer, both, avrBs4 and avrBs3 trigger a Bs4-dependent
+      hypersensitive response
+  confidence: high
+  note: 'Worklist row 14. Serves PFO-188, whose note carries the assay qualifier. Third record on this abstract-only
+    document''s L1 line after PFO-188 and PFO-189, under the SCHEMA exception; the quoted span does not overlap
+    either. The last sentence of the claim is the honest limit: the abstract establishes that Agrobacterium
+    delivery was used for the recognition-specificity work and that an intron-deprived derivative still mediated
+    detection, but it does not join the two, and the corpus holds no full text. PFO-425 is the published statement,
+    from a later review, that the intron-deprived Bs4 test was a transient expression experiment, which is
+    the link this abstract does not make. The matching published objection to transient assays for this case
+    is PFO-417.'
+- id: PFO-420
+  claim: The statement that the two HEH1 products sit in the inner nuclear membrane in different orientations
+    is not a result of the 2025 splicing paper. It appears in that paper's introduction, in a sentence that
+    cites four earlier studies, and nothing in the paper's results tests how either product is arranged in
+    the membrane; what those results establish is the mechanism of choice between two competing five-prime
+    splice sites, measured as isoform abundance on western blots and as the pairing of U5 and U6 small nuclear
+    RNAs to the two sites.
+  topic: Yeast alternative splicing with a consequence
+  source:
+    doc_id: PMC12830679
+    title: Mechanism of alternative splicing of yeast HEH1 through competing 5' splice sites
+    authors: Banyal, A. K.; Choudhuri, P.; Pillai, B. R.; Varikkapulakkal, A.; Mishra, S. K.
+    journal: Nature Communications
+    year: 2025
+    doi: 10.1038/s41467-025-67659-8
+    bibkey: banyal2025heh1
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L9,L12,L99-L102
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12830679#L9,L12,L99-L102
+    quote: The HEH1 gene (also called SRC1) in S. cerevisiae is alternatively spliced
+  confidence: high
+  note: 'Worklist row 15, first of two, and the correction. ANSWERING THE ROW''S QUESTION: the topology claim
+    is the introduction restating earlier work. PFO-212 anchors L12 for the topology and its own note already
+    suspects this; the chapter as published cites banyal2025heh1 for the topology, which is a misattribution
+    and should be repointed to PFO-421. Verified rather than taken from the note: L9 is the Introduction heading,
+    the sentence at L12 carries citations 15 to 18, and those four references are at L99 to L102 (Grund 2008;
+    Mekhail 2008; Schreiner 2015; Capella 2020). A grep of the whole document for topolog returns L12 only,
+    and a second grep for orientation, transmembrane, nucleoplasm, perinuclear and lumen returns nothing anywhere
+    in the document; the results sections are splicing-factor westerns, reporter constructs and snRNA pairing.
+    Anchored on the comma list rather than L12 alone, both to avoid duplicating PFO-212''s anchor and because
+    the reference lines are part of what the claim asserts.'
+- id: PFO-421
+  claim: The topology belongs to a 2008 study of the same yeast gene under its other name, SRC1, and it was
+    measured rather than assumed. Using an inducible protease to test which tagged terminus could be reached
+    from the nucleoplasm, the authors found the long product crossing the inner nuclear membrane twice with
+    both of its ends facing the nucleoplasm, and the short product, which lacks the second and less hydrophobic
+    membrane-spanning segment, crossing once and leaving a short carboxy-terminal tail in the perinuclear space.
+  topic: Yeast alternative splicing with a consequence
+  source:
+    doc_id: PMC2528585
+    title: The inner nuclear membrane protein Src1 associates with subtelomeric genes and alters their regulated
+      gene expression
+    authors: Grund, S. E.; Fischer, T.; Cabal, G. G.; Antúnez, O.; Pérez-Ortín, J. E.; Hurt, E.
+    journal: The Journal of Cell Biology
+    year: 2008
+    doi: 10.1083/jcb.200803098
+    bibkey: grund2008src1
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L28
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2528585#L28
+    quote: Src1-L spans the inner nuclear membrane twice with the N and C domain exposed to the nucleoplasm
+  confidence: high
+  note: 'Worklist row 15, second of two, and the repair for the misattribution in PFO-420: this is the source
+    the chapter''s topology sentence should carry. New to the book, so the source block and the bibkey grund2008src1
+    are new. This is the paper''s own result, in its results section, with the assay described on the cited
+    line. It is reference 15 of the four that banyal2025heh1 cites for the topology; of the other three, Capella
+    2020 is in the corpus as preprint bio_70bf78596dd2 and record PFO-214 cites it, but a grep of that document
+    for topolog and for the termini returns nothing on orientation, so it cannot carry the claim.'
+- id: PFO-422
+  claim: Specificity in the transportin-SR mutant is partial on the authors' own reading. Alongside the unchanged
+    actin and beta-tubulin transcripts, one of the three alternatively spliced genes tested as a further control,
+    U1-70K, was unchanged, but the other two, AtSR30 and AtSR34, clearly shifted, and the conclusion the authors
+    draw from the set is that some level of specificity exists in what this importin affects, not that the
+    resistance genes are a clean target list.
+  topic: Splicing regulators with named targets
+  source:
+    doc_id: PMC3128105
+    title: Transportin-SR Is Required for Proper Splicing of Resistance Genes and Plant Immunity
+    authors: Xu, S.; Zhang, Z.; Jing, B.; Gannon, P.; Ding, J.; Xu, F.; Li, X.; Zhang, Y.
+    journal: PLoS Genetics
+    year: 2011
+    doi: 10.1371/journal.pgen.1002159
+    bibkey: xu2011mos14
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L48
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3128105#L48
+    quote: there may be a certain level of specificity in MOS14-mediated pre-mRNA processing
+  confidence: high
+  note: 'Worklist row 16. Serves PFO-169, whose note carries this. PFO-169 anchors L48,L49 and quotes the actin
+    and beta-tubulin sentence; this record anchors L48 alone and quotes the authors'' own specificity sentence,
+    which is the wording the row asked for. Flagged for the merge: the two anchors overlap at L48, and L48
+    is the only line carrying the SR-protein result.'
+- id: PFO-423
+  claim: 'The ten-point gap between the two Arabidopsis prevalence figures is not all intron retention. The
+    authors attribute the difference jointly to two things: admitting transcripts with retained introns, and
+    their own junction filter, which kept 91 per cent of splice junctions and so lost some of the rest. An
+    unknown part of the gap is therefore the filter, and the chapter should not assign all ten points to what
+    the junction-blind method cannot see.'
+  topic: The counting rule is worth ten percentage points
+  source:
+    doc_id: PMC3371709
+    title: Transcriptome survey reveals increased complexity of the alternative splicing landscape in Arabidopsis
+    authors: Marquez, Y.; Brown, J. W.; Simpson, C.; Barta, A.; Kalyna, M.
+    journal: Genome Research
+    year: 2012
+    doi: 10.1101/gr.134106.111
+    bibkey: marquez2012arabidopsis
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L36
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3371709#L36
+    quote: reflects the addition of intron retention transcripts and the filtering criteria which results in
+      loss of some splice junctions
+  confidence: high
+  note: 'Worklist row 17. Serves PFO-312, whose note carries this. ANSWERING THE ROW''S QUESTION: the paper
+    does tie the filter to the gap itself, in the same sentence as the two percentages, rather than merely
+    reporting 91 per cent somewhere else, so the qualifier is the authors'' own attribution and not an inference.
+    Flagged for the merge: PFO-312 anchors L36 and quotes the first half of that sentence; this record anchors
+    L36 and quotes the second half, which is an exact anchor collision on a full-text document, and L36 is
+    the only line in the paper that carries the attribution.'
+- id: PFO-424
+  claim: The same review's net verdict on flax runs the other way from a clean reading of the L6 result. It
+    reports that tobacco carrying an L6 genomic construct was stunted by constitutive defence responses, and
+    so was tobacco expressing the intronless L6 from a 35S promoter, which would suggest splicing is irrelevant;
+    but it holds that no firm conclusion follows, because no tobacco transformant expressed the intronless
+    L6 from the gene's own promoter. It adds that the one stunted L10 transformant owed its phenotype to an
+    extra truncated transcript from an aberrant insertion, and concludes that the functional significance of
+    splicing at L6 may have been undervalued.
+  topic: Disease resistance requiring alternative splicing
+  source:
+    doc_id: PMC4100160
+    title: Alternative Splicing in Plant Immunity
+    authors: Yang, S.; Tang, F.; Zhu, H.
+    journal: International Journal of Molecular Sciences
+    year: 2014
+    doi: 10.3390/ijms150610424
+    bibkey: yang2014plantimmunity
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L35
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4100160#L35
+    quote: These findings point to the possibility that the functional significance of AS in L6 has been undervalued.
+  confidence: high
+  note: Worklist row 13, added beyond the four the row asked for because it is the review's net verdict on
+    flax and the row asked for the published caveat on the L6 result. Anchored L35, which no other record uses.
+    This is the review arguing from primaries it cites, its reference 88, Frost et al. 2004, Molecular Plant-Microbe
+    Interactions 17:224-232, not a result of its own, and I did not check that primary against the corpus.
+    Read with PFO-415, PFO-416 and PFO-417, the review's position is that the flax negative is not safe in
+    either direction, which is a different thing from the trans-substitution hypothesis the leads block singles
+    out.
+- id: PFO-425
+  claim: 'The published description of the tomato Bs4 negative names the assay that the paper''s own abstract
+    leaves open: a 2014 review states that the intronless Bs4 result came from transient expression, and cites
+    the 2004 Bs4 paper for it. That puts Bs4 under the same transient-assay objection as flax L6, which the
+    review raises in the same breath.'
+  topic: Disease resistance requiring alternative splicing
+  source:
+    doc_id: PMC4100160
+    title: Alternative Splicing in Plant Immunity
+    authors: Yang, S.; Tang, F.; Zhu, H.
+    journal: International Journal of Molecular Sciences
+    year: 2014
+    doi: 10.3390/ijms150610424
+    bibkey: yang2014plantimmunity
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L34,L141
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4100160#L34,L141
+    quote: transient expression of intronless Bs4 revealed that the normal Bs4 protein alone could mediate
+      AvrBs4 recognition
+  confidence: high
+  note: Worklist row 14, second of two, and the piece PFO-419 could not supply from an abstract. Serves PFO-188.
+    The reference the review cites at L34 is its number 79, at L141, which is Schornack et al. 2004, The Plant
+    Journal, the same paper as doc 136548158 and bibkey bs42004tirnblrr; both lines are in the anchor for that
+    reason. Cited as a review for its characterisation of an assay, not for a primary finding. Shares L34 with
+    PFO-416 and PFO-417, with three non-overlapping quoted spans.
 leads:
 - note: 'PFO-034 was retired on 2026-11-22 and replaced by PFO-249. It was anchored on the bioRxiv preprint
     bio_3530267271b7 and said the SP7-like effector family shifts the host alternative splicing programme.
@@ -8098,17 +8818,17 @@ leads:
     not exist.
 
     '
-- note: 'Caveat on PFO-158 that I could not anchor in a primary: the flax M locus, homologous to L, is itself
-    alternatively spliced and might substitute in trans for the missing L6 alternative transcripts, which would
-    make the intronless-L6 result less decisive. Stated at PMC4100160 L33-L34, where the same paragraph also
-    argues the transient assays used for L6 and Bs4 may not reflect physiology. An abstract-only corpus record
-    exists for the M locus splicing paper: doc 118626359, doi 10.1007/s00122-007-0571-8.
-
-    '
-  why: 'The chapter should not present flax as a clean counterexample without this qualifier, and doc 118626359
-    is already in the corpus and can be read without a new search.
-
-    '
+- note: CLOSED on 2026-11-22. The caveat is anchored, and it is not what this lead said it was. PFO-415 records
+    the M-locus trans-substitution objection from PMC4100160 L33, and PFO-416 records the same review rebutting
+    it in the next sentence, on the ground that transient co-expression of intronless L6 with its effector
+    still gave an apparent hypersensitive response. PFO-417 carries the review's standing objection, which
+    is to the transient assay rather than to the locus, and reaches the Bs4 result too through PFO-425. PFO-424
+    carries the review's net verdict, that no tobacco transformant expressed intronless L6 from the gene's
+    own promoter and the significance of splicing at L6 may have been undervalued. The chapter now states the
+    dispute rather than the caveat alone.
+  why: 'Kept rather than deleted because the rebuttal is itself weak twice over: it rests on a transient assay
+    that the same paragraph argues is not established for this purpose, and the source the review cites for
+    it is another review. Anyone revisiting flax should read that chain before treating any of it as settled.'
 - note: 'Barley Mla6 and Mla13 alternatively splice their 5'' UTRs, which contain three upstream open reading
     frames, and mutating the uORFs changes Mla13 synthesis; whether resistance requires the UTR splicing is
     unknown. Read at PMC4100160 L40. Rice Pi-ta has twelve identified transcript isoforms predicted to encode
