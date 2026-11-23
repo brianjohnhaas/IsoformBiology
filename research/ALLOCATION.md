@@ -27,7 +27,7 @@ Deepening order, and why:
 | 2 | 5 long reads | The reader's own field. STYLE.md promises full explanations of EM-based quantification, internal priming and read-support thresholds, and the book explains none of them |
 | 3 | 2 animals | **Done.** 1,865 to 7,087 words from 125 records. The full-text recovery pass failed: of thirteen abstract-only sources named for recovery, one was recovered, through the authors' own preprint. Abstract-only sources in this chapter rose from fifteen to thirty-eight, because deepening a chapter whose literature is largely pre-PMC adds abstracts |
 | 4 | 3 plants, fungi, protists | **Done.** 1,861 to 11,861 words from 236 records, the longest chapter in the book. Selection was by evidence tier rather than by coverage: a named gene, an isoform-specific perturbation, a measured phenotype. Transcriptome-wide prevalence counts went to leads unless they bound a named case. Abstract-only sources rose from one to thirty-one |
-| 5 | 6 cancer | Widest audience, and the leads list CD44, RAC1b, EGFRvIII and BRAF splice variants as unanchored |
+| 5 | 6 cancer | **Done.** 1,779 to 10,070 words from 163 records. The classic cases named in the leads were mostly homed elsewhere already: chapter 2 owns Bcl-x, PKM, FGFR2 and ESRP, chapter 12 owns BRAF, AR-V7 and CD44v6. What the pass added instead is the bounding experiment for each case it does own, and the clinical arc from E7107 forward. EGFRvIII is excluded in one sentence as a genomic deletion. CD20 antigen loss went to chapter 12, beside CD19 |
 | 6 | later | 1, 4, 7, 8, 9, 10, 11, 13 |
 
 A chapter is not finished when it hits a word count. It is finished when its
@@ -210,19 +210,20 @@ quote against the document it was taken from, which is the preprint, and
 `build_bib.py` emits the journal. Either confirm each number against the
 published text or cite the preprint.
 
-**A hundred and one sources are abstract-only**, and none appears with fuller
+**A hundred and twenty sources are abstract-only**, and none appears with fuller
 access anywhere else in the records. The count more than doubled across the
 chapter 2 and chapter 3 passes, for the reason given in the deepening table:
-deepening a chapter whose literature is largely pre-PMC adds abstracts. They are
-concentrated:
+deepening a chapter whose literature is largely pre-PMC adds abstracts. The
+chapter 6 pass added eighteen more, because the classic oncogenic isoform cases
+and the older clinical trials are pre-PMC too. They are concentrated:
 
 ```
 02-animals             38
-03-plants-fungi-other  31
+03-plants-fungi-other  32
+06-cancer              20
 04-technology-arc      18
 12-proteoforms-drugs    7
 07-neuro-mendelian      5
-06-cancer               2
 10-variants-qtl         1
 ```
 

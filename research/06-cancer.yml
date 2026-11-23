@@ -1163,7 +1163,7 @@ claims:
       Karr, C.; Keaney, G. F.; Klimek, V. M.; Kunii, K.; Lee, L.; Lee, S. C. W.; Liu, X.; Meeske, C.; Mizui,
       Y.; Padron, E.; Park, E.; Pazolli, E.; Prajapati, S.; Taylor, J.; Wang, J.; Warmuth, M.; Yu, L.; Zhu,
       P.; Abdel-Wahab, O.; Smith, P. G.
-    journal: Blood
+    journal: Blood (ASH Annual Meeting Abstracts)
     year: 2016
     doi: 10.1182/blood.v128.22.966.966
     bibkey: buonamici2016h3b8800
@@ -1176,18 +1176,19 @@ claims:
 
       '
   confidence: medium
-  note: 'VERIFICATION JOB 3, resolved, and the record was already RIGHT. meta.json for doc_id 27477961 carries
-    no authors field, as the lead says. The ordered list was resolved from the Crossref record for DOI 10.1182/blood.v128.22.966.966,
-    which carries 28 authors in sequence, Buonamici, S. first and Smith, P. G. last; it matches the list recorded
-    here name for name and position for position. The lead''s suspicion that the names came from the abstract''s
-    disclosure block is wrong: the disclosure block lists only 18 surnames in a different order and omits Yoshimi,
-    Keaney, Klimek, Kunii, Lee, Padron, Park, Taylor and Abdel-Wahab, all of which are in the record. One real
-    defect remains: the bibkey is buonamici2016h3b8800 while the first author is Buonamici, so the key does
-    not follow the lastname-year-keyword rule. It is left unchanged here because chapters/06-cancer.qmd already
-    cites @buonamici2016h3b8800; see the lead below. tier: clinical outcome - no; this is a preclinical conference
-    abstract, tier: isoform-specific perturbation with phenotype (isogenic knock-in cells and mouse xenografts).
-
-    '
+  note: "VERIFICATION JOB 3, resolved, and the record was already RIGHT. meta.json for doc_id 27477961 carries\
+    \ no authors field, as the lead says. The ordered list was resolved from the Crossref record for DOI 10.1182/blood.v128.22.966.966,\
+    \ which carries 28 authors in sequence, Buonamici, S. first and Smith, P. G. last; it matches the list\
+    \ recorded here name for name and position for position. The lead's suspicion that the names came from\
+    \ the abstract's disclosure block is wrong: the disclosure block lists only 18 surnames in a different\
+    \ order and omits Yoshimi, Keaney, Klimek, Kunii, Lee, Padron, Park, Taylor and Abdel-Wahab, all of which\
+    \ are in the record. One real defect remains: the bibkey is buonamici2016h3b8800 while the first author\
+    \ is Buonamici, so the key does not follow the lastname-year-keyword rule. It is left unchanged here because\
+    \ chapters/06-cancer.qmd already cites @buonamici2016h3b8800; see the lead below. tier: clinical outcome\
+    \ - no; this is a preclinical conference abstract, tier: isoform-specific perturbation with phenotype (isogenic\
+    \ knock-in cells and mouse xenografts).\n CORRECTED 2026-11-22: journal field now names this as a meeting\
+    \ abstract, because the bibliography would otherwise render a conference abstract as a peer-reviewed Blood\
+    \ paper."
 - id: CAN-035
   claim: 'Clinical translation of SF3B1 modulation has so far failed on efficacy: in the phase 1 dose-expansion
     cohorts of NCT02841540, in transfusion-dependent SF3B1-mutant lower-risk MDS, only two patients in each
@@ -1273,8 +1274,9 @@ claims:
     '
 - id: CAN-102
   claim: 'The same MDM2-ALT1 transgene restricted to B cells in mice with two intact p53 alleles did not change
-    life expectancy, yet by 18 months lymphoma had appeared in 19 of 34 transgenic animals against 11 of 41
-    controls, and the spleens of the transgenic mice held fewer cells carrying B cell markers rather than more.
+    life expectancy, yet in a separate cohort harvested before endpoint, lymphoma had appeared in 19 of 34
+    transgenic animals against 11 of 41 controls, and the spleens of the transgenic mice held fewer cells carrying
+    B cell markers rather than more.
 
     '
   topic: MDM2-ALT1 is context-dependent, not simply oncogenic
@@ -1297,20 +1299,20 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. This is the record that stops the MDM2-ALT1 story
-    being told as a clean oncogene. The isoform was originally characterised as something that blocks full-length
-    MDM2 and so stabilises p53, which is a tumour-suppressive job; the mouse shows the same isoform doing the
-    opposite job once p53 is gone, and doing something ambiguous (fewer B cells, more late lymphoma) when p53
-    is intact. Same paper and same laboratory as CAN-101, which is why CAN-103 matters. The B cell cohort was
-    followed to a maximum of two years and 21 days, and the raised incidence is a count at 18 months of age,
-    not a survival difference.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype. This is the record that stops the MDM2-ALT1 story\
+    \ being told as a clean oncogene. The isoform was originally characterised as something that blocks full-length\
+    \ MDM2 and so stabilises p53, which is a tumour-suppressive job; the mouse shows the same isoform doing\
+    \ the opposite job once p53 is gone, and doing something ambiguous (fewer B cells, more late lymphoma)\
+    \ when p53 is intact. Same paper and same laboratory as CAN-101, which is why CAN-103 matters. The B cell\
+    \ cohort was followed to a maximum of two years and 21 days, and the raised incidence is a count at 18\
+    \ months of age, not a survival difference.\n CORRECTED 2026-11-22 by a records review against the cited\
+    \ lines: the survival comparison used 18 transgenic and 15 control animals to endpoint (L28); the lymphoma\
+    \ counts come from a different cohort necropsied at 18 to 22 months (L29)."
 - id: CAN-103
   claim: 'Overexpressing MDM2-ALT1 and two sibling MDM2 splice forms in MCF-7 breast cancer cells changed where
-    the proteins sat in the cell and how long they survived after chemotherapy, and raised the pro-apoptotic
-    transcript PUMA, but left apoptosis and senescence unchanged whether or not the cells were treated with
-    doxorubicin.
+    all three proteins sat in the cell, lengthened the half-life of two of them after chemotherapy, and raised
+    the pro-apoptotic transcript PUMA for two of them in treated cells, but left apoptosis and senescence unchanged
+    whether or not the cells were treated with doxorubicin.
 
     '
   topic: MDM2-ALT1 - an independent laboratory finds no cellular phenotype
@@ -1334,15 +1336,15 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype, phenotype null. The naming has to be handled carefully
-    in prose: this paper calls the exon 4-11 skipping form MDM2-B and states at L24 that MDM2-B is ALT1, so
-    MDM2-B here and MDM2-ALT1 in CAN-101 and CAN-102 are the same isoform. This is a transient overexpression
-    experiment in one cell line, so it bounds rather than refutes the mouse: it says the isoform does not kill
-    or arrest cells on its own in MCF-7, not that it does nothing in an animal. Bergen group, no shared authors
-    with the Chandler laboratory that produced CAN-101 and CAN-102. The same line also records that MDM2-B
-    did not change p21 levels, contradicting an earlier report the authors cite.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype, phenotype null. The naming has to be handled carefully\
+    \ in prose: this paper calls the exon 4-11 skipping form MDM2-B and states at L24 that MDM2-B is ALT1,\
+    \ so MDM2-B here and MDM2-ALT1 in CAN-101 and CAN-102 are the same isoform. This is a transient overexpression\
+    \ experiment in one cell line, so it bounds rather than refutes the mouse: it says the isoform does not\
+    \ kill or arrest cells on its own in MCF-7, not that it does nothing in an animal. Bergen group, no shared\
+    \ authors with the Chandler laboratory that produced CAN-101 and CAN-102. The same line also records that\
+    \ MDM2-B did not change p21 levels, contradicting an earlier report the authors cite.\n CORRECTED 2026-11-22\
+    \ by a records review against the cited lines: the three attributions apply to different subsets of the\
+    \ three isoforms (L13, L87)."
 - id: CAN-104
   claim: 'A human RAC1B complementary DNA knocked into the Rosa26 locus and switched on in mouse intestinal
     epithelium carrying Apc and Trp53 deletions shortened survival and raised the number of intestinal tumours,
@@ -1465,20 +1467,21 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Abstract-only record, PMID 29985482; meta.json
-    carries no author list or journal, so both are RESOLVE_FROM_DOI and the bibkey is title-derived. The abstract
-    states the opposite directions plainly: enhanced in Apc-mutant and interleukin-10 null settings, alleviated
-    in the azoxymethane and dextran sulfate setting, which the authors attribute to faster mucosal repair.
-    This is a different laboratory from CAN-104 to CAN-106 and uses a comparable Rosa26 knock-in strategy,
-    which makes the agreement on tumour promotion in an Apc background meaningful and the azoxymethane result
-    a genuine limit rather than a technical difference. The abstract''s claim that the isoform alone is insufficient
-    also bounds any statement that RAC1B is an oncogene.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype. Abstract-only record, PMID 29985482; meta.json\
+    \ carries no author list or journal, so both are RESOLVE_FROM_DOI and the bibkey is title-derived. The\
+    \ abstract states the opposite directions plainly: enhanced in Apc-mutant and interleukin-10 null settings,\
+    \ alleviated in the azoxymethane and dextran sulfate setting, which the authors attribute to faster mucosal\
+    \ repair. This is a different laboratory from CAN-104 to CAN-106 and uses a comparable Rosa26 knock-in\
+    \ strategy, which makes the agreement on tumour promotion in an Apc background meaningful and the azoxymethane\
+    \ result a genuine limit rather than a technical difference. The abstract's claim that the isoform alone\
+    \ is insufficient also bounds any statement that RAC1B is an oncogene.\n UPDATE 2026-11-22: this record's\
+    \ metadata has since been resolved against Crossref, so the RESOLVE_FROM_DOI sentence above is stale and\
+    \ the bibkey is first-author-derived."
 - id: CAN-108
   claim: 'Human prostate cancer cells transfected to make VEGF165b, the form produced when the splicing machinery
     picks a downstream site in the final exon, grew into smaller tumours in nude mice than control-transfected
-    cells, and the same construct reduced tumour size in Ewing sarcoma and renal carcinoma xenografts.
+    cells, and the same construct significantly reduced tumour size in Ewing sarcoma xenografts, with a reduction
+    in renal carcinoma xenografts that the authors report as not significant.
 
     '
   topic: VEGF-A - the b isoform as a tumour-suppressive counterpart
@@ -1501,14 +1504,14 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Two isoforms of one gene that differ only in which
-    3-prime splice site the terminal exon uses, with opposite effects on the vasculature a tumour needs, which
-    is why the case is a textbook one. The writing pass must not state it without CAN-109 to CAN-111. An honest
-    detail in the same paper, at L39, is that in a second experiment the reduction in tumour volume for VEGF165b
-    against control transfectants was not significant; the significant comparison there was against VEGF165.
-    Bristol laboratory of Bates and Harper, which is also the laboratory of CAN-112.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype. Two isoforms of one gene that differ only in which\
+    \ 3-prime splice site the terminal exon uses, with opposite effects on the vasculature a tumour needs,\
+    \ which is why the case is a textbook one. The writing pass must not state it without CAN-109 to CAN-111.\
+    \ An honest detail in the same paper, at L39, is that in a second experiment the reduction in tumour volume\
+    \ for VEGF165b against control transfectants was not significant; the significant comparison there was\
+    \ against VEGF165. Bristol laboratory of Bates and Harper, which is also the laboratory of CAN-112.\n CORRECTED\
+    \ 2026-11-22 by a records review against the cited lines: L39 states the renal cell carcinoma reduction\
+    \ was non-significant against control-transfected tumours. The claim previously asserted it flatly."
 - id: CAN-109
   claim: 'A second laboratory made the same comparison and got the opposite result: lung and prostate carcinoma
     cells engineered to overexpress VEGF121b or VEGF165b produced larger, better vascularised tumours in nude
@@ -1613,8 +1616,8 @@ claims:
 - id: CAN-112
   claim: 'The laboratory that first described the b isoforms replied that failure to amplify them is uninterpretable
     without positive controls, and showed that in five samples of normal human lung fibroblast complementary
-    DNA both forms amplified and the b-form product was confirmed by sequencing, while the same template failed
-    to give that product on a different thermal cycler.
+    DNA both forms amplified and the b-form product was confirmed by sequencing, while in a separate experiment
+    on complementary DNA from three other cell types the product failed to appear on a different thermal cycler.
 
     '
   topic: VEGF-Axxxb - the reply, and why the dispute is about controls
@@ -1637,14 +1640,15 @@ claims:
 
       '
   confidence: medium
-  note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype. Included so the
-    dispute is not reported one-sidedly; on its own it would not pass the chapter''s inclusion test. Same Bristol
-    laboratory as CAN-108, and Bates and Harper are authors on both, which the chapter should say. The thermal-cycler
-    observation is on the adjacent line L40. Confidence is medium because the evidence is a demonstration that
-    the product can be amplified and sequenced from one cell type, which does not establish the abundance the
-    functional claims need, and because it does not answer the genomic negative control of CAN-110.
-
-    '
+  note: "tier: isoform-specific biochemical or binding difference, no organismal phenotype. Included so the\
+    \ dispute is not reported one-sidedly; on its own it would not pass the chapter's inclusion test. Same\
+    \ Bristol laboratory as CAN-108, and Bates and Harper are authors on both, which the chapter should say.\
+    \ The thermal-cycler observation is on the adjacent line L40. Confidence is medium because the evidence\
+    \ is a demonstration that the product can be amplified and sequenced from one cell type, which does not\
+    \ establish the abundance the functional claims need, and because it does not answer the genomic negative\
+    \ control of CAN-110.\n CORRECTED 2026-11-22 by a records review against the cited lines: the five lung\
+    \ fibroblast samples (L41) and the thermal-cycler contrast (L40) are different experiments on different\
+    \ templates, so 'the same template' was not supported."
 - id: CAN-113
   claim: 'Fibroblasts taken from mice whose own cyclin D1 locus had been rebuilt so that it can only make the
     D1b form grew colonies in soft agar while fibroblasts from wild-type littermates could not, and the same
@@ -1778,18 +1782,20 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Abstract-only record, PMID 18942117, no author
-    list or journal in meta.json, so both are RESOLVE_FROM_DOI and the bibkey is title-derived. Independent
-    of the Knudsen laboratory behind CAN-113 to CAN-115, and it agrees with CAN-115 on the central negative:
-    the isoform on its own did not make tumours appear. The failure to rescue the knockout is the limit that
-    should be quoted against any claim that D1b simply substitutes for D1a. Shares the L1 anchor with CAN-117,
-    which quotes a different span of the same abstract and states a different finding.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype. Abstract-only record, PMID 18942117, no author\
+    \ list or journal in meta.json, so both are RESOLVE_FROM_DOI and the bibkey is title-derived. A records\
+    \ review on 2026-11-22 could not confirm the independence this note used to assert: E. S. Knudsen is an\
+    \ author here and K. E. Knudsen is the senior author of CAN-113 to CAN-115, which are different initials\
+    \ but known collaborators in this field, so the author fields do not establish two independent laboratories.\
+    \ and it agrees with CAN-115 on the central negative: the isoform on its own did not make tumours appear.\
+    \ The failure to rescue the knockout is the limit that should be quoted against any claim that D1b simply\
+    \ substitutes for D1a. Shares the L1 anchor with CAN-117, which quotes a different span of the same abstract\
+    \ and states a different finding.\n UPDATE 2026-11-22: this record's metadata has since been resolved against\
+    \ Crossref, so the RESOLVE_FROM_DOI sentence above is stale and the bibkey is first-author-derived."
 - id: CAN-117
   claim: 'The same group searched the mouse cyclin D1 gene for an equivalent of the human D1b transcript and
-    found none, which means the isoform whose oncogenic role is argued over does not exist in the standard
-    laboratory animal and has to be put there by engineering.
+    found no evidence of one, by in silico analysis together with in vitro work, so the isoform whose oncogenic
+    role is argued over has to be put into the standard laboratory animal by engineering.
 
     '
   topic: cyclin D1b has no mouse counterpart
@@ -1812,20 +1818,21 @@ claims:
 
       '
   confidence: high
-  note: 'tier: not a perturbation; recorded because it changes how every other cyclin D1b record should be
-    read. It explains why the knock-in of CAN-113 had to humanize the locus rather than mutate the mouse one,
-    and it is a concrete instance of a general problem the book can use: a human isoform with no orthologue
-    cannot be studied by deleting anything in a mouse. The search was in silico plus in vitro work, as stated
-    on the same line, so it is evidence of absence of a detectable transcript rather than proof that none exists.
-    Shares the L1 anchor with CAN-116 as permitted for abstract-only records; the two quote different spans
-    and state different findings.
-
-    '
+  note: "tier: not a perturbation; recorded because it changes how every other cyclin D1b record should be\
+    \ read. It explains why the knock-in of CAN-113 had to humanize the locus rather than mutate the mouse\
+    \ one, and it is a concrete instance of a general problem the book can use: a human isoform with no orthologue\
+    \ cannot be studied by deleting anything in a mouse. The search was in silico plus in vitro work, as stated\
+    \ on the same line, so it is evidence of absence of a detectable transcript rather than proof that none\
+    \ exists. Shares the L1 anchor with CAN-116 as permitted for abstract-only records; the two quote different\
+    \ spans and state different findings.\n CORRECTED 2026-11-22 by a records review against the cited lines:\
+    \ the abstract reports being unable to find evidence of an alternatively spliced mouse transcript, which\
+    \ is a failure to detect rather than proof of non-existence. The claim sentence now says so, since the\
+    \ note alone does not reach the writer."
 - id: CAN-118
-  claim: 'In mantle cell lymphoma and multiple myeloma samples the cyclin D1b protein, where present, was found
-    in both nucleus and cytoplasm and turned over as fast as cyclin D1a, so the two features held to be necessary
-    for its transforming activity were absent, and the splice-site polymorphism did not change the splicing
-    in those cells.
+  claim: 'In mantle cell lymphoma, where the protein is present far more often than in multiple myeloma, cyclin
+    D1b was found in both nucleus and cytoplasm and turned over as fast as cyclin D1a, so the two features
+    held to be necessary for its transforming activity were absent, and the splice-site polymorphism did not
+    change the splicing in those cells.
 
     '
   topic: cyclin D1b - the transforming properties were absent in two human cancers
@@ -1848,14 +1855,15 @@ claims:
 
       '
   confidence: medium
-  note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype, direction negative.
-    Recorded because it bounds a named case the chapter is taking on. The two properties referred to are constitutive
-    nuclear localisation and a long protein half-life, both named on the cited line; prose that uses this record
-    must name them, because the sentence is otherwise unreadable. Confidence is medium because the measurement
-    is on patient material and cell lines rather than a perturbation, and because absence of the protein in
-    most myeloma samples limits what can be concluded there. French group, no overlap with CAN-113 to CAN-117.
-
-    '
+  note: "tier: isoform-specific biochemical or binding difference, no organismal phenotype, direction negative.\
+    \ Recorded because it bounds a named case the chapter is taking on. The two properties referred to are\
+    \ constitutive nuclear localisation and a long protein half-life, both named on the cited line; prose that\
+    \ uses this record must name them, because the sentence is otherwise unreadable. Confidence is medium because\
+    \ the measurement is on patient material and cell lines rather than a perturbation, and because absence\
+    \ of the protein in most myeloma samples limits what can be concluded there. French group, no overlap with\
+    \ CAN-113 to CAN-117.\n CORRECTED 2026-11-22 by a records review against the cited lines: L11 draws the\
+    \ conclusion for mantle cell lymphoma only, and says the protein is rarely present in myeloma. The claim\
+    \ previously extended both findings to myeloma."
 - id: CAN-119
   claim: 'A complementary DNA for one CD44 variant, carrying an extra 162 amino acid extracellular stretch
     encoded by variant exons, was put into a rat pancreatic carcinoma line that does not metastasise, and that
@@ -1883,15 +1891,16 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Abstract-only record, PMID 1707342; meta.json
-    has no author list or journal, so both are RESOLVE_FROM_DOI and the bibkey is title-derived. This is the
-    experiment the whole CD44 variant literature rests on and the chapter currently has nothing like it: a
-    single isoform introduced into a defined, non-metastatic counterpart, with metastasis as the readout. Chapter
-    12 owns CD44v6 as a drug target and owns the normal-tissue antibody paper; this record is the tumour biology
-    and should not restate either. Read with CAN-122, which reports the opposite direction in human squamous
-    tumours.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype. Abstract-only record, PMID 1707342; meta.json\
+    \ has no author list or journal, so both are RESOLVE_FROM_DOI and the bibkey is title-derived. This is\
+    \ the experiment the whole CD44 variant literature rests on and the chapter currently has nothing like\
+    \ it: a single isoform introduced into a defined, non-metastatic counterpart, with metastasis as the readout.\
+    \ Chapter 12 owns CD44v6 as a drug target and owns the normal-tissue antibody paper; this record is the\
+    \ tumour biology and should not restate either. Read with CAN-122, which reports the opposite direction\
+    \ in human squamous tumours.\n UPDATE 2026-11-22: this record's metadata has since been resolved against\
+    \ Crossref, so the RESOLVE_FROM_DOI sentence above is stale and the bibkey is first-author-derived. One\
+    \ detail cannot be checked from the abstract: it describes an extra 162-amino-acid extracellular domain\
+    \ without mentioning exons, so the variant-exon framing is later vocabulary rather than this paper's."
 - id: CAN-120
   claim: 'The metastatic rat line makes several CD44 splice variants, and when the two most abundant, differing
     by 162 and 85 extra amino acids, were each expressed on their own in the non-metastatic line, either one
@@ -1953,16 +1962,15 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype, using an isoform-selective antibody rather than
-    a construct, so it is the loss-of-function counterpart to CAN-119. meta.json carries no author list, so
-    authors is RESOLVE_FROM_DOI and the bibkey is title-derived; the journal name is in meta.json and is recorded.
-    Same Heidelberg groups as CAN-119, and the paper cites that work as its starting point, so the two are
-    not independent. The timing restriction is the interesting part and should survive into prose: the antibody
-    worked before colonisation and not after, which says the isoform matters at a particular step rather than
-    throughout. Distinct from the antibody-drug conjugate case that chapter 12 owns; this is a blocking antibody
-    in rats in 1993.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype, using an isoform-selective antibody rather than\
+    \ a construct, so it is the loss-of-function counterpart to CAN-119. meta.json carries no author list,\
+    \ so authors is RESOLVE_FROM_DOI and the bibkey is title-derived; the journal name is in meta.json and\
+    \ is recorded. Same Heidelberg groups as CAN-119, and the paper cites that work as its starting point,\
+    \ so the two are not independent. The timing restriction is the interesting part and should survive into\
+    \ prose: the antibody worked before colonisation and not after, which says the isoform matters at a particular\
+    \ step rather than throughout. Distinct from the antibody-drug conjugate case that chapter 12 owns; this\
+    \ is a blocking antibody in rats in 1993.\n UPDATE 2026-11-22: this record's metadata has since been resolved\
+    \ against Crossref, so the RESOLVE_FROM_DOI sentence above is stale and the bibkey is first-author-derived."
 - id: CAN-122
   claim: 'Staining 30 human squamous carcinoma specimens, primary and metastatic, with an antibody against
     the v6-encoded sequence showed that the epitope was reduced or gone in the malignant tissue while the constant
@@ -2002,8 +2010,8 @@ claims:
 - id: CAN-123
   claim: 'Mice carrying a knock-in that makes a short p53 protein modelling the human Delta133p53 isoform are
     tumour-prone, and removing interleukin-6 from them cut the proportion dying with a malignant tumour from
-    26 of 28 animals to 14 of 20, and reduced metastasis, which places the isoform''s oncogenic effect downstream
-    of an inflammatory signal rather than inside the cell.
+    26 of 28 animals to 14 of 20, and reduced metastasis, so losing interleukin-6 attenuates the phenotype
+    rather than abolishing it, and those authors conclude only that interleukin-6 contributes to it.
 
     '
   topic: Delta133p53 - a p53 isoform that promotes rather than suppresses tumours
@@ -2028,21 +2036,21 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. One classification point the chapter must get
-    right and chapter 1 owns the vocabulary for: Delta133p53 arises from an alternative promoter inside intron
-    4, not from an alternative splice of the first exon, and the beta and gamma versions then add alternative
-    splicing in intron 9. The paper states this at L10 of the companion record CAN-124''s source and in its
-    own introduction. So this is an alternative-transcript case rather than a pure alternative-splicing case,
-    and prose should say so. The mouse carries Delta122p53, a mouse protein built to model the human isoform
-    rather than the human isoform itself. The tumour-prone phenotype itself is attributed on L14 and L17 to
-    the authors'' earlier papers, which are not anchored here. Read with CAN-124, the limit from the same experiment,
-    and CAN-125, the opposite result from the same laboratory.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype. One classification point the chapter must get\
+    \ right and chapter 1 owns the vocabulary for: Delta133p53 arises from an alternative promoter inside intron\
+    \ 4, not from an alternative splice of the first exon, and the beta and gamma versions then add alternative\
+    \ splicing in intron 9. The paper states this at L10 of the companion record CAN-124's source and in its\
+    \ own introduction. So this is an alternative-transcript case rather than a pure alternative-splicing case,\
+    \ and prose should say so. The mouse carries Delta122p53, a mouse protein built to model the human isoform\
+    \ rather than the human isoform itself. The tumour-prone phenotype itself is attributed on L14 and L17\
+    \ to the authors' earlier papers, which are not anchored here. Read with CAN-124, the limit from the same\
+    \ experiment, and CAN-125, the opposite result from the same laboratory.\n CORRECTED 2026-11-22 by a records\
+    \ review against the cited lines: 14 of 20 interleukin-6-null animals still developed malignant tumours,\
+    \ and L65 states the authors' own conclusion. The inside-the-cell dichotomy was not theirs."
 - id: CAN-124
   claim: 'In the same experiment the authors state that their cohorts were too small to show a survival difference
-    between the genotypes, and that the time at which tumours were detected did not differ, so the isoform''s
-    effect was visible in how many animals got tumours and not in how long they lived.
+    between the interleukin-6 genotypes, and that the time at which tumours were detected did not differ, so
+    the isoform''s effect was visible in how many animals got tumours and not in how long they lived.
 
     '
   topic: Delta133p53 - what the mouse experiment could not show
@@ -2067,11 +2075,12 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype, phenotype null on the endpoint that matters most.
-    Recorded separately because a chapter that reports CAN-123 without this one overstates it. The authors
-    are explicit and the admission is theirs, which is worth saying in the prose. Same paper as CAN-123.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype, phenotype null on the endpoint that matters most.\
+    \ Recorded separately because a chapter that reports CAN-123 without this one overstates it. The authors\
+    \ are explicit and the admission is theirs, which is worth saying in the prose. Same paper as CAN-123.\n\
+    \ CORRECTED 2026-11-22 by a records review against the cited lines: L64's underpowered-survival statement\
+    \ is about the interleukin-6 genotypes within the isoform-carrying mice, not about the isoform's own effect\
+    \ on survival."
 - id: CAN-125
   claim: 'The same laboratory crossed the Delta122p53 allele with a weakened p53 mutant and found the opposite
     of what it expected: the double mutants lived between 92 and 495 days against 120 to 250 days for the weak
@@ -2139,15 +2148,16 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. The design is worth the chapter''s attention because
-    it is the control that most splicing-factor papers omit: knocking down one target transcript while leaving
-    the factor overexpressed, which attributes the phenotype to the isoform rather than to the factor''s whole
-    programme. Abstract-only record, PMID 16364913; no author list or journal in meta.json, so both are RESOLVE_FROM_DOI
-    and the bibkey is title-derived. The phenotype is cell motility and epithelial to mesenchymal change in
-    culture, not tumour growth in an animal, and prose must not upgrade it. The splicing-factor side of this
-    case belongs to the chapter''s splicing factor topic, not here.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype. The design is worth the chapter's attention because\
+    \ it is the control that most splicing-factor papers omit: knocking down one target transcript while leaving\
+    \ the factor overexpressed, which attributes the phenotype to the isoform rather than to the factor's whole\
+    \ programme. Abstract-only record, PMID 16364913; no author list or journal in meta.json, so both are RESOLVE_FROM_DOI\
+    \ and the bibkey is title-derived. The phenotype is cell motility and epithelial to mesenchymal change\
+    \ in culture, not tumour growth in an animal, and prose must not upgrade it. The splicing-factor side of\
+    \ this case belongs to the chapter's splicing factor topic, not here.\n UPDATE 2026-11-22: this record's\
+    \ metadata has since been resolved against Crossref, so the RESOLVE_FROM_DOI sentence above is stale and\
+    \ the bibkey is first-author-derived. One detail cannot be checked from the abstract: it says the effect\
+    \ is reverted by specific knockdown of the short transcript, without stating that the factor was left overexpressed."
 - id: CAN-127
   claim: 'The same switch runs in reverse: hnRNP A1 competes with SF2/ASF at the regulatory element, keeps
     exon 11 in, and by suppressing the short receptor drives cells back from the mesenchymal state to the epithelial
@@ -2185,7 +2195,8 @@ claims:
   claim: 'Locked nucleic acid oligonucleotides aimed at the specific splice junctions of the truncated p73
     forms cut those transcripts while leaving the full-length tumour-suppressing form intact, which a short
     hairpin against the gene did not, rescued cells from the block on apoptosis that the truncated forms impose,
-    and slowed melanoma growth in mice when delivered on nanobead carriers.
+    and one of them, aimed at the exon 2 to 3 junction, slowed growth of established melanoma xenografts when
+    injected into the tumour on nanobead carriers.
 
     '
   topic: TP73 - removing the oncogenic isoform while sparing the suppressing one
@@ -2212,16 +2223,17 @@ claims:
     the third leaves the suppressing form standing.
 
     '
-  note: 'tier: isoform-specific perturbation with phenotype. The reason to record this rather than leave it
-    to the chapter''s therapeutics topic is the contrast on the cited line between a gene-level knockdown,
-    which removes the tumour suppressor along with the oncogene, and a junction-level one, which does not.
-    That contrast is the chapter''s argument about why isoform resolution matters, demonstrated on one gene.
-    Classification caveat: the paper states at L14 that the ΔNp73 transcript comes from a cryptic promoter
-    in intron 3 while most of the other truncated variants come from alternative splicing, so the family mixes
-    two mechanisms and prose must not call them all splice isoforms. The in vivo arm used intratumoral delivery
-    into established melanoma xenografts, with group sizes given at L33, so it is a local-delivery result.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype. The reason to record this rather than leave it\
+    \ to the chapter's therapeutics topic is the contrast on the cited line between a gene-level knockdown,\
+    \ which removes the tumour suppressor along with the oncogene, and a junction-level one, which does not.\
+    \ That contrast is the chapter's argument about why isoform resolution matters, demonstrated on one gene.\
+    \ Classification caveat: the paper states at L14 that the ΔNp73 transcript comes from a cryptic promoter\
+    \ in intron 3 while most of the other truncated variants come from alternative splicing, so the family\
+    \ mixes two mechanisms and prose must not call them all splice isoforms. The in vivo arm used intratumoral\
+    \ delivery into established melanoma xenografts, with group sizes given at L33, so it is a local-delivery\
+    \ result.\n CORRECTED 2026-11-22 by a records review against the cited lines: the in vivo result is for\
+    \ ASO-116 alone, delivered intratumorally (L9, L33). Two of the three oligonucleotides target splice junctions;\
+    \ the third targets a region of exon 3B."
 - id: CAN-129
   claim: 'A pancreatic carcinoma line driven to 40-fold resistance to gemcitabine carried all six survivin
     splice forms at raised levels, the 2-beta form by about eightfold, and a short interfering RNA against
@@ -2333,7 +2345,7 @@ claims:
 - id: CAN-132
   claim: 'Switching on Rac1b in mouse lung at a level the authors describe as physiological produced no tumours
     by itself, but combined with a mutant K-ras allele it raised proliferation and made adenocarcinomas grow
-    faster, which is a third tissue and a third laboratory reaching the same conclusion about this isoform.
+    faster, which is a third laboratory and a second tissue reaching the same conclusion about this isoform.
 
     '
   topic: RAC1B - cooperation with K-ras in lung
@@ -2356,18 +2368,19 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Independent of both CAN-104 to CAN-106 and CAN-107.
-    Three conditional models in two tissues now agree on the same shape of result: the isoform is not an initiator
-    and it makes an existing driver worse. The paper also records at L16 a methodological point the chapter
-    can use: a standard antibody to RAC1 did not see endogenous RAC1B at all, and a purpose-made RAC1B-specific
-    antibody was needed, which is one reason isoform-level claims are hard to check.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype. Independent of both CAN-104 to CAN-106 and CAN-107.\
+    \ Three conditional models in two tissues now agree on the same shape of result: the isoform is not an\
+    \ initiator and it makes an existing driver worse. The paper also records at L16 a methodological point\
+    \ the chapter can use: a standard antibody to RAC1 did not see endogenous RAC1B at all, and a purpose-made\
+    \ RAC1B-specific antibody was needed, which is one reason isoform-level claims are hard to check.\n CORRECTED\
+    \ 2026-11-22 by a records review against the cited lines: three laboratories but two tissues: CAN-104 to\
+    \ CAN-106 and CAN-107 are both intestine, and this one is lung. The claim previously contradicted this\
+    \ record's own note."
 - id: CAN-133
-  claim: 'The same group designed one short interfering RNA against the sequence unique to RAC1B and another
-    against the sequence flanking it, so each form could be removed while the other stayed; removing RAC1,
-    or both together, stopped K-ras-driven lung cancer cells proliferating, while removing RAC1B alone did
-    nothing to their proliferation.
+  claim: 'The same group designed two short interfering RNAs against the sequence unique to RAC1B and one against
+    the sequence flanking it, so each form could be removed while the other stayed; removing RAC1, or both
+    together, stopped K-ras-driven lung cancer cells proliferating, while removing RAC1B alone did nothing
+    to their proliferation.
 
     '
   topic: RAC1 and RAC1B - different requirement in the same pathway
@@ -2389,21 +2402,22 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype, direction null for RAC1B. The pair of oligonucleotides
-    is the part worth describing: one against the isoform-specific sequence and one against the sequence that
-    flanks it, which is how a single gene''s two products can be removed separately, and the design is set
-    out on the preceding line L28. The requirement for RAC1 in K-ras-induced transformation is attributed there
-    to the authors'' own earlier work, so prose must present that half as their prior finding; what this paper
-    measures is that the RAC1B knockdown did not reproduce it. The same line reports that RAC1B knockdown also
-    failed to reduce active PAK1 and PAK2 while RAC1 knockdown did, which gives a biochemical reason for the
-    difference. Same paper as CAN-132, different anchor.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype, direction null for RAC1B. The pair of oligonucleotides\
+    \ is the part worth describing: one against the isoform-specific sequence and one against the sequence\
+    \ that flanks it, which is how a single gene's two products can be removed separately, and the design is\
+    \ set out on the preceding line L28. The requirement for RAC1 in K-ras-induced transformation is attributed\
+    \ there to the authors' own earlier work, so prose must present that half as their prior finding; what\
+    \ this paper measures is that the RAC1B knockdown did not reproduce it. The same line reports that RAC1B\
+    \ knockdown also failed to reduce active PAK1 and PAK2 while RAC1 knockdown did, which gives a biochemical\
+    \ reason for the difference. Same paper as CAN-132, different anchor.\n CORRECTED 2026-11-22 by a records\
+    \ review against the cited lines: L28 describes two oligos against the isoform-unique sequence and one\
+    \ against the flank."
 - id: CAN-134
   claim: 'Mice carrying a transgene for caspase 9b, the form of caspase 9 that skips the four-exon cassette
-    encoding the catalytic domain and cannot cut anything, grew lung adenocarcinomas spontaneously in old age
-    and developed tumours faster when crossed with a mutant KRAS allele, alongside lymphocyte infiltration
-    of the lungs and raised interleukin-6.
+    encoding the catalytic domain and cannot cut anything, grew lung tumours spontaneously in old age at low
+    penetrance, in 4 of 20 animals of one transgenic line and 2 of 13 of another against none of 20 controls,
+    adenocarcinoma being the commonest type and developed tumours faster when crossed with a mutant KRAS allele,
+    alongside lymphocyte infiltration of the lungs and raised interleukin-6.
 
     '
   topic: CASP9 - the catalytically dead splice form as a driver
@@ -2426,16 +2440,15 @@ claims:
 
       '
   confidence: medium
-  note: 'tier: isoform-specific perturbation with phenotype. The gene makes a pro-apoptotic protein and an
-    anti-apoptotic one from the same pre-messenger RNA by including or skipping exons 3 to 6, described at
-    L15, which makes it one of the cleanest statements of the chapter''s theme. The authors note at L16 that
-    removing the pro-apoptotic form did not reproduce what expressing the anti-apoptotic form does, so the
-    second form is doing something of its own and not merely subtracting the first, but that comparison is
-    credited to their earlier papers and is not anchored here. Confidence is medium because of CAN-135. The
-    transgene was driven by a surfactant protein C promoter, so expression was targeted to one lung cell type
-    rather than the whole animal.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype. The gene makes a pro-apoptotic protein and an\
+    \ anti-apoptotic one from the same pre-messenger RNA by including or skipping exons 3 to 6, described at\
+    \ L15, which makes it one of the cleanest statements of the chapter's theme. The authors note at L16 that\
+    \ removing the pro-apoptotic form did not reproduce what expressing the anti-apoptotic form does, so the\
+    \ second form is doing something of its own and not merely subtracting the first, but that comparison is\
+    \ credited to their earlier papers and is not anchored here. Confidence is medium because of CAN-135. The\
+    \ transgene was driven by a surfactant protein C promoter, so expression was targeted to one lung cell\
+    \ type rather than the whole animal.\n CORRECTED 2026-11-22 by a records review against the cited lines:\
+    \ the penetrance is at L58 and was missing from the claim entirely."
 - id: CAN-135
   claim: 'The spontaneous lung tumours in those mice did not express the caspase 9b transgene or the promoter
     driving it, and most carried SOX2, which points to a cell type the transgene was never switched on in,
@@ -2496,17 +2509,18 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype, direction opposite to the standard account. This
-    is the sharpest contradiction in the RAC1B set and it is a two-sided one: knockdown and rescue point the
-    same way. It does not contradict CAN-104, because that paper''s phenotype was tumour initiation through
-    escape from TGF-beta-driven death, and both papers agree that RAC1B attenuates TGF-beta signalling; what
-    differs is which consequence of that attenuation dominates in which tissue. Prose should say that, not
-    pick a side. Lübeck and Kiel groups, independent of every other RAC1B record here, and the same group''s
-    later papers reach the same conclusion in other cell types. The survival observation on the cited line
-    is a comparison of long-surviving against short-surviving pancreatic cancer patients with no denominators
-    given on that line, so it must not be stated as a cohort result.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype, direction opposite to the standard account. This\
+    \ is the sharpest contradiction in the RAC1B set and it is a two-sided one: knockdown and rescue point\
+    \ the same way. It does not contradict CAN-104, because that paper's phenotype was tumour initiation through\
+    \ escape from TGF-beta-driven death, and both papers agree that RAC1B attenuates TGF-beta signalling; what\
+    \ differs is which consequence of that attenuation dominates in which tissue. Prose should say that, not\
+    \ pick a side. Lübeck and Kiel groups, independent of every other RAC1B record here, and the same group's\
+    \ later papers reach the same conclusion in other cell types. The survival observation on the cited line\
+    \ is a comparison of long-surviving against short-surviving pancreatic cancer patients with no denominators\
+    \ given on that line, so it must not be stated as a cohort result.\n CORRECTED 2026-11-22 by a records\
+    \ review against the cited lines: there was no rescue experiment. The paper reports silencing in three\
+    \ lines and, separately, ectopic overexpression in untreated Panc-1 cells, which are two perturbations\
+    \ in opposite directions rather than a knockdown and add-back."
 - id: CAN-201
   claim: 'A splicing factor can be an oncogene in the classical assay sense: modest overexpression of SF2/ASF,
     the SR protein now called SRSF1, was enough to transform immortal rodent fibroblasts, and those cells formed
@@ -2532,12 +2546,11 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Abstract-only record; meta.json carries no author
-    list or journal, so both are left for resolve_metadata.py and the bibkey is title-derived. Shares the single
-    abstract line L1 with CAN-202, which quotes a different span and states a different finding; see the SCHEMA
-    exception for one-line documents.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype. Abstract-only record; meta.json carries no author\
+    \ list or journal, so both are left for resolve_metadata.py and the bibkey is title-derived. Shares the\
+    \ single abstract line L1 with CAN-202, which quotes a different span and states a different finding; see\
+    \ the SCHEMA exception for one-line documents.\n UPDATE 2026-11-22: this record's metadata has since been\
+    \ resolved against Crossref, so the RESOLVE_FROM_DOI sentence above is stale and the bibkey is first-author-derived."
 - id: CAN-202
   claim: 'The transforming activity of SRSF1 was pinned to a named downstream isoform rather than to the factor
     in general: knocking down isoform-2 of the kinase S6K1 reversed the transformation caused by SRSF1 overexpression,
@@ -2563,11 +2576,10 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Abstract-only; the same abstract also names BIN1
-    and MNK2 as targets but the rescue experiment is reported only for S6K1 isoform-2. Shares line L1 with
-    CAN-201 (different span, different finding).
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype. Abstract-only; the same abstract also names BIN1\
+    \ and MNK2 as targets but the rescue experiment is reported only for S6K1 isoform-2. Shares line L1 with\
+    \ CAN-201 (different span, different finding).\n UPDATE 2026-11-22: this record's metadata has since been\
+    \ resolved against Crossref, so the RESOLVE_FROM_DOI sentence above is stale and the bibkey is first-author-derived."
   figure_idea: 'One splicing factor at the top, three target genes below it, and under each target the two
     isoforms it can make, with a single arrow marking which one was shown by knockdown to carry the transforming
     activity. The point is how narrow the demonstrated causal path is compared with the number of changed events.
@@ -2676,8 +2688,8 @@ claims:
 - id: CAN-206
   claim: 'The pancreatic SRSF1 effect was traced to a specific exon: SRSF1 promotes inclusion of exon 3 in
     the 5-prime untranslated region of the interleukin-1 receptor Il1r1, inclusion lengthens the mRNA''s half-life,
-    and mutating the two SRSF1 binding motifs inside that exon abolished the factor''s ability to promote its
-    inclusion.
+    and mutating the two SRSF1 binding motifs inside that exon suppressed the factor''s ability to promote
+    its inclusion, whether the motifs were mutated singly or together.
 
     '
   topic: splicing factors as proto-oncogenes - SRSF1 target isoforms
@@ -2700,12 +2712,11 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype. The organoid phenotype
-    attributed to this exon (shRNA against Il1r1 reduces the multilayered organoid phenotype) is reported in
-    the figure legend at L29 rather than in body text, so it is not asserted here. Preprint lines; see CAN-205
-    note.
-
-    '
+  note: "tier: isoform-specific biochemical or binding difference, no organismal phenotype. The organoid phenotype\
+    \ attributed to this exon (shRNA against Il1r1 reduces the multilayered organoid phenotype) is reported\
+    \ in the figure legend at L29 rather than in body text, so it is not asserted here. Preprint lines; see\
+    \ CAN-205 note.\n CORRECTED 2026-11-22 by a records review against the cited lines: L31 says suppressed,\
+    \ not abolished."
 - id: CAN-207
   claim: 'RBM10, one of the most frequently mutated genes in lung adenocarcinoma, was shown to behave as a
     tumour suppressor in whole animals in both directions: knocking it down in human cancer cells made mouse
@@ -2770,9 +2781,9 @@ claims:
 
     '
 - id: CAN-209
-  claim: 'QKI, an RNA-binding protein lost in non-small-cell lung cancer, was put back into lung cancer lines
-    and suppressed anchorage-independent growth: colony numbers on soft agar fell sharply in two lines, and
-    the same cells grew smaller subcutaneous tumours in nude mice.
+  claim: 'QKI, the splicing factor most frequently down-regulated in lung cancer tissues, was put back into
+    lung cancer lines and suppressed anchorage-independent growth: colony numbers on soft agar fell sharply
+    in two lines, and one of those lines grew smaller subcutaneous tumours in nude mice.
 
     '
   topic: splicing regulators as tumour suppressors - QKI
@@ -2794,11 +2805,10 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Independent laboratory from CAN-207/CAN-208 but
-    converging on the same target exon of the same gene, which is the strongest kind of pairing this chapter
-    can report.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype. Independent laboratory from CAN-207/CAN-208 but\
+    \ converging on the same target exon of the same gene, which is the strongest kind of pairing this chapter\
+    \ can report.\n CORRECTED 2026-11-22 by a records review against the cited lines: the paper says frequently\
+    \ down-regulated rather than lost, and only A549 was xenografted."
 - id: CAN-210
   claim: 'The QKI phenotype was assigned to a particular NUMB isoform by two complementary perturbations: short
     hairpins directed against the variable exon itself slowed proliferation of a lung cancer line, and re-expressing
@@ -2868,8 +2878,8 @@ claims:
 - id: CAN-212
   claim: 'QKI represses the NUMB variable exon by competing with a core spliceosomal protein rather than by
     recruiting a repressor: its two binding sites flank the 3-prime splice site, one of them overlaps the branch
-    point, and in crosslinking assays QKI displaced the branch-point binding protein SF1 from the wild-type
-    sequence but not from a sequence whose first site had been mutated.
+    point, and in crosslinking assays QKI inhibited binding of the branch-point binding protein SF1 to the
+    wild-type sequence, and did so to a lesser extent on a sequence whose first site had been mutated.
 
     '
   topic: how a regulator competes with the core spliceosome
@@ -2891,11 +2901,11 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype. Worth setting beside
-    the SF3B1 branch-point story in the hotspot section: the same step of 3-prime splice site recognition is
-    where both a normal regulator and a cancer mutation act.
-
-    '
+  note: "tier: isoform-specific biochemical or binding difference, no organismal phenotype. Worth setting beside\
+    \ the SF3B1 branch-point story in the hotspot section: the same step of 3-prime splice site recognition\
+    \ is where both a normal regulator and a cancer mutation act.\n CORRECTED 2026-11-22 by a records review\
+    \ against the cited lines: L38 says to a lesser extent, not absent. The clean negative in that experiment\
+    \ is a different construct whose SF1 binding was already weak."
 - id: CAN-213
   claim: 'Overexpressing the SR protein SRSF6 in adult mouse skin and small intestine produced epithelial hyperplasia
     with full penetrance in skin, and skin grafted onto recipient mice showed the lesion only when the graft
@@ -2927,9 +2937,9 @@ claims:
     '
 - id: CAN-214
   claim: 'The SRSF6 phenotype was tied to one target isoform rather than to the factor: SRSF6 overexpression
-    increased cell migration, and that increase was abolished by a hairpin that specifically depleted the long
-    tenascin-C isoform, while knocking down SRSF6 in a human melanoma line lowered the same isoform and lowered
-    migration with it.
+    increased cell migration, and that increase was abolished by a hairpin against tenascin-C, which strongly
+    lowered the long isoform, while knocking down SRSF6 in a human melanoma line lowered the same isoform and
+    lowered migration with it.
 
     '
   topic: splicing factors as proto-oncogenes - SRSF6 target isoform
@@ -2951,11 +2961,13 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. The specificity is unusually well controlled at
-    L39, where knocking down the factor lowered the long tenascin-C isoforms without touching the short constitutive
-    one, so this is a splicing change and not a transcription change.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype. The specificity is unusually well controlled at\
+    \ L39, where knocking down the factor lowered the long tenascin-C isoforms without touching the short constitutive\
+    \ one, so this is a splicing change and not a transcription change.\n CORRECTED 2026-11-22 by a records\
+    \ review against the cited lines: the hairpin targets the gene; the isoform-level fall is its consequence\
+    \ (L42). The isoform-specific result in this paper is at L39, where SRSF6 knockdown lowered the long isoforms\
+    \ and left the short one untouched. The phenotype here is migration in culture, not the skin hyperplasia\
+    \ of CAN-213."
 - id: CAN-215
   claim: 'The exome study that first found this class of mutation already reported the property that constrains
     every later model of it: across a large myelodysplasia series the mutations in the splicing machinery occurred
@@ -2985,13 +2997,13 @@ claims:
 
       '
   confidence: high
-  note: 'tier: correlation of isoform ratio with a phenotype only - this is a cohort observation, recorded
-    because it is the primary source for the mutual exclusivity the chapter''s therapeutic argument rests on,
-    and because the chapter currently has no primary for it. Abstract-only; no author list or journal in meta.json.
-    The abstract''s prevalence range for splicing-pathway mutations is quoted against myeloid neoplasms showing
-    features of myelodysplasia, not against all MDS, and must not be restated loosely.
-
-    '
+  note: "tier: correlation of isoform ratio with a phenotype only - this is a cohort observation, recorded\
+    \ because it is the primary source for the mutual exclusivity the chapter's therapeutic argument rests\
+    \ on, and because the chapter currently has no primary for it. Abstract-only; no author list or journal\
+    \ in meta.json. The abstract's prevalence range for splicing-pathway mutations is quoted against myeloid\
+    \ neoplasms showing features of myelodysplasia, not against all MDS, and must not be restated loosely.\n\
+    \ UPDATE 2026-11-22: this record's metadata has since been resolved against Crossref, so the RESOLVE_FROM_DOI\
+    \ sentence above is stale and the bibkey is first-author-derived."
 - id: CAN-216
   claim: 'The hotspot mutations are not loss of function. In mice, mutant SRSF2 impaired blood cell differentiation
     in a way that deleting SRSF2 does not, and the impairment ran through altered recognition of specific exonic
@@ -3020,16 +3032,16 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Abstract-only; no author list or journal in meta.json.
-    This is the primary for the change-of-function property; the chapter''s existing motif-affinity record
-    (CAN-016) and poison-exon record (CAN-033) both depend on it.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype. Abstract-only; no author list or journal in meta.json.\
+    \ This is the primary for the change-of-function property; the chapter's existing motif-affinity record\
+    \ (CAN-016) and poison-exon record (CAN-033) both depend on it.\n UPDATE 2026-11-22: this record's metadata\
+    \ has since been resolved against Crossref, so the RESOLVE_FROM_DOI sentence above is stale and the bibkey\
+    \ is first-author-derived."
 - id: CAN-217
-  claim: 'The heterozygosity of the hotspot mutations was tested directly rather than inferred: mice engineered
-    to express the SRSF2 P95H allele with the wild-type copy deleted, so that mutant protein was the only SRSF2
-    present, died sooner than controls and developed severe marrow failure, while mice keeping one wild-type
-    copy did not.
+  claim: 'The heterozygosity of the hotspot mutations was tested directly rather than inferred: recipients
+    transplanted with marrow cells expressing the SRSF2 P95H allele with the wild-type copy deleted, so that
+    mutant protein was the only SRSF2 present, died sooner than controls and developed severe marrow failure,
+    while mice keeping one wild-type copy did not.
 
     '
   topic: why mutant-spliceosome cells need the wild-type allele
@@ -3052,11 +3064,10 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. This is the load-bearing genetic result behind
-    the whole mutant-selective therapeutic idea, and the chapter currently carries it only as an attribution
-    inside CAN-034.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype. This is the load-bearing genetic result behind\
+    \ the whole mutant-selective therapeutic idea, and the chapter currently carries it only as an attribution\
+    \ inside CAN-034.\n CORRECTED 2026-11-22 by a records review against the cited lines: the animals that\
+    \ died were recipients in a non-competitive transplantation assay (L15), not the engineered mice themselves."
 - id: CAN-218
   claim: 'The dependence on the wild-type allele held even when a powerful oncogene was supplied: of ten mice
     whose blood cells carried MLL-AF9 and the SRSF2 P95H allele without a wild-type copy, only five developed
@@ -3168,9 +3179,8 @@ claims:
     '
 - id: CAN-221
   claim: 'A screen rather than a candidate approach found the strongest SF3B1 target: among genes that mutant
-    SF3B1 is predicted to mis-splice into nonsense-mediated decay, knocking out Brd9 was one of only two hits
-    that let a cytokine-dependent mouse cell line grow without its cytokine, the other being the positive control
-    Pten.
+    SF3B1 is predicted to mis-splice into nonsense-mediated decay, knocking out Brd9 let a cytokine-dependent
+    mouse cell line grow without its cytokine, which the authors report alongside the positive control Pten.
 
     '
   topic: SF3B1 downstream targets - BRD9
@@ -3193,9 +3203,9 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype.\n CORRECTED 2026-11-22 by a records review against\
+    \ the cited lines: L16 names Brd9 as the notable hit in addition to Pten; it does not say the screen returned\
+    \ only two."
 - id: CAN-222
   claim: 'The BRD9 lesion is a poison exon of retroviral origin: mutant SF3B1 causes a primate-specific endogenous
     retroviral sequence inside a BRD9 intron to be spliced in as an exon that interrupts the reading frame,
@@ -3359,12 +3369,12 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype. The authors point
-    out at L20 that this complex, unlike the other two BAF complexes, is not itself recurrently mutated in
-    cancer - it is reached through splicing instead, which is the general point the chapter wants from this
-    case.
-
-    '
+  note: "tier: isoform-specific biochemical or binding difference, no organismal phenotype. The authors point\
+    \ out at L20 that this complex, unlike the other two BAF complexes, is not itself recurrently mutated in\
+    \ cancer - it is reached through splicing instead, which is the general point the chapter wants from this\
+    \ case.\n CORRECTED 2026-11-22 by a records review against the cited lines: BAF155 is a shared subunit\
+    \ rather than a canonical-BAF-specific marker, so the claim's phrase about the interaction that marks canonical\
+    \ BAF overstates what L21 supports."
 - id: CAN-227
   claim: 'The EZH2 poison exon responds to the motif switch and not to the protein identity: in a minigene
     carrying the exon, mutant SRSF2 drove inclusion when the exon held the three CCWG motifs it prefers, wild-type
@@ -3498,9 +3508,10 @@ claims:
     '
 - id: CAN-231
   claim: 'The SF3B1 hotspots have a structural address. Nearly all the cancer mutations fall in the protein''s
-    C-terminal HEAT-repeat domain and most in repeats four to seven; modelling and affinity purification identified
-    the splicing factor SUGP1 as the strongest partner contacting that same stretch, and SUGP1 variants that
-    weaken the contact partly reproduced the splicing defects of mutant SF3B1.
+    C-terminal HEAT-repeat domain and most in repeats four to seven; the splicing factor SUGP1, which this
+    group had earlier reported as lost from the mutant spliceosome, was modelled onto that same stretch with
+    AlphaFold-Multimer, and SUGP1 variants that weaken the contact partly reproduced the splicing defects of
+    mutant SF3B1.
 
     '
   topic: structural basis of the SF3B1 hotspots
@@ -3523,24 +3534,24 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype. Important caveat
-    for the writer: the SF3B1-SUGP1 complex has never been seen in any spliceosome structure - the authors
-    say so at L14 - so the interface is a prediction from AlphaFold-Multimer tested biochemically, not a solved
-    structure. This is a fourth mechanistic model to set beside the three the chapter already records as incompatible
-    in CAN-010, and it is the one that explains why mutations scattered across many codons converge on the
-    same splicing outcome.
-
-    '
+  note: "tier: isoform-specific biochemical or binding difference, no organismal phenotype. Important caveat\
+    \ for the writer: the SF3B1-SUGP1 complex has never been seen in any spliceosome structure - the authors\
+    \ say so at L14 - so the interface is a prediction from AlphaFold-Multimer tested biochemically, not a\
+    \ solved structure. This is a fourth mechanistic model to set beside the three the chapter already records\
+    \ as incompatible in CAN-010, and it is the one that explains why mutations scattered across many codons\
+    \ converge on the same splicing outcome.\n CORRECTED 2026-11-22 by a records review against the cited lines:\
+    \ no affinity purification or partner ranking appears in the cited lines. The method is modelling followed\
+    \ by mutational and co-immunoprecipitation tests, and SUGP1's prior identification is attributed to the\
+    \ authors' own earlier paper."
   figure_idea: 'The HEAT-repeat solenoid drawn as a curved stack with the hotspot codons marked on repeats
     four to seven, and a second protein docking across exactly that stretch. The figure should carry a visible
     marker that the docking is modelled rather than observed.
 
     '
 - id: CAN-232
-  claim: 'SF3B1 mutation means something different in the eye than in the marrow. In 102 primary uveal melanomas
-    every SF3B1 mutation fell on arginine 625, mutation was associated with younger patients and with the low-risk
-    transcriptomic class, it was almost never found together with BAP1 mutation, and none of five metastatic
-    samples carried it.
+  claim: 'In 102 primary uveal melanomas every SF3B1 mutation fell on arginine 625, mutation was associated
+    with younger patients and with the low-risk transcriptomic class, it was almost never found together with
+    BAP1 mutation, and none of five metastatic samples carried it.
 
     '
   topic: SF3B1 in uveal melanoma - clinical association
@@ -3561,17 +3572,19 @@ claims:
 
       '
   confidence: high
-  note: 'tier: correlation of isoform ratio with a phenotype only - recorded because it is a clinical outcome
-    and because the chapter''s SF3B1 material is entirely myelodysplasia so far. The lower metastatic rate
-    in mutant tumours did not reach significance in this cohort (the paper reports P=0.1 at this line); the
-    significant associations are with the favourable features, not with metastasis itself.
-
-    '
+  note: "tier: correlation of isoform ratio with a phenotype only - recorded because it is a clinical outcome\
+    \ and because the chapter's SF3B1 material is entirely myelodysplasia so far. The lower metastatic rate\
+    \ in mutant tumours did not reach significance in this cohort (the paper reports P=0.1 at this line); the\
+    \ significant associations are with the favourable features, not with metastasis itself.\n CORRECTED 2026-11-22\
+    \ by a records review against the cited lines: the previous claim opened by saying SF3B1 mutation means\
+    \ something different in the eye than in the marrow. The paper says the opposite at L11, that the association\
+    \ with better prognosis in uveal melanoma is similar to findings in myelodysplasia. The contrast the chapter\
+    \ wants is this record against CAN-234, not inside this one."
 - id: CAN-233
   claim: 'The same uveal melanoma study looked for the splicing consequences of the mutation and did not find
-    them: only ten genes differed in expression between mutant and wild-type tumours, none matching the myelodysplasia
-    results, and comparing mutant with wild-type tumours by RNA sequencing showed no global difference in splice
-    donor or acceptor retention.
+    them: only ten genes differed in expression between 5 mutant and 6 wild-type class 1 tumours, none matching
+    the myelodysplasia results, and comparing 3 mutant with 5 wild-type class 1 tumours by RNA sequencing showed
+    no global difference in splice donor or acceptor retention, in an analysis the paper reports without displaying.
 
     '
   topic: a negative result later overturned
@@ -3592,13 +3605,15 @@ claims:
 
       '
   confidence: high
-  note: 'tier: correlation of isoform ratio with a phenotype only. This is the record the chapter most wants
-    from this paper. The analysis asked whether whole introns were retained; the lesion is in fact a shift
-    of a few tens of bases in 3-prime splice site choice, which that test cannot see, and the same tumour type
-    later yielded the BRD9 poison exon recorded in CAN-222. The writer should use this as a case where the
-    null result came from the event class the analysis looked for, not from the biology.
-
-    '
+  note: "tier: correlation of isoform ratio with a phenotype only. This is the record the chapter most wants\
+    \ from this paper. The analysis asked whether whole introns were retained; the lesion is in fact a shift\
+    \ of a few tens of bases in 3-prime splice site choice, which that test cannot see, and the same tumour\
+    \ type later yielded the BRD9 poison exon recorded in CAN-222. The writer should use this as a case where\
+    \ the null result came from the event class the analysis looked for, not from the biology.\n CORRECTED\
+    \ 2026-11-22 by a records review against the cited lines: both analyses are small and restricted to class\
+    \ 1 tumours, and the splicing comparison is 3 mutant against 5 wild-type with the result reported as data\
+    \ not shown (L13). For the chapter's load-bearing negative those denominators are the most important thing\
+    \ about it. CORRECTED 2026-11-22 by a records review against the cited lines: see above."
 - id: CAN-234
   claim: 'The prognostic direction of the same SF3B1 codon reverses between melanoma subtypes: in 27 Australian
     mucosal melanomas the R625 hotspot was the commonest mutation and patients carrying it had shorter median
@@ -3669,7 +3684,7 @@ claims:
 - id: CAN-236
   claim: 'The chronic lymphocytic leukaemia acceleration was attributed to a named mis-spliced target: the
     K700E allele changed splicing of Nfatc1 and activated mTOR and MYC programmes in the B cells, and combining
-    splicing inhibition with mTOR inhibition killed the double-lesion cells where either alone did less.
+    splicing inhibition with mTOR inhibition killed the double-lesion cells in culture and in animals.
 
     '
   topic: SF3B1 in chronic lymphocytic leukaemia - the target
@@ -3693,12 +3708,12 @@ claims:
 
       '
   confidence: medium
-  note: 'tier: isoform-specific perturbation with phenotype - but the isoform-level rescue is not reported
-    in the lines read, so the attribution to Nfatc1 is the authors'' and rests on correlation plus pathway
-    inhibition rather than on an isoform add-back. Weaker than the BRD9 case (CAN-221 to CAN-224) and should
-    be presented as such. The combination-treatment result belongs to the therapeutics topic; see leads.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype - but the isoform-level rescue is not reported\
+    \ in the lines read, so the attribution to Nfatc1 is the authors' and rests on correlation plus pathway\
+    \ inhibition rather than on an isoform add-back. Weaker than the BRD9 case (CAN-221 to CAN-224) and should\
+    \ be presented as such. The combination-treatment result belongs to the therapeutics topic; see leads.\n\
+    \ CORRECTED 2026-11-22 by a records review against the cited lines: L11 does not state the comparison with\
+    \ either agent alone."
 - id: CAN-301
   claim: The primary behind the chapter's secondhand figure puts the share of silent mutations in oncogenes
     that have been under positive selection at somewhere between a fifth and a half, which the authors convert
@@ -3721,15 +3736,15 @@ claims:
     anchor: https://paperclip.gxl.ai/citations/papers/74845355#L1
     quote: We estimate that between one in two and one in five silent mutations in oncogenes have been selected
   confidence: high
-  note: 'This is the primary that CAN-026 cites at second hand, now anchored. The record is abstract-only:
-    an exhaustive corpus grep for a distinctive phrase from the abstract returned nothing, so no full text
-    is held and the method behind the 6-8 per cent, its denominator and its tumour set cannot be checked here.
-    The abstract carries no author list and no journal name, hence RESOLVE_FROM_DOI and a title-derived bibkey;
-    do not name the authors in prose until resolved. CAN-302 cites the same L1 under the shared-anchor exception;
-    the two quote different spans and state different findings. tier: correlation of isoform ratio with a phenotype
-    only
-
-    '
+  note: "This is the primary that CAN-026 cites at second hand, now anchored. The record is abstract-only:\
+    \ an exhaustive corpus grep for a distinctive phrase from the abstract returned nothing, so no full text\
+    \ is held and the method behind the 6-8 per cent, its denominator and its tumour set cannot be checked\
+    \ here. The abstract carries no author list and no journal name, hence RESOLVE_FROM_DOI and a title-derived\
+    \ bibkey; do not name the authors in prose until resolved. CAN-302 cites the same L1 under the shared-anchor\
+    \ exception; the two quote different spans and state different findings. tier: correlation of isoform ratio\
+    \ with a phenotype only\n UPDATE 2026-11-22: the source block has since been resolved against Crossref\
+    \ and the author list, journal and bibkey are correct, so the earlier instruction in this note not to name\
+    \ the authors no longer applies."
   figure_idea: 'The same number drawn two ways: the fraction of silent mutations that are selected, and the
     fraction of all selected changes that are silent. They are the two halves of this estimate and are routinely
     confused for each other.
@@ -3825,13 +3840,13 @@ claims:
     quote: analysis of tumor genomic profiles from 38,028 patients to identify 221 cases with METex14 mutations
       (0.6%), including 126 distinct sequence variants
   confidence: high
-  note: 'Abstract-only record with no author list or journal in meta.json; title-derived bibkey and RESOLVE_FROM_DOI,
-    so do not name authors in prose. The corpus also holds crossref "Data from" and supplementary-table duplicates
-    of this work (167494904, 167502800, 167598626) and a 2015 AACR meeting abstract (64581870); cite the pubmed
-    record 66692324, not those. Does not duplicate CAN-031, which carries the crizotinib response rate and
-    the donor/acceptor split. tier: isoform-specific perturbation with phenotype
-
-    '
+  note: "Abstract-only record with no author list or journal in meta.json; title-derived bibkey and RESOLVE_FROM_DOI,\
+    \ so do not name authors in prose. The corpus also holds crossref \"Data from\" and supplementary-table\
+    \ duplicates of this work (167494904, 167502800, 167598626) and a 2015 AACR meeting abstract (64581870);\
+    \ cite the pubmed record 66692324, not those. Does not duplicate CAN-031, which carries the crizotinib\
+    \ response rate and the donor/acceptor split. tier: isoform-specific perturbation with phenotype\n UPDATE\
+    \ 2026-11-22: the source block has since been resolved against Crossref and the author list, journal and\
+    \ bibkey are correct, so the earlier instruction in this note not to name the authors no longer applies."
   figure_idea: 'One RNA outcome at the top, many genotypes below: a fan of substitution, deletion, insertion
     and indel classes at both ends of MET exon 14 collapsing onto a single skipped-exon transcript, with the
     count of distinct variants beside the count of patients.
@@ -3864,12 +3879,12 @@ claims:
     quote: The mutant receptor exhibits decreased ubiquitination and delayed down-regulation correlating with
       elevated, distinct Met expression in primary tumors harboring the deleted receptor
   confidence: high
-  note: 'Abstract-only; no author list or journal in meta.json, hence RESOLVE_FROM_DOI and a title-derived
-    bibkey. The abstract does not give the number of tumours screened or the mutation positions, so neither
-    may be asserted from this record; CAN-306 and CAN-307 carry the genotype counts. A crossref duplicate exists
-    at 167743225 - cite 127902624. tier: isoform-specific perturbation with phenotype
-
-    '
+  note: "Abstract-only; no author list or journal in meta.json, hence RESOLVE_FROM_DOI and a title-derived\
+    \ bibkey. The abstract does not give the number of tumours screened or the mutation positions, so neither\
+    \ may be asserted from this record; CAN-306 and CAN-307 carry the genotype counts. A crossref duplicate\
+    \ exists at 167743225 - cite 127902624. tier: isoform-specific perturbation with phenotype\n UPDATE 2026-11-22:\
+    \ the source block has since been resolved against Crossref and the author list, journal and bibkey are\
+    \ correct, so the earlier instruction in this note not to name the authors no longer applies."
 - id: CAN-306
   claim: 'The lesions are spread along a short stretch of DNA rather than clustered on two bases: in 11,330
     Chinese lung cancer tissue samples screened for MET exon 14 skipping, 45 different DNA-level variants produced
@@ -4145,9 +4160,9 @@ claims:
 - id: CAN-314
   claim: 'A variant map can be blind to the mechanism by construction: the MSH2 map covering more than 94 per
     cent of 17,746 possible missense variants was built from a complementary-DNA deep mutational scan, which
-    removes the introns and so cannot register splice disruption at all, and among 31 MSH2 missense variants
-    already classified as pathogenic, 4 were flagged as splice-disruptive by prediction rather than by the
-    protein-function measurement.
+    removes the introns and so cannot register splice disruption at all, and among the 31 already-pathogenic
+    MSH2 missense variants that the functional map correctly identified, 4 were flagged as splice-disruptive
+    by prediction rather than by the protein-function measurement.
 
     '
   topic: limits of isoform-switch calling
@@ -4167,14 +4182,14 @@ claims:
     quote: the MAVE function scores used here were derived from a cDNA-based deep mutational scan and so do
       not capture splice disruptive effects
   confidence: high
-  note: 'Recorded because it is the discriminator the chapter needs when it quotes any "fraction of variants
-    that are deleterious" from a variant-effect map: an endogenous-locus assay such as CAN-313''s can see splicing,
-    a cDNA transgene assay cannot. The 4 of 31 figure is a SpliceAI prediction, not a measurement, and must
-    be stated as such. Two authors (Smith, Kitzman) overlap with the benchmarking work that compares predictors
-    against massively parallel splicing assays, and one author is at a commercial testing laboratory. tier:
-    isoform-specific biochemical or binding difference, no organismal phenotype
-
-    '
+  note: "Recorded because it is the discriminator the chapter needs when it quotes any \"fraction of variants\
+    \ that are deleterious\" from a variant-effect map: an endogenous-locus assay such as CAN-313's can see\
+    \ splicing, a cDNA transgene assay cannot. The 4 of 31 figure is a SpliceAI prediction, not a measurement,\
+    \ and must be stated as such. Two authors (Smith, Kitzman) overlap with the benchmarking work that compares\
+    \ predictors against massively parallel splicing assays, and one author is at a commercial testing laboratory.\
+    \ tier: isoform-specific biochemical or binding difference, no organismal phenotype\n CORRECTED 2026-11-22:\
+    \ 32 missense variants had been classified pathogenic or likely pathogenic; 31 of them scored as abnormal,\
+    \ and the four SpliceAI calls sit inside those 31."
 - id: CAN-315
   claim: 'Matched whole genomes and transcriptomes find the somatic lesions that exome sequencing cannot see:
     across 1,134 pan-cancer tumours with 3,022 normal controls, 678 somatic intronic mutations were associated
@@ -4312,12 +4327,11 @@ claims:
 
     '
 - id: CAN-406
-  claim: 'An alternatively spliced checkpoint molecule can change the growth of a tumour through the immune
+  claim: An alternatively spliced checkpoint molecule can change the growth of a tumour through the immune
     system alone. B16F10 melanoma cells engineered to secrete the soluble, transmembrane-exon-skipped form
     of CTLA-4 grew significantly faster than empty-vector controls in immunocompetent mice while growing identically
-    in culture, and the same construct gave no growth advantage in an immunocompromised host.
-
-    '
+    in culture; in a separate fibrosarcoma model, the same construct and its control gave overlapping growth
+    in severely immunocompromised hosts.
   topic: checkpoint molecules as isoforms - soluble CTLA-4
   source:
     doc_id: PMC10861965
@@ -4337,12 +4351,12 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. The soluble isoform keeps the B7-binding domain
-    encoded by exon 2 and loses the transmembrane domain encoded by exon 3, with a frameshift giving exon 4
-    a different amino acid sequence. The in-vitro and immunodeficient-host controls are what make this a claim
-    about immunity rather than about growth.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype. The soluble isoform keeps the B7-binding domain\
+    \ encoded by exon 2 and loses the transmembrane domain encoded by exon 3, with a frameshift giving exon\
+    \ 4 a different amino acid sequence. The in-vitro and immunodeficient-host controls are what make this\
+    \ a claim about immunity rather than about growth.\n CORRECTED 2026-11-22 by a records review: the immunocompromised\
+    \ control is MCA-205 fibrosarcoma at L22, not B16F10. No B16F10 experiment in immunocompromised mice is\
+    \ reported, so the chapter must not write the control as the same cells in a different host."
 - id: CAN-407
   claim: 'Blocking only the soluble isoform is enough to change a tumour. An antibody raised against the C-terminal
     epitope unique to soluble CTLA-4, which does not engage the membrane receptor, slowed MC38 tumour growth
@@ -4481,10 +4495,11 @@ claims:
 - id: CAN-411
   claim: 'The gap between predicted and detected is about five orders of magnitude. From a median of 539,925
     junction-spanning polypeptides generated per donor, requiring both mass-spectrometry confirmation in proteomics
-    data and predicted MHC-I binding left on average 1.7 splicing-derived candidates per tumour across 63 breast
-    and ovarian samples, against 0.6 from point mutations; at least one splicing-derived candidate was found
-    in 43 of 63 samples against 19 of 63 for point mutations, and the authors attribute the small numbers to
-    mass spectrometry retaining only about 1 per cent of otherwise viable peptides.
+    data and predicted MHC-I binding and confirmation of the specific junction in that sample left on average
+    1.7 splicing-derived candidates per tumour, where dropping the per-sample junction requirement raises it
+    to about eleven across 63 breast and ovarian samples, against 0.6 from point mutations; at least one splicing-derived
+    candidate was found in 43 of 63 samples against 19 of 63 for point mutations, and the authors attribute
+    the small numbers to mass spectrometry retaining only about 1 per cent of otherwise viable peptides.
 
     '
   topic: how few splicing neoantigens are ever detected
@@ -4598,11 +4613,11 @@ claims:
 
       '
   confidence: high
-  note: 'tier: not a case; this is the measurement argument the brief assigned. Different lines and a different
-    finding from CAN-027 and CAN-028, which cite the same document. The 1.7 and 0.6 figures are per sample,
-    not per cancer type, and the denominators are 63 donors, not the 8,705 of CAN-027.
-
-    '
+  note: "tier: not a case; this is the measurement argument the brief assigned. Different lines and a different\
+    \ finding from CAN-027 and CAN-028, which cite the same document. The 1.7 and 0.6 figures are per sample,\
+    \ not per cancer type, and the denominators are 63 donors, not the 8,705 of CAN-027.\n CORRECTED 2026-11-22:\
+    \ L45 reports two analyses, 1.7 with per-sample RNA-seq confirmation of the junction and about eleven without\
+    \ it. The chapter must say which one it is quoting."
 - id: CAN-412
   claim: 'The authors of the largest such analysis state the limit of their own evidence: the tandem mass spectrometry
     they used was whole-proteome and tryptic, so it can show that a peptide exists in the cell but cannot show
@@ -4795,14 +4810,14 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype, for this record;
-    the phenotype from the same paper is CAN-420. This is true immunopeptidomics - W6/32 and clone 34.1.2s
-    pull-downs - not whole-proteome mass spectrometry, which is what distinguishes it from CAN-411 and CAN-412.
-    The two false-discovery rates are stated together at L438 without being assigned to the human and mouse
-    searches individually, so the claim does not assign them either. A parallel human analysis in HCT116 found
-    60 quantifiable retained-intron peptides.
-
-    '
+  note: "tier: isoform-specific biochemical or binding difference, no organismal phenotype, for this record;\
+    \ the phenotype from the same paper is CAN-420. This is true immunopeptidomics - W6/32 and clone 34.1.2s\
+    \ pull-downs - not whole-proteome mass spectrometry, which is what distinguishes it from CAN-411 and CAN-412.\
+    \ The two false-discovery rates are stated together at L438 without being assigned to the human and mouse\
+    \ searches individually, so the claim does not assign them either. A parallel human analysis in HCT116\
+    \ found 60 quantifiable retained-intron peptides.\n CORRECTED 2026-11-22: L438 does assign the two false-discovery\
+    \ rates, 4.3 per cent to the human HCT116 search and 5.8 per cent to the mouse CT26 search, so this record\
+    \ may state 5.8 per cent."
 - id: CAN-415
   claim: 'Perturbing the spliceosome with a drug makes tumours more visible to T cells. In mouse tumours, pharmacological
     splicing modulation slowed growth and improved the effect of checkpoint blockade, and both effects depended
@@ -4956,7 +4971,8 @@ claims:
   topic: splicing modulators and tumour immunogenicity
   source:
     doc_id: bio_85f8fc4f6c8b
-    title: LINE-associated cryptic splicing induces dsRNA-mediated interferon response and tumor immunity
+    title: hnRNPM protects against the dsRNA-mediated interferon response by repressing LINE-associated cryptic
+      splicing
     authors: Zheng, R.; Dunlap, M.; Bobkov, G. O.; Gonzalez-Figueroa, C.; Patel, K. J.; Lyu, J.; Harvey, S.
       E.; Chan, T. W.; Quinones-Valdez, G.; Choudhury, M.; Le Roux, C. A.; Bartels, M. D.; Vuong, A.; Flynn,
       R. A.; Chang, H. Y.; Van Nostrand, E. L.; Xiao, X.; Cheng, C.
@@ -4975,22 +4991,21 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype. The ectopic expression
-    of a single cryptic exon is the isoform-specific perturbation; the readout is interferon-stimulated gene
-    expression in culture. There is no animal tumour experiment in this paper: the tumour-immunity part is
-    a correlation in TCGA between low hnRNPM, cryptic exon inclusion, immune infiltration scores and survival,
-    which is a separate and weaker claim. Read as a bioRxiv preprint; the journal version''s DOI is recorded,
-    so preprint: true.
-
-    '
+  note: "tier: isoform-specific biochemical or binding difference, no organismal phenotype. The ectopic expression\
+    \ of a single cryptic exon is the isoform-specific perturbation; the readout is interferon-stimulated gene\
+    \ expression in culture. There is no animal tumour experiment in this paper: the tumour-immunity part is\
+    \ a correlation in TCGA between low hnRNPM, cryptic exon inclusion, immune infiltration scores and survival,\
+    \ which is a separate and weaker claim. Read as a bioRxiv preprint; the journal version's DOI is recorded,\
+    \ so preprint: true.\n CORRECTED 2026-11-22: the recorded title was the bioRxiv one, under the journal\
+    \ DOI, so the bibliography would have cited Molecular Cell for a title that does not appear there. Title\
+    \ now the published one, from Crossref; the author list was already the published one."
 - id: CAN-420
-  claim: 'Peptides from retained introns have been made into a vaccine that worked in mice. A ChAdOx1 vector
-    carrying a cassette of 29 mouse retained-intron peptides, given as a single intravenous dose to BALB/c
-    mice bearing CT26 tumours, delayed tumour growth and lengthened survival against a GFP-vector control,
-    with roughly a 60 per cent reduction in tumour growth by day 17; the immunogenicity and tumour-challenge
+  claim: Peptides from retained introns have been made into a vaccine that works in mice, in a prophylactic
+    design rather than a treatment one. A ChAdOx1 vector carrying a cassette of 29 mouse retained-intron peptides
+    was given as a single intravenous dose to BALB/c mice, which received subcutaneous CT26 tumour cells nine
+    or ten days later; tumour growth was delayed and survival lengthened against a GFP-vector control, with
+    roughly a 60 per cent reduction in tumour growth by day 17, and the immunogenicity and tumour-challenge
     experiments were each run twice.
-
-    '
   topic: clinical and preclinical therapy against splice-derived antigens
   source:
     doc_id: PMC13562731
@@ -5011,13 +5026,15 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype, in the sense that the antigens are isoform-derived;
-    the perturbation is a vaccine, not a change to the isoform itself. The peptides in the cassette were chosen
-    from the CT26 immunopeptidomics of CAN-414, so the two records are one chain of evidence from the same
-    laboratory, not corroboration. No blinding was used and group sizes come from a power calculation the paper
-    does not give.
-
-    '
+  note: "tier: isoform-specific perturbation with phenotype, in the sense that the antigens are isoform-derived;\
+    \ the perturbation is a vaccine, not a change to the isoform itself. The peptides in the cassette were\
+    \ chosen from the CT26 immunopeptidomics of CAN-414, so the two records are one chain of evidence from\
+    \ the same laboratory, not corroboration. No blinding was used and group sizes come from a power calculation\
+    \ the paper does not give.\n CORRECTED 2026-11-22 by a records review: the previous claim said the mice\
+    \ were tumour-bearing when vaccinated, following the paper's own body prose at L51. The methods at L453\
+    \ and L455 say the tumour cells were given nine or ten days AFTER vaccination, and L447 calls these the\
+    \ tumour-challenge experiments. Where a paper's prose and its methods disagree, the methods are what the\
+    \ record follows."
 - id: CAN-421
   claim: 'Two results in the same paper bound its own conclusion. Combining the retained-intron vaccine with
     the PRMT5 inhibitor T1-44 gave no better tumour control and no larger interferon-gamma ELISpot signal than
@@ -5238,12 +5255,11 @@ claims:
 
     '
 - id: CAN-504
-  claim: 'Even the H3B-8800 subgroup signal was a splicing measurement rather than a response: of the 84 patients
-    dosed, 59 gave blood cells for pharmacodynamics, and among the seven transfusion-free patients with expression
-    data the pre-treatment ratio of aberrant to canonical TMEM14C junctions - a heme transporter mis-spliced
-    in SF3B1-mutant disease - separated those who later became transfusion independent from those who did not.
-
-    '
+  claim: The one encouraging signal from H3B-8800 was a splicing measurement rather than a response, and its
+    analysis population is not the responders. Of the 84 patients dosed, 59 gave blood cells for pharmacodynamics;
+    across the MDS patients with pre-treatment expression data, a receiver-operating analysis of the pre-treatment
+    ratio of aberrant to canonical junctions in the heme transporter TMEM14C gave a criterion above which five
+    of seven MDS patients went on to have an interval free of red-cell transfusion.
   topic: therapeutics - H3B-8800 biomarker
   source:
     doc_id: PMC8632688
@@ -5261,26 +5277,28 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L152-L152
+    lines: L149,L151,L152
     anchor: https://paperclip.gxl.ai/citations/papers/PMC8632688#L152
     quote: 'the pre-treatment ratio of TMEM14C AJ/CJ was predictive of the onset of RBC TI on H3B-8800 treatment
       in MDS patients
 
       '
   confidence: medium
-  note: 'Different line and different finding from CAN-503, same document. Confidence is medium on purpose:
-    the predictive claim rests on seven patients with expression data, the authors report it as a "trend" plus
-    a ROC analysis, and no independent validation cohort exists. The chapter should present it as a hypothesis
-    the trial generated, not as a validated biomarker. tier: correlation of isoform ratio with a phenotype
-    only.
-
-    '
+  note: "Different line and different finding from CAN-503, same document. Confidence is medium on purpose:\
+    \ the predictive claim rests on seven patients with expression data, the authors report it as a \"trend\"\
+    \ plus a ROC analysis, and no independent validation cohort exists. The chapter should present it as a\
+    \ hypothesis the trial generated, not as a validated biomarker. tier: correlation of isoform ratio with\
+    \ a phenotype only.\n CORRECTED 2026-11-22 by a records review: the previous claim sentence fused two different\
+    \ sevens on L152. The first seven are all transfusion-free, so nothing can be separated within them; the\
+    \ discrimination was made across MDS patients with pre-treatment expression data, and the second seven\
+    \ are the MDS patients above the criterion, five of whom responded."
 - id: CAN-505
   claim: 'Attacking splicing indirectly, through the arginine methyltransferase that the spliceosome depends
-    on, did no better in patients: in the phase 1b expansion of PRT543 in 40 patients with relapsed or refractory
-    splicing factor-mutant myeloid disease, best responses were one erythroid improvement among 18 lower-risk
-    MDS patients, one marrow complete remission and two haematological improvements among 15 higher-risk MDS
-    or MDS/MPN patients, and one complete remission with incomplete count recovery among seven AML patients.
+    on, did no better in patients: across the dose-escalation and expansion phases of the PRT543 phase 1 study,
+    in 40 patients with relapsed or refractory splicing factor-mutant myeloid disease, best responses were
+    one erythroid improvement among 18 lower-risk MDS patients, one marrow complete remission and two haematological
+    improvements among 15 higher-risk MDS or MDS/MPN patients, and one complete remission with incomplete count
+    recovery among seven AML patients.
 
     '
   topic: therapeutics - PRMT5 inhibition in spliceosome-mutant disease
@@ -5305,20 +5323,19 @@ claims:
 
       '
   confidence: high
-  note: 'The 40 patients were 18 lower-risk MDS, 11 higher-risk MDS, 7 AML and 4 MDS/MPN overlap (L24); the
-    response sentence at L53 groups the 11 higher-risk MDS with the 4 MDS/MPN as "15", which is why the claim
-    says 15. Four patients had no repeat marrow biopsy and were counted as non-responders. Serial testing found
-    no change in splicing-factor mutation allele frequency, so the responses were not clonal clearance. PRMT5
-    is not a splicing factor; the rationale is that the symmetric dimethylarginine mark PRMT5 writes is needed
-    for spliceosome assembly, which the authors state at L20. Shares a senior author (Abdel-Wahab) with CAN-034
-    and CAN-507. tier: clinical outcome.
-
-    '
+  note: "The 40 patients were 18 lower-risk MDS, 11 higher-risk MDS, 7 AML and 4 MDS/MPN overlap (L24); the\
+    \ response sentence at L53 groups the 11 higher-risk MDS with the 4 MDS/MPN as \"15\", which is why the\
+    \ claim says 15. Four patients had no repeat marrow biopsy and were counted as non-responders. Serial testing\
+    \ found no change in splicing-factor mutation allele frequency, so the responses were not clonal clearance.\
+    \ PRMT5 is not a splicing factor; the rationale is that the symmetric dimethylarginine mark PRMT5 writes\
+    \ is needed for spliceosome assembly, which the authors state at L20. Shares a senior author (Abdel-Wahab)\
+    \ with CAN-034 and CAN-507. tier: clinical outcome.\n CORRECTED 2026-11-22: the 40 are escalation plus\
+    \ expansion (L20, L25), not the expansion alone."
 - id: CAN-506
   claim: 'The PRT543 investigators offered a mechanical reason for their own negative result: treatment demonstrably
     engaged PRMT5 in patients, but the number of splicing changes measured in patient blood cells was far smaller
     than in cell lines treated with 10 micromolar drug, a concentration well above the 1.48 micromolar peak
-    reached in patients, and they name that shortfall as a likely explanation for the limited efficacy.
+    reached in patients, and they name that shortfall as a possible explanation for the limited efficacy.
 
     '
   topic: therapeutics - why splicing drugs fail in patients
@@ -5343,14 +5360,14 @@ claims:
 
       '
   confidence: high
-  note: 'Different line and different finding from CAN-505, same document. This is the sharpest statement in
-    the therapeutic literature of the gap the chapter''s closing argument is about: the mechanism is right,
-    the dose that moves splicing in a dish is not reachable in a person. It is the authors'' own interpretation,
-    offered as a possibility ("might be"), not a demonstrated cause, and the prose must keep that hedge. Pairs
-    with CAN-508, which shows the opposite pattern for a different drug - target fully engaged, still no responses.
-    tier: clinical outcome.
-
-    '
+  note: "Different line and different finding from CAN-505, same document. This is the sharpest statement in\
+    \ the therapeutic literature of the gap the chapter's closing argument is about: the mechanism is right,\
+    \ the dose that moves splicing in a dish is not reachable in a person. It is the authors' own interpretation,\
+    \ offered as a possibility (\"might be\"), not a demonstrated cause, and the prose must keep that hedge.\
+    \ Pairs with CAN-508, which shows the opposite pattern for a different drug - target fully engaged, still\
+    \ no responses. tier: clinical outcome.\n CORRECTED 2026-11-22: the source says 'might be an explanation'\
+    \ at L58, so the claim sentence now says possible rather than likely. Target engagement rests on eight\
+    \ paired samples with a mean serum SDMA reduction of 41.9 per cent at L55."
   figure_idea: 'Two columns of counted splicing events for the same drug - cell line at the dose used in the
     laboratory, patient blood cells at the dose a person tolerates - with the achievable plasma concentration
     marked on both. The gap between them is the whole translational problem.
@@ -5424,12 +5441,14 @@ claims:
   confidence: medium
   note: 'Different line and different finding from CAN-507, same document. Confidence is medium because the
     western blot is shown for two patients (Fig. 1A and Supplementary Table 3), not for the whole cohort, so
-    "more than 50 per cent degradation" is a measurement on a handful of patients and the claim should not
-    be generalised past that. The chapter''s strongest version of its closing argument is CAN-508 beside CAN-506:
-    in one trial the drug reached its target and nothing happened, in the other the drug reached its target
-    and the splicing response was too small. tier: clinical outcome.
-
-    '
+    ''more than 50 per cent degradation'' is a measurement on a handful of patients and the claim should not
+    be generalised past that. CORRECTED 2026-11-22 by a records review: an earlier version of this note claimed
+    the chapter''s strongest argument was a CONTRAST between this trial and CAN-506, one engaging its target
+    with nothing following and the other seeing too small a splicing response. That contrast does not exist.
+    This paper reports the same shortfall as the PRT543 paper: splicing events induced in patients were on
+    average about 80 per cent fewer than in cell lines (PMC10681888 L57), and PRT543''s figure (PMC11879867
+    L56) is also about 80 per cent. Both trials are one pattern, target engaged and splicing response an order
+    short of the dish. Any chapter sentence built on them disagreeing is built on nothing.'
 - id: CAN-509
   claim: 'The kinase route into splicing has now been tested in humans too: the first-in-human phase 1 of the
     CLK inhibitor rogocekib (CTX-712, trial jRCT2080224127) dosed 46 patients in Japan with advanced, relapsed
@@ -5721,7 +5740,11 @@ claims:
     the modality and the delivery barrier, not about one isoform. Dose 50 mg per kilogram every four days.
     The authors note at L46 that the ungated version of this ASO needed high dose and frequent injection to
     produce clinical benefit, and that AR is expressed in healthy bone, muscle and brain. tier: isoform-specific
-    biochemical or binding difference, no organismal phenotype
+    perturbation with phenotype. CORRECTED 2026-11-22: the tier previously read ''no organismal phenotype'',
+    which contradicts the record''s own xenograft and intra-tibial tumour results. The real objection, which
+    stands, is that the gapmer knocks down full-length AR together with its variants (L46), so the agent is
+    not isoform-selective even though the outcome is organismal. Oligonucleotide accumulation was measured
+    in 22Rv1 (L34); VCaP matched on tumour volume and weight rather than on accumulation
 
     '
   figure_idea: 'A cross-section of a tumour with three concentric shells, showing where free oligonucleotide,
@@ -5831,19 +5854,21 @@ claims:
 
       '
   confidence: high
-  note: 'The trial''s own futility boundary was a target response rate of 40 per cent for this population,
-    which 23.5 per cent does not reach; the planned sample size was 21 and 17 were treated. Median overall
-    survival was 19.3 months with a confidence interval running to not estimable, so it should not be quoted
-    as a benefit. Same drug as CAN-518 and the same conclusion at a later stage of development; the chapter
-    can use the pair to say the modality plateaued rather than failed outright. tier: clinical outcome.
-
-    '
+  note: "The trial's own futility boundary was a target response rate of 40 per cent for this population, which\
+    \ 23.5 per cent does not reach; the planned sample size was 21 and 17 were treated. Median overall survival\
+    \ was 19.3 months with a confidence interval running to not estimable, so it should not be quoted as a\
+    \ benefit. Same drug as CAN-518 and the same conclusion at a later stage of development; the chapter can\
+    \ use the pair to say the modality plateaued rather than failed outright. tier: clinical outcome.\n CORRECTED\
+    \ 2026-11-22: the futility rule was an interim one, less than a 10 per cent probability that the response\
+    \ rate exceeds a 40 per cent target, assessed after ten patients (L50). The arm was not closed by that\
+    \ boundary; the investigators closed it on the totality of safety, efficacy and response durability (L155)."
 - id: CAN-520
   claim: 'An isoform-switching oligonucleotide can turn an immune checkpoint off by moving the protein off
-    the cell surface: antisense oligonucleotides blocking HNRNPA1 sites at exons 9 and 10 of CD47 shifted ovarian
-    cancer cells from the full-length isoform to a truncated isoform that cannot reach the membrane or bind
-    SIRPA, and in cell-derived and patient-derived xenografts given the oligonucleotide in lipid nanoparticles
-    alongside macrophages, seven mice per group, tumour burden fell and pro-inflammatory infiltration rose.
+    the cell surface: antisense oligonucleotides covering HNRNPA1 binding sites in the introns adjacent to
+    exons 9 and 10 of CD47 shifted ovarian cancer cells from the full-length isoform to a truncated isoform
+    that cannot reach the membrane or bind SIRPA, and in cell-derived and patient-derived xenografts given
+    the oligonucleotide in lipid nanoparticles alongside macrophages, seven mice per group in the patient-derived
+    model, tumour burden fell and pro-inflammatory infiltration rose.
 
     '
   topic: therapeutics - antisense isoform switching with an animal outcome
@@ -5866,15 +5891,17 @@ claims:
 
       '
   confidence: medium
-  note: 'preprint: true and NOT YET PEER REVIEWED - no journal version is reported by the corpus search index,
-    so the chapter should either hold it or label it as a preprint in the text. Confidence medium for that
-    reason, and because the xenograft hosts are immunodeficient mice reconstituted with THP1-derived macrophages,
-    which the authors themselves list as a limitation at L51. The half-maximal effective concentration of the
-    lead oligonucleotide was 28.97 nanomolar in OVCAR3 cells. This is a cancer-side isoform switch, not an
-    antibody-drug conjugate; CD44v6 as an ADC target belongs to chapter 12 and is a different gene. tier: isoform-specific
-    perturbation with phenotype
-
-    '
+  note: "preprint: true and NOT YET PEER REVIEWED - no journal version is reported by the corpus search index,\
+    \ so the chapter should either hold it or label it as a preprint in the text. Confidence medium for that\
+    \ reason, and because the xenograft hosts are immunodeficient mice reconstituted with THP1-derived macrophages,\
+    \ which the authors themselves list as a limitation at L51. The half-maximal effective concentration of\
+    \ the lead oligonucleotide was 28.97 nanomolar in OVCAR3 cells. This is a cancer-side isoform switch, not\
+    \ an antibody-drug conjugate; CD44v6 as an ADC target belongs to chapter 12 and is a different gene. tier:\
+    \ isoform-specific perturbation with phenotype\n CORRECTED 2026-11-22: seven per group is the patient-derived\
+    \ xenograft (L60). The cell-derived xenografts used six and ten per group, and the ten-mouse arm had no\
+    \ macrophage replenishment (L59). The oligonucleotides cover HNRNPA1 sites adjacent to the exons rather\
+    \ than on them (L39), and the paper also reports HNRNPA1 itself promoting the same skipping (L15), so 'blocking\
+    \ HNRNPA1' is not the mechanism the source supports."
 - id: CAN-521
   claim: 'The same poison exon can be removed from the genome instead of masked on the transcript: paired guide
     RNAs deleting the EZH2 poison exon in SRSF2-mutant K052 leukaemia cells produced EZH2 messenger RNA without
