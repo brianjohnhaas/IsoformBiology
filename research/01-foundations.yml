@@ -3860,36 +3860,6 @@ claims:
     site vocabulary to PMC2593745 L23, so the chapter can set three wordings side by side with a citation on
     each. The prevalence figure on the same line, 95 to 100 per cent of human multi-exon genes, belongs to
     chapters 2 and 4 and is not recorded here.'
-- id: FND-207
-  claim: 'Classifying exons by position in one human cell type does not partition them cleanly: of 353,677
-    annotated meta-exons in a lymphoblastoid cell line, half were not expressed and 0.3 per cent lay in single-exon
-    genes, and at an absolute index cut-off of 0.3 about 60,000 were called internal exons, about 16,000 purely
-    terminal exons and about 30,000 hybrids used both ways, with 3.82 per cent of exons still called hybrid
-    under the authors'' most conservative criteria.'
-  topic: first, internal and last are not fixed properties of an exon
-  source:
-    doc_id: bio_61f3e4aa6d09
-    title: Widespread occurrence of hybrid internal-terminal exons in human transcriptomes
-    authors: Fiszbein, A.; McGurk, M.; Calvo-Roitberg, E.; Kim, G.; Burge, C. B.; Pai, A. A.
-    journal: Science Advances
-    year: 2022
-    doi: 10.1126/sciadv.abk1752
-    bibkey: fiszbein2022hybridexons
-    metadata_source: crossref
-    preprint: true
-  evidence:
-    text_access: full_text
-    lines: L31
-    anchor: https://paperclip.gxl.ai/citations/papers/bio_61f3e4aa6d09#L31
-    quote: From a total of 353,677 annotated metaexons, we discarded 50% that are not expressed and 0.3% located
-      in single-exon genes
-  confidence: high
-  note: 'tier: none of the three evidence tiers applies; this is an annotation-and-method count. Denominators
-    stated: 353,677 annotated meta-exons in one lymphoblastoid cell line, with the three class counts taken
-    at an absolute index cut-off of 0.3 and the 3.82 per cent taken under the stricter joint criterion, so
-    the two figures are not alternative estimates of the same quantity. The document read is a preprint and
-    preprint: true is set; the DOI recorded is the journal version''s, which is the case the gates cannot see.
-    One cell type, not a human average.'
 - id: FND-208
   claim: 'Those authors name the gap in the taxonomy directly, calling it the unsolved exon type problem: an
     exon cannot in general be assigned uniquely to first, internal or last, and a hybrid exon will be called
@@ -7879,8 +7849,9 @@ claims:
     year: 2013
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3890989/
     bibkey: tikhonov2013competitionwithinintrons
+    doi: 10.32607/20758251-2013-5-4-52-61
   evidence:
-    text_access: abstract_only
+    text_access: full_text
     lines: L5
     anchor: https://paperclip.gxl.ai/citations/papers/PMC3890989#L5
     quote: 'polyadenylation signals are silenced within introns: the poly(A) signal is utilized in the exonic
@@ -7892,7 +7863,9 @@ claims:
     Drosophila against mouse and human, a reporter against 3'' end sequencing. meta.json carries no DOI for
     this document, so a url is recorded instead and the DOI must be resolved before the bibliography is built.
     The abstract states that overlapping putative poly(A) signals in nested genes affect about 17 per cent
-    of all genes, and those authors call the rare intronic events likely inducible.'
+    of all genes, and those authors call the rare intronic events likely inducible. Corrected 2026-11-23 by
+    a records review: the doi, which meta.json carries as null, is an exact Crossref title match agreeing with
+    this record''s journal and year, and text_access was abstract_only for a document that is full text.'
 - id: FND-334
   claim: 'In a composite terminal exon the splice site and the poly(A) site compete inside the same sequence,
     and tipping the balance toward splicing produces a spliced truncated transcript: overexpressing the spliceosomal
@@ -8892,3 +8865,10 @@ leads:
     Acta Naturae 2013, PubMed identifier 24455183, before the reference can render.
   why: A missing DOI on a record that carries the chapter's only contradicting result would stall the bibliography
     build at the worst moment.
+- note: 'FND-207 was removed on 2026-11-23. It recorded the same hybrid-exon counts as FND-315 from the same
+    work, differing only in which version was read: the preprint states 3.82 per cent where the published version
+    states 3.8. Each was faithful to its own line, so neither was wrong, but they were one finding recorded
+    twice. FND-315 is kept because it reads the published version, has preprint correctly unset, and carries
+    the threshold-dependence pointer a reviewer confirmed.'
+  why: Two records of one finding with two roundings of one number would have let the chapter cite the same
+    result twice as though it were two.
