@@ -1,7 +1,6 @@
 # Methods before long reads
 
 ::: {.callout-note collapse="true"}
-
 ## How this chapter's sources were read
 
 Of this chapter's sources, many are pre-2000 and are held in this project's
@@ -15,12 +14,14 @@ what their own claim denied.
 
 Every claim about alternative splicing has an assay behind it, and the assay
 fixes what kind of claim it can be. A method that measures a length can
-establish that a transcript is discontinuous without establishing that the
-discontinuity is regulated. A method that counts junctions can establish
-prevalence, and cannot establish which junctions occurred in the same molecule.
+establish that a transcript is discontinuous. Whether that discontinuity is
+regulated lies outside what it can show. A method that counts junctions can
+establish prevalence, and cannot establish which junctions occurred in the
+same molecule.
 
-The sections below follow that constraint rather than the chronology, taking one
-generation of method at a time with the specific thing it could not reach.
+The sections below follow that constraint rather than the chronology. Each
+takes one generation of method at a time, with the specific thing it could not
+reach.
 
 ## Electron microscopy and a split transcript {#sec-1977}
 
@@ -34,124 +35,127 @@ the message [@berget1977spliced].
 
 What the microscope could resolve had been stated a few years earlier by the
 people who developed the staining. A single-stranded region appears about 8.5
-nanometres thick against 3.5 for an RNA-DNA duplex, and a hybrid of about 80
+nanometres thick, against 3.5 for an RNA-DNA duplex. A hybrid of about 80
 nucleotide pairs can be recognised in favourable cases, with difficulty
 [@wu1975gene32staining]. A later survey of the whole family of nucleic-acid
-microscopy methods put their positional resolution at 50 to 100 nucleotides, and
-presented the technique as the step that chooses which region to sequence next
-rather than as a substitute for sequencing [@brack1981dnaem].
+microscopy methods put their positional resolution at 50 to 100 nucleotides.
+That survey presented the technique as the step that chooses which region to
+sequence next rather than as a substitute for sequencing [@brack1981dnaem].
 
-That resolution is visible in what the hexon paper reported. The three upstream
-segments complementary to the unpaired tail were placed at 17, 20 and 27 genome
-units, which is a fractional coordinate on a viral map rather than a nucleotide
-position, and the paper closes by offering a model for late message synthesis
-[@berget1977spliced].
+That resolution is visible in what the hexon paper reported. The three
+upstream segments complementary to the unpaired tail were placed at 17, 20 and
+27 genome units. That is a fractional coordinate on a viral map rather than a
+nucleotide position. The paper closes by offering a model for late message
+synthesis [@berget1977spliced].
 
 A second group reached the same place by a different hybridisation geometry.
 R-loops formed between viral DNA and unfractionated polysomal RNA resolved
-three short segments from distant map positions, fused into one leader of 150
-to 200 nucleotides [@chow1977amazing].
+three short segments from distant map positions. Those segments were fused
+into one leader of 150 to 200 nucleotides [@chow1977amazing].
 
-The R-loop had been published the year before as physical chemistry rather than
-as a mapping tool. In 70 per cent formamide an RNA displaces the identical
-strand of a DNA duplex, the structure forms fastest at the temperature where
-half the duplex has separated, and it survives both removal of the formamide and
-digestion with restriction enzymes [@thomas1976rloops]. A 1977 study of
-adenovirus nuclear RNA sets out the whole inference chain the geometry
-supported. Loop size is proportional to the length of the RNA that hybridises,
-the molecules were measured in micrometres and ran as long as 13, and an SV40
-sequence carried inside a hybrid viral DNA had to serve as a position marker to
-orient the loops on the map [@meissner1977nuclearrna].
+The R-loop had been published the year before as physical chemistry rather
+than as a mapping tool. In 70 per cent formamide an RNA displaces the
+identical strand of a DNA duplex. The structure forms fastest at the
+temperature where half the duplex has separated. It survives both removal of
+the formamide and digestion with restriction enzymes [@thomas1976rloops]. A
+1977 study of adenovirus nuclear RNA sets out the whole inference chain the
+geometry supported. Loop size rises in proportion with the hybridising RNA's
+length. The molecules were measured in micrometres and ran as long as 13. An
+SV40 sequence carried inside a hybrid viral DNA had to serve as a position
+marker to orient the loops on the map [@meissner1977nuclearrna].
 
 Two unlike physical assays put the same segments at the same coordinates.
-Neither could give a sequence or an exact splice boundary, so the claim they
-licensed was the narrow one that a transcript can be discontinuous.
+Neither could give a sequence or an exact splice boundary. The claim they
+licensed was therefore the narrow one, that a transcript can be discontinuous.
 
 What that claim displaced was the assumption that a message runs colinear with
 the gene encoding it. A historian of the period records the dismissal of
-universal colinearity as following from two things together, the substantiation
-of the hybrid observation and a second group's parallel discoveries
-[@fry2024anomaly]. The same account places the observation itself
-inside a transcription-mapping project rather than in an experiment designed to
-find it [@fry2024anomaly].
+universal colinearity as following from two things together. Those were the
+substantiation of the hybrid observation and a second group's parallel
+discoveries [@fry2024anomaly]. The same account places the observation itself
+inside a transcription-mapping project rather than in an experiment designed
+to find it [@fry2024anomaly].
 
 ## Sequence fixed the boundaries and left an ambiguity {#sec-sequence-arbiter}
 
 Hybridisation geometry bounded a region and sequencing named positions inside
-it. At the adenovirus E4 locus the 5' termini were resolved to nucleotides 325,
-326, 327 and 329, inside a region that microscopy and S1-nuclease gel mapping
-had been able to map only as the message's 5' end [@hashimoto1981termini].
+it. At the adenovirus E4 locus the 5' termini were resolved to nucleotides
+325, 326, 327 and 329. Microscopy and S1-nuclease gel mapping had been able to
+map that region only as the message's 5' end [@hashimoto1981termini].
 
-Sequencing also settled less than the sharp version of this story suggests. The
-authors who sequenced the ovalbumin splice boundaries state that nucleotide
-sequence alone cannot define unique excision-ligation points, because the
-boundaries carry directly repeated sequence, and they reach unique points by
-proposing them [@breathnach1978boundaries]. An independent survey of the same gene's
-junctions found short homology at every one and no strong pairing between
-adjacent junctions [@catterall1978junctions].
+Sequencing also settled less than the sharp version of this story suggests.
+The authors who sequenced the ovalbumin splice boundaries state that
+nucleotide sequence by itself cannot define unique excision-ligation points.
+The reason is that the boundaries carry directly repeated sequence. They reach
+unique points only by proposing them [@breathnach1978boundaries]. An
+independent survey of the same gene's junctions found short homology at every
+one and no strong pairing between adjacent junctions
+[@catterall1978junctions].
 
-So the two generations of assay divide the labour rather than one replacing the
-other. A retrospective records that cDNA sequencing later fixed most adenovirus
-splice sites at nucleotide level [@westergrenjakobsson2021adenovirus]. One feature of
-that virus is still reported only from the microscope, a third E3
-polyadenylation site, and the modern authors who mention it write that messages
-"might correspond" to it [@westergrenjakobsson2021adenovirus].
+So the two generations of assay divide the labour rather than one replacing
+the other. A retrospective records that cDNA sequencing later fixed most
+adenovirus splice sites at nucleotide level
+[@westergrenjakobsson2021adenovirus]. One feature of that virus is still
+reported only from the microscope, a third E3 polyadenylation site. The modern
+authors who mention it write that messages "might correspond" to it
+[@westergrenjakobsson2021adenovirus].
 
 ## A reaction in a tube, and the fidelity it did not have {#sec-in-vitro}
 
 Moving splicing out of the cell made its requirements statable. A cell-free
 reaction removed the first intervening sequence from an adenovirus major late
-precursor and joined the first leader to the second, and the requirements came
-out as protein, magnesium ions and ATP [@hernandez1983cellfree]. The same system
-made the activity separable, since a postnuclear fraction had no splicing
-activity alone but stimulated the nuclear extract, and that stimulating activity
-travelled with small ribonucleoprotein particles on two kinds of chromatography
+precursor and joined the first leader to the second. The requirements came out
+as protein, magnesium ions and ATP [@hernandez1983cellfree]. The same system
+made the activity separable. A postnuclear fraction had no splicing activity
+alone but stimulated the nuclear extract. That stimulating activity travelled
+with small ribonucleoprotein particles on two kinds of chromatography
 [@hernandez1983cellfree].
 
 Accuracy was checked by primer extension, which showed the product's sequence
 across the junction matching reticulocyte beta-globin message
 [@kole1982invitrosplicing]. Those authors also stated their system's limits
-without hedging. The efficiency was low, the substrate spliced most efficiently
-was one terminated upstream of the polyadenylation site, and the transcript
-terminated downstream of that site was not spliced at all
+without hedging. The efficiency was low, and the substrate spliced most
+efficiently was one terminated upstream of the polyadenylation site. The
+transcript terminated downstream of that site was not spliced at all
 [@kole1982invitrosplicing].
 
-Efficiency improved and exposed a dependence. A HeLa nuclear extract removed the
-first intervening sequence from up to 90 per cent of an input human beta-globin
-precursor under optimal conditions, and splicing needed neither correct ends nor
-a poly(A) tail nor a cap. Without a cap, though, only about 30 to 40 per cent of
-the precursor was spliced accurately, with aberrantly cleaved RNAs alongside
-[@krainer1984faithfully]. The system earned its place by reproducing a disease
-pattern, since beta-thalassaemia mutations placed in that intron caused the same
-abnormal splicing in the tube as in cells [@krainer1984faithfully].
+Efficiency improved, and with it came a dependence. A HeLa nuclear extract
+removed the first intervening sequence from up to 90 per cent of an input
+human beta-globin precursor under optimal conditions. Splicing needed neither
+correct ends nor a poly(A) tail nor a cap. Without a cap, though, only about
+30 to 40 per cent of the precursor was spliced accurately, with aberrantly
+cleaved RNAs alongside [@krainer1984faithfully]. The system earned its place
+by reproducing a disease pattern. Beta-thalassaemia mutations placed in that
+intron caused the same abnormal splicing in the tube as in cells
+[@krainer1984faithfully].
 
 The reaction's intermediate was identified by three physical anomalies at once
 rather than by sequence. The excised intervening sequence migrated anomalously
-on polyacrylamide gels, reverse transcription was blocked near its 3' end, and a
-nuclease-resistant component mapped to the same site. Those authors then proposed
-a branched adenosine, placing it within a fragment 28 to 37 nucleotides from the
-3' end [@ruskin1984lariat]. The same two anomalies turned up in intact cells of
-another organism, where four forms of an excised yeast actin intron were
-recovered and two ran unusually slowly, one of those also carrying the block to
-reverse transcription, with the branch at the third adenosine of the conserved
-UACUAAC sequence [@domdey1984lariatinvivo].
+on polyacrylamide gels. Reverse transcription was blocked near its 3' end, and
+a nuclease-resistant component mapped to the same site. Those authors then
+proposed a branched adenosine, placing it within a fragment 28 to 37
+nucleotides from the 3' end [@ruskin1984lariat]. The same two anomalies turned
+up in intact cells of another organism. Four forms of an excised yeast actin
+intron were recovered, and two ran unusually slowly. One of those also carried
+the block to reverse transcription, with the branch at the third adenosine of
+the conserved UACUAAC sequence [@domdey1984lariatinvivo].
 
 Extracts also accepted substrates their own organism would not. A plant
-precursor carrying both its introns was processed in a HeLa extract with both
+precursor carrying both its introns was processed in a HeLa extract, with both
 introns removed in order and the exons faithfully ligated
-[@hartmuth1986plantpremrna], and an independent group reached the same
-conclusion with two further plant introns [@brown1986plantintrons]. The same
-authors set their result beside an earlier observation of their own running the
-other way, in which a human growth hormone precursor was not processed in plant
-tissue in cells [@hartmuth1986plantpremrna]. The two experiments differ in more
-than direction, since one is an extract and the other is tissue, so the pair
+[@hartmuth1986plantpremrna]. An independent group reached the same conclusion
+with two further plant introns [@brown1986plantintrons]. The same authors set
+their result beside an earlier observation of their own running the other way.
+In that one a human growth hormone precursor was not processed in plant tissue
+in cells [@hartmuth1986plantpremrna]. The two experiments differ in more than
+direction, since one is an extract and the other is tissue. The pair therefore
 does not establish a one-way compatibility.
 
-The sharper mismatch is about specificity. A yeast precursor was spliced
-accurately in a HeLa extract, and the extract branched it significantly nearer
-the 3' splice site than the conserved sequence yeast uses in cells and in its
-own extracts [@ruskin1986branchpoints]. Mutants lacking that sequence, which
-yeast rejects both in cells and in extract, were spliced accurately by the HeLa
+The sharper mismatch is about specificity: a yeast precursor was spliced
+accurately in a HeLa extract. The extract branched it significantly nearer the
+3' splice site than the conserved sequence yeast uses in cells and in its own
+extracts [@ruskin1986branchpoints]. Mutants lacking that sequence, which yeast
+rejects both in cells and in extract, were spliced accurately by the HeLa
 system [@ruskin1986branchpoints]. Those authors read the pair as one basic
 pathway differing in the specificity of its components. What it bounds is
 narrower and more useful here: an extract scoring as accurate on a gel is not
@@ -177,41 +181,41 @@ find [@rosenfeld1983production]. The method had become a way of discovering
 biology rather than confirming it.
 
 Establishing that a choice was regulated took a different kind of experiment
-again, and the troponin T gene supplied two of them. Cloning and genomic
+again. The troponin T gene supplied two of them. Cloning and genomic
 sequencing at the rat skeletal gene gave a minimum of ten and potentially 64
-distinct messages from small exons with a split-codon structure, and those
-authors name the observation that forces a regulatory explanation: at least two
-of the messages are spliced from structurally identical primary transcripts, so
-nothing in the substrate can account for the difference
+distinct messages, from small exons with a split-codon structure. Those
+authors name the observation that forces a regulatory explanation: at least
+two of the messages are spliced from structurally identical primary
+transcripts. Nothing in the substrate can therefore account for the difference
 [@breitbart1985combinatorial]. Moving the exons settled where the difference
 sits. A construct carrying the gene's combinatorial exons was transfected into
-muscle and non-muscle cells, and the alternative exons were incorporated as in
-the native gene only in differentiated myotubes
-[@breitbart1987transfactors].
+muscle and non-muscle cells. The alternative exons were incorporated as in the
+native gene only in differentiated myotubes [@breitbart1987transfactors].
 
 Mutation pointed at the sequence doing the work. A series of mutant calcitonin
-transcription units in HeLa and F9 cells showed cis-active elements near the
-calcitonin-specific 3' splice junction to be the primary regulators of the
-choice [@emeson1989spliceacceptor]. Hybridisation at the same locus had already
-placed the calcitonin and pseudo-calcitonin sequences on one chromosome and
-inside the same nuclear transcripts, with both messages functional and encoding
-different polypeptides, which those authors offer as compatible with their
-proposed model rather than as a demonstration of it
+transcription units was tested in HeLa and F9 cells. Cis-active elements near
+the calcitonin-specific 3' splice junction came out as the primary regulators
+of the choice [@emeson1989spliceacceptor]. Hybridisation at the same locus had
+already placed the calcitonin and pseudo-calcitonin sequences on one
+chromosome and inside the same nuclear transcripts. Both messages were
+functional and encoded different polypeptides. Those authors offer that as
+compatible with their proposed model rather than as a demonstration of it
 [@rosenfeld1982polymorphism].
 
-The vocabulary arrived alongside. The phrase "alternate splicing pathways" is in
-use by 1981 for a choice of route at the growth hormone gene, with the products
-present in normal pituitaries [@denoto1981growthhormone], and "alternative
-splicing" appears the same year in a microscopy proceedings account for families
-of messages sharing their 5' and 3' ends [@broker1981visualization]. Those are
-the earliest uses located here, under searches of abstract text, so an earlier
-use inside a paper's body would not have surfaced. By 1987 a paper could open on
-a definition rather than an introduction, calling the process ubiquitous and
-describing single genes encoding multiple protein isoforms
-[@breitbart1987transfactors]. Two years later the asymmetry was stated plainly,
-with a good deal of information accumulating about constitutive splicing and
-very little known about alternative RNA processing in complex transcription
-units [@emeson1989spliceacceptor].
+The vocabulary arrived alongside: the phrase "alternate splicing pathways" is
+in use by 1981 for a choice of route at the growth hormone gene. The products
+were present in normal pituitaries [@denoto1981growthhormone]. The phrase
+"alternative splicing" appears the same year in a microscopy proceedings
+account, for families of messages sharing their 5' and 3' ends
+[@broker1981visualization]. Those are the earliest uses located here, under
+searches of abstract text, so an earlier use inside a paper's body would not
+have surfaced. By 1987 a paper could open on a definition rather than an
+introduction. That one called the process ubiquitous and described single
+genes encoding multiple protein isoforms [@breitbart1987transfactors]. Two
+years later the asymmetry was stated plainly. A good deal of information was
+accumulating about constitutive splicing, and very little was known about
+alternative RNA processing in complex transcription units
+[@emeson1989spliceacceptor].
 
 ## RT-PCR and one locus at a time {#sec-low-throughput}
 
@@ -219,31 +223,32 @@ For roughly two decades after that, measuring splicing meant one locus and one
 gene. RT-PCR was the conventional approach, and retrospectives written three
 decades later still name it as such [@park2018expanding].
 
-What the earlier assays physically produced is worth stating, because it bounds
-what they could say. The RNA blot was published as a transfer technique in which
-separated RNA is coupled to treated paper and specific bands are found by
-hybridisation and autoradiography, so the output is a band at a position on a
-gel [@alwine1977rnablot]. A systematic comparison of blotting procedures opens by
-saying that detecting very rare messages this way is not straightforward, and
-reports a floor of about 5 picograms of a specific sequence after days of
-exposure with highly labelled probes [@gal1983blotsurvey].
+What the earlier assays physically produced is worth stating, because it
+bounds what they could say. The RNA blot was published as a transfer
+technique. Separated RNA is coupled to treated paper, and specific bands are
+found by hybridisation and autoradiography. The output is a band at a position
+on a gel [@alwine1977rnablot]. A systematic comparison of blotting procedures
+opens by saying that detecting very rare messages this way is not
+straightforward. It reports a floor of about 5 picograms of a specific
+sequence, after days of exposure with highly labelled probes
+[@gal1983blotsurvey].
 
-Nuclease digestion of hybrids, read on a gel, did more. The year after the hexon
-result it mapped the early messages of adenovirus 2, identifying seven abundant
-cytoplasmic RNAs, every one spliced [@berk1978earlymrnas]. The same assay
-produced the structural statement this chapter needs, that several messages from
-one transcriptional unit share extensive sequence and differ in how genomic
-sequences are spliced together [@berk1978earlymrnas]. At the growth hormone gene
-S1 mapping found that one of four intervening sequences has two different 3'
-splice sites [@denoto1981growthhormone], and in quail muscle S1 protection with
-primer extension showed the 5' and 3' exon choices to be coordinated across
-physiologically different muscles [@bucher1989troponint].
+Nuclease digestion of hybrids, read on a gel, did more. The year after the
+hexon result it mapped the early messages of adenovirus 2, identifying seven
+abundant cytoplasmic RNAs, every one spliced [@berk1978earlymrnas]. The same
+assay produced the structural statement this chapter needs. Several messages
+from one transcriptional unit share extensive sequence, and differ in how
+genomic sequences are spliced together [@berk1978earlymrnas]. At the growth
+hormone gene, S1 mapping found two different 3' splice sites at one of four
+intervening sequences [@denoto1981growthhormone]. In quail muscle, S1
+protection with primer extension showed the 5' and 3' exon choices to be
+coordinated across physiologically different muscles [@bucher1989troponint].
 
 Solution hybridisation with nuclease protection was the more quantitative
 alternative to RNA blot analysis. Its own practitioners recorded the catch,
-which was that at a locus making several mRNAs by alternative splicing the
-protected-fragment pattern from a uniformly labelled cRNA probe became hard to
-interpret [@nucleaseprotection1989solution].
+which concerned a locus making several mRNAs by alternative splicing. There
+the protected-fragment pattern from a uniformly labelled cRNA probe became
+hard to interpret [@nucleaseprotection1989solution].
 
 An assay can be sensitive without being diagnostic. In the S1 nuclease
 configuration best suited to demonstrating a splice, unspliced and spliced RNA
@@ -253,168 +258,172 @@ diagnostic, and needed an RNase H pre-digestion to become one
 
 Quantifying a ratio by PCR has its own failure modes, and the people building
 the assays named them. Reading product amounts off a reaction in its plateau
-phase can be misinterpreted, tube-to-tube variation makes semiquantitative
+phase can be misinterpreted. Tube-to-tube variation makes semiquantitative
 results hard to reproduce, and levels measured with different primer pairs
-cannot be compared, which is why target and competitor were co-amplified in one
-tube with a single primer pair [@borson1998competitive]. Practitioners building a
-real-time readout for splice variants opened by saying that getting an accurate
-number out of the older assays had been laborious and limited in principle
-[@vandenbroucke2001splicevariants]. One protocol adds a third primer pair in
-sequence shared by both variants, because the variants differ in local secondary
-structure and reverse transcription can run at different rates on them
-[@camacholondono2016reliable].
+cannot be compared. That is why target and competitor were co-amplified in one
+tube with a single primer pair [@borson1998competitive]. Practitioners
+building a real-time readout for splice variants opened by saying that getting
+an accurate number out of the older assays had been laborious and limited in
+principle [@vandenbroucke2001splicevariants]. One protocol adds a third primer
+pair in sequence shared by both variants. The reason is that the variants
+differ in local secondary structure, and reverse transcription can run at
+different rates on them [@camacholondono2016reliable].
 
 How far the measurement misses has been quantified on defined inputs. With two
-plasmids mixed at five known ratios, the two variant-specific shares should sum
-to 100 per cent, and they fell short or over by at most 7 per cent and on
-average 2.7 when amplification efficiency came from one estimator, against at
-most 11.5 and a mean of 9.0 from another [@camacholondono2016reliable]. What
-that measures is closure on 100 per cent rather than recovery of the input
-ratio, and all three estimators ran on the same five mixtures, so the deviation
-belongs to the efficiency estimate. The same authors state the assay's boundary:
-it measures one splicing decision, not several in the same primary transcript,
-and it returns a within-sample ratio rather than an abundance comparable across
-samples [@camacholondono2016reliable].
+plasmids mixed at five known ratios, the two variant-specific shares should
+sum to 100 per cent. They fell short or over by at most 7 per cent and on
+average 2.7 when amplification efficiency came from one estimator. The figures
+were at most 11.5 and a mean of 9.0 from another
+[@camacholondono2016reliable]. What that measures is closure on 100 per cent
+rather than recovery of the input ratio. All three estimators ran on the same
+five mixtures, so the deviation belongs to the efficiency estimate. The same
+authors state the assay's boundary: it measures one splicing decision, not
+several in the same primary transcript. It returns a within-sample ratio
+rather than an abundance comparable across samples
+[@camacholondono2016reliable].
 
 The enzyme can also manufacture a variant. One group tested the assay rather
-than the biology and re-attributed its own finding, after a reported deletion in
-a colon cancer message reappeared from in vitro transcribed RNA, failed to
-appear with two other polymerases, and removed 1,851 base pairs between two
+than the biology, and re-attributed its own finding. A reported deletion in a
+colon cancer message reappeared from in vitro transcribed RNA and failed to
+appear with two other polymerases. It removed 1,851 base pairs between two
 direct repeats beside a stem loop [@mader2001templateswitching]. Scanning a
 collection of human splice sites for the same signature put the artefact at a
-significant share of apparent splices using non-canonical signals, while leaving
-it rare across the collection as a whole, with the risk concentrated where a
+significant share of apparent splices using non-canonical signals. It stayed
+rare across the collection as a whole, with the risk concentrated where a
 putative intron is flanked by direct repeats [@cocquet2006templateswitching].
 
-Protein-level confirmation was its own project. An isoform-selective antibody
-could place a variant in a tissue, as it did for a muscle and heart form of
-neuronal nitric oxide synthase whose purified enzyme was active
+Protein-level confirmation was its own project, and an isoform-selective
+antibody could place a variant in a tissue. It did so for a muscle and heart
+form of neuronal nitric oxide synthase, whose purified enzyme was active
 [@silvagno1996nnosmu]. Exon-specific antisera could go further and put a share
 on it, showing one thyroid peroxidase form below 10 per cent of the protein
-[@gardas1997tpoisoforms]. What a gel band could not establish is visible in the
-same work, where a doublet differing by about 5 kilodaltons turned out to carry
-the same exon-encoded peptide in both bands, and the authors read the size
-difference as suggesting post-translational modification rather than the splice
-[@gardas1997tpoisoforms]. Sometimes the protein was simply not there: an
-antibody raised against the product predicted by a VDAC3 mRNA variant failed to
-find it [@decker2000vdac3]. And the method with the best claim to separating
-forms had a floor, since two-dimensional gels staining to low picomoles could
-not visualise the separated amyloid precursor isoforms at all
+[@gardas1997tpoisoforms]. What a gel band could not establish is visible in
+the same work. A doublet differing by about 5 kilodaltons turned out to carry
+the same exon-encoded peptide in both bands. The authors read the size
+difference as suggesting post-translational modification rather than the
+splice [@gardas1997tpoisoforms]. Sometimes the protein was simply not there:
+an antibody raised against the product predicted by a VDAC3 mRNA variant
+failed to find it [@decker2000vdac3]. And the method with the best claim to
+separating forms had a floor. Two-dimensional gels staining to low picomoles
+could not visualise the separated amyloid precursor isoforms at all
 [@newton2006appisoforms].
 
 ## Which junctions were in the same molecule {#sec-combinatorial}
 
 The deeper limitation of the whole single-locus era was combinatorial, and it
 outlasted it. As late as 2010, authors building a single-molecule splicing
-readout opened by stating it plainly: studying linked regulation of multiple
+readout opened by stating it plainly. Studying linked regulation of multiple
 splice sites within one gene, in transcripts such as Dscam, required new
-approaches [@conze2010singlemolecule]. The arithmetic in @sec-dscam is precisely
-what a bulk assay cannot report. Inclusion frequencies measured one exon at a
-time are compatible with combinations across molecules that contradict each
-other.
+approaches [@conze2010singlemolecule]. The arithmetic in @sec-dscam is
+precisely what a bulk assay cannot report. Inclusion frequencies measured one
+exon at a time are compatible with combinations across molecules that
+contradict each other.
 
 The arithmetic at an ordinary human gene is already large. Nine alternatively
-spliced segments in CACNA1G define 512 possible transcript structures, and those
-authors note that most have never been observed [@emerick2007correlations].
-Reading whole molecules changed the answer there. A survey of 1,580 full-length
-cDNAs from fetal and adult human brain found 30 distinct transcripts across 15
-sites of variation, and the splicing shifted from nearly independent in the
-fetal population to strongly concerted in the adult [@emerick2006cav31].
-Measuring all 36 pairs of the nine loci, linkage rose with development for most
-pairs, and the departure from independence was not confined to pairs, with the
-adult population showing raised higher-order correlations for groups of up to at
-least six loci [@emerick2007correlations].
+spliced segments in CACNA1G define 512 possible transcript structures, and
+those authors note that most have never been observed
+[@emerick2007correlations]. Reading whole molecules changed the answer there.
+A survey of 1,580 full-length cDNAs from fetal and adult human brain found 30
+distinct transcripts across 15 sites of variation. The splicing shifted from
+nearly independent in the fetal population to strongly concerted in the adult
+[@emerick2006cav31]. Measuring all 36 pairs of the nine loci, linkage rose
+with development for most pairs. The departure from independence was not
+confined to pairs, since the adult population showed raised higher-order
+correlations for groups of up to at least six loci [@emerick2007correlations].
 
 Those authors also state what their measurement was for. The developmental
-change is visible only once full-length transcripts are seen whole, and would be
-largely invisible to a gene-expression measurement or to an array-based or
+change is visible only once full-length transcripts are seen whole. It would
+be largely invisible to a gene-expression measurement, or to an array-based or
 EST-based splicing survey [@emerick2007correlations]. Whether linkage is the
-general case is a separate question, and the methods section of that same paper
-raises the possibility that one or two pairwise interactions may account for the
-departure from independence at some loci [@emerick2007correlations]. That is a
-modelling remark rather than a result, and the Dscam work in @sec-dscam is where
-independent choice has actually been measured.
+general case is a separate question. The methods section of that same paper
+raises the possibility that one or two pairwise interactions may account for
+the departure from independence at some loci [@emerick2007correlations]. That
+is a modelling remark rather than a result, and the Dscam work in @sec-dscam
+is where independent choice has actually been measured.
 
 Molecules were read whole before they could be counted one at a time. Long
 reverse transcription, gene-specific second-strand synthesis, long PCR and
-cloning produced full-length libraries for 21 ion channel transcripts, with the
-exon combination of each clone read by multiplex PCR, about 85 per cent of
-clones carrying a full-length insert, and variants as rare as one in a thousand
-detected in linear proportion to their starting abundance
-[@regan2000fulllength]. Counting replaced cloning next. Digital polony exon
-profiling was presented as a way to watch, transcript by transcript, which exons
-are included and in what combinations [@zhu2003singlemolecule]. Calibrated
-against a defined input, that readout picked out a single alternative molecule
-against upwards of 5,000 wild-type ones; separately, counting stayed linear over
-a wide concentration range at an r-squared of 0.99
-[@zhou2011cmybsinglemolecule].
+cloning produced full-length libraries for 21 ion channel transcripts. The
+exon combination of each clone was read by multiplex PCR, with about 85 per
+cent of clones carrying a full-length insert. Variants as rare as one in a
+thousand were detected in linear proportion to their starting abundance
+[@regan2000fulllength]. Counting replaced cloning next, in the form of digital
+polony exon profiling. That readout was presented as a way to watch,
+transcript by transcript, which exons are included and in what combinations
+[@zhu2003singlemolecule]. Calibrated against a defined input, that readout
+picked out a single alternative molecule against upwards of 5,000 wild-type
+ones. Separately, counting stayed linear over a wide concentration range, at
+an r-squared of 0.99 [@zhou2011cmybsinglemolecule].
 
 Put side by side with a bulk assay at one locus, the two disagree by an amount
-that has been measured. Across 13 paediatric leukaemia samples, with up to 3,000
-molecules queried each, exon-level QPCR and single-molecule counting of c-myb
-agreed closely on total transcripts at an r-squared of 0.946, modestly on one
-variant at 0.815, and poorly on another at 0.244, with agreement for that
-variant restored above 0.88 once the counted molecules carrying its junction
-were pooled to imitate what the QPCR reports
-[@zhou2011cmybsinglemolecule]. The reason is that an exon is shared by many
-molecules. The single-molecule count found 21 distinct variants containing one
-exon, of which one is predicted to make the corresponding protein, and 22
-containing another, of which two do [@zhou2011cmybsinglemolecule]. Those authors
-state the limitation in their own words: a QPCR assay reports one exon or one
-junction per measurement, and cannot say which of several changes occurred in
-the same molecule [@zhou2011cmybsinglemolecule].
+that has been measured. Across 13 paediatric leukaemia samples, with up to
+3,000 molecules queried each, two assays were set against each other.
+Exon-level QPCR and single-molecule counting of c-myb agreed closely on total
+transcripts, at an r-squared of 0.946. They agreed modestly on one variant at
+0.815, and poorly on another at 0.244. Agreement for that variant was restored
+above 0.88 once the counted molecules carrying its junction were pooled to
+imitate what the QPCR reports [@zhou2011cmybsinglemolecule]. The reason is
+that an exon is shared by many molecules. The single-molecule count found 21
+distinct variants containing one exon, of which one is predicted to make the
+corresponding protein. It found 22 containing another, of which two do
+[@zhou2011cmybsinglemolecule]. Those authors state the limitation in their own
+words. A QPCR assay reports one exon or one junction per measurement, and
+cannot say which of several changes occurred in the same molecule
+[@zhou2011cmybsinglemolecule].
 
 By 2010 the problem had been posed as a distributional one. The authors of a
 single-molecule assay note an apparent correlation between the choices made at
 separate sites, as against those sites combining at random according to their
-separate frequencies, and say that understanding it needs an assay returning the
-splice patterns of thousands of full-length transcripts
+separate frequencies. They say that understanding it needs an assay returning
+the splice patterns of thousands of full-length transcripts
 [@conze2010singlemolecule]. Their own design states its ceiling with a number
-attached, since four fluorescence channels and a combinatorial decoding scheme
-would let ten serial hybridisations read as many as nine exons across as many as
-324 genes [@conze2010singlemolecule]. The cost per locus was comparable. A
-full-length cloning survey of one gene family needed thousands of molecules read
-one clone at a time [@regan2000fulllength]. No source read here states how many
-assays a genome-wide survey at that resolution would have taken, and multiplying
-these figures is arithmetic this book is doing rather than a published estimate.
+attached. Four fluorescence channels and a combinatorial decoding scheme would
+let ten serial hybridisations read as many as nine exons across as many as 324
+genes [@conze2010singlemolecule]. The cost per locus was comparable, since a
+full-length cloning survey of one gene family needed thousands of molecules
+read one clone at a time [@regan2000fulllength]. No source read here states
+how many assays a genome-wide survey at that resolution would have taken.
+Multiplying these figures is arithmetic this book is doing rather than a
+published estimate.
 
 ## A minigene reports on the minigene {#sec-minigene}
 
 Transfecting a construct put the splicing decision under the experimenter's
-control, and it moved the decision into a different piece of DNA. The scale of
-that literature was counted once: a curation of every minigene described in
-print held 82 entries carrying 97 ascribed regulatory sequences between them
+control. It also moved the decision into a different piece of DNA. The scale
+of that literature was counted once. A curation of every minigene described in
+print held 82 entries, carrying 97 ascribed regulatory sequences between them
 [@stamm2005asd].
 
-How far a construct and its own gene can disagree has been measured. A reporter
-for Dlg4 exon 18 in mouse N2a cells included the exon in 27 per cent of its
-mRNA, against a published endogenous figure of 66 per cent, and those authors
-offer the different promoter, regulatory elements left out of the construct, or
-decay of the skipped form as possible reasons [@zheng2013screening]. The 66 per
-cent carries no cell type in that paper, and the same work notes that the exon
-is largely skipped outside neurons, so the two figures are not a measurement in
-one cell type.
+How far a construct and its own gene can disagree has been measured. A
+reporter for Dlg4 exon 18 in mouse N2a cells included the exon in 27 per cent
+of its mRNA. The published endogenous figure it was set against is 66 per
+cent. Those authors offer possible reasons: the different promoter, regulatory
+elements left out of the construct, or decay of the skipped form
+[@zheng2013screening]. The 66 per cent carries no cell type in that paper, and
+the same work notes that the exon is largely skipped outside neurons. The two
+figures are therefore not a measurement in one cell type.
 
 The same authors state the general limitation and an artefact of their own
-backbone. Minigenes do not always reproduce endogenous regulation, and flanking
-sequence in the vector can confer responsiveness to factors that leave the real
-exon alone [@zheng2013screening]. Their screen supplies the concrete case: a
-factor that came out of the reporter screen was depleted successfully and
-produced no change in the endogenous exon [@zheng2013screening]. Reporter
-variability in that system was suspected to come from where and in how many
-copies the construct had integrated, rather than from trans-factor levels, with
-a correlation near zero [@zheng2013screening].
+backbone. Minigenes do not always reproduce endogenous regulation. Flanking
+sequence in the vector can confer responsiveness to factors that leave the
+real exon alone [@zheng2013screening]. Their screen supplies the concrete
+case, in which a factor that came out of the reporter screen was depleted
+successfully. Depletion produced no change in the endogenous exon
+[@zheng2013screening]. Reporter variability in that system was suspected to
+come from where and in how many copies the construct had integrated, rather
+than from trans-factor levels. That correlation was near zero
+[@zheng2013screening].
 
-The construct's promoter decides part of the readout. Swapping promoters on one
-reporter changed which splice site was chosen, including whether the exon
-responded to two named factors [@cramer1999coupling]. Vector sequence can do the
-same at the junction, where a cryptic site in the backbone was used in place of
-the intended one [@rodriguezmunoz2022functionalassays]. A protocol written for
-the assay states the honest claim plainly, that the absolute ratio is not the
-result and the mutation-induced change is [@teng2025minigeneprotocol]. And a
-negative in a construct is not a negative about the gene, as one group found when
-their construct's truncated introns bounded the result
-[@juan2014bimcis].
+The construct's promoter decides part of the readout. Swapping promoters on
+one reporter changed which splice site was chosen, including whether the exon
+responded to two named factors [@cramer1999coupling]. Vector sequence can do
+the same at the junction, where a cryptic site in the backbone was used in
+place of the intended one [@rodriguezmunoz2022functionalassays]. A protocol
+written for the assay states the honest claim plainly, that the absolute ratio
+is not the result and the mutation-induced change is
+[@teng2025minigeneprotocol]. And a negative in a construct is not a negative
+about the gene. One group found as much when their construct's truncated
+introns bounded the result [@juan2014bimcis].
 
 What the assay does deliver is a denominator. One panel of 15 variants returned
 seven aberrant, which is a measurement of the variants rather than of the gene
@@ -426,111 +435,116 @@ Expressed sequence tags made a genome-scale count possible, and the counts did
 not settle. The generating process is worth stating first, because its artefacts
 become splice variants.
 
-An EST was a read off one end of a cloned cDNA, with the sequencing reaction
-starting in the vector and running into either the 5' or the 3' end of the
-insert [@liu2006estbias]. Normalisation and subtraction, the two procedures that
-made rare transcripts findable, work by letting denatured cDNA re-anneal so that
-abundant species pair up and are removed, which destroys the relationship
-between how often a sequence appears and how abundant it was in the tissue
-[@liu2006estbias]. Across more than 900 mouse libraries, the combined steps of
-reverse transcription and of choosing which clones to sequence can introduce
-systematic bias into which transcripts a library samples, and the bias was
-present even in libraries that had been neither normalised nor subtracted
-[@liu2006estbias]. Those authors name the consequence: comparing dissimilar
-libraries without correcting for the biases will likely produce statistically
-significant and biologically meaningless differences, a source of error they
-call significant and until then under-appreciated [@liu2006estbias].
+An EST was a read off one end of a cloned cDNA. The sequencing reaction
+started in the vector and ran into either the 5' or the 3' end of the insert
+[@liu2006estbias]. Normalisation and subtraction were the two procedures that
+made rare transcripts findable. Both work by letting denatured cDNA re-anneal
+so that abundant species pair up and are removed. That destroys the
+relationship between how often a sequence appears and how abundant it was in
+the tissue [@liu2006estbias]. Across more than 900 mouse libraries, the
+combined steps of reverse transcription and of choosing which clones to
+sequence can introduce systematic bias into which transcripts a library
+samples. The bias was present even in libraries that had been neither
+normalised nor subtracted [@liu2006estbias]. Those authors name the
+consequence: comparing dissimilar libraries without correcting for the biases
+will likely produce statistically significant and biologically meaningless
+differences. They call that source of error significant and until then
+under-appreciated [@liu2006estbias].
 
-The error classes were measured. Against a curated reference set, one collection
-carried reversed clones at about 5 per cent and internal priming at about 2.5,
-with lane-tracking errors near 0.5 per cent [@aaronson1996estquality]. Chimeric
-clones, where two unrelated cDNAs share a vector so that one clone reports two
-loci, came in at no more than one in thirty by mapping both ends of 30 sampled
-clones [@seki1997chimericclones]. Reading raw trace files rather than cleaned
-database entries exposed the wet-lab steps behind the rest, including failures
-of the restriction enzymes, two inserts in one vector, concatenated adapters,
-and 3' structures inside reads labelled as 5' ends [@zhou2012cdnaartifacts].
+The error classes were measured one by one. Against a curated reference set,
+one collection carried reversed clones at about 5 per cent and internal
+priming at about 2.5, with lane-tracking errors near 0.5 per cent
+[@aaronson1996estquality]. Chimeric clones are ones where two unrelated cDNAs
+share a vector, so that one clone reports two loci. They came in at no more
+than one in thirty, by mapping both ends of 30 sampled clones
+[@seki1997chimericclones]. Reading raw trace files rather than cleaned
+database entries exposed the wet-lab steps behind the rest. Those included
+failures of the restriction enzymes, two inserts in one vector, concatenated
+adapters, and 3' structures inside reads labelled as 5' ends
+[@zhou2012cdnaartifacts].
 
-One of those artefacts was followed all the way to a variant count. Aligning the
-whole EST set to the genome identified 53 heavily contaminated libraries holding
-24,766 ESTs that probably represented genomic DNA, pre-mRNA or reads spanning
-non-canonical introns, and those sequences would have produced 9,575 spurious
-splice variants and 6,370 spurious genes in the clustering tool those authors
-used [@sorek2003estlibraries]. That is a counterfactual about one pipeline rather
-than an audit of a published catalogue, which is what makes it usable.
+One of those artefacts was followed all the way to a variant count. Aligning
+the whole EST set to the genome identified 53 heavily contaminated libraries,
+holding 24,766 ESTs that probably represented genomic DNA, pre-mRNA or reads
+spanning non-canonical introns. Those sequences would have produced 9,575
+spurious splice variants and 6,370 spurious genes in the clustering tool those
+authors used [@sorek2003estlibraries]. That is a counterfactual about one
+pipeline rather than an audit of a published catalogue, which is what makes it
+usable.
 
 Against that background the prevalence series reads differently. Spliced
 alignment of EST contigs in 1999 put alternative splicing at 35 per cent of
-known human genes, with most of the detected variation in 5' untranslated
-regions [@mironov1999frequent]. A different comparison a year later gave 38 per
-cent, over 7,867 non-redundant mRNAs of which 3,011 carried an alternative form
-[@brett2000estcomparison]. Mapping roughly 2.1 million mRNA and EST sequences
-onto the draft genome raised it again, to 42 per cent or more
+known human genes. Most of the detected variation sat in 5' untranslated
+regions [@mironov1999frequent]. A different comparison a year later gave 38
+per cent, over 7,867 non-redundant mRNAs of which 3,011 carried an alternative
+form [@brett2000estcomparison]. Mapping roughly 2.1 million mRNA and EST
+sequences onto the draft genome raised it again, to 42 per cent or more
 [@modrek2001genomewide]. Then the dependence was demonstrated rather than
 suspected. With sufficient coverage nearly every gene examined showed some
-alternative form, and requiring a variant above five per cent with statistical
+alternative form. Requiring a variant above five per cent with statistical
 support collapsed the yield to 17 to 28 per cent of 6,400 RefSeq genes
-[@kan2002selecting]. By 2004 the counter-argument was in print, with cassette
-exons seen only in EST databases differing systematically from cross-species
-conserved ones and a significant portion argued to be aberrant splicing
+[@kan2002selecting]. By 2004 the counter-argument was in print. Cassette exons
+seen only in EST databases differ systematically from cross-species conserved
+ones, and a significant portion was argued to be aberrant splicing
 [@sorek2004howprevalent]. @fig-prevalence shows what that does to a decade of
 published estimates.
 
 Getting an EST across a junction was itself an algorithm with assumptions. One
-widely used aligner works in stages, which can miss small internal exons on its
-first pass, and moves gap boundaries onto canonical sites where feasible
+widely used aligner works in stages, which can miss small internal exons on
+its first pass. It moves gap boundaries onto canonical sites where feasible
 [@kent2002alignmenttool]. Another scores splice-site strength jointly with
 sequence identity rather than treating the two separately
-[@usuka2000optimalcdna], and practitioners of a third state the identity
+[@usuka2000optimalcdna]. Practitioners of a third state the identity
 assumption their predecessors had needed [@brendel2004consensusalignment]. The
 group that runs GenBank named the failure modes: loci with paralogues,
 polymorphic sites, sequencing errors, splice signals departing from the
 consensus, and small exons [@kapustin2008splign].
 
-A six-program comparison put a number on one of those. Judging each program's
-EST alignments against its own alignment of the corresponding reference mRNA
-over 218,641 human sequences, false terminal exons arising from mis-aligned
-poly(A), meaning 3' exons at least 75 per cent adenine joined by a non-consensus
-intron, affected 15.5 per cent of all mRNA sequences and 22.1 per cent of the
-RefSeq subset under the worst program, against 2.12 and 2.72 per cent for the
-next worst and 0.01 and 0.00 for the best [@kapustin2008splign]. That is a spread
-of about three orders of magnitude between programs on identical input, and
-those authors describe the segments as ones they suspect are poly(A) tails
-rather than demonstrating it.
+A six-program comparison put a number on one of those. Each program's EST
+alignments were judged against its own alignment of the corresponding
+reference mRNA, over 218,641 human sequences. A false terminal exon was one
+arising from mis-aligned poly(A), meaning a 3' exon at least 75 per cent
+adenine joined by a non-consensus intron. Those affected 15.5 per cent of all
+mRNA sequences and 22.1 per cent of the RefSeq subset under the worst program.
+The figures were 2.12 and 2.72 per cent for the next worst, and 0.01 and 0.00
+for the best [@kapustin2008splign]. That is a spread of about three orders of
+magnitude between programs on identical input. Those authors describe the
+segments as ones they suspect are poly(A) tails, rather than demonstrating it.
 
 The splice-site assumption underneath all of it was quantified. Of 22,489
 verified mammalian splice-site pairs, 98.71 per cent were GT-AG and 0.56 per
 cent GC-AG [@burset2001mammaliansplicesites]. Of 171 non-canonical pairs with
-EST support, 156 matched the genome, and those resolved into sequencing or
+EST support, 156 matched the genome. Those resolved into sequencing or
 annotation errors correcting to the canonical form, genuine GC-AG pairs, AT-AC
-pairs and three further categories [@burset2001mammaliansplicesites]. Resolution
-is also limited by how close two real sites sit, and more than half of human
-donor sites have another donor within three to six nucleotides
+pairs and three further categories [@burset2001mammaliansplicesites].
+Resolution is also limited by how close two real sites sit. More than half of
+human donor sites have another donor within three to six nucleotides
 [@ermakova2007humangenome].
 
 Clustering turned reads into genes, and the step changed the answer. Of
-1,313,103 human ESTs, one build condensed 64 per cent into 143,885 tissue-level
-clusters, while linking those clusters through clone identifiers gave 68,701
-assemblies holding 81 per cent of the input [@miller1999clusteringapproach]. Two
-projects did not produce the same genes, since one consolidated 1.86 times as
-many ESTs as the corresponding build of the other, though neither source states
-whether the inputs were identical [@miller1999clusteringapproach]. One algorithm
-had its error rate measured, under-clustering at most 0.4 per cent of the time
-and over-clustering at most 0.8, while agreeing with another project's partition
-on 83 to 90 per cent of cases and joining sequences 8 to 20 per cent more often
-[@burke1999validatedmethod].
+1,313,103 human ESTs, one build condensed 64 per cent into 143,885
+tissue-level clusters. Linking those clusters through clone identifiers gave
+68,701 assemblies, holding 81 per cent of the input
+[@miller1999clusteringapproach]. Two projects did not produce the same genes,
+since one consolidated 1.86 times as many ESTs as the corresponding build of
+the other. Neither source states whether the inputs were identical
+[@miller1999clusteringapproach]. One algorithm had its error rate measured,
+under-clustering at most 0.4 per cent of the time and over-clustering at most
+0.8. It agreed with another project's partition on 83 to 90 per cent of cases,
+and joined sequences 8 to 20 per cent more often [@burke1999validatedmethod].
 
 Once a gene became a splice graph the catalogue was bounded by the model. One
-human splice-graph database enumerated more than 1.2 million putative transcript
-sequences, found alternative-splicing evidence in about 65 per cent of the genes
-it examined, and reported that for 5 per cent of cases more than 100 transcripts
-might come from one gene [@leipzig2004splicinggallery]. Another made the support
-threshold part of the model, scoring each path's reliability partly by the
-minimum number of clones needed to reconstruct its exons
-[@kim2005estclustering]. And a confound sat underneath the whole exercise, since
-some transcripts seen at one locus differ by the allele they came from rather
-than by splicing, which one analysis put at 21 per cent of alternatively spliced
-genes with a conservative lower bound of 6 [@nembaware2004transcriptisoforms].
+human splice-graph database enumerated more than 1.2 million putative
+transcript sequences. It found alternative-splicing evidence in about 65 per
+cent of the genes it examined. For 5 per cent of cases it reported that more
+than 100 transcripts might come from one gene [@leipzig2004splicinggallery].
+Another made the support threshold part of the model, scoring each path's
+reliability partly by the minimum number of clones needed to reconstruct its
+exons [@kim2005estclustering]. And a confound sat underneath the whole
+exercise, since some transcripts seen at one locus differ by the allele they
+came from rather than by splicing. One analysis put that at 21 per cent of
+alternatively spliced genes, with a conservative lower bound of 6
+[@nembaware2004transcriptisoforms].
 
 The threshold is where the published numbers actually differ, and the cleanest
 demonstration is inside one release of one database. The release holding 89,078
