@@ -1,12 +1,19 @@
 # Mechanisms and measures
 
-::: {.callout-warning}
-## First draft
-Written from `research/01-foundations.yml` and not yet reviewed by a second
-reader.
+::: {.callout-note collapse="true"}
+## How this chapter's sources were read
+
+This chapter is written from two hundred and sixty-eight claim records, each
+read against the lines of its source and then checked by a reviewer who had not
+written it. That review amended over half of them. Not one of the amendments was an arithmetic error. They
+were hedges that had hardened into assertions, scopes widened past the source, a
+direction reversed, percentages whose denominator belonged to a different set,
+and notes that misdescribed the paper they annotated. Several of this chapter's
+sources are abstract-only in this project's corpus, which bounds what can be
+claimed from them, and the text says so wherever it matters.
 :::
 
-One gene, one protein was always an approximation, and it stopped being a useful
+One gene, one protein was always an approximation. It stopped being a useful
 one as soon as transcripts could be counted directly. The harder question that
 replaced it is which of a gene's several transcripts matter, and why.
 
@@ -16,255 +23,2064 @@ ending the molecule in different places. Each of the three affects at least half
 of human protein-coding genes [@carrion2023alternativetranscripts]. So isoform
 is not a synonym for splice variant, and this book keeps the two terms apart.
 
+This chapter is the one the rest of the book points back to. It sets out the
+machine that performs splicing, the signals it reads, the vocabulary used to
+name the outcomes. Then come the measurements used to quantify them, and the
+bounds on each. The bounds are the part worth reading twice. Almost every
+headline figure in this field is a function of a threshold, a denominator or a
+counting rule. The sections below give the rule alongside the number wherever a
+source states one.
+
 ## The machine that removes an intron {#sec-mechanism}
 
-Splicing is done by an assembly rather than by an enzyme. Five small nuclear
-ribonucleoproteins, U1, U2, U4, U5 and U6, work together with hundreds of
-further proteins. The complex is built fresh on every pre-mRNA, through an
-ordered series of intermediates named E, A, B and C, and only the E complex
-forms without ATP [@borao2021earlyspliceosome].
-
-The two ends of an intron are recognised by different machinery, in a definite
-order. U1 engages the 5' splice site, while SF1 and U2AF recognise the 3' splice
-site together and U2 arrives later by displacing SF1
+The machine is not an enzyme: five small nuclear ribonucleoproteins, U1, U2,
+U4, U5 and U6, work with hundreds of further proteins. The assembly is built
+fresh on every pre-mRNA through an ordered series of intermediates named E, A,
+B and C. Only the first of those forms without ATP
 [@borao2021earlyspliceosome].
 
-What usually gets written as a single 3' splice site is three sequence elements
-working together. The branchpoint supplies the acceptor nucleotide for the first
-chemical step. The polypyrimidine tract has an operational definition rather
-than a motif: an uninterrupted run of pyrimidines, strength counted in uridines,
-sitting between the branchpoint and the terminal AG, where U2AF65 binds it.
-Recognition of the 3' end can therefore fail without the AG itself being touched
+The two ends of an intron are recognised by different machinery and in a
+definite order. U1 engages the 5' splice site, while SF1 and the U2AF
+heterodimer together recognise the 3' splice site; U2 arrives later, by
+displacing SF1 [@borao2021earlyspliceosome].
+
+What gets written as a single 3' splice site is three separate elements working
+together. The branchpoint, the polypyrimidine tract and the terminal AG
+dinucleotide are distinct, so recognition can fail without the AG itself being
+touched [@borao2021earlyspliceosome].
+
+Two of the three are weaker than their names suggest. The branchpoint supplies
+the acceptor nucleotide for the first chemical step. In humans its sequence is
+barely a consensus: YUNAY, with one position unconstrained, against a
+near-invariant UACUAAC in budding yeast [@borao2021earlyspliceosome]. The
+polypyrimidine tract has an operational definition rather than a motif. It is
+an uninterrupted run of pyrimidines between the branchpoint and the terminal
+AG, its strength counted in uridines, and U2AF65 binds it there
 [@borao2021earlyspliceosome].
 
-Neither signal is as fixed as the diagrams suggest. In humans the branchpoint is
-barely a consensus, YUNAY, and one of those positions is unconstrained. Budding
-yeast holds a near-invariant UACUAAC instead [@borao2021earlyspliceosome]. On
-the 5' side only the first two bases of a human intron, GU, are reliably
+The 5' side is no better defined. Only the first two bases, GU, are reliably
 conserved, and every other position varies. The last three nucleotides of the
-upstream exon also affect how tightly U1 binds. Human 5' splice sites therefore
-span a broad range of interaction strengths rather than sorting into matches and
-mismatches [@borao2021earlyspliceosome].
+upstream exon also contribute to how tightly U1 binds. Degeneracy plus that
+exonic extension gives a broad range of interaction strengths rather than a match
+or a mismatch [@borao2021earlyspliceosome].
 
-That degeneracy is the enabling condition for everything else in the book.
-Splice site motifs degenerated over evolution in a way that permitted regulated
-splicing, and spliceosome complexity increased alongside them. Budding yeast
-splices mainly constitutively, humans alternatively
-[@borao2021earlyspliceosome]. Constitutive and alternative splicing are two
-regimes of one mechanism.
+That degeneracy is the point rather than a defect. One argument holds that
+splice site motifs degenerated over evolution specifically to permit regulated
+splicing. On the same argument, the accompanying rise in spliceosome complexity
+underlies the shift from mainly constitutive splicing in budding yeast to
+regulated and alternative splicing in humans [@borao2021earlyspliceosome]. On
+that reading constitutive and alternative splicing are two regimes of one
+mechanism, not two mechanisms.
 
-### The minor spliceosome
+### The chemistry is two reactions and one intermediate
 
-About 0.5 per cent of introns are removed by a different machine entirely.
-Roughly 700 human genes carry a U12-type intron, against 19 genes in
-*Drosophila*, and a gene that has one usually has exactly one among many
-ordinary introns [@akinyi2021minorspliceosome].
+The intermediate was characterised before the machine was. In a cell-free
+reaction on an adenovirus transcript, the intermediate proved branched rather
+than linear. The 5' end of the intron is joined to a single adenosine near the
+3' splice site by a 2'-5' bond. That adenosine keeps its ordinary 3'-5' bond to
+the next nucleotide. The excised intron retains the branch and ends in a
+guanosine with a free 3' hydroxyl. The phosphate at the new exon-exon junction
+comes from the precursor's 3' splice site [@padgett1984intermediates].
 
-The two intron classes are told apart by their signals rather than by their
-chemistry. A polypyrimidine tract belongs to major U2-type introns only. The
-minor 3' splice site is read by ZRSR2 in place of the U2AF heterodimer. U12
-signals are much better conserved, and they support correspondingly less
-alternative splicing [@akinyi2021minorspliceosome].
+What performs the chemistry is RNA, and the materials were yeast extracts
+depleted of U6 and reconstituted with synthetic U6 bearing single sulfur
+substitutions at twenty positions in both diastereomers. On those materials,
+metal rescue shows that U6 catalyses both reactions. It does so by positioning
+the divalent metals that stabilise the leaving group at each step
+[@fica2013rnacatalyzes]. The reaction is two phosphotransesterifications run by
+a two-metal mechanism proposed earlier, one metal holding the attacking
+nucleophile and the other the leaving group [@fica2013rnacatalyzes]. The
+evidence establishes a catalytic role for RNA rather than ruling one out for
+protein. The distinction matters for a dispute taken up below.
 
-A review of the same system puts the share lower, below 0.4 per cent of all
-human introns, and names the machinery that removes them as U11, U12, U4atac, U5
-and U6atac [@elmarabti2021minorintron]. Both figures are small, and the
-difference between them matters only where a count of minor introns is being
-used as a denominator.
+The metals are held by RNA tertiary structure. Genetics, crosslinking and
+biochemistry in yeast show base triples within U6, analogous to those in group II
+intron domain V, promoting both metal binding and both chemical steps. Because
+one element of those triples is the sequence that defines the 5' splice site, the
+same structure that organises the metals also brings the substrate alongside them
+[@fica2014triplex].
 
-## The five event names and the patterns they miss {#sec-event-classes}
+A structure caught immediately after branching shows that the machine does not
+release what it has cut. At 3.8 angstroms, on spliceosomes assembled in yeast
+extract, the cleaved 5' splice site stays close to the catalytic magnesium site
+in the U2/U6 triplex. The freed 5' exon is held between two Prp8 domains and
+base-paired to loop 1 of U5. The intron downstream of the branch runs out
+towards the Prp16 helicase [@galej2016branching].
 
-Most descriptions of alternative splicing use five names: exon skipping,
-mutually exclusive exons, intron retention, alternative donor and alternative
-acceptor. They were inherited as a traditional vocabulary rather than derived.
-The paper that formalised event nomenclature says so, and then points out that
-real annotations contain many patterns none of the five describes
+Whether Prp8 itself contributes to catalysis is disputed. A crystal structure
+showed that its RNase H-like domain can bind a metal in crystallo. It also
+showed that mutations compromising that binding impair exon ligation, which the
+metal-rescue authors note raises the possibility of a catalytic role. Those
+same authors state that they found no evidence of a catalytic interaction
+mediated directly by a metal between the 3' splice site and that site. They
+suggest instead that Prp8 may primarily promote formation of the RNA catalytic
+core without being part of it [@fica2013rnacatalyzes].
+
+### The cycle runs on ATPases, and not all of them unwind
+
+Activation was assigned to a named enzyme and a named substrate early. Adding
+hydrolysable ATP to an immunopurified native complex containing U1, U2, U5 and
+duplex U4/U6 particles disrupts the U4/U6 base pairing and releases free U4 and
+U6. A mutation in the helicase-like domain of Brr2 prevents it. It happens with
+no pre-mRNA added, which led those authors to propose a U4/U6 cycle uncoupled
+from splicing [@raghunathan1998brr2].
+
+The 5' splice site changes partners through a helicase working as a clamp.
+Cryo-electron microscopy of the human pre-B complex at 3.3 angstroms, and of
+the human tri-snRNP at 2.9, is the evidence. It shows U1 inserting the helix it
+forms with the 5' splice site between the two RecA domains of the Prp28
+DEAD-box helicase. ATP-dependent closure of those domains releases the site to
+pair instead with the U6 ACAGAGA box, presented as a mobile loop. Those authors
+propose that this then triggers Brr2 to relocate to its loading sequence in U4
+[@charenton2019splicesitetransfer].
+
+An ATPase in this machine need not unwind anything. Chemical structure probing
+of purified yeast complexes before and after Prp2 acts shows double-stranded
+RNA staying wound. The two reactants of the first step gain flexibility. Those
+authors describe Prp2 as acting principally on the ribonucleoprotein rather
+than on a duplex [@bao2017prp2].
+
+Catalytic activation in human spliceosomes is two ATP-dependent stages rather
+than one. Inactivating Aquarius stalls a complex halfway through activation.
+Its structure shows PRP2 translocating along the intron while it strips the RES
+complex away, opens the SF3B1 clamp and unfastens the branch helix.
+Translocation stops six nucleotides downstream of the branch site. Aquarius
+then enables the dissociation of PRP2 together with the SF3A and SF3B
+complexes, which those authors say promotes relocation of the branch duplex for
+catalysis [@schmitzova2023activation].
+
+### The minor spliceosome {#sec-minor}
+
+A second, parallel machine exists, and it is tiny by comparison. The minor
+U12-dependent spliceosome excises about 0.5 per cent of introns. Roughly 700
+human genes carry a U12-type intron, against 19 genes in *Drosophila*. The
+typical minor-intron-containing gene holds exactly one of them among many major
+introns [@akinyi2021minorspliceosome]. A review of the same subject puts the
+share below 0.4 per cent and names the particles as U11, U12, U4atac, U5 and
+U6atac [@elmarabti2021minorintron]. The two figures come from two reviews
+rather than from two counts, and nothing read here reconciles them.
+
+The two intron classes are told apart by their signals rather than their
+chemistry. A polypyrimidine tract is a feature of major introns only. The minor
+3' splice site is recognised by ZRSR2 instead of the U2AF heterodimer. Because
+U12 signals are far better conserved, they support correspondingly less
+alternative splicing [@akinyi2021minorspliceosome]. Better signals, less
+regulation, which is the degeneracy argument above running in reverse.
+
+## Fidelity is enforced by ATPases, and it competes with catalysis {#sec-proofreading}
+
+Proofreading is not a separate department from splicing. The metal-rescue work
+above reports that proofreading and discard mechanisms, competing with
+catalysis at both steps, had held back the application of metal rescue to this
+reaction. The same work reports that the direct effectors of catalysis were
+identified only after ATP-dependent proofreading was eliminated. Those authors
+did that to enhance the potential for rescue [@fica2013rnacatalyzes]. The
+fidelity machinery had to be switched off before the chemistry could be
+measured.
+
+Changing an ATPase's activity changes which substrates the spliceosome accepts.
+Alanine and ATPase-motif mutants of yeast Prp5p alter which branch region is
+accepted. Improved splicing of a suboptimal intron in cells tracks with reduced
+ATPase activity across a series of motif III mutants. Compensatory U2 changes
+that increase branch region pairing abrogate the effect. That links a fidelity
+event to a defined physical structure [@xu2007branchfidelity].
+
+Lowering activity at a second ATPase lets a mutant branch site be used. Seven
+alleles of yeast PRP16 all map to the region shared by RNA-dependent ATPases.
+They allow an intron whose branch site is mutated to be spliced at the mutant
+cytosine. Three of the mutant proteins were purified and each showed reduced
+ATPase activity. Steady-state levels of intermediates and products are reported
+as evidence for a route that discards incorrectly branched substrates. Those
+authors separately propose that slower hydrolysis gives an aberrantly formed
+lariat intermediate more time to take the productive branch instead
+[@burgess1993discardpathway].
+
+Rejection is reversible, which is why a discard route has to exist. The assay
+was an in-vitro one, sensitised to proofreading by disrupting a metal-ligand
+interaction at the catalytic centre. In that assay, inactivated spliceosomes
+cleaved the 5' splice site when Prp16 was disabled, at a reduced rate. Prp16
+associates with spliceosomes before that cleavage although it does not promote
+splicing of a genuine substrate until afterwards. The discard pathway that
+reversible rejection requires was shown to need the ATPase Prp43. Those authors
+conclude that fidelity at 5' splice site cleavage and at exon ligation share a
+common ATP-dependent framework [@koodathingal2010proofreading].
+
+The prototype proofreader turns out to have two roles rather than one. In yeast
+whole-cell extracts, Prp16 was found to promote rather than prevent the use of
+aberrant 5' splice sites and mutated branchpoints. It is not required for
+branching on wild-type pre-mRNA. It facilitates the reaction independently of
+ATP when a 5' splice site is mutated or Cwc24 is absent. And it still prevents
+the use of nearby cryptic branch sites. Those authors attribute this to Prp16
+stabilising or destabilising interactions through the step-one factor Cwc25.
+They conclude that it can either enhance or impede the use of faulty splice
+sites. On their account it has dual roles in choosing the 5' splice site and
+the branch site, exercised through both ATP-dependent and ATP-independent
+activity [@chung2023prp16].
+
+Proofreading at the second step may be a stability sensor rather than a motor.
+Purified spliceosome iCLIP on complexes stalled at defined stages shows Prp16
+bound along the whole single-stranded stretch between the branchpoint and the
+3' splice site. Prp22 binds diffusely downstream of the branchpoint before exon
+ligation, then narrowly in the downstream exon afterwards. Those authors read
+that as arguing against processive translocation. Depleting the exon-ligation
+factor Prp18 destabilises Prp22 binding to the pre-mRNA
+[@strittmatter2021psiclip].
+
+An equivalent control operates in human cells and has an identified activator.
+Rapid depletion of DHX15, followed by analysis of nascent and mature RNA, shows
+that suboptimal introns are repressed by it. The suboptimal ones are those with
+weak splice sites, those with multiple branch points, and those that are
+cryptic. SUGP1 is a G-patch factor that activates this function, in a way
+dependent on both DHX15 ATPase activity and the SUGP1 ULM domain
+[@feng2023dhx15].
+## The five event names, and the patterns they miss {#sec-event-classes}
+
+Five names carry most of the field's vocabulary: exon skipping, mutually
+exclusive exons, intron retention, alternative donor and alternative acceptor;
+they were inherited rather than derived. The paper that formalised event
+nomenclature says so, then points out that real annotations hold many patterns
+none of the five describes [@sammeth2008nomenclature].
+
+How many is measurable: splicing patterns too complex for any of the five names
+run from 23.18 per cent of all events in one reference annotation to 35.4 per
+cent in another. So roughly a quarter to a third of annotated alternative
+splicing has no textbook label [@sammeth2008nomenclature].
+
+The four simple classes do hold a stable rank order across three human
+annotations. The order runs exon skipping first, then alternative donor, then
+alternative acceptor, with intron retention last. That denominator is stated
+rather than implied. It counts events with a simple splicing pattern, involving
+at most two alternative splice sites, and not correlated with a variable
+transcription start or polyadenylation site [@sammeth2008nomenclature].
+
+The spectrum is not the same inside and outside the reading frame. In coding
+sequence, exon skipping accounts for 50.9 per cent of local events against 37.9
+per cent in 5' untranslated regions. Intron retention runs the other way, 2.1
+per cent in coding sequence against 8.4 per cent in 5' untranslated regions.
+Those authors read that as selection against in-frame stop codons
+[@sammeth2008nomenclature]. Retained introns reach about 12 per cent of all
+events in transcripts with no annotated reading frame, on an annotation worth
+naming. That annotation is a 2007 freeze built by mapping expressed sequences
+onto pilot regions rather than the whole genome. It holds 2,247 noncoding
+against 1,332 coding transcripts [@sammeth2008nomenclature].
+
+Mutually exclusive exons are rare, at 12 to 14.5 per cent of the complex event
+pool depending on the annotation, and well behind the skipping of two
+consecutive exons. That share is taken against the complex pool rather than the
+simple-event denominator above, so it does not place the class in the rank order
+of the other four. Those authors attribute the scarcity to the
+more elaborate mechanism mutual exclusivity requires
 [@sammeth2008nomenclature].
 
-Across three human reference annotations the four simple classes fall in the
-same rank order. Exon skipping is commonest, then alternative donor, then
-alternative acceptor, with intron retention last. Those authors state their
-denominator: events with a simple splicing pattern, involving at most two
-alternative splice sites, and uncorrelated with a variable transcription start
-or polyadenylation site [@sammeth2008nomenclature].
+### The same five classes have three different names
 
-Patterns too complex for any of the five names run from 23.18 per cent of
-annotated events in RefSeq to 35.4 per cent in Ensembl
-[@sammeth2008nomenclature]. Roughly a quarter to a third of annotated
-alternative splicing has no textbook label. Which classes dominate also varies
-by lineage, and @sec-class-balance gives the plant and fungal picture.
+Three vocabularies are in use for one set of distinctions. The nomenclature paper
+writes alternative donor and alternative acceptor [@sammeth2008nomenclature]. The
+paper that introduced percent spliced-in writes alternative 5' splice site and
+alternative 3' splice site [@wang2008alternative]. A 2017 genome-wide study
+writes differential exon inclusion, glossed as exon skipping, alongside
+alternative 5' and 3' exon splicing [@hatje2017mutuallyexclusive]. A reader
+meeting all three will not know they are reading about the same events.
 
-Mutual exclusivity is rarer than its prominence in the literature suggests.
-Mutually exclusive exons make up 12 to 14.5 per cent of the complex event pool
-depending on the annotation, behind the skipping of two consecutive exons. The
-scarcity is attributed to the more elaborate mechanism mutual exclusivity
-requires [@sammeth2008nomenclature].
+That second vocabulary also already named three classes the five traditional
+names cannot express. Tandem untranslated regions, where a pair of
+polyadenylation sites in one terminal exon gives a shorter or longer 3'
+untranslated region. Mutually exclusive 3' untranslated regions, where the same
+choice instead yields two distinct terminal exons. And mutually exclusive 5'
+exons, where alternative promoter use gives messages with distinct 5'
+untranslated regions [@wang2008alternative].
 
-The mixture also differs inside and outside the reading frame. In RefSeq coding
-sequence, exon skipping accounts for 50.9 per cent of local events, against 37.9
-per cent in 5' UTRs. Intron retention runs the other way, 2.1 per cent in coding
-sequence against 8.4 per cent in 5' UTRs. Those authors read the reversal as
-selection against in-frame stop codons [@sammeth2008nomenclature].
+One pair of terms is worth a warning. A single source states in passing that the
+literature uses cassette exon as another name for a skipped exon
+[@huang2013ganoderma]. That is an assertion of interchangeable usage, not a
+definition of either term and not a reason to prefer one. This book treats them
+as synonyms on its own authority, and the glossary says so.
 
-One class is different in kind from the other four. An unspliced intron seen in
-polyadenylated RNA does not establish that a splicing decision was taken. It is
-equally compatible with a finished mRNA, with an intermediate accumulating ahead
-of a slow rate-limiting step, and with a transcript deliberately stalled while a
-later decision is pending [@jacob2017intronretention]. Intron retention is the
-only one of the five whose observation leaves the question open.
+### One number across two decisions
 
+A percent spliced-in value sits across two separate splicing acts. An
+intron-centric reformulation splits it into a 5' and a 3' index, one per intron
+end. Those authors describe that as deconvoluting the reaction into its two
+elementary acts [@pervouchine2013introncentric]. Where the two indices
+disagree, a single value hides the disagreement.
+
+Event-level inclusion also carries a laboratory signature. Values inferred from
+isoform abundances by one estimator varied substantially between laboratories
+even among nineteen judged high quality. A principal component analysis of
+event-level inclusion grouped the data by laboratory rather than by biological
+sample [@wang2026benchmarking].
+
+## An exon's position is not a property of the exon {#sec-exon-type}
+
+The categories first, internal and last are not disjoint, and how many exons
+are hybrid is set by a threshold. The input was 353,677 annotated meta-exons in
+one human cell line, half discarded as unexpressed. On that input, a
+junction-read imbalance cutoff of 0.3 classified about 60,000 exons as
+internal, about 16,000 as terminal and about 30,000 as hybrid. Hybrid
+first-internal and hybrid internal-last exons were each about 13 per cent of
+expressed exons. A conservative criterion added from a probabilistic model left
+3.8 per cent of exons hybrid [@fiszbein2022hybridexons]. Those figures are the
+paper's own and they do not reconcile with one another. The three classes do not
+sum to the expressed set, the two hybrid subtypes at 13 per cent each come to
+more than the count given for all hybrids, and the 3.8 per cent counts all
+hybrids rather than one subtype. Checking any of that is arithmetic this book is
+doing rather than a published reconciliation. What the set of numbers does
+establish is that the count is a function of the cutoff.
+
+Those authors name the gap in the taxonomy directly, calling it the unsolved
+exon type problem. How to classify exons uniquely as first, internal and last
+has not been solved. A hybrid exon will be called internal by RNA-seq and
+terminal by an assay anchored on transcript ends. Even so, both readings are
+correct for different molecules in the same cell type
+[@fiszbein2022hybridexons].
+
+Position also changes between tissues on a large scale, and that paper states
+the size of the effect two ways. Its abstract reports more than 100,000 exons
+switching between internal and terminal use across the tissues analysed. Its
+results text gives more than 130,000 and puts that at about 10 per cent of all
+exons analysed [@fiszbein2022hybridexons]. The two figures are both the paper's
+own. The denominator behind that 10 per cent is not stated as the meta-exon set
+quoted above, and 130,000 at 10 per cent would imply a far larger one.
+
+Inside a composite terminal exon a splice site and a poly(A) site compete in
+the same sequence. Tipping the balance toward splicing produces a spliced
+truncated transcript. Overexpressing the spliceosomal factor TRAP150 forced use
+of a cryptic 3' splice site and yielded spliced prematurely polyadenylated
+transcripts. That activity was seen in composite but not in authentic terminal
+exons, and was strengthened by weakening U1 or by interfering with elongation
+or termination [@lee2014trap150].
+
+## Intron retention is not a class like the others {#sec-intron-retention}
+
+One event class differs in kind rather than only in frequency. A molecule
+carrying a retained intron still holds a splice-site pair the spliceosome could
+in principle use. So the observed state is not necessarily a finished one.
+Those authors also argue that the earliest steps of spliceosome assembly
+suffice by themselves to hold such an RNA in the nucleus
+[@jacob2017intronretention].
+
+So an unspliced intron in polyadenylated RNA does not establish that a splicing
+decision was made. It is compatible with a finished message, with an intermediate
+accumulating ahead of a slow rate-limiting step, or with a transcript
+deliberately stalled awaiting a later decision [@jacob2017intronretention]. Every
+other event name describes a choice that has been made. This one describes a
+state that may still be pending.
+
+The standard measure is percent intron retention, the share of a gene's
+transcripts keeping a given intron. It is computed from reads crossing the two
+exon-intron junctions against those plus the reads crossing the exon-exon
+junction made by removing it. There is a further requirement, that reads
+accumulate evenly at both junctions and in the intron's middle. On that
+measure, the material was polyadenylated RNA from about forty human and mouse
+cell and tissue types. In it, about 77 per cent of multiexonic genes carry at
+least one intron retained at 10 per cent or more in at least one type. And 35
+per cent carry one retained at 50 per cent or more
+[@braunschweig2014intronretention]. The headline prevalence is a function of
+where the threshold sits.
+
+Those authors argue retention works by lowering expression. It acts broadly to
+reduce transcripts present at relatively low abundance that often have no
+physiological relevance in the cell or tissue where they are detected. Those
+authors call that tuning the transcriptome [@braunschweig2014intronretention].
+
+### The measurement is contested, and the tools were adopted before any benchmark
+
+A second survey from the same period says the first was not looking at the same
+thing. The detained-intron authors allow that the two sets may partially
+overlap. They then state that the introns the other survey enriched in
+polyadenylated transcripts sat preferentially in untranslated regions. On their
+account those introns also ran opposite to gene expression and were often
+degraded by nonsense-mediated decay. They conclude that many of them are a
+different population from detained introns, which are nuclear and not decay
+substrates [@boutz2015detainedintrons], and the other survey never answers.
+
+Detention is not a single mechanism either. Three assays of the
+precursor-product relationship put the MAT2A detained-intron transcript down as
+a dead-end molecule degraded in the nucleus rather than a store later spliced
+into message. That is the role the field had established for the CLK1 detained
+intron. Cotranscriptional splicing of the MAT2A introns rose when cells were
+deprived of S-adenosylmethionine [@pendleton2018mat2a]. One detained intron is
+a dead end and another is a reservoir.
+
+The tools came before the benchmark: reviewers who catalogued the available
+intron-retention software in 2019 recorded that none of it had been
+systematically benchmarked at that date. So the tools the field had already
+adopted were in use before any systematic benchmark of them existed
+[@monteuuis2019intronretention]. That review makes no statement about ad hoc or
+pairwise comparisons.
+
+What produces a false retained intron is specific and named. The causes are
+genomic DNA carried through into the library and unprocessed precursor counted
+as mature message. A third is intronic stretches whose coverage is unreliable
+because they are repetitive or poorly mappable. That review relays the list
+from an earlier review it cites rather than measuring any of them
+[@monteuuis2019intronretention].
+
+The authors of a replacement metric state that the estimators then in use
+suffer from biases and artefacts severe enough to impair the analysis of
+retention. They report that their own stabilised ratio agreed better with
+retention computed from long reads of the same cell line. On their account it
+was also more consistent between technical replicates [@broseus2020sirfinder].
+
+The benchmark, when it came, was severe. Retained introns called from short
+reads were compared against a reference set called persistent in long reads
+from the same biological specimens. The comparison used a persistence threshold
+those authors define. The eight short-read tools were in strong disagreement
+with one another, at a Fleiss kappa of 0.113. In the same comparison, 47.7 per
+cent of all retention calls made by any tool were not reproduced by a second
+tool [@david2022retainedintrons]. Those authors draw the conclusion plainly:
+the tools detect retention with both poor recall and poor precision. Because of
+that, they hold the completeness and the validity of a large share of the
+retained introns reported by commonly used methods to be in question. No tool
+they tested reached an F1 score above 0.26 [@david2022retainedintrons].
+
+That is the strongest negative result in this chapter, and it bears on every
+retention figure quoted anywhere in this book.
+
+## Microexons {#sec-microexons}
+
+A size class can be missed by a whole field for a methodological reason.
+Microexons were largely left out of earlier analyses of splicing in cancer
+because exons that short require computational approaches built for them
+[@head2021srrm4].
+
+The class has no agreed boundary: one source defines microexons as exons of 3
+to 15 nucleotides [@irimia2014neuronalprogram]. A second gives 30 nucleotides
+or fewer and treats them as a subset of cassette exons rather than an event
+class of their own [@parada2021microexonator]. A third takes 3 to 27
+nucleotides from two earlier papers it cites [@parada2026microexoncode]. Three
+published cut-offs, and a count that depends on which is used.
+
+What singled the class out was not its size. Those authors set out what they
+called the largest programme of coordinated neural-regulated alternative
+splicing then described in mammals. Inside that programme, microexons showed
+both the most striking evolutionary conservation and the most nearly
+switch-like regulation of any event type [@irimia2014neuronalprogram]. Most
+annotated microexons keep the reading frame. The characterised examples work by
+modulating protein-protein interactions needed for the development and function
+of the nervous system, a property relayed from two reviews
+[@parada2026microexoncode].
+
+They have a single dominant regulator: most neural microexons are controlled by
+the neuron-specific factor nSR100, also called SRRM4. That factor binds
+enhancer motifs in the intron immediately adjacent to the microexon rather than
+within it [@irimia2014neuronalprogram]. Its expression is largely confined to
+neural tissues [@head2021srrm4].
+
+The reason they were invisible is mechanical. On simulated reads a
+general-purpose spliced aligner lost sensitivity sharply below 10 nucleotides
+of exon and two others below 8. Run with default settings the three produced
+false discovery rates of 0.43, 0.33 and 0.13. The last of those is
+indistinguishable from the 0.12 and 0.10 of two pipelines written for the
+purpose [@parada2021microexonator]. The problem was the aligner, not the
+biology.
+
+A purpose-built pipeline over 289 datasets from eighteen mouse tissues across
+nine embryonic and postnatal stages returned 2,984 microexons. Of those, 37 per
+cent were absent from the reference transcript models. Of the 326 whose
+inclusion changed during neuronal development, 18 per cent were absent from a
+dedicated splicing database [@parada2021microexonator].
+
+The catalogue was still incomplete in 2026. The candidate set was roughly two
+million sites, defined as intronic stretches of 3 to 27 nucleotides flanked by
+sequences resembling splice sites. Against that set, an analysis of 4,790 bulk
+human samples and 47,380 single nuclei from human cortex detected 1,514
+microexons absent from both the reference transcript models and the dedicated
+splicing database. Of those, 292 were spliced
+differently between neural and non-neural material. A further 1,115 new
+microexons were found in mouse, 95 of them neurally spliced
+[@parada2026microexoncode].
+
+How an exon this short is defined at all now has a mechanistic answer. Nascent
+RNA sequencing in neuronal cells showed microexon splicing to be not merely
+cotranscriptional but faster than transcription of the surrounding gene. The
+intron upstream of a microexon is removed before the downstream intron has
+finished being synthesised. Those authors argue that this leaves the
+microexon's non-canonical downstream donor site as the only remaining option
+[@gordon2026microexondefinition].
+
+## Mutually exclusive exons {#sec-mutually-exclusive}
+
+The rarest of the five classes was also the worst served by annotation. A human
+annotation of the period held only 158 mutually exclusive exons in 79
+protein-coding genes. The criteria those authors state are genomic adjacency,
+compatible splice sites, and never appearing together in one protein isoform
+[@hatje2017mutuallyexclusive].
+
+Deep sequencing changed the number in both directions. The input was 515
+samples, comprising over fifteen billion reads from 31 tissues and organs,
+twelve cell lines and seven developmental stages. Reading them raised the count
+from 158 to 1,399 supported by at least one junction read per exon, and 855
+supported by at least three. The same pass showed that 29 of the 158 already
+annotated as mutually exclusive are not spliced that way at all
+[@hatje2017mutuallyexclusive]. The spread between 855 and 1,399 is a threshold,
+not a discovery curve.
+
+Genes can carry more than one cluster, and in one case the clusters are nested.
+Against 554 genes holding a single cluster, four genes each hold three and
+three each hold four. In one of those, a cluster of four variant exons sits
+inside a pair of exon sets that are themselves mutually exclusive
+[@hatje2017mutuallyexclusive]. One human gene carries a cluster of ten mutually
+exclusive exons. That cluster is absent from mouse and rat, having been lost in
+their common ancestor [@hatje2017mutuallyexclusive]. The extreme form of the
+class in human is missing from the rodents usually used to study splicing.
+
+What enforces the exclusivity is mostly unexplained. Across 629 validated human
+clusters, five, 0.79 per cent, have splice sites of incompatible spliceosome
+types. Fifty-seven, 9 per cent, are cases of potential steric interference. In
+those, a donor site and a branch point are too close together for the
+intervening intron to be removed. And 377, 60 per cent, contain exons whose
+lengths are not divisible by three, so including two would break the frame. Yet
+reads joining two exons were found for only 83 of those 377, 22 per cent
+[@hatje2017mutuallyexclusive]. That leaves 484 clusters held apart by something
+else. Those authors name RNA-protein interactions, snRNP and splicing-factor
+interactions and competing RNA secondary structure as proposals they cite to
+others. They note on the same line that such competing structures are usually
+not conserved across long evolutionary distances [@hatje2017mutuallyexclusive].
+
+A decay pathway does part of the enforcement in at least one animal. In
+*Caenorhabditis elegans*, where those authors state they characterised the
+whole repertoire, 29 clusters were confirmed in 27 genes. Twenty-two consisted
+of homologous exons and five had intervening introns too short to be excised,
+which accounts for 27 of the 29 and is not given as a partition.
+The fidelity of the choice in fourteen relied at least in part on
+nonsense-mediated decay [@kuroyanagi2014mutuallyexclusive]. That connection is
+taken up in @sec-as-nmd.
 ## Most isoform differences sit at the transcript ends {#sec-ends}
 
-Alternative polyadenylation produces isoforms with no splicing difference at
-all. Choosing among a gene's several poly(A) sites yields transcripts that
-differ in 3' UTR, in terminal exon, or in coding potential
-[@huang2026apacancer].
+Three distinct processes generate transcript isoforms: alternative exon splicing,
+alternative start-site choice and alternative polyadenylation. Each touches at
+least half of human protein-coding genes, which is why isoform cannot be treated
+as a synonym for splice variant [@carrion2023alternativetranscripts].
 
-The name covers two consequences that should not be pooled. Tandem 3' UTR choice
-within the last exon leaves the protein untouched and changes only which
-regulatory elements the transcript carries. A poly(A) site used further
-upstream, in an intron, an internal exon or an alternative terminal exon, can
-truncate the protein outright [@huang2026apacancer].
+The weighting between them has been estimated several times, and splicing is
+the minority explanation. Across 23 human cell types, alternative splicing
+explains tissue-dependent isoform differences for at most 35 per cent of genes.
+In the same types, 53 per cent of the tissue-dependent exonic regions showed no
+or only weak evidence of ever being spliced out [@reyes2018altstart]. A
+promoter-level survey of developing and adult cerebellum reaches the same
+conclusion by another route. It reports 61,525 distinct messages from 29,589
+promoters for 15,669 protein-coding and 7,624 noncoding genes. Those authors
+conclude that transcript variants are predominantly generated by alternative
+transcription rather than alternative splicing [@pal2011cerebellar]. That
+abstract names no species for the cerebella and no other study on the line to
+agree with.
 
-Splicing turns out to be the minority explanation for tissue-dependent isoform
-differences. Measured across 23 human cell types, alternative splicing accounts
-for those differences in at most 35 per cent of genes. For 53 per cent of
-tissue-dependent exonic regions there was no evidence, or only weak evidence, of
-the region ever being spliced out [@reyes2018altstart].
+The share of splicing variation that could plausibly change a protein is
+smaller still. Only about 15 per cent of tissue-dependent splicing involves
+exons belonging to principal isoforms, and the rest is concentrated in
+untranslated exons and in non-coding or minor transcripts [@reyes2018altstart].
 
-The share that could plausibly change a protein is smaller again. Only about 15
-per cent of tissue-dependent splicing involves exons belonging to principal
-isoforms. The rest is concentrated in untranslated exons and in non-coding or
-minor transcripts [@reyes2018altstart].
+Where coding sequence does vary between isoforms, the variation sits at the
+ends. Coding exons in the variable 5' and 3' ends produced by alternative
+initiation and termination carry about four times more alternative nucleotides
+than the core coding region. That region can only be diversified by splicing
+[@shabalina2014proteinends].
 
-Where coding sequence does vary between isoforms, the variation sits at the ends
-rather than in the middle. Coding exons in the variable 5' and 3' regions
-produced by alternative initiation and termination carry about four times more
-alternative nucleotides than the core coding region, which splicing alone can
-diversify [@shabalina2014proteinends]. A treatment of isoform biology that
-discussed splicing and nothing else would be describing the smaller half of the
-phenomenon.
+### The dominant process depends on where you count, and on how you count
 
+The cleanest decomposition is also the one needing the most care. The set was
+74,955 expressed human genes defined from combined short- and long-read
+evidence. Of those, 65,193 genes, 87.0 per cent, sat away from the vertices of
+a start-site, end-site and splicing simplex. Start-site choice dominated 4,844,
+6.5 per cent, end-site choice another 4,906, 6.5 per cent, and splicing only 12
+genes, 0.02 per cent [@saberi2026transcriptomearchitecture].
+
+Those numbers need three qualifications, and the same authors supply the
+material for all three. The decomposition is a formula rather than a
+measurement. It counts, per gene, the distinct start sites, distinct end sites
+and distinct exon chains. It then converts splicing into the ratio of twice the
+exon-chain count to the sum of the start- and end-site counts, and normalises
+the three to sum to one. A gene's position is therefore a function of all three
+counts and of the rules by which each was defined upstream
+[@saberi2026transcriptomearchitecture]. The 87 per cent is a residual, not a
+category: it is what is left after three vertices are defined. A gene with one
+isoform lands at the exact centre of the simplex. And dominant has no
+operational definition in that source. The 0.02 per cent for splicing is a
+statement about where genes sit in a constructed coordinate system, not a
+measurement of how much splicing does.
+
+A different decomposition, on mammalian transcripts sorted by domain, says the
+answer depends on which part of the transcript is counted. Splicing was the
+dominant source of variation inside the coding sequence, and alternative
+initiation dominated in 5' untranslated regions. Alternative termination
+dominated in 3' untranslated regions [@shabalina2010connections]. That analysis
+states its attribution rule and reports it as robust. Alternative nucleotides
+in a first exon lying between the most upstream and most downstream start site
+were charged to initiation. Those in the last exon between the extreme
+termination sites were charged to termination, and everything left over to
+splicing. Site separations were accepted between 100 and 500,000 nucleotides, a
+relaxed range those authors say gave results similar to a stringent one
+[@shabalina2010connections].
+
+So the question which process matters most has no answer independent of a
+counting rule. The three published attempts assign the weight differently and
+each states its own rule.
+
+### Start sites
+
+Having more than one promoter is ordinary rather than exceptional, and the
+alternatives are separately regulated. A tagging survey reports differentially
+regulated alternative start sites as a common feature of protein-coding genes,
+commonly placing a different amino terminus on the protein
+[@carninci2006genomewide].
+
+In annotation the class is large: in one release, 12,767 of 26,304 genes
+carried more than one message. Of the multi-isoform genes, 7,708, or 60 per
+cent, had alternative promoters. In 43 per cent of those the first exons did
+not overlap at all, leaving 3,296 genes with isoforms whose first exons are
+wholly distinct [@jacox2010altpromoters]. Each of those percentages has a
+different denominator, which is why the counts are given alongside them.
+
+Mammalian promoters fall into two architectural classes with different
+initiation behaviour: conserved, TATA-box-enriched promoters starting
+transcription at one well-defined position. The other class is more plastic,
+broad, evolvable CpG-rich promoters. The paper stating the division sequenced
+tags corresponding to several hundred thousand start sites in mouse and human
+[@carninci2006genomewide]. The difference reflects two different machines
+rather than two amounts of one. In fly cells, the promoters of developmentally
+regulated genes had DNA that readily associated with the canonical polymerase
+II pre-initiation complex. Housekeeping promoters did not, recruiting other
+factors instead. Tethering those factors to a promoter was by itself enough to
+produce the dispersed pattern [@serebreni2023promoterclasses].
+
+The familiar two-way split rests on thresholds chosen by hand. Clustering the
+same start-site distributions systematically with a non-parametric
+dissimilarity measure instead produced a third class. In that class essentially
+every start maps to one genomic position, distinct from sharp promoters where
+the position varies by a few nucleotides [@zhao2011tssclustering]. That third
+class is likely to be an artefact of measurement rather than biology. Those
+promoters lacked the epigenetic marks of messenger RNA promoters, and a
+substantial subset mapped upstream of ribosomal protein pseudogenes. Those
+authors say at least some are likely due to mapping errors. They attribute
+those errors to the similarity of ribosomal gene promoters combined with a
+known guanosine-addition bias in the libraries [@zhao2011tssclustering].
+
+What a measurement calls one promoter is often several starts merged. A survey
+across primary cells, cell lines and tissues reports that many promoters are
+composite entities made of several closely separated start sites. The
+expression profiles of those sites across cell types are independent of one
+another [@promoterlevel2014expressionatlas]. The merging rules are explicit
+where they are stated. One widely reused set of human peaks was called by
+decomposition-based peak identification over 988 libraries, then filtered to a
+robust subset. Robust means peaks containing a start site with more than 10
+reads in at least one sample and one tag per million [@varshney2019isletatlas].
+
+A gene can also acquire a promoter by acquiring an exon. Blocking the splicing
+of an internal exon reduced transcription from promoters near it. Creating a
+new spliced exon switched on transcription from previously cryptic promoters.
+Those authors name that phenomenon exon-mediated activation of transcription
+starts, and report it for thousands of genes
+[@fiszbein2019transcriptionstarts]. The causal arrow runs from splicing to
+initiation.
+
+### Polyadenylation
+
+Choosing among a gene's several poly(A) sites yields transcripts differing in
+3' untranslated region, in terminal exon, or in coding potential. None of those
+is a splicing difference [@huang2026apacancer].
+
+The term covers two consequences that should not be pooled. Tandem choice within
+the last exon leaves the protein untouched and changes only the regulatory
+elements carried. Sites used upstream, in introns, internal exons or alternative
+terminal exons, can truncate the protein outright [@huang2026apacancer].
+
+Two hexamers, AAUAAA and AUUAAA, account for about 75 per cent of
+polyadenylation signals while every other hexamer is used at under 3 per cent.
+Measured dissociation constants were generally inversely correlated with
+frequency. The low-frequency hexamers AAGAAA and AACAAA nevertheless supported
+good cleavage [@huang2025lowfrequencypas]. The hexamer is a poor predictor on
+its own. The input was more than 8,700 human 3' untranslated sequences and
+157,775 polyadenylated expressed sequence tags. Against that input, about 5,600
+tag-supported ends were found, and a known signal was present at only 73 per
+cent of them. Ten single-base variants of AAUAAA occurred often enough to be
+significant, potentially representing 14.9 per cent of real signals
+[@beaudoing2000signalusage]. That source does not add the two figures together,
+and neither should a reader.
+
+How many sites a gene has is contested, and the published counts are not
+independent attempts at one quantity. An expressed-sequence-tag survey found
+28.6 per cent of the messages examined, not of the genes, carrying two or more
+sites. In that survey, sites closer to the coding sequence tended to carry
+variant hexamers, and the most 3' site the canonical one
+[@beaudoing2000signalusage]. A method built to avoid oligo-dT priming artefacts
+found about 79 per cent of mouse messenger RNA genes and about 66 per cent of
+long noncoding RNA genes with alternative polyadenylation [@hoque2012analysis].
+Those are different denominators in different species by different methods.
+
+Three published human site counts differ by a factor approaching two, and two
+of the three come from one project. One atlas reports 569,005 clusters from 221
+samples and twelve protocols on one genome build. A second reports 290,168 from
+107 samples and one protocol on an older build. The third, 392,912 from 78
+samples and nine protocols on that older build, is the first atlas's own
+earlier release. The citing paper describes itself as an update of that release
+[@herrmann2019polyasite].
+
+A site in an atlas is a cluster, not a position, and the merging is explicit.
+Raw 3' ends were sorted by read support and each absorbed into a stronger site
+within 12 nucleotides on either side. Clusters carrying an annotated signal
+were then merged if the combined width stayed within 25 nucleotides. Clusters
+with no annotated signal were merged whenever they lay within 25 nucleotides of
+each other [@herrmann2019polyasite]. The thresholds are acknowledged to be
+arbitrary. A survey of these pipelines reports that internal priming is removed
+by heuristic filters, such as six consecutive adenines in ten nucleotides or
+fifteen in twenty. The same survey reports that no unified standard exists. It
+also reports that adjacent cleavage sites are grouped with only slight
+differences in distance, 25 nucleotides in two pipelines and 24 in a third.
+Those authors call the strategy subjective and arbitrary, and liable to produce
+clusters spanning several real sites. On their account it understates the
+diversity of polyadenylation profiles between species and especially in plants
+[@ye2026polyaseqtrap].
+
+Whether the scatter of ends around a site is biology or noise is itself
+disputed. The prevailing reading is that clustering reflects imprecise cleavage
+near one site. The elongation-rate authors argue against it: imprecise cleavage
+is a property of the processing complex acting on RNA, and so is independent of
+the polymerase. On their account that cannot explain why the relative levels of
+isoforms inside a cluster move with polymerase speed
+[@geisberg2022elongationlinkage].
+
+### The machinery, and what sets the choice
+
+Recognition of the hexamer had already been assigned to a four-subunit core
+before the structural work. A complex of CPSF160, WDR33, CPSF30 and Fip1 was
+sufficient for AAUAAA recognition. The interactions underpinning its assembly
+and its mechanism of recognition were not understood. That paper's own result
+is the architecture of the core. Quantitative binding assays identify a lysine-
+and arginine-rich motif at the amino terminus of WDR33, alongside the zinc
+fingers of CPSF30, as a critical determinant of specificity
+[@clerici2017cpsfassembly].
+
+The cut is made by one subunit acting as a nuclease. Purified recombinant
+CPSF-73 had RNA endonuclease activity, and mutations disrupting zinc binding in
+its active site abolished it. The structure placed the two-zinc active site at
+the interface of a metallo-beta-lactamase domain and a beta-CASP domain
+[@mandel2006cpsf73endonuclease]. Isolated CPSF does not cut: specific and
+efficient endonuclease activity was reconstituted from purified human proteins
+only when the seven-subunit complex was combined with cleavage stimulatory
+factor, cleavage factor IIm and the multidomain protein RBBP6
+[@boreikaite2022rbbp6].
+
+The downstream element is read by a separate complex. Human cleavage
+stimulatory factor carries two copies each of CStF77, CStF64 and CStF50. The
+RNA-recognition motifs of CStF64 bind G- and U-rich sequence downstream of the
+cleavage site. Cleavage factor IIm is a heterodimer of Pcf11 and Clp1
+[@boreikaite2023endprocessing].
+
+The standard account of why one site is chosen is a race between the machinery
+and the polymerase. In the kinetic model as reviewed, a higher cellular
+concentration of CPSF and its accessory factors promotes use of the proximal
+sites that emerge first and are often suboptimal. In the same model, lower
+concentrations enforce use of the distal, canonical ones
+[@boreikaite2023endprocessing].
+
+Core factors do not all pull the same way. Knocking each down in mouse
+myoblasts and sequencing 3' ends showed Pcf11 and Fip1 enhancing use of
+proximal sites. CFIm25, CFIm68, PABPN1 and PABPC1 promoted distal ones. Strong
+cis-element biases were reported for the sites regulated by CFIm25 and CFIm68,
+or by Fip1, rather than for all six factors. The distance between competing
+sites played an important part [@li2015apacode].
+
+One factor's effect has been measured directly. Of 12,273 transcripts whose
+terminal exon was covered more than thirtyfold, 1,453 shifted their 3' end
+reproducibly after CFIm25 was knocked down. Of those 1,453, 1,450 shifted
+toward the proximal site [@masamha2014cfim25].
+
+Polymerase speed sets where the cut falls. That slowly elongating mutant
+polymerases shift the whole profile of ends upstream and fast ones shift it
+downstream is those same authors' earlier publication, cited here as previously
+shown. What this paper adds is that the shift is continuous from one isoform to
+the next at nucleotide distances within a cluster of sites. It barely crosses
+from one cluster to the next. That holds in yeast and, for the slow mutant, in
+human cells [@geisberg2022elongationlinkage].
+
+### Polyadenylation inside an intron
+
+A cryptic site inside an intron is actively suppressed rather than merely weak.
+Functional knockdown of U1 with an antisense morpholino caused premature
+cleavage and polyadenylation at cryptic signals in numerous precursors. Those
+signals sat frequently in introns within 5 kilobases of the transcript start.
+It did not happen when splicing was blocked at U2 instead, by morpholino or by
+spliceostatin A, unless the U1 morpholino was also present
+[@kaida2010u1telescripting].
+
+The splicing machinery holds these sites down under normal conditions rather
+than only when perturbed. Knocking down the U1 protein U1-70K or the U2 protein
+SF3b155, or blocking U1 with an oligonucleotide, substantially changed which
+sites upstream of the last exon were used. Every splicing-factor knockdown
+raised those isoforms overall. Knocking down the U2 auxiliary factor U2AF65
+changed far fewer [@li2015apacode].
+
+The class is large: of the mouse messenger RNA genes with alternative
+polyadenylation, 53 per cent had a site in an intron or an upstream exon
+[@hoque2012analysis].
+
+Intronic sites split into two annotated shapes plus a third that neither
+explains. The definition of an intronic site here is a cluster more than 200
+base pairs from the nearest annotated splice site. On that definition, a strict
+set yielded 2,846 skipped terminal exons, 2,251 composite terminal exons, and
+1,482 clusters where polyadenylation coexisted with canonical splicing. Those
+authors name that third class spliced polyadenylated introns, and find it in
+about 13 per cent of genes expressing more than one intronic site
+[@vlasenok2023intronicpa].
+
+That third class is partly a measurement artefact, and its authors say so. They
+estimate conservatively that spliced polyadenylated introns, which carry a
+poly(A) tail but are released as part of the lariat, make up almost a quarter
+of all intronic polyadenylation events. Two thirds of them are already present
+in a published atlas. Those authors conclude that 3' end sequencing may
+therefore overestimate the rate of intronic polyadenylation
+[@vlasenok2023intronicpa].
+
+In the fly, whether a signal is used depends on whether it sits in an intron.
+Reporter and genomic assays found signals used when they lay in exonic
+sequence, but not when the same signals lay in an intron. Deletion of the 5'
+splice site restored their function. A whole-transcriptome analysis found
+intronic signals used very rarely [@tikhonov2013competitionwithinintrons].
+
+### End choice and splicing are not independent
+
+The two are coupled, and the coupling has been measured. In one mammalian
+transcript-domain analysis the number of alternative nucleotides attributed to
+alternative initiation correlated positively with the number attributed to
+splicing within 5' untranslated regions. The correlation was 0.19 in one
+transcript set and 0.21 in the other [@shabalina2010connections].
+
+The promoter a transcript comes from changes how it is spliced. Swapping
+promoters in front of an otherwise identical fibronectin minigene changed how
+much of one exon was included. The effect tracked promoter structure rather
+than promoter strength. Those authors present that as the first evidence that
+alternative splicing is coupled to promoter-specific transcription
+[@cramer1997promoterstructure].
+
+The route from promoter to splice site runs through elongation speed. Inserting
+the SV40 enhancer into the same minigene suppressed inclusion of that exon. The
+minimal enhancer of two 72-base-pair repeats was sufficient. Deleting one of
+the two repeats raised inclusion and restored responsiveness to an SR protein.
+The accompanying drop in elongation showed up both as a higher ratio of short
+proximal to full-length transcripts and as higher polymerase density upstream
+of the alternative exon [@kadener2002enhancerelongation]. That mechanism is
+taken up in @sec-kinetic.
+## The signals in the sequence {#sec-cis}
+
+Splice site strength became a number by modelling a site as a distribution
+rather than as a consensus. A maximum entropy framework approximates a short
+motif's distribution with the maximum entropy distribution consistent with
+low-order marginal constraints. That admits dependencies between non-adjacent
+as well as adjacent positions. Against decoys, the best of those models
+discriminated human donor and acceptor sites better than previous probabilistic
+models [@yeo2004splicingsignals].
+
+What a strong site buys is limited, and there is a named class of
+counterexamples. Pseudoexons are intronic sequences flanked by strong splice
+sites that are not included in messages. They show nucleosome depletion rather
+than the nucleosome occupancy found over real exons
+[@tilgner2009exonrecognition].
+
+The score also failed to separate fast introns from slow ones. 15,671 human
+introns common to six cell lines were split into quartiles by mean nascent
+splicing index. Consensus scores, polypyrimidine tract lengths and
+branchpoint-to-3'-splice-site distances showed no differences between
+quartiles. Intron length did, with first-quartile introns roughly twice the
+median length of fourth-quartile introns, 2,118 against 1,077 base pairs
+[@bedi2021cotranscriptional].
+
+What weak means is partly counterintuitive: hyperstabilising the duplex between
+U1 and the 5' splice site in human cells and extracts did not decrease splicing
+efficiency. Instead it increased site recognition and exon inclusion. Low
+complementarity significantly increased exon skipping and RNA degradation.
+Those authors note the first result is unlike what had been observed in budding
+yeast [@freund2005u1duplex].
+
+Cis elements and splice sites also substitute for one another as a function of
+intron length. Among human introns shorter than 1.5 kilobases, exonic enhancer
+density rises with intron length at R = 0.159 for constitutive introns. That
+falls to R = 0.086 once exon-end base composition is corrected for. Above that
+length, enhancer density stops tracking intron length and splice-site strength
+rises instead [@dewey2006compensatorysignals].
+
+### The regulatory elements were found by screen and by prediction
+
+Enhancers were found by prediction and then confirmed. A statistical analysis
+of exon, intron and splice-site composition nominated ten enhancer motifs.
+Representatives of all ten raised splicing in cells. Point mutants of those
+sequences showed sharply reduced activity [@fairbrother2002rescuepredictive].
+
+Silencers were found the other way round. A screen of a random decanucleotide
+library in a splicing reporter recovered 141 silencer decamers, of which 133
+were distinct. Most could be clustered into seven putative motifs, some
+resembling the sequences bound by hnRNP H and hnRNP A1
+[@wang2004systematicidentification].
+
+Intronic elements followed the same functional-selection logic. A fluorescence
+screen of random 15-nucleotide inserts beside an alternative exon in a minigene
+recovered 125 distinct active intronic sequences from 226 sequenced isolates.
+Of 18 tested individually, 16 silenced the exon and two enhanced it
+[@culler2010intronicelements].
+
+An element's identity as enhancer or silencer is not a property of the sequence
+alone. Of 16 intronic sequences selected as silencers in one cell line, 12 kept
+the same direction of effect in a second. Four acted as enhancers there in the
+same reporter. Those authors suggest differences between the lines in
+trans-acting factor levels, in total RNA levels or in rate of decay. Their own
+conclusion from that line is that most of the selected sequences retain
+function in a second cell line [@culler2010intronicelements].
+
+The cis contribution has also been probed by brute force. Splicing was read out
+for over two million synthetic minigenes carrying more than 100 million bases
+of degenerate sequence. The great majority of hexamer motifs measurably shifted
+splice-site choice when placed inside an alternative exon. The effects of
+several motifs added together rather than combining cooperatively
+[@rosenberg2015determinants].
+
+Whether the sequence is available at all depends on structure. Exonic segments
+immediately upstream of a 5' splice site are more base-paired in retained
+introns than in spliced ones of the mouse embryonic stem cell transcriptome.
+Forcing those loops into stems impaired splicing of two reporters. The worst
+defect came when all four loops upstream of one 5' splice site were hybridised
+[@saha2018exonicstemloops].
+
+### Position, not composition {#sec-position}
+
+Splicing regulation is positional rather than merely compositional. The authors
+of an RNA map derived for the neuron-specific factor Nova report that where its
+sequence clusters sit in a precursor determines the outcome. They also report
+that the map predicted correctly whether Nova would inhibit or enhance
+inclusion of a given exon [@ule2006novaprediction].
+
+The rule has a physical reading: Nova bound to an exonic cluster changed the
+complexes assembled on the precursor and blocked U1 binding along with
+inclusion. Nova bound to an intronic cluster enhanced spliceosome assembly and
+inclusion [@ule2006novaprediction].
+
+The same shape is reported for whole protein families. SR proteins enhance
+splicing only when recruited to the exon, and interfere when the same site is
+relocated to the intronic side of the regulated 5' splice site
+[@erkelenz2013commonmechanisms]. hnRNP proteins are reported to show the same
+pair of opposing activities with the position dependence reversed. So on this
+model the antagonism between the families follows from where each binds, rather
+than from an intrinsic difference between enhancer and silencer proteins
+[@erkelenz2013commonmechanisms].
+
+Activation and repression act on different steps. An activating factor of
+either family makes a splice site easier to recognise at the very first stage,
+when the exon is being defined. A repressing one instead builds non-productive
+complexes that arrest assembly before the two sites are paired
+[@erkelenz2013commonmechanisms].
+
+Tethering splits the rule into protein parts. For RBFOX1 and RBFOX2 the
+C-terminal domain alone was sufficient to activate an exon when tethered to the
+downstream intron. Repression from the upstream intron required both that
+domain and the central RNA-recognition motif [@sun2012tetheredmechanisms].
+
+Positional rules are now read off two data types at once. Two hundred and three
+pairings of enhanced CLIP with knockdown sequencing in the same cell line
+covered 139 RNA-binding proteins across two lines. They yielded a wide variety
+of averaged binding-density maps around knockdown-responsive events
+[@vannostrand2020rbpmap]. The classical division of labour survives that
+genome-scale test in direction. SR protein binding was typically associated
+with exons that lost inclusion when that protein was knocked down. hnRNP
+binding was typically associated with exons that gained it
+[@vannostrand2020rbpmap].
+
+### Five bounds on the positional rule
+
+The rule is real and it is weaker than it looks, in five separate ways.
+
+Shared position does not imply shared outcome. Two closely related factors show
+overlapping positional enrichment at the exons included on knockdown of one.
+Yet across the exons responding to knockdown of both, the splicing changes
+caused by knocking down each correlate at only R-squared 0.03
+[@vannostrand2020rbpmap].
+
+Binding where the rule predicts an effect need not produce one. Of 87 cassette
+exons carrying nearby cross-links for one factor yet showing no significant
+change in the knockdown data, 13 were retested. Only four of those retested
+changed detectably. That retest is reported on the same line as data not shown
+[@jangi2014rbfox2autoregulation].
+
+The underlying signal is sparse, and across one large collection of
+crosslinking datasets, the mean share of a factor's called peaks falling
+anywhere inside a knockdown-altered cassette exon region is under 1 per cent.
+It rises only to 1.3 per cent for known splicing regulators and 1.9 per cent
+for spliceosome components. Those authors give that as what limits the power of
+the peak-based approach, while saying that maps built on read density remain
+highly useful [@yee2019rbpmaps].
+
+And the background can set the conclusion. The same signal for one SR protein at
+knockdown-excluded exons is higher than at any of the four cassette-exon classes
+but equivalent to constitutive exons. A constitutive-exon background would
+suggest the factor is unchanged there, while a native cassette-exon background
+shows it enriched [@yee2019rbpmaps]. The difference is enrichment against
+equivalence, not a reversal of direction, and it still changes what the map
+appears to say.
+
+Position dependence need not operate inside the exon either. In synthetic
+designer exons carrying no natural regulatory sequence, a single enhancer
+raised inclusion three- to fourfold at each of six evenly spaced positions.
+There was no significant difference between positions, except three differences
+of 5 per cent or less in the chromosomal constructs [@arias2015designerexons].
+
+### The two protein families, and where the antagonism stops
+
+The antagonism was established as a dose effect. In vitro, an excess of SF2/ASF
+promoted inclusion of an appropriate alternative exon, while an excess of hnRNP
+A1 caused its skipping. From that those authors propose that the ratio of the
+two proteins may in some cases regulate alternative splicing
+[@mayeda1993exonskipping].
+
+The same experiments showed where the model stops. Excess hnRNP A1 did not
+cause skipping of every alternative exon. Those authors give as examples of
+what it depended on how large the internal alternative exon was and how strong
+the preceding intron's pyrimidine-rich tract was. They call the effect not
+universal rather than closing the list [@mayeda1993exonskipping].
+
+It is not only a property of in vitro reactions. Transient overexpression of
+SF2/ASF in cells shifted cotransfected reporters towards proximal 5' splice
+sites, drove a neuron-specific exon to be included and stopped an abnormal
+skipping event. Overexpression of hnRNP A1 shifted the same reporters towards
+distal sites [@caceres1994overexpression].
+
+Both families have a modular build whose parts are functionally separable. SR
+proteins carry one or two RNA-recognition motifs and a carboxy-terminal
+arginine and serine repeat. Deleting the second motif of SF2/ASF left a protein
+still active in alternative splicing, but with altered specificity in 5' splice
+site selection [@caceres1997modulardomains]. For hnRNP A1, conserved
+phenylalanines in each of its two motifs were needed to modulate alternative
+splicing but not for general precursor binding. The carboxy-terminal
+glycine-rich domain was needed for splicing activity, for stable binding and
+for optimal RNA annealing [@mayeda1994conserveddomains].
+
+Phosphorylation sits above the antagonism as a control layer. On one SR
+protein, two kinases divide the serines of its arginine-serine domain between
+them by residue context, rather than each taking one end of the domain. One
+acts on arginine-serine repeats and the other additionally on serine-proline
+dipeptides [@aubol2013clksrpk].
+
+An exon's inclusion is normally set by several factors at once. The inputs were
+splicing-sensitive microarrays, crosslinking data and cDNA sequencing for hnRNP
+proteins in human cells. On those inputs, more than half of all alternative
+splicing events detected were regulated by more than one hnRNP protein. Some
+combinations were synergistic and others antagonistic
+[@huelga2012cooperativeregulation].
+
+Factors do not hold their own levels independently either. In mouse embryonic
+stem cells one factor alters decay-coupled splicing events in other RNA-binding
+proteins. For one of those, the negative autoregulation of its own transcript
+was not significant at steady state. It appeared only when that protein was
+overexpressed and the first factor knocked down. Those authors propose that one
+factor sets the threshold at which another autoregulates
+[@jangi2014rbfox2autoregulation].
+
+A large part of that cross-regulation is invisible unless decay is blocked.
+Among curated cassette exons in RNA-binding-protein transcripts with nearby
+cross-links for one factor, 45 would generate a premature termination codon on
+inclusion and 20 on skipping. Half of the factor-dependent changes among the
+six such genes assayed could not be seen without inhibiting nonsense-mediated
+decay. Those six genes were picked because their decay-coupled events had
+changed by 0 to 5 per cent on knockdown under standard conditions
+[@jangi2014rbfox2autoregulation]. Standard conditions hide the effect, which is
+why @sec-as-nmd matters for regulation and not only for decay.
+
+### The splicing code as a prediction problem {#sec-code}
+
+One splicing code treated a splicing decision as prediction. It drew on
+hundreds of features of the RNA, taken in combination, to forecast how
+thousands of exons shift inclusion from one tissue to another. Its authors
+reported regulatory strategies including unexpectedly large feature
+combinations, and features sitting deeper inside introns than had been
+appreciated [@barash2010deciphering].
+
+A code predicts the extremes better than the middle. A deep network was
+evaluated by five-fold cross-validation on exons drawn from 11,019 mouse
+alternative exons, each described by 1,393 features. A ten-junction-read
+threshold had removed 45.8 per cent of the training examples. On that input the
+network reached an area under the curve of 89.3 for the low-inclusion class and
+88.3 for the high-inclusion class in brain, but 79.4 for the medium class
+[@leung2014deepsplicingcode].
+
+The accuracy reported is partly an accuracy on its own dataset. Tested against
+data from a different experiment, the same network showed about a 1 to 4 per
+cent decrease in area under the curve for brain across all exons. On the subset
+defined as tissue-variable, the decrease was about 4 to 5 per cent.
+Tissue-variable means a change in inclusion of at least 0.15 for one tissue
+pair [@leung2014deepsplicingcode].
+
+The predictors are not merely memorising natural genomes, which a synthetic
+test settles. Eleven predictors were scored on thousands of heavily recoded
+synthetic variants whose splicing was measured per position by long-read
+sequencing. On that test, the modern deep-learning predictors kept strong
+performance and the ranking stayed largely stable. The tools ignoring
+long-range sequence context fell behind chiefly by scoring unspliced positions
+highly [@bellidomolias2026splicingpredictors].
+
+### The share of an exon that is splicing information is disputed
+
+The field's two ways of asking this have not agreed. Conservation-based
+genome-wide studies put functional enhancer content at a few per cent of coding
+sequence. Mutagenesis of model exons returned figures from about a fifth of the
+sequence to nearly all of it. The authors reporting that spread argue their own
+estimate sits at the lower experimental end [@savisaar2018exonicselection].
+
+Their estimate is that about 15 to 20 per cent of fourfold degenerate sites are
+part of a functional exonic splicing enhancer. The denominator is a filtered
+set of 10,879 human protein-coding genes compared with macaque, and most of
+them are under strong rather than weak constraint
+[@savisaar2018exonicselection].
+
+The size of that estimate turns on how many motifs are counted, and one widely
+quoted smaller figure is conditional. In the same gene set, a single
+conservative enhancer motif set puts about 18 per cent of coding nucleotides
+inside a motif. The unconditional measurement is that about a quarter to a
+third of the fourfold degenerate positions in those motifs are functional. The
+smaller figure of 4 to 6 per cent of all fourfold degenerate sites follows only
+on one condition. That condition is that the authors' failure to control for
+contextual mutation biases is taken to have overestimated the functional
+fraction by about a third [@savisaar2018exonicselection]. Quoting 4 to 6 per
+cent without that condition states a conclusion the source makes conditional.
+Both 15 to 20 per cent and 4 to 6 per cent are shares of fourfold degenerate
+sites rather than of all exonic positions, so they are two estimates of one
+quantity under two motif sets rather than two different quantities.
+
+Predicted enhancers do behave like sequences under selection in living
+populations. The denominator was about 121,000 annotated internal human exons,
+a database those authors confined to exons with no cDNA evidence of alternative
+splicing. Across those exons, polymorphisms disrupted a predicted enhancer
+hexamer in 10.9 per cent of cases, against 13.6 per cent for mutations
+simulated in the same exons under pseudogene-derived substitution frequencies.
+That is a relative risk of 0.80 on the pooled data [@fairbrother2004verify].
+
+Whether splicing enhancers show positive as well as purifying selection is
+disputed, and both sides are worth stating. Of the enhancer motif sets tested
+in the 10,879-gene set, only one showed evidence of positive selection, while
+the three others and their combined set showed none. The figures are 15 to 25
+per cent of fourfold degenerate motif sites under selection, and 18.6 per cent
+for the combined set [@savisaar2018exonicselection]. Those authors present this
+as contradicting an earlier report of positive selection on two motif classes.
+They add in the next sentence that the earlier work analysed constitutively and
+alternatively spliced exons separately and found positive selection only in the
+former. On their account, pooling the two could hide it
+[@savisaar2018exonicselection]. That is the authors' own reconciliation, not a
+reader's, and the earlier analysis stands on its own terms. Calibrated on
+intronic substitution rates, it reported a strong avoidance of synonymous
+changes disrupting a predicted enhancer or creating a predicted silencer. In
+constitutive exons it reported an excess of changes creating enhancers and
+destroying silencers, which those authors read as positive selection for
+splicing-promoting mutations [@ke2008compensatory].
+## The decision is made on the nascent transcript {#sec-kinetic}
+
+### The spliceosome may recognise the exon first
+
+The unit first recognised may be the exon rather than the intron. Precursors
+built with elongated second exons lacking a 5' splice site were deficient in
+spliceosome assembly and splicing in vitro. The same substrates assembled and
+spliced normally once a 5' splice site was placed at the end of that exon,
+provided the exon was under 300 nucleotides long. U2 was required to protect
+that site. Those authors read this as direct communication during early
+assembly between the factors binding the two sites flanking one exon
+[@robberson1990splicesites].
+
+Exon size and intron size are not independent constraints. Internally expanded
+exons placed in vertebrate genes were skipped when the flanking introns were
+large, and included when the same large exons were flanked by small introns.
+Both exon and intron size became problematic at approximately 500 nucleotides.
+Those authors add that the size at which recognition failed was itself
+influenced by exon and intron sequence, so the figure is not a fixed threshold.
+They note that large introns and small exons are the vertebrate rule while the
+opposite holds in lower eukaryotes [@sterner1996splitgenes].
+
+The switch between the two recognition modes was later measured and given a
+length. Splicing assays show that recognition across the intron stops once
+introns reach 200 to 250 nucleotides, and that beyond that size sites are
+recognised across the exon instead. The same assays show that recognition
+across the intron is significantly more efficient. So an exon with weak splice
+sites is included more when the flanking introns are short
+[@foxwalsh2005splicesitepairing].
+
+The mode in force can be read off alternative splice site usage. In one
+database of alternative site usage, pairing goes preferentially to the sites
+lying nearest one another across the intron when the competing sites sit within
+short introns. It goes to the sites nearest one another across the exon when
+the competing sites sit within large flanking introns. So the spliceosome pairs
+whichever sites are closest within the unit it is using
+[@carranza2022proximity].
+
+A timing measurement in a fly embryo cuts against the length rule. Native
+elongating transcript sequencing in early embryos found heterogeneous dynamics.
+Some RNAs were spliced immediately after the intron was transcribed, and others
+showed no splicing across the first 100 nucleotides of the downstream exon.
+Although the proportion of spliced reads was related to intron size, introns of
+every size showed intron definition [@prudencio2022drosophila]. That is a
+different species and a different assay from the in-vitro threshold, and the
+two have not been reconciled.
+
+There is now a proposed physical route by which exon definition could happen on
+the polymerase. One polymerase subunit is reported to interact directly with
+U2AF1, the factor binding the 3' AG dinucleotide, to initiate 3' splice site
+recognition. On that report, those initial exon-definition events are in turn
+what let U2AF2 be recruited into a heterodimer with U2AF1. On the same report,
+that recruitment also triggers the release of U2AF1 from the elongating
+polymerase. That gives two phases, in which polymerase-assisted site
+recognition precedes polymerase-independent assembly [@shao2025cycling].
+
+### Co-transcriptional does not mean immediate
+
+Splicing happens on the nascent transcript, and one group reads its data as
+placing it at a distance from the transcription machinery rather than at it.
+Nanopore sequencing of nascent RNA in human and fly cells found that
+co-transcriptional splicing occurs only after the polymerase has transcribed
+several kilobases of precursor. The same work found that inhibiting the
+branch-site recognition complex abolished co-transcriptional splicing in both
+species. It also found that splicing order does not strictly follow the order
+of transcription, with neighbouring human introns tending to be spliced
+concurrently [@drexler2020nanocop].
+
+The fraction has been measured with an explicit time window. Splicing was
+assessed for about 17,000 introns expressed across six human cell lines, one
+non-cancer and five cancer. Of the introns interrogated, fewer than half had
+been spliced within thirty minutes of their synthesis. Efficiencies differed
+between cell lines and within genes, and first introns were the least
+efficiently spliced of all [@bedi2021cotranscriptional].
+
+A fission yeast is different, and long-read sequencing of nascent multi-intron
+transcripts found most of them fully spliced, consistent with rapid
+co-transcriptional splicing. The same work found an unexpectedly high
+proportion either fully spliced or fully unspliced. Those authors read that as
+splicing of any one intron depending on the splicing status of the others. A
+temperature-sensitive mutation in the homologue of vertebrate U2AF65 increased
+the fully unspliced fraction [@herzel2018nascent].
+
+### Elongation rate, and why the window model is not enough
+
+Changing how fast the polymerase moves changes which exon is chosen. Expressing
+in human cells a human equivalent of a fly point mutation in the largest
+polymerase subunit, which confers a lower elongation rate, altered alternative
+splicing of one fibronectin exon and of an adenovirus precursor. Resplicing of
+a Hox gene was stimulated in fly embryos mutant for the same change. Those
+authors offer this as direct proof of elongation control of alternative
+splicing in cells [@delamata2003altsplicing].
+
+Slowing the polymerase does not reliably increase inclusion. Taking one CFTR
+exon as a model, skipping can also follow from slowed elongation. Slowed
+elongation promotes recruitment of a negative factor onto the UG repeat at that
+exon's 3' splice site, displacing U2AF65 from the overlapping polypyrimidine
+tract. Weakening the exon's 5' splice site increased that factor's binding and
+the skipping, while strengthening its usage had the opposite effect. Those
+authors state that in most cases slow elongation instead allows weak splice
+sites to be recognised and raises inclusion [@dujardin2014exonskipping].
+
+The sharpest result against the simple model is that fast and slow usually
+agree. The cell lines were isogenic, expressing a resistant polymerase large
+subunit carrying either a fast or a slow substitution. In those lines, 198 of
+the 319 exons with enhanced inclusion in the fast mutant were also more
+included in the slow mutant. And 332 of the 636 exons skipped in the fast
+mutant were also skipped in the slow one. So the slow and fast mutants usually
+did not have opposite effects on a given exon. Those authors say a simple
+window-of-opportunity model does not easily account for that
+[@fong2014optimalrate]. An optimal rate explains that pattern; a monotonic one
+does not.
+
+### Chromatin, and which way the arrow points
+
+Nucleosomes sit over exons, and the pattern may not require transcription at
+all. Stable nucleosome occupancy was found within human and worm exons and was
+stronger in exons with weak splice sites. Nucleosomes sat centrally within
+exons rather than proximal to the splice sites. The ratio of occupancy within
+an exon to that upstream of it correlated with inclusion level. The same exonic
+patterns were present in genes that were not expressed
+[@tilgner2009exonrecognition].
+
+Whether the histone mark or the nucleosome is the signal is contested. Analysis
+of nucleosome positioning in humans, flies and worms found higher occupancy
+over exons than introns. Those authors link that to differential GC content and
+to nucleosome-disfavouring elements. Four modifications were found enriched in
+exons. Even so, those authors state that the previously described enrichment of
+H3K36me3 in exons reflects the more fundamental phenomenon of increased
+nucleosome occupancy along exons [@schwartz2009exonintron].
+
+Marks can nonetheless change a decision rather than merely accompany one.
+Distinctive signatures were found correlating with splicing outcome across a
+set of human genes. Modulating those modifications caused splice site
+switching. The marks acted by influencing the recruitment of splicing
+regulators through a chromatin-binding protein. Those authors describe that as
+an adaptor system by which the splicing machinery reads histone marks
+[@luco2010altsplicing].
+
+A local perturbation settles the direction for one locus. Histone-modifying
+enzymes were fused to targeting domains and transfected into cells to alter
+chromatin only locally. On that design, the targeted alternative exon was
+included more when H3K9 di- and trimethylation rose locally, and was skipped
+when a demethylase removed those marks. H3K9me3 was found on internal exons
+genome-wide, and targeting the demethylase to a weak constitutive exon reduced
+that exon's co-transcriptional splicing [@bieberstein2016tale].
+
+The traffic also runs the other way. Intron-containing genes carry more
+H3K36me3 than intronless genes in human cell lines and mouse primary T cells.
+Inhibiting splicing impairs recruitment of the H3K36 methyltransferase and
+reduces the mark, while activating splicing has the opposite effect. The
+increase correlates with the length of the first intron. Yet the same line
+reports that in intron-containing genes the mark's level is also proportional
+to transcriptional activity [@dealmeida2011setd2recruitment]. That last clause
+is the confound: a mark that tracks transcriptional activity cannot be read as
+a splicing signal without separating the two.
+
+### Two decisions in one gene may or may not be independent
+
+The question was put to a microarray measurement in 2007. Earlier
+expressed-sequence studies had already found individual coordinated exon pairs,
+and what those authors claim as new is the tissue-dependence and the extent.
+Roughly 500 of the 3,044 mouse genes on that array carried between two and five
+alternative exons. Every pairwise combination with sufficient signal in 20 or
+more of the 27 tissues was tested for correlation. The comparator was the
+average over 1,000 random samples of exon pairs drawn from different genes.
+Those authors concluded that pairs of alternative exons in the same gene can be
+regulated in a coordinated manner across mouse tissues
+[@fagnani2007coordination].
+
+A long-read comparison put a differently designed version of the question and
+found no such dependence. Sequencing full-length transcripts from human and
+macaque cerebellum, those authors report that the alternative processing events
+along a transcript combine largely independently of one another. They treated
+that independence as the reason thousands of real isoform combinations are
+missing from annotation [@zhang2017primateisoforms]. That is a failure to
+detect dependence in the combinations observed along single molecules, not a
+measurement of correlation across tissues. The two designs can disagree without
+either being wrong, and this book keeps both.
+
+A third measurement finds coupling between kinds of event rather than between
+exons. Genes carrying a hybrid first-internal exon were 1.3-fold more likely
+than expected to carry a hybrid internal-last exon as well. The genes carrying
+both were enriched for spliceosome components and splicing factors
+[@fiszbein2022hybridexons].
 ## PSI: how much an exon is used {#sec-psi}
 
-Percent spliced-in, written PSI or Ψ, is the fraction of a gene's mRNAs that
-contain a given exon. It was defined on read densities rather than on raw read
-counts: the density of inclusion reads, divided by the sum of the inclusion and
-exclusion densities [@wang2008alternative]. The metric asks nothing about full
-transcripts, which is why the short-read era settled on it.
-@sec-short-read-limit gives the constraint that made that necessary.
+Percent spliced-in was introduced as the fraction of a gene's messages that
+contain a given exon, estimated from read densities rather than raw counts. The
+estimate is the density of inclusion reads divided by the sum of the inclusion
+and exclusion densities [@wang2008alternative].
 
-A single PSI value also conflates two separate splicing acts, one at each end of
-the intron. The intron-centric reformulation splits it into a
-5' and a 3' index, one per intron end, so that the choice made at the donor and
-the choice made at the acceptor are scored separately
-[@pervouchine2013introncentric]. Where the two
-indices disagree, a single number reports the average of two decisions that were
-never taken together.
+The quantity it estimates is not observable. What is observed is a count of
+reads crossing each junction. One tool models that as a binomial draw whose
+success probability is the inclusion fraction. So the reported index is an
+inferred parameter of a model rather than a ratio of counts
+[@vaquerogarcia2023majiq].
+
+A point estimate alone also hides how much was behind it. A probabilistic
+treatment of isoform ratios reported an estimate together with a statement of
+confidence in it. It treated the fragment length distribution of paired-end
+libraries as part of the model rather than as a nuisance [@katz2010miso]. The
+same index value from a handful of reads and from several hundred is the same
+number and not the same measurement.
+
+Read depth is why the estimator needs a prior. One group adopts a Bayesian
+estimator explicitly to improve the estimate where coverage over the junction
+is low. Its prior encodes the empirical observation that most inclusion
+fractions sit near zero or near one rather than in the middle
+[@vaquerogarcia2023majiq].
+
+The noise is a function of expression. Measured between biological replicates
+of one condition, where the true change is zero, the spread of the index was
+larger at low transcript abundance. So the same numerical change does not mean
+the same thing at different expression levels [@trincado2018suppa2].
+
+Separating the two reasons an index moves takes two variance components. A
+hierarchical model built for the purpose keeps the sampling uncertainty of each
+replicate apart from the variability between replicates. Those authors report
+that pooling RNA or merging reads across replicates does not substitute for
+replication, and is sensitive to outliers [@shen2014replicate].
+
+The criticism of the simplest form is specific. An index computed as a
+two-by-two table of inclusion against exclusion counts and tested with an exact
+test has no term for biological variation. The authors making that criticism
+point out that the data originally used to demonstrate the approach contained a
+single sample per tissue. They add that its probabilistic successor still
+compared one knockdown sample with one control [@anders2012dexseq].
+
+An index need not be computed from reads at the event at all. One widely used
+tool derives it arithmetically from transcript-level abundance estimates for
+the isoforms that carry and skip the feature. That makes the index inherit
+every assumption of the quantifier and of the annotation it ran against
+[@trincado2018suppa2]. That is worth knowing before two papers' values are
+compared.
+
+How accurate the index is has been measured against two comparators, and the
+answer depends on which. The three tools with relatively higher agreement
+against a long-read reference built from the same reference materials reached
+mean correlations of 0.41, 0.41 and 0.38. Against RT-qPCR instead, the same
+three reached 0.62, 0.60 and 0.76. Coverage mattered throughout, with accuracy
+and repeatability both poorer wherever coverage was low. Inclusion level told
+as well, most of all in the middle of its range [@wang2026benchmarking].
 
 ## Expression and usage test different nulls {#sec-dtu}
 
-Three study designs ask three different things of the same data. Differential
-gene expression asks whether a gene's total transcriptional output changed.
-Differential transcript usage asks whether the composition of its isoform
-abundance spectrum changed. Differential transcript expression asks whether an
-individual transcript changed [@soneson2016differential]. They are different
-null hypotheses rather than different resolutions of one.
+Three questions are easy to conflate and are set out as three study designs.
+Differential gene expression asks whether a gene's total transcriptional output
+changed. Differential transcript usage asks whether the composition of its
+isoform abundance spectrum changed. Differential transcript expression asks
+whether an individual transcript changed. They are different null hypotheses, not
+different resolutions of one [@soneson2016differential].
 
-![The same two-isoform gene under four outcomes. Only transcript usage
-distinguishes a gene that redistributed its output from one that did not, and
-only gene-level testing is blind to that case.](../figures/dge-dtu-dte.svg){#fig-dge-dtu-dte width=100%}
+![A two-isoform gene under the three nulls. Total output up or flat on one axis,
+isoform proportions shifted or flat on the other, with each cell labelled by
+which test fires. Only gene-level testing is blind to the bottom-left
+case.](../figures/dge-dtu-dte.svg){#fig-dge-dtu-dte width=100%}
 
-Exon-level testing sits close to transcript usage without replacing it.
-Differential exon usage and differential transcript usage answer the same
-question at gene level. Only transcript usage names which isoforms were used
-more and which less. Exon counting additionally has to contend with exons whose
-boundaries differ between the isoforms containing them [@baldoni2025dtu].
+The distinction can be separated by construction, and a simulation that does so
+makes it concrete. Of 15,017 genes with expressed transcripts, 70 per cent were
+left unchanged. Ten per cent had every isoform shifted by the same fold change,
+so output changed while proportions did not. Ten per cent had a single isoform
+shifted, which changed proportions only where the gene had another isoform
+expressed. The remaining 10 per cent had the abundances of two isoforms swapped,
+changing proportions with no change in output at all [@love2018swimming].
 
-A gene whose total output never moves can still have reversed which protein it
-makes.
+Built as a generalised linear model, a usage test separates two terms that
+would otherwise be confounded. One is for the overall fold change of the gene.
+The other is for the effect of condition on the fraction of the gene's reads
+falling in a given counting bin. Only the second is the usage parameter
+[@anders2012dexseq].
+
+A usage test is also not a set of per-transcript tests. The null one tool
+rejects is that the whole vector of isoform proportions within a gene is the
+same in both conditions. An overdispersion term is added to the multinomial, so
+that replicates are allowed to differ from one another for biological and
+technical reasons [@nowicka2016drimseq].
+
+The two-stage framework controls an error rate defined across both stages.
+Genes are screened first, and only the transcripts of the genes that pass are
+then tested. That means a gene can be called as having changed its isoform
+composition while no individual transcript within it survives the confirmation
+stage [@love2018swimming]. A reader who expects a named transcript from every
+called gene will be disappointed by design.
+
+Exon-level and transcript-level usage answer the same gene-level question but
+not the same transcript-level one. Both can report that a gene's splicing
+changed, while only transcript usage names which isoforms were used more and
+which less. Exon-level counting additionally suffers from exons whose
+boundaries differ between isoforms [@baldoni2025dtu].
+
+Proportions are also not quite what they look like. The proportion a quantifier
+reports is the probability that a read came from a transcript, which depends on
+that transcript's length. Those authors argue the quantity a usage test should
+compare is the probability that the gene expresses the transcript, which does not
+[@tiberi2020bandits].
+
+### Dominance is a convention
+
+Dominant isoform is two claims collapsed into one phrase, and one paper
+separates them. The major transcript is whichever has the highest expression
+within a gene. A dominant transcript is a major transcript expressed at
+considerably more than any minor one. Operationalised as the major transcript
+being at least twice as abundant as the next, that held for almost 80 per cent
+of expressed genes in primary tissues [@gonzalezporta2013dominanttranscript].
+
+Isoform fraction is used as an operational quantity: the ratio of a given
+isoform's abundance to the total expression of its gene. Its differential form
+is the arithmetic difference between that ratio in the two conditions compared
+[@rai2026isoformswitching].
+
+Where a usage change is called a switch of the dominant isoform, the threshold
+is a convention rather than a measurement. One study classified a gene as a
+major switch when the largest absolute change in any isoform's fraction reached
+0.15, and a partial redistribution at 0.08. That placed 91 of 174 genes with
+significant usage change in females, and 181 of 339 in males, in the major
+class [@naidu2026transcriptswitching]; moving the threshold moves the count.
+
+## A transcript quantifier fits a model rather than counting reads {#sec-quantification}
+
+A transcript quantifier does not count reads. It fits a generative model of how
+reads would have been produced from a set of transcripts and finds the
+abundances making the observed reads most likely. That is because counting only
+the reads that map to one transcript discards data, and gives wrong answers
+exactly at the alternatively spliced genes [@li2011rsem].
+
+The model says that, absent bias, the chance of drawing a fragment from a
+transcript is proportional to the number of copies of that transcript
+multiplied by its effective length. That is why abundance and length cannot be
+separated from a read count without the length model [@patro2017salmon].
+Effective length is the mean number of positions inside a transcript at which a
+fragment of the library's observed size distribution could have started. So a
+transcript shorter than the typical fragment has a much smaller effective
+length than its nominal length [@li2011rsem].
+
+The output is generally not an integer. A read often fits more than one
+transcript of its gene, and so cannot be assigned to one. Because of that, the
+reported count is the expected number of fragments assigned to that isoform
+under the fitted model [@li2011rsem]. No read is double counted and none is
+thrown away.
+
+Such a quantifier can report how uncertain it is. Sampling from the posterior
+of the same model yields a posterior mean and a credibility interval per
+transcript, built to cover two sources of doubt at once. Those are the
+randomness of sampling reads and the ambiguity of assigning them [@li2011rsem].
+
+How well those intervals work depends on the annotation supplied. Intervals
+estimated from data simulated with one mouse annotation covered the true
+abundance at close to their nominal level. Intervals from data simulated with
+another were less accurate, many biased downward. Those authors attribute that
+to the prior acting across a larger transcript set [@li2011rsem]. Uncertainty
+is not spread evenly either: it is systematically larger for genes whose
+isoforms resemble one another and for genes in large families of similar
+sequence. So a transcript-level table has a different amount of doubt in every
+row [@zhu2019swish].
+
+That uncertainty can be carried into the differential test rather than
+discarded at the boundary. Resampling reads to produce bootstrap replicates of
+the abundance estimates lets a linear model separate the variance coming from
+biological replication. It separates that from the variance coming from having
+inferred the abundances in the first place
+[@pimentel2017quantificationuncertainty].
+
+Propagating it changes which transcripts are called. In a simulation with six
+samples per group, the method consuming posterior samples held its false
+discovery rate at the 1, 5 and 10 per cent targets. A rank-based method
+ignoring quantification uncertainty tended to exceed the 5 and 10 per cent
+targets for transcripts of medium-to-high uncertainty. From nine samples per
+group upward a bootstrap-based competitor failed to hold the 5 and 10 per cent
+targets. From fifteen upward it failed the 1 per cent target as well
+[@zhu2019swish].
+
+### The annotation bounds the question
+
+A quantifier answers only the question its index allows. One widely used tool
+estimates abundances for the transcripts it was handed, and cannot report
+expression of a transcript absent from the annotation. So those authors say
+that where many expressed forms are unannotated, successful application of
+their workflow may require building out a more representative annotation first
+[@love2018swimming].
+
+The cost of incompleteness has been measured, and it depends on the organism.
+Removing a fifth of the annotated transcripts from the index before quantifying
+cost much more power to detect changed isoform usage in a simulated fly
+transcriptome than in a simulated human one. Those authors restrict that
+comparison to the counting methods combined with one differential test. They
+offer isoform redundancy as a likely explanation. Human genes have enough
+remaining isoforms to absorb the loss, while fly genes are often left with one
+or none [@soneson2016prefiltering].
+
+The sharper experiment deletes the dominant form. Removing the most highly
+expressed isoform of every gene from the annotation leaves the reads of the
+dominant form nowhere correct to go. That sharply degraded the accuracy of
+every method except the two that refuse to assign ambiguous reads, which were
+the least affected. One quantifier was in the most difficulty and a naive
+read-proportioning scheme was the next most robust after those two
+[@sarantopoulou2021comparative].
+
+That same benchmark disagrees with the method papers. On simulated reads
+carrying realistic artefacts the four model-based quantifiers did not perform
+dramatically better than a naive scheme that splits ambiguous reads in
+proportion to unambiguous ones. Even so, on idealised reads they were the most
+accurate. Those authors read this as evidence that short reads are close to
+exhausted as a source of isoform-level information
+[@sarantopoulou2021comparative].
+
+### Identifiability
+
+Some abundances are not determined by the reads at all, and the share has been
+counted. The design was 16 samples, and a swept assumption about how much of
+expression the reference transcriptome accounts for, running from 10 to 100 per
+cent. On that design, around 35 to 50 per cent of transcripts could carry
+estimation error from non-uniqueness alone. For 20 to 47 per cent of all
+transcripts the range of equally optimal values was wide enough that even the
+rank of the transcript against its sibling isoforms was undetermined. About
+half of these were not the transcripts made uncertain by finite sample size
+[@zheng2022nonidentifiability]. Those figures are computed across a swept
+parameter, not measured at one setting.
+
+It is not only a theoretical worry. Of 257 differentially expressed transcripts
+called at a false discovery rate of 0.01 in one dataset, 5 were flagged as
+unreliable, as were 19 of 3,152 calls in another. The flag was raised because
+the ranges of equally optimal abundance in the two conditions overlapped by
+more than a quarter. Those overlaps are computed across the same swept
+assumption, with the majority of calls robust where that share is above 40 per
+cent [@zheng2022nonidentifiability].
+
+Identifiability is a property of the library as much as of the gene. One
+treatment puts it as a question about read length and fragment length
+distribution, assuming a given transcriptome with coverage sufficient to
+interrogate every junction. On those assumptions, the fragment length
+maximising the number of identifiable human genes was about 400 to 600
+nucleotides for coding genes, and 150 to 200 for long non-coding RNAs.
+Combining two libraries of very different fragment lengths raised the
+identifiable fraction further [@ferrerbonsoms2022fragmentlength].
+
+It is also a property of the assay. Of 2,256 alternatively spliced human genes,
+up to 97 per cent gave identifiable models from RNA-seq, a figure those authors
+say was similar in mouse. That is against 69 per cent on the most comprehensive
+splice junction array and 26 per cent on the human exon array, for which no
+mouse figure is given [@hiller2009isoformdeconvolution].
+
+### The methods disagree more than their error rates suggest
+
+Four tools asked the same question of the same samples largely did not agree.
+Of 7,116 cassette events all four measured and tested, each called between 133
+and 274 significant. Of those, 370 were called by at least one and only 22 by
+all four. Of 2,924 alternative splice site events, 352 were called by at least
+one and two by all four [@trincado2018suppa2].
+
+Low agreement is not explained away by false positives, which is the result
+that makes it serious. Across ten methods on human long-read bulk data the
+median pairwise overlap of the top ten ranked transcripts was between zero and
+0.05. It reached only about 0.24 at the top five hundred. Median indices were
+often below 0.1 in single-cell and spatial data. Nine of the ten methods had a
+mean empirical false discovery rate below 5 per cent on the same datasets
+[@zhang2026dtuframework]. The methods are each calibrated and they still
+disagree about which transcripts matter.
+
+Between laboratories the picture is worse: measured across 42 laboratories and
+207 analysis pipelines on shared reference materials, isoform-level abundances
+varied enough between laboratories that the laboratory effect often masked the
+biological difference between samples. Restricted to the laboratories judged
+high quality, mean correlation to the long-read reference was 0.71 and to
+RT-qPCR 0.91 [@wang2026benchmarking].
+
+An earlier multi-site, multi-platform study designed to measure reproducibility
+found that relative expression could be reproduced across laboratories and
+platforms once specific filters were applied. Of the features detected across
+pairs of replicate sites, about 90 per cent of known genes but 87 per cent of
+known exons and 83 per cent of known junctions were detected consistently.
+Performance was worse at the transcript level than at the gene level, and
+depended more strongly on which analysis pipeline was used
+[@seqc2014assessment].
 
 ## Matching transcripts by intron chain {#sec-transcript-classes}
 
-Transcript identity has to be settled mechanically, and the unit that makes it
-checkable is the intron chain. Two transcripts match at intron-chain level when
-every intron has identical coordinates and the counts agree, which implies that
-all internal exons match. The definition says nothing about where the transcript
-starts and ends. Terminal boundaries are deliberately left outside it
-[@pertea2020gffutilities], and @sec-three-axes shows what sits in that gap.
+The intron chain is the comparison unit that makes transcript identity
+checkable. Two transcripts match at intron-chain level when every intron has
+identical coordinates and the counts agree. That implies all internal exons
+match, but says nothing about where the transcript starts and ends. Terminal
+boundaries are deliberately outside the definition [@pertea2020gffutilities].
 
-Long-read classification is built on the same comparison. A full splice match
-reproduces every splice junction of some reference transcript. An incomplete
-splice match reproduces a consecutive run of them but not all. Neither category
-says the ends agree, which is why an incomplete match can be a genuinely shorter
-isoform or a truncated cDNA [@tardaguila2018sqanti].
+The idea was in print by 2006. Comparing annotation tracks, one group treated
+each model as an unbreakable chain of introns whose boundary coordinates on the
+genome give the model a signature. It scored a pair of models by counting each
+boundary plus one when the two share it, and minus one when it is unique to
+either. Under that arrangement identical models always score best
+[@thierrymieg2006aceview].
+
+Four years later the same reduction became the matching rule of a comparison
+tool. An assembled fragment counted as a complete match when some annotated
+transcript had an identical chain of introns. Those authors state that rule
+immediately after noting that because sequencing is stochastic the same
+transcript assembled from two samples may come out at slightly different
+lengths. They do not themselves say that the terminal boundaries are excluded
+for that reason [@trapnell2010transcript]. The inference is natural and it is
+the reader's, not theirs.
+
+The long-read classification built on that unit has two known and two novel
+categories, and the known ones are defined purely on junctions. A full splice
+match reproduces every splice junction of some reference transcript, and an
+incomplete splice match reproduces a consecutive run of them but not all. Neither
+category says the ends agree, which is why an incomplete match can be a real
+short isoform or a truncated cDNA [@tardaguila2018sqanti].
 
 The novel categories are graded by how far a transcript departs from the
-annotation's inventory of splice sites. Novel in catalog uses only annotated
+annotation's splice-site inventory. Novel in catalog uses only already-annotated
 donors and acceptors, either recombined into new junction combinations or newly
 paired with each other. Novel not in catalog introduces a donor or acceptor the
-annotation does not contain [@tardaguila2018sqanti].
-
-Which comparison was run determines every novelty count in this book. The
-reasons published novel-isoform percentages range from a few per cent to more
-than half, sometimes for the same data, are worked through in
-[the transcript comparison walkthrough](../walkthroughs/intron-chain-comparison.qmd).
-
+annotation does not contain [@tardaguila2018sqanti]. Every novelty count in this
+book rests on that distinction, and @sec-catalogs is where it is taken apart.
 ## Splicing into decay {#sec-as-nmd}
 
-Whether a stop codon counts as premature is decided by position. A stop at least
-50 nucleotides upstream of the last exon junction leaves an exon junction
-complex downstream of it after the first round of translation, and that complex
-is what triggers decay. The rule was established with reporter constructs rather
-than by survey [@lindeboom2016nmdrules].
+The canonical rule for whether a stop codon is read as premature is positional. A
+stop at least 50 nucleotides upstream of the last exon junction leaves an exon
+junction complex downstream of it after the first round of translation, and that
+complex is what triggers decay. The rule was established with reporter
+constructs, not by survey [@lindeboom2016nmdrules].
 
-That makes decay available as a regulatory output. AS-NMD, also published under
-the name regulated unproductive splicing and translation, is the proposal that
-cells splice deliberately into decay. An isoform is made in order to be
-destroyed, so that the fraction of transcripts reaching protein is set after
-transcription [@garciamoreno2020asnmd]. On that reading an unproductive isoform
-is a product of regulation.
+Decay is not a property a transcript has but an event each translating ribosome
+can trigger. Imaging single reporter messages in human cells showed cleavage
+only after the first ribosome had reached the premature stop. The chance of
+cleavage was the same at every subsequent round of translation, rather than
+confined to a privileged first round [@hoek2019singlemolecule].
 
-How much of the transcriptome this accounts for depends on a denominator, which
-the survey states. With decay inhibited in HeLa cells, high-confidence targets
-came to 2,793 isoforms from 2,116 genes. That is 19 per cent of expressed
-protein-coding genes. It is also 22 per cent of the 9,440 genes those authors
-counted as alternatively spliced, where alternatively spliced means producing
+There are two exits from the pathway, an endonuclease cut by SMG6 and the
+ordinary degradation route, and they are not alternatives. The second is the
+cell's own degradation machinery, recruited directly: the SMG7 half of one pair
+docks onto an enzymatic subunit inside the CCR4-NOT deadenylase. After that the
+poly(A) tail is shortened, the cap removed and the body degraded. So a decay
+target is handed to the same enzymes the cell uses on every other message
+[@loh2013ccr4not]. Depleting SMG5 and SMG7 did not merely remove that route but
+also switched off the endonuclease. That is because SMG6 cannot cut until SMG5
+or SMG7 is present, and either one alone suffices. Those authors describe the
+final step as requiring two things at once, phosphorylation of UPF1 and the
+arrival of SMG5 or SMG7, rather than offering a choice of two routes
+[@boehm2021smg5smg7].
+
+The two branches are also redundant in what they act on. Knocking down UPF1,
+SMG6 and SMG7 and rescuing each separately showed that SMG7 has a weaker effect
+than SMG6. It reaches essentially the same genes, with only about 8 per cent of
+expression change estimated as specific to one factor rather than the other
+[@colombo2017nmdtargets].
+
+### Deliberate decay
+
+AS-NMD, also published as regulated unproductive splicing and translation, is the
+proposal that cells splice deliberately into decay. An isoform is made in order
+to be destroyed, so that the fraction of transcripts reaching protein is set
+post-transcriptionally. On this reading an unproductive isoform is an output of
+regulation rather than a failure of it [@garciamoreno2020asnmd].
+
+The idea predates RNA sequencing: classifying reliably supported alternative
+isoforms of known human genes found that a third of them contained premature
+stop codons. Those authors proposed on that basis that coupling alternative
+splicing to decay might be a pervasive way of setting protein output
+[@lewis2003coupling].
+
+A survey with decay inhibited put high-confidence targets at 2,793 isoforms
+from 2,116 genes, expressed over two explicit denominators. Those are 19 per
+cent of expressed protein-coding genes, and 22 per cent of the 9,440 genes
+counted as alternatively spliced. Alternatively spliced here means producing
 two or more expressed isoforms, including the decay targets themselves
-[@french2020asnmdsurvey].
+[@french2020asnmdsurvey]. The second denominator contains the numerator, which
+is worth noticing before the two figures are compared with anything.
 
-The amount of protein a gene makes is therefore set partly by isoforms that
-never become protein.
+The pathway's reach is not confined to protein-coding transcripts. Of the 1,000
+highest-confidence targets in one cell line, identified with decay inhibited
+genetically, 78 per cent coded for protein. In the same set, 9 per cent were
+pseudogenes, 6 per cent long intergenic non-coding RNAs and 4 per cent
+antisense transcripts [@colombo2017nmdtargets].
 
-## How many isoforms does a gene have {#sec-scale}
+A catalogue built from decay-deficient cells rather than from annotation rules
+runs to 302,889 assembled transcripts, a quarter absent from the reference. Of
+those, 48,213 carry a premature stop by the 50-nucleotide rule, while 6,433 rose
+significantly in three or more comparisons of decay-competent against
+decay-deficient cells [@brittoborges2024nmdtxdb]. The gap between 48,213
+predicted and 6,433 measured is the distance between a rule and an observation,
+and no source read here resolves it.
 
-The answer depends entirely on which genes are counted. Across all Ensembl gene
-bodies the median is one isoform. For protein-coding genes the median is six,
-the 75th percentile is eleven, and only 14.6 per cent are left with a single
-annotated transcript [@page2025annotations].
+### Whether it is regulation or noise
 
-Annotation and observation part company at the top of that distribution. Ensembl
-lists 7,255 genes with ten or more isoforms, 256 with fifty or more, and 30 with
-a hundred or more. The same authors quantified nine GTEx tissues with long reads
-and observed at most 105 isoforms for any gene body, and 60 for any
-protein-coding gene, while accepting a single uniquely aligned read as evidence
-[@page2025isoformdiversity].
+The claim that decay-coupled splicing is widespread regulation was contradicted
+within three years. Profiling splice variants on microarrays across diverse
+mammalian cells and tissues found that the stop-containing variants sat at
+uniformly low levels wherever they were looked for. They did so whether or not
+decay was acting, by means that abstract does not state. That led those authors
+to suggest most reading-frame-breaking splicing is not under positive selection
+and may carry no function [@pan2006evidenceagainst].
 
-Dominance needs defining before it can be counted, and the phrase hides two
-claims. The major transcript is whichever has the highest expression within a
-gene. A dominant transcript is a major transcript expressed at considerably more
-than any minor one, operationalised as at least twice the abundance of the next.
-That held for almost 80 per cent of expressed genes in primary tissues
-[@gonzalezporta2013dominanttranscript].
+Where the non-productive products die bears on whether they are regulated at
+all. Splicing intermediates were tracked across nascent, nuclear and mature RNA
+in two human cell lines. That found transcripts using the weakest splice sites
+3.3-fold more abundant in nascent than in nuclear RNA, against 1.1-fold for
+canonical sites. Inhibiting translation-coupled decay chemically with
+cycloheximide raised the transcripts using strong cryptic sites by 1.77-fold,
+while leaving the weak-site ones at 1.1-fold. From that those authors argue
+indirectly that the low-fidelity products are cleared in the nucleus, before
+translation-coupled decay could reach them [@khokhar2026splicingnoise].
 
-Expression is sparser than annotation in the ordinary case. In primary tissues
-the ratio of expressed transcripts to genes averaged 1.12, just over one
-transcript per gene [@gonzalezporta2013dominanttranscript]. What survives of the
-functional claim, once that is taken into account, is the subject of
-@sec-how-functional.
+How decay was stopped changes the catalogue, which is why these surveys are hard
+to stack. Of 47 genes whose messages were confirmed to rise when UPF1 was
+depleted, only 17 also rose under cycloheximide, while 19 actually fell and 10
+did not move [@mcglincy2010hnrnpa2b1]. Those three outcomes do not account for
+every gene in the tested set. Genetic and chemical inhibition do not return the
+same list, so a comparison between two surveys has to carry the method of each.
 
-The median protein-coding gene in one Ensembl release carries annotation for
-six isoforms, and a separate short-read study of primary tissues put the ratio
-of expressed transcripts to genes at about one. The two were not measured on
-the same footing, so the distance between them is not a measured gap.
-@sec-per-gene-counts returns to the question once the catalogues are in view.
+### Poison exons
+
+Poison exons are not scattered curiosities but a family-wide arrangement. Each
+of the human SR splicing regulators, with no exceptions among them, carries a
+highly or ultraconserved element that is alternatively spliced. It is spliced
+either as a cassette exon bearing an early in-frame stop or as an intron in the
+3' untranslated region. In both cases the resulting message is destroyed rather
+than translated, and mouse orthologues show the same patterns
+[@lareau2007srgenes].
+
+The autoregulatory loop runs in opposite directions for the two protein
+families, and that polarity is what makes it homeostatic. Blocking decay in
+mice and reading splicing-sensitive microarrays found a class of highly
+conserved stop-containing exons whose inclusion makes the transcript
+decay-sensitive. A separate genomic search identified more than 50 such exons.
+The messages encoding splicing activators were sent to decay by an act of
+splicing activation. Those encoding repressive proteins were sent to decay by
+an act of splicing repression [@ni2007homeostatic].
+
+Stated as mechanism, the two directions are one logic implemented twice. SR
+proteins, which activate splicing, raise their own poison exon inclusion or
+retain a 3' untranslated region intron when they are abundant. hnRNP proteins,
+most of which act as splicing repressors, cause an exon to be skipped and the
+frame broken when they are abundant. In both families a rise in the protein
+sends a larger share of the gene's own precursor into decay. There are
+documented exceptions, in which an hnRNP works the way an SR protein does
+[@garciamoreno2020asnmd].
+
+The hnRNP direction has a case measured at the protein level. Depleting UPF1
+and reading protein changes by two-dimensional gel proteomics yielded 17
+confirmed targets. That is a different 17 from the cycloheximide responders
+above. Among them was a conserved event in the 3' untranslated region of one
+hnRNP gene. Forcing that protein higher lowered the gene's own message,
+while raising its decay-sensitive isoforms [@mcglincy2010hnrnpa2b1].
+
+The conservation behind these exons is deep in one case and shallow in most.
+Unproductive splicing of one SR gene is found in all animals examined and in
+fungi, which makes it one of the few splicing events conserved between
+kingdoms. Yet as the family duplicated, that ancient event was lost in the
+paralogues and replaced repeatedly by new unproductive splicing. Ultraconserved
+elements overlap the poison cassette exons of four of the eleven human SR genes
+[@lareau2015splicingfactors].
+
+Counted across the genome, frame-disrupting exons are numerous and only a small
+subset is exceptionally conserved. 12,653 human exons were predicted from
+annotation, with no decay inhibited and none of them measured, to send their
+transcript to decay. Of those, 520 had high conservation at both splice sites
+across 46 species. The highly conserved ones were enriched in genes encoding
+RNA-binding proteins in a way that frame-preserving cassette exons were not
+[@thomas2020poisonexons].
+
+Forcing a poison exon out of its transcript costs cells growth, which is a
+direct test rather than an inference from conservation. Paired guide RNAs
+suppressed recognition of individual exons. In one cell line that depleted 43
+per cent, or 169, of the targeted poison exons in expressed genes, against 58
+per cent, or 170, of the upstream constitutive exons used as a comparison. In a
+second line the figures were 13 per cent against 35 per cent
+[@thomas2020poisonexons]. The poison exons matter less than the constitutive
+ones and they do matter.
+
+### A transcript can be routed to decay without a premature stop
+
+Upstream open reading frames act on fate the way a premature stop does, and
+whether they do depends on whether they are translated. Transcripts carrying
+one were much more likely to peak in the single-ribosome fraction than
+transcripts without. The figures are 31 per cent against 12 per cent when the
+upstream start codon sat in a strong initiation context, and only 15 per cent
+when it did not [@lloyd2020polysomefractionation].
+
+In cells with UPF1 depleted, 14,348 transcripts whose stop codons were all in
+the normal place nevertheless carried at least one upstream open reading frame.
+Of those, 5,628 had a strong initiation context. Transcripts with a strong
+upstream frame were about twice as likely to rise in abundance as transcripts
+with none. Those authors read this as a second route into decay that does not
+require the coding sequence to change [@french2020asnmdsurvey].
+
+## Twelve bounds on the 50-nucleotide rule {#sec-nmd-limits}
+
+The positional rule is the most quoted statement in this chapter and it is also
+the most qualified. The qualifications are worth setting out together, because
+each is a measurement and several come from one tumour cohort in which no decay
+was inhibited anywhere in the design.
+
+**It holds where it applies.** Across 9,769 human tumours with matched exome
+and transcriptome data, stop codons in the last exon were followed by almost no
+decay, while those further upstream were followed by a great deal. The
+transition was abrupt at the 50-nucleotide boundary: efficiency of 1.7 per cent
+in the last exon and 2.2 per cent within the final 50 nucleotides, against 84.7
+per cent upstream [@lindeboom2016nmdrules].
+
+**It applies to a small part of the sequence.** The same authors report the
+rule as highly accurate wherever it applies, with near-complete escape for
+every stop in that window. They note that the window covers only a small part
+of a gene's sequence, and so is not pertinent for many of the stop codons that
+actually occur [@lindeboom2016nmdrules]. A rule can be nearly always right and
+still explain little.
+
+**Applied across the genome it accounts for the smallest share of escapes.** A
+decision-tree model trained on tumour efficiencies was applied to 120 million
+predicted stop codons in 101,781 human transcripts. It put 55 per cent of all
+possible stops as seen by decay. Escape was attributed to the last exon for 18
+per cent of stops, to start proximity for 12 per cent, and to long exons for 12
+per cent. It was attributed to the 50-nucleotide window for only 3 per cent. A
+companion regression model, scored on a different threshold, instead split the
+same stops into 51 per cent efficiently degraded, 22 per cent not degraded and
+27 per cent in between [@lindeboom2019nmdetective]. Two models from one paper,
+two partitions.
+
+**It fails near the start codon.** In the same cohort, stops within 200
+nucleotides of the start codon were followed by decay at 35 per cent
+efficiency, against 93 per cent further along. Those in the first 100 coding
+nucleotides were rarely degraded at all. Where an in-frame AUG lay downstream
+of the stop, efficiency fell to 1.9 per cent against 57 per cent without one.
+Those authors read this as translation re-initiation, while naming the distance
+from the start codon to the stop, rather than the position of that AUG, as the
+strong predictor [@lindeboom2016nmdrules].
+
+**That start zone is far narrower when measured codon by codon.** In one gene,
+with decay inhibited chemically by an SMG1 inhibitor, stops in the first 21
+codons failed to trigger decay, with only a few showing weak activity. Activity
+then rose to full strength across the next four codons. That transition is far
+narrower than the 200-nucleotide zone inferred from tumour data
+[@cortazar2025stopcodonscanning].
+
+**The boundary itself is a gradient, not a boundary.** Every possible stop
+codon was introduced along the second-to-last exon of one gene, with decay
+inhibited by an SMG1 inhibitor and independently by cycloheximide. That gave a
+smooth rise and fall of decay activity, peaking about 71 nucleotides upstream
+of the last junction. There was measurable decay even at a codon inside the
+window the rule predicts to be insensitive [@cortazar2025stopcodonscanning].
+The 50-nucleotide line is a convention drawn across a curve.
+
+**Long exons and distance to the normal stop are separate bounds.** In the same
+cohort, a stop inside an exon longer than about 400 nucleotides was followed by
+decay at 61 per cent efficiency, against 98 per cent elsewhere. Within those
+long exons what mattered was how far the stop sat from the next junction
+downstream. Separately, stops very far from where translation would normally
+have ended were followed by less decay. That is 67 per cent efficiency in the
+fifth of cases with the longest such distance, against 99 per cent otherwise
+[@lindeboom2016nmdrules].
+
+**Not every downstream junction counts.** Where a gene carries an intron inside
+its 3' untranslated region, a stop in the second-to-last exon was followed by
+almost no decay despite a junction lying downstream of it. That is 7 per cent
+efficiency against 81 per cent for stops in exons further upstream. Those
+authors read it as the decay-triggering complex being the one at the
+second-to-last splice site [@lindeboom2016nmdrules].
+
+**There is a route that needs no junction at all.** In human cells the distance
+between a terminating ribosome and poly(A)-binding protein decided whether
+termination counted as premature. So an ordinary stop codon could be made to
+trigger decay by lengthening that distance. A premature one could be rescued by
+folding the poly(A) tail or tethering that protein nearby [@eberle2008pabpc1].
+
+**The long-3'-untranslated-region route does not appear to govern human decay
+at scale, and this is disputed.** Across the tumour cohort, stops downstream of
+the last junction or in intronless genes showed no relationship between decay
+efficiency and how close the stop sat to the transcript's 3' end
+[@lindeboom2016nmdrules]. A ribosome-load readout agrees: as 3' untranslated
+region length increased, the share of transcripts peaking in the
+single-ribosome fraction did not rise but drifted gently down. Three
+transcripts whose long 3' untranslated regions trigger decay in reporter assays
+were found carrying either an even spread of ribosomes or eight or more
+[@lloyd2020polysomefractionation]. The opposite conclusion comes from a genetic
+decay-inhibition catalogue in the same species. What that line gives is a
+ranking of features by predictive value, rather than a measurement of what each
+contributes. An intron inside the 3' untranslated region ranked first in a
+high-confidence set of human targets, upstream open reading frames second, and
+a long 3' untranslated region last of the three [@colombo2017nmdtargets]. So
+the feature two analyses dismiss is one this analysis keeps, and keeps last.
+
+**Escape is a subpopulation, not a property.** Identical molecules carrying the
+same premature stop do not share one fate. In the single-molecule imaging
+experiment, 5 to 10 per cent of the molecules of one reporter survived the
+window in which the rest were cleaved, and then stayed largely resistant over
+the window imaged. So a measured decay efficiency is an average over a
+population containing a fraction that resisted for as long as it was watched
+[@hoek2019singlemolecule].
+
+**Steady-state abundance confounds decay with other effects.** In the same
+codon-by-codon scan, 37 of 93 stop variants in one exon reduced splicing
+efficiency by roughly a fifth to two fifths. Some variants stayed low even
+after decay was inhibited. So the steady-state abundance of a stop-containing
+isoform confounds decay with effects on transcription and splicing
+[@cortazar2025stopcodonscanning].
+
+Put together, the rules account for most but not all of what varies. A
+regression on the tumour data explained 74 per cent of the variance in decay
+efficiency, measured against the maximum observable variance given the noise in
+the data. The canonical exon-junction model accounted on its own for nearly
+half of the observed variance. Start-proximal escape accounted for 17 per cent
+of what remained, and long exons for 4 per cent. Message half-life and distance
+to the normal stop each took 1.6 per cent, and sequence motifs 0.1 per cent
+[@lindeboom2016nmdrules].
+
+One independent readout avoids inhibiting decay at all and agrees with the
+junction rule. Human transcripts were sorted by how many ribosomes they
+carried. The proportion whose peak abundance was in the single-ribosome
+fraction rose sharply once the last junction lay 50 or more nucleotides
+downstream of the stop. It rose from 15 per cent of transcripts without such a
+stop to 35 per cent of those with one [@lloyd2020polysomefractionation].
+
+## Nuclear retention is a fate of its own {#sec-nuclear-retention}
+
+Being held in the nucleus is a fate in its own right, and it is where most
+stably intron-retaining messages are. Separating nuclei from cytoplasm in mouse
+cortical neurons after blocking transcription found 1,465 stable retained
+introns in 922 genes out of 11,381 expressed genes. Of those 1,465
+intron-retaining isoforms, 820, or 56 per cent, were at least twice as abundant
+in the nucleus as in the cytoplasm. That is against 4 per cent of fully spliced
+transcripts [@mazille2022intronretaining].
+
+What separates a retained transcript from a decay target is that the retained
+one can still be finished. Stimulating the same neurons sent intron-retaining
+transcripts down two routes in the whole-cell measurement, with 83 after one
+stimulus and 46 after another completing their splicing. 46 and 29 respectively
+were instead destabilised, with their spliced counterpart unchanged
+[@mazille2022intronretaining].
+
+Low ribosome load is not proof of decay. Transcripts holding a retained intron
+but no stop codon positioned to trigger decay were still over-represented among
+messages carrying a single ribosome, at 22 per cent against 11 per cent for
+cassette-exon transcripts in the same class. The two groups responded
+indistinguishably to the genetic decay inhibition of the same laboratory's
+UPF1-depletion dataset. Those authors judge decay unlikely to be what puts
+retained-intron transcripts in the single-ribosome fraction and say another
+mechanism is likely involved [@lloyd2020polysomefractionation].
+
+### Detained introns
+
+A separate name exists for the case where retention is the point. The term
+detained intron was coined for an unspliced intron sitting in a polyadenylated
+transcript whose other introns have already been removed. Its authors drew the
+line against a retained intron explicitly. A retained intron is the product of
+a splicing choice that leaves the sequence in a mature message exported to the
+cytoplasm. A detained intron marks a transcript held in the nucleus until
+splicing finishes or the molecule is destroyed [@boutz2015detainedintrons]. The
+primary consequence is nuclear retention, after which the RNA either finishes
+splicing and is exported or is turned over in the nucleus. Roughly 3,000 such
+events were seen in mouse embryonic stem cells, and about a tenth changed when
+the Clk kinases were inhibited [@jacob2017intronretention].
+
+What makes them a kinetic class rather than a stable end product is a
+half-life. After transcription was blocked, the detained introns assayed had a
+mean half-life of 29 minutes, against 11 minutes for flanking introns. The two
+were compared as two populations rather than intron by intron within a gene
+[@boutz2015detainedintrons].
+
+Detention responds to a signal in both directions, and only for part of the
+pool. Two hours after mouse embryonic stem cells were given a Clk inhibitor,
+325 detained introns in 295 genes changed in abundance, 137 falling and 188
+rising. In the same experiment, 2,822 of the detained introns measured did not
+change detectably [@boutz2015detainedintrons]. A regulated class with most of
+its members unmoved is a reminder that a named mechanism need not act on
+everything bearing its name.
+## Isoforms per gene has three answers {#sec-scale}
+
+The per-gene distribution of annotated isoforms is heavily skewed, and it differs
+by biotype. Across all gene bodies in one annotation release the median is one
+isoform. For protein-coding genes the median is six with a 75th percentile of
+eleven, and only 14.6 per cent of protein-coding genes are left with a single
+annotated transcript [@page2025annotations]. The typical gene body and the
+typical protein-coding gene are not the same animal, which is why a per-gene
+average needs its biotype attached.
+
+Annotation and observation diverge sharply at the top of that distribution. The
+same release lists 7,255 genes with ten or more isoforms, 256 with fifty or
+more and 30 with a hundred or more. The same authors quantifying nine tissues
+with long reads observed at most 105 isoforms for any gene body and 60 for any
+protein-coding gene. That is accepting a single uniquely aligned read as
+evidence [@page2025isoformdiversity].
+
+The typical case is smaller again: expressed transcripts outnumbered genes by
+an average factor of 1.12 in primary tissues, barely more than one transcript
+for each gene [@gonzalezporta2013dominanttranscript].
+
+Those three figures are not in conflict. One counts what annotation holds, one
+counts what a deep assay detects, and one counts what is expressed at a level
+worth calling expression. A chapter that quotes any of them without its rule has
+said nothing. The rest of this book quotes all three, and @sec-catalogs takes up
+what happens when a catalogue is treated as a count of biology.
+
+## What this chapter commits the rest of the book to
+
+Three habits follow from the material above, and the rest of the book keeps them.
+
+A count without its rule is not a number. Isoforms per gene is six by
+annotation, a hundred by deep detection and barely more than one by expression. And @sec-scale gives all three with their rules. The same holds for
+retention prevalence, for poly(A) site counts, for microexon counts and for the
+share of genes with several translated frames.
+
+A measurement names its own bound more often than the field repeats it. The
+positional rule for premature stop codons is reported by its own authors as
+covering a small part of a gene's sequence. The splicing code's accuracy is
+partly an accuracy on its own dataset. The positional rule for a regulator
+rests on peaks that fall inside a responsive exon under 1 per cent of the time.
+Each of those qualifications is in the source. And @sec-nmd-limits collects the
+twelve for the decay rule in one place, because they are usually met one at a
+time.
+
+Independence has to be checked rather than assumed. Two sources agreeing is
+worth something only if they are two sources. Several apparent agreements in
+this chapter are one laboratory, one dataset or one classifier seen twice.
+Where this book can establish only that two author lists share no name, it says
+that rather than saying independent.
+
+What survives of the functional claim, once those three are taken into account,
+is the subject of @sec-how-functional. The catalogues that the counting rules
+act on are taken apart in @sec-catalogs.
