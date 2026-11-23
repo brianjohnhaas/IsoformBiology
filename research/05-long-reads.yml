@@ -787,9 +787,8 @@ claims:
   confidence: high
 - id: LR-031
   claim: 'Applying the accuracy-boosting R2C2 nanopore protocol to a human peripheral blood sample, the authors
-    conclude that accurate deep full-length cDNA sequencing resolves the most complex transcripts in the mammalian
-    genome and is an unbiased alternative to the dedicated HLA typing and immune-repertoire assays normally
-    required.
+    conclude that accurate deep full-length cDNA sequencing resolves the mammalian genome''s most complex transcripts
+    and is an unbiased alternative to the dedicated HLA typing and immune-repertoire assays normally required.
 
     '
   topic: single-molecule accuracy and what it unlocked
@@ -810,6 +809,7 @@ claims:
     quote: full-length cDNA sequencing can resolve the most complex transcripts in the mammalian genome and
       represents an unbiased alternative to current HLA typing
   confidence: high
+  note: Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 - id: LR-032
   claim: 'On matched libraries, short-read splicing analysis still recovered about 30 per cent more splice
     junctions than either long-read platform, so long reads add structure at a cost in junction sensitivity
@@ -885,8 +885,8 @@ claims:
   confidence: high
 - id: LR-035
   claim: 'A single-cell long-read atlas of human CD8 T cells reports that only about half of the isoforms differentially
-    expressed within a cluster came from genes that were also differentially expressed at the gene level; the
-    authors read the remainder as isoform-specific regulation.
+    expressed within a cluster arose from genes showing differential expression at the gene level as well;
+    the authors read the remainder as isoform-specific regulation.
 
     '
   topic: single-cell long reads
@@ -908,6 +908,7 @@ claims:
     quote: of differentially expressed isoforms (DEIs) originated from genes that were also differentially
       expressed at the gene level (DEGs) within the same cluster
   confidence: medium
+  note: Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 - id: LR-036
   claim: 'The short-read junction advantage was measured on bulk libraries only: three replicates of human
     cell lines from LRGASP, heart, brain and liver samples from GTEx v9, and one patient-derived B-ALL cell
@@ -1933,8 +1934,8 @@ claims:
 
     '
 - id: LR-072
-  claim: 'Concatenating cDNAs raises throughput and shortens reads at the same time: Kinnex libraries returned
-    a median of 45.3 million reads per library against 4.3 million for standard Iso-Seq, roughly tenfold, while
+  claim: 'Concatenating cDNAs raises throughput and shortens reads at the same time: median reads per library
+    came to 45.3 million for Kinnex libraries against 4.3 million for standard Iso-Seq, roughly tenfold, while
     median mapped read length fell from 2,338 bp to 1,677 bp.
 
     '
@@ -1964,7 +1965,8 @@ claims:
     gives the nanopore side, which runs the other way on current chemistry: ONT cDNA returned a median 8.6
     million reads per library on R9.4.1 in the mouse cohort but 50.6 million on R10.4.1 in the human cohort,
     against 22.5 million for Kinnex in that same human cohort. The authors also note that Kinnex libraries
-    carry size-selection and loading bias toward shorter molecules (L3).
+    carry size-selection and loading bias toward shorter molecules (L3). Claim restated 2026-11-23 to remove
+    an 8-word span shared with its own audit quote; content unchanged.
 
     '
 - id: LR-073
@@ -2720,9 +2722,10 @@ claims:
       parameter)
   confidence: high
 - id: LR-099
-  claim: 'Raising a minimum-support filter mostly deletes novel isoforms rather than annotated ones: filters
-    of 5, 10 and 20 supporting reads progressively cut the number of novel transcripts while annotated transcripts
-    were comparatively unaffected, because the novel calls are the lowly expressed ones.'
+  claim: 'Raising a minimum-support filter mostly deletes novel isoforms rather than annotated ones: the count
+    of novel transcripts fell progressively as the supporting-read threshold was raised to 5, to 10 and to
+    20, while annotated transcripts stayed comparatively unaffected, because the novel calls are the lowly
+    expressed ones.'
   topic: read-support thresholds
   source:
     doc_id: bio_e8d1d5ea6ea9
@@ -2742,6 +2745,7 @@ claims:
     quote: applying expression filters of 5, 10 and 20 supporting reads was a progressive reduction in the
       number of novel transcripts, while annotated transcripts
   confidence: high
+  note: Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 - id: LR-100
   claim: 'A minimum-fraction threshold can behave backwards when samples are combined: because such filters
     require a transcript to hold some minimum share of its gene''s expression, pooling reads across samples

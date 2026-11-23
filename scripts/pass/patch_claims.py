@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Patch only the `claim` and `note` fields of existing records, by id.
+"""Patch only the `claim`, `topic` and `note` fields of existing records, by id.
 
     scripts/pass/patch_claims.py research/04-technology-arc.yml PATCH.yml [...]
 
@@ -8,7 +8,11 @@ corrected record it has just read from the source. It is wrong for a restatement
 pass: the patch file carries each `source` block as it stood when the editor read
 it, so a whole-record merge silently reverts anything changed in between, such as
 a resolved author list, a renamed bibkey or a corrected DOI. This touches two
-fields and leaves the rest of the record alone.
+fields and leaves the rest of the record alone. `topic` is included because
+`check_citations.py` indexes it alongside `claim`, so a number or a word that
+overstates its source does just as much damage there, and one review found
+exactly that: a topic asserting two gene partitions over a claim saying the
+source does not state whether the inputs were identical.
 
 It then prints the check that matters for a restatement: every digit string and
 every hedge word in the old claim, against the new one. A restatement is supposed
@@ -62,8 +66,9 @@ def main() -> int:
                     f"  [{cid}] digits lost {lost_d} gained {gain_d}; "
                     f"hedges lost {lost_h} gained {gain_h}")
             old["claim"] = new_claim
-            if "note" in new:
-                old["note"] = new["note"]
+            for field in ("topic", "note"):
+                if field in new:
+                    old[field] = new[field]
             patched += 1
 
     with open(target, "w") as fh:

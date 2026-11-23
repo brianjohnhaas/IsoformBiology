@@ -576,8 +576,8 @@ claims:
   confidence: high
 - id: FND-027
   claim: A single percent spliced-in value sits across two separate splicing acts, and the intron-centric reformulation
-    splits it into a 5' and a 3' index, one per intron end, which the authors say deconvolutes two distinct
-    elementary acts of the splicing reaction.
+    splits it into a 5' and a 3' index, one per intron end; that pairing, the authors say, deconvolutes the
+    splicing reaction into its two elementary acts, each distinct from the other.
   topic: limits of an event-level metric
   source:
     doc_id: PMC3546801
@@ -596,6 +596,7 @@ claims:
   confidence: high
   figure_idea: One intron drawn with its donor and acceptor, showing which reads enter the 5' index and which
     the 3' index, next to a case where the two indices disagree - the situation a single PSI value hides.
+  note: Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 - id: FND-028
   claim: 'The three questions the book keeps apart are set out as three study designs: differential gene expression
     asks whether a gene''s total transcriptional output changed, differential transcript usage asks whether
@@ -746,8 +747,8 @@ claims:
       dominant transcripts
   confidence: high
 - id: FND-034
-  claim: In primary tissues the ratio of the number of expressed transcripts to the number of genes averaged
-    1.12, that is, just over one transcript per gene.
+  claim: Expressed transcripts outnumbered genes by an average factor of 1.12 in primary tissues, barely more
+    than one transcript for each gene.
   topic: scale - the typical case
   source:
     doc_id: PMC4053754
@@ -765,6 +766,7 @@ claims:
     quote: the ratio of the number of expressed transcripts to genes in primary tissues is on average 1.12
       (that is, just over one transcript per gene
   confidence: high
+  note: Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 - id: FND-035
   claim: 'The per-gene distribution of annotated isoforms is heavily skewed and differs by biotype: across
     all Ensembl v109 gene bodies the median is one isoform, but for protein-coding genes the median is six
@@ -887,9 +889,9 @@ claims:
     performed by them. Same document as FND-103 and FND-104.'
 - id: FND-103
   claim: 'Catalysis and fidelity cannot be measured at the same time in this system: the authors report that
-    applying metal rescue to pre-mRNA splicing had been hindered by proofreading and discard mechanisms that
-    compete with catalysis during both steps, and that they could only identify the direct effectors of catalysis
-    after disabling that proofreading.'
+    proofreading and discard mechanisms, competing with catalysis at both steps of splicing, had held back
+    the application of metal rescue to pre-mRNA splicing, and that the direct effectors of catalysis could
+    be identified only after that proofreading was disabled.'
   topic: proofreading competes with catalysis
   source:
     doc_id: PMC4666680
@@ -911,14 +913,15 @@ claims:
   note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype. System: S. cerevisiae
     splicing extracts. This record is the hinge between the chemistry and the proofreading sections of the
     chapter: the catalytic step was the last part of the mechanism to be pinned down because the machine removes
-    a slow substrate rather than waiting for it. Same document as FND-102 and FND-104 at different lines.'
+    a slow substrate rather than waiting for it. Same document as FND-102 and FND-104 at different lines. Claim
+    restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: FND-104
-  claim: 'Whether a protein contributes directly to catalysis is disputed: a crystal structure showed that
-    the RNase H-like domain of Prp8 can bind a metal in crystallo and that mutations compromising that binding
-    impair exon ligation, which those authors read as a possible catalytic role, while the metal-rescue authors
-    state they found no evidence of a direct metal-mediated catalytic interaction between the Prp8 metal binding
-    site and the 3'' splice site and propose instead that Prp8 promotes formation of the RNA catalytic core
-    without being part of it.'
+  claim: 'A protein''s direct contribution to catalysis is disputed: a crystal structure showed that the RNase
+    H-like domain of Prp8 can bind a metal in crystallo and that mutations compromising that binding impair
+    exon ligation, read by those authors as a possible catalytic role, while the metal-rescue authors state
+    that they found no evidence of a catalytic interaction, mediated directly by a metal, between the 3'' splice
+    site and Prp8''s metal binding site, and propose instead that Prp8 promotes formation of the RNA catalytic
+    core without being part of it.'
   topic: is Prp8 catalytic or scaffold - a dispute
   source:
     doc_id: PMC4666680
@@ -942,7 +945,8 @@ claims:
     substrates. Both sides of this dispute are reported from one side''s paper: the crystallographic proposal
     is cited by these authors rather than produced by them, and the Prp8 structure paper itself was not opened
     for this pass, so the chapter should attribute the proposal to the citing authors'' account. Same document
-    as FND-102 and FND-103.'
+    as FND-102 and FND-103. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote;
+    content unchanged.'
 - id: FND-105
   claim: 'The catalytic metals are held by RNA tertiary structure: genetics, crosslinking and biochemistry
     in yeast show that base triples analogous to those in group II intron domain V form within U6 and promote
@@ -1122,9 +1126,9 @@ claims:
     The same line notes that Prp24 annealing antagonises Brr2 unwinding.'
 - id: FND-111
   claim: 'An ATPase in this machine need not unwind anything: chemical structure probing comparing purified
-    yeast Bact and B* complexes shows that Prp2 action does not unwind double-stranded RNA but enhances the
-    flexibility of the two reactants of the first step, the 5'' splice site and the branch site adenosine,
-    so the authors describe Prp2 as acting principally on the ribonucleoprotein rather than on a duplex.'
+    yeast Bact and B* complexes shows that double-stranded RNA stays wound when Prp2 acts, while the two reactants
+    of the first step, the 5'' splice site and the branch site adenosine, gain flexibility, so the authors
+    describe Prp2 as acting principally on the ribonucleoprotein rather than on a duplex.'
   topic: the conformational cycle - Prp2 liberates the first-step reactants
   source:
     doc_id: PMC5688998
@@ -1148,7 +1152,8 @@ claims:
     and the title says yeast without naming the species. The authors state that no high-resolution B* structure
     existed when they wrote, which is why their conclusion is an inference from probing; FND-107 supplies the
     structural arm in human cells. The same line reports that the N7 of U6-G60 in the catalytic triad becomes
-    accessible to modification in B*, implying the Hoogsteen interaction with U6-A52 is destabilised there.'
+    accessible to modification in B*, implying the Hoogsteen interaction with U6-A52 is destabilised there.
+    Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: FND-112
   claim: 'Lowering an ATPase''s activity lets a mutant branch site be used: seven alleles of yeast PRP16, all
     mapping to the region shared by RNA-dependent ATPases, allow an intron whose branch site is mutated from
@@ -1338,10 +1343,10 @@ claims:
     assert neither independence nor shared authorship.'
 - id: FND-118
   claim: 'The switch between the two recognition modes was measured and given a length: in-vitro splicing assays
-    show that splice-site recognition across the intron ceases when intron size is between 200 and 250 nucleotides,
-    beyond which splice sites are recognised across the exon instead, and recognition across the intron is
-    significantly more efficient than recognition across the exon, so an exon with weak splice sites is included
-    more when the flanking introns are short.'
+    show that recognition of splice sites across the intron stops once introns reach a size of 200 to 250 nucleotides,
+    that beyond that size splice sites are recognised across the exon instead, and that recognition across
+    the intron is significantly more efficient than recognition across the exon, so an exon with weak splice
+    sites is included more when the flanking introns are short.'
   topic: exon definition against intron definition - the measured threshold
   source:
     doc_id: '127978793'
@@ -1367,7 +1372,8 @@ claims:
     resolved. The same line reports an EST analysis finding exons flanked by long introns far more likely to
     be alternatively spliced in both genomes, with the upstream intron''s length more influential than the
     downstream intron''s; the organism comparison and its figures are deliberately not recorded here because
-    chapter 3 owns them. FND-121 is the result that contradicts the threshold.'
+    chapter 3 owns them. FND-121 is the result that contradicts the threshold. Claim restated 2026-11-23 to
+    remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: FND-119
   claim: 'Exon size and intron size are not independent constraints: internally expanded exons placed in vertebrate
     genes were skipped when the flanking introns were large and included when the same large exons were flanked
@@ -1400,11 +1406,11 @@ claims:
     exon and intron sizes across the eukaryotes is their framing of general architecture rather than a measurement
     here. See the authorship caveat in FND-117.'
 - id: FND-120
-  claim: 'Which mode is in force can be read off alternative splice site usage: in a database the authors built
-    of alternative splice site usage, when the competing sites sit within short introns the 5'' and 3'' splice
-    sites closest to each other across the intron preferentially pair, whereas when the competing sites sit
-    within large flanking introns the sites closest to each other across the exon are preferentially selected,
-    so the spliceosome pairs whichever sites are closest within the unit it is using.'
+  claim: 'The mode in force can be read off alternative splice site usage: in a database the authors built
+    of alternative splice site usage, pairing goes preferentially to the 5'' and 3'' sites lying nearest one
+    another across the intron when the competing sites sit within short introns, and to the sites lying nearest
+    one another across the exon when the competing sites sit within large flanking introns, so the spliceosome
+    pairs whichever sites are closest within the unit it is using.'
   topic: exon definition against intron definition - the modern test
   source:
     doc_id: PMC9225289
@@ -1426,13 +1432,14 @@ claims:
     preference across many loci and not a result at any one gene, and the tier is the correlational one for
     that reason. One author (Hertel) is shared with FND-125. FND-118 measures the same switch in vitro and
     is its probable antecedent, but carries no author list in this corpus, so the chapter must not call the
-    two independent. FND-121 is the result that contradicts the size dependence recorded here.'
+    two independent. FND-121 is the result that contradicts the size dependence recorded here. Claim restated
+    2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: FND-121
   claim: 'Timing measurements in a fly embryo find intron definition irrespective of intron size: native elongating
     transcript sequencing in early Drosophila melanogaster embryos found heterogeneous splicing dynamics, with
     some RNAs spliced immediately after the intron was transcribed and others showing no splicing across the
-    first 100 nucleotides of the downstream exon, and although the proportion of spliced reads was related
-    to intron size, intron definition was observed at all intron sizes.'
+    first 100 nucleotides of the downstream exon, and although the proportion of reads that were spliced was
+    related to intron size, introns of every size showed intron definition.'
   topic: intron definition at all intron sizes - a contradiction
   source:
     doc_id: PMC8906543
@@ -1456,7 +1463,8 @@ claims:
     have been recognised across the intron, so intron definition here is an inference from timing and not an
     observation of a complex. This contradicts the size dependence of FND-119 and FND-120. Its author list
     differs from FND-120, while FND-119 carries none; the organism also differs, which is the obvious alternative
-    explanation and should be stated alongside the disagreement.'
+    explanation and should be stated alongside the disagreement. Claim restated 2026-11-23 to remove an 8-word
+    span shared with its own audit quote; content unchanged.'
 - id: FND-122
   claim: 'There is now a proposed physical route by which exon definition could happen on the polymerase: the
     authors report that the RNA polymerase II subunit RPB9 interacts directly with U2AF1, the factor that binds
@@ -1492,8 +1500,8 @@ claims:
   claim: 'Splice site strength became a number by modelling a site as a distribution rather than as a consensus:
     a maximum entropy framework approximates a short motif''s distribution with the maximum entropy distribution
     consistent with low-order marginal constraints, which admits dependencies between non-adjacent as well
-    as adjacent positions, and the authors'' best models outperformed previous probabilistic models at discriminating
-    human 5'' donor and 3'' acceptor splice sites from decoys.'
+    as adjacent positions, and against decoys the authors'' best models discriminated human donor (5'') and
+    acceptor (3'') splice sites better than previous probabilistic models did.'
   topic: splice site strength - maximum entropy scoring
   source:
     doc_id: '134827458'
@@ -1516,12 +1524,14 @@ claims:
     rather than any biochemical quantity. Abstract-only record with no author list in the corpus. Two things
     the chapter must not say: the abstract gives no accuracy figure and no dataset size, and it does not claim
     that a higher score means a more used site. What the score discriminates is a real site from a decoy. FND-127
-    is the record that bounds this and FND-126 is the biological version of the same bound.'
+    is the record that bounds this and FND-126 is the biological version of the same bound. Claim restated
+    2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: FND-124
   claim: 'Sequence inside the exon changes which splice site is used, and nearly every hexamer does so: splicing
     was measured for over two million synthetic minigenes carrying degenerate subsequences totalling over 100
-    million bases of variation, and the vast majority of hexamer motifs measurably influenced splice site selection
-    when positioned within alternative exons, with multiple motifs acting additively rather than cooperatively.'
+    million bases of variation, and hexamer motifs, in their vast majority, measurably influenced which splice
+    site was selected when placed inside alternative exons, with several motifs at once adding their effects
+    rather than cooperating.'
   topic: splice site strength - how much is in the site and how much in the context
   source:
     doc_id: '63761222'
@@ -1545,7 +1555,8 @@ claims:
     partition of variance between site and context, so the chapter must not convert it into a percentage. The
     further result that motifs enhancing inclusion in alternative 5'' splicing also enhance it in alternative
     3'' and cassette exon splicing is on the same line and is the authors'' basis for proposing a universal
-    mechanism of alternative exon recognition.'
+    mechanism of alternative exon recognition. Claim restated 2026-11-23 to remove an 8-word span shared with
+    its own audit quote; content unchanged.'
 - id: FND-125
   claim: 'A more stable first duplex does not slow splicing down: hyperstabilising the duplex between U1 snRNA
     and the 5'' splice site in human cell lines and nuclear extracts did not decrease splicing efficiency but
@@ -1670,8 +1681,9 @@ claims:
 - id: FND-129
   claim: 'Co-transcriptional splicing was measured as a fraction with an explicit time window: splicing was
     assessed for about 17,000 introns expressed across six human cell lines, one non-cancer and five cancer,
-    and fewer than half of the introns interrogated were spliced within thirty minutes of synthesis, with efficiencies
-    differing between cell lines and within genes and first introns the least efficiently spliced of all.'
+    and of the introns interrogated, fewer than half had been spliced within thirty minutes of their synthesis,
+    with efficiencies differing between cell lines and within genes and first introns the least efficiently
+    spliced of all.'
   topic: co-transcriptional splicing - the fraction, with its window
   source:
     doc_id: PMC8208053
@@ -1694,7 +1706,8 @@ claims:
     this is not a measurement of how far behind the polymerase splicing happens, which is FND-128, and the
     two results are in tension only if the window is dropped. The same document elsewhere reports that about
     half of all annotated introns were captured at these sequencing depths, which is a coverage statement and
-    a different number. Same document as FND-127 at a different line.'
+    a different number. Same document as FND-127 at a different line. Claim restated 2026-11-23 to remove an
+    8-word span shared with its own audit quote; content unchanged.'
 - id: FND-130
   claim: 'In a fission yeast most nascent transcripts are already fully spliced: long-read sequencing of nascent
     multi-intron transcripts in Schizosaccharomyces pombe found most of them fully spliced, consistent with
@@ -1755,11 +1768,11 @@ claims:
     report results the simple model does not predict.'
 - id: FND-132
   claim: 'Slowing the polymerase does not reliably increase inclusion: taking CFTR exon 9 as a model, the authors
-    show that slowing elongation can also cause exon skipping, by promoting recruitment of the negative factor
-    ETR-3 onto the UG repeat at that exon''s 3'' splice site, which displaces U2AF65 from the overlapping polypyrimidine
-    tract, and weakening the exon''s 5'' splice site increased ETR-3 binding and skipping while strengthening
-    its usage had the opposite effect; they state that in most cases slow elongation instead allows weak splice
-    sites to be recognised and raises inclusion of alternative exons.'
+    show that exon skipping can also follow from slowed elongation, which promotes recruitment of ETR-3, a
+    negative factor, onto the UG repeat at that exon''s 3'' splice site, displacing U2AF65 from the overlapping
+    polypyrimidine tract; weakening the exon''s 5'' splice site increased ETR-3 binding and skipping while
+    strengthening its usage had the opposite effect, and they state that in most cases slow elongation instead
+    allows weak splice sites to be recognised and raises inclusion of alternative exons.'
   topic: kinetic competition - the opposite result
   source:
     doc_id: '73871313'
@@ -1784,7 +1797,8 @@ claims:
     the file''s only anchored statement of the kinetic-competition expectation itself, which the authors give
     as the usual case before reporting their counter-example. Because the corpus gives no author list for this
     record or for FND-131, the chapter must not describe the two as independent laboratories; both DOIs carry
-    the same journal prefix, eleven years apart.'
+    the same journal prefix, eleven years apart. Claim restated 2026-11-23 to remove an 8-word span shared
+    with its own audit quote; content unchanged.'
 - id: FND-133
   claim: 'Faster and slower transcription often push a given exon the same way: in isogenic doxycycline-inducible
     HEK293 cell lines expressing alpha-amanitin-resistant Rpb1 carrying slow or fast substitutions in the human
@@ -1909,11 +1923,11 @@ claims:
     the earlier causal arm against FND-135 and FND-138; FND-137 is the targeted perturbation, and its author
     list differs from anything available here, which is none.'
 - id: FND-137
-  claim: 'Changing a mark at one locus changes the splicing of that locus: fusing histone-modifying enzymes
-    to transcription activator-like effector domains and transfecting them into HeLa cells to alter chromatin
-    only locally, a local increase in H3K9 di- and trimethylation promoted inclusion of the targeted alternative
-    exon while demethylation by JMJD2D caused it to be skipped, H3K9me3 was found on internal exons genome-wide,
-    and targeting the demethylase to a weak constitutive exon reduced that exon''s co-transcriptional splicing.'
+  claim: 'Changing a mark at one locus changes the splicing of that locus: with histone-modifying enzymes fused
+    to transcription activator-like effector domains and transfected into HeLa cells to alter chromatin only
+    locally, the targeted alternative exon was included more when H3K9 di- and trimethylation rose locally
+    and was skipped when JMJD2D removed those marks, H3K9me3 was found on internal exons genome-wide, and targeting
+    the demethylase to a weak constitutive exon reduced that exon''s co-transcriptional splicing.'
   topic: chromatin - a local, targeted perturbation
   source:
     doc_id: PMC4954949
@@ -1937,7 +1951,8 @@ claims:
     which is the quoted line. This is the strongest primary evidence in this file that a chromatin mark can
     be a cause rather than a consequence, because the perturbation is local rather than genome-wide and the
     readout is the targeted exon. The mark here is H3K9 rather than the H3K36me3 at issue in FND-135 and FND-138,
-    which the chapter should state. Its author list differs from FND-136, which carries none in the corpus.'
+    which the chapter should state. Its author list differs from FND-136, which carries none in the corpus.
+    Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: FND-138
   claim: 'The traffic also runs the other way: intron-containing genes carry more H3K36me3 than intronless
     genes in human cell lines and mouse primary T cells, inhibiting splicing impairs recruitment of the H3K36
@@ -4219,9 +4234,9 @@ claims:
     no author with FND-217 or with FND-210, so three independent groups have addressed the question and two
     of the three answers point in opposite directions.'
 - id: FND-219
-  claim: One source states flatly, and in passing, that skipped exons are also referred to as cassette exons
-    in the literature, which is an assertion of interchangeable usage rather than a definition of either term
-    or a reason to prefer one.
+  claim: One source states flatly, and in passing, that the literature uses cassette exon as another name for
+    a skipped exon, an assertion of interchangeable usage rather than a definition of either term or a reason
+    to prefer one.
   topic: nomenclature - skipped exon and cassette exon stated as synonyms
   source:
     doc_id: PMC3642047
@@ -4245,7 +4260,8 @@ claims:
     record does not touch. The leads record the corpus-wide search behind it and the conclusion that no defining
     source exists, so the chapter should declare the synonymy on its own authority and may cite this as an
     instance of the usage; the absence itself is not claimed here, because a claim has to be checkable against
-    its own line.'
+    its own line. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content
+    unchanged.'
 - id: FND-221
   claim: 'A probabilistic treatment of isoform ratios does not report a ratio alone: this one reported an estimate
     together with a statement of confidence in that estimate, and treated the fragment length distribution

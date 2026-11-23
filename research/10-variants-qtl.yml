@@ -4,18 +4,17 @@ date: 2026-11-21
 corpus: paperclip 0.8.23
 claims:
 - id: VAR-001
-  claim: 'When a set of 220 genes was nominated as causal for a complex trait on non-expression grounds
-    - coding variants in the gene or in its Mendelian counterpart - colocalization of the GWAS signal
-    with a GTEx eQTL implicated only 18 of them, 8.2 per cent, which the authors note is not clearly better
-    than chance.
+  claim: 'When a set of 220 genes was nominated as causal for a complex trait on non-expression grounds - coding
+    variants in the gene or in its Mendelian counterpart - colocalization of the GWAS signal with a GTEx eQTL
+    implicated only 18 of them, 8.2 per cent, which the authors note is not clearly better than chance.
 
     '
   topic: eQTL-GWAS colocalization gap (gene-based test, coloc/JLIM/eCAVIAR)
   source:
     doc_id: PMC9842386
     title: The missing link between genetic association and regulatory function
-    authors: Connally, N. J.; Nazeen, S.; Lee, D.; Shi, H.; Stamatoyannopoulos, J.; Chun, S.; Cotsapas,
-      C.; Cassa, C. A.; Sunyaev, S. R.
+    authors: Connally, N. J.; Nazeen, S.; Lee, D.; Shi, H.; Stamatoyannopoulos, J.; Chun, S.; Cotsapas, C.;
+      Cassa, C. A.; Sunyaev, S. R.
     journal: eLife
     year: 2022
     doi: 10.7554/eLife.74970
@@ -30,23 +29,23 @@ claims:
 
       '
   confidence: high
-  figure_idea: 'A funnel: all nominated causal genes, then those with a nearby GWAS peak, then those with
-    an eQTL in a relevant tissue, then those whose GWAS and eQTL signals actually colocalize. The collapse
-    happens at the last step, not the earlier ones.
+  figure_idea: 'A funnel: all nominated causal genes, then those with a nearby GWAS peak, then those with an
+    eQTL in a relevant tissue, then those whose GWAS and eQTL signals actually colocalize. The collapse happens
+    at the last step, not the earlier ones.
 
     '
 - id: VAR-002
-  claim: 'The failure to link GWAS signals to expression is not a shortage of eQTLs: more than nine in
-    ten of the candidate causal genes had a detectable eQTL in at least one trait-relevant tissue, so
-    the gap cannot be explained by eQTLs being absent.
+  claim: 'The failure to link GWAS signals to expression is not a shortage of eQTLs: more than nine in ten
+    of the candidate causal genes had a detectable eQTL in at least one trait-relevant tissue, so the gap cannot
+    be explained by eQTLs being absent.
 
     '
   topic: eQTL availability versus colocalization
   source:
     doc_id: PMC9842386
     title: The missing link between genetic association and regulatory function
-    authors: Connally, N. J.; Nazeen, S.; Lee, D.; Shi, H.; Stamatoyannopoulos, J.; Chun, S.; Cotsapas,
-      C.; Cassa, C. A.; Sunyaev, S. R.
+    authors: Connally, N. J.; Nazeen, S.; Lee, D.; Shi, H.; Stamatoyannopoulos, J.; Chun, S.; Cotsapas, C.;
+      Cassa, C. A.; Sunyaev, S. R.
     journal: eLife
     year: 2022
     doi: 10.7554/eLife.74970
@@ -56,15 +55,15 @@ claims:
     text_access: full_text
     lines: L41
     anchor: https://paperclip.gxl.ai/citations/papers/PMC9842386#L41
-    quote: '134 (91.1%) of these genes had an eQTL in at least one relevant tissue at a false discovery
-      rate (FDR) of Q < 0.05
+    quote: '134 (91.1%) of these genes had an eQTL in at least one relevant tissue at a false discovery rate
+      (FDR) of Q < 0.05
 
       '
   confidence: high
 - id: VAR-003
   claim: 'Applying mediated expression score regression to 42 traits and GTEx cis-eQTL data from 48 tissues,
-    only 11 per cent of heritability, reported as 11 plus or minus 2 per cent, was mediated by assayed
-    gene expression levels.
+    only 11 per cent of heritability, reported as 11 plus or minus 2 per cent, was mediated by assayed gene
+    expression levels.
 
     '
   topic: fraction of complex-trait heritability mediated by assayed gene expression (MESC)
@@ -81,34 +80,32 @@ claims:
     text_access: full_text
     lines: L10
     anchor: https://paperclip.gxl.ai/citations/papers/PMC7276299#L10
-    quote: 'Averaging across traits, only 11±2% of heritability was mediated by assayed gene expression
-      levels
+    quote: 'Averaging across traits, only 11±2% of heritability was mediated by assayed gene expression levels
 
       '
   confidence: high
   figure_idea: 'A single horizontal bar of total SNP heritability for a trait, with the expression-mediated
-    slice drawn to scale against the unexplained remainder - the chapter''s motivating proportion, shown
-    rather than asserted.
+    slice drawn to scale against the unexplained remainder - the chapter''s motivating proportion, shown rather
+    than asserted.
 
     '
 - id: VAR-004
-  claim: 'Across 5,385 GWAS associations in 1,167 independent LD blocks from 87 complex traits, GTEx v8
-    colocalized 43 per cent with a cis-eQTL and 23 per cent with a cis-splicing QTL, leaving a majority
-    of loci with no expression explanation even in the best-powered multi-tissue resource.
+  claim: 'Across 5,385 GWAS associations in 1,167 independent LD blocks from 87 complex traits, GTEx v8 colocalized
+    43 per cent with a cis-eQTL and 23 per cent with a cis-splicing QTL, leaving a majority of loci with no
+    expression explanation even in the best-powered multi-tissue resource.
 
     '
   topic: GTEx v8 locus-level colocalization (enloc)
   source:
     doc_id: bio_f292f4666c1a
     title: The GTEx Consortium atlas of genetic regulatory effects across human tissues
-    authors: Aguet, F.; Barbeira, A. N.; Bonazzola, R.; Brown, A.; Castel, S. E.; Jo, B.; Kasela, S.;
-      Kim-Hellmuth, S.; Liang, Y.; Oliva, M.; Parsana, P. E.; Flynn, E.; Fresard, L.; Gaamzon, E. R.;
-      Hamel, A. R.; He, Y.; Hormozdiari, F.; Mohammadi, P.; Muñoz-Aguirre, M.; Park, Y.; Saha, A.; Segrć,
-      A. V.; Strober, B. J.; Wen, X.; Wucher, V.; Das, S.; Garrido-Martín, D.; Gay, N. R.; Handsaker,
-      R. E.; Hoffman, P. J.; Kashin, S.; Kwong, A.; Li, X.; MacArthur, D.; Rouhana, J. M.; Stephens, M.;
-      Todres, E.; Viñuela, A.; Wang, G.; Zou, Y.; The GTEx Consortium; Brown, C. D.; Cox, N.; Dermitzakis,
-      E.; Engelhardt, B. E.; Getz, G.; Guigo, R.; Montgomery, S. B.; Stranger, B. E.; Im, H. K.; Battle,
-      A.; Ardlie, K. G.; Lappalainen, T.
+    authors: Aguet, F.; Barbeira, A. N.; Bonazzola, R.; Brown, A.; Castel, S. E.; Jo, B.; Kasela, S.; Kim-Hellmuth,
+      S.; Liang, Y.; Oliva, M.; Parsana, P. E.; Flynn, E.; Fresard, L.; Gaamzon, E. R.; Hamel, A. R.; He, Y.;
+      Hormozdiari, F.; Mohammadi, P.; Muñoz-Aguirre, M.; Park, Y.; Saha, A.; Segrć, A. V.; Strober, B. J.;
+      Wen, X.; Wucher, V.; Das, S.; Garrido-Martín, D.; Gay, N. R.; Handsaker, R. E.; Hoffman, P. J.; Kashin,
+      S.; Kwong, A.; Li, X.; MacArthur, D.; Rouhana, J. M.; Stephens, M.; Todres, E.; Viñuela, A.; Wang, G.;
+      Zou, Y.; The GTEx Consortium; Brown, C. D.; Cox, N.; Dermitzakis, E.; Engelhardt, B. E.; Getz, G.; Guigo,
+      R.; Montgomery, S. B.; Stranger, B. E.; Im, H. K.; Battle, A.; Ardlie, K. G.; Lappalainen, T.
     journal: bioRxiv
     year: 2019
     doi: 10.1101/787903
@@ -123,24 +120,23 @@ claims:
       '
   confidence: high
   figure_idea: 'A bar of GWAS loci split into colocalized-with-a-cis-eQTL and not, with the sQTL-colocalized
-    proportion drawn as a second bar beside it rather than nested, since the published numbers do not
-    give the overlap.
+    proportion drawn as a second bar beside it rather than nested, since the published numbers do not give
+    the overlap.
 
     '
 - id: VAR-005
-  claim: 'The 2016 study that named splicing as a primary link between genetic variation and disease,
-    in Yoruba lymphoblastoid cell lines, reported 2,893 splicing QTLs of which most had little or no effect
-    on gene-level expression, and judged their aggregate contribution to complex traits roughly equal
-    to that of variants acting on expression levels - an early and influential statement of this chapter''s
-    central argument.
+  claim: 'The 2016 study that named splicing as a primary link between genetic variation and disease, in Yoruba
+    lymphoblastoid cell lines, reported 2,893 splicing QTLs, most of them changing gene-level expression little
+    or not at all, and judged their aggregate contribution to complex traits roughly equal to that of variants
+    acting on expression levels - an early and influential statement of this chapter''s central argument.
 
     '
   topic: KEYSTONE - sQTLs with no gene-level signal contribute to traits on a par with eQTLs
   source:
     doc_id: '59002764'
     title: RNA splicing is a primary link between genetic variation and disease
-    authors: Li, Y. I.; van de Geijn, B.; Raj, A.; Knowles, D. A.; Petti, A. A.; Golan, D.; Gilad, Y.;
-      Pritchard, J. K.
+    authors: Li, Y. I.; van de Geijn, B.; Raj, A.; Knowles, D. A.; Petti, A. A.; Golan, D.; Gilad, Y.; Pritchard,
+      J. K.
     journal: Science
     year: 2016
     doi: 10.1126/science.aad9417
@@ -150,29 +146,27 @@ claims:
     text_access: abstract_only
     lines: L1
     anchor: https://paperclip.gxl.ai/citations/papers/59002764#L1
-    quote: 'we also detected 2893 splicing QTLs, most of which have little or no effect on gene-level
-      expression
+    quote: 'we also detected 2893 splicing QTLs, most of which have little or no effect on gene-level expression
 
       '
   confidence: high
+  note: Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 - id: VAR-006
-  claim: 'GWAS catalog variants in GTEx v8 were enriched 1.46-fold among cis-eQTLs and 1.86-fold among
-    cis-splicing QTLs, the splicing QTLs being the smaller annotation - 20 per cent of tested variants
-    against 43 per cent.
+  claim: 'GWAS catalog variants in GTEx v8 were enriched 1.46-fold among cis-eQTLs and 1.86-fold among cis-splicing
+    QTLs, the splicing QTLs being the smaller annotation - 20 per cent of tested variants against 43 per cent.
 
     '
   topic: GWAS enrichment of eQTLs versus sQTLs (overlap enrichment)
   source:
     doc_id: bio_f292f4666c1a
     title: The GTEx Consortium atlas of genetic regulatory effects across human tissues
-    authors: Aguet, F.; Barbeira, A. N.; Bonazzola, R.; Brown, A.; Castel, S. E.; Jo, B.; Kasela, S.;
-      Kim-Hellmuth, S.; Liang, Y.; Oliva, M.; Parsana, P. E.; Flynn, E.; Fresard, L.; Gaamzon, E. R.;
-      Hamel, A. R.; He, Y.; Hormozdiari, F.; Mohammadi, P.; Muñoz-Aguirre, M.; Park, Y.; Saha, A.; Segrć,
-      A. V.; Strober, B. J.; Wen, X.; Wucher, V.; Das, S.; Garrido-Martín, D.; Gay, N. R.; Handsaker,
-      R. E.; Hoffman, P. J.; Kashin, S.; Kwong, A.; Li, X.; MacArthur, D.; Rouhana, J. M.; Stephens, M.;
-      Todres, E.; Viñuela, A.; Wang, G.; Zou, Y.; The GTEx Consortium; Brown, C. D.; Cox, N.; Dermitzakis,
-      E.; Engelhardt, B. E.; Getz, G.; Guigo, R.; Montgomery, S. B.; Stranger, B. E.; Im, H. K.; Battle,
-      A.; Ardlie, K. G.; Lappalainen, T.
+    authors: Aguet, F.; Barbeira, A. N.; Bonazzola, R.; Brown, A.; Castel, S. E.; Jo, B.; Kasela, S.; Kim-Hellmuth,
+      S.; Liang, Y.; Oliva, M.; Parsana, P. E.; Flynn, E.; Fresard, L.; Gaamzon, E. R.; Hamel, A. R.; He, Y.;
+      Hormozdiari, F.; Mohammadi, P.; Muñoz-Aguirre, M.; Park, Y.; Saha, A.; Segrć, A. V.; Strober, B. J.;
+      Wen, X.; Wucher, V.; Das, S.; Garrido-Martín, D.; Gay, N. R.; Handsaker, R. E.; Hoffman, P. J.; Kashin,
+      S.; Kwong, A.; Li, X.; MacArthur, D.; Rouhana, J. M.; Stephens, M.; Todres, E.; Viñuela, A.; Wang, G.;
+      Zou, Y.; The GTEx Consortium; Brown, C. D.; Cox, N.; Dermitzakis, E.; Engelhardt, B. E.; Getz, G.; Guigo,
+      R.; Montgomery, S. B.; Stranger, B. E.; Im, H. K.; Battle, A.; Ardlie, K. G.; Lappalainen, T.
     journal: bioRxiv
     year: 2019
     doi: 10.1101/787903
@@ -182,30 +176,29 @@ claims:
     text_access: full_text
     lines: L128
     anchor: https://paperclip.gxl.ai/citations/papers/bio_f292f4666c1a#L128
-    quote: 'We observed a 1.46-fold enrichment for cis -eQTLs (63% vs 43%) and 1.86-fold enrichment for
-      cis -sQTLs (37% vs 20%)
+    quote: 'We observed a 1.46-fold enrichment for cis -eQTLs (63% vs 43%) and 1.86-fold enrichment for cis
+      -sQTLs (37% vs 20%)
 
       '
   confidence: high
 - id: VAR-007
-  claim: 'GTEx v8''s own reading of its enrichment results is cautious: the relative GWAS enrichments
-    of splicing and expression QTLs were similar and not significantly different under the robust QTLEnrich
-    and LD-score analyses, and because far more expression QTLs were discovered the consortium inferred
-    a greater aggregated contribution from them.
+  claim: 'GTEx v8''s own reading of its enrichment results is cautious: the relative GWAS enrichments of splicing
+    and expression QTLs were similar and not significantly different under the robust QTLEnrich and LD-score
+    analyses, and because far more expression QTLs were discovered the consortium inferred a greater aggregated
+    contribution from them.
 
     '
   topic: COUNTERWEIGHT - aggregate eQTL contribution exceeds sQTL by discovery volume
   source:
     doc_id: bio_f292f4666c1a
     title: The GTEx Consortium atlas of genetic regulatory effects across human tissues
-    authors: Aguet, F.; Barbeira, A. N.; Bonazzola, R.; Brown, A.; Castel, S. E.; Jo, B.; Kasela, S.;
-      Kim-Hellmuth, S.; Liang, Y.; Oliva, M.; Parsana, P. E.; Flynn, E.; Fresard, L.; Gaamzon, E. R.;
-      Hamel, A. R.; He, Y.; Hormozdiari, F.; Mohammadi, P.; Muñoz-Aguirre, M.; Park, Y.; Saha, A.; Segrć,
-      A. V.; Strober, B. J.; Wen, X.; Wucher, V.; Das, S.; Garrido-Martín, D.; Gay, N. R.; Handsaker,
-      R. E.; Hoffman, P. J.; Kashin, S.; Kwong, A.; Li, X.; MacArthur, D.; Rouhana, J. M.; Stephens, M.;
-      Todres, E.; Viñuela, A.; Wang, G.; Zou, Y.; The GTEx Consortium; Brown, C. D.; Cox, N.; Dermitzakis,
-      E.; Engelhardt, B. E.; Getz, G.; Guigo, R.; Montgomery, S. B.; Stranger, B. E.; Im, H. K.; Battle,
-      A.; Ardlie, K. G.; Lappalainen, T.
+    authors: Aguet, F.; Barbeira, A. N.; Bonazzola, R.; Brown, A.; Castel, S. E.; Jo, B.; Kasela, S.; Kim-Hellmuth,
+      S.; Liang, Y.; Oliva, M.; Parsana, P. E.; Flynn, E.; Fresard, L.; Gaamzon, E. R.; Hamel, A. R.; He, Y.;
+      Hormozdiari, F.; Mohammadi, P.; Muñoz-Aguirre, M.; Park, Y.; Saha, A.; Segrć, A. V.; Strober, B. J.;
+      Wen, X.; Wucher, V.; Das, S.; Garrido-Martín, D.; Gay, N. R.; Handsaker, R. E.; Hoffman, P. J.; Kashin,
+      S.; Kwong, A.; Li, X.; MacArthur, D.; Rouhana, J. M.; Stephens, M.; Todres, E.; Viñuela, A.; Wang, G.;
+      Zou, Y.; The GTEx Consortium; Brown, C. D.; Cox, N.; Dermitzakis, E.; Engelhardt, B. E.; Getz, G.; Guigo,
+      R.; Montgomery, S. B.; Stranger, B. E.; Im, H. K.; Battle, A.; Ardlie, K. G.; Lappalainen, T.
     journal: bioRxiv
     year: 2019
     doi: 10.1101/787903
@@ -221,23 +214,22 @@ claims:
       '
   confidence: high
 - id: VAR-008
-  claim: 'GTEx v8''s own summary of its results states that where a gene carries both an expression QTL
-    and a splicing QTL, the two effects are usually driven by different causal variants - so finding one
-    tells you little about the other at the same gene.
+  claim: 'GTEx v8''s own summary of its results states that where a gene carries both an expression QTL and
+    a splicing QTL, the two effects are usually driven by different causal variants - so finding one tells
+    you little about the other at the same gene.
 
     '
   topic: distinct causal variants for eQTL and sQTL at one gene
   source:
     doc_id: bio_f292f4666c1a
     title: The GTEx Consortium atlas of genetic regulatory effects across human tissues
-    authors: Aguet, F.; Barbeira, A. N.; Bonazzola, R.; Brown, A.; Castel, S. E.; Jo, B.; Kasela, S.;
-      Kim-Hellmuth, S.; Liang, Y.; Oliva, M.; Parsana, P. E.; Flynn, E.; Fresard, L.; Gaamzon, E. R.;
-      Hamel, A. R.; He, Y.; Hormozdiari, F.; Mohammadi, P.; Muñoz-Aguirre, M.; Park, Y.; Saha, A.; Segrć,
-      A. V.; Strober, B. J.; Wen, X.; Wucher, V.; Das, S.; Garrido-Martín, D.; Gay, N. R.; Handsaker,
-      R. E.; Hoffman, P. J.; Kashin, S.; Kwong, A.; Li, X.; MacArthur, D.; Rouhana, J. M.; Stephens, M.;
-      Todres, E.; Viñuela, A.; Wang, G.; Zou, Y.; The GTEx Consortium; Brown, C. D.; Cox, N.; Dermitzakis,
-      E.; Engelhardt, B. E.; Getz, G.; Guigo, R.; Montgomery, S. B.; Stranger, B. E.; Im, H. K.; Battle,
-      A.; Ardlie, K. G.; Lappalainen, T.
+    authors: Aguet, F.; Barbeira, A. N.; Bonazzola, R.; Brown, A.; Castel, S. E.; Jo, B.; Kasela, S.; Kim-Hellmuth,
+      S.; Liang, Y.; Oliva, M.; Parsana, P. E.; Flynn, E.; Fresard, L.; Gaamzon, E. R.; Hamel, A. R.; He, Y.;
+      Hormozdiari, F.; Mohammadi, P.; Muñoz-Aguirre, M.; Park, Y.; Saha, A.; Segrć, A. V.; Strober, B. J.;
+      Wen, X.; Wucher, V.; Das, S.; Garrido-Martín, D.; Gay, N. R.; Handsaker, R. E.; Hoffman, P. J.; Kashin,
+      S.; Kwong, A.; Li, X.; MacArthur, D.; Rouhana, J. M.; Stephens, M.; Todres, E.; Viñuela, A.; Wang, G.;
+      Zou, Y.; The GTEx Consortium; Brown, C. D.; Cox, N.; Dermitzakis, E.; Engelhardt, B. E.; Getz, G.; Guigo,
+      R.; Montgomery, S. B.; Stranger, B. E.; Im, H. K.; Battle, A.; Ardlie, K. G.; Lappalainen, T.
     journal: bioRxiv
     year: 2019
     doi: 10.1101/787903
@@ -247,16 +239,16 @@ claims:
     text_access: full_text
     lines: L152
     anchor: https://paperclip.gxl.ai/citations/papers/bio_f292f4666c1a#L152
-    quote: 'we highlight cis -eQTL and cis -sQTL effects on the same gene, typically driven by distinct
-      causal variants
+    quote: 'we highlight cis -eQTL and cis -sQTL effects on the same gene, typically driven by distinct causal
+      variants
 
       '
   confidence: high
 - id: VAR-009
-  claim: 'In 2,865 human brain transcriptomes, 12,794 genes carried a cis-splicing QTL, and for 4,377
-    of the genes that also had an expression QTL the two signals were statistically incompatible - COLOC
-    posterior probability for two distinct causal variants above 0.8 - which together with splicing-only
-    genes put roughly 61 per cent of sQTLs outside the eQTL map.
+  claim: 'In 2,865 human brain transcriptomes, 12,794 genes carried a cis-splicing QTL, and for 4,377 of the
+    genes that also had an expression QTL the two signals were statistically incompatible - COLOC posterior
+    probability for two distinct causal variants above 0.8 - which together with splicing-only genes put roughly
+    61 per cent of sQTLs outside the eQTL map.
 
     '
   topic: sQTL-eQTL distinctness in brain (THISTLE; COLOC PP3 > 0.8)
@@ -278,16 +270,15 @@ claims:
 
       '
   confidence: high
-  figure_idea: 'A Venn of sGenes and eGenes in which the intersection is further split by whether the
-    two signals colocalize - making visible that overlap at the gene level is not overlap at the variant
-    level.
+  figure_idea: 'A Venn of sGenes and eGenes in which the intersection is further split by whether the two signals
+    colocalize - making visible that overlap at the gene level is not overlap at the variant level.
 
     '
 - id: VAR-010
-  claim: 'Integrating the same brain splicing QTLs with GWAS for twelve brain-related traits implicated
-    244 genes through splicing, about 61 per cent of which the matched expression QTL data could not have
-    found: the keystone modern demonstration that splicing variation carries disease risk that expression
-    variation does not.
+  claim: 'Integrating the same brain splicing QTLs with GWAS for twelve brain-related traits implicated 244
+    genes through splicing, about 61 per cent of which the matched expression QTL data could not have found:
+    the keystone modern demonstration that splicing variation carries disease risk that expression variation
+    does not.
 
     '
   topic: trait genes discoverable through sQTLs but not eQTLs
@@ -310,9 +301,9 @@ claims:
       '
   confidence: high
 - id: VAR-011
-  claim: 'Splicing QTLs and expression QTLs sit in different places in the gene: the splicing set was
-    preferentially enriched at splice acceptor and donor sites and at RNA-binding-protein footprints,
-    while the expression set was enriched at transcription start sites and lay closer to them.
+  claim: 'Splicing QTLs and expression QTLs sit in different places in the gene: the splicing set was preferentially
+    enriched at splice acceptor and donor sites and at RNA-binding-protein footprints, while the expression
+    set was enriched at transcription start sites and lay closer to them.
 
     '
   topic: positional and functional contrast between sQTLs and eQTLs; RBP footprints
@@ -329,8 +320,8 @@ claims:
     text_access: full_text
     lines: L29
     anchor: https://paperclip.gxl.ai/citations/papers/PMC9470536#L29
-    quote: 'sQTLs were more enriched in splicing sites (for example, splice acceptors and splice donors)
-      and RBP binding sites than eQTLs
+    quote: 'sQTLs were more enriched in splicing sites (for example, splice acceptors and splice donors) and
+      RBP binding sites than eQTLs
 
       '
   confidence: high
@@ -339,17 +330,17 @@ claims:
 
     '
 - id: VAR-012
-  claim: 'How separate splicing QTLs are from expression QTLs depends on how the question is asked: a
-    multivariate transcript-ratio analysis of GTEx v7 found 52 per cent of its splicing QTLs were also
-    expression QTLs for the same gene and tissue, yet the lead splicing variant and the lead expression
-    variant were the same SNP in only 3 per cent of cases.
+  claim: 'How separate splicing QTLs are from expression QTLs depends on how the question is asked: a multivariate
+    transcript-ratio analysis of GTEx v7 found 52 per cent of its splicing QTLs were also expression QTLs for
+    the same gene and tissue, yet the lead splicing variant and the lead expression variant were the same SNP
+    in only 3 per cent of cases.
 
     '
   topic: sQTL/eQTL overlap - gene level versus variant level (sQTLseekeR2)
   source:
     doc_id: PMC7851174
-    title: Identification and analysis of splicing quantitative trait loci across multiple tissues in
-      the human genome
+    title: Identification and analysis of splicing quantitative trait loci across multiple tissues in the human
+      genome
     authors: Garrido-Martín, D.; Borsari, B.; Calvo, M.; Reverter, F.; Guigó, R.
     journal: Nature Communications
     year: 2021
@@ -366,8 +357,8 @@ claims:
   confidence: high
 - id: VAR-013
   claim: 'A transcriptome-wide association study of rheumatoid arthritis run on intron-excision phenotypes
-    named 18 candidate genes, 13 of which the same analysis run on gene expression levels did not find
-    - a locus-by-locus demonstration that splicing and expression nominate different genes.
+    named 18 candidate genes, 13 of which the same analysis run on gene expression levels did not find - a
+    locus-by-locus demonstration that splicing and expression nominate different genes.
 
     '
   topic: splicing-based versus expression-based TWAS in rheumatoid arthritis (LeafCutter)
@@ -385,16 +376,16 @@ claims:
     text_access: full_text
     lines: L41
     anchor: https://paperclip.gxl.ai/citations/papers/PMC5742080#L41
-    quote: 'identify 18 putative disease genes (excluding genes in the extended MHC region), of which
-      13 were not associated using gene expression level measurements
+    quote: 'identify 18 putative disease genes (excluding genes in the extended MHC region), of which 13 were
+      not associated using gene expression level measurements
 
       '
   confidence: high
 - id: VAR-014
-  claim: 'Partitioning SNP heritability in blood by QTL class with SBayesRC, the roughly 1.0 per cent
-    of SNPs annotated as expression QTLs explained 13.9 per cent of heritability on average across traits,
-    while the much smaller splicing-QTL annotation - 0.1 per cent of SNPs - explained 2.8 per cent and
-    protein QTLs, 0.2 per cent of SNPs, explained 4.0 per cent.
+  claim: 'Partitioning SNP heritability in blood by QTL class with SBayesRC, the roughly 1.0 per cent of SNPs
+    annotated as expression QTLs explained 13.9 per cent of heritability on average across traits, while the
+    much smaller splicing-QTL annotation - 0.1 per cent of SNPs - explained 2.8 per cent and protein QTLs,
+    0.2 per cent of SNPs, explained 4.0 per cent.
 
     '
   topic: per-class share of SNP heritability (eQTL vs sQTL vs pQTL, blood)
@@ -417,18 +408,18 @@ claims:
       '
   confidence: medium
 - id: VAR-015
-  claim: 'The literature does not agree on how much trait variance splicing explains: the authors of the
-    colocalization audit dismissed splicing QTLs as a candidate explanation for their negative result
-    on the grounds that splicing QTLs consistently explain less phenotypic variance than expression QTLs
-    - the opposite emphasis from the original LCL sQTL study and the brain sQTL work.
+  claim: 'The literature does not agree on how much trait variance splicing explains: the authors of the colocalization
+    audit dismissed splicing QTLs as a candidate explanation for their negative result on the grounds that
+    splicing QTLs consistently explain less phenotypic variance than expression QTLs - the opposite emphasis
+    from the original LCL sQTL study and the brain sQTL work.
 
     '
   topic: CONFLICT - relative trait variance explained by splicing versus expression
   source:
     doc_id: PMC9842386
     title: The missing link between genetic association and regulatory function
-    authors: Connally, N. J.; Nazeen, S.; Lee, D.; Shi, H.; Stamatoyannopoulos, J.; Chun, S.; Cotsapas,
-      C.; Cassa, C. A.; Sunyaev, S. R.
+    authors: Connally, N. J.; Nazeen, S.; Lee, D.; Shi, H.; Stamatoyannopoulos, J.; Chun, S.; Cotsapas, C.;
+      Cassa, C. A.; Sunyaev, S. R.
     journal: eLife
     year: 2022
     doi: 10.7554/eLife.74970
@@ -444,17 +435,17 @@ claims:
   confidence: high
 - id: VAR-016
   claim: 'Nanopore full-length transcript sequencing of 67 immortalised B cell lines from healthy Japanese
-    donors found 17,119 isoform-level expression QTLs, of which 12,094 - 70.6 per cent - were absent from
-    the gene-level QTL list built by summing the same reads per gene and running the same mapping procedure.
+    donors found 17,119 isoform-level expression QTLs, of which 12,094 - 70.6 per cent - were absent from the
+    gene-level QTL list built by summing the same reads per gene and running the same mapping procedure.
 
     '
   topic: long-read isoform eQTLs undetectable at gene level (human B cells)
   source:
     doc_id: PMC12060498
-    title: Long-read sequencing reveals novel isoform-specific eQTLs and regulatory mechanisms of isoform
-      expression in human B cells
-    authors: Nagura, Y.; Shimada, M.; Kuribayashi, R.; Ikemoto, K.; Kiyose, H.; Igarashi, A.; Kaname,
-      T.; Unoki, M.; Fujimoto, A.
+    title: Long-read sequencing reveals novel isoform-specific eQTLs and regulatory mechanisms of isoform expression
+      in human B cells
+    authors: Nagura, Y.; Shimada, M.; Kuribayashi, R.; Ikemoto, K.; Kiyose, H.; Igarashi, A.; Kaname, T.; Unoki,
+      M.; Fujimoto, A.
     journal: Genome Biology
     year: 2025
     doi: 10.1186/s13059-025-03583-w
@@ -474,18 +465,18 @@ claims:
 
     '
 - id: VAR-017
-  claim: 'Within the B-cell isoform QTL set, 1,135 variants had significantly different effect sizes on
-    different isoforms of the same gene and 153 pushed two isoforms in opposite directions - the configuration
-    that cancels out when isoform counts are summed into a gene total.
+  claim: 'Within the B-cell isoform QTL set, 1,135 variants had significantly different effect sizes on different
+    isoforms of the same gene and 153 pushed two isoforms in opposite directions - the configuration that cancels
+    out when isoform counts are summed into a gene total.
 
     '
   topic: differential and opposite-direction isoform QTLs
   source:
     doc_id: PMC12060498
-    title: Long-read sequencing reveals novel isoform-specific eQTLs and regulatory mechanisms of isoform
-      expression in human B cells
-    authors: Nagura, Y.; Shimada, M.; Kuribayashi, R.; Ikemoto, K.; Kiyose, H.; Igarashi, A.; Kaname,
-      T.; Unoki, M.; Fujimoto, A.
+    title: Long-read sequencing reveals novel isoform-specific eQTLs and regulatory mechanisms of isoform expression
+      in human B cells
+    authors: Nagura, Y.; Shimada, M.; Kuribayashi, R.; Ikemoto, K.; Kiyose, H.; Igarashi, A.; Kaname, T.; Unoki,
+      M.; Fujimoto, A.
     journal: Genome Biology
     year: 2025
     doi: 10.1186/s13059-025-03583-w
@@ -495,25 +486,24 @@ claims:
     text_access: full_text
     lines: L27
     anchor: https://paperclip.gxl.ai/citations/papers/PMC12060498#L27
-    quote: 'Among the ieQTLs, 1135 were identified as differential ieQTLs, and 153 exhibited opposite
-      effects
+    quote: 'Among the ieQTLs, 1135 were identified as differential ieQTLs, and 153 exhibited opposite effects
 
       '
   confidence: high
 - id: VAR-018
-  claim: 'Of 372 variants in the B-cell study that coincided with a published GWAS association, 242 were
-    found only by the isoform-level analysis - but the per-variant GWAS hit rate was 2.0 per cent for
-    isoform-only variants against 2.4 per cent for shared ones and 0.8 per cent for gene-only ones, so
-    the 242 reflects the much larger isoform-only pool rather than a higher enrichment.
+  claim: 'Of 372 variants in the B-cell study that coincided with a published GWAS association, 242 were found
+    only by the isoform-level analysis - but the per-variant GWAS hit rate was 2.0 per cent for isoform-only
+    variants against 2.4 per cent for shared ones and 0.8 per cent for gene-only ones, so the 242 reflects
+    the much larger isoform-only pool rather than a higher enrichment.
 
     '
   topic: GWAS-overlapping variants recovered only at isoform level (count versus rate)
   source:
     doc_id: PMC12060498
-    title: Long-read sequencing reveals novel isoform-specific eQTLs and regulatory mechanisms of isoform
-      expression in human B cells
-    authors: Nagura, Y.; Shimada, M.; Kuribayashi, R.; Ikemoto, K.; Kiyose, H.; Igarashi, A.; Kaname,
-      T.; Unoki, M.; Fujimoto, A.
+    title: Long-read sequencing reveals novel isoform-specific eQTLs and regulatory mechanisms of isoform expression
+      in human B cells
+    authors: Nagura, Y.; Shimada, M.; Kuribayashi, R.; Ikemoto, K.; Kiyose, H.; Igarashi, A.; Kaname, T.; Unoki,
+      M.; Fujimoto, A.
     journal: Genome Biology
     year: 2025
     doi: 10.1186/s13059-025-03583-w
@@ -523,27 +513,27 @@ claims:
     text_access: full_text
     lines: L39,L55
     anchor: https://paperclip.gxl.ai/citations/papers/PMC12060498#L39,L55
-    quote: 'Our investigation revealed 372 eQTLs are present in the GWAS results (Fig. 3C). Among these,
-      65.9% (n = 242) were exclusively identified within ieQTLs
+    quote: 'Our investigation revealed 372 eQTLs are present in the GWAS results (Fig. 3C). Among these, 65.9%
+      (n = 242) were exclusively identified within ieQTLs
 
       '
   confidence: high
 - id: VAR-019
-  claim: 'Mapping isoform-to-gene expression ratios rather than isoform abundances in 2,622 Framingham
-    whole-blood samples yielded over 1.1 million common cis associations, a fifth of which had no significant
-    association with overall gene expression, plus 1,870 sentinel trans associations - so isoform-ratio
-    QTLs act at a distance as well as locally.
+  claim: 'Mapping isoform-to-gene expression ratios rather than isoform abundances in 2,622 Framingham whole-blood
+    samples yielded over 1.1 million common cis associations, a fifth of which had no significant association
+    with overall gene expression, plus 1,870 sentinel trans associations - so isoform-ratio QTLs act at a distance
+    as well as locally.
 
     '
   topic: isoform-ratio QTLs in whole blood, including trans effects
   source:
     doc_id: PMC12660940
-    title: Integrating whole genome and transcriptome sequencing to characterize the genetic architecture
-      of isoform variation
-    authors: Liu, C.; Joehanes, R.; Ma, J.; Xie, J.; Yang, J.; Wang, M.; Huan, T.; Hwang, S. J.; Wen,
-      J.; Sun, Q.; Demirkale, C. Y.; Heard-Costa, N. L.; Orchard, P.; Carson, A. P.; Haessler, J. W.;
-      Raffield, L. M.; Reiner, A. P.; Franceschini, N.; Auer, P. L.; Kooperberg, C.; Li, Y.; O’Connor,
-      G.; Murabito, J. M.; Munson, P.; Levy, D.
+    title: Integrating whole genome and transcriptome sequencing to characterize the genetic architecture of
+      isoform variation
+    authors: Liu, C.; Joehanes, R.; Ma, J.; Xie, J.; Yang, J.; Wang, M.; Huan, T.; Hwang, S. J.; Wen, J.; Sun,
+      Q.; Demirkale, C. Y.; Heard-Costa, N. L.; Orchard, P.; Carson, A. P.; Haessler, J. W.; Raffield, L. M.;
+      Reiner, A. P.; Franceschini, N.; Auer, P. L.; Kooperberg, C.; Li, Y.; O’Connor, G.; Murabito, J. M.;
+      Munson, P.; Levy, D.
     journal: Nature Communications
     year: 2025
     doi: 10.1038/s41467-025-64336-8
@@ -553,25 +543,25 @@ claims:
     text_access: full_text
     lines: L23
     anchor: https://paperclip.gxl.ai/citations/papers/PMC12660940#L23
-    quote: '20% of cis-irQTLs have no significant association with overall gene expression, indicating
-      isoform-specific regulation
+    quote: '20% of cis-irQTLs have no significant association with overall gene expression, indicating isoform-specific
+      regulation
 
       '
   confidence: high
 - id: VAR-020
-  claim: 'Running transcriptome-wide association tests on isoform rather than gene expression across six
-    cancers and six subtype classifications raised the number of significant associations from 2,336 to
-    6,163, tagged associations at 52 per cent more independent GWAS loci, and attributed an estimated
-    63 per cent greater share of cancer risk SNP heritability to isoform expression than to gene expression.
+  claim: 'Running transcriptome-wide association tests on isoform rather than gene expression across six cancers
+    and six subtype classifications raised the number of significant associations from 2,336 to 6,163, tagged
+    associations at 52 per cent more independent GWAS loci, and attributed an estimated 63 per cent greater
+    share of cancer risk SNP heritability to isoform expression than to gene expression.
 
     '
   topic: isoform-level versus gene-level TWAS and mediated heritability (six cancers)
   source:
     doc_id: PMC11581093
-    title: Isoform-level analyses of 6 cancers uncover extensive genetic risk mechanisms undetected at
-      the gene-level
-    authors: Chang, Y. H.; Bresnahan, S. T.; Head, S. T.; Harrison, T.; Yu, Y.; Huff, C. D.; Pasaniuc,
-      B.; Lindström, S.; Bhattacharya, A.
+    title: Isoform-level analyses of 6 cancers uncover extensive genetic risk mechanisms undetected at the
+      gene-level
+    authors: Chang, Y. H.; Bresnahan, S. T.; Head, S. T.; Harrison, T.; Yu, Y.; Huff, C. D.; Pasaniuc, B.;
+      Lindström, S.; Bhattacharya, A.
     journal: medRxiv
     year: 2024
     doi: 10.1101/2024.10.29.24316388
@@ -581,25 +571,25 @@ claims:
     text_access: full_text
     lines: L10
     anchor: https://paperclip.gxl.ai/citations/papers/PMC11581093#L10
-    quote: 'identifying 164% more significant associations (6,163 vs. 2,336) with isoTWAS-prioritized
-      genes enriched 4-fold for evolutionarily-constrained genes
+    quote: 'identifying 164% more significant associations (6,163 vs. 2,336) with isoTWAS-prioritized genes
+      enriched 4-fold for evolutionarily-constrained genes
 
       '
   confidence: medium
 - id: VAR-021
-  claim: 'The same cancer analysis names specific loci - CLPTM1L in lung, LAMC1 in colorectal and BABAM1
-    in breast cancer - where the GWAS signal colocalizes with an isoform-level association but not with
-    a gene-level one: the concrete form of the argument that a variant can be invisible to gene-level
-    analysis and visible in isoform usage.
+  claim: 'The same cancer analysis names specific loci - CLPTM1L in lung, LAMC1 in colorectal and BABAM1 in
+    breast cancer - where the GWAS signal colocalizes with an isoform-level association but not with a gene-level
+    one: the concrete form of the argument that a variant can be invisible to gene-level analysis and visible
+    in isoform usage.
 
     '
   topic: loci colocalizing at isoform level but not gene level
   source:
     doc_id: PMC11581093
-    title: Isoform-level analyses of 6 cancers uncover extensive genetic risk mechanisms undetected at
-      the gene-level
-    authors: Chang, Y. H.; Bresnahan, S. T.; Head, S. T.; Harrison, T.; Yu, Y.; Huff, C. D.; Pasaniuc,
-      B.; Lindström, S.; Bhattacharya, A.
+    title: Isoform-level analyses of 6 cancers uncover extensive genetic risk mechanisms undetected at the
+      gene-level
+    authors: Chang, Y. H.; Bresnahan, S. T.; Head, S. T.; Harrison, T.; Yu, Y.; Huff, C. D.; Pasaniuc, B.;
+      Lindström, S.; Bhattacharya, A.
     journal: medRxiv
     year: 2024
     doi: 10.1101/2024.10.29.24316388
@@ -609,24 +599,24 @@ claims:
     text_access: full_text
     lines: L10
     anchor: https://paperclip.gxl.ai/citations/papers/PMC11581093#L10
-    quote: 'isoTWAS associations that demonstrate GWAS colocalization at the isoform level but not at
-      the gene level, including CLPTM1L (lung cancer)
+    quote: 'isoTWAS associations that demonstrate GWAS colocalization at the isoform level but not at the gene
+      level, including CLPTM1L (lung cancer)
 
       '
   confidence: medium
 - id: VAR-022
-  claim: 'Variants found only by isoform-level mapping in B cells were enriched not just at splice sites
-    but at intronic branchpoints and at promoters and super-enhancers, so the mechanisms behind an isoform
-    QTL span splice-signal disruption and transcription-initiation choice.
+  claim: 'Variants found only by isoform-level mapping in B cells were enriched not just at splice sites but
+    at intronic branchpoints and at promoters and super-enhancers, so the mechanisms behind an isoform QTL
+    span splice-signal disruption and transcription-initiation choice.
 
     '
   topic: mechanism classes behind isoform QTLs (branchpoint, promoter, enhancer)
   source:
     doc_id: PMC12060498
-    title: Long-read sequencing reveals novel isoform-specific eQTLs and regulatory mechanisms of isoform
-      expression in human B cells
-    authors: Nagura, Y.; Shimada, M.; Kuribayashi, R.; Ikemoto, K.; Kiyose, H.; Igarashi, A.; Kaname,
-      T.; Unoki, M.; Fujimoto, A.
+    title: Long-read sequencing reveals novel isoform-specific eQTLs and regulatory mechanisms of isoform expression
+      in human B cells
+    authors: Nagura, Y.; Shimada, M.; Kuribayashi, R.; Ikemoto, K.; Kiyose, H.; Igarashi, A.; Kaname, T.; Unoki,
+      M.; Fujimoto, A.
     journal: Genome Biology
     year: 2025
     doi: 10.1186/s13059-025-03583-w
@@ -636,15 +626,14 @@ claims:
     text_access: full_text
     lines: L29
     anchor: https://paperclip.gxl.ai/citations/papers/PMC12060498#L29
-    quote: 'significant enrichments were observed in promoters, branchpoints within introns, and super
-      enhancers
+    quote: 'significant enrichments were observed in promoters, branchpoints within introns, and super enhancers
 
       '
   confidence: high
 - id: VAR-023
-  claim: 'Poly(A) site choice is itself a mappable molecular phenotype: 3-prime-end sequencing of nuclear
-    RNA from lymphoblastoid lines identified 602 polyadenylation QTLs in 479 genes, with lead variants
-    clustered near the poly(A) sites whose usage they changed.
+  claim: 'Poly(A) site choice is itself a mappable molecular phenotype: 3-prime-end sequencing of nuclear RNA
+    from lymphoblastoid lines identified 602 polyadenylation QTLs in 479 genes, with lead variants clustered
+    near the poly(A) sites whose usage they changed.
 
     '
   topic: alternative polyadenylation QTLs as a mechanism class
@@ -666,24 +655,23 @@ claims:
       '
   confidence: high
 - id: VAR-024
-  claim: 'Gene-level allelic expression is a good proxy for expression QTLs but a poor one for splicing
-    QTLs: in GTEx v8 the correlation between allelic imbalance and splicing-QTL genotype was essentially
-    nil, and the consortium concluded that genetic splicing variation in cis is not strongly reflected
-    in gene-level allelic expression data.
+  claim: 'Gene-level allelic expression is a good proxy for expression QTLs but a poor one for splicing QTLs:
+    in GTEx v8 the correlation between allelic imbalance and splicing-QTL genotype was essentially nil, and
+    the consortium concluded that gene-level allelic expression data does not strongly reflect cis genetic
+    variation in splicing.
 
     '
   topic: what allele-specific expression does and does not capture
   source:
     doc_id: bio_f292f4666c1a
     title: The GTEx Consortium atlas of genetic regulatory effects across human tissues
-    authors: Aguet, F.; Barbeira, A. N.; Bonazzola, R.; Brown, A.; Castel, S. E.; Jo, B.; Kasela, S.;
-      Kim-Hellmuth, S.; Liang, Y.; Oliva, M.; Parsana, P. E.; Flynn, E.; Fresard, L.; Gaamzon, E. R.;
-      Hamel, A. R.; He, Y.; Hormozdiari, F.; Mohammadi, P.; Muñoz-Aguirre, M.; Park, Y.; Saha, A.; Segrć,
-      A. V.; Strober, B. J.; Wen, X.; Wucher, V.; Das, S.; Garrido-Martín, D.; Gay, N. R.; Handsaker,
-      R. E.; Hoffman, P. J.; Kashin, S.; Kwong, A.; Li, X.; MacArthur, D.; Rouhana, J. M.; Stephens, M.;
-      Todres, E.; Viñuela, A.; Wang, G.; Zou, Y.; The GTEx Consortium; Brown, C. D.; Cox, N.; Dermitzakis,
-      E.; Engelhardt, B. E.; Getz, G.; Guigo, R.; Montgomery, S. B.; Stranger, B. E.; Im, H. K.; Battle,
-      A.; Ardlie, K. G.; Lappalainen, T.
+    authors: Aguet, F.; Barbeira, A. N.; Bonazzola, R.; Brown, A.; Castel, S. E.; Jo, B.; Kasela, S.; Kim-Hellmuth,
+      S.; Liang, Y.; Oliva, M.; Parsana, P. E.; Flynn, E.; Fresard, L.; Gaamzon, E. R.; Hamel, A. R.; He, Y.;
+      Hormozdiari, F.; Mohammadi, P.; Muñoz-Aguirre, M.; Park, Y.; Saha, A.; Segrć, A. V.; Strober, B. J.;
+      Wen, X.; Wucher, V.; Das, S.; Garrido-Martín, D.; Gay, N. R.; Handsaker, R. E.; Hoffman, P. J.; Kashin,
+      S.; Kwong, A.; Li, X.; MacArthur, D.; Rouhana, J. M.; Stephens, M.; Todres, E.; Viñuela, A.; Wang, G.;
+      Zou, Y.; The GTEx Consortium; Brown, C. D.; Cox, N.; Dermitzakis, E.; Engelhardt, B. E.; Getz, G.; Guigo,
+      R.; Montgomery, S. B.; Stranger, B. E.; Im, H. K.; Battle, A.; Ardlie, K. G.; Lappalainen, T.
     journal: bioRxiv
     year: 2019
     doi: 10.1101/787903
@@ -693,17 +681,18 @@ claims:
     text_access: full_text
     lines: L112
     anchor: https://paperclip.gxl.ai/citations/papers/bio_f292f4666c1a#L112
-    quote: 'allelic expression data captures primarily cis -eQTL effects and genetic splicing variation
-      in cis is not strongly reflected in gene-level AE data
+    quote: 'allelic expression data captures primarily cis -eQTL effects and genetic splicing variation in
+      cis is not strongly reflected in gene-level AE data
 
       '
   confidence: high
+  note: Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 - id: VAR-025
   claim: 'Modelling RNA evidence as one supporting-strength point in a semiquantitative ACMG/AMP implementation,
-    a clinical laboratory projected that 31 per cent of its 16,965 unique splicing variants of uncertain
-    significance would cross a classification threshold - and that 93 per cent of those would land on
-    the benign side against 7 per cent on the pathogenic side. This describes where variants sit relative
-    to thresholds, not observed RNA results.
+    a clinical laboratory projected that 31 per cent of its 16,965 unique splicing variants of uncertain significance
+    would cross a classification threshold - and that 93 per cent of those would land on the benign side against
+    7 per cent on the pathogenic side. This describes where variants sit relative to thresholds, not observed
+    RNA results.
 
     '
   topic: projected VUS resolution from RNA evidence, and its direction
@@ -711,8 +700,8 @@ claims:
     doc_id: PMC8059334
     title: Spectrum of splicing variants in disease genes and the ability of RNA analysis to reduce uncertainty
       in clinical interpretation
-    authors: Truty, R.; Ouyang, K.; Rojahn, S.; Garcia, S.; Colavin, A.; Hamlington, B.; Freivogel, M.;
-      Nussbaum, R. L.; Nykamp, K.; Aradhya, S.
+    authors: Truty, R.; Ouyang, K.; Rojahn, S.; Garcia, S.; Colavin, A.; Hamlington, B.; Freivogel, M.; Nussbaum,
+      R. L.; Nykamp, K.; Aradhya, S.
     journal: The American Journal of Human Genetics
     year: 2021
     doi: 10.1016/j.ajhg.2021.03.006
@@ -722,20 +711,20 @@ claims:
     text_access: full_text
     lines: L50
     anchor: https://paperclip.gxl.ai/citations/papers/PMC8059334#L50
-    quote: '4,851, or 93%, of the reclassifications would result in LB classifications and the remaining
-      389, or 7%, would be LP classifications
+    quote: '4,851, or 93%, of the reclassifications would result in LB classifications and the remaining 389,
+      or 7%, would be LP classifications
 
       '
   confidence: high
-  figure_idea: 'A two-sided bar from a VUS pool: a small arm toward likely pathogenic, a much larger arm
-    toward likely benign, and a large unmoved remainder - the honest picture of what one point of RNA
-    evidence does to a VUS backlog.
+  figure_idea: 'A two-sided bar from a VUS pool: a small arm toward likely pathogenic, a much larger arm toward
+    likely benign, and a large unmoved remainder - the honest picture of what one point of RNA evidence does
+    to a VUS backlog.
 
     '
 - id: VAR-026
-  claim: 'For most splicing variants of uncertain significance, RNA evidence alone does not settle the
-    question: 69 per cent of the cohort''s unique splicing VUSs would still fall short of a classification
-    because no other applicable evidence category existed to combine with the RNA result.
+  claim: 'For most splicing variants of uncertain significance, RNA evidence alone does not settle the question:
+    69 per cent of the cohort''s unique splicing VUSs would still fall short of a classification because no
+    other applicable evidence category existed to combine with the RNA result.
 
     '
   topic: limit of RNA evidence as a single evidence line
@@ -743,8 +732,8 @@ claims:
     doc_id: PMC8059334
     title: Spectrum of splicing variants in disease genes and the ability of RNA analysis to reduce uncertainty
       in clinical interpretation
-    authors: Truty, R.; Ouyang, K.; Rojahn, S.; Garcia, S.; Colavin, A.; Hamlington, B.; Freivogel, M.;
-      Nussbaum, R. L.; Nykamp, K.; Aradhya, S.
+    authors: Truty, R.; Ouyang, K.; Rojahn, S.; Garcia, S.; Colavin, A.; Hamlington, B.; Freivogel, M.; Nussbaum,
+      R. L.; Nykamp, K.; Aradhya, S.
     journal: The American Journal of Human Genetics
     year: 2021
     doi: 10.1016/j.ajhg.2021.03.006
@@ -754,26 +743,26 @@ claims:
     text_access: full_text
     lines: L50
     anchor: https://paperclip.gxl.ai/citations/papers/PMC8059334#L50
-    quote: 'evidence from RNA analysis would not be sufficient to reclassify most splicing VUSs (69%)
-      because of the absence of other types of applicable evidence
+    quote: 'evidence from RNA analysis would not be sufficient to reclassify most splicing VUSs (69%) because
+      of the absence of other types of applicable evidence
 
       '
   confidence: high
 - id: VAR-027
   claim: 'The ACMG/AMP framework already asks whether a variant perturbs splicing and spreads that question
-    across six evidence codes - PVS1, PS3, PP3, BS3, BP4 and BP7 - but as of the ClinGen Sequence Variant
-    Interpretation splicing subgroup''s review there was no standardised method for turning RNA data into
-    a code, which is why different expert panels had diverged.
+    across six evidence codes - PVS1, PS3, PP3, BS3, BP4 and BP7 - but as of the ClinGen Sequence Variant Interpretation
+    splicing subgroup''s review there was no standardised method for turning RNA data into a code, which is
+    why different expert panels had diverged.
 
     '
   topic: status of RNA evidence in variant-interpretation guidelines
   source:
     doc_id: med_0ed2036e6c0d
-    title: 'Application of the ACMG/AMP framework to capture evidence relevant to predicted and observed
-      impact on splicing: recommendations from the ClinGen SVI Splicing Subgroup'
-    authors: Walker, L. C.; de la Hoya, M.; Wiggins, G. A.; Lindy, A.; Vincent, L. M.; Parsons, M. T.;
-      Canson, D. M.; Bis-Brewer, D.; Cass, A.; Tchourbanov, A.; Zimmermann, H.; Byrne, A. B.; Pesaran,
-      T.; Karam, R.; Harrison, S.; Spurdle, A. B.
+    title: 'Application of the ACMG/AMP framework to capture evidence relevant to predicted and observed impact
+      on splicing: recommendations from the ClinGen SVI Splicing Subgroup'
+    authors: Walker, L. C.; de la Hoya, M.; Wiggins, G. A.; Lindy, A.; Vincent, L. M.; Parsons, M. T.; Canson,
+      D. M.; Bis-Brewer, D.; Cass, A.; Tchourbanov, A.; Zimmermann, H.; Byrne, A. B.; Pesaran, T.; Karam, R.;
+      Harrison, S.; Spurdle, A. B.
     journal: medRxiv
     year: 2023
     doi: 10.1101/2023.02.24.23286431
@@ -790,19 +779,19 @@ claims:
   confidence: medium
 - id: VAR-028
   claim: 'A structural limitation of today''s clinical RNA assays, stated by the guideline subgroup itself,
-    is that RT-PCR and both targeted and whole-transcriptome RNA-seq read partial transcript sequences
-    - reporting which splicing events occurred rather than the complete exon structure of the resulting
-    mRNA - and comprehensive long-read data is still lacking for many disease-susceptibility genes.
+    is that RT-PCR and both targeted and whole-transcriptome RNA-seq read partial transcript sequences - reporting
+    which splicing events occurred rather than the complete exon structure of the resulting mRNA - and comprehensive
+    long-read data is still lacking for many disease-susceptibility genes.
 
     '
   topic: partial-transcript limitation of clinical RNA assays
   source:
     doc_id: med_0ed2036e6c0d
-    title: 'Application of the ACMG/AMP framework to capture evidence relevant to predicted and observed
-      impact on splicing: recommendations from the ClinGen SVI Splicing Subgroup'
-    authors: Walker, L. C.; de la Hoya, M.; Wiggins, G. A.; Lindy, A.; Vincent, L. M.; Parsons, M. T.;
-      Canson, D. M.; Bis-Brewer, D.; Cass, A.; Tchourbanov, A.; Zimmermann, H.; Byrne, A. B.; Pesaran,
-      T.; Karam, R.; Harrison, S.; Spurdle, A. B.
+    title: 'Application of the ACMG/AMP framework to capture evidence relevant to predicted and observed impact
+      on splicing: recommendations from the ClinGen SVI Splicing Subgroup'
+    authors: Walker, L. C.; de la Hoya, M.; Wiggins, G. A.; Lindy, A.; Vincent, L. M.; Parsons, M. T.; Canson,
+      D. M.; Bis-Brewer, D.; Cass, A.; Tchourbanov, A.; Zimmermann, H.; Byrne, A. B.; Pesaran, T.; Karam, R.;
+      Harrison, S.; Spurdle, A. B.
     journal: medRxiv
     year: 2023
     doi: 10.1101/2023.02.24.23286431
@@ -812,15 +801,13 @@ claims:
     text_access: full_text
     lines: L55
     anchor: https://paperclip.gxl.ai/citations/papers/med_0ed2036e6c0d#L55
-    quote: 'Comprehensive long-read RNA-seq data is currently lacking for many disease susceptibility
-      genes
+    quote: 'Comprehensive long-read RNA-seq data is currently lacking for many disease susceptibility genes
 
       '
   confidence: medium
 - id: VAR-029
-  claim: 'Tissue choice is not a detail but a determinant of whether a clinical RNA assay can see the
-    variant at all: pathogenic splicing variants detected in fibroblasts have been reported as undetected
-    in blood.
+  claim: 'Tissue choice is not a detail but a determinant of whether a clinical RNA assay can see the variant
+    at all: pathogenic splicing variants detected in fibroblasts have been reported as undetected in blood.
 
     '
   topic: tissue accessibility as a constraint on clinical transcriptomics
@@ -837,15 +824,15 @@ claims:
     text_access: full_text
     lines: L36
     anchor: https://paperclip.gxl.ai/citations/papers/PMC8960934#L36
-    quote: 'Murdock et al.[34] indicated that some pathogenic splicing variants detected in fibroblast
-      remained undetected in blood
+    quote: 'Murdock et al.[34] indicated that some pathogenic splicing variants detected in fibroblast remained
+      undetected in blood
 
       '
   confidence: medium
 - id: VAR-030
-  claim: 'Nonsense-mediated decay cuts against the assay that needs to observe the aberrant transcript:
-    nonsense, frameshift and often canonical splice-site variants introduce premature termination codons
-    and trigger NMD, which is likely to leave the affected transcript at a very low expression level.
+  claim: 'Nonsense-mediated decay cuts against the assay that needs to observe the aberrant transcript: variants
+    that are nonsense or frameshift, and often those at canonical splice sites, introduce premature termination
+    codons and trigger NMD, which is likely to leave the affected transcript at a very low expression level.
 
     '
   topic: NMD depleting the transcript a clinical assay needs to observe
@@ -867,19 +854,20 @@ claims:
 
       '
   confidence: medium
+  note: Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 - id: VAR-031
-  claim: 'Allele-specific expression is a meaningful modifier of a coding variant''s effect because it
-    is common - earlier work cited here put allelic imbalance at 30 per cent or more of genes in a given
-    cell type - and because, measured with targeted deep sequencing in ten tissues of one individual,
-    allelic ratios varied across tissues more than gene expression levels did.
+  claim: 'Allele-specific expression is a meaningful modifier of a coding variant''s effect because it is common
+    - earlier work cited here put allelic imbalance at 30 per cent or more of genes in a given cell type -
+    and because, measured with targeted deep sequencing in ten tissues of one individual, allelic ratios varied
+    across tissues more than gene expression levels did.
 
     '
   topic: allele-specific expression as a functional readout, and its tissue behaviour
   source:
     doc_id: PMC4006732
     title: Allelic Expression of Deleterious Protein-Coding Variants across Human Tissues
-    authors: Kukurba, K. R.; Zhang, R.; Li, X.; Smith, K. S.; Knowles, D. A.; How Tan, M.; Piskol, R.;
-      Lek, M.; Snyder, M.; MacArthur, D. G.; Li, J. B.; Montgomery, S. B.
+    authors: Kukurba, K. R.; Zhang, R.; Li, X.; Smith, K. S.; Knowles, D. A.; How Tan, M.; Piskol, R.; Lek,
+      M.; Snyder, M.; MacArthur, D. G.; Li, J. B.; Montgomery, S. B.
     journal: PLoS Genetics
     year: 2014
     doi: 10.1371/journal.pgen.1004304
@@ -894,10 +882,9 @@ claims:
       '
   confidence: high
 - id: VAR-032
-  claim: 'Expression-based tumour subtyping is not aspirational in breast cancer: the PAM50 signature
-    was retrained on a 50-gene counting platform for formalin-fixed material, cleared by the FDA and CE
-    marked, and issued for decentralised use in clinical laboratories as a recurrence-risk and intrinsic-subtype
-    test.
+  claim: 'Expression-based tumour subtyping is not aspirational in breast cancer: the PAM50 signature was retrained
+    on a 50-gene counting platform for formalin-fixed material, cleared by the FDA and CE marked, and issued
+    for decentralised use in clinical laboratories as a recurrence-risk and intrinsic-subtype test.
 
     '
   topic: expression-based subtyping as a deployed clinical assay (PAM50/Prosigna)
@@ -905,8 +892,8 @@ claims:
     doc_id: PMC4546262
     title: Development and verification of the PAM50-based Prosigna breast cancer gene signature assay
     authors: Wallden, B.; Storhoff, J.; Nielsen, T.; Dowidar, N.; Schaper, C.; Ferree, S.; Liu, S.; Leung,
-      S.; Geiss, G.; Snider, J.; Vickery, T.; Davies, S. R.; Mardis, E. R.; Gnant, M.; Sestak, I.; Ellis,
-      M. J.; Perou, C. M.; Bernard, P. S.; Parker, J. S.
+      S.; Geiss, G.; Snider, J.; Vickery, T.; Davies, S. R.; Mardis, E. R.; Gnant, M.; Sestak, I.; Ellis, M.
+      J.; Perou, C. M.; Bernard, P. S.; Parker, J. S.
     journal: BMC Medical Genomics
     year: 2015
     doi: 10.1186/s12920-015-0129-6
@@ -930,13 +917,12 @@ claims:
   topic: honest statement of clinical adoption of tumour RNA-seq
   source:
     doc_id: PMC12170858
-    title: Clinical and analytical validation of a combined RNA and DNA exome assay across a large tumor
-      cohort
+    title: Clinical and analytical validation of a combined RNA and DNA exome assay across a large tumor cohort
     authors: Yudina, A.; Tazearslan, C.; Baisangurov, A.; Nuzhdina, E.; Lauziere, K.; Segodin, V.; Podsvirova,
       S.; Starikov, S.; Chasse, M.; Shaposhnikov, K.; Kaneunyenye, L.; Klimchuk, O.; Kuzkina, N.; English,
-      N.; Khegai, G.; Sookiasian, D.; Shafranskaya, D.; Fernandez, D.; Lozinsky, Y.; Sobolev, A.; Abdou,
-      M.; Turova, P.; Chernyshov, K.; Efremov, A.; Andrewes, S.; Feinberg, A.; McKenna, B.; Brown, J.
-      H.; Love, A.; Curran, J.; Lennerz, J.; Bagaev, A.
+      N.; Khegai, G.; Sookiasian, D.; Shafranskaya, D.; Fernandez, D.; Lozinsky, Y.; Sobolev, A.; Abdou, M.;
+      Turova, P.; Chernyshov, K.; Efremov, A.; Andrewes, S.; Feinberg, A.; McKenna, B.; Brown, J. H.; Love,
+      A.; Curran, J.; Lennerz, J.; Bagaev, A.
     journal: Communications Medicine
     year: 2025
     doi: 10.1038/s43856-025-00934-3
@@ -946,25 +932,24 @@ claims:
     text_access: full_text
     lines: L17
     anchor: https://paperclip.gxl.ai/citations/papers/PMC12170858#L17
-    quote: 'While RNA-seq has become a standard approach for measuring fusions and characterizing tissue
-      phenotypes, its clinical adoption remains limited
+    quote: 'While RNA-seq has become a standard approach for measuring fusions and characterizing tissue phenotypes,
+      its clinical adoption remains limited
 
       '
   confidence: high
 - id: VAR-034
   claim: 'In a 788-patient multicentre sarcoma cohort, adding targeted RNA fusion sequencing to histopathology
-    changed the pathological subtype for 11.9 per cent of patients and confirmed or refined the diagnosis
-    for a further 13.3 per cent - transcriptome evidence altering the clinical label, not just annotating
-    it.
+    changed the pathological subtype for 11.9 per cent of patients and confirmed or refined the diagnosis for
+    a further 13.3 per cent - transcriptome evidence altering the clinical label, not just annotating it.
 
     '
   topic: fusion-based subtyping changing clinical diagnosis
   source:
     doc_id: PMC12076812
-    title: 'Superiority of targeted RNA sequencing for fusion detection and subtype diagnosis in Chinese
-      sarcoma patients: a multicenter study'
-    authors: Jin, G.; Zhao, D.; Wang, B.; Liu, X.; Yang, Q.; Liu, Z.; Yang, Q.; Zhu, J.; Zhang, J.; Li,
-      W.; Wang, X.; Wang, C.; Ma, T.; Liu, J.
+    title: 'Superiority of targeted RNA sequencing for fusion detection and subtype diagnosis in Chinese sarcoma
+      patients: a multicenter study'
+    authors: Jin, G.; Zhao, D.; Wang, B.; Liu, X.; Yang, Q.; Liu, Z.; Yang, Q.; Zhu, J.; Zhang, J.; Li, W.;
+      Wang, X.; Wang, C.; Ma, T.; Liu, J.
     journal: Experimental Hematology & Oncology
     year: 2025
     doi: 10.1186/s40164-025-00663-2
@@ -980,18 +965,18 @@ claims:
       '
   confidence: high
 - id: VAR-035
-  claim: 'Measured against DNA-based panels over shared fusion targets, the RNA panel in that sarcoma
-    cohort reached 93.5 per cent sensitivity and 98.8 per cent specificity, and orthogonal testing of
-    DNA-only fusion calls indicated several were non-functional events.
+  claim: 'Measured against DNA-based panels over shared fusion targets, the RNA panel in that sarcoma cohort
+    reached 93.5 per cent sensitivity and 98.8 per cent specificity, and orthogonal testing of DNA-only fusion
+    calls indicated several were non-functional events.
 
     '
   topic: analytic performance of RNA versus DNA fusion detection
   source:
     doc_id: PMC12076812
-    title: 'Superiority of targeted RNA sequencing for fusion detection and subtype diagnosis in Chinese
-      sarcoma patients: a multicenter study'
-    authors: Jin, G.; Zhao, D.; Wang, B.; Liu, X.; Yang, Q.; Liu, Z.; Yang, Q.; Zhu, J.; Zhang, J.; Li,
-      W.; Wang, X.; Wang, C.; Ma, T.; Liu, J.
+    title: 'Superiority of targeted RNA sequencing for fusion detection and subtype diagnosis in Chinese sarcoma
+      patients: a multicenter study'
+    authors: Jin, G.; Zhao, D.; Wang, B.; Liu, X.; Yang, Q.; Liu, Z.; Yang, Q.; Zhu, J.; Zhang, J.; Li, W.;
+      Wang, X.; Wang, C.; Ma, T.; Liu, J.
     journal: Experimental Hematology & Oncology
     year: 2025
     doi: 10.1186/s40164-025-00663-2
@@ -1014,10 +999,10 @@ claims:
   topic: RNA quality and FFPE degradation as a clinical constraint
   source:
     doc_id: PMC12076812
-    title: 'Superiority of targeted RNA sequencing for fusion detection and subtype diagnosis in Chinese
-      sarcoma patients: a multicenter study'
-    authors: Jin, G.; Zhao, D.; Wang, B.; Liu, X.; Yang, Q.; Liu, Z.; Yang, Q.; Zhu, J.; Zhang, J.; Li,
-      W.; Wang, X.; Wang, C.; Ma, T.; Liu, J.
+    title: 'Superiority of targeted RNA sequencing for fusion detection and subtype diagnosis in Chinese sarcoma
+      patients: a multicenter study'
+    authors: Jin, G.; Zhao, D.; Wang, B.; Liu, X.; Yang, Q.; Liu, Z.; Yang, Q.; Zhu, J.; Zhang, J.; Li, W.;
+      Wang, X.; Wang, C.; Ma, T.; Liu, J.
     journal: Experimental Hematology & Oncology
     year: 2025
     doi: 10.1186/s40164-025-00663-2
@@ -1032,27 +1017,26 @@ claims:
       '
   confidence: high
 leads:
-- note: 'Li et al. 2016 (Science) IS in the corpus, as an abstract-only record with the numeric doc_id
-    59002764 (pmid 27126046, pmcid PMC5182069, which does not itself resolve). VAR-005 cites it as abstract_only.
-    Its meta.json has no author list; the author and page details in VAR-005 were taken from reference
-    17 of PMC5742080 (L104), not from the paper''s own record.
+- note: 'Li et al. 2016 (Science) IS in the corpus, as an abstract-only record with the numeric doc_id 59002764
+    (pmid 27126046, pmcid PMC5182069, which does not itself resolve). VAR-005 cites it as abstract_only. Its
+    meta.json has no author list; the author and page details in VAR-005 were taken from reference 17 of PMC5742080
+    (L104), not from the paper''s own record.
 
     '
-  why: 'This is the chapter''s keystone citation and must appear in references.bib with a correct full
-    author list. A human should fill that in from the DOI. Anything in the paper beyond the abstract -
-    how the 2,893 sQTLs were called, the heritability comparison with eQTLs - cannot be asserted from
-    this record.
+  why: 'This is the chapter''s keystone citation and must appear in references.bib with a correct full author
+    list. A human should fill that in from the DOI. Anything in the paper beyond the abstract - how the 2,893
+    sQTLs were called, the heritability comparison with eQTLs - cannot be asserted from this record.
 
     '
 - note: 'GTEx v8 exists in the corpus only as the 2019 bioRxiv preprint (doi 10.1101/787903); its meta.json
-    carries no journal DOI. Every v8 figure recorded here (VAR-004, VAR-006, VAR-007, VAR-008, VAR-024)
-    was read from the preprint lines cited.
+    carries no journal DOI. Every v8 figure recorded here (VAR-004, VAR-006, VAR-007, VAR-008, VAR-024) was
+    read from the preprint lines cited.
 
     '
-  why: 'Counts and percentages shifted between preprint and published consortium papers in other GTEx
-    releases. Each v8 figure must be re-checked against the journal version before it enters the book,
-    and the reference replaced. The orchestrator should resolve the journal DOI centrally so siblings
-    citing the same preprint use one bibkey.
+  why: 'Counts and percentages shifted between preprint and published consortium papers in other GTEx releases.
+    Each v8 figure must be re-checked against the journal version before it enters the book, and the reference
+    replaced. The orchestrator should resolve the journal DOI centrally so siblings citing the same preprint
+    use one bibkey.
 
     '
 - note: 'Five claims rest on preprints: VAR-014 (per-class SNP heritability, medRxiv), VAR-027 and VAR-028
@@ -1060,81 +1044,78 @@ leads:
     All are marked confidence: medium.
 
     '
-  why: 'Heritability fractions, guideline wording and TWAS association counts are exactly the quantities
-    that change in peer review. Published versions exist in the wider literature for at least the guideline
-    paper.
+  why: 'Heritability fractions, guideline wording and TWAS association counts are exactly the quantities that
+    change in peer review. Published versions exist in the wider literature for at least the guideline paper.
 
     '
-- note: 'Four different quantities circulate under the loose heading of "how much splicing explains",
-    and the chapter must not line them up without naming the metric: the fraction of GWAS loci colocalizing
-    with an sQTL (23 per cent, GTEx v8, enloc); the fraction of sQTLs distinct from eQTLs (61 per cent
-    in brain by COLOC PP3 > 0.8, versus 52 per cent gene-level overlap in GTEx v7 by multivariate transcript-ratio
-    mapping); the share of SNP heritability captured by a QTL annotation (13.9 per cent eQTL, 2.8 per
-    cent sQTL in blood, SBayesRC); and the share of heritability mediated by assayed expression (11 per
-    cent, MESC).
+- note: 'Four different quantities circulate under the loose heading of "how much splicing explains", and the
+    chapter must not line them up without naming the metric: the fraction of GWAS loci colocalizing with an
+    sQTL (23 per cent, GTEx v8, enloc); the fraction of sQTLs distinct from eQTLs (61 per cent in brain by
+    COLOC PP3 > 0.8, versus 52 per cent gene-level overlap in GTEx v7 by multivariate transcript-ratio mapping);
+    the share of SNP heritability captured by a QTL annotation (13.9 per cent eQTL, 2.8 per cent sQTL in blood,
+    SBayesRC); and the share of heritability mediated by assayed expression (11 per cent, MESC).
 
     '
   why: 'Connally et al. explicitly judge splicing QTLs to explain less variance than expression QTLs (VAR-015)
-    while Li 2016 (VAR-005) puts them on a par and GTEx reads its own enrichments as favouring eQTLs in
-    aggregate (VAR-007). This is a real disagreement about different estimands, not a rounding difference,
-    and must be recorded as such.
+    while Li 2016 (VAR-005) puts them on a par and GTEx reads its own enrichments as favouring eQTLs in aggregate
+    (VAR-007). This is a real disagreement about different estimands, not a rounding difference, and must be
+    recorded as such.
 
     '
-- note: 'The "gene-level-invisible fraction" also differs by design and must not be averaged: 70.6 per
-    cent of isoform-abundance QTLs in 67 long-read B-cell samples (VAR-016) against 20 per cent of isoform-ratio
+- note: 'The "gene-level-invisible fraction" also differs by design and must not be averaged: 70.6 per cent
+    of isoform-abundance QTLs in 67 long-read B-cell samples (VAR-016) against 20 per cent of isoform-ratio
     QTLs in 2,622 short-read blood samples (VAR-019). Abundance QTLs and ratio QTLs are different phenotypes,
     and the two studies differ by a factor of forty in sample size.
 
     '
-  why: 'This is the single number a reader will quote from the chapter. Presenting either figure alone,
-    or a blend, would misrepresent both studies.
+  why: 'This is the single number a reader will quote from the chapter. Presenting either figure alone, or
+    a blend, would misrepresent both studies.
 
     '
-- note: 'The B-cell isoform-QTL study also reported that minigene assays validated splice-altering ieQTLs
-    to which splicing-prediction software assigned low scores (PMC12060498, L41 and the following minigene
-    sections). Not recorded as a claim because splice-prediction tool performance belongs to the neuro/Mendelian
-    chapter.
+- note: 'The B-cell isoform-QTL study also reported that minigene assays validated splice-altering ieQTLs to
+    which splicing-prediction software assigned low scores (PMC12060498, L41 and the following minigene sections).
+    Not recorded as a claim because splice-prediction tool performance belongs to the neuro/Mendelian chapter.
 
     '
-  why: 'That chapter may want an independent, QTL-derived check on prediction tools; this is where the
-    data is.
+  why: 'That chapter may want an independent, QTL-derived check on prediction tools; this is where the data
+    is.
 
     '
-- note: 'Searched but not recorded as claims. (a) Cost and turnaround for clinical RNA-seq: the clearest
-    statement located is in a figure caption of PMC8981716 (L58), which says sample preparation runs from
-    hours for a biopsy to weeks for establishing a cell culture; the contract forbids quoting figure captions,
-    so it is left here. PMC6769558 (FFPE fusion detection) also surfaced as mentioning turnaround but
-    was not read. (b) Isoform-level biomarkers: PMC4005667 (isoform-level glioblastoma prognostic signature)
-    and PMC7275609 (colorectal splice-isoform biomarkers) are research findings, not validated assays,
-    and no isoform-level clinical assay was found. (c) A long-read isoform-QTL study in primary rather
-    than immortalised human immune cells: not found. Single-cell long-read lung (bio_8d0d37ad90b8) and
-    cattle (bio_af830efd6f52) isoform-QTL preprints surfaced in search but were not read.
+- note: 'Searched but not recorded as claims. (a) Cost and turnaround for clinical RNA-seq: the clearest statement
+    located is in a figure caption of PMC8981716 (L58), which says sample preparation runs from hours for a
+    biopsy to weeks for establishing a cell culture; the contract forbids quoting figure captions, so it is
+    left here. PMC6769558 (FFPE fusion detection) also surfaced as mentioning turnaround but was not read.
+    (b) Isoform-level biomarkers: PMC4005667 (isoform-level glioblastoma prognostic signature) and PMC7275609
+    (colorectal splice-isoform biomarkers) are research findings, not validated assays, and no isoform-level
+    clinical assay was found. (c) A long-read isoform-QTL study in primary rather than immortalised human immune
+    cells: not found. Single-cell long-read lung (bio_8d0d37ad90b8) and cattle (bio_af830efd6f52) isoform-QTL
+    preprints surfaced in search but were not read.
 
     '
   why: 'The immortalised-cell caveat on the B-cell claims is a reader''s first objection, and the chapter''s
-    clinical half would be stronger with one isoform-level biomarker that is actually an assay. A human
-    with access to the published literature should chase cost and turnaround figures.
+    clinical half would be stronger with one isoform-level biomarker that is actually an assay. A human with
+    access to the published literature should chase cost and turnaround figures.
 
     '
-- note: 'Sibling-file overlap, re-checked against research/0*.yml immediately before handback: of the
-    19 doc_ids cited here, only PMC12060498 (the B-cell isoform-QTL paper) is also cited by a sibling,
-    in research/05-long-reads.yml. Its bibkey here was set to nagura2025longread to match that file. Siblings
-    were still writing, so this is a snapshot.
+- note: 'Sibling-file overlap, re-checked against research/0*.yml immediately before handback: of the 19 doc_ids
+    cited here, only PMC12060498 (the B-cell isoform-QTL paper) is also cited by a sibling, in research/05-long-reads.yml.
+    Its bibkey here was set to nagura2025longread to match that file. Siblings were still writing, so this
+    is a snapshot.
 
     '
-  why: 'references.bib must not acquire two keys for one paper. The orchestrator should re-run the check
-    at merge time; PMC11581093 (isoform-level cancer TWAS, bibkey chang2025isoform) is the most likely
-    future collision with research/06-cancer.yml, and bio_f292f4666c1a (GTEx v8, bibkey aguet2019gtex)
-    with any sibling that cites GTEx.
+  why: 'references.bib must not acquire two keys for one paper. The orchestrator should re-run the check at
+    merge time; PMC11581093 (isoform-level cancer TWAS, bibkey chang2025isoform) is the most likely future
+    collision with research/06-cancer.yml, and bio_f292f4666c1a (GTEx v8, bibkey aguet2019gtex) with any sibling
+    that cites GTEx.
 
     '
-- note: 'RNA-binding-protein QTLs are covered here only indirectly, through the finding that splicing
-    QTLs are enriched at RBP binding sites relative to expression QTLs. A dedicated claim on allele-specific
-    RBP binding was written and then dropped for the claim cap: the anchor is PMC6430814 (BEAPR; allele-specific
+- note: 'RNA-binding-protein QTLs are covered here only indirectly, through the finding that splicing QTLs
+    are enriched at RBP binding sites relative to expression QTLs. A dedicated claim on allele-specific RBP
+    binding was written and then dropped for the claim cap: the anchor is PMC6430814 (BEAPR; allele-specific
     binding called from the ENCODE eCLIP data for 154 RBPs in HepG2 and K562), lines L20 and L21.
 
     '
-  why: 'If the chapter wants an explicit RBP-QTL mechanism paragraph, that paper is the place to start
-    and the claim can be reinstated in one step.
+  why: 'If the chapter wants an explicit RBP-QTL mechanism paragraph, that paper is the place to start and
+    the claim can be reinstated in one step.
 
     '

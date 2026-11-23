@@ -41,10 +41,18 @@ def corpus_root(doc_id: str) -> str:
     reported as QUOTE NOT FOUND. Eight such claims were flagged on one chapter,
     all eight byte-exact, and the risk was that someone would resolve the
     failure by deleting the best primary sources in the chapter.
+
+    The `tri_` prefix was missing for the same reason, and it cost more than a
+    false alarm. Trial records from the registries other than ClinicalTrials.gov
+    carry that prefix: the European CTIS, ISRCTN, jRCT and the WHO platform. A
+    research agent found that the only quantified endpoint wording for one trial
+    sat in its CTIS record, read it, confirmed it byte-exact, and then could not
+    record the claim because this function sent the verifier to /papers. The
+    record went into a leads block instead, with the diagnosis attached.
     """
     if doc_id.startswith("fda_"):
         return "/fda"
-    if doc_id.startswith("NCT"):
+    if doc_id.startswith("NCT") or doc_id.startswith("tri_"):
         return "/trials"
     if re.fullmatch(r"[OPQ][0-9][A-Z0-9]{3}[0-9](-\d+)?", doc_id):
         return "/proteins"

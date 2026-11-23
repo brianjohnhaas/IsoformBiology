@@ -1109,8 +1109,8 @@ claims:
     chapter figure that already contrasts estimate with measurement.
 - id: DRG-060
   claim: 'For one named oncogene the measured total is small and countable: the first top-down study covering
-    both KRAS4A and KRAS4B completely characterised 39 proteoforms across colorectal cancer cell lines and
-    primary tumour samples.'
+    both KRAS4A and KRAS4B completely characterised 39 proteoforms, found in colorectal cancer cell lines together
+    with primary tumour samples.'
   topic: 'reference resources: how little is mapped for a drug target'
   source:
     doc_id: PMC9808003
@@ -1132,6 +1132,7 @@ claims:
   confidence: high
   figure_idea: A single gene drawn as a combinatorial tree of splice form, hotspot mutation and C-terminal
     modification, with the experimentally characterised branches marked, to show how few are occupied by data.
+  note: Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 - id: DRG-061
   claim: 'Proteoform resolution can change what a target does: among those KRAS forms was a KRAS4B lacking
     the C185 residue and its C-terminal modifications, which failed to reach the plasma membrane and reduced

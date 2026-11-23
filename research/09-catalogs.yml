@@ -4,22 +4,21 @@ date: 2026-11-21
 corpus: paperclip 0.8.23
 claims:
 - id: CAT-001
-  claim: 'ENCODE4 built its long-read transcriptome from 264 PacBio libraries drawn from 81 human and
-    mouse tissue or cell-line samples, which the authors reduce to 49 unique tissues or cell types once
-    mouse developmental time-points are collapsed.
+  claim: 'ENCODE4 built its long-read transcriptome from 264 PacBio libraries drawn from 81 human and mouse
+    tissue or cell-line samples, which the authors reduce to 49 unique tissues or cell types once mouse developmental
+    time-points are collapsed.
 
     '
   topic: ENCODE4 long-read RNA-seq
   source:
     doc_id: bio_ad940b766ccc
     title: The ENCODE4 long-read RNA-seq collection reveals distinct classes of transcript structure diversity
-    authors: Reese, F.; Williams, B.; Balderrama-Gutierrez, G.; Wyman, D.; Çelik, M. H.; Rebboah, E.;
-      Rezaie, N.; Trout, D.; Razavi-Mohseni, M.; Jiang, Y.; Borsari, B.; Morabito, S.; Liang, H. Y.; McGill,
-      C. J.; Rahmanian, S.; Sakr, J.; Jiang, S.; Zeng, W.; Carvalho, K.; Weimer, A. K.; Dionne, L. A.;
-      McShane, A.; Bedi, K.; Elhajjajy, S. I.; Upchurch, S.; Jou, J.; Youngworth, I.; Gabdank, I.; Sud,
-      P.; Jolanki, O.; Strattan, J. S.; Kagda, M. S.; Snyder, M. P.; Hitz, B. C.; Moore, J. E.; Weng,
-      Z.; Bennett, D.; Reinholdt, L.; Ljungman, M.; Beer, M. A.; Gerstein, M. B.; Pachter, L.; Guigó,
-      R.; Wold, B. J.; Mortazavi, A.
+    authors: Reese, F.; Williams, B.; Balderrama-Gutierrez, G.; Wyman, D.; Çelik, M. H.; Rebboah, E.; Rezaie,
+      N.; Trout, D.; Razavi-Mohseni, M.; Jiang, Y.; Borsari, B.; Morabito, S.; Liang, H. Y.; McGill, C. J.;
+      Rahmanian, S.; Sakr, J.; Jiang, S.; Zeng, W.; Carvalho, K.; Weimer, A. K.; Dionne, L. A.; McShane, A.;
+      Bedi, K.; Elhajjajy, S. I.; Upchurch, S.; Jou, J.; Youngworth, I.; Gabdank, I.; Sud, P.; Jolanki, O.;
+      Strattan, J. S.; Kagda, M. S.; Snyder, M. P.; Hitz, B. C.; Moore, J. E.; Weng, Z.; Bennett, D.; Reinholdt,
+      L.; Ljungman, M.; Beer, M. A.; Gerstein, M. B.; Pachter, L.; Guigó, R.; Wold, B. J.; Mortazavi, A.
     journal: bioRxiv
     year: 2023
     doi: 10.1101/2023.05.15.540865
@@ -29,33 +28,32 @@ claims:
     text_access: full_text
     lines: L43
     anchor: https://paperclip.gxl.ai/citations/papers/bio_ad940b766ccc#L43
-    quote: 'profiled 81 tissues or cell lines by using the PacBio sequencing platform on 264 human and
-      mouse libraries that include replicate samples
+    quote: 'profiled 81 tissues or cell lines by using the PacBio sequencing platform on 264 human and mouse
+      libraries that include replicate samples
 
       '
   confidence: high
   figure_idea: 'A single panel showing, for the main human isoform catalogs side by side, how many biological
-    samples each rests on versus how many transcripts it reports - making the point that catalog size
-    and sampling breadth are decoupled.
+    samples each rests on versus how many transcripts it reports - making the point that catalog size and sampling
+    breadth are decoupled.
 
     '
 - id: CAT-002
   claim: 'In the ENCODE4 human long-read data, 206,806 transcripts from polyadenylated genes were detected
-    at or above 1 TPM, and 76,469 of them - about 37 per cent - used an exon junction chain annotated
-    in neither GENCODE v29 nor v40.
+    at or above 1 TPM, and 76,469 of them - about 37 per cent - used an exon junction chain annotated in neither
+    GENCODE v29 nor v40.
 
     '
   topic: ENCODE4 long-read RNA-seq
   source:
     doc_id: bio_ad940b766ccc
     title: The ENCODE4 long-read RNA-seq collection reveals distinct classes of transcript structure diversity
-    authors: Reese, F.; Williams, B.; Balderrama-Gutierrez, G.; Wyman, D.; Çelik, M. H.; Rebboah, E.;
-      Rezaie, N.; Trout, D.; Razavi-Mohseni, M.; Jiang, Y.; Borsari, B.; Morabito, S.; Liang, H. Y.; McGill,
-      C. J.; Rahmanian, S.; Sakr, J.; Jiang, S.; Zeng, W.; Carvalho, K.; Weimer, A. K.; Dionne, L. A.;
-      McShane, A.; Bedi, K.; Elhajjajy, S. I.; Upchurch, S.; Jou, J.; Youngworth, I.; Gabdank, I.; Sud,
-      P.; Jolanki, O.; Strattan, J. S.; Kagda, M. S.; Snyder, M. P.; Hitz, B. C.; Moore, J. E.; Weng,
-      Z.; Bennett, D.; Reinholdt, L.; Ljungman, M.; Beer, M. A.; Gerstein, M. B.; Pachter, L.; Guigó,
-      R.; Wold, B. J.; Mortazavi, A.
+    authors: Reese, F.; Williams, B.; Balderrama-Gutierrez, G.; Wyman, D.; Çelik, M. H.; Rebboah, E.; Rezaie,
+      N.; Trout, D.; Razavi-Mohseni, M.; Jiang, Y.; Borsari, B.; Morabito, S.; Liang, H. Y.; McGill, C. J.;
+      Rahmanian, S.; Sakr, J.; Jiang, S.; Zeng, W.; Carvalho, K.; Weimer, A. K.; Dionne, L. A.; McShane, A.;
+      Bedi, K.; Elhajjajy, S. I.; Upchurch, S.; Jou, J.; Youngworth, I.; Gabdank, I.; Sud, P.; Jolanki, O.;
+      Strattan, J. S.; Kagda, M. S.; Snyder, M. P.; Hitz, B. C.; Moore, J. E.; Weng, Z.; Bennett, D.; Reinholdt,
+      L.; Ljungman, M.; Beer, M. A.; Gerstein, M. B.; Pachter, L.; Guigó, R.; Wold, B. J.; Mortazavi, A.
     journal: bioRxiv
     year: 2023
     doi: 10.1101/2023.05.15.540865
@@ -65,8 +63,8 @@ claims:
     text_access: full_text
     lines: L54
     anchor: https://paperclip.gxl.ai/citations/papers/bio_ad940b766ccc#L54
-    quote: 'Altogether, we detected 206,806 transcripts expressed >= 1 TPM from polyA genes, 76,469 of
-      which have exon junction chains unannotated in GENCODE v29 or v40.
+    quote: 'Altogether, we detected 206,806 transcripts expressed >= 1 TPM from polyA genes, 76,469 of which
+      have exon junction chains unannotated in GENCODE v29 or v40.
 
       '
   confidence: high
@@ -79,13 +77,12 @@ claims:
   source:
     doc_id: bio_ad940b766ccc
     title: The ENCODE4 long-read RNA-seq collection reveals distinct classes of transcript structure diversity
-    authors: Reese, F.; Williams, B.; Balderrama-Gutierrez, G.; Wyman, D.; Çelik, M. H.; Rebboah, E.;
-      Rezaie, N.; Trout, D.; Razavi-Mohseni, M.; Jiang, Y.; Borsari, B.; Morabito, S.; Liang, H. Y.; McGill,
-      C. J.; Rahmanian, S.; Sakr, J.; Jiang, S.; Zeng, W.; Carvalho, K.; Weimer, A. K.; Dionne, L. A.;
-      McShane, A.; Bedi, K.; Elhajjajy, S. I.; Upchurch, S.; Jou, J.; Youngworth, I.; Gabdank, I.; Sud,
-      P.; Jolanki, O.; Strattan, J. S.; Kagda, M. S.; Snyder, M. P.; Hitz, B. C.; Moore, J. E.; Weng,
-      Z.; Bennett, D.; Reinholdt, L.; Ljungman, M.; Beer, M. A.; Gerstein, M. B.; Pachter, L.; Guigó,
-      R.; Wold, B. J.; Mortazavi, A.
+    authors: Reese, F.; Williams, B.; Balderrama-Gutierrez, G.; Wyman, D.; Çelik, M. H.; Rebboah, E.; Rezaie,
+      N.; Trout, D.; Razavi-Mohseni, M.; Jiang, Y.; Borsari, B.; Morabito, S.; Liang, H. Y.; McGill, C. J.;
+      Rahmanian, S.; Sakr, J.; Jiang, S.; Zeng, W.; Carvalho, K.; Weimer, A. K.; Dionne, L. A.; McShane, A.;
+      Bedi, K.; Elhajjajy, S. I.; Upchurch, S.; Jou, J.; Youngworth, I.; Gabdank, I.; Sud, P.; Jolanki, O.;
+      Strattan, J. S.; Kagda, M. S.; Snyder, M. P.; Hitz, B. C.; Moore, J. E.; Weng, Z.; Bennett, D.; Reinholdt,
+      L.; Ljungman, M.; Beer, M. A.; Gerstein, M. B.; Pachter, L.; Guigó, R.; Wold, B. J.; Mortazavi, A.
     journal: bioRxiv
     year: 2023
     doi: 10.1101/2023.05.15.540865
@@ -100,28 +97,25 @@ claims:
 
       '
   confidence: high
-  figure_idea: 'Three stacked bars - start sites, junction chains, end sites - each split into annotated,
-    novel-with-orthogonal-support, and novel-unsupported, so a reader sees that "novel" means something
-    different on each axis.
+  figure_idea: 'Three stacked bars - start sites, junction chains, end sites - each split into annotated, novel-with-orthogonal-support,
+    and novel-unsupported, so a reader sees that "novel" means something different on each axis.
 
     '
 - id: CAT-005
-  claim: 'Across the ENCODE4 sample panel, nearly three quarters of human protein-coding genes did not
-    have one stable top-expressed transcript: which isoform dominated changed with the tissue or cell
-    line.
+  claim: 'Across the ENCODE4 sample panel, nearly three quarters of human protein-coding genes did not have
+    one stable top-expressed transcript: which isoform dominated changed with the tissue or cell line.
 
     '
   topic: ENCODE4 long-read RNA-seq
   source:
     doc_id: bio_ad940b766ccc
     title: The ENCODE4 long-read RNA-seq collection reveals distinct classes of transcript structure diversity
-    authors: Reese, F.; Williams, B.; Balderrama-Gutierrez, G.; Wyman, D.; Çelik, M. H.; Rebboah, E.;
-      Rezaie, N.; Trout, D.; Razavi-Mohseni, M.; Jiang, Y.; Borsari, B.; Morabito, S.; Liang, H. Y.; McGill,
-      C. J.; Rahmanian, S.; Sakr, J.; Jiang, S.; Zeng, W.; Carvalho, K.; Weimer, A. K.; Dionne, L. A.;
-      McShane, A.; Bedi, K.; Elhajjajy, S. I.; Upchurch, S.; Jou, J.; Youngworth, I.; Gabdank, I.; Sud,
-      P.; Jolanki, O.; Strattan, J. S.; Kagda, M. S.; Snyder, M. P.; Hitz, B. C.; Moore, J. E.; Weng,
-      Z.; Bennett, D.; Reinholdt, L.; Ljungman, M.; Beer, M. A.; Gerstein, M. B.; Pachter, L.; Guigó,
-      R.; Wold, B. J.; Mortazavi, A.
+    authors: Reese, F.; Williams, B.; Balderrama-Gutierrez, G.; Wyman, D.; Çelik, M. H.; Rebboah, E.; Rezaie,
+      N.; Trout, D.; Razavi-Mohseni, M.; Jiang, Y.; Borsari, B.; Morabito, S.; Liang, H. Y.; McGill, C. J.;
+      Rahmanian, S.; Sakr, J.; Jiang, S.; Zeng, W.; Carvalho, K.; Weimer, A. K.; Dionne, L. A.; McShane, A.;
+      Bedi, K.; Elhajjajy, S. I.; Upchurch, S.; Jou, J.; Youngworth, I.; Gabdank, I.; Sud, P.; Jolanki, O.;
+      Strattan, J. S.; Kagda, M. S.; Snyder, M. P.; Hitz, B. C.; Moore, J. E.; Weng, Z.; Bennett, D.; Reinholdt,
+      L.; Ljungman, M.; Beer, M. A.; Gerstein, M. B.; Pachter, L.; Guigó, R.; Wold, B. J.; Mortazavi, A.
     journal: bioRxiv
     year: 2023
     doi: 10.1101/2023.05.15.540865
@@ -131,14 +125,13 @@ claims:
     text_access: full_text
     lines: L62
     anchor: https://paperclip.gxl.ai/citations/papers/bio_ad940b766ccc#L62
-    quote: '73.0% of protein coding genes have more than one predominant transcript across the samples
-      surveyed
+    quote: '73.0% of protein coding genes have more than one predominant transcript across the samples surveyed
 
       '
   confidence: high
-  figure_idea: 'For a handful of genes, a strip per tissue showing which isoform is the dominant one,
-    so the reader sees the dominant isoform switching across tissues rather than one canonical transcript
-    holding everywhere.
+  figure_idea: 'For a handful of genes, a strip per tissue showing which isoform is the dominant one, so the
+    reader sees the dominant isoform switching across tissues rather than one canonical transcript holding
+    everywhere.
 
     '
 - id: CAT-006
@@ -150,13 +143,12 @@ claims:
   source:
     doc_id: bio_ad940b766ccc
     title: The ENCODE4 long-read RNA-seq collection reveals distinct classes of transcript structure diversity
-    authors: Reese, F.; Williams, B.; Balderrama-Gutierrez, G.; Wyman, D.; Çelik, M. H.; Rebboah, E.;
-      Rezaie, N.; Trout, D.; Razavi-Mohseni, M.; Jiang, Y.; Borsari, B.; Morabito, S.; Liang, H. Y.; McGill,
-      C. J.; Rahmanian, S.; Sakr, J.; Jiang, S.; Zeng, W.; Carvalho, K.; Weimer, A. K.; Dionne, L. A.;
-      McShane, A.; Bedi, K.; Elhajjajy, S. I.; Upchurch, S.; Jou, J.; Youngworth, I.; Gabdank, I.; Sud,
-      P.; Jolanki, O.; Strattan, J. S.; Kagda, M. S.; Snyder, M. P.; Hitz, B. C.; Moore, J. E.; Weng,
-      Z.; Bennett, D.; Reinholdt, L.; Ljungman, M.; Beer, M. A.; Gerstein, M. B.; Pachter, L.; Guigó,
-      R.; Wold, B. J.; Mortazavi, A.
+    authors: Reese, F.; Williams, B.; Balderrama-Gutierrez, G.; Wyman, D.; Çelik, M. H.; Rebboah, E.; Rezaie,
+      N.; Trout, D.; Razavi-Mohseni, M.; Jiang, Y.; Borsari, B.; Morabito, S.; Liang, H. Y.; McGill, C. J.;
+      Rahmanian, S.; Sakr, J.; Jiang, S.; Zeng, W.; Carvalho, K.; Weimer, A. K.; Dionne, L. A.; McShane, A.;
+      Bedi, K.; Elhajjajy, S. I.; Upchurch, S.; Jou, J.; Youngworth, I.; Gabdank, I.; Sud, P.; Jolanki, O.;
+      Strattan, J. S.; Kagda, M. S.; Snyder, M. P.; Hitz, B. C.; Moore, J. E.; Weng, Z.; Bennett, D.; Reinholdt,
+      L.; Ljungman, M.; Beer, M. A.; Gerstein, M. B.; Pachter, L.; Guigó, R.; Wold, B. J.; Mortazavi, A.
     journal: bioRxiv
     year: 2023
     doi: 10.1101/2023.05.15.540865
@@ -166,28 +158,28 @@ claims:
     text_access: full_text
     lines: L39
     anchor: https://paperclip.gxl.ai/citations/papers/bio_ad940b766ccc#L39
-    quote: 'a common assumption in genomics and medical genetics is that we only need to consider one
-      or at most a handful of representative transcripts
+    quote: 'a common assumption in genomics and medical genetics is that we only need to consider one or at
+      most a handful of representative transcripts
 
       '
   confidence: high
 - id: CAT-007
-  claim: 'GENCODE''s human and mouse annotation was originally produced by human curators working locus
-    by locus along each chromosome, and only became project-based after that first full pass was finished.
+  claim: 'GENCODE''s human and mouse annotation was originally produced by human curators working locus by
+    locus along each chromosome, and only became project-based after that first full pass was finished.
 
     '
   topic: GENCODE / Ensembl annotation
   source:
     doc_id: PMC11701607
     title: 'GENCODE 2025: reference gene annotation for human and mouse'
-    authors: Mudge, J. M.; Carbonell-Sala, S.; Diekhans, M.; Martinez, J. G.; Hunt, T.; Jungreis, I.;
-      Loveland, J. E.; Arnan, C.; Barnes, I.; Bennett, R.; Berry, A.; Bignell, A.; Cerdán-Vélez, D.; Cochran,
-      K.; Cortés, L. T.; Davidson, C.; Donaldson, S.; Dursun, C.; Fatima, R.; Hardy, M.; Hebbar, P.; Hollis,
-      Z.; James, B. T.; Jiang, Y.; Johnson, R.; Kaur, G.; Kay, M.; Mangan, R. J.; Maquedano, M.; Gómez,
-      L. M.; Mathlouthi, N.; Merritt, R.; Ni, P.; Palumbo, E.; Perteghella, T.; Pozo, F.; Raj, S.; Sisu,
-      C.; Steed, E.; Sumathipala, D.; Suner, M. M.; Uszczynska-Ratajczak, B.; Wass, E.; Yang, Y. T.; Zhang,
-      D.; Finn, R. D.; Gerstein, M.; Guigó, R.; Hubbard, T. J. P.; Kellis, M.; Kundaje, A.; Paten, B.;
-      Tress, M. L.; Birney, E.; Martin, F. J.; Frankish, A.
+    authors: Mudge, J. M.; Carbonell-Sala, S.; Diekhans, M.; Martinez, J. G.; Hunt, T.; Jungreis, I.; Loveland,
+      J. E.; Arnan, C.; Barnes, I.; Bennett, R.; Berry, A.; Bignell, A.; Cerdán-Vélez, D.; Cochran, K.; Cortés,
+      L. T.; Davidson, C.; Donaldson, S.; Dursun, C.; Fatima, R.; Hardy, M.; Hebbar, P.; Hollis, Z.; James,
+      B. T.; Jiang, Y.; Johnson, R.; Kaur, G.; Kay, M.; Mangan, R. J.; Maquedano, M.; Gómez, L. M.; Mathlouthi,
+      N.; Merritt, R.; Ni, P.; Palumbo, E.; Perteghella, T.; Pozo, F.; Raj, S.; Sisu, C.; Steed, E.; Sumathipala,
+      D.; Suner, M. M.; Uszczynska-Ratajczak, B.; Wass, E.; Yang, Y. T.; Zhang, D.; Finn, R. D.; Gerstein,
+      M.; Guigó, R.; Hubbard, T. J. P.; Kellis, M.; Kundaje, A.; Paten, B.; Tress, M. L.; Birney, E.; Martin,
+      F. J.; Frankish, A.
     journal: Nucleic Acids Research
     year: 2025
     doi: 10.1093/nar/gkae1078
@@ -197,29 +189,29 @@ claims:
     text_access: full_text
     lines: L94
     anchor: https://paperclip.gxl.ai/citations/papers/PMC11701607#L94
-    quote: 'expert manual annotators moved along each chromosome 5′ to 3′, one locus at a time, building
-      transcript models as required
+    quote: 'expert manual annotators moved along each chromosome 5′ to 3′, one locus at a time, building transcript
+      models as required
 
       '
   confidence: high
 - id: CAT-008
-  claim: 'Long reads entered the GENCODE pipeline through targeted capture sequencing plus a supervised
-    annotation workflow, TAGENE, built specifically so that machine-generated transcript models could
-    reach close to manual-curation quality at scale.
+  claim: 'Long reads entered the GENCODE pipeline through targeted capture sequencing plus a supervised annotation
+    workflow, TAGENE, built specifically so that machine-generated transcript models could reach close to manual-curation
+    quality at scale.
 
     '
   topic: GENCODE / Ensembl annotation
   source:
     doc_id: PMC11701607
     title: 'GENCODE 2025: reference gene annotation for human and mouse'
-    authors: Mudge, J. M.; Carbonell-Sala, S.; Diekhans, M.; Martinez, J. G.; Hunt, T.; Jungreis, I.;
-      Loveland, J. E.; Arnan, C.; Barnes, I.; Bennett, R.; Berry, A.; Bignell, A.; Cerdán-Vélez, D.; Cochran,
-      K.; Cortés, L. T.; Davidson, C.; Donaldson, S.; Dursun, C.; Fatima, R.; Hardy, M.; Hebbar, P.; Hollis,
-      Z.; James, B. T.; Jiang, Y.; Johnson, R.; Kaur, G.; Kay, M.; Mangan, R. J.; Maquedano, M.; Gómez,
-      L. M.; Mathlouthi, N.; Merritt, R.; Ni, P.; Palumbo, E.; Perteghella, T.; Pozo, F.; Raj, S.; Sisu,
-      C.; Steed, E.; Sumathipala, D.; Suner, M. M.; Uszczynska-Ratajczak, B.; Wass, E.; Yang, Y. T.; Zhang,
-      D.; Finn, R. D.; Gerstein, M.; Guigó, R.; Hubbard, T. J. P.; Kellis, M.; Kundaje, A.; Paten, B.;
-      Tress, M. L.; Birney, E.; Martin, F. J.; Frankish, A.
+    authors: Mudge, J. M.; Carbonell-Sala, S.; Diekhans, M.; Martinez, J. G.; Hunt, T.; Jungreis, I.; Loveland,
+      J. E.; Arnan, C.; Barnes, I.; Bennett, R.; Berry, A.; Bignell, A.; Cerdán-Vélez, D.; Cochran, K.; Cortés,
+      L. T.; Davidson, C.; Donaldson, S.; Dursun, C.; Fatima, R.; Hardy, M.; Hebbar, P.; Hollis, Z.; James,
+      B. T.; Jiang, Y.; Johnson, R.; Kaur, G.; Kay, M.; Mangan, R. J.; Maquedano, M.; Gómez, L. M.; Mathlouthi,
+      N.; Merritt, R.; Ni, P.; Palumbo, E.; Perteghella, T.; Pozo, F.; Raj, S.; Sisu, C.; Steed, E.; Sumathipala,
+      D.; Suner, M. M.; Uszczynska-Ratajczak, B.; Wass, E.; Yang, Y. T.; Zhang, D.; Finn, R. D.; Gerstein,
+      M.; Guigó, R.; Hubbard, T. J. P.; Kellis, M.; Kundaje, A.; Paten, B.; Tress, M. L.; Birney, E.; Martin,
+      F. J.; Frankish, A.
     journal: Nucleic Acids Research
     year: 2025
     doi: 10.1093/nar/gkae1078
@@ -235,23 +227,23 @@ claims:
       '
   confidence: high
 - id: CAT-009
-  claim: 'Long-read capture added over 140,000 new human and 132,000 new mouse lncRNA transcript models
-    in a single annotation generation, which the project describes as roughly three-fold and six-fold
-    increases in those respective counts.
+  claim: 'Long-read capture added over 140,000 new human and 132,000 new mouse lncRNA transcript models in
+    a single annotation generation, which the project describes as roughly three-fold and six-fold increases
+    in those respective counts.
 
     '
   topic: GENCODE / Ensembl annotation
   source:
     doc_id: PMC11701607
     title: 'GENCODE 2025: reference gene annotation for human and mouse'
-    authors: Mudge, J. M.; Carbonell-Sala, S.; Diekhans, M.; Martinez, J. G.; Hunt, T.; Jungreis, I.;
-      Loveland, J. E.; Arnan, C.; Barnes, I.; Bennett, R.; Berry, A.; Bignell, A.; Cerdán-Vélez, D.; Cochran,
-      K.; Cortés, L. T.; Davidson, C.; Donaldson, S.; Dursun, C.; Fatima, R.; Hardy, M.; Hebbar, P.; Hollis,
-      Z.; James, B. T.; Jiang, Y.; Johnson, R.; Kaur, G.; Kay, M.; Mangan, R. J.; Maquedano, M.; Gómez,
-      L. M.; Mathlouthi, N.; Merritt, R.; Ni, P.; Palumbo, E.; Perteghella, T.; Pozo, F.; Raj, S.; Sisu,
-      C.; Steed, E.; Sumathipala, D.; Suner, M. M.; Uszczynska-Ratajczak, B.; Wass, E.; Yang, Y. T.; Zhang,
-      D.; Finn, R. D.; Gerstein, M.; Guigó, R.; Hubbard, T. J. P.; Kellis, M.; Kundaje, A.; Paten, B.;
-      Tress, M. L.; Birney, E.; Martin, F. J.; Frankish, A.
+    authors: Mudge, J. M.; Carbonell-Sala, S.; Diekhans, M.; Martinez, J. G.; Hunt, T.; Jungreis, I.; Loveland,
+      J. E.; Arnan, C.; Barnes, I.; Bennett, R.; Berry, A.; Bignell, A.; Cerdán-Vélez, D.; Cochran, K.; Cortés,
+      L. T.; Davidson, C.; Donaldson, S.; Dursun, C.; Fatima, R.; Hardy, M.; Hebbar, P.; Hollis, Z.; James,
+      B. T.; Jiang, Y.; Johnson, R.; Kaur, G.; Kay, M.; Mangan, R. J.; Maquedano, M.; Gómez, L. M.; Mathlouthi,
+      N.; Merritt, R.; Ni, P.; Palumbo, E.; Perteghella, T.; Pozo, F.; Raj, S.; Sisu, C.; Steed, E.; Sumathipala,
+      D.; Suner, M. M.; Uszczynska-Ratajczak, B.; Wass, E.; Yang, Y. T.; Zhang, D.; Finn, R. D.; Gerstein,
+      M.; Guigó, R.; Hubbard, T. J. P.; Kellis, M.; Kundaje, A.; Paten, B.; Tress, M. L.; Birney, E.; Martin,
+      F. J.; Frankish, A.
     journal: Nucleic Acids Research
     year: 2025
     doi: 10.1093/nar/gkae1078
@@ -267,22 +259,22 @@ claims:
   confidence: high
 - id: CAT-010
   claim: 'GENCODE''s own summary of two years of releases is that growth came from lncRNA genes and transcripts
-    while protein-coding counts moved only incrementally, and that annotation is not purely additive:
-    over 37,000 existing human and mouse models were modified in the same period.
+    while protein-coding counts moved only incrementally, and that annotation is not purely additive: over
+    37,000 existing human and mouse models were modified in the same period.
 
     '
   topic: GENCODE / Ensembl annotation
   source:
     doc_id: PMC11701607
     title: 'GENCODE 2025: reference gene annotation for human and mouse'
-    authors: Mudge, J. M.; Carbonell-Sala, S.; Diekhans, M.; Martinez, J. G.; Hunt, T.; Jungreis, I.;
-      Loveland, J. E.; Arnan, C.; Barnes, I.; Bennett, R.; Berry, A.; Bignell, A.; Cerdán-Vélez, D.; Cochran,
-      K.; Cortés, L. T.; Davidson, C.; Donaldson, S.; Dursun, C.; Fatima, R.; Hardy, M.; Hebbar, P.; Hollis,
-      Z.; James, B. T.; Jiang, Y.; Johnson, R.; Kaur, G.; Kay, M.; Mangan, R. J.; Maquedano, M.; Gómez,
-      L. M.; Mathlouthi, N.; Merritt, R.; Ni, P.; Palumbo, E.; Perteghella, T.; Pozo, F.; Raj, S.; Sisu,
-      C.; Steed, E.; Sumathipala, D.; Suner, M. M.; Uszczynska-Ratajczak, B.; Wass, E.; Yang, Y. T.; Zhang,
-      D.; Finn, R. D.; Gerstein, M.; Guigó, R.; Hubbard, T. J. P.; Kellis, M.; Kundaje, A.; Paten, B.;
-      Tress, M. L.; Birney, E.; Martin, F. J.; Frankish, A.
+    authors: Mudge, J. M.; Carbonell-Sala, S.; Diekhans, M.; Martinez, J. G.; Hunt, T.; Jungreis, I.; Loveland,
+      J. E.; Arnan, C.; Barnes, I.; Bennett, R.; Berry, A.; Bignell, A.; Cerdán-Vélez, D.; Cochran, K.; Cortés,
+      L. T.; Davidson, C.; Donaldson, S.; Dursun, C.; Fatima, R.; Hardy, M.; Hebbar, P.; Hollis, Z.; James,
+      B. T.; Jiang, Y.; Johnson, R.; Kaur, G.; Kay, M.; Mangan, R. J.; Maquedano, M.; Gómez, L. M.; Mathlouthi,
+      N.; Merritt, R.; Ni, P.; Palumbo, E.; Perteghella, T.; Pozo, F.; Raj, S.; Sisu, C.; Steed, E.; Sumathipala,
+      D.; Suner, M. M.; Uszczynska-Ratajczak, B.; Wass, E.; Yang, Y. T.; Zhang, D.; Finn, R. D.; Gerstein,
+      M.; Guigó, R.; Hubbard, T. J. P.; Kellis, M.; Kundaje, A.; Paten, B.; Tress, M. L.; Birney, E.; Martin,
+      F. J.; Frankish, A.
     journal: Nucleic Acids Research
     year: 2025
     doi: 10.1093/nar/gkae1078
@@ -292,33 +284,33 @@ claims:
     text_access: full_text
     lines: L83
     anchor: https://paperclip.gxl.ai/citations/papers/PMC11701607#L83
-    quote: 'The major trend over this time for both species is the substantial addition of new lncRNA
-      genes and transcripts, while changes in protein-coding gene and
+    quote: 'The major trend over this time for both species is the substantial addition of new lncRNA genes
+      and transcripts, while changes in protein-coding gene and
 
       '
   confidence: high
-  figure_idea: 'Two lines over GENCODE release number - protein-coding transcripts and lncRNA transcripts
-    - on the same axes, to show one curve flat and the other stepping sharply upward when long reads arrive.
+  figure_idea: 'Two lines over GENCODE release number - protein-coding transcripts and lncRNA transcripts -
+    on the same axes, to show one curve flat and the other stepping sharply upward when long reads arrive.
     Counts must be taken from one source so the two series use the same definition of a transcript.
 
     '
 - id: CAT-011
-  claim: 'GENCODE itself expects per-gene transcript counts in the tens to hundreds to become normal,
-    and states plainly that many of those transcripts will have unknown function.
+  claim: 'GENCODE itself expects per-gene transcript counts in the tens to hundreds to become normal, and states
+    plainly that many of those transcripts will have unknown function.
 
     '
   topic: GENCODE / Ensembl annotation
   source:
     doc_id: PMC11701607
     title: 'GENCODE 2025: reference gene annotation for human and mouse'
-    authors: Mudge, J. M.; Carbonell-Sala, S.; Diekhans, M.; Martinez, J. G.; Hunt, T.; Jungreis, I.;
-      Loveland, J. E.; Arnan, C.; Barnes, I.; Bennett, R.; Berry, A.; Bignell, A.; Cerdán-Vélez, D.; Cochran,
-      K.; Cortés, L. T.; Davidson, C.; Donaldson, S.; Dursun, C.; Fatima, R.; Hardy, M.; Hebbar, P.; Hollis,
-      Z.; James, B. T.; Jiang, Y.; Johnson, R.; Kaur, G.; Kay, M.; Mangan, R. J.; Maquedano, M.; Gómez,
-      L. M.; Mathlouthi, N.; Merritt, R.; Ni, P.; Palumbo, E.; Perteghella, T.; Pozo, F.; Raj, S.; Sisu,
-      C.; Steed, E.; Sumathipala, D.; Suner, M. M.; Uszczynska-Ratajczak, B.; Wass, E.; Yang, Y. T.; Zhang,
-      D.; Finn, R. D.; Gerstein, M.; Guigó, R.; Hubbard, T. J. P.; Kellis, M.; Kundaje, A.; Paten, B.;
-      Tress, M. L.; Birney, E.; Martin, F. J.; Frankish, A.
+    authors: Mudge, J. M.; Carbonell-Sala, S.; Diekhans, M.; Martinez, J. G.; Hunt, T.; Jungreis, I.; Loveland,
+      J. E.; Arnan, C.; Barnes, I.; Bennett, R.; Berry, A.; Bignell, A.; Cerdán-Vélez, D.; Cochran, K.; Cortés,
+      L. T.; Davidson, C.; Donaldson, S.; Dursun, C.; Fatima, R.; Hardy, M.; Hebbar, P.; Hollis, Z.; James,
+      B. T.; Jiang, Y.; Johnson, R.; Kaur, G.; Kay, M.; Mangan, R. J.; Maquedano, M.; Gómez, L. M.; Mathlouthi,
+      N.; Merritt, R.; Ni, P.; Palumbo, E.; Perteghella, T.; Pozo, F.; Raj, S.; Sisu, C.; Steed, E.; Sumathipala,
+      D.; Suner, M. M.; Uszczynska-Ratajczak, B.; Wass, E.; Yang, Y. T.; Zhang, D.; Finn, R. D.; Gerstein,
+      M.; Guigó, R.; Hubbard, T. J. P.; Kellis, M.; Kundaje, A.; Paten, B.; Tress, M. L.; Birney, E.; Martin,
+      F. J.; Frankish, A.
     journal: Nucleic Acids Research
     year: 2025
     doi: 10.1093/nar/gkae1078
@@ -328,8 +320,8 @@ claims:
     text_access: full_text
     lines: L119
     anchor: https://paperclip.gxl.ai/citations/papers/PMC11701607#L119
-    quote: 'it will soon become routine for protein-coding genes in human and mouse to contain tens or
-      even hundreds of transcripts, many of uncertain functionality
+    quote: 'it will soon become routine for protein-coding genes in human and mouse to contain tens or even
+      hundreds of transcripts, many of uncertain functionality
 
       '
   confidence: high
@@ -343,14 +335,14 @@ claims:
   source:
     doc_id: PMC11701607
     title: 'GENCODE 2025: reference gene annotation for human and mouse'
-    authors: Mudge, J. M.; Carbonell-Sala, S.; Diekhans, M.; Martinez, J. G.; Hunt, T.; Jungreis, I.;
-      Loveland, J. E.; Arnan, C.; Barnes, I.; Bennett, R.; Berry, A.; Bignell, A.; Cerdán-Vélez, D.; Cochran,
-      K.; Cortés, L. T.; Davidson, C.; Donaldson, S.; Dursun, C.; Fatima, R.; Hardy, M.; Hebbar, P.; Hollis,
-      Z.; James, B. T.; Jiang, Y.; Johnson, R.; Kaur, G.; Kay, M.; Mangan, R. J.; Maquedano, M.; Gómez,
-      L. M.; Mathlouthi, N.; Merritt, R.; Ni, P.; Palumbo, E.; Perteghella, T.; Pozo, F.; Raj, S.; Sisu,
-      C.; Steed, E.; Sumathipala, D.; Suner, M. M.; Uszczynska-Ratajczak, B.; Wass, E.; Yang, Y. T.; Zhang,
-      D.; Finn, R. D.; Gerstein, M.; Guigó, R.; Hubbard, T. J. P.; Kellis, M.; Kundaje, A.; Paten, B.;
-      Tress, M. L.; Birney, E.; Martin, F. J.; Frankish, A.
+    authors: Mudge, J. M.; Carbonell-Sala, S.; Diekhans, M.; Martinez, J. G.; Hunt, T.; Jungreis, I.; Loveland,
+      J. E.; Arnan, C.; Barnes, I.; Bennett, R.; Berry, A.; Bignell, A.; Cerdán-Vélez, D.; Cochran, K.; Cortés,
+      L. T.; Davidson, C.; Donaldson, S.; Dursun, C.; Fatima, R.; Hardy, M.; Hebbar, P.; Hollis, Z.; James,
+      B. T.; Jiang, Y.; Johnson, R.; Kaur, G.; Kay, M.; Mangan, R. J.; Maquedano, M.; Gómez, L. M.; Mathlouthi,
+      N.; Merritt, R.; Ni, P.; Palumbo, E.; Perteghella, T.; Pozo, F.; Raj, S.; Sisu, C.; Steed, E.; Sumathipala,
+      D.; Suner, M. M.; Uszczynska-Ratajczak, B.; Wass, E.; Yang, Y. T.; Zhang, D.; Finn, R. D.; Gerstein,
+      M.; Guigó, R.; Hubbard, T. J. P.; Kellis, M.; Kundaje, A.; Paten, B.; Tress, M. L.; Birney, E.; Martin,
+      F. J.; Frankish, A.
     journal: Nucleic Acids Research
     year: 2025
     doi: 10.1093/nar/gkae1078
@@ -368,15 +360,14 @@ claims:
 - id: CAT-014
   claim: 'Across the first 24 GENCODE releases, only 54,840 of the 251,614 transcript models ever annotated
     - about 21.7 per cent - kept the same annotation in every release, with biotype reassignment and outright
-    deletion affecting the rest. The paper reports this as "consistency" without defining it further than
-    retained annotation.
+    deletion affecting the rest. The paper reports this as "consistency" without defining it further than retained
+    annotation.
 
     '
   topic: GENCODE / Ensembl annotation
   source:
     doc_id: PMC5084464
-    title: Navigating the dynamic landscape of long noncoding RNA and protein-coding gene annotations
-      in GENCODE
+    title: Navigating the dynamic landscape of long noncoding RNA and protein-coding gene annotations in GENCODE
     authors: Jalali, S.; Gandhi, S.; Scaria, V.
     journal: Human Genomics
     year: 2016
@@ -393,23 +384,23 @@ claims:
   confidence: medium
 - id: CAT-051
   claim: 'GENCODE''s answer to isoform overload is a filtered view, not a smaller catalog: GENCODE Primary
-    takes every MANE Select and MANE Plus Clinical transcript plus a minimal computationally selected
-    remainder, averages two transcripts per protein-coding gene in its first human release, and became
-    the default browser view - while the full comprehensive set stays available.
+    takes every MANE Select and MANE Plus Clinical transcript plus a minimal computationally selected remainder,
+    averages two transcripts per protein-coding gene in its first human release, and became the default browser
+    view - while the full comprehensive set stays available.
 
     '
   topic: GENCODE / Ensembl annotation
   source:
     doc_id: PMC11701607
     title: 'GENCODE 2025: reference gene annotation for human and mouse'
-    authors: Mudge, J. M.; Carbonell-Sala, S.; Diekhans, M.; Martinez, J. G.; Hunt, T.; Jungreis, I.;
-      Loveland, J. E.; Arnan, C.; Barnes, I.; Bennett, R.; Berry, A.; Bignell, A.; Cerdán-Vélez, D.; Cochran,
-      K.; Cortés, L. T.; Davidson, C.; Donaldson, S.; Dursun, C.; Fatima, R.; Hardy, M.; Hebbar, P.; Hollis,
-      Z.; James, B. T.; Jiang, Y.; Johnson, R.; Kaur, G.; Kay, M.; Mangan, R. J.; Maquedano, M.; Gómez,
-      L. M.; Mathlouthi, N.; Merritt, R.; Ni, P.; Palumbo, E.; Perteghella, T.; Pozo, F.; Raj, S.; Sisu,
-      C.; Steed, E.; Sumathipala, D.; Suner, M. M.; Uszczynska-Ratajczak, B.; Wass, E.; Yang, Y. T.; Zhang,
-      D.; Finn, R. D.; Gerstein, M.; Guigó, R.; Hubbard, T. J. P.; Kellis, M.; Kundaje, A.; Paten, B.;
-      Tress, M. L.; Birney, E.; Martin, F. J.; Frankish, A.
+    authors: Mudge, J. M.; Carbonell-Sala, S.; Diekhans, M.; Martinez, J. G.; Hunt, T.; Jungreis, I.; Loveland,
+      J. E.; Arnan, C.; Barnes, I.; Bennett, R.; Berry, A.; Bignell, A.; Cerdán-Vélez, D.; Cochran, K.; Cortés,
+      L. T.; Davidson, C.; Donaldson, S.; Dursun, C.; Fatima, R.; Hardy, M.; Hebbar, P.; Hollis, Z.; James,
+      B. T.; Jiang, Y.; Johnson, R.; Kaur, G.; Kay, M.; Mangan, R. J.; Maquedano, M.; Gómez, L. M.; Mathlouthi,
+      N.; Merritt, R.; Ni, P.; Palumbo, E.; Perteghella, T.; Pozo, F.; Raj, S.; Sisu, C.; Steed, E.; Sumathipala,
+      D.; Suner, M. M.; Uszczynska-Ratajczak, B.; Wass, E.; Yang, Y. T.; Zhang, D.; Finn, R. D.; Gerstein,
+      M.; Guigó, R.; Hubbard, T. J. P.; Kellis, M.; Kundaje, A.; Paten, B.; Tress, M. L.; Birney, E.; Martin,
+      F. J.; Frankish, A.
     journal: Nucleic Acids Research
     year: 2025
     doi: 10.1093/nar/gkae1078
@@ -419,35 +410,35 @@ claims:
     text_access: full_text
     lines: L122
     anchor: https://paperclip.gxl.ai/citations/papers/PMC11701607#L122
-    quote: 'This first human release contains an average of two transcripts per protein-coding gene and
-      will now become the default annotation view
+    quote: 'This first human release contains an average of two transcripts per protein-coding gene and will
+      now become the default annotation view
 
       '
   confidence: high
-  figure_idea: 'One gene drawn once, with four brackets beside it marking which of its transcripts fall
-    into MANE Select, GENCODE Primary, GENCODE Basic and the comprehensive set - nested scopes over one
-    locus rather than four catalogs.
+  figure_idea: 'One gene drawn once, with four brackets beside it marking which of its transcripts fall into
+    MANE Select, GENCODE Primary, GENCODE Basic and the comprehensive set - nested scopes over one locus rather
+    than four catalogs.
 
     '
 - id: CAT-052
   claim: 'GENCODE states that a single transcript often fails to capture all the functionally and clinically
-    important sequence in a gene, and reports MANE Plus Clinical as having grown to 64 transcripts by
-    release v47 - up from the 55 at first publication - so the set of loci officially needing more than
-    one reference transcript expands as pathogenic variants accumulate.
+    important sequence in a gene, and reports MANE Plus Clinical as having grown to 64 transcripts by release
+    v47 - up from the 55 at first publication - so the set of loci officially needing more than one reference
+    transcript expands as pathogenic variants accumulate.
 
     '
   topic: MANE
   source:
     doc_id: PMC11701607
     title: 'GENCODE 2025: reference gene annotation for human and mouse'
-    authors: Mudge, J. M.; Carbonell-Sala, S.; Diekhans, M.; Martinez, J. G.; Hunt, T.; Jungreis, I.;
-      Loveland, J. E.; Arnan, C.; Barnes, I.; Bennett, R.; Berry, A.; Bignell, A.; Cerdán-Vélez, D.; Cochran,
-      K.; Cortés, L. T.; Davidson, C.; Donaldson, S.; Dursun, C.; Fatima, R.; Hardy, M.; Hebbar, P.; Hollis,
-      Z.; James, B. T.; Jiang, Y.; Johnson, R.; Kaur, G.; Kay, M.; Mangan, R. J.; Maquedano, M.; Gómez,
-      L. M.; Mathlouthi, N.; Merritt, R.; Ni, P.; Palumbo, E.; Perteghella, T.; Pozo, F.; Raj, S.; Sisu,
-      C.; Steed, E.; Sumathipala, D.; Suner, M. M.; Uszczynska-Ratajczak, B.; Wass, E.; Yang, Y. T.; Zhang,
-      D.; Finn, R. D.; Gerstein, M.; Guigó, R.; Hubbard, T. J. P.; Kellis, M.; Kundaje, A.; Paten, B.;
-      Tress, M. L.; Birney, E.; Martin, F. J.; Frankish, A.
+    authors: Mudge, J. M.; Carbonell-Sala, S.; Diekhans, M.; Martinez, J. G.; Hunt, T.; Jungreis, I.; Loveland,
+      J. E.; Arnan, C.; Barnes, I.; Bennett, R.; Berry, A.; Bignell, A.; Cerdán-Vélez, D.; Cochran, K.; Cortés,
+      L. T.; Davidson, C.; Donaldson, S.; Dursun, C.; Fatima, R.; Hardy, M.; Hebbar, P.; Hollis, Z.; James,
+      B. T.; Jiang, Y.; Johnson, R.; Kaur, G.; Kay, M.; Mangan, R. J.; Maquedano, M.; Gómez, L. M.; Mathlouthi,
+      N.; Merritt, R.; Ni, P.; Palumbo, E.; Perteghella, T.; Pozo, F.; Raj, S.; Sisu, C.; Steed, E.; Sumathipala,
+      D.; Suner, M. M.; Uszczynska-Ratajczak, B.; Wass, E.; Yang, Y. T.; Zhang, D.; Finn, R. D.; Gerstein,
+      M.; Guigó, R.; Hubbard, T. J. P.; Kellis, M.; Kundaje, A.; Paten, B.; Tress, M. L.; Birney, E.; Martin,
+      F. J.; Frankish, A.
     journal: Nucleic Acids Research
     year: 2025
     doi: 10.1093/nar/gkae1078
@@ -457,23 +448,21 @@ claims:
     text_access: full_text
     lines: L122
     anchor: https://paperclip.gxl.ai/citations/papers/PMC11701607#L122
-    quote: 'MANE is expanding to include additional MANE Plus Clinical transcripts, which is necessary
-      to allow the reporting of all known pathogenic or likely pathogenic
+    quote: 'MANE is expanding to include additional MANE Plus Clinical transcripts, which is necessary to allow
+      the reporting of all known pathogenic or likely pathogenic
 
       '
   confidence: high
 - id: CAT-053
-  claim: 'Over its first 24 releases the human GENCODE transcript count grew from 87,852 to 199,005, and
-    the counts the authors give for each end of that series - 43,415 protein-coding at v1 against 79,865
-    at V24, with 119,140 transcripts of other biotypes at V24 - show most of the added models were not
-    protein-coding.
+  claim: 'Over its first 24 releases the human GENCODE transcript count grew from 87,852 to 199,005, and the
+    counts the authors give for each end of that series - 43,415 protein-coding at v1 against 79,865 at V24,
+    with 119,140 transcripts of other biotypes at V24 - show most of the added models were not protein-coding.
 
     '
   topic: GENCODE / Ensembl annotation
   source:
     doc_id: PMC5084464
-    title: Navigating the dynamic landscape of long noncoding RNA and protein-coding gene annotations
-      in GENCODE
+    title: Navigating the dynamic landscape of long noncoding RNA and protein-coding gene annotations in GENCODE
     authors: Jalali, S.; Gandhi, S.; Scaria, V.
     journal: Human Genomics
     year: 2016
@@ -484,19 +473,19 @@ claims:
     text_access: full_text
     lines: L23
     anchor: https://paperclip.gxl.ai/citations/papers/PMC5084464#L23
-    quote: 'The most recent version of GENCODE (V24) annotates 1,99,005 transcripts, out of which 79,865
-      are protein-coding while 1,19,140 belong to other RNA biotypes.
+    quote: 'The most recent version of GENCODE (V24) annotates 1,99,005 transcripts, out of which 79,865 are
+      protein-coding while 1,19,140 belong to other RNA biotypes.
 
       '
   confidence: medium
-  figure_idea: 'Transcript count by GENCODE release, split protein-coding versus other biotypes, extended
-    past V24 with counts taken from the later GENCODE reports so one series spans 2008 to the present.
+  figure_idea: 'Transcript count by GENCODE release, split protein-coding versus other biotypes, extended past
+    V24 with counts taken from the later GENCODE reports so one series spans 2008 to the present.
 
     '
 - id: CAT-015
-  claim: 'MANE exists because clinical reporting had no agreed default transcript; its Select set names
-    exactly one representative transcript per human protein-coding gene, identical in exon structure between
-    Ensembl/GENCODE and RefSeq.
+  claim: 'MANE exists because clinical reporting had no agreed default transcript; its Select set names exactly
+    one representative transcript per human protein-coding gene, identical in exon structure between Ensembl/GENCODE
+    and RefSeq.
 
     '
   topic: MANE
@@ -504,11 +493,11 @@ claims:
     doc_id: PMC9007741
     title: A joint NCBI and EMBL-EBI transcript set for clinical genomics and research
     authors: Morales, J.; Pujar, S.; Loveland, J. E.; Astashyn, A.; Bennett, R.; Berry, A.; Cox, E.; Davidson,
-      C.; Ermolaeva, O.; Farrell, C. M.; Fatima, R.; Gil, L.; Goldfarb, T.; Gonzalez, J. M.; Haddad, D.;
-      Hardy, M.; Hunt, T.; Jackson, J.; Joardar, V. S.; Kay, M.; Kodali, V. K.; McGarvey, K. M.; McMahon,
-      A.; Mudge, J. M.; Murphy, D. N.; Murphy, M. R.; Rajput, B.; Rangwala, S. H.; Riddick, L. D.; Thibaud-Nissen,
-      F.; Threadgold, G.; Vatsan, A. R.; Wallin, C.; Webb, D.; Flicek, P.; Birney, E.; Pruitt, K. D.;
-      Frankish, A.; Cunningham, F.; Murphy, T. D.
+      C.; Ermolaeva, O.; Farrell, C. M.; Fatima, R.; Gil, L.; Goldfarb, T.; Gonzalez, J. M.; Haddad, D.; Hardy,
+      M.; Hunt, T.; Jackson, J.; Joardar, V. S.; Kay, M.; Kodali, V. K.; McGarvey, K. M.; McMahon, A.; Mudge,
+      J. M.; Murphy, D. N.; Murphy, M. R.; Rajput, B.; Rangwala, S. H.; Riddick, L. D.; Thibaud-Nissen, F.;
+      Threadgold, G.; Vatsan, A. R.; Wallin, C.; Webb, D.; Flicek, P.; Birney, E.; Pruitt, K. D.; Frankish,
+      A.; Cunningham, F.; Murphy, T. D.
     journal: Nature
     year: 2022
     doi: 10.1038/s41586-022-04558-8
@@ -523,9 +512,9 @@ claims:
       '
   confidence: high
 - id: CAT-016
-  claim: 'When the two annotation groups first compared their independent choices of a representative
-    transcript, they agreed on the same transcript for only 14 per cent of protein-coding genes, which
-    is the concrete measure of the problem MANE was built to fix.
+  claim: 'When the two annotation groups first compared their independent choices of a representative transcript,
+    they agreed on the same transcript for only 14 per cent of protein-coding genes, which is the concrete
+    measure of the problem MANE was built to fix.
 
     '
   topic: MANE
@@ -533,11 +522,11 @@ claims:
     doc_id: PMC9007741
     title: A joint NCBI and EMBL-EBI transcript set for clinical genomics and research
     authors: Morales, J.; Pujar, S.; Loveland, J. E.; Astashyn, A.; Bennett, R.; Berry, A.; Cox, E.; Davidson,
-      C.; Ermolaeva, O.; Farrell, C. M.; Fatima, R.; Gil, L.; Goldfarb, T.; Gonzalez, J. M.; Haddad, D.;
-      Hardy, M.; Hunt, T.; Jackson, J.; Joardar, V. S.; Kay, M.; Kodali, V. K.; McGarvey, K. M.; McMahon,
-      A.; Mudge, J. M.; Murphy, D. N.; Murphy, M. R.; Rajput, B.; Rangwala, S. H.; Riddick, L. D.; Thibaud-Nissen,
-      F.; Threadgold, G.; Vatsan, A. R.; Wallin, C.; Webb, D.; Flicek, P.; Birney, E.; Pruitt, K. D.;
-      Frankish, A.; Cunningham, F.; Murphy, T. D.
+      C.; Ermolaeva, O.; Farrell, C. M.; Fatima, R.; Gil, L.; Goldfarb, T.; Gonzalez, J. M.; Haddad, D.; Hardy,
+      M.; Hunt, T.; Jackson, J.; Joardar, V. S.; Kay, M.; Kodali, V. K.; McGarvey, K. M.; McMahon, A.; Mudge,
+      J. M.; Murphy, D. N.; Murphy, M. R.; Rajput, B.; Rangwala, S. H.; Riddick, L. D.; Thibaud-Nissen, F.;
+      Threadgold, G.; Vatsan, A. R.; Wallin, C.; Webb, D.; Flicek, P.; Birney, E.; Pruitt, K. D.; Frankish,
+      A.; Cunningham, F.; Murphy, T. D.
     journal: Nature
     year: 2022
     doi: 10.1038/s41586-022-04558-8
@@ -547,19 +536,19 @@ claims:
     text_access: full_text
     lines: L16
     anchor: https://paperclip.gxl.ai/citations/papers/PMC9007741#L16
-    quote: 'we determined that the Ensembl/GENCODE and RefSeq selections were identical for only 14% of
-      protein-coding genes
+    quote: 'we determined that the Ensembl/GENCODE and RefSeq selections were identical for only 14% of protein-coding
+      genes
 
       '
   confidence: high
-  figure_idea: 'A before/after pair of bars: fraction of protein-coding genes where the two annotation
-    sources agreed on a representative transcript before MANE versus after, with the residual disagreement
-    categories broken out.
+  figure_idea: 'A before/after pair of bars: fraction of protein-coding genes where the two annotation sources
+    agreed on a representative transcript before MANE versus after, with the residual disagreement categories
+    broken out.
 
     '
 - id: CAT-017
-  claim: 'By the June 2021 release MANE had a Select transcript for 97 per cent of human protein-coding
-    genes - 18,584 genes - including every gene on the ACMG secondary-findings list.
+  claim: 'By the June 2021 release MANE had a Select transcript for 97 per cent of human protein-coding genes
+    - 18,584 genes - including every gene on the ACMG secondary-findings list.
 
     '
   topic: MANE
@@ -567,11 +556,11 @@ claims:
     doc_id: PMC9007741
     title: A joint NCBI and EMBL-EBI transcript set for clinical genomics and research
     authors: Morales, J.; Pujar, S.; Loveland, J. E.; Astashyn, A.; Bennett, R.; Berry, A.; Cox, E.; Davidson,
-      C.; Ermolaeva, O.; Farrell, C. M.; Fatima, R.; Gil, L.; Goldfarb, T.; Gonzalez, J. M.; Haddad, D.;
-      Hardy, M.; Hunt, T.; Jackson, J.; Joardar, V. S.; Kay, M.; Kodali, V. K.; McGarvey, K. M.; McMahon,
-      A.; Mudge, J. M.; Murphy, D. N.; Murphy, M. R.; Rajput, B.; Rangwala, S. H.; Riddick, L. D.; Thibaud-Nissen,
-      F.; Threadgold, G.; Vatsan, A. R.; Wallin, C.; Webb, D.; Flicek, P.; Birney, E.; Pruitt, K. D.;
-      Frankish, A.; Cunningham, F.; Murphy, T. D.
+      C.; Ermolaeva, O.; Farrell, C. M.; Fatima, R.; Gil, L.; Goldfarb, T.; Gonzalez, J. M.; Haddad, D.; Hardy,
+      M.; Hunt, T.; Jackson, J.; Joardar, V. S.; Kay, M.; Kodali, V. K.; McGarvey, K. M.; McMahon, A.; Mudge,
+      J. M.; Murphy, D. N.; Murphy, M. R.; Rajput, B.; Rangwala, S. H.; Riddick, L. D.; Thibaud-Nissen, F.;
+      Threadgold, G.; Vatsan, A. R.; Wallin, C.; Webb, D.; Flicek, P.; Birney, E.; Pruitt, K. D.; Frankish,
+      A.; Cunningham, F.; Murphy, T. D.
     journal: Nature
     year: 2022
     doi: 10.1038/s41586-022-04558-8
@@ -581,15 +570,15 @@ claims:
     text_access: full_text
     lines: L20
     anchor: https://paperclip.gxl.ai/citations/papers/PMC9007741#L20
-    quote: 'By June 2021 (MANE release v0.95), we had defined a MANE Select transcript for 97% (18,584)
-      of protein-coding genes across the genome.
+    quote: 'By June 2021 (MANE release v0.95), we had defined a MANE Select transcript for 97% (18,584) of
+      protein-coding genes across the genome.
 
       '
   confidence: high
 - id: CAT-018
-  claim: 'MANE Plus Clinical is the designed escape hatch from one-transcript-per-gene: it was created
-    for the small set of loci where pathogenic variants fall on exons the Select transcript omits, and
-    at first release covered 55 genes.
+  claim: 'MANE Plus Clinical is the designed escape hatch from one-transcript-per-gene: it was created for
+    the small set of loci where pathogenic variants fall on exons the Select transcript omits, and at first
+    release covered 55 genes.
 
     '
   topic: MANE
@@ -597,11 +586,11 @@ claims:
     doc_id: PMC9007741
     title: A joint NCBI and EMBL-EBI transcript set for clinical genomics and research
     authors: Morales, J.; Pujar, S.; Loveland, J. E.; Astashyn, A.; Bennett, R.; Berry, A.; Cox, E.; Davidson,
-      C.; Ermolaeva, O.; Farrell, C. M.; Fatima, R.; Gil, L.; Goldfarb, T.; Gonzalez, J. M.; Haddad, D.;
-      Hardy, M.; Hunt, T.; Jackson, J.; Joardar, V. S.; Kay, M.; Kodali, V. K.; McGarvey, K. M.; McMahon,
-      A.; Mudge, J. M.; Murphy, D. N.; Murphy, M. R.; Rajput, B.; Rangwala, S. H.; Riddick, L. D.; Thibaud-Nissen,
-      F.; Threadgold, G.; Vatsan, A. R.; Wallin, C.; Webb, D.; Flicek, P.; Birney, E.; Pruitt, K. D.;
-      Frankish, A.; Cunningham, F.; Murphy, T. D.
+      C.; Ermolaeva, O.; Farrell, C. M.; Fatima, R.; Gil, L.; Goldfarb, T.; Gonzalez, J. M.; Haddad, D.; Hardy,
+      M.; Hunt, T.; Jackson, J.; Joardar, V. S.; Kay, M.; Kodali, V. K.; McGarvey, K. M.; McMahon, A.; Mudge,
+      J. M.; Murphy, D. N.; Murphy, M. R.; Rajput, B.; Rangwala, S. H.; Riddick, L. D.; Thibaud-Nissen, F.;
+      Threadgold, G.; Vatsan, A. R.; Wallin, C.; Webb, D.; Flicek, P.; Birney, E.; Pruitt, K. D.; Frankish,
+      A.; Cunningham, F.; Murphy, T. D.
     journal: Nature
     year: 2022
     doi: 10.1038/s41586-022-04558-8
@@ -617,9 +606,9 @@ claims:
       '
   confidence: high
 - id: CAT-019
-  claim: 'The MANE authors pre-empted the obvious misreading of their own resource, stating that picking
-    one transcript per locus is not a claim that a gene''s biology reduces to that transcript, and that
-    tissue- and development-specific isoform diversity is outside the set''s scope.
+  claim: 'The MANE authors pre-empted the obvious misreading of their own resource, stating that picking one
+    transcript per locus is not a claim that a gene''s biology reduces to that transcript, and that tissue-
+    and development-specific isoform diversity is outside the set''s scope.
 
     '
   topic: MANE
@@ -627,11 +616,11 @@ claims:
     doc_id: PMC9007741
     title: A joint NCBI and EMBL-EBI transcript set for clinical genomics and research
     authors: Morales, J.; Pujar, S.; Loveland, J. E.; Astashyn, A.; Bennett, R.; Berry, A.; Cox, E.; Davidson,
-      C.; Ermolaeva, O.; Farrell, C. M.; Fatima, R.; Gil, L.; Goldfarb, T.; Gonzalez, J. M.; Haddad, D.;
-      Hardy, M.; Hunt, T.; Jackson, J.; Joardar, V. S.; Kay, M.; Kodali, V. K.; McGarvey, K. M.; McMahon,
-      A.; Mudge, J. M.; Murphy, D. N.; Murphy, M. R.; Rajput, B.; Rangwala, S. H.; Riddick, L. D.; Thibaud-Nissen,
-      F.; Threadgold, G.; Vatsan, A. R.; Wallin, C.; Webb, D.; Flicek, P.; Birney, E.; Pruitt, K. D.;
-      Frankish, A.; Cunningham, F.; Murphy, T. D.
+      C.; Ermolaeva, O.; Farrell, C. M.; Fatima, R.; Gil, L.; Goldfarb, T.; Gonzalez, J. M.; Haddad, D.; Hardy,
+      M.; Hunt, T.; Jackson, J.; Joardar, V. S.; Kay, M.; Kodali, V. K.; McGarvey, K. M.; McMahon, A.; Mudge,
+      J. M.; Murphy, D. N.; Murphy, M. R.; Rajput, B.; Rangwala, S. H.; Riddick, L. D.; Thibaud-Nissen, F.;
+      Threadgold, G.; Vatsan, A. R.; Wallin, C.; Webb, D.; Flicek, P.; Birney, E.; Pruitt, K. D.; Frankish,
+      A.; Cunningham, F.; Murphy, T. D.
     journal: Nature
     year: 2022
     doi: 10.1038/s41586-022-04558-8
@@ -641,16 +630,16 @@ claims:
     text_access: full_text
     lines: L44
     anchor: https://paperclip.gxl.ai/citations/papers/PMC9007741#L44
-    quote: 'Selection of one transcript does not imply that the rich biology of the human genome can be
-      reduced to one transcript at each locus
+    quote: 'Selection of one transcript does not imply that the rich biology of the human genome can be reduced
+      to one transcript at each locus
 
       '
   confidence: high
 - id: CAT-020
-  claim: 'Of 18,083 genes matched between MANE and long-read GTEx data, 13,245 MANE Select transcripts
-    were also the top-expressed protein-coding transcript - a result the authors read as MANE dominance,
-    but one that also leaves a substantial remainder, part of which reflects transcript-ID mismatch between
-    the GENCODE releases used rather than disagreement about which isoform is highest.
+  claim: 'Of 18,083 genes matched between MANE and long-read GTEx data, 13,245 MANE Select transcripts were
+    also the top-expressed protein-coding transcript - a result the authors read as MANE dominance, but one
+    that also leaves a substantial remainder, part of which reflects transcript-ID mismatch between the GENCODE
+    releases used rather than disagreement about which isoform is highest.
 
     '
   topic: MANE
@@ -673,9 +662,9 @@ claims:
       '
   confidence: medium
 - id: CAT-021
-  claim: 'APPRIS is the annotation-side counterpart to MANE and reaches a single principal isoform per
-    coding gene from protein evidence rather than expression: mapped structures, functional domains, conserved
-    residues and cross-species alignment.
+  claim: 'APPRIS is the annotation-side counterpart to MANE and reaches a single principal isoform per coding
+    gene from protein evidence rather than expression: mapped structures, functional domains, conserved residues
+    and cross-species alignment.
 
     '
   topic: APPRIS and principal isoforms
@@ -692,16 +681,16 @@ claims:
     text_access: full_text
     lines: L11
     anchor: https://paperclip.gxl.ai/citations/papers/PMC8728124#L11
-    quote: 'APPRIS selects principal isoforms based on protein structure and function features and on
-      cross-species conservation.
+    quote: 'APPRIS selects principal isoforms based on protein structure and function features and on cross-species
+      conservation.
 
       '
   confidence: high
 - id: CAT-022
   claim: 'The two routes to a representative transcript largely converge: APPRIS principal isoforms chosen
-    by its core structural and evolutionary modules agree with MANE Select for over 97 per cent of coding
-    genes. The agreement is not fully independent, because APPRIS principal isoforms are themselves an
-    input to the MANE Select curation process.
+    by its core structural and evolutionary modules agree with MANE Select for over 97 per cent of coding genes.
+    The agreement is not fully independent, because APPRIS principal isoforms are themselves an input to the
+    MANE Select curation process.
 
     '
   topic: APPRIS and principal isoforms
@@ -718,17 +707,16 @@ claims:
     text_access: full_text
     lines: L19
     anchor: https://paperclip.gxl.ai/citations/papers/PMC8728124#L19
-    quote: 'MANE Select and principal isoforms selected by APPRIS core methods agree over 97.2% of coding
-      genes.
+    quote: 'MANE Select and principal isoforms selected by APPRIS core methods agree over 97.2% of coding genes.
 
       '
   confidence: high
 - id: CAT-023
-  claim: 'Benchmarked against the dominant isoform seen in proteomics, curated representative transcripts
-    clearly beat the two convenient heuristics: agreement was about 94.6 per cent for MANE Select and
-    96.1 per cent for APPRIS core principal isoforms, 86.4 per cent for simply taking the longest isoform,
-    and 70.1 per cent for taking the most-expressed transcript. The four rates are computed over different
-    gene subsets, and randomly chosen isoforms agreed only about 30 per cent of the time.
+  claim: 'Benchmarked against the dominant isoform seen in proteomics, curated representative transcripts clearly
+    beat the two convenient heuristics: agreement was about 94.6 per cent for MANE Select and 96.1 per cent
+    for APPRIS core principal isoforms, 86.4 per cent for simply taking the longest isoform, and 70.1 per cent
+    for taking the most-expressed transcript. The four rates are computed over different gene subsets, and
+    randomly chosen isoforms agreed only about 30 per cent of the time.
 
     '
   topic: APPRIS and principal isoforms
@@ -750,35 +738,35 @@ claims:
 
       '
   confidence: high
-  figure_idea: 'One horizontal bar chart ranking four selection strategies - APPRIS core, MANE Select,
-    longest isoform, most-expressed transcript - by agreement with the proteomics-dominant isoform, with
-    the random-choice rate drawn as a reference line.
+  figure_idea: 'One horizontal bar chart ranking four selection strategies - APPRIS core, MANE Select, longest
+    isoform, most-expressed transcript - by agreement with the proteomics-dominant isoform, with the random-choice
+    rate drawn as a reference line.
 
     '
 - id: CAT-024
-  claim: 'LRGASP was a community bake-off rather than a single lab''s comparison: participants worked
-    from one shared body of over 427 million long reads spanning cDNA and direct-RNA protocols in human,
-    mouse and manatee, the study design was published as a Registered Report in advance, and scoring was
-    done by organizers who had not submitted predictions.
+  claim: 'LRGASP was a community bake-off rather than a single lab''s comparison: participants worked from
+    one shared body of over 427 million long reads spanning cDNA and direct-RNA protocols in human, mouse and
+    manatee, the study design was published as a Registered Report in advance, and scoring was done by organizers
+    who had not submitted predictions.
 
     '
   topic: LRGASP benchmarking
   source:
     doc_id: PMC11543605
     title: Systematic assessment of long-read RNA-seq methods for transcript identification and quantification
-    authors: Pardo-Palacios, F. J.; Wang, D.; Reese, F.; Diekhans, M.; Carbonell-Sala, S.; Williams, B.;
-      Loveland, J. E.; De María, M.; Adams, M. S.; Balderrama-Gutierrez, G.; Behera, A. K.; Gonzalez Martinez,
-      J. M.; Hunt, T.; Lagarde, J.; Liang, C. E.; Li, H.; Meade, M. J.; Moraga Amador, D. A.; Prjibelski,
-      A. D.; Birol, I.; Bostan, H.; Brooks, A. M.; Çelik, M. H.; Chen, Y.; Du, M. R. M.; Felton, C.; Göke,
-      J.; Hafezqorani, S.; Herwig, R.; Kawaji, H.; Lee, J.; Li, J. L.; Lienhard, M.; Mikheenko, A.; Mulligan,
-      D.; Nip, K. M.; Pertea, M.; Ritchie, M. E.; Sim, A. D.; Tang, A. D.; Wan, Y. K.; Wang, C.; Wong,
-      B. Y.; Yang, C.; Barnes, I.; Berry, A. E.; Capella-Gutierrez, S.; Cousineau, A.; Dhillon, N.; Fernandez-Gonzalez,
-      J. M.; Ferrández-Peral, L.; Garcia-Reyero, N.; Götz, S.; Hernández-Ferrer, C.; Kondratova, L.; Liu,
-      T.; Martinez-Martin, A.; Menor, C.; Mestre-Tomás, J.; Mudge, J. M.; Panayotova, N. G.; Paniagua,
-      A.; Repchevsky, D.; Ren, X.; Rouchka, E.; Saint-John, B.; Sapena, E.; Sheynkman, L.; Smith, M. L.;
-      Suner, M. M.; Takahashi, H.; Youngworth, I. A.; Carninci, P.; Denslow, N. D.; Guigó, R.; Hunter,
-      M. E.; Maehr, R.; Shen, Y.; Tilgner, H. U.; Wold, B. J.; Vollmers, C.; Frankish, A.; Au, K. F.;
-      Sheynkman, G. M.; Mortazavi, A.; Conesa, A.; Brooks, A. N.
+    authors: Pardo-Palacios, F. J.; Wang, D.; Reese, F.; Diekhans, M.; Carbonell-Sala, S.; Williams, B.; Loveland,
+      J. E.; De María, M.; Adams, M. S.; Balderrama-Gutierrez, G.; Behera, A. K.; Gonzalez Martinez, J. M.;
+      Hunt, T.; Lagarde, J.; Liang, C. E.; Li, H.; Meade, M. J.; Moraga Amador, D. A.; Prjibelski, A. D.; Birol,
+      I.; Bostan, H.; Brooks, A. M.; Çelik, M. H.; Chen, Y.; Du, M. R. M.; Felton, C.; Göke, J.; Hafezqorani,
+      S.; Herwig, R.; Kawaji, H.; Lee, J.; Li, J. L.; Lienhard, M.; Mikheenko, A.; Mulligan, D.; Nip, K. M.;
+      Pertea, M.; Ritchie, M. E.; Sim, A. D.; Tang, A. D.; Wan, Y. K.; Wang, C.; Wong, B. Y.; Yang, C.; Barnes,
+      I.; Berry, A. E.; Capella-Gutierrez, S.; Cousineau, A.; Dhillon, N.; Fernandez-Gonzalez, J. M.; Ferrández-Peral,
+      L.; Garcia-Reyero, N.; Götz, S.; Hernández-Ferrer, C.; Kondratova, L.; Liu, T.; Martinez-Martin, A.;
+      Menor, C.; Mestre-Tomás, J.; Mudge, J. M.; Panayotova, N. G.; Paniagua, A.; Repchevsky, D.; Ren, X.;
+      Rouchka, E.; Saint-John, B.; Sapena, E.; Sheynkman, L.; Smith, M. L.; Suner, M. M.; Takahashi, H.; Youngworth,
+      I. A.; Carninci, P.; Denslow, N. D.; Guigó, R.; Hunter, M. E.; Maehr, R.; Shen, Y.; Tilgner, H. U.; Wold,
+      B. J.; Vollmers, C.; Frankish, A.; Au, K. F.; Sheynkman, G. M.; Mortazavi, A.; Conesa, A.; Brooks, A.
+      N.
     journal: Nature Methods
     year: 2024
     doi: 10.1038/s41592-024-02298-3
@@ -803,19 +791,19 @@ claims:
   source:
     doc_id: PMC11543605
     title: Systematic assessment of long-read RNA-seq methods for transcript identification and quantification
-    authors: Pardo-Palacios, F. J.; Wang, D.; Reese, F.; Diekhans, M.; Carbonell-Sala, S.; Williams, B.;
-      Loveland, J. E.; De María, M.; Adams, M. S.; Balderrama-Gutierrez, G.; Behera, A. K.; Gonzalez Martinez,
-      J. M.; Hunt, T.; Lagarde, J.; Liang, C. E.; Li, H.; Meade, M. J.; Moraga Amador, D. A.; Prjibelski,
-      A. D.; Birol, I.; Bostan, H.; Brooks, A. M.; Çelik, M. H.; Chen, Y.; Du, M. R. M.; Felton, C.; Göke,
-      J.; Hafezqorani, S.; Herwig, R.; Kawaji, H.; Lee, J.; Li, J. L.; Lienhard, M.; Mikheenko, A.; Mulligan,
-      D.; Nip, K. M.; Pertea, M.; Ritchie, M. E.; Sim, A. D.; Tang, A. D.; Wan, Y. K.; Wang, C.; Wong,
-      B. Y.; Yang, C.; Barnes, I.; Berry, A. E.; Capella-Gutierrez, S.; Cousineau, A.; Dhillon, N.; Fernandez-Gonzalez,
-      J. M.; Ferrández-Peral, L.; Garcia-Reyero, N.; Götz, S.; Hernández-Ferrer, C.; Kondratova, L.; Liu,
-      T.; Martinez-Martin, A.; Menor, C.; Mestre-Tomás, J.; Mudge, J. M.; Panayotova, N. G.; Paniagua,
-      A.; Repchevsky, D.; Ren, X.; Rouchka, E.; Saint-John, B.; Sapena, E.; Sheynkman, L.; Smith, M. L.;
-      Suner, M. M.; Takahashi, H.; Youngworth, I. A.; Carninci, P.; Denslow, N. D.; Guigó, R.; Hunter,
-      M. E.; Maehr, R.; Shen, Y.; Tilgner, H. U.; Wold, B. J.; Vollmers, C.; Frankish, A.; Au, K. F.;
-      Sheynkman, G. M.; Mortazavi, A.; Conesa, A.; Brooks, A. N.
+    authors: Pardo-Palacios, F. J.; Wang, D.; Reese, F.; Diekhans, M.; Carbonell-Sala, S.; Williams, B.; Loveland,
+      J. E.; De María, M.; Adams, M. S.; Balderrama-Gutierrez, G.; Behera, A. K.; Gonzalez Martinez, J. M.;
+      Hunt, T.; Lagarde, J.; Liang, C. E.; Li, H.; Meade, M. J.; Moraga Amador, D. A.; Prjibelski, A. D.; Birol,
+      I.; Bostan, H.; Brooks, A. M.; Çelik, M. H.; Chen, Y.; Du, M. R. M.; Felton, C.; Göke, J.; Hafezqorani,
+      S.; Herwig, R.; Kawaji, H.; Lee, J.; Li, J. L.; Lienhard, M.; Mikheenko, A.; Mulligan, D.; Nip, K. M.;
+      Pertea, M.; Ritchie, M. E.; Sim, A. D.; Tang, A. D.; Wan, Y. K.; Wang, C.; Wong, B. Y.; Yang, C.; Barnes,
+      I.; Berry, A. E.; Capella-Gutierrez, S.; Cousineau, A.; Dhillon, N.; Fernandez-Gonzalez, J. M.; Ferrández-Peral,
+      L.; Garcia-Reyero, N.; Götz, S.; Hernández-Ferrer, C.; Kondratova, L.; Liu, T.; Martinez-Martin, A.;
+      Menor, C.; Mestre-Tomás, J.; Mudge, J. M.; Panayotova, N. G.; Paniagua, A.; Repchevsky, D.; Ren, X.;
+      Rouchka, E.; Saint-John, B.; Sapena, E.; Sheynkman, L.; Smith, M. L.; Suner, M. M.; Takahashi, H.; Youngworth,
+      I. A.; Carninci, P.; Denslow, N. D.; Guigó, R.; Hunter, M. E.; Maehr, R.; Shen, Y.; Tilgner, H. U.; Wold,
+      B. J.; Vollmers, C.; Frankish, A.; Au, K. F.; Sheynkman, G. M.; Mortazavi, A.; Conesa, A.; Brooks, A.
+      N.
     journal: Nature Methods
     year: 2024
     doi: 10.1038/s41592-024-02298-3
@@ -825,34 +813,34 @@ claims:
     text_access: full_text
     lines: L54
     anchor: https://paperclip.gxl.ai/citations/papers/PMC11543605#L54
-    quote: 'libraries with longer, more accurate sequences produce more accurate transcripts than those
-      with increased read depth, whereas greater read depth improved quantification accuracy
+    quote: 'libraries with longer, more accurate sequences produce more accurate transcripts than those with
+      increased read depth, whereas greater read depth improved quantification accuracy
 
       '
   confidence: high
 - id: CAT-027
-  claim: 'In one LRGASP human cell line nearly 280,000 novel isoforms were reported in total, but only
-    743 were called consistently across pipelines while 242,125 were seen by only one or two - so the
-    bulk of apparent novelty is pipeline-specific.
+  claim: 'In one LRGASP human cell line nearly 280,000 novel isoforms were reported in total, but only 743
+    were called consistently across pipelines while 242,125 were seen by only one or two - so the bulk of apparent
+    novelty is pipeline-specific.
 
     '
   topic: LRGASP benchmarking
   source:
     doc_id: PMC11543605
     title: Systematic assessment of long-read RNA-seq methods for transcript identification and quantification
-    authors: Pardo-Palacios, F. J.; Wang, D.; Reese, F.; Diekhans, M.; Carbonell-Sala, S.; Williams, B.;
-      Loveland, J. E.; De María, M.; Adams, M. S.; Balderrama-Gutierrez, G.; Behera, A. K.; Gonzalez Martinez,
-      J. M.; Hunt, T.; Lagarde, J.; Liang, C. E.; Li, H.; Meade, M. J.; Moraga Amador, D. A.; Prjibelski,
-      A. D.; Birol, I.; Bostan, H.; Brooks, A. M.; Çelik, M. H.; Chen, Y.; Du, M. R. M.; Felton, C.; Göke,
-      J.; Hafezqorani, S.; Herwig, R.; Kawaji, H.; Lee, J.; Li, J. L.; Lienhard, M.; Mikheenko, A.; Mulligan,
-      D.; Nip, K. M.; Pertea, M.; Ritchie, M. E.; Sim, A. D.; Tang, A. D.; Wan, Y. K.; Wang, C.; Wong,
-      B. Y.; Yang, C.; Barnes, I.; Berry, A. E.; Capella-Gutierrez, S.; Cousineau, A.; Dhillon, N.; Fernandez-Gonzalez,
-      J. M.; Ferrández-Peral, L.; Garcia-Reyero, N.; Götz, S.; Hernández-Ferrer, C.; Kondratova, L.; Liu,
-      T.; Martinez-Martin, A.; Menor, C.; Mestre-Tomás, J.; Mudge, J. M.; Panayotova, N. G.; Paniagua,
-      A.; Repchevsky, D.; Ren, X.; Rouchka, E.; Saint-John, B.; Sapena, E.; Sheynkman, L.; Smith, M. L.;
-      Suner, M. M.; Takahashi, H.; Youngworth, I. A.; Carninci, P.; Denslow, N. D.; Guigó, R.; Hunter,
-      M. E.; Maehr, R.; Shen, Y.; Tilgner, H. U.; Wold, B. J.; Vollmers, C.; Frankish, A.; Au, K. F.;
-      Sheynkman, G. M.; Mortazavi, A.; Conesa, A.; Brooks, A. N.
+    authors: Pardo-Palacios, F. J.; Wang, D.; Reese, F.; Diekhans, M.; Carbonell-Sala, S.; Williams, B.; Loveland,
+      J. E.; De María, M.; Adams, M. S.; Balderrama-Gutierrez, G.; Behera, A. K.; Gonzalez Martinez, J. M.;
+      Hunt, T.; Lagarde, J.; Liang, C. E.; Li, H.; Meade, M. J.; Moraga Amador, D. A.; Prjibelski, A. D.; Birol,
+      I.; Bostan, H.; Brooks, A. M.; Çelik, M. H.; Chen, Y.; Du, M. R. M.; Felton, C.; Göke, J.; Hafezqorani,
+      S.; Herwig, R.; Kawaji, H.; Lee, J.; Li, J. L.; Lienhard, M.; Mikheenko, A.; Mulligan, D.; Nip, K. M.;
+      Pertea, M.; Ritchie, M. E.; Sim, A. D.; Tang, A. D.; Wan, Y. K.; Wang, C.; Wong, B. Y.; Yang, C.; Barnes,
+      I.; Berry, A. E.; Capella-Gutierrez, S.; Cousineau, A.; Dhillon, N.; Fernandez-Gonzalez, J. M.; Ferrández-Peral,
+      L.; Garcia-Reyero, N.; Götz, S.; Hernández-Ferrer, C.; Kondratova, L.; Liu, T.; Martinez-Martin, A.;
+      Menor, C.; Mestre-Tomás, J.; Mudge, J. M.; Panayotova, N. G.; Paniagua, A.; Repchevsky, D.; Ren, X.;
+      Rouchka, E.; Saint-John, B.; Sapena, E.; Sheynkman, L.; Smith, M. L.; Suner, M. M.; Takahashi, H.; Youngworth,
+      I. A.; Carninci, P.; Denslow, N. D.; Guigó, R.; Hunter, M. E.; Maehr, R.; Shen, Y.; Tilgner, H. U.; Wold,
+      B. J.; Vollmers, C.; Frankish, A.; Au, K. F.; Sheynkman, G. M.; Mortazavi, A.; Conesa, A.; Brooks, A.
+      N.
     journal: Nature Methods
     year: 2024
     doi: 10.1038/s41592-024-02298-3
@@ -862,8 +850,8 @@ claims:
     text_access: full_text
     lines: L139
     anchor: https://paperclip.gxl.ai/citations/papers/PMC11543605#L139
-    quote: '743 novel isoforms were detected consistently, but a vast majority or 242,125 isoforms, were
-      rarely detected and found in only one or two
+    quote: '743 novel isoforms were detected consistently, but a vast majority or 242,125 isoforms, were rarely
+      detected and found in only one or two
 
       '
   confidence: high
@@ -877,19 +865,19 @@ claims:
   source:
     doc_id: PMC11543605
     title: Systematic assessment of long-read RNA-seq methods for transcript identification and quantification
-    authors: Pardo-Palacios, F. J.; Wang, D.; Reese, F.; Diekhans, M.; Carbonell-Sala, S.; Williams, B.;
-      Loveland, J. E.; De María, M.; Adams, M. S.; Balderrama-Gutierrez, G.; Behera, A. K.; Gonzalez Martinez,
-      J. M.; Hunt, T.; Lagarde, J.; Liang, C. E.; Li, H.; Meade, M. J.; Moraga Amador, D. A.; Prjibelski,
-      A. D.; Birol, I.; Bostan, H.; Brooks, A. M.; Çelik, M. H.; Chen, Y.; Du, M. R. M.; Felton, C.; Göke,
-      J.; Hafezqorani, S.; Herwig, R.; Kawaji, H.; Lee, J.; Li, J. L.; Lienhard, M.; Mikheenko, A.; Mulligan,
-      D.; Nip, K. M.; Pertea, M.; Ritchie, M. E.; Sim, A. D.; Tang, A. D.; Wan, Y. K.; Wang, C.; Wong,
-      B. Y.; Yang, C.; Barnes, I.; Berry, A. E.; Capella-Gutierrez, S.; Cousineau, A.; Dhillon, N.; Fernandez-Gonzalez,
-      J. M.; Ferrández-Peral, L.; Garcia-Reyero, N.; Götz, S.; Hernández-Ferrer, C.; Kondratova, L.; Liu,
-      T.; Martinez-Martin, A.; Menor, C.; Mestre-Tomás, J.; Mudge, J. M.; Panayotova, N. G.; Paniagua,
-      A.; Repchevsky, D.; Ren, X.; Rouchka, E.; Saint-John, B.; Sapena, E.; Sheynkman, L.; Smith, M. L.;
-      Suner, M. M.; Takahashi, H.; Youngworth, I. A.; Carninci, P.; Denslow, N. D.; Guigó, R.; Hunter,
-      M. E.; Maehr, R.; Shen, Y.; Tilgner, H. U.; Wold, B. J.; Vollmers, C.; Frankish, A.; Au, K. F.;
-      Sheynkman, G. M.; Mortazavi, A.; Conesa, A.; Brooks, A. N.
+    authors: Pardo-Palacios, F. J.; Wang, D.; Reese, F.; Diekhans, M.; Carbonell-Sala, S.; Williams, B.; Loveland,
+      J. E.; De María, M.; Adams, M. S.; Balderrama-Gutierrez, G.; Behera, A. K.; Gonzalez Martinez, J. M.;
+      Hunt, T.; Lagarde, J.; Liang, C. E.; Li, H.; Meade, M. J.; Moraga Amador, D. A.; Prjibelski, A. D.; Birol,
+      I.; Bostan, H.; Brooks, A. M.; Çelik, M. H.; Chen, Y.; Du, M. R. M.; Felton, C.; Göke, J.; Hafezqorani,
+      S.; Herwig, R.; Kawaji, H.; Lee, J.; Li, J. L.; Lienhard, M.; Mikheenko, A.; Mulligan, D.; Nip, K. M.;
+      Pertea, M.; Ritchie, M. E.; Sim, A. D.; Tang, A. D.; Wan, Y. K.; Wang, C.; Wong, B. Y.; Yang, C.; Barnes,
+      I.; Berry, A. E.; Capella-Gutierrez, S.; Cousineau, A.; Dhillon, N.; Fernandez-Gonzalez, J. M.; Ferrández-Peral,
+      L.; Garcia-Reyero, N.; Götz, S.; Hernández-Ferrer, C.; Kondratova, L.; Liu, T.; Martinez-Martin, A.;
+      Menor, C.; Mestre-Tomás, J.; Mudge, J. M.; Panayotova, N. G.; Paniagua, A.; Repchevsky, D.; Ren, X.;
+      Rouchka, E.; Saint-John, B.; Sapena, E.; Sheynkman, L.; Smith, M. L.; Suner, M. M.; Takahashi, H.; Youngworth,
+      I. A.; Carninci, P.; Denslow, N. D.; Guigó, R.; Hunter, M. E.; Maehr, R.; Shen, Y.; Tilgner, H. U.; Wold,
+      B. J.; Vollmers, C.; Frankish, A.; Au, K. F.; Sheynkman, G. M.; Mortazavi, A.; Conesa, A.; Brooks, A.
+      N.
     journal: Nature Methods
     year: 2024
     doi: 10.1038/s41592-024-02298-3
@@ -904,29 +892,29 @@ claims:
       '
   confidence: high
 - id: CAT-029
-  claim: 'Without a reference annotation, tool choice swamped biology: de novo submissions on the same
-    mouse sample reported between roughly 20,000 and 150,000 transcripts, and on the manatee sample between
-    roughly 2,000 and 500,000. The consortium''s own verdict was that de novo annotation remains challenging
-    and needs further tool development.
+  claim: 'Without a reference annotation, tool choice swamped biology: de novo submissions on the same mouse
+    sample reported between roughly 20,000 and 150,000 transcripts, and on the manatee sample between roughly
+    2,000 and 500,000. The consortium''s own verdict was that de novo annotation remains challenging and needs
+    further tool development.
 
     '
   topic: LRGASP benchmarking
   source:
     doc_id: PMC11543605
     title: Systematic assessment of long-read RNA-seq methods for transcript identification and quantification
-    authors: Pardo-Palacios, F. J.; Wang, D.; Reese, F.; Diekhans, M.; Carbonell-Sala, S.; Williams, B.;
-      Loveland, J. E.; De María, M.; Adams, M. S.; Balderrama-Gutierrez, G.; Behera, A. K.; Gonzalez Martinez,
-      J. M.; Hunt, T.; Lagarde, J.; Liang, C. E.; Li, H.; Meade, M. J.; Moraga Amador, D. A.; Prjibelski,
-      A. D.; Birol, I.; Bostan, H.; Brooks, A. M.; Çelik, M. H.; Chen, Y.; Du, M. R. M.; Felton, C.; Göke,
-      J.; Hafezqorani, S.; Herwig, R.; Kawaji, H.; Lee, J.; Li, J. L.; Lienhard, M.; Mikheenko, A.; Mulligan,
-      D.; Nip, K. M.; Pertea, M.; Ritchie, M. E.; Sim, A. D.; Tang, A. D.; Wan, Y. K.; Wang, C.; Wong,
-      B. Y.; Yang, C.; Barnes, I.; Berry, A. E.; Capella-Gutierrez, S.; Cousineau, A.; Dhillon, N.; Fernandez-Gonzalez,
-      J. M.; Ferrández-Peral, L.; Garcia-Reyero, N.; Götz, S.; Hernández-Ferrer, C.; Kondratova, L.; Liu,
-      T.; Martinez-Martin, A.; Menor, C.; Mestre-Tomás, J.; Mudge, J. M.; Panayotova, N. G.; Paniagua,
-      A.; Repchevsky, D.; Ren, X.; Rouchka, E.; Saint-John, B.; Sapena, E.; Sheynkman, L.; Smith, M. L.;
-      Suner, M. M.; Takahashi, H.; Youngworth, I. A.; Carninci, P.; Denslow, N. D.; Guigó, R.; Hunter,
-      M. E.; Maehr, R.; Shen, Y.; Tilgner, H. U.; Wold, B. J.; Vollmers, C.; Frankish, A.; Au, K. F.;
-      Sheynkman, G. M.; Mortazavi, A.; Conesa, A.; Brooks, A. N.
+    authors: Pardo-Palacios, F. J.; Wang, D.; Reese, F.; Diekhans, M.; Carbonell-Sala, S.; Williams, B.; Loveland,
+      J. E.; De María, M.; Adams, M. S.; Balderrama-Gutierrez, G.; Behera, A. K.; Gonzalez Martinez, J. M.;
+      Hunt, T.; Lagarde, J.; Liang, C. E.; Li, H.; Meade, M. J.; Moraga Amador, D. A.; Prjibelski, A. D.; Birol,
+      I.; Bostan, H.; Brooks, A. M.; Çelik, M. H.; Chen, Y.; Du, M. R. M.; Felton, C.; Göke, J.; Hafezqorani,
+      S.; Herwig, R.; Kawaji, H.; Lee, J.; Li, J. L.; Lienhard, M.; Mikheenko, A.; Mulligan, D.; Nip, K. M.;
+      Pertea, M.; Ritchie, M. E.; Sim, A. D.; Tang, A. D.; Wan, Y. K.; Wang, C.; Wong, B. Y.; Yang, C.; Barnes,
+      I.; Berry, A. E.; Capella-Gutierrez, S.; Cousineau, A.; Dhillon, N.; Fernandez-Gonzalez, J. M.; Ferrández-Peral,
+      L.; Garcia-Reyero, N.; Götz, S.; Hernández-Ferrer, C.; Kondratova, L.; Liu, T.; Martinez-Martin, A.;
+      Menor, C.; Mestre-Tomás, J.; Mudge, J. M.; Panayotova, N. G.; Paniagua, A.; Repchevsky, D.; Ren, X.;
+      Rouchka, E.; Saint-John, B.; Sapena, E.; Sheynkman, L.; Smith, M. L.; Suner, M. M.; Takahashi, H.; Youngworth,
+      I. A.; Carninci, P.; Denslow, N. D.; Guigó, R.; Hunter, M. E.; Maehr, R.; Shen, Y.; Tilgner, H. U.; Wold,
+      B. J.; Vollmers, C.; Frankish, A.; Au, K. F.; Sheynkman, G. M.; Mortazavi, A.; Conesa, A.; Brooks, A.
+      N.
     journal: Nature Methods
     year: 2024
     doi: 10.1038/s41592-024-02298-3
@@ -943,27 +931,27 @@ claims:
   confidence: high
 - id: CAT-030
   claim: 'LRGASP''s standing recommendation for anyone building an annotation from long reads is procedural
-    rather than tool-specific: high-quality data, biological replicates, extensive orthogonal evidence,
-    a transcript-level filter, and transcripts identified by more than one analysis tool.
+    rather than tool-specific: high-quality data, biological replicates, extensive orthogonal evidence, a transcript-level
+    filter, and transcripts identified by more than one analysis tool.
 
     '
   topic: LRGASP benchmarking
   source:
     doc_id: PMC11543605
     title: Systematic assessment of long-read RNA-seq methods for transcript identification and quantification
-    authors: Pardo-Palacios, F. J.; Wang, D.; Reese, F.; Diekhans, M.; Carbonell-Sala, S.; Williams, B.;
-      Loveland, J. E.; De María, M.; Adams, M. S.; Balderrama-Gutierrez, G.; Behera, A. K.; Gonzalez Martinez,
-      J. M.; Hunt, T.; Lagarde, J.; Liang, C. E.; Li, H.; Meade, M. J.; Moraga Amador, D. A.; Prjibelski,
-      A. D.; Birol, I.; Bostan, H.; Brooks, A. M.; Çelik, M. H.; Chen, Y.; Du, M. R. M.; Felton, C.; Göke,
-      J.; Hafezqorani, S.; Herwig, R.; Kawaji, H.; Lee, J.; Li, J. L.; Lienhard, M.; Mikheenko, A.; Mulligan,
-      D.; Nip, K. M.; Pertea, M.; Ritchie, M. E.; Sim, A. D.; Tang, A. D.; Wan, Y. K.; Wang, C.; Wong,
-      B. Y.; Yang, C.; Barnes, I.; Berry, A. E.; Capella-Gutierrez, S.; Cousineau, A.; Dhillon, N.; Fernandez-Gonzalez,
-      J. M.; Ferrández-Peral, L.; Garcia-Reyero, N.; Götz, S.; Hernández-Ferrer, C.; Kondratova, L.; Liu,
-      T.; Martinez-Martin, A.; Menor, C.; Mestre-Tomás, J.; Mudge, J. M.; Panayotova, N. G.; Paniagua,
-      A.; Repchevsky, D.; Ren, X.; Rouchka, E.; Saint-John, B.; Sapena, E.; Sheynkman, L.; Smith, M. L.;
-      Suner, M. M.; Takahashi, H.; Youngworth, I. A.; Carninci, P.; Denslow, N. D.; Guigó, R.; Hunter,
-      M. E.; Maehr, R.; Shen, Y.; Tilgner, H. U.; Wold, B. J.; Vollmers, C.; Frankish, A.; Au, K. F.;
-      Sheynkman, G. M.; Mortazavi, A.; Conesa, A.; Brooks, A. N.
+    authors: Pardo-Palacios, F. J.; Wang, D.; Reese, F.; Diekhans, M.; Carbonell-Sala, S.; Williams, B.; Loveland,
+      J. E.; De María, M.; Adams, M. S.; Balderrama-Gutierrez, G.; Behera, A. K.; Gonzalez Martinez, J. M.;
+      Hunt, T.; Lagarde, J.; Liang, C. E.; Li, H.; Meade, M. J.; Moraga Amador, D. A.; Prjibelski, A. D.; Birol,
+      I.; Bostan, H.; Brooks, A. M.; Çelik, M. H.; Chen, Y.; Du, M. R. M.; Felton, C.; Göke, J.; Hafezqorani,
+      S.; Herwig, R.; Kawaji, H.; Lee, J.; Li, J. L.; Lienhard, M.; Mikheenko, A.; Mulligan, D.; Nip, K. M.;
+      Pertea, M.; Ritchie, M. E.; Sim, A. D.; Tang, A. D.; Wan, Y. K.; Wang, C.; Wong, B. Y.; Yang, C.; Barnes,
+      I.; Berry, A. E.; Capella-Gutierrez, S.; Cousineau, A.; Dhillon, N.; Fernandez-Gonzalez, J. M.; Ferrández-Peral,
+      L.; Garcia-Reyero, N.; Götz, S.; Hernández-Ferrer, C.; Kondratova, L.; Liu, T.; Martinez-Martin, A.;
+      Menor, C.; Mestre-Tomás, J.; Mudge, J. M.; Panayotova, N. G.; Paniagua, A.; Repchevsky, D.; Ren, X.;
+      Rouchka, E.; Saint-John, B.; Sapena, E.; Sheynkman, L.; Smith, M. L.; Suner, M. M.; Takahashi, H.; Youngworth,
+      I. A.; Carninci, P.; Denslow, N. D.; Guigó, R.; Hunter, M. E.; Maehr, R.; Shen, Y.; Tilgner, H. U.; Wold,
+      B. J.; Vollmers, C.; Frankish, A.; Au, K. F.; Sheynkman, G. M.; Mortazavi, A.; Conesa, A.; Brooks, A.
+      N.
     journal: Nature Methods
     year: 2024
     doi: 10.1038/s41592-024-02298-3
@@ -973,15 +961,15 @@ claims:
     text_access: full_text
     lines: L146
     anchor: https://paperclip.gxl.ai/citations/papers/PMC11543605#L146
-    quote: 'To create a reference for genome annotation, we recommend using high-quality data, including
-      replicates, using extensive orthogonal data, imposing a transcript-level filter
+    quote: 'To create a reference for genome annotation, we recommend using high-quality data, including replicates,
+      using extensive orthogonal data, imposing a transcript-level filter
 
       '
   confidence: high
 - id: CAT-031
-  claim: 'Isopedia indexes long-read alignments from 1,007 public human transcriptomes - 603 PacBio and
-    404 Nanopore - across 37 tissue contexts, making recurrence across samples rather than presence in
-    a reference the unit of evidence for an isoform.
+  claim: 'Isopedia indexes long-read alignments from 1,007 public human transcriptomes - 603 PacBio and 404
+    Nanopore - across 37 tissue contexts, making recurrence across samples rather than presence in a reference
+    the unit of evidence for an isoform.
 
     '
   topic: isopedia and isoform atlases
@@ -999,15 +987,15 @@ claims:
     text_access: full_text
     lines: L23
     anchor: https://paperclip.gxl.ai/citations/papers/PMC13041807#L23
-    quote: 'we aggregated 1,007 public human long-read RNA sequencing datasets (603 PacBio, 404 ONT),
-      manually curated and normalized their metadata
+    quote: 'we aggregated 1,007 public human long-read RNA sequencing datasets (603 PacBio, 404 ONT), manually
+      curated and normalized their metadata
 
       '
   confidence: high
 - id: CAT-032
-  claim: 'Re-scoring the same benchmark sample against a population of long-read transcriptomes instead
-    of a reference annotation cut the apparent novel fraction from roughly 27-52 per cent down to 2-5
-    per cent, a reduction of up to 26-fold.
+  claim: 'Re-scoring the same benchmark sample against a population of long-read transcriptomes instead of
+    a reference annotation cut the apparent novel fraction from roughly 27-52 per cent down to 2-5 per cent,
+    a reduction of up to 26-fold.
 
     '
   topic: isopedia and isoform atlases
@@ -1055,15 +1043,15 @@ claims:
     text_access: full_text
     lines: L18
     anchor: https://paperclip.gxl.ai/citations/papers/PMC13041807#L18
-    quote: 'a circular and unstable definition of “novelty”: a transcript may be labeled novel because
-      it has not yet been incorporated into a given annotation
+    quote: 'a circular and unstable definition of “novelty”: a transcript may be labeled novel because it has
+      not yet been incorporated into a given annotation
 
       '
   confidence: high
 - id: CAT-035
-  claim: 'The TRAILS immune atlas catalogued 159,369 isoforms from 17,496 loci across 29 human immune
-    cell subsets isolated from peripheral blood, with 78 per cent of isoforms carrying either a novel
-    splice-site combination or an outright novel splice site relative to GENCODE.
+  claim: 'The TRAILS immune atlas catalogued 159,369 isoforms from 17,496 loci across 29 human immune cell
+    subsets isolated from peripheral blood, with 78 per cent of isoforms carrying either a novel splice-site
+    combination or an outright novel splice site relative to GENCODE.
 
     '
   topic: isopedia and isoform atlases
@@ -1086,10 +1074,10 @@ claims:
       '
   confidence: high
 - id: CAT-036
-  claim: 'TRAILS reports its own confidence ceiling: the whole atlas comes from one healthy donor, and
-    a single independent PBMC sample from a second individual reproduced 85.0 per cent of the isoforms
-    that were expressed in PBMC but only 30.6 per cent of the catalogued isoforms across all cell types
-    - which is why the resource ships as both an exploratory and a validated set.
+  claim: 'TRAILS reports its own confidence ceiling: the whole atlas comes from one healthy donor, and a single
+    independent PBMC sample from a second individual reproduced 85.0 per cent of the isoforms that were expressed
+    in PBMC but only 30.6 per cent of the catalogued isoforms across all cell types - which is why the resource
+    ships as both an exploratory and a validated set.
 
     '
   topic: isopedia and isoform atlases
@@ -1112,19 +1100,19 @@ claims:
       '
   confidence: high
 - id: CAT-038
-  claim: 'The GTEx long-read survey covered 88 samples spanning GTEx tissues and cell lines on Nanopore
-    and added just under 100,000 previously unannotated transcripts to already-annotated genes. Figures
-    here are from the preprint; the journal version was not available in the corpus.
+  claim: 'The GTEx long-read survey covered 88 samples spanning GTEx tissues and cell lines on Nanopore and
+    added just under 100,000 previously unannotated transcripts to already-annotated genes. Figures here are
+    from the preprint; the journal version was not available in the corpus.
 
     '
   topic: cross-tissue isoform atlases
   source:
     doc_id: bio_68a8e7ff6c37
     title: Transcriptome variation in human tissues revealed by long-read sequencing
-    authors: Glinos, D. A.; Garborcauskas, G.; Hoffman, P.; Ehsan, N.; Jiang, L.; Gokden, A.; Dai, X.;
-      Aguet, F.; Brown, K. L.; Garimella, K.; Bowers, T.; Costello, M.; Ardlie, K.; Jian, R.; Tucker,
-      N. R.; Ellinor, P. T.; Harrington, E. D.; Tang, H.; Snyder, M.; Juul, S.; Mohammadi, P.; MacArthur,
-      D. G.; Lappalainen, T.; Cummings, B.
+    authors: Glinos, D. A.; Garborcauskas, G.; Hoffman, P.; Ehsan, N.; Jiang, L.; Gokden, A.; Dai, X.; Aguet,
+      F.; Brown, K. L.; Garimella, K.; Bowers, T.; Costello, M.; Ardlie, K.; Jian, R.; Tucker, N. R.; Ellinor,
+      P. T.; Harrington, E. D.; Tang, H.; Snyder, M.; Juul, S.; Mohammadi, P.; MacArthur, D. G.; Lappalainen,
+      T.; Cummings, B.
     journal: bioRxiv
     year: 2021
     doi: 10.1101/2021.01.22.427687
@@ -1140,19 +1128,19 @@ claims:
       '
   confidence: medium
 - id: CAT-039
-  claim: 'In that GTEx long-read dataset, 127,478 transcripts were quantified across 27,461 genes and
-    77 per cent of them had intron chains matching nothing in the GENCODE release used, with intron retention
-    strongly enriched among the novel set.
+  claim: 'In that GTEx long-read dataset, 127,478 transcripts were quantified across 27,461 genes and 77 per
+    cent of them had intron chains matching nothing in the GENCODE release used, with intron retention strongly
+    enriched among the novel set.
 
     '
   topic: cross-tissue isoform atlases
   source:
     doc_id: bio_68a8e7ff6c37
     title: Transcriptome variation in human tissues revealed by long-read sequencing
-    authors: Glinos, D. A.; Garborcauskas, G.; Hoffman, P.; Ehsan, N.; Jiang, L.; Gokden, A.; Dai, X.;
-      Aguet, F.; Brown, K. L.; Garimella, K.; Bowers, T.; Costello, M.; Ardlie, K.; Jian, R.; Tucker,
-      N. R.; Ellinor, P. T.; Harrington, E. D.; Tang, H.; Snyder, M.; Juul, S.; Mohammadi, P.; MacArthur,
-      D. G.; Lappalainen, T.; Cummings, B.
+    authors: Glinos, D. A.; Garborcauskas, G.; Hoffman, P.; Ehsan, N.; Jiang, L.; Gokden, A.; Dai, X.; Aguet,
+      F.; Brown, K. L.; Garimella, K.; Bowers, T.; Costello, M.; Ardlie, K.; Jian, R.; Tucker, N. R.; Ellinor,
+      P. T.; Harrington, E. D.; Tang, H.; Snyder, M.; Juul, S.; Mohammadi, P.; MacArthur, D. G.; Lappalainen,
+      T.; Cummings, B.
     journal: bioRxiv
     year: 2021
     doi: 10.1101/2021.01.22.427687
@@ -1168,9 +1156,8 @@ claims:
   confidence: medium
 - id: CAT-041
   claim: 'Catalogs built from short-read assembly reached the opposite verdict about transcriptional abundance:
-    assembling thousands of GTEx samples produced over 30 million distinct transcripts at some 700,000
-    genomic locations, of which the authors judged only about 42,000 - six per cent - to be functional
-    gene loci.
+    assembling thousands of GTEx samples produced over 30 million distinct transcripts at some 700,000 genomic
+    locations, of which the authors judged only about 42,000 - six per cent - to be functional gene loci.
 
     '
   topic: other large-scale cataloging efforts
@@ -1189,15 +1176,15 @@ claims:
     text_access: full_text
     lines: L127
     anchor: https://paperclip.gxl.ai/citations/papers/PMC6260756#L127
-    quote: 'we observed over 30 million distinct transcripts in approximately 700,000 distinct genomic
-      locations, of which only about 42,000 (6%) appear to represent functional gene loci
+    quote: 'we observed over 30 million distinct transcripts in approximately 700,000 distinct genomic locations,
+      of which only about 42,000 (6%) appear to represent functional gene loci
 
       '
   confidence: high
 - id: CAT-042
   claim: 'CHESS 3 shows that the size of a human transcript catalog is largely a policy choice: by excluding
-    anything judged non-functional it lists 19,839 protein-coding genes with 99,202 transcripts, about
-    five per gene, against roughly 110,000 protein-coding transcripts in the contemporaneous GENCODE release.
+    anything judged non-functional it lists 19,839 protein-coding genes with 99,202 transcripts, about five
+    per gene, against roughly 110,000 protein-coding transcripts in the contemporaneous GENCODE release.
 
     '
   topic: other large-scale cataloging efforts
@@ -1205,9 +1192,8 @@ claims:
     doc_id: PMC10614308
     title: 'CHESS 3: an improved, comprehensive catalog of human genes and transcripts based on large-scale
       expression data, phylogenetic analysis, and protein structure'
-    authors: Varabyou, A.; Sommer, M. J.; Erdogdu, B.; Shinder, I.; Minkin, I.; Chao, K. H.; Park, S.;
-      Heinz, J.; Pockrandt, C.; Shumate, A.; Rincon, N.; Puiu, D.; Steinegger, M.; Salzberg, S. L.; Pertea,
-      M.
+    authors: Varabyou, A.; Sommer, M. J.; Erdogdu, B.; Shinder, I.; Minkin, I.; Chao, K. H.; Park, S.; Heinz,
+      J.; Pockrandt, C.; Shumate, A.; Rincon, N.; Puiu, D.; Steinegger, M.; Salzberg, S. L.; Pertea, M.
     journal: Genome Biology
     year: 2023
     doi: 10.1186/s13059-023-03088-4
@@ -1222,23 +1208,23 @@ claims:
 
       '
   confidence: high
-  figure_idea: 'A grouped bar chart of protein-coding gene count versus protein-coding transcript count
-    for GENCODE, RefSeq and CHESS 3, annotated with each project''s stated inclusion rule - showing the
-    gene counts agreeing and the transcript counts diverging.
+  figure_idea: 'A grouped bar chart of protein-coding gene count versus protein-coding transcript count for
+    GENCODE, RefSeq and CHESS 3, annotated with each project''s stated inclusion rule - showing the gene counts
+    agreeing and the transcript counts diverging.
 
     '
 - id: CAT-043
   claim: 'A diverse-ancestry long-read cohort shows how much a catalog''s content depends on who was sequenced:
-    380,519 candidate transcript models were collapsed to 155,875 after reproducibility filtering, of
-    which 41,297 were novel and 31,097 were absent from the GTEx, ENCODE4 and CHESS3 catalogs.
+    380,519 candidate transcript models were collapsed to 155,875 after reproducibility filtering, of which
+    41,297 were novel and 31,097 were absent from the GTEx, ENCODE4 and CHESS3 catalogs.
 
     '
   topic: other large-scale cataloging efforts
   source:
     doc_id: PMC12675792
     title: Long-read transcriptomics of a diverse human cohort reveals ancestry bias in gene annotation
-    authors: Clavell-Revelles, P.; Reese, F.; Carbonell-Sala, S.; Degalez, F.; Arnan, C.; Oliveros, W.;
-      Palumbo, E.; Perteghella, T.; Guigó, R.; Melé, M.
+    authors: Clavell-Revelles, P.; Reese, F.; Carbonell-Sala, S.; Degalez, F.; Arnan, C.; Oliveros, W.; Palumbo,
+      E.; Perteghella, T.; Guigó, R.; Melé, M.
     journal: Nature Communications
     year: 2025
     doi: 10.1038/s41467-025-66096-x
@@ -1248,23 +1234,23 @@ claims:
     text_access: full_text
     lines: L21,L23
     anchor: https://paperclip.gxl.ai/citations/papers/PMC12675792#L21,L23
-    quote: 'we discovered 31,097 novel transcripts (75.3%) that have not already been described by the
-      other catalogs
+    quote: 'we discovered 31,097 novel transcripts (75.3%) that have not already been described by the other
+      catalogs
 
       '
   confidence: high
 - id: CAT-044
   claim: 'That cohort also found the annotation gap is not ancestry-neutral: population-specific transcripts
-    found only in European samples were enriched for already-annotated structures, while those found only
-    in non-European samples were enriched for novel ones.
+    found only in European samples were enriched for already-annotated structures, while those found only in
+    non-European samples were enriched for novel ones.
 
     '
   topic: other large-scale cataloging efforts
   source:
     doc_id: PMC12675792
     title: Long-read transcriptomics of a diverse human cohort reveals ancestry bias in gene annotation
-    authors: Clavell-Revelles, P.; Reese, F.; Carbonell-Sala, S.; Degalez, F.; Arnan, C.; Oliveros, W.;
-      Palumbo, E.; Perteghella, T.; Guigó, R.; Melé, M.
+    authors: Clavell-Revelles, P.; Reese, F.; Carbonell-Sala, S.; Degalez, F.; Arnan, C.; Oliveros, W.; Palumbo,
+      E.; Perteghella, T.; Guigó, R.; Melé, M.
     journal: Nature Communications
     year: 2025
     doi: 10.1038/s41467-025-66096-x
@@ -1279,22 +1265,21 @@ claims:
 
       '
   confidence: high
-  figure_idea: 'Per-population bars of transcripts discovered per unit sequencing depth, split annotated
-    versus novel, with populations ordered by how much of their discovery is novel - the asymmetry is
-    the whole point.
+  figure_idea: 'Per-population bars of transcripts discovered per unit sequencing depth, split annotated versus
+    novel, with populations ordered by how much of their discovery is novel - the asymmetry is the whole point.
 
     '
 - id: CAT-046
   claim: 'GENCODE and benchmarking authors jointly warn that depth alone could inflate reference transcript
-    sets by millions of models, which turns the question from whether novel transcripts are real into
-    what a reference annotation is for.
+    sets by millions of models, which turns the question from whether novel transcripts are real into what
+    a reference annotation is for.
 
     '
   topic: what cataloging changed
   source:
     doc_id: PMC12047247
-    title: Notable challenges posed by long-read sequencing for the study of transcriptional diversity
-      and genome annotation
+    title: Notable challenges posed by long-read sequencing for the study of transcriptional diversity and
+      genome annotation
     authors: Monzó, C.; Frankish, A.; Conesa, A.
     journal: Genome Research
     year: 2025
@@ -1305,22 +1290,22 @@ claims:
     text_access: full_text
     lines: L28
     anchor: https://paperclip.gxl.ai/citations/papers/PMC12047247#L28
-    quote: 'this has the potential to massively increase the number of transcripts that can be added to
-      reference transcript sets like GENCODE, perhaps by many millions
+    quote: 'this has the potential to massively increase the number of transcripts that can be added to reference
+      transcript sets like GENCODE, perhaps by many millions
 
       '
   confidence: high
 - id: CAT-047
-  claim: 'The same authors argue the "one right annotation" goal is incoherent because uses conflict:
-    maximal transcript representation helps gene-level read assignment and transcript discovery but degrades
-    isoform-level quantification by spreading reads across near-identical models.
+  claim: 'The same authors argue the "one right annotation" goal is incoherent because uses conflict: maximal
+    transcript representation helps gene-level read assignment and transcript discovery but degrades isoform-level
+    quantification by spreading reads across near-identical models.
 
     '
   topic: what cataloging changed
   source:
     doc_id: PMC12047247
-    title: Notable challenges posed by long-read sequencing for the study of transcriptional diversity
-      and genome annotation
+    title: Notable challenges posed by long-read sequencing for the study of transcriptional diversity and
+      genome annotation
     authors: Monzó, C.; Frankish, A.; Conesa, A.
     journal: Genome Research
     year: 2025
@@ -1331,25 +1316,23 @@ claims:
     text_access: full_text
     lines: L32
     anchor: https://paperclip.gxl.ai/citations/papers/PMC12047247#L32
-    quote: 'it may instead hinder accurate isoform-level quantification by causing over-dispersion of
-      counts between structurally similar isoforms
+    quote: 'it may instead hinder accurate isoform-level quantification by causing over-dispersion of counts
+      between structurally similar isoforms
 
       '
   confidence: high
 - id: CAT-049
-  claim: 'Non-human catalogs show the same story with a lower starting point: one multiplexed Nanopore
-    run over 32 bovine tissues yielded 99,044 transcript isoforms at 31,824 loci, only 21 per cent of
-    which exactly matched an existing reference transcript while 61 per cent were novel isoforms of known
-    genes.
+  claim: 'Non-human catalogs show the same story with a lower starting point: one multiplexed Nanopore run
+    over 32 bovine tissues yielded 31,824 loci bearing 99,044 transcript isoforms, of which only 21 per cent
+    exactly matched an existing reference transcript while 61 per cent were novel isoforms of known genes.
 
     '
   topic: other large-scale cataloging efforts
   source:
     doc_id: PMC8173071
-    title: Large-Scale Multiplexing Permits Full-Length Transcriptome Annotation of 32 Bovine Tissues
-      From a Single Nanopore Flow Cell
-    authors: Halstead, M. M.; Islas-Trejo, A.; Goszczynski, D. E.; Medrano, J. F.; Zhou, H.; Ross, P.
-      J.
+    title: Large-Scale Multiplexing Permits Full-Length Transcriptome Annotation of 32 Bovine Tissues From
+      a Single Nanopore Flow Cell
+    authors: Halstead, M. M.; Islas-Trejo, A.; Goszczynski, D. E.; Medrano, J. F.; Zhou, H.; Ross, P. J.
     journal: Frontiers in Genetics
     year: 2021
     doi: 10.3389/fgene.2021.664260
@@ -1359,53 +1342,52 @@ claims:
     text_access: full_text
     lines: L5
     anchor: https://paperclip.gxl.ai/citations/papers/PMC8173071#L5
-    quote: 'identify and characterize the expression dynamics of 99,044 transcript isoforms at 31,824
-      loci. Of these predicted transcripts, 21% exactly matched a reference transcript
+    quote: 'identify and characterize the expression dynamics of 99,044 transcript isoforms at 31,824 loci.
+      Of these predicted transcripts, 21% exactly matched a reference transcript
 
       '
   confidence: high
+  note: Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 leads:
 - note: 'The corpus holds the ENCODE4 long-read collection only as the May 2023 bioRxiv preprint (bio_ad940b766ccc,
-    also deposited as PMC10245583). A peer-reviewed journal version may now exist; all ENCODE4 numbers
-    in these claims come from the preprint text and should be re-checked against the journal version before
-    publication.
+    also deposited as PMC10245583). A peer-reviewed journal version may now exist; all ENCODE4 numbers in these
+    claims come from the preprint text and should be re-checked against the journal version before publication.
 
     '
-  why: Citing a preprint for the chapter's anchor dataset is a resolvable weakness, and figures can shift
-    between preprint and final version.
+  why: Citing a preprint for the chapter's anchor dataset is a resolvable weakness, and figures can shift between
+    preprint and final version.
 - note: 'The GTEx long-read paper was read as the January 2021 bioRxiv preprint (bio_68a8e7ff6c37). Corpus
     metadata lists a 2022 journal version at doi 10.1038/s41586-022-05035-y; the full text of that version
-    was not in the corpus, and an abstracts-scope search returned only the preprint record. CAT-038 and
-    CAT-039 are marked medium confidence for this reason.
+    was not in the corpus, and an abstracts-scope search returned only the preprint record. CAT-038 and CAT-039
+    are marked medium confidence for this reason.
 
     '
   why: The bibliography should cite the journal version, but the quoted lines are from the preprint.
 - note: 'GENCODE Basic is defined in prose only as "all models annotated as protein-coding that are considered
-    as full-length" (PMC11701607 L122); no per-gene transcript count for Basic was found, and Ensembl
-    Canonical is described only in a browser-view figure legend, which was not citable.
+    as full-length" (PMC11701607 L122); no per-gene transcript count for Basic was found, and Ensembl Canonical
+    is described only in a browser-view figure legend, which was not citable.
 
     '
   why: The chapter may want to contrast Basic against Primary quantitatively; only Primary has a published
     average.
-- note: 'Jalali et al. carry a transcript-count series across GENCODE v1-V24 (CAT-053), but no source
-    was found that continues it to the present, and that paper is internally inconsistent about the v1
-    count (83,725 at L18 versus 87,852 at L23). Composing one 2008-to-now growth curve therefore needs
-    counts pulled from the successive GENCODE reports directly.
+- note: 'Jalali et al. carry a transcript-count series across GENCODE v1-V24 (CAT-053), but no source was found
+    that continues it to the present, and that paper is internally inconsistent about the v1 count (83,725
+    at L18 versus 87,852 at L23). Composing one 2008-to-now growth curve therefore needs counts pulled from
+    the successive GENCODE reports directly.
 
     '
-  why: Transcripts per gene over release number is the chapter's most natural figure and currently has
-    no single anchorable source.
-- note: 'LRGASP''s own limitations section states that long-read mapping methods were not benchmarked
-    at all (all tools used minimap2) and that submitters chose which data modalities to enter, leaving
-    participation unbalanced. This is anchored at PMC11543605 L150 and was not written up as a separate
-    claim.
+  why: Transcripts per gene over release number is the chapter's most natural figure and currently has no single
+    anchorable source.
+- note: 'LRGASP''s own limitations section states that long-read mapping methods were not benchmarked at all
+    (all tools used minimap2) and that submitters chose which data modalities to enter, leaving participation
+    unbalanced. This is anchored at PMC11543605 L150 and was not written up as a separate claim.
 
     '
   why: Any statement that LRGASP settled a question should be qualified by what it did not test.
-- note: 'Searches for a GENCODE or Ensembl statement of how many transcripts a typical protein-coding
-    gene is expected to end up with, once long-read data are fully incorporated, returned only the qualitative
-    "tens or even hundreds" of CAT-011.
+- note: 'Searches for a GENCODE or Ensembl statement of how many transcripts a typical protein-coding gene
+    is expected to end up with, once long-read data are fully incorporated, returned only the qualitative "tens
+    or even hundreds" of CAT-011.
 
     '
-  why: A quantitative projection would let the chapter say where annotation is heading rather than only
-    where it has been.
+  why: A quantitative projection would let the chapter say where annotation is heading rather than only where
+    it has been.

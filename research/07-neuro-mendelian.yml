@@ -596,8 +596,8 @@ claims:
 
     '
 - id: NEU-023
-  claim: 'Neurexin mRNAs are extensively alternatively spliced at six canonical positions, SS1 through SS6,
-    whose use is reported to be tightly regulated in space and time.
+  claim: 'Six canonical positions in neurexin mRNAs, SS1 through SS6, undergo extensive alternative splicing,
+    and their use is reported to be tightly regulated in space and time.
 
     '
   topic: Neuronal isoform diversity
@@ -617,6 +617,7 @@ claims:
     anchor: https://paperclip.gxl.ai/citations/papers/PMC10063607#L11
     quote: Neurexin mRNAs are extensively alternatively spliced at six canonical positions (SS1 to SS6)
   confidence: high
+  note: Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 - id: NEU-024
   claim: 'Long-read sequencing of mid-gestation human neocortex reported 214,516 distinct isoforms, of which
     72.6 per cent were unannotated in GENCODE, plus more than 7,000 novel exons, expanding the inferred proteome
@@ -723,9 +724,9 @@ claims:
     quote: Previous studies suggest one-third of disease alleles alter splicing.
   confidence: medium
 - id: NEU-028
-  claim: 'The SpliceAI authors estimated that 9 to 11 per cent of pathogenic mutations in patients with rare
-    genetic disorders are caused by cryptic splicing, which they describe as a previously underappreciated
-    class of disease variation.
+  claim: 'The SpliceAI authors estimated that cryptic splicing causes 9 to 11 per cent of the pathogenic mutations
+    carried by patients who have rare genetic disorders, and they describe cryptic splicing as a class of disease
+    variation previously underappreciated.
 
     '
   topic: What fraction of pathogenic variants act through splicing
@@ -747,6 +748,7 @@ claims:
     quote: We estimate that 9%-11% of pathogenic mutations in patients with rare genetic disorders are caused
       by this previously underappreciated class of disease variation.
   confidence: high
+  note: Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 - id: NEU-029
   claim: 'Within splice-region variants specifically, a de novo mutation burden analysis across 7,833 developmental
     disorder probands and their parents apportioned 73 per cent of the pathogenic contribution to the canonical
@@ -807,9 +809,9 @@ claims:
 
     '
 - id: NEU-031
-  claim: 'Muscle RNA sequencing of 50 genetically undiagnosed rare muscle disease patients reached an overall
-    diagnosis rate of 35 per cent, by validating candidate splice-disrupting variants and by finding splice-altering
-    variants in both exonic and deep intronic positions.
+  claim: 'Muscle RNA sequencing of 50 genetically undiagnosed rare muscle disease patients reached 35 per cent
+    as an overall diagnosis rate, by validating candidate splice-disrupting variants and by finding variants
+    that alter splicing both at exonic positions and at deep intronic ones.
 
     '
   topic: RNA sequencing as a diagnostic
@@ -839,6 +841,7 @@ claims:
     tissue choice explains much of the spread.
 
     '
+  note: Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 - id: NEU-032
   claim: 'In fibroblasts from 48 exome-undiagnosed mitochondriopathy patients, transcriptome sequencing produced
     a molecular diagnosis in 10 per cent (5 of 48) and candidate genes for the remainder, with per-sample medians
@@ -969,9 +972,9 @@ claims:
       ρ, 0.59 versus 0.55 for SpliceAI)
   confidence: medium
 - id: NEU-037
-  claim: 'The endpoint of isoform-level diagnosis is a drug designed for one genome: proof-of-concept experiments
-    in cell lines from a single patient were the basis for launching an n-of-1 study of the splice-modulating
-    oligonucleotide milasen within one year of first contact with that patient.
+  claim: 'The endpoint of isoform-level diagnosis is a drug designed for one genome: cell lines from a single
+    patient supplied the proof-of-concept experiments on which milasen, a splice-modulating oligonucleotide,
+    was taken into an n-of-1 study within one year of first contact with that patient.
 
     '
   topic: Antisense oligonucleotide therapy and n-of-1 cases
@@ -1002,6 +1005,7 @@ claims:
     steps are compressible and which are not.
 
     '
+  note: Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 - id: NEU-038
   claim: 'The clinical result of the milasen n-of-1 was partial and should be reported as such: seizure frequency
     and duration fell to half their pre-treatment values, but the drug did not impede progressive brain volume

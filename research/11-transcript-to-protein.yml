@@ -548,8 +548,8 @@ claims:
   confidence: high
 - id: PRO-034
   claim: That depth was reached by splitting six cell lines with six different enzymes and reading the pieces
-    three ways, yielding a million unique peptides from 17,717 protein groups at a median coverage of approximately
-    80 per cent of each protein's length.
+    three ways, which gave a million unique peptides spanning 17,717 protein groups, at a median coverage of
+    approximately 80 per cent of each protein's length.
   topic: is the isoform translated
   source:
     doc_id: PMC10713452
@@ -568,6 +568,7 @@ claims:
     quote: we identify a million unique peptides from 17,717 protein groups, with a median sequence coverage
       of approximately 80%
   confidence: high
+  note: Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 - id: PRO-035
   claim: The headline result depends entirely on which genes are counted. Across everything compared against
     RNA, about 80 per cent of single-residue variants were seen in protein but only about 20 per cent of the
