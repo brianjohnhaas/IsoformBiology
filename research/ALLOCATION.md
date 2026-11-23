@@ -28,7 +28,14 @@ Deepening order, and why:
 | 3 | 2 animals | **Done.** 1,865 to 7,087 words from 125 records. The full-text recovery pass failed: of thirteen abstract-only sources named for recovery, one was recovered, through the authors' own preprint. Abstract-only sources in this chapter rose from fifteen to thirty-eight, because deepening a chapter whose literature is largely pre-PMC adds abstracts |
 | 4 | 3 plants, fungi, protists | **Done.** 1,861 to 11,861 words from 236 records, the longest chapter in the book. Selection was by evidence tier rather than by coverage: a named gene, an isoform-specific perturbation, a measured phenotype. Transcriptome-wide prevalence counts went to leads unless they bound a named case. Abstract-only sources rose from one to thirty-one |
 | 5 | 6 cancer | **Done.** 1,779 to 10,070 words from 163 records. The classic cases named in the leads were mostly homed elsewhere already: chapter 2 owns Bcl-x, PKM, FGFR2 and ESRP, chapter 12 owns BRAF, AR-V7 and CD44v6. What the pass added instead is the bounding experiment for each case it does own, and the clinical arc from E7107 forward. EGFRvIII is excluded in one sentence as a genomic deletion. CD20 antigen loss went to chapter 12, beside CD19 |
-| 6 | later | 1, 4, 7, 8, 9, 10, 11, 13 |
+| 6 | 1 foundations | **Done.** Every other chapter cross-references its definitions, so it had to be settled before the chapters that refer into it grew |
+| 7 | 4 methods before long reads | **Done.** Owns the chronology and the prevalence-era numbers the rest of the book defers to |
+| 8 | 7 neurodegeneration and Mendelian disease | **Done.** The best-evidenced therapeutic cases in the book sit here |
+| 9 | 8 single cells and tissue space | **Done.** |
+| 10 | 9 annotations and catalogues | **Done.** |
+| 11 | 10 variants, QTLs and clinical interpretation | **Done.** |
+| 12 | 11 from transcript to protein | **Done.** Already had 55 records against 2,548 words, so this pass needed synthesis more than reading |
+| 13 | 13 accounting | **Done, and last by necessity.** Its rows restate the home chapters, so it could only be written once they were all deepened |
 
 A chapter is not finished when it hits a word count. It is finished when its
 sections cover their subject and its paragraphs hold more than one source each.
@@ -67,6 +74,17 @@ sections cover their subject and its paragraphs hold more than one source each.
 | Isoform switching as acquired resistance | DRG-* | ch12 | `#sec-resistance` | ch6 |
 | Emerging proteoform-selective modalities | DRG-* | ch12 | `#sec-modalities` | ch6, ch7 |
 | Proteoform medicine as a programme | DRG-* | ch12 | `#sec-programme` | ch9, glossary |
+| Diagnostic yield of RNA sequencing in rare disease, and which tissue to assay | 07-* | ch7 | `#sec-rnaseq-diagnosis` | ch10 |
+| Turning RNA evidence into a clinical variant classification (ACMG codes, reanalysis, reporting) | 10-* | ch10 | `#sec-vus`, `#sec-clinical` | ch7 |
+| Splice-effect prediction from sequence, and what its scores do not quantify | 07-* | ch7 | `#sec-splice-prediction` | ch10 |
+| Splice-switching oligonucleotides as approved drugs for named Mendelian diseases | 07-* | ch7 | `#sec-sma`, `#sec-dmd` | ch12 |
+| Common-variant genetics: GWAS colocalisation, sQTLs, heritability through splicing | 10-* | ch10 | `#sec-coloc-gap`, `#sec-how-much` | ch7, ch13 |
+| Why short reads cannot reconstruct a molecule (the non-identifiability result) | TECH-* | ch4 | `#sec-short-read-limit` | ch5, ch9 |
+| How isoforms are identified in practice, by short-read and long-read methods | LR-* | ch5 | `#sec-identification` | ch4, ch9 |
+| Transcript ends as the commonest site of isoform difference, as framing | FND-* | ch1 | `#sec-ends` | ch5, ch8, ch11 |
+| Measured diversity of start sites, splice chains and end sites in a dataset | LR-021/022, CAT-003 | ch5 | `#sec-three-axes` | ch1, ch8, ch9 |
+| Alternative polyadenylation measured across cell types | 08-* | ch8 | `#sec-sc-apa` | ch11 |
+| What a 3' UTR difference does to stability, localisation and miRNA access | PRO-* | ch11 | `#sec-utr-only` | ch8 |
 
 ## The closing chapter is an explicit exception to the one-home rule
 
