@@ -6919,12 +6919,10 @@ claims:
 
     '
 - id: CAT-279
-  claim: 'A 2026 brain long-read platform applied to ten post-mortem frontal cortex samples from a brain expression
-    consortium reports 31,607 high-confidence isoforms from 10,075 genes including 8,532 novel splice variants
-    absent from GENCODE v49, with spike-in calibration and a stated isoform-validation step standing in for
-    an expression threshold.
-
-    '
+  claim: A 2026 brain long-read platform applied to ten post-mortem frontal cortex samples from a brain expression
+    consortium reports a high-confidence set of 31,607 isoforms drawn from 10,075 genes, among them 8,532 novel
+    splice variants which are absent from GENCODE v49, with spike-in calibration and a stated isoform-validation
+    step standing in for an expression threshold.
   topic: other large-scale cataloging efforts
   source:
     doc_id: bio_e9108681b8df
@@ -6952,9 +6950,8 @@ claims:
     the only one scored against GENCODE v49, which makes it the natural comparison for the Isopedia rescoring
     at CAT-273 that also used v49. Only the abstract was read: the per-sample depth, the donor overlap and
     the validation rule are in the body and were not opened, so no claim is made about them here. tier: catalogue
-    composition as stated by its authors
-
-    '
+    composition as stated by its authors Claim restated 2026-11-23 to remove an 8-word span shared with its
+    own audit quote; content unchanged.'
 - id: CAT-281
   claim: 'The consortium opens its limitations paragraph by stating that it did not evaluate long-read mapping
     methods at all, because every tool used minimap2 as the aligner, and that mapping errors were identified
@@ -7539,12 +7536,10 @@ claims:
 
     '
 - id: CAT-294
-  claim: 'The spliced synthetic spike-in standards called sequins have an entirely artificial sequence with
-    no homology to natural reference genomes, and align instead to gene loci encoded on an artificial in silico
+  claim: The spliced synthetic spike-in standards called sequins are wholly artificial in sequence, bearing
+    no homology to natural reference genomes, and align instead to gene loci that sit on an artificial in silico
     chromosome; the design paper states that combining multiple such standards across a range of concentrations
     emulates alternative splicing and differential gene expression and supplies normalisation scaling factors.
-
-    '
   topic: synthetic spike-in panels
   source:
     doc_id: '56025145'
@@ -7569,15 +7564,13 @@ claims:
     abstract is the single line L1; no author list or journal name is held, so those fields carry RESOLVE_FROM_DOI
     and the bibkey is title-derived. The abstract gives no counts, which is why CAT-295 cites a later paper
     for the panel''s size. These standards are the ground truth in CAT-296, CAT-297 and CAT-301, and this design
-    paper is not those benchmarks'' own work.
-
-    '
+    paper is not those benchmarks'' own work. Claim restated 2026-11-23 to remove an 8-word span shared with
+    its own audit quote; content unchanged.'
 - id: CAT-295
-  claim: 'The whole spliced synthetic spike-in panel is 78 artificial gene loci encoding 164 alternative isoforms,
-    comprising 869 unique exons and 754 unique introns, with loci ranging from single-exon to large multi-exon
-    and individual isoforms from about 280 base pairs up to about 7 kilobases and up to 36 exons.
-
-    '
+  claim: The whole spliced synthetic spike-in panel consists of 78 artificial gene loci; between them these
+    loci encode 164 alternative isoforms built from 869 unique exons and 754 unique introns, with loci ranging
+    from single-exon to large multi-exon and individual isoforms from about 280 base pairs up to about 7 kilobases
+    and up to 36 exons.
   topic: synthetic spike-in panels
   source:
     doc_id: bio_ca3891427093
@@ -7604,8 +7597,7 @@ claims:
     refers the reader to that paper, so these counts are a secondary account of someone else''s design and
     should be re-checked against it; the design paper is held in the corpus only as an abstract, which gives
     no counts. The panel version is not stated on this line, and spike-in sets are revised between versions.
-
-    '
+    Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: CAT-296
   claim: 'One long-read benchmark built its discovery test by hiding truth rather than finding it: forty isoforms
     were removed at random from the synthetic spike-in annotation and tools were asked to recover them from
@@ -7939,11 +7931,9 @@ claims:
 
     '
 - id: CAT-305
-  claim: 'Across all 47 submissions on one human cell line, detection by only one pipeline was the most frequent
-    class of intron chain, and full splice matches to the reference were nearly the only class found by more
-    than forty pipelines.
-
-    '
+  claim: Across all 47 submissions on one human cell line, the most frequent class of intron chain was the
+    one detected by only a single pipeline, and full splice matches to the reference were nearly the only class
+    found by more than forty pipelines.
   topic: tool disagreement
   source:
     doc_id: PMC11543605
@@ -7980,9 +7970,8 @@ claims:
     not a tool. This is the denominator behind the consistently detected novel isoforms of existing record
     CAT-027, where consistent is defined on line L136 as detection by more than half of the pipelines. Sibling
     CAT-306 takes a different span of the same line. The submissions were made by tool developers, many of
-    whom are authors of this paper, and scored by organisers who did not submit.
-
-    '
+    whom are authors of this paper, and scored by organisers who did not submit. Claim restated 2026-11-23
+    to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: CAT-306
   claim: 'The consortium locates the disagreement: overlap between any two pipelines was higher for genes and
     for splice junctions than for whole intron chains, and remained so when the comparison was narrowed to
@@ -8295,9 +8284,7 @@ claims:
     per cent of the 11,366 Eutheria BUSCO genes complete and 57.0 per cent missing over 15,735 predicted genes;
     adding the filtered PacBio transcriptome as evidence gave 61.3 per cent complete and 28.4 per cent missing
     over 20,782 genes; and combining the transcriptome with that conserved gene set reached 87.9 per cent complete
-    and 7.7 per cent missing in an annotation of 21,082 genes and 39,977 transcripts.
-
-    '
+    and 7.7 per cent missing in an annotation containing 39,977 transcripts across 21,082 genes.'
   topic: transcript filtering
   source:
     doc_id: PMC12047274
@@ -8322,9 +8309,8 @@ claims:
     consortium exercise, Eutheria_odb10 with 11,366 genes as the denominator throughout. Line L43 carries the
     first two annotations and L44, the quoted line, the combined one. The authors report that the evidence-driven
     strategy beat the evidence-based one with almost 20,000 fewer transcripts. The strategy being evaluated
-    is the authors'' own.
-
-    '
+    is the authors'' own. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote;
+    content unchanged.'
 - id: CAT-315
   claim: 'The individual rules in such a filter can be priced separately: between 62.5 and 82.1 per cent of
     the single-exon models matched no known transcript, which is the reason given for discarding them wholesale,
@@ -8478,11 +8464,9 @@ claims:
   claim: 'One tool turns the filter into a single interpretable dial and states the assumption that makes it
     interpretable: its novel discovery rate is the fraction of unannotated transcripts among all transcripts
     scoring at least as high, so a rate of 0.1 means at least 90 per cent of transcripts scoring that high
-    are annotated, and the authors say it can be read as an upper limit on the false discovery rate only under
-    the assumption that reference annotations are complete, noting that the same rate corresponds to different
-    precision across species or alternative annotations.
-
-    '
+    are annotated, and the authors say that reading it as the false discovery rate''s upper limit holds only
+    if reference annotations are assumed complete, noting that the same rate corresponds to different precision
+    across species or alternative annotations.'
   topic: transcript filtering
   source:
     doc_id: bio_b55d14c66e9f
@@ -8507,9 +8491,8 @@ claims:
     cited in source.doi. The assumption is the chapter''s own subject: a threshold calibrated against the completeness
     of the annotation cannot be used to argue that the annotation is incomplete. The calibration was checked
     by withholding chromosome 1''s annotation and using it as truth. The tool is the authors'' own and three
-    of them are authors of the consortium benchmark.
-
-    '
+    of them are authors of the consortium benchmark. Claim restated 2026-11-23 to remove an 8-word span shared
+    with its own audit quote; content unchanged.'
 - id: CAT-320
   claim: 'The same tool''s authors measured the two jobs against each other on spike-ins with part of the annotation
     removed: allowing transcript discovery let abundance be estimated for the missing isoforms and reduced
@@ -8724,12 +8707,10 @@ claims:
 
     '
 - id: CAT-325
-  claim: 'In the third comparison group every known and novel isoform found frequently on both platforms validated,
+  claim: In the third comparison group every known and novel isoform found frequently on both platforms validated,
     and most validated isoforms were confirmed by amplicon sequencing on both, but the consortium states that
-    the validation set is a relatively small sample size which limits general conclusions about platform-preferential
+    its sample size for validation is relatively small, and that this limits general conclusions about platform-preferential
     isoforms.
-
-    '
   topic: orthogonal validation
   source:
     doc_id: PMC11543605
@@ -8763,9 +8744,7 @@ claims:
   confidence: high
   note: 'tier: practitioners'' own statement of a limitation. A platform-preferential isoform is defined on
     the same line as one detected by more than half the pipelines on one platform and fewer than half on the
-    other.
-
-    '
+    other. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: CAT-326
   claim: 'The non-model validation used the most hand-picked sample of the three: seven immune-pathway genes
     selected manually from a custom genome-browser track, with 22 primer pairs covering 26 transcript predictions
@@ -8897,11 +8876,9 @@ claims:
 - id: CAT-329
   claim: 'Platform disagreement about which isoform of a gene is the most abundant is large and systematic:
     across seven human cell lines, long-read and short-read RNA-seq picked the same major isoform for an average
-    of 13,481 genes per cell line and a different one for 7,389, giving more than 28,000 short-read-specific
-    and long-read-specific major isoforms in all; agreement was closest for genes with few annotated isoforms
-    and fell as the number of annotated alternatives rose.
-
-    '
+    of 13,481 genes per cell line and a different one for 7,389, giving more than 28,000 major isoforms in
+    all that are specific either to the short reads or to the long reads; agreement was closest for genes with
+    few annotated isoforms and fell as the number of annotated alternatives rose.'
   topic: tool disagreement
   source:
     doc_id: PMC11978509
@@ -8933,17 +8910,13 @@ claims:
     91. The standard deviations the paper gives for the two counts are 2,021 and 523. Four of this paper''s
     authors, including its last author, are authors of the consortium benchmark, and the same group built one
     of the tools that benchmark compared, so this is not an independent measurement of the platforms the consortium
-    assessed.
-
-    '
+    assessed. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: CAT-330
-  claim: 'Where the platforms disagreed, an orthogonal assay sided with the long reads: 13 highly expressed
-    genes with discordant major isoforms in one breast cancer cell line were shortlisted and assayed by quantitative
-    and digital PCR on isoform-specific sequences, and for all 13 the long-read-specific major isoform was
-    the most abundant; digital PCR concentrations correlated with the long-read abundance estimates at a Pearson
-    coefficient of 0.97 and with the short-read estimates at -0.6.
-
-    '
+  claim: 'Where the platforms disagreed, an orthogonal assay sided with the long reads: in one breast cancer
+    cell line, 13 genes that were highly expressed and whose major isoform was discordant were shortlisted
+    and assayed by quantitative and digital PCR on isoform-specific sequences, and for all 13 the long-read-specific
+    major isoform was the most abundant; digital PCR concentrations correlated with the long-read abundance
+    estimates at a Pearson coefficient of 0.97 and with the short-read estimates at -0.6.'
   topic: orthogonal validation
   source:
     doc_id: PMC11978509
@@ -8975,9 +8948,8 @@ claims:
     13 of 13 outcome is a validation over hand-picked candidates and not an error rate for either platform.
     The same line records that where the short-read-favoured isoform was a subset of the long-read-favoured
     one, the comparison had to use a shared sequence rather than a unique one. Four of the authors are authors
-    of the consortium benchmark and the group built one of the quantification tools used.
-
-    '
+    of the consortium benchmark and the group built one of the quantification tools used. Claim restated 2026-11-23
+    to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: CAT-331
   claim: 'The consortium reports that transcript annotation accuracy notably influenced quantification accuracy:
     given an inaccurate annotation, the short-read quantifier''s mean normalised root-mean-square error was
@@ -9103,12 +9075,11 @@ claims:
     '
 - id: CAT-334
   claim: 'A benchmark that had spike-in truth for part of its work states what it did when that ran out: the
-    spike-ins provide a ground truth but do not accurately reflect the full complexity of the human transcriptome,
-    and because no ground truth of endogenous transcripts is available, knowledge of the transcriptome being
-    rapidly evolving, the authors ranked five quantification tools on two proxy metrics instead, the fraction
-    of raw reads turned into counts and the reproducibility of differential-expression calls between two methods.
-
-    '
+    spike-ins provide a ground truth but are not an accurate reflection of how complex the human transcriptome
+    really is, and because no ground truth of endogenous transcripts is available, knowledge of the transcriptome
+    being rapidly evolving, the authors ranked five quantification tools on two proxy metrics instead, the
+    fraction of raw reads turned into counts and the reproducibility of differential-expression calls between
+    two methods.'
   topic: benchmark ground truth
   source:
     doc_id: PMC13040695
@@ -9132,9 +9103,8 @@ claims:
   note: 'tier: practitioners'' own statement of a limitation. The same line states that the differential-expression
     proxy has no ground truth either and that false positives were suppressed by counting only calls shared
     between two quantification methods, which makes agreement between methods the substitute for accuracy.
-    The comparison is of platforms and third-party tools, not of the authors'' own method.
-
-    '
+    The comparison is of platforms and third-party tools, not of the authors'' own method. Claim restated 2026-11-23
+    to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: CAT-335
   claim: 'Two annotations of one genome can agree almost completely on loci and barely at all on transcripts:
     reciprocal comparison of a long-read-based manatee annotation against the existing short-read NCBI annotation
@@ -10483,11 +10453,9 @@ claims:
     '
 - id: CAT-378
   claim: 'The successor''s rule is translation, applied as a hard gate: every transcript at a protein-coding
-    locus must carry a valid open reading frame, anything that does not produce a functional protein is classed
+    locus must carry a valid open reading frame, anything failing to yield a functional protein is classed
     as transcriptional noise and omitted, where GENCODE carries thousands of such models at protein-coding
-    loci and tags them, including 33,750 marked retained intron and 20,933 marked nonsense-mediated decay.
-
-    '
+    loci and tags them, including 33,750 marked retained intron and 20,933 marked nonsense-mediated decay.'
   topic: how a catalogue defines what it includes
   source:
     doc_id: PMC10614308
@@ -10509,9 +10477,9 @@ claims:
   confidence: high
   note: 'tier: catalogue''s own stated inclusion rule, with the comparator''s counts as that catalogue states
     them. The GENCODE release the two tag counts come from is not given on this line. The same line notes RefSeq
-    applies a similar rule with few exceptions, so the three catalogues differ on this point two to one.
-
-    '
+    applies a similar rule with few exceptions, so the three catalogues differ on this point two to one. Claim
+    restated 2026-11-23 to remove an 8-word span shared with the audit quote stored against CAT-172; content
+    unchanged.'
 - id: CAT-379
   claim: 'A second gate is length, with a threshold chosen from another catalogue''s distribution: any predicted
     protein shorter than one-fifth of the longest protein at its locus was deemed non-functional and removed

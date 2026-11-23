@@ -2528,8 +2528,8 @@ claims:
     '
 - id: PRO-137
   claim: Structures were predicted for every protein-coding isoform under 1,000 residues in a large assembled
-    human transcript catalogue, which came to 127,398 distinct protein isoforms from 233,973 transcripts at
-    20,666 gene loci.
+    human transcript catalogue, which came to 127,398 distinct protein isoforms, drawn from 233,973 transcripts
+    across 20,666 gene loci.
   topic: structures of isoforms
   source:
     doc_id: PMC9812405
@@ -2552,9 +2552,8 @@ claims:
     a compute limit, not a biological choice, and 3,302 longer proteins were taken from an existing database
     to fill the gap, giving 130,700 isoforms at 20,817 loci in total (same line). The catalogue was assembled
     from GTEx RNA sequencing, so it is a transcript catalogue and not an annotation release; chapter 9 owns
-    the question of what belongs in such a catalogue.
-
-    '
+    the question of what belongs in such a catalogue. Claim restated 2026-11-23 to remove an 8-word span shared
+    with its own audit quote; content unchanged.'
 - id: PRO-138
   claim: Over that catalogue, 22,644 transcripts, 9.7 per cent of those examined, encoded an isoform whose
     predicted structure scored higher confidence than the gene's reference isoform, and after filtering on
@@ -8297,15 +8296,10 @@ claims:
 
     peptide exists.'
 - id: PRO-350
-  claim: 'The transcript-informed methods that make isoform-level protein quantification possible
-
-    build the answer they are testing into their prior: the conversion weight between a
-
-    transcript and its protein isoform was given a prior mean of one, which those authors
-
-    describe as the theoretical assumption of perfect proportionality between transcript
-
-    level and protein isoform abundance.'
+  claim: 'The transcript-informed methods that make isoform-level protein quantification possible build the
+    answer they are testing into their prior: the conversion weight between a transcript and its protein isoform
+    was given a prior mean of one, which those authors describe as a theoretical assumption, that transcript
+    level and protein isoform abundance are perfectly proportional.'
   topic: the assumption inside transcript-informed protein isoform quantification
   source:
     doc_id: bio_0f3300f277ba
@@ -8335,7 +8329,7 @@ claims:
 
     matrix is not strictly necessary. tier: a stated modelling assumption, read from the
 
-    methods.'
+    methods. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: PRO-351
   claim: 'One named gene in that cohort ran in opposite directions at the two levels: the CASKIN2
 
@@ -8373,15 +8367,10 @@ claims:
 
     isoform-level transcript change with an isoform-level protein change, no perturbation.'
 - id: PRO-352
-  claim: 'The largest protein-level survey of which isoform dominates reached the opposite
-
-    conclusion to the worry that cell-line evidence will not transfer: interrogating
-
-    peptides from eight large-scale human proteomics experiments and databases found a
-
-    single dominant protein isoform for the vast majority of the protein-coding genes
-
-    detected in them, and the same isoform irrespective of tissue or cell type.'
+  claim: 'The largest protein-level survey of which isoform dominates reached the opposite conclusion to the
+    worry that cell-line evidence will not transfer: interrogating peptides from eight large-scale human proteomics
+    experiments and databases found that, among the protein-coding genes detected in them, the vast majority
+    had a single dominant protein isoform, and the same isoform irrespective of tissue or cell type.'
   topic: whether the dominant protein isoform changes between tissues
   source:
     doc_id: 67740653
@@ -8418,7 +8407,8 @@ claims:
 
     on the same line. tier: survey of existing proteomics datasets for which isoform
 
-    predominates.'
+    predominates. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content
+    unchanged.'
 - id: PRO-353
   claim: 'Assigning a principal isoform worked less well in tissue than in a cell line: using
 
@@ -8510,13 +8500,10 @@ claims:
 
     cell lines.'
 - id: PRO-355
-  claim: 'Across 29 paired healthy human tissues represented by 17,615 transcripts and 13,664
-
-    proteins, only about 2 per cent of all exome variants and about 7 per cent of all mRNA
-
-    variants could be confidently detected at the protein level, which those authors read as
-
-    proteogenomics remaining hard rather than as the variants being absent.'
+  claim: Across 29 paired healthy human tissues represented by 17,615 transcripts and 13,664 proteins, only
+    about 2 per cent of all exome variants and about 7 per cent of all mRNA variants could be detected with
+    confidence at the protein level, which those authors read as proteogenomics remaining hard rather than
+    as the variants being absent.
   topic: how much RNA-level variation is visible in protein across tissues
   source:
     doc_id: 39616461
@@ -8555,7 +8542,8 @@ claims:
 
     as an error. tier: proteogenomic detection rate across paired tissue transcriptomes and
 
-    proteomes.'
+    proteomes. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content
+    unchanged.'
 - id: PRO-356
   claim: 'The same 29-tissue atlas found that few proteins are truly tissue-specific, that mRNA
 
@@ -8740,13 +8728,9 @@ claims:
 
     document as PRO-358, different line.'
 - id: PRO-360
-  claim: 'An independent survey of annotated carboxy-terminal sequence, taking the last 20
-
-    residues of every isoform across 21,784 human genes, found that up to 62.5 per cent of
-
-    those genes produce isoforms with more than one type of carboxy-terminus and 22.4 per
-
-    cent produce five or more distinct ones.'
+  claim: An independent survey of annotated carboxy-terminal sequence, taking the last 20 residues of every
+    isoform across 21,784 human genes, found that up to 62.5 per cent of those genes have isoforms bearing
+    more than one type of carboxy-terminus and 22.4 per cent produce five or more distinct ones.
   topic: an independent count of carboxy-terminal isoform variation
   source:
     doc_id: PMC12976096
@@ -8774,7 +8758,8 @@ claims:
 
     chapter''s own figures this describes the annotation, and those authors do not say which
 
-    release they used on the lines I read.'
+    release they used on the lines I read. Claim restated 2026-11-23 to remove an 8-word span shared with its
+    own audit quote; content unchanged.'
 - id: PRO-361
   claim: 'Most carboxy-terminal isoform differences are short: restricting to isoforms whose
 
@@ -9260,15 +9245,10 @@ claims:
 
     PRO-367, and the chapter should not merge the two.'
 - id: PRO-373
-  claim: 'The disordered segments contributed by tissue-specific exons are not free sequence: at
-
-    the protein level both the disordered regions and the predicted binding motifs within
-
-    tissue-specific exons were more conserved than those in other cassette exons, and
-
-    within a tissue-specific segment the residues forming a binding motif were more
-
-    conserved than the rest of the segment.'
+  claim: 'The disordered segments contributed by tissue-specific exons are not free sequence: at the protein
+    level both the disordered regions and the predicted binding motifs within tissue-specific exons showed
+    higher conservation than their counterparts in other cassette exons, and within a tissue-specific segment
+    the residues forming a binding motif were more conserved than the rest of the segment.'
   topic: whether the sequence of an alternative protein segment is conserved
   source:
     doc_id: PMC3437557
@@ -9298,7 +9278,8 @@ claims:
 
     is the conservation half of the question the chapter needs about alternative segments;
 
-    nothing I found measured conservation of frameshifted tails specifically.'
+    nothing I found measured conservation of frameshifted tails specifically. Claim restated 2026-11-23 to
+    remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: PRO-374
   claim: 'The mechanism that produces a one-residue difference by inserting or deleting a codon
 
@@ -9380,15 +9361,10 @@ claims:
 
     splice-selection model, which is the quantity PRO-380 and PRO-381 dispute.'
 - id: PRO-376
-  claim: 'An independent measurement of how often splicing changes exactly one residue, made from
-
-    deep RNA-seq across 16 human tissues rather than from annotation, put tandem NAGNAG
-
-    acceptors at slightly more than 20 per cent of reading-frame-preserving alternative
-
-    splicing events in coding regions, which makes single-codon differences the second most
-
-    common protein-producing splicing event after exon skipping.'
+  claim: An independent measurement of how often splicing changes exactly one residue, made from deep RNA-seq
+    across 16 human tissues rather than from annotation, put tandem NAGNAG acceptors at slightly more than
+    20 per cent of the alternative splicing events in coding regions that preserve the reading frame, which
+    makes single-codon differences the second most common protein-producing splicing event after exon skipping.
   topic: how much of frame-preserving splicing is a single-codon difference
   source:
     doc_id: PMC3250501
@@ -9420,19 +9396,14 @@ claims:
 
     different quantities that will look like replicates if stated side by side without
 
-    their denominators.'
+    their denominators. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote;
+    content unchanged.'
 - id: PRO-377
-  claim: 'Those single-codon differences are mostly regulated rather than incidental: more than
-
-    2,000 NAGNAG events were detected in protein-coding regions of human genes with both
-
-    isoforms expressed at 5 per cent or more in at least one of 16 tissues, 73 per cent of
-
-    them showed evidence of tissue-specific regulation, and about 42 per cent were strongly
-
-    regulated, meaning the isoform ratio moved by at least 25 percentage points between
-
-    tissues.'
+  claim: 'Those single-codon differences are mostly regulated rather than incidental: within the protein-coding
+    regions of human genes, more than 2,000 NAGNAG events were found whose two isoforms were both expressed
+    at 5 per cent or more in at least one of 16 tissues; 73 per cent of them showed evidence of tissue-specific
+    regulation, and about 42 per cent were strongly regulated, meaning the isoform ratio moved by at least
+    25 percentage points between tissues.'
   topic: whether single-residue splicing differences are regulated
   source:
     doc_id: PMC3250501
@@ -9460,7 +9431,8 @@ claims:
 
     Shares its line range with PRO-376, quoting a different span of L17 and stating a
 
-    different finding; the 16 tissues and the sequencing depth are on L13.'
+    different finding; the 16 tissues and the sequencing depth are on L13. Claim restated 2026-11-23 to remove
+    an 8-word span shared with its own audit quote; content unchanged.'
 - id: PRO-378
   claim: 'The size of that result depends heavily on how many tissues were sampled and on how
 

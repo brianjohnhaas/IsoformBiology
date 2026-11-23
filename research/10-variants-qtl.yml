@@ -3121,11 +3121,9 @@ claims:
 
     '
 - id: VAR-164
-  claim: 'The authors of the intron-excision method state plainly what their phenotype cannot see: alternative
-    transcription start sites and alternative polyadenylation are not directly measured by intron excision,
-    because they are not generally captured by the junction reads the method counts.
-
-    '
+  claim: 'The authors of the intron-excision method state plainly what their phenotype cannot see: intron excision
+    does not directly measure alternative transcription start sites or alternative polyadenylation, because
+    they are not generally captured by the junction reads the method counts.'
   topic: what an intron-excision phenotype cannot see, in its authors’ words
   source:
     doc_id: PMC5742080
@@ -3148,9 +3146,8 @@ claims:
   confidence: high
   note: 'tier: practitioners’ own statement of a limitation. This is the complement of the transcript-ratio
     phenotype, which does capture the termini: see VAR-175 and VAR-177, where a majority of transcript-ratio
-    splicing QTLs turn out to involve first or last exons and untranslated regions.
-
-    '
+    splicing QTLs turn out to involve first or last exons and untranslated regions. Claim restated 2026-11-23
+    to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: VAR-165
   claim: 'The eQTL Catalogue reprocessed 21 studies uniformly and quantified transcription at four levels -
     gene expression, exon expression, transcript usage and transcriptional event usage - with no intron-excision
@@ -3226,12 +3223,10 @@ claims:
 
     '
 - id: VAR-167
-  claim: 'Lowering the minor allele frequency floor from 0.01 to 0.001 in the TOPMed whole-blood scan more
-    than doubled the average number of variants tested against each gene, from 7,866 to 17,195 in the expression
-    scan, which shows that a QTL count also depends on where the frequency threshold is set and not only on
-    sample size.
-
-    '
+  claim: Lowering the minor allele frequency floor from 0.01 to 0.001 in the TOPMed whole-blood scan more than
+    doubled how many variants were tested per gene on average, from 7,866 to 17,195 in the expression scan,
+    which shows that a QTL count also depends on where the frequency threshold is set and not only on sample
+    size.
   topic: the allele-frequency threshold as a determinant of the tested space
   source:
     doc_id: PMC11875316
@@ -3263,9 +3258,8 @@ claims:
   confidence: medium
   note: 'tier: method description read from the authors’ own methods section. The two numbers are reported
     for the cis-expression scan; the authors ran the same lowered threshold for the splicing scan but these
-    particular figures are the expression ones. Preprint lines.
-
-    '
+    particular figures are the expression ones. Preprint lines. Claim restated 2026-11-23 to remove an 8-word
+    span shared with its own audit quote; content unchanged.'
 - id: VAR-168
   claim: 'In the brain splicing-QTL analysis the number of genes found to carry a splicing QTL depended on
     which transcriptome reference the transcript-level phenotype was built from: GENCODE version 37 substantially
@@ -3547,11 +3541,9 @@ claims:
 
     '
 - id: VAR-176
-  claim: 'Those authors draw the general conclusion themselves, writing that the splicing phenotype chosen
-    for mapping is a major determinant of the resulting splicing-QTL catalogue, and describing the overlap
+  claim: Those authors draw the general conclusion themselves, writing that which splicing phenotype is chosen
+    for mapping is a major determinant of the splicing-QTL catalogue that results, and describing the overlap
     between their catalogue and the consortium’s as moderate.
-
-    '
   topic: the authors’ own general conclusion that the phenotype determines the catalogue
   source:
     doc_id: PMC7851174
@@ -3574,9 +3566,8 @@ claims:
   confidence: high
   note: 'tier: practitioners’ own statement of a limitation. This is the sentence the chapter needs before
     it prints any splicing-QTL count, and it is an interpretation offered by one group about its own comparison,
-    not a consensus statement.
-
-    '
+    not a consensus statement. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit
+    quote; content unchanged.'
 - id: VAR-177
   claim: 'Classifying the events behind each splicing QTL in that transcript-ratio catalogue showed that 58
     per cent of them were associated with events affecting first or last exons and untranslated regions, while
@@ -3617,12 +3608,9 @@ claims:
 
     '
 - id: VAR-178
-  claim: 'The authors attribute their unusually large gene-level overlap with expression QTLs partly to their
-    own phenotype definition, writing that their splicing QTLs are able to involve transcriptional termini
-    in addition to canonical splicing events, and they note that this overlap departs from what some earlier
-    studies reported.
-
-    '
+  claim: The authors attribute their unusually large gene-level overlap with expression QTLs partly to their
+    own phenotype definition, writing that their splicing QTLs can involve transcriptional termini as well
+    as canonical splicing events, and they note that this overlap departs from what some earlier studies reported.
   topic: the authors’ own explanation of the 52 per cent overlap as partly a phenotype effect
   source:
     doc_id: PMC7851174
@@ -3647,9 +3635,8 @@ claims:
     VAR-012, which cites the same long line for the 52 per cent and 3 per cent figures. The schema permits
     a shared anchor when the two records quote different spans and state different findings, which is the case
     here: VAR-012 carries the numbers and this record carries the authors’ causal attribution for them. The
-    two must be cited together or the chapter will present a phenotype artefact as a biological result.
-
-    '
+    two must be cited together or the chapter will present a phenotype artefact as a biological result. Claim
+    restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: VAR-179
   claim: 'Fine-mapped lead splicing QTLs in 731 lymphoblastoid lines were enriched at splice donor sites by
     a log2 fold enrichment of 6.07 (95 per cent confidence interval 4.09 to 8.04), at splice acceptor sites
@@ -4146,11 +4133,9 @@ claims:
 
     '
 - id: VAR-193
-  claim: 'The uniformly reprocessed QTL compendium states as a limitation that for the six of its studies containing
-    individuals from non-European and admixed populations it analysed all samples jointly with six genotype
+  claim: The uniformly reprocessed QTL compendium states as a limitation that for the six of its studies whose
+    participants included admixed and non-European individuals it analysed all samples jointly with six genotype
     principal components as covariates, rather than running stratified analyses or accounting for local ancestry.
-
-    '
   topic: how a large compendium handled ancestry, in its authors’ own account
   source:
     doc_id: PMC8423625
@@ -4174,9 +4159,8 @@ claims:
   confidence: high
   note: 'tier: practitioners’ own statement of a limitation. The consequence is that a splicing or expression
     QTL private to one ancestry group inside such a dataset is diluted rather than resolved, so the compendium’s
-    uniformity is bought partly at the cost of ancestry resolution.
-
-    '
+    uniformity is bought partly at the cost of ancestry resolution. Claim restated 2026-11-23 to remove an
+    8-word span shared with its own audit quote; content unchanged.'
 - id: VAR-194
   claim: 'Splicing QTLs acting at a distance were scarce in GTEx v8: across 49 tissues GTEx v8 found 29 genes
     with a trans-splicing QTL at 5 per cent false discovery rate per tissue, against 143 genes with a trans-expression
@@ -4717,10 +4701,8 @@ claims:
 - id: VAR-209
   claim: 'The direction of effect confirms the split: variants that switch between productive isoforms were
     largely inert with respect to expression level, whereas variants that increase an unproductive junction
-    were strongly associated with decreased expression of the host gene, an association strongest in steady-state
-    RNA, weaker in briefly labelled RNA and largely absent in nascent RNA.
-
-    '
+    showed a strong association with lower expression of the host gene, an association strongest in steady-state
+    RNA, weaker in briefly labelled RNA and largely absent in nascent RNA.'
   topic: effect-size concordance between unproductive-splicing QTLs and expression, across RNA fractions
   source:
     doc_id: PMC11387194
@@ -4743,9 +4725,8 @@ claims:
   confidence: high
   note: 'tier: transcriptome-wide mapping result in a named cohort. The gradient across the three RNA fractions
     is the evidence that the mechanism is post-transcriptional decay rather than transcription, and it is the
-    kind of control a steady-state-only dataset cannot run.
-
-    '
+    kind of control a steady-state-only dataset cannot run. Claim restated 2026-11-23 to remove an 8-word span
+    shared with its own audit quote; content unchanged.'
 - id: VAR-210
   claim: 'In this study a splicing QTL and an expression QTL were not searched for in the same window: the
     cis window was 100 kilobases for expression and chromatin QTLs but 10 kilobases for splicing QTLs, so a
@@ -6021,9 +6002,7 @@ claims:
   claim: 'Three arguments are given that the false-positive scenario is the common case rather than the exception:
     colocalisation and transcriptome-wide analyses routinely return several candidate genes at one locus of
     which most are probably not causal, co-regulation of genes by shared regulatory elements is ordinary, and
-    in GTEx half of all common variants are an expression QTL in at least one tissue.
-
-    '
+    half of all common variants in GTEx are an expression QTL in at least one tissue.'
   topic: why TWAS false positives from LD and coregulation are common, not rare
   source:
     doc_id: PMC10864181
@@ -6045,9 +6024,8 @@ claims:
   confidence: high
   note: 'tier: a method paper''s argument, resting on results it cites from elsewhere. The half-of-common-variants
     figure is attributed by these authors to a GTEx paper, not measured here, so the chapter must present it
-    as these authors'' use of someone else''s number or cite the GTEx source directly.
-
-    '
+    as these authors'' use of someone else''s number or cite the GTEx source directly. Claim restated 2026-11-23
+    to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: VAR-249
   claim: 'A transcriptome-wide association test is inflated by the polygenicity of the trait alone, with no
     pleiotropy and no linkage involved: the variance of the test statistic under the null rises linearly with
@@ -6527,11 +6505,9 @@ claims:
 
     '
 - id: VAR-263
-  claim: 'The authors of the cancer analysis state in their own discussion that isoform expression on its own
-    does not account for most of the SNP heritability of cancer risk, even as they report it mediating nearly
-    twice as much as gene expression.
-
-    '
+  claim: The authors of the cancer analysis state in their own discussion that isoform expression on its own
+    does not account for most of cancer risk's SNP heritability, even as they report it mediating nearly twice
+    as much as gene expression.
   topic: the authors' own ceiling on what isoform-level mediation explains
   source:
     doc_id: PMC12449480
@@ -6553,9 +6529,8 @@ claims:
       '
   confidence: high
   note: 'tier: practitioners'' own statement of the limits of their result. The chapter reports the gain and
-    not this sentence, and the sentence is in the same paragraph of the published paper as the gain.
-
-    '
+    not this sentence, and the sentence is in the same paragraph of the published paper as the gain. Claim
+    restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: VAR-264
   claim: 'The study that introduced isoform-level association testing applied it to 15 neuropsychiatric traits,
     reporting more imputable genes and more power inside GWAS loci than gene-level testing, and prioritising
@@ -10290,12 +10265,10 @@ claims:
     '
 - id: VAR-401
   claim: 'The cleared intended use of the 50-gene breast cancer signature is narrower than the test''s reputation:
-    the US clearance covers two prognostic indications only, distant recurrence-free survival at 10 years in
-    post-menopausal women with hormone-receptor-positive disease that is either lymph-node-negative Stage I
-    or II or Stage II with one to three positive nodes, used alongside other clinicopathological factors, and
-    the device is not indicated for patients with four or more positive nodes.
-
-    '
+    the US clearance covers two prognostic indications only, distant recurrence-free survival measured at 10
+    years in post-menopausal women whose disease is hormone-receptor-positive and either lymph-node-negative
+    Stage I or II or Stage II with one to three positive nodes, used alongside other clinicopathological factors,
+    and the device is not indicated for patients with four or more positive nodes.'
   topic: regulatory intended use of a cleared expression-based test (Prosigna, 510(k) K130010)
   source:
     doc_id: fda_ed47a042ea9e
@@ -10317,9 +10290,8 @@ claims:
     not from a paper about the test. tier: regulatory document stating the cleared indication. The letter read
     is a July 2016 correction of the substantially-equivalent letter of 6 September 2013; the 510(k) summary
     in the same document is dated 6 September 2013. This is the regulatory anchor the chapter''s existing PAM50/Prosigna
-    sentence lacks; VAR-402 and VAR-403 carry what the clearance excludes.
-
-    '
+    sentence lacks; VAR-402 and VAR-403 carry what the clearance excludes. Claim restated 2026-11-23 to remove
+    an 8-word span shared with its own audit quote; content unchanged.'
   figure_idea: 'A box diagram of one cleared test: on one side the two indicated populations with the endpoint
     and horizon, on the other the four uses the labelling rules out. The point is that a clearance is a sentence
     about a population and an endpoint, not a general licence to measure RNA.
@@ -10509,10 +10481,8 @@ claims:
     '
 - id: VAR-408
   claim: 'The other cleared breast expression signature carries the same restriction: the formalin-fixed version
-    of the 70-gene test is indicated for use by physicians as a prognostic marker only, alongside other clinicopathological
-    factors.
-
-    '
+    of the 70-gene test carries an indication for physicians to use it as a prognostic marker only, alongside
+    other clinicopathological factors.'
   topic: regulatory intended use of the second cleared expression test (MammaPrint FFPE, 510(k) K201902)
   source:
     doc_id: fda_6b5d9d4183dc
@@ -10533,8 +10503,7 @@ claims:
     the cleared indication. Hold this against VAR-442 and VAR-444: both cleared signatures are labelled prognostic-only,
     while the trials that drove their adoption used them to decide whether to give chemotherapy. The two cleared
     tests are not independent of each other, since the 70-gene test is the predicate for the 50-gene one (VAR-407).
-
-    '
+    Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: VAR-409
   claim: 'That test''s cleared claim is also a shorter horizon and a centralised service: it is a qualitative
     in vitro diagnostic performed in a central laboratory, using an expression profile obtained from formalin-fixed
@@ -10566,10 +10535,8 @@ claims:
     '
 - id: VAR-410
   claim: 'An approved pan-cancer sequencing panel shows how little of the transcriptome is inside an approved
-    claim: the RNA half of the assay is approved to report fusions in 24 genes and splice variants in exactly
-    one gene, against 517 genes of DNA variant content, from formalin-fixed tumour tissue.
-
-    '
+    claim: the RNA half of the assay is approved to report splice variants in exactly one gene and fusions
+    in 24 genes, against 517 genes of DNA variant content, from formalin-fixed tumour tissue.'
   topic: how much RNA content sits inside an approved comprehensive panel
   source:
     doc_id: fda_d5245f767e6b
@@ -10589,9 +10556,8 @@ claims:
     notice 21 August 2024), not from a paper. tier: regulatory document stating the approved scope. This is
     the sharpest available answer to what an approved assay reports at the isoform level: fusions plus one
     gene''s splice variant, and VAR-431 gives that one gene''s validation. The panel''s companion-diagnostic
-    indications pair two fusion biomarkers with named drugs, which belongs to chapter 12.
-
-    '
+    indications pair two fusion biomarkers with named drugs, which belongs to chapter 12. Claim restated 2026-11-23
+    to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: VAR-411
   claim: 'The approval separates two tiers of result inside one report: findings matching the companion-diagnostic
     indications carry a therapy claim, while every other genomic finding the panel reports, including the bulk
@@ -11083,12 +11049,10 @@ claims:
 
     '
 - id: VAR-425
-  claim: 'In a clinical series of 517 formalin-fixed solid tumours whose standard treatment options were exhausted,
+  claim: In a clinical series of 517 formalin-fixed solid tumours whose standard treatment options were exhausted,
     tested by two targeted RNA panels, fusions were called in 40 cases (7.7 per cent), and 6 of those 40 rested
-    on low transcript abundance, between 5 and 744 supporting reads, and could not be confirmed by Sanger sequencing,
-    so the laboratory recorded them as discordant.
-
-    '
+    on low transcript abundance, between 5 and 744 supporting reads, and Sanger sequencing could not confirm
+    them, so the laboratory recorded them as discordant.
   topic: unconfirmable low-abundance fusion calls in a routine clinical series
   source:
     doc_id: PMC6769558
@@ -11113,8 +11077,7 @@ claims:
     and for two of the six a cross-test on the other RNA panel also failed to reproduce the call, while for
     the rest the second panel lacked the primers or the material had run out. This is the positive predictive
     value problem in a real series, and it belongs beside the reference-standard precision figures in VAR-421.
-
-    '
+    Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: VAR-426
   claim: 'A third of the patients in an approved assay''s own clinical bridging study could not be tested on
     it: of 208 fusion-positive patients from three therapeutic trials, 138 (66.3 per cent) were evaluable,
@@ -11253,11 +11216,9 @@ claims:
 
     '
 - id: VAR-430
-  claim: 'The precise answer to how much splicing an approved comprehensive assay reports is one gene: the
-    device detects small DNA variants in 517 genes, RNA fusions in 24 genes, and RNA splice variants in a single
-    gene.
-
-    '
+  claim: 'The precise answer to how much splicing an approved comprehensive assay reports is one gene: RNA
+    splice variants are detected in a single gene by this device, which also detects RNA fusions in 24 genes
+    and small DNA variants in 517 genes.'
   topic: PRECISE NEGATIVE - splice-variant content of an approved pan-cancer assay
   source:
     doc_id: fda_d5245f767e6b
@@ -11278,9 +11239,8 @@ claims:
     in the indications for use (VAR-410). tier: regulatory document stating the approved scope. This is the
     record to use wherever the chapter wants to say that isoform-level reporting has barely entered approved
     practice: not that no assay reports a splice form, but that the most comprehensive approved panel reports
-    one gene''s, and VAR-431 gives the validation behind it.
-
-    '
+    one gene''s, and VAR-431 gives the validation behind it. Claim restated 2026-11-23 to remove an 8-word
+    span shared with its own audit quote; content unchanged.'
 - id: VAR-431
   claim: 'The validation behind that single approved splice-variant claim is thin: concordance for the EGFRvIII
     splice variant was assessed in 16 formalin-fixed brain RNA samples against a validated quantitative PCR
@@ -11408,10 +11368,8 @@ claims:
   claim: 'One clinical assay does report a single transcript form as its result: a quantitative RT-PCR measurement
     of AR-V7 messenger RNA in circulating tumour cells enriched on a standard platform, returning an AR-V7-positive
     or AR-V7-negative score, with a coefficient of variation of 9 per cent across 37 measurements spanning
-    the RNA equivalent of 0.2 to 12 cells of a positive cell line, a detection limit of 0.3 cells and a quantitation
-    limit of 3 cells, and no difference in results between five technicians or two laboratories.
-
-    '
+    what amounts in RNA to 0.2 through 12 cells of a positive cell line, a detection limit of 0.3 cells and
+    a quantitation limit of 3 cells, and no difference in results between five technicians or two laboratories.'
   topic: analytical validation of a clinical assay whose result is a splice variant
   source:
     doc_id: '43760681'
@@ -11437,9 +11395,8 @@ claims:
     variant, so that identification is carried separately by VAR-455; the unit of the detection limit here
     is cells rather than transcripts. The prospective arm is in VAR-436, which shares this line and quotes
     a different span. The assay''s purpose, choosing between an androgen-receptor-directed drug and a taxane,
-    belongs to chapter 12.
-
-    '
+    belongs to chapter 12. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote;
+    content unchanged.'
 - id: VAR-436
   claim: 'That splice-variant assay was also tested for whether it fits a clinic: in a prospective study of
     45 patients with metastatic castration-resistant prostate cancer, 13 were ineligible, 22 scored negative
@@ -12018,9 +11975,7 @@ claims:
   claim: 'Outside the approved companion diagnostic, laboratories do measure the splicing consequence in RNA
     and report it: for a MET intron-exon boundary mutation that yields a transcript joining exons 13 and 15,
     which dual DNA-and-RNA panels can see in either analyte, 71 per cent (12 of 17) of surveyed clinical laboratories
-    said they reported both the DNA variant and the resulting RNA fusion.
-
-    '
+    said they reported the resulting RNA fusion as well as the DNA variant.'
   topic: the same splicing event reported from both DNA and RNA in practice
   source:
     doc_id: PMC10136625
@@ -12045,9 +12000,8 @@ claims:
     with the denominator. This is the bound on VAR-433: the approved companion diagnostic defines the biomarker
     as a DNA variant, while laboratories running both analytes observe the transcript and report it alongside.
     The 17 laboratories are adopters of RNA-based fusion sequencing, not a sample of all laboratories, and
-    the survey records what they said they do rather than an audit of reports.
-
-    '
+    the survey records what they said they do rather than an audit of reports. Claim restated 2026-11-23 to
+    remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: VAR-454
   claim: 'A measurement of a splicing event in RNA has already served as a central enrolment test in a registration
     trial: patients were tested for MET exon 14 skipping by one of two central methods, circulating tumour

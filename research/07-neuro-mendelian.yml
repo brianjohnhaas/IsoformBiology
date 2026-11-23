@@ -2827,7 +2827,7 @@ claims:
     authors: van Zuiden, W.; Meimoun, T.; Bar, C.; Siany, A.; Abarbanel, B.; Moshe, L.; Yacovzada, N. S.; Amzallag,
       E.; Rajkovic, A.; Alyagor, L.; Weizman, E.; Neumann, M.; Smith, C.; McDade, K.; Strange, A.; Siqueira
       Kazu, R.; Weinreich, M.; Buchman, A. S.; Wang, Y.; Bennett, D. A.; Zhao, B.; Jiang, L.; Bi, J.; Snyder,
-      M. P.; Morderer, D.; Morato, J. G.; Rossoll, W.; Reeves, M. M.; Dickson, D. W.; Prudencio, M.; Nelson,
+      M. P.; Morderer, D.; Garcia Morato, J.; Rossoll, W.; Reeves, M. M.; Dickson, D. W.; Prudencio, M.; Nelson,
       P. T.; Glass, J. D.; Trautwig, A. N.; Chung, M.; McEachin, Z. T.; Seyfried, N. T.; Cooper-Knock, J.;
       Hornstein, E.
     journal: bioRxiv
@@ -3403,7 +3403,7 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L9
+    lines: L9,L26,L56,L58,L59
     anchor: https://paperclip.gxl.ai/citations/papers/PMC4937342#L9
     quote: TDP-43 inhibits the selection of the most proximal PAS and induces splicing of multiple alternative
       introns in TARDBP mRNA
@@ -3501,7 +3501,7 @@ claims:
     authors: van Zuiden, W.; Meimoun, T.; Bar, C.; Siany, A.; Abarbanel, B.; Moshe, L.; Yacovzada, N. S.; Amzallag,
       E.; Rajkovic, A.; Alyagor, L.; Weizman, E.; Neumann, M.; Smith, C.; McDade, K.; Strange, A.; Siqueira
       Kazu, R.; Weinreich, M.; Buchman, A. S.; Wang, Y.; Bennett, D. A.; Zhao, B.; Jiang, L.; Bi, J.; Snyder,
-      M. P.; Morderer, D.; Morato, J. G.; Rossoll, W.; Reeves, M. M.; Dickson, D. W.; Prudencio, M.; Nelson,
+      M. P.; Morderer, D.; Garcia Morato, J.; Rossoll, W.; Reeves, M. M.; Dickson, D. W.; Prudencio, M.; Nelson,
       P. T.; Glass, J. D.; Trautwig, A. N.; Chung, M.; McEachin, Z. T.; Seyfried, N. T.; Cooper-Knock, J.;
       Hornstein, E.
     journal: bioRxiv
@@ -3512,8 +3512,8 @@ claims:
     preprint: true
   evidence:
     text_access: full_text
-    lines: L43
-    anchor: https://paperclip.gxl.ai/citations/papers/bio_2d481f216c17#L43
+    lines: L41,L43
+    anchor: https://paperclip.gxl.ai/citations/papers/bio_2d481f216c17#L41
     quote: a 32% decrease in the usage of the APP695-specific splice junction in TDP-43 deltaNLS  relative
       to NES
   confidence: high
@@ -3763,7 +3763,7 @@ claims:
     source_type: fda
   evidence:
     text_access: full_text
-    lines: L15
+    lines: L15,L50,L51,L52,L53,L54,L55,L56
     anchor: https://paperclip.gxl.ai/citations/fda/fda_753dc30bc176#L15
     quote: with 21/52 (40%) of nusinersen-treated patients who met a motor milestone development responder
       definition, vs. 0/30 (0%) of sham-procedure controls
@@ -3930,7 +3930,7 @@ claims:
     source_type: fda
   evidence:
     text_access: full_text
-    lines: L119
+    lines: L119,L120
     anchor: https://paperclip.gxl.ai/citations/fda/fda_bf81b52deeaf#L119
     quote: Change from baseline at Month 12, LS Mean (95% CI) 1.36 (0.61, 2.11) -0.19 (-1.22, 0.84) Mean (95%
       CI) 1.55 (0.30, 2.81)
@@ -4399,7 +4399,7 @@ claims:
     source_type: fda
   evidence:
     text_access: full_text
-    lines: L138
+    lines: L138,L433,L441
     anchor: https://paperclip.gxl.ai/citations/fda/fda_269d14f43e60#L138
     quote: the lack of concordance between the IHC and the Western Blot results is “striking”
   confidence: high
@@ -4509,8 +4509,8 @@ claims:
     source_type: fda
   evidence:
     text_access: full_text
-    lines: L33,L38
-    anchor: https://paperclip.gxl.ai/citations/fda/fda_17d7a5bb3fe4#L33,L38
+    lines: L33,L38,L367,L368,L369,L370,L502
+    anchor: https://paperclip.gxl.ai/citations/fda/fda_17d7a5bb3fe4#L33
     quote: the median increase in truncated dystrophin with 40 mg/kg/week and 80 mg/kg/week viltolarsen is
       4.6% and 3.8% of normal, respectively
   confidence: high
@@ -4520,11 +4520,11 @@ claims:
     no organismal phenotype, since the measured outcome is a protein quantity in muscle and nothing else. Read
     from the FDA medical review for NDA 212154. The two-assay gap is the strongest evidence in this file that
     the dystrophin biomarker is assay-dependent. The reversal in rank order between the two doses must not
-    be presented as a dose effect: the same review states that there was no dose related difference in dystrophin
-    production at the 40 and 80 mg/kg/week dose, and an earlier version of this note called it an opposite
-    rank order between doses without that sentence. The trial is Study NS-065/NCNP-01-201. The denominator
-    is 8 patients per dose, which is the smallest of the four programmes. The same review states that mutations
-    amenable to exon 53 skipping are thought to comprise 8 to 10 per cent of the Duchenne population.
+    be presented as a dose effect: the review states on the same line as the normalisation that the two doses
+    produced no dose-related difference in dystrophin, and an earlier version of this note called the reversal
+    an opposite rank order between doses without that finding beside it. The trial is Study NS-065/NCNP-01-201.
+    The denominator is 8 patients per dose, which is the smallest of the four programmes. The same review states
+    that mutations amenable to exon 53 skipping are thought to comprise 8 to 10 per cent of the Duchenne population.
 
     '
 - id: NEU-209
@@ -4569,8 +4569,8 @@ claims:
   claim: 'One side of the dystrophin argument, in the regulator''s own words: the Director of the Office of
     Drug Evaluation I set the bar at functional protein of roughly 10 per cent of normal before any increase
     could be called reasonably likely to predict clinical benefit, reasoning from Becker dystrophy as a model,
-    and offered plots and calculations that he interprets as showing that within the eteplirsen trials higher
-    dystrophin levels were not associated with better function.
+    and supplied his own plots and arithmetic, on his reading of which the eteplirsen trials show no association
+    between how much dystrophin a boy made and how well he moved.
 
     '
   topic: 'the dystrophin surrogate: the disagreement'
@@ -4589,16 +4589,18 @@ claims:
     anchor: https://paperclip.gxl.ai/citations/fda/fda_269d14f43e60#L36,L40
     quote: Dr. Unger concludes that functional protein in the range of 10% of normal levels would be needed
   confidence: high
-  note: 'An earlier version of this claim dropped the source''s "that he interprets as showing", which matters
-    because the paired NEU-211 records the Center Director offering post-hoc calculations she regarded as supporting
-    the opposite direction. tier: regulatory judgement on whether a biomarker is reasonably likely to predict
-    benefit. Read from the FDA summary review for NDA 206488, which reproduces both positions. The 10 per cent
-    threshold is an extrapolation from Becker dystrophy, which the Commissioner''s decision calls a rational
-    extrapolation in the absence of a validated surrogate but an extrapolation nonetheless. Elsewhere the same
-    document reports the view that at least 3 per cent of normal is inadequate and a minimum of about 10 per
-    cent may be needed, and that Study 301''s 0.22 to 0.32 per cent is an order of magnitude below that. Paired
-    with NEU-211, which is the opposing position from the same document; the two share the L40 anchor, quote
-    different spans and state opposite positions.
+  note: 'An earlier version of this claim stated the no-association finding flatly, where the document frames
+    it as this official''s reading of figures he supplied. That matters because the paired NEU-211 records
+    the Center Director offering post-hoc calculations she regarded as supporting the opposite direction, so
+    the chapter has two officials reading one dataset in two directions and must attribute both. A second version
+    of the claim followed the document''s own wording too closely and was restated. tier: regulatory judgement
+    on whether a biomarker is reasonably likely to predict benefit. Read from the FDA summary review for NDA
+    206488, which reproduces both positions. The 10 per cent threshold is an extrapolation from Becker dystrophy,
+    which the Commissioner''s decision calls a rational extrapolation in the absence of a validated surrogate
+    but an extrapolation nonetheless. Elsewhere the same document reports the view that at least 3 per cent
+    of normal is inadequate and a minimum of about 10 per cent may be needed, and that Study 301''s 0.22 to
+    0.32 per cent is an order of magnitude below that. Paired with NEU-211, which is the opposing position
+    from the same document; the two share the L40 anchor, quote different spans and state opposite positions.
 
     '
 - id: NEU-211
@@ -4720,7 +4722,7 @@ claims:
     doc_id: '1001693627'
     title: 'Efficacy and safety of golodirsen and casimersen compared with placebo in Duchenne muscular dystrophy
       (ESSENCE): phase 3 topline results'
-    authors: authors, G. P. p. o. b. o. t. E.
+    authors: RESOLVE_FROM_DOI
     journal: ANPAbstract_CBN26
     year: 2026
     doi: 10.65034/anpabstract_cbn260069
@@ -4873,8 +4875,8 @@ claims:
     source_type: fda
   evidence:
     text_access: full_text
-    lines: L63
-    anchor: https://paperclip.gxl.ai/citations/fda/fda_703d8d9466c1#L63
+    lines: L62,L63,L64
+    anchor: https://paperclip.gxl.ai/citations/fda/fda_703d8d9466c1#L62
     quote: Target tissue concentrations of spinal cord tissue (lumbar, thoracic, and cervical regions) taken
       from 3 deceased patients in Phase 2 Study CS3A
   confidence: high
@@ -6554,8 +6556,8 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L91
-    anchor: https://paperclip.gxl.ai/citations/papers/PMC8874219#L91
+    lines: L90,L91
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC8874219#L90
     quote: Between 25.8% (1,940/7,507) and 67.8% (5,086/7,507) of variants predicted to impact splicing are
       expected to be adequately covered by 100 M uniquely mapping reads
   confidence: high
@@ -6725,8 +6727,8 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L26,L65
-    anchor: https://paperclip.gxl.ai/citations/papers/PMC11339655#L26,L65
+    lines: L26,L63,L65
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11339655#L26
     quote: Transdifferentiation of HDFs directly to neurons led to expression of 193/516 (37.4%) of SMGs implicated
       in neurological disease
   confidence: high
@@ -7023,8 +7025,8 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L26
-    anchor: https://paperclip.gxl.ai/citations/papers/PMC7822922#L26
+    lines: L25,L26,L27
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC7822922#L25
     quote: a drastic drop in precision (3% vs. 92% with FRASER) for a small increase in recall (98% vs. 83%
       with FRASER
   confidence: high
@@ -7046,8 +7048,8 @@ claims:
   claim: 'Outlier calls that appear in only one tissue of an individual are common for every method tested:
     22 per cent of the calls this method made at a nominal p of 10 to the minus 7 reappeared in another tissue
     of the same person at 10 to the minus 3, against 11 per cent for a competing method, and tissue-specific
-    calls were less enriched for rare splice-affecting variants than replicated ones, which those authors say
-    suggests a higher proportion of false positives among the tissue-specific calls.
+    calls were less enriched for rare splice-affecting variants than replicated ones, from which those authors
+    infer that more of the single-tissue calls are likely to be wrong.
 
     '
   topic: What a diagnostic transcriptome can actually call
@@ -7068,9 +7070,10 @@ claims:
     quote: 22% of the outliers reported by FRASER at the nominal P value of 10−7 were also found at the nominal
   confidence: high
   note: 'An earlier version of this claim stated the false-positive enrichment as a result; the source states
-    it as an inference and then undercuts the artefact reading, saying that inspection of the raw reads for
-    several such calls found them well supported and that further investigation will be needed to understand
-    the apparent excess. The excess is unexplained. Their own recommendation for diagnostics is to require
+    it as an inference, and a second version of the claim followed the source''s own sentence too closely and
+    was restated. The same line then undercuts the artefact reading, saying that inspection of the raw reads
+    for several such calls found them well supported and that further investigation will be needed to understand
+    the apparent excess, so the excess is unexplained. Their own recommendation for diagnostics is to require
     a rare variant or an independent functional assay alongside the call, which is the argument behind NEU-298
     and NEU-299. tier: cohort measurement of assay performance; none of the three isoform tiers applies
 
@@ -7227,8 +7230,8 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L26,L33
-    anchor: https://paperclip.gxl.ai/citations/papers/PMC6634302#L26,L33
+    lines: L26,L27,L33
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC6634302#L26
     quote: (gene matching HPO terms for the symptoms of the proband) in 5/30 cases with candidate gene information
       (16.7%)
   confidence: high
@@ -7368,8 +7371,8 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L9
-    anchor: https://paperclip.gxl.ai/citations/papers/PMC12781863#L9
+    lines: L7,L8,L9
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC12781863#L7
     quote: The optimized workflow improved diagnostic yield by 2.2‐fold (20% vs. 9%). Stratified analysis revealed
       positive rates of 71% (VUS), 40% (suspected‐gene/variant‐negative), and 5.2% (unsolved/no‐candidate)
   confidence: high
@@ -7410,7 +7413,7 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L20
+    lines: L20,L26,L93,L97
     anchor: https://paperclip.gxl.ai/citations/papers/PMC12215727#L20
     quote: Additionally, ~7% (5/73) of undiagnosed cases had at least one plausible candidate gene identified
   confidence: high
@@ -7453,8 +7456,8 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L1,L22
-    anchor: https://paperclip.gxl.ai/citations/papers/med_530d6f638abe#L1,L22
+    lines: L1,L21,L22
+    anchor: https://paperclip.gxl.ai/citations/papers/med_530d6f638abe#L1
     quote: 'the 74 potential diagnoses were classified into: - 35 known diagnoses with 28 involving at least
       one canonical splice variant - 39 candidate diagnoses'
   confidence: high
@@ -7689,10 +7692,10 @@ claims:
   claim: 'In that same 50-individual cohort one case turned on read length and on manual work: a neonate with
     a de novo 69-kilobase duplication of the ATAD3 gene cluster whose breakpoints DNA sequencing could not
     resolve because of homology across the cluster, where short-read RNA sequencing of fibroblasts was uninformative
-    and gave no fusion-supporting reads. The long-read pipeline filtered the fusion transcript out on internal
-    polyadenylation priming and its gene fusion caller missed it too; manual review of the unfiltered alignments
-    against a customised genome recovered the full-length in-frame ATAD3A-ATAD3C fusion transcript with its
-    exon-level breakpoints, establishing the molecular diagnosis.
+    and gave no fusion-supporting reads. The long-read pipeline discarded the fusion transcript on internal
+    polyadenylation priming and its gene fusion caller missed it as well; it was found only by reading the
+    unfiltered alignments by hand against a purpose-built genome, and the transcript then proved to be a complete
+    in-frame fusion of ATAD3A to ATAD3C whose exon-level breakpoints established the molecular diagnosis.
 
     '
   topic: Long reads in diagnosis, and where they do not help
@@ -7710,16 +7713,17 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L92,L148
-    anchor: https://paperclip.gxl.ai/citations/papers/PMC13786605#L92,L148
+    lines: L86,L92,L147,L148,L149
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13786605#L86
     quote: SR RNA-seq was uninformative due to misalignment and absence of fusion-supporting reads
   confidence: high
   note: 'An earlier version of this claim credited the recovery to long reads, leaving the bound that the pipeline
     discarded the transcript twice in this note, where it cannot be cited; per this file''s own rule a qualifier
-    that lives in a note needs its own claim. So long reads reached what short reads could not, but not unaided.
-    In the same cohort''s RUNX2 case short reads had already detected the pseudoexon and long reads only fixed
-    its boundaries, which is the weaker kind of gain. Same paper as NEU-272 and NEU-296. tier: single-case
-    measurement from a named variant to its transcript consequence; none of the three isoform tiers applies
+    that lives in a note needs its own claim. A second version followed the source''s own sentence too closely
+    and was restated. So long reads reached what short reads could not, but not unaided. In the same cohort''s
+    RUNX2 case short reads had already detected the pseudoexon and long reads only fixed its boundaries, which
+    is the weaker kind of gain. Same paper as NEU-272 and NEU-296. tier: single-case measurement from a named
+    variant to its transcript consequence; none of the three isoform tiers applies
 
     '
 - id: NEU-298
@@ -7743,8 +7747,8 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L51
-    anchor: https://paperclip.gxl.ai/citations/papers/PMC11382415#L51
+    lines: L25,L50,L51,L52
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC11382415#L25
     quote: RT-PCR was able to validate aberrant splicing in four additional cases with variants in TERT, PRG4
       and TAOK1
   confidence: high
@@ -9150,11 +9154,14 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. The perturbation is the patient variant and the
-    phenotype is developmental and epileptic encephalopathy. Abstract-only in the corpus, so the assay used
-    to measure inclusion and the per-variant effect sizes cannot be read here and must not be asserted. This
-    is the paper the exon''s therapeutic programme cites as its origin (Lim 2020 reference 35, Voskobiynyk
-    2021 reference 11, Tang 2025 reference 4).
+  note: 'tier: variant-to-isoform measurement, no organismal phenotype measured. The only outcome measured
+    against the variant is exon inclusion and the amount of full-length protein; developmental and epileptic
+    encephalopathy is how the patients were ascertained rather than an outcome measured as a consequence, and
+    an earlier version of this note claimed it as the phenotype. NEU-346 is the record in this chapter that
+    does carry a measured organismal phenotype. Abstract-only in the corpus, so the assay used to measure inclusion
+    and the per-variant effect sizes cannot be read here and must not be asserted. This is the paper the exon''s
+    therapeutic programme cites as its origin (Lim 2020 reference 35, Voskobiynyk 2021 reference 11, Tang 2025
+    reference 4).
 
     '
 - id: NEU-342
@@ -9193,9 +9200,9 @@ claims:
     '
 - id: NEU-343
   claim: 'The SCN1A poison exon is old enough to be shared with mice: the non-coding exon and its flanking
-    intronic sequence are 96 per cent identical between human and mouse, human exon 20x corresponding to mouse
-    exon 21x, and about 16 per cent of non-productive exon-inclusion events across the genome were found to
-    be as conserved as coding exons.
+    intronic sequence are 96 per cent conserved between human and mouse by conservation score, human exon 20x
+    corresponding to mouse exon 21x, and about 16 per cent of non-productive exon-inclusion events across the
+    genome were found to be as conserved as coding exons.
 
     '
   topic: conservation of the SCN1A poison exon
@@ -9217,11 +9224,13 @@ claims:
 
       '
   confidence: high
-  note: 'tier: sequence-conservation measurement, plus a splicing assay in mouse N2a cells confirming the mouse
-    exon is used. Practical consequence recorded because it is the reason the programme had a mouse model at
-    all: the human-targeting oligonucleotides could be tested in mice without a sequence mismatch. The 16 per
-    cent genome-wide figure is a transcriptome-wide count and is recorded here only because it bounds this
-    named case. Same company authorship as NEU-342.
+  note: 'An earlier version of this claim said 96 per cent identical. The source says conserved, and the figure
+    comes from a conservation-score analysis rather than a percent-identity alignment; the sibling NEU-348
+    writes identical correctly because its own source does. tier: sequence-conservation measurement, plus a
+    splicing assay in mouse N2a cells confirming the mouse exon is used. Practical consequence recorded because
+    it is the reason the programme had a mouse model at all: the human-targeting oligonucleotides could be
+    tested in mice without a sequence mismatch. The 16 per cent genome-wide figure is a transcriptome-wide
+    count and is recorded here only because it bounds this named case. Same company authorship as NEU-342.
 
     '
 - id: NEU-344
@@ -9291,11 +9300,11 @@ claims:
 
     '
 - id: NEU-346
-  claim: 'An independent group built the human lesion into a mouse and measured what the exon normally costs:
-    heterozygous knock-in mice carrying the orthologue of a patient intron 20 variant lost about half their
-    brain Scn1a mRNA and Nav1.1 protein and showed premature mortality, seizures and hyperactivity, while quantitative
-    RT-PCR put exon 20N inclusion at about 1 per cent of Scn1a mRNA in adult wild-type brain and about five-fold
-    higher in the knock-in.
+  claim: 'A group with no connection to the sponsor built the human lesion into a mouse and measured what the
+    exon normally costs: heterozygous knock-in mice carrying the orthologue of a patient intron 20 variant
+    lost about half their brain Scn1a mRNA and Nav1.1 protein and showed premature mortality, seizures and
+    hyperactivity, while quantitative RT-PCR put exon 20N inclusion at about 1 per cent of Scn1a mRNA in adult
+    wild-type brain and about five-fold higher in the knock-in.
 
     '
   topic: a poison-exon variant modelled in mouse
@@ -9318,12 +9327,15 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. The variant is NM_006920.4(SCN1A):c.3969+2451G>C,
-    introduced by gene editing as the mouse orthologue. This laboratory (Alabama at Birmingham and HudsonAlpha)
-    shares no author with Lim 2020 or with the trial sponsor, so it is the independent anchor for the mechanism;
-    the 2018 paper recorded at NEU-341 came from a third group again (Carvill, Northwestern) and the same group
-    produced NEU-372 to NEU-376. The ~1 per cent figure is steady state in adult brain with decay running and
-    is not comparable to the 89 per cent in NEU-342.
+  note: 'An earlier version of this claim called the group independent without qualification, and this note
+    attributed the 2018 discovery recorded at NEU-341 to a third group. Both are wrong in the same place: the
+    cited line describes that discovery as these authors'' own earlier work, and recomputing from the two records''
+    bylines they share four name strings, Cochran, Myers, Cooper and Barsh. NEU-341 is abstract-only with no
+    authors field in the corpus, so a shared name string is weaker evidence than a verified laboratory. This
+    group is independent of Lim 2020 and of the trial sponsor, which is what the claim now says, and not independent
+    of the paper that discovered the mechanism. tier: isoform-specific perturbation with phenotype. The variant
+    is NM_006920.4(SCN1A):c.3969+2451G>C, introduced by gene editing as the mouse orthologue. The ~1 per cent
+    figure is steady state in adult brain with decay running and is not comparable to the 89 per cent in NEU-342.
 
     '
 - id: NEU-347
@@ -9423,7 +9435,11 @@ claims:
     CASE AND IT IS ABSTRACT-ONLY IN THE CORPUS; its abstract contains no survival percentage, no seizure count
     and no fold change, so none may be taken from here. The figures in NEU-350 and NEU-351 are a commentary''s
     restatement of this paper and are flagged as such. The mouse model name is recorded verbatim because the
-    strain background changes survival in this model.
+    strain background changes survival in this model. Independence, recomputed from the bylines: this paper
+    shares four name strings with NEU-342, the sponsor''s own paper, and a commentary in the corpus says outright
+    that the academic group teamed up with the company, so the decisive animal result is sponsor co-authored.
+    An earlier version of this record carried no independence statement at all while the records either side
+    of it did.
 
     '
 - id: NEU-350
@@ -9565,10 +9581,10 @@ claims:
 
     '
 - id: NEU-354
-  claim: 'A laboratory with no connection to the sponsor reproduced the target engagement as an incidental
-    control: injecting the splice-switching oligonucleotide STK-135 intracerebroventricularly into mouse brain
-    at postnatal day 2 and harvesting five days later improved productive Scn1a splicing and raised Scn1a expression,
-    with no effect on Syngap1 splicing or mRNA.
+  claim: 'A group that shares no author with the programme''s other papers reproduced the target engagement
+    as an incidental control: injecting the splice-switching oligonucleotide STK-135 intracerebroventricularly
+    into mouse brain at postnatal day 2 and harvesting five days later improved productive Scn1a splicing and
+    raised Scn1a expression, with no effect on Syngap1 splicing or mRNA.
 
     '
   topic: independent corroboration of SCN1A target engagement
@@ -9591,11 +9607,16 @@ claims:
 
       '
   confidence: medium
-  note: 'tier: isoform-specific perturbation with a molecular readout, run as a positive control rather than
-    as the paper''s own experiment. The result is qualitative, with no fold change in the text and the data
-    in a supplementary figure, so the chapter may say an unrelated group reproduced target engagement but may
-    not attach a number. Group is Pennsylvania and Children''s Hospital of Philadelphia; no shared author with
-    Lim 2020 or with the mouse study in NEU-349.
+  note: 'An earlier version of this claim said the laboratory has no connection to the sponsor. That does not
+    follow from the absence of a shared author and the document does not support it: the paper uses two of
+    the sponsor''s proprietary oligonucleotides, one as this positive control and one as a comparator, the
+    corpus text carries no competing-interests or funding declaration, and a within-document grep for the company
+    name returns no matches, so the question is unanswered rather than answered in the negative. This block''s
+    own NEU-370 note already says the same paper is not a blind convergence. tier: isoform-specific perturbation
+    with a molecular readout, run as a positive control rather than as the paper''s own experiment. The result
+    is qualitative, with no fold change in the text and the data in a supplementary figure, so the chapter
+    may say an unrelated group reproduced target engagement but may not attach a number. Group is Pennsylvania
+    and Children''s Hospital of Philadelphia; no shared author with Lim 2020 or with the mouse study in NEU-349.
 
     '
 - id: NEU-355
@@ -9807,12 +9828,16 @@ claims:
 
       '
   confidence: high
-  note: 'tier: registered outcome measures. The record lists four outcome measures in one Planned_Outcomes
-    section WITHOUT labelling any of them primary or secondary, so the chapter must not call the seizure endpoint
-    the primary endpoint on this source. A review in the corpus does call it the primary endpoint, which is
-    a restatement and not the registry''s own wording. NEU-381 carries the EU register''s fuller wording of
-    the same endpoint, with its unit and interval structure, and NEU-382 is the record that establishes which
-    endpoint is primary.
+  note: 'tier: registered outcome measures. An earlier version of this note said the record never labels an
+    endpoint primary and so the chapter must not call the seizure endpoint primary on this source. The outcome
+    section carries no labels, but the record''s Detailed Description states in its own words that the primary
+    endpoint is the change from baseline in major motor seizure frequency and that the secondary endpoints
+    are behaviour and cognition, clinical status and health-related quality of life. So this record does settle
+    it, the review that calls the seizure endpoint primary is reproducing the registry almost verbatim rather
+    than restating it at a remove, and the same registry also carries the eight-week baseline period that NEU-383''s
+    note says it lacks. NEU-381 carries the EU register''s fuller wording of the same endpoint, with its unit
+    and interval structure, and NEU-382 carries the structural primary and secondary labelling from the Japanese
+    registration.
 
     '
 - id: NEU-361
@@ -9820,9 +9845,9 @@ claims:
     records it as a non-randomised, sequential, open-label phase 1 to 2 study with an actual enrolment of 62
     patients that completed on 14 November 2023, and its outcome measures scored STK-001 given as single and
     multiple doses for safety and tolerability by adverse events, vital signs, examination, electrocardiogram
-    and laboratory parameters, alongside pharmacokinetics in plasma, exposure in cerebrospinal fluid, seizure
-    frequency by paper diary and a caregiver global impression of change, all from screening to six months
-    after dosing.
+    and laboratory parameters from screening at day minus 28, seizure frequency by paper diary over the same
+    window, plasma pharmacokinetics and cerebrospinal fluid exposure from day 1, and a caregiver global impression
+    of change from baseline at day minus 1, each running to six months after dosing.
 
     '
   topic: the first-in-patient trial as registered
@@ -9844,12 +9869,15 @@ claims:
 
       '
   confidence: high
-  note: 'tier: trial design and outcome measures as registered. READ FROM THE REGISTRATION RECORD; NO RESULTS
-    ARE POSTED ON IT. This is the actual enrolment denominator, 62, behind the 81 that the trial publication
-    reports for MONARCH and ADMIRAL together (NEU-355), and it is the anchored proof that the programme''s
-    primary measures were safety and pharmacokinetics rather than seizure frequency, which is what bounds NEU-356.
-    Status verified May 2025, overall status completed. Claim restated 2026-11-23 to remove an 8-word span
-    shared with its own audit quote; content unchanged.
+  note: 'An earlier version of this claim put all five measures on one window running from screening, which
+    is right for two of them: the registered time frames differ by measure, with pharmacokinetics and cerebrospinal
+    fluid exposure starting at day 1 and the caregiver global impression at day minus 1. tier: trial design
+    and outcome measures as registered. READ FROM THE REGISTRATION RECORD; NO RESULTS ARE POSTED ON IT. This
+    is the actual enrolment denominator, 62, behind the 81 that the trial publication reports for MONARCH and
+    ADMIRAL together (NEU-355), and it is the anchored proof that the programme''s primary measures were safety
+    and pharmacokinetics rather than seizure frequency, which is what bounds NEU-356. Status verified May 2025,
+    overall status completed. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit
+    quote; content unchanged.
 
     '
 - id: NEU-362
@@ -10094,9 +10122,9 @@ claims:
     the protein effect. Group sizes: four animals per dose at week 4 but only two per dose at week 8 and NO
     CONTROL ANIMALS AT WEEK 8, so the paper reports the week 8 levels as comparable to week 4 rather than as
     a percentage increase, and the chapter must not state an eight-week percentage. Fourteen of the twenty-one
-    authors are at Stoke Therapeutics, sharing four authors with NEU-342, so this is the same programme and
-    not an independent replication of it. ALLOCATION QUESTION: an ophthalmic indication may belong to chapter
-    12.
+    authors are at Stoke Therapeutics, sharing five authors with NEU-342 rather than the four an earlier version
+    of this note gave, so this is the same programme and not an independent replication of it. ALLOCATION QUESTION:
+    an ophthalmic indication may belong to chapter 12.
 
     '
 - id: NEU-369
@@ -10241,8 +10269,10 @@ claims:
     replicate wells, hundreds to thousands of SCN1A reads per sample. The therapeutic point is that a recently
     arisen, lineage-restricted poison exon is a real drug target but is invisible to any mouse model, which
     connects this record to NEU-371. 1N has multiple alternative splice sites and so is polymorphic in length
-    while 20N and 22N are fixed. Senior author Carvill is also the senior author of NEU-341, so the discovery
-    of the first exon and of the other two are the same laboratory and not independent.
+    while 20N and 22N are fixed. Independence, recomputed from the bylines: this paper and NEU-341''s share
+    name strings, so the discovery of the first exon and of the other two are not independent, but an earlier
+    version of this note identified the shared name as the senior author of both, which the bylines do not
+    support, and it named one shared name where there are three.
 
     '
 - id: NEU-373
@@ -10316,9 +10346,9 @@ claims:
 - id: NEU-375
   claim: 'The intron 22 exon was tested the same way in a reporter: a minigene carrying SCN1A exons 22 and
     23 with the whole intervening intron showed significantly increased inclusion of the 22N exon when it carried
-    the patient variant, across five transfections per construct in HEK293T cells, and an oligonucleotide against
-    the exon''s 5-prime splice junction at 1 micromolar significantly reduced the 22N-containing products relative
-    to the canonical isoform.
+    the patient variant, across five transfections per construct in HEK293T cells, and one of two oligonucleotides
+    tested against the exon, at 1 micromolar, significantly reduced the 22N-containing products relative to
+    the canonical isoform.
 
     '
   topic: minigene dissection and oligonucleotide rescue of a second SCN1A poison exon
@@ -10340,10 +10370,13 @@ claims:
 
       '
   confidence: high
-  note: 'tier: minigene splicing assay with an oligonucleotide rescue, no cellular or organismal phenotype.
-    HEK293T cells are not neurons, and the construct is flanked by rat insulin exons as a splicing control.
-    Of two oligonucleotides tested against 22N only the one against the 5-prime junction worked, which is the
-    same hit-rate reality as the 144-oligonucleotide screen in NEU-364.
+  note: 'An earlier version of this claim named the oligonucleotide''s target as the exon''s 5-prime splice
+    junction, which the cited line supports but which the paper''s own figure caption contradicts, placing
+    it at the acceptor site with the 3-prime end of the upstream intron. The derived point, that only one of
+    the two oligonucleotides worked, is safe either way and is what the claim now carries; which junction it
+    hit must not be stated. tier: minigene splicing assay with an oligonucleotide rescue, no cellular or organismal
+    phenotype. HEK293T cells are not neurons, and the construct is flanked by rat insulin exons as a splicing
+    control. The one-of-two hit rate is the same reality as the 144-oligonucleotide screen in NEU-364.
 
     '
 - id: NEU-376
@@ -10521,18 +10554,20 @@ claims:
     EXIST ON IT. This is the only place in the corpus that gives the unit, the comparator and the interval
     structure, which the ClinicalTrials.gov record for the same trial (NEU-360) does not; the two agree on
     the week 28 and week 52 structure. The entry is three lines long and lists the endpoints together without
-    separating primary from secondary, so this record does NOT establish which is primary; NEU-382 does, from
-    the Japanese registration. The record carries no sponsor field: the attribution to Stoke Therapeutics comes
-    from the EUDRACT number 2024-519555-28 appearing as a secondary identifier on NCT06872125, whose organisation
-    field names that company, and is not written from memory. Claim restated 2026-11-23 to remove an 8-word
-    span shared with its own audit quote; content unchanged.
+    separating primary from secondary, so this record does NOT establish which is primary; NEU-382 does so
+    structurally from the Japanese registration, and the ClinicalTrials.gov record states it in prose in its
+    Detailed Description, which an earlier version of this note said it does not. The record carries no sponsor
+    field: the attribution to Stoke Therapeutics comes from the EUDRACT number 2024-519555-28 appearing as
+    a secondary identifier on NCT06872125, whose organisation field names that company, and is not written
+    from memory. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content
+    unchanged.
 
     '
 - id: NEU-382
-  claim: 'The Japanese registration of the same phase 3 trial is the one record that separates the endpoints:
-    it lists seizure reduction at week 28, assessed by seizure diary, as the primary outcome, and seizure reduction
+  claim: 'The Japanese registration of the same phase 3 trial separates the endpoints structurally: it lists
+    seizure reduction at week 28, assessed by seizure diary, in its primary outcome section, and seizure reduction
     at week 52, the multi-component Vineland-3 outcome score as a change from baseline at week 52, and Vineland-3
-    subdomain scores as a change from baseline at week 52 as the secondary outcomes.
+    subdomain scores as a change from baseline at week 52 in its secondary outcome section.
 
     '
   topic: which EMPEROR endpoint is primary
@@ -10553,13 +10588,15 @@ claims:
 
       '
   confidence: high
-  note: 'tier: registered outcome measures, labelled. READ FROM A REGISTRATION RECORD. The labelling is structural
-    rather than inferred: line L5 sits in the record''s primary_outcome section and line L6 in its secondary_outcome
-    section, which is why this record can do what NEU-360 could not. It closes the gap flagged in NEU-360''s
-    note, so a chapter sentence may now call seizure reduction at week 28 the primary endpoint and must call
-    the Vineland-3 measures secondary. This registration does name the sponsor, at its L12, as Stoke Therapeutics,
-    Inc. The record is bilingual, each line giving the Japanese and then the English; the quote is from the
-    English half.
+  note: 'An earlier version of this claim called this the one record that separates the endpoints, which is
+    false: the ClinicalTrials.gov record for the same trial states in its Detailed Description, in its own
+    words, which endpoint is primary and which are secondary. What is particular to this registration is that
+    the separation is structural, line L5 sitting in its primary_outcome section and line L6 in its secondary_outcome
+    section, confirmed by listing the record''s own sections. tier: registered outcome measures, labelled.
+    READ FROM A REGISTRATION RECORD. A chapter sentence may call seizure reduction at week 28 the primary endpoint
+    and must call the Vineland-3 measures secondary. This registration does name the sponsor, at its L12, as
+    Stoke Therapeutics, Inc. The record is bilingual, each line giving the Japanese and then the English; the
+    quote is from the English half.
 
     '
 - id: NEU-383
@@ -10587,13 +10624,14 @@ claims:
 
       '
   confidence: high
-  note: 'tier: intervention description as registered. READ FROM A REGISTRATION RECORD. This is materially
-    more specific than the ClinicalTrials.gov record for the same trial, which says only that the sham group
-    will have a procedure intended to mimic the drug administration, and it matters twice over: it is what
-    makes the quadruple masking in NEU-359 credible, and it means the control arm is itself exposed to the
-    procedure that produced post-lumbar-puncture syndrome in 25 per cent of patients in the earlier studies
-    (NEU-357), so that adverse event will not separate the arms. It also supplies the eight-week baseline period,
-    which the ClinicalTrials.gov record does not state.
+  note: 'tier: intervention description as registered. READ FROM A REGISTRATION RECORD. This is more specific
+    than the ClinicalTrials.gov record for the same trial about the sham procedure, which says only that the
+    sham group will have a procedure intended to mimic the drug administration, and it matters twice over:
+    it is what makes the quadruple masking in NEU-359 credible, and it means the control arm is itself exposed
+    to the procedure that produced post-lumbar-puncture syndrome in 25 per cent of patients in the earlier
+    studies (NEU-357), so that adverse event will not separate the arms. An earlier version of this note said
+    the eight-week baseline period is absent from the ClinicalTrials.gov record; it is there, in the same sentence
+    as the dosing schedule, word for word as the Japanese record has it.
 
     '
 - id: NEU-384
@@ -10639,9 +10677,9 @@ claims:
     score STK-001 given as multiple doses for safety and tolerability, from screening at day minus 28 until
     six months after multiple dosing, by adverse events, abnormal vital signs, physical examination findings,
     12-lead electrocardiogram and laboratory parameters, together with plasma pharmacokinetics and cerebrospinal
-    fluid exposure of STK-001 by hybridisation ELISA over the same window, while seizure frequency measured
-    on a paper diary, caregiver and clinician global impression of change and quality of life on the EQ-5D-Y
-    are all secondary outcome measures.
+    fluid exposure of STK-001 by hybridisation ELISA, both of those running from day 1 to six months after
+    multiple dosing, while seizure frequency measured on a paper diary, caregiver and clinician global impression
+    of change and quality of life on the EQ-5D-Y are all secondary outcome measures.
 
     '
   topic: seizure frequency was a secondary outcome in the early trials
@@ -10663,13 +10701,15 @@ claims:
 
       '
   confidence: high
-  note: 'tier: registered outcome measures, labelled. READ FROM A REGISTRATION RECORD. As with NEU-382 the
-    labelling is structural: L5 is the record''s primary_outcome section and L6 its secondary_outcome section.
-    THIS IS THE ANCHORED PROOF BEHIND THE CAVEAT IN NEU-356: the seizure reduction the programme is known for
-    was a secondary measure in an open-label study with no control arm, and the chapter can now say so from
-    a primary source rather than from the review at NEU-358. The window given, screening to six months after
-    dosing, is also much shorter than the 20 and 36 months over which the extension figures are quoted. Claim
-    restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
+  note: 'An earlier version of this claim put pharmacokinetics and cerebrospinal fluid exposure on the same
+    window as safety; the registration gives both as running from day 1, not from screening at day minus 28.
+    tier: registered outcome measures, labelled. READ FROM A REGISTRATION RECORD. As with NEU-382 the labelling
+    is structural: L5 is the record''s primary_outcome section and L6 its secondary_outcome section. THIS IS
+    THE ANCHORED PROOF BEHIND THE CAVEAT IN NEU-356: the seizure reduction the programme is known for was a
+    secondary measure in an open-label study with no control arm, and the chapter can now say so from a primary
+    source rather than from the review at NEU-358. The windows given are also much shorter than the 20 and
+    36 months over which the extension figures are quoted. Claim restated 2026-11-23 to remove an 8-word span
+    shared with its own audit quote; content unchanged.
 
     '
 - id: NEU-386
@@ -10815,9 +10855,10 @@ claims:
     The labelling is structural, L5 being the primary_outcome section and L6 the secondary_outcome section.
     Two things worth the chapter''s attention. The locomotor questionnaire and the immunogenicity measure appear
     in the current primary set and NOT in the superseded block printed below it on the same line, so the primary
-    outcomes were widened after the study opened. And neither the Vineland-3 nor any cognitive measure is a
-    registered outcome of this extension, although the adaptive-behaviour and cognition figures quoted for
-    the extensions at NEU-358 come from it, which the chapter should state rather than smooth. Claim restated
+    outcomes were widened after the study opened; the superseded block was not read on an earlier pass, and
+    an absence asserted from it would have been wrong. And neither the Vineland-3 nor any cognitive measure
+    is a registered outcome of this extension, although the adaptive-behaviour and cognition figures quoted
+    for the extensions at NEU-358 come from it, which the chapter should state rather than smooth. Claim restated
     2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 
     '
