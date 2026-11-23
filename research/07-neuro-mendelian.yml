@@ -10091,14 +10091,13 @@ claims:
   confidence: high
   note: 'tier: registered outcome measures. An earlier version of this note said the record never labels an
     endpoint primary and so the chapter must not call the seizure endpoint primary on this source. The outcome
-    section carries no labels, but the record''s Detailed Description states in its own words that the primary
-    endpoint is the change from baseline in major motor seizure frequency and that the secondary endpoints
-    are behaviour and cognition, clinical status and health-related quality of life. So this record does settle
-    it, the review that calls the seizure endpoint primary is reproducing the registry almost verbatim rather
-    than restating it at a remove, and the same registry also carries the eight-week baseline period that NEU-383''s
-    note says it lacks. NEU-381 carries the EU register''s fuller wording of the same endpoint, with its unit
-    and interval structure, and NEU-382 carries the structural primary and secondary labelling from the Japanese
-    registration.
+    section carries no labels, but the record''s Detailed Description names major motor seizure frequency,
+    as a change from baseline, as the primary endpoint, and names behaviour and cognition, clinical status
+    and quality of life as the secondary ones. So this record does settle it, the review that calls the seizure
+    endpoint primary is reproducing the registry almost verbatim rather than restating it at a remove, and
+    the same registry also carries the eight-week baseline period that NEU-383''s note says it lacks. NEU-381
+    carries the EU register''s fuller wording of the same endpoint, with its unit and interval structure, and
+    NEU-382 carries the structural primary and secondary labelling from the Japanese registration.
 
     '
 - id: NEU-361
