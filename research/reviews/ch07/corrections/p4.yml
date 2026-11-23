@@ -1,0 +1,259 @@
+claims:
+- id: NEU-186
+  claim: >
+    Risdiplam's pharmacodynamic effect was read in blood rather than in motor neurons: in FIREFISH
+    Part 1, median blood SMN protein at twelve months was 3.0 times baseline in the four infants
+    whose final dose at month 12 was 0.08 mg per kilogram per day and 1.9 times baseline in the 17
+    whose final dose at month 12 was 0.2 mg per kilogram per day, rising from medians of 1.31 to
+    3.05 and from 2.54 to 5.66 nanograms per millilitre respectively.
+  note: >
+    An earlier version of this claim named the two groups by a constant daily dose; the source says
+    twice that the figure is the final dose reached at month 12 after escalation, and the FDA review
+    likewise describes the cohort as reaching the selected pivotal dose within the first 12 months.
+    tier: isoform-specific biochemical or binding difference, no organismal phenotype, because the
+    measurement is protein in blood and not in the affected tissue. Read from the trial
+    publication's abstract, which is abstract-only in the corpus, PMID 33626251; no author list or
+    journal in meta.json, so both are RESOLVE_FROM_DOI and the bibkey is title-derived. The blood
+    SMN concentration was one of the stated primary outcomes of Part 1 together with safety,
+    pharmacokinetics and dose selection, which matters because the sitting result in NEU-189 was
+    not. NEU-189 takes the sitting figure from the FDA review instead.
+- id: NEU-187
+  claim: >
+    The nusinersen approval rested on an interim rather than the published final analysis, and on a
+    sensitivity version of that interim: the FDA summary review's headline motor-milestone
+    responder result of 21 of 52 treated infants (40 per cent) against 0 of 30 sham-procedure
+    controls (p less than 0.0001), in the double-blind sham-controlled infantile-onset trial the
+    application calls Study CS3B in patients with two SMN2 copies, is the analysis including
+    patients who died or withdrew after baseline. The prespecified interim set was the 78 subjects
+    with a Day 183 visit at the June 2016 cut-off, 51 on nusinersen and 27 on sham, in whom the
+    responder rates were 41 per cent against 0.
+  note: >
+    An earlier version of this record read the 52 and 30 denominators as the prespecified interim
+    set. There are three number sets, not two: the review's headline sensitivity analysis, the
+    review's prespecified interim of 51 against 27, and the publication's own interim, which
+    reports 21 of 51 (41 per cent) against 0 of 27. The 51 and 27 match exactly between review and
+    publication, which anchors the identification numerically. The claim had also carried no
+    timepoint where the document gives one, the Day 183 visit in a 13-month trial. tier:
+    isoform-specific perturbation with phenotype. Read from an FDA summary review, which is the
+    primary for what the approval rested on. A case-insensitive search of this review for 'ENDEAR'
+    and for the registration number NCT02193074 returned no hits, so the identification of Study
+    CS3B with the trial published as ENDEAR is not anchored in either document and the chapter must
+    not equate them without a linking source. A case-insensitive search of the same review for
+    'accelerated approval' and for 'Subpart H' also returns nothing, so the approval type is not
+    anchored here. The published final analysis recorded in NEU-017 gives 37 of 73 against 0 of 37;
+    the three sets must not be mixed. The same review line says secondary endpoints were presented
+    descriptively according to the analysis plan, so they do not support a treatment-effect claim.
+- id: NEU-192
+  claim: >
+    SUNFISH Part 2 met its primary endpoint by a small margin and failed four of its six key
+    secondaries: in 120 patients randomised to risdiplam against 60 to placebo, of whom 115 and 59
+    had MFM32 data at baseline, least-squares mean change in the MFM32 at month 12 was 1.36 points
+    (95 per cent confidence interval 0.61 to 2.11) on risdiplam against minus 0.19 (minus 1.22 to
+    0.84) on placebo, a difference of 1.55 points (0.30 to 2.81, p equal to 0.0156), while of the
+    six key secondary endpoints tested in a gatekeeping hierarchy only two survived adjustment, the
+    responder analysis on the MFM32 and the revised upper limb module at an adjusted p of 0.0469
+    each, and the Hammersmith Functional Motor Scale-Expanded at 0.95 against 0.37 points, forced
+    vital capacity, the independence scale and the clinical global impression all came out at an
+    adjusted p of 0.3902 or worse.
+  note: >
+    An earlier version of this claim carried no denominator at all; the randomised arms lived in
+    NEU-191 and the baseline rows in this note. tier: isoform-specific perturbation with phenotype.
+    Read from the results table of the FDA summary review. The four failed secondaries are in the
+    same table as the significant primary and belong in the same sentence as it; a chapter that
+    reports only the primary would overstate this trial. The gatekeeping procedure is why nominal
+    and adjusted p values differ and the adjusted ones are the ones to quote: forced vital capacity
+    fell in both arms, by 5.16 against 3.11 percentage points of predicted. The regulator's own
+    narrative line calls the primary difference 'relatively small but statistically significant'.
+    The same review reports at its L125 that excluding either of two Polish sites would lose
+    significance on the primary, which this record does not claim.
+- id: NEU-196
+  claim: >
+    One SMA therapy does not act on splicing at all: it delivers SMN complementary DNA in an
+    adeno-associated virus serotype 9 vector, and in the trial reported here, registered as
+    NCT02122952, 15 infants with type 1 disease received one intravenous dose, 3 at 6.7 times ten
+    to the thirteenth and 12 at 2.0 times ten to the fourteenth vector genomes per kilogram, with
+    safety as the primary outcome; none of the 15 had died or come to need permanent ventilation by
+    20 months of age, where a historical cohort put survival at 8 per cent.
+  note: >
+    An earlier version of this claim called the therapy approved and called this the first trial of
+    that approach; the abstract says neither, names no drug, and gives the registration the claim
+    now carries. No document in this block states an approval type, date or basis for this therapy.
+    tier: isoform-specific perturbation with phenotype. Abstract-only record, PMID 29091557; no
+    author list or journal in meta.json, so both are RESOLVE_FROM_DOI and the bibkey is
+    title-derived. Recorded only as the comparison that makes the splicing drugs' mechanism
+    legible: this approach supplies a gene rather than redirecting a splice choice, and the claim
+    says so. The abstract never names the drug, so neither the generic nor the trade name is
+    anchored here; NEU-197's source names it onasemnogene abeparvovec. The trial is single-arm with
+    safety as its primary outcome and the survival comparison is with a historical cohort, so it is
+    not evidence of superiority over either splicing drug. The motor results in the same abstract
+    are explicitly exploratory.
+- id: NEU-198
+  claim: >
+    The two classes of splicing drug act at different points on the same decision: antisense
+    oligonucleotides work indirectly by occupying cis-regulatory elements or breaking inhibitory
+    structures, while small molecules act directly at the interface between U1 small nuclear
+    ribonucleoprotein and the 5-prime splice site, and solution structures of risdiplam, branaplam
+    and two related compounds place all of them on an RNA helix epitope containing an unpaired
+    adenine in a G-2 A-1 G+1 U+2 motif. Those authors report that the four contact the epitope
+    similarly to the prototype compound for which bulge repair was established, which they say
+    suggests the mechanism generalises.
+  note: >
+    An earlier version of this claim stated the generalised mechanism as what the four compounds
+    do; the abstract says only that they contact the epitope similarly, suggesting the bulge-repair
+    mechanism can be generalised, and the mechanism itself was established for the prototype. tier:
+    isoform-specific biochemical or binding difference, no organismal phenotype. Read from the
+    paper's own abstract and introduction. The structures are of compounds bound to an RNA duplex
+    formed between U1 small nuclear RNA and the splice site, so the mechanism is biophysical and
+    the record claims no cellular or organismal outcome. This is the mechanistic basis for why one
+    small molecule can act on both SMN2 and HTT, which NEU-199 records.
+- id: NEU-205
+  note: >
+    tier: isoform-specific biochemical or binding difference, no organismal phenotype; an earlier
+    version of this note claimed a phenotype where the measured outcome is a protein quantity in
+    muscle and nothing else, and the file already qualifies this tier the same way at NEU-183,
+    NEU-186 and NEU-202. Read from the FDA summary review for NDA 206488. This is the single most
+    useful record in the file for the measurement argument, because it holds both numbers, the
+    denominators behind them and the regulator's judgement that they do not agree. The 17.4 per
+    cent is a count of positive fibres and the 0.93 per cent is a quantity of protein; NEU-206
+    records why those are not the same thing and cannot be compared. The document is internally
+    ambiguous about the 0.93 per cent: the line this record cites calls it a mean increase of only
+    0.93 per cent of normal dystrophin, while its L433 and L441 use the same figure as the Week-180
+    level. This record follows the level reading, and a chapter sentence must say which it means.
+    The review also notes that FDA did not verify the integrity of the immunohistochemistry
+    results.
+- id: NEU-208
+  claim: >
+    Viltolarsen's dystrophin was measured by two assays that disagree by roughly twofold on the
+    same samples: after 24 weekly doses in 8 patients per dose group, the median increase in
+    truncated dystrophin was 4.6 per cent of normal at 40 milligrams per kilogram per week and 3.8
+    per cent at 80 by the primary western blot endpoint, normalised to myosin heavy chain, but 1.7
+    and 1.9 per cent respectively by mass spectrometry as a secondary endpoint, and the reviewer
+    supported approval of the higher dose on the marginally higher mass spectrometry value. A third
+    endpoint in the same review, immunofluorescence counting of dystrophin-positive myofibres, gave
+    mean increases of 12.8 and 33.0 per cent at week 25.
+  note: >
+    An earlier version of this claim promised three measurements and quantified two, and omitted
+    the normalisation that the western blot medians depend on: a different normalisation in the
+    same review gives 0.30 and 0.6 per cent at baseline rising to 5.7 and 5.9 per cent. tier:
+    isoform-specific biochemical or binding difference, no organismal phenotype, since the measured
+    outcome is a protein quantity in muscle and nothing else. Read from the FDA medical review for
+    NDA 212154. The two-assay gap is the strongest evidence in this file that the dystrophin
+    biomarker is assay-dependent. The reversal in rank order between the two doses must not be
+    presented as a dose effect: the same review states that there was no dose related difference in
+    dystrophin production at the 40 and 80 mg/kg/week dose, and an earlier version of this note
+    called it an opposite rank order between doses without that sentence. The trial is Study
+    NS-065/NCNP-01-201. The denominator is 8 patients per dose, which is the smallest of the four
+    programmes. The same review states that mutations amenable to exon 53 skipping are thought to
+    comprise 8 to 10 per cent of the Duchenne population.
+- id: NEU-209
+  claim: >
+    Casimersen's approval figure is a between-arm difference rather than a within-patient change:
+    at an interim analysis of study 4045-301 after 48 weeks of double-blind treatment, 27 of the
+    first 43 patients to reach the timepoint were on casimersen and 16 on placebo, and western blot
+    of muscle biopsy showed a mean dystrophin difference of 0.59 per cent of normal and a 1.6 per
+    cent increase in exon 45 skipping, both statistically significant, with the trial's 6-minute
+    walk test data not yet available and exon-45-amenable mutations put at about 8 per cent of
+    Duchenne patients.
+  note: >
+    An earlier version of this claim said muscle biopsy showed the difference without naming the
+    assay; the review quantifies by western blot and titles its tables accordingly. tier:
+    isoform-specific biochemical or binding difference, no organismal phenotype, since the review
+    states the 6-minute walk data were not available, so no organismal outcome was measured. Read
+    from the FDA medical review for NDA 213026. Study 4045-301 is ESSENCE, named as such in two
+    documents in this block, so this record and NEU-214 are the interim and the final analysis of
+    one trial and a chapter must not read them as two trials. The exon 45 skipping figure is the
+    only direct measurement of target engagement in human muscle among these four records, and it
+    is 1.6 per cent, which should be read against the dystrophin figure rather than instead of it.
+    The whole application covered 35 unique patients on placebo and 65 on casimersen; the 27
+    against 16 are the interim biopsy subset and are the denominators for the 0.59 per cent. The
+    review states plainly that whether the increase translates into clinical benefit is unknown
+    until the ongoing studies finish.
+- id: NEU-210
+  claim: >
+    One side of the dystrophin argument, in the regulator's own words: the Director of the Office
+    of Drug Evaluation I set the bar at functional protein of roughly 10 per cent of normal before
+    any increase could be called reasonably likely to predict clinical benefit, reasoning from
+    Becker dystrophy as a model, and offered plots and calculations that he interprets as showing
+    that within the eteplirsen trials higher dystrophin levels were not associated with better
+    function.
+  note: >
+    An earlier version of this claim dropped the source's "that he interprets as showing", which
+    matters because the paired NEU-211 records the Center Director offering post-hoc calculations
+    she regarded as supporting the opposite direction. tier: regulatory judgement on whether a
+    biomarker is reasonably likely to predict benefit. Read from the FDA summary review for NDA
+    206488, which reproduces both positions. The 10 per cent threshold is an extrapolation from
+    Becker dystrophy, which the Commissioner's decision calls a rational extrapolation in the
+    absence of a validated surrogate but an extrapolation nonetheless. Elsewhere the same document
+    reports the view that at least 3 per cent of normal is inadequate and a minimum of about 10 per
+    cent may be needed, and that Study 301's 0.22 to 0.32 per cent is an order of magnitude below
+    that. Paired with NEU-211, which is the opposing position from the same document; the two share
+    the L40 anchor, quote different spans and state opposite positions.
+- id: NEU-214
+  claim: >
+    The confirmatory trial for two of the four did not meet its endpoint: ESSENCE enrolled 225
+    ambulatory boys amenable to exon 53 or exon 45 skipping, randomised 2:1 to golodirsen or
+    casimersen at 30 milligrams per kilogram or to placebo, and in the 138 analysed in the combined
+    treatment group against 74 on placebo the primary endpoint, change from baseline in 4-step
+    ascend velocity at week 96, differed by 0.06 steps per second (95 per cent confidence interval
+    minus 0.05 to 0.16, P equal to 0.309), while dystrophin by western blot at week 96 differed by
+    0.69 percentage points of normal unadjusted (0.28 to 1.10, P less than 0.001) and by 1.25
+    percentage points adjusted for muscle content (0.20 to 2.31, P equal to 0.020).
+  note: >
+    An earlier version of this claim gave the dystrophin difference without its timepoint, without
+    the adjusted figure and without the word unadjusted. tier: isoform-specific perturbation with
+    phenotype. Read from a conference topline abstract presented at the 2026 MDA Clinical and
+    Scientific Conference, not from a trial publication and not from a regulatory document; that is
+    the weakest provenance of any trial figure in this file and the chapter must say so. The
+    crossref author field for this record is a garbled initialism rather than an author list and
+    will not build a bibliography entry; it needs resolving before the chapter cites it. The
+    treatment groups are pooled across two drugs and two target exons, which the abstract states.
+    The abstract also reports a prognostically defined subgroup of 74 against 35 favouring
+    treatment at P equal to 0.010, but labels it a post-hoc analysis, so it cannot be reported as a
+    trial result. ESSENCE is study 4045-301, so this record is the final analysis of the trial
+    whose interim analysis NEU-209 records, and the two must not be read as two trials. Its status
+    as the confirmatory study is anchored in two documents in this block, for golodirsen and for
+    casimersen, rather than only in the regulatory-interaction table behind NEU-215. This is the
+    record that makes the dystrophin-surrogate dispute in NEU-210 and NEU-211 testable rather than
+    rhetorical.
+- id: NEU-218
+  claim: >
+    A splicing drug's concentration was measured in the tissue it is meant to act on: spinal cord
+    from three patients who died during the phase 2 nusinersen study CS3A carried more than 11
+    micrograms of drug per gram, with a range of 11.9 to 31.8, at doses of 6 to 12 milligrams,
+    above the 5 to 10 micrograms per gram the reviewers give as the targeted therapeutic range in
+    central nervous system tissue. The same review separately gives 1 to 10 micrograms per gram as
+    the concentration producing 50 to 90 per cent SMN2 exon 7 inclusion in transgenic mice.
+  note: >
+    An earlier version of this claim attributed the 5 to 10 microgram range to transgenic mice: the
+    document gives the mouse range as 1 to 10 and the therapeutic range as 5 to 10, and never says
+    where the second came from, so the mouse provenance was this record's inference. The claim also
+    opened by saying target engagement was checked in tissue, where the line reports a drug
+    concentration only and no exon inclusion was measured in human tissue. tier: drug concentration
+    measured in the target tissue at autopsy, against an exon-inclusion dose-response from mice.
+    Read from the FDA clinical pharmacology review for NDA 209531. This is the only measurement in
+    this file of a splicing drug's concentration in the tissue it is meant to act on, and it is
+    from three autopsies, which is the denominator to carry. Time since last dose is not given. The
+    same review records that nusinersen is fully bioavailable in cerebrospinal fluid by direct
+    intrathecal injection, with a cerebrospinal fluid volume of distribution of 0.4 litres against
+    29 litres in plasma and a cerebrospinal fluid half-life of 135 to 177 days against 85 days in
+    plasma, which is the pharmacological reason the drug is given into the spine rather than
+    systemically.
+- id: NEU-219
+  claim: >
+    An oligonucleotide's delivery to muscle is uneven between muscle groups and between healthy and
+    diseased fibres: in mdx mice, 2-prime-O-methyl phosphorothioate oligonucleotide levels and
+    half-life differed between muscle groups, with heart showing the lowest levels but the longest
+    half-life at about 46 days, and levels were higher in dystrophin-deficient fibres than in
+    healthy ones, which produced correspondingly higher exon skipping in the diseased muscle.
+  note: >
+    An earlier version of this claim opened by saying the limit for muscle is distribution rather
+    than chemistry; the source makes no comparison between the two as limiting factors, and that
+    lead was also in tension with this note, which says the chemistry differs from the approved
+    drugs. tier: isoform-specific biochemical or binding difference, no organismal phenotype, in a
+    mouse model. Read from the paper's abstract. This is mouse data with a different
+    oligonucleotide chemistry from the approved morpholino drugs, so it bounds the delivery problem
+    rather than describing the approved drugs' biodistribution; a chapter sentence must say both.
+    The finding that uptake is higher in damaged fibres is the mechanism by which these drugs reach
+    muscle at all, and the heart result is the reason cardiac involvement is the hardest target.
+    The same paper compared intravenous, subcutaneous and intraperitoneal routes and found similar
+    bioavailability, selecting subcutaneous for later clinical protocols.

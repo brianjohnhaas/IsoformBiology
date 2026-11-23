@@ -1,0 +1,75 @@
+claims:
+- id: NEU-210
+  claim: >
+    One side of the dystrophin argument, in the regulator's own words: the Director of the Office
+    of Drug Evaluation I set the bar at functional protein of roughly 10 per cent of normal before
+    any increase could be called reasonably likely to predict clinical benefit, reasoning from
+    Becker dystrophy as a model, and supplied his own plots and arithmetic, on his reading of which
+    the eteplirsen trials show no association between how much dystrophin a boy made and how well
+    he moved.
+  note: >
+    An earlier version of this claim stated the no-association finding flatly, where the document
+    frames it as this official's reading of figures he supplied. That matters because the paired
+    NEU-211 records the Center Director offering post-hoc calculations she regarded as supporting
+    the opposite direction, so the chapter has two officials reading one dataset in two directions
+    and must attribute both. A second version of the claim followed the document's own wording too
+    closely and was restated. tier: regulatory judgement on whether a biomarker is reasonably
+    likely to predict benefit. Read from the FDA summary review for NDA 206488, which reproduces
+    both positions. The 10 per cent threshold is an extrapolation from Becker dystrophy, which the
+    Commissioner's decision calls a rational extrapolation in the absence of a validated surrogate
+    but an extrapolation nonetheless. Elsewhere the same document reports the view that at least 3
+    per cent of normal is inadequate and a minimum of about 10 per cent may be needed, and that
+    Study 301's 0.22 to 0.32 per cent is an order of magnitude below that. Paired with NEU-211,
+    which is the opposing position from the same document; the two share the L40 anchor, quote
+    different spans and state opposite positions.
+- id: NEU-279
+  claim: >
+    Outlier calls that appear in only one tissue of an individual are common for every method
+    tested: 22 per cent of the calls this method made at a nominal p of 10 to the minus 7
+    reappeared in another tissue of the same person at 10 to the minus 3, against 11 per cent for a
+    competing method, and tissue-specific calls were less enriched for rare splice-affecting
+    variants than replicated ones, from which those authors infer that more of the
+    single-tissue calls are likely to be wrong.
+  note: >
+    An earlier version of this claim stated the false-positive enrichment as a result; the source
+    states it as an inference, and a second version of the claim followed the source's own sentence
+    too closely and was restated. The same line then undercuts the artefact reading, saying that
+    inspection of the raw reads for several such calls found them well supported and that further
+    investigation will be needed to understand the apparent excess, so the excess is unexplained.
+    Their own recommendation for diagnostics is to require a rare variant or an independent
+    functional assay alongside the call, which is the argument behind NEU-298 and NEU-299. tier:
+    cohort measurement of assay performance; none of the three isoform tiers applies
+- id: NEU-297
+  claim: >
+    In that same 50-individual cohort one case turned on read length and on manual work: a neonate
+    with a de novo 69-kilobase duplication of the ATAD3 gene cluster whose breakpoints DNA
+    sequencing could not resolve because of homology across the cluster, where short-read RNA
+    sequencing of fibroblasts was uninformative and gave no fusion-supporting reads. The long-read
+    pipeline discarded the fusion transcript on internal polyadenylation priming and its gene
+    fusion caller missed it as well; it was found only by reading the unfiltered alignments by hand
+    against a purpose-built genome, and the transcript then proved to be a complete in-frame fusion
+    of ATAD3A to ATAD3C whose exon-level breakpoints established the molecular diagnosis.
+  note: >
+    An earlier version of this claim credited the recovery to long reads, leaving the bound that
+    the pipeline discarded the transcript twice in this note, where it cannot be cited; per this
+    file's own rule a qualifier that lives in a note needs its own claim. A second version followed
+    the source's own sentence too closely and was restated. So long reads reached what short reads
+    could not, but not unaided. In the same cohort's RUNX2 case short reads had already detected
+    the pseudoexon and long reads only fixed its boundaries, which is the weaker kind of gain. Same
+    paper as NEU-272 and NEU-296. tier: single-case measurement from a named variant to its
+    transcript consequence; none of the three isoform tiers applies
+- id: NEU-208
+  note: >
+    An earlier version of this claim promised three measurements and quantified two, and omitted
+    the normalisation that the western blot medians depend on: a different normalisation in the
+    same review gives 0.30 and 0.6 per cent at baseline rising to 5.7 and 5.9 per cent. tier:
+    isoform-specific biochemical or binding difference, no organismal phenotype, since the measured
+    outcome is a protein quantity in muscle and nothing else. Read from the FDA medical review for
+    NDA 212154. The two-assay gap is the strongest evidence in this file that the dystrophin
+    biomarker is assay-dependent. The reversal in rank order between the two doses must not be
+    presented as a dose effect: the review states on the same line as the normalisation that the
+    two doses produced no dose-related difference in dystrophin, and an earlier version of this
+    note called the reversal an opposite rank order between doses without that finding beside it.
+    The trial is Study NS-065/NCNP-01-201. The denominator is 8 patients per dose, which is the
+    smallest of the four programmes. The same review states that mutations amenable to exon 53
+    skipping are thought to comprise 8 to 10 per cent of the Duchenne population.

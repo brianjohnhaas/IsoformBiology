@@ -1,0 +1,250 @@
+claims:
+- id: NEU-141
+  claim: >
+    The two cryptic events have different detection points in one knockdown series: in SH-SY5Y
+    neuroblastoma cells carrying a doxycycline-inducible short hairpin against TDP-43, the UNC13A
+    cryptic exon became detectable once more than 50 per cent of TDP-43 had been lost, while the
+    analogous frameshift exon in the sister gene UNC13B was not robustly detected until more than
+    90 per cent had gone. In the same paper's other series, cryptic exon expression instead
+    correlated with the degree of knockdown, and those authors attribute the apparent floor to
+    nonsense-mediated decay rather than to a threshold in splicing.
+  note: >
+    An earlier version of this record presented the result as a threshold phenomenon rather than a
+    graded one, which the paper does not claim and which its other series contradicts; the caveat
+    survived only in this note. tier: molecular readout of cryptic exon inclusion across a graded
+    knockdown series. The phenotype measured here is molecular, cryptic exon inclusion and UNC13A
+    transcript and protein level, not an organismal one. The graded knockdown series was run in
+    SH-SY5Y cells with three biological replicates, so the per cent figures are a cell-line
+    calibration and not a threshold measured in neurons or in tissue. The UNC13B event is an
+    annotated frameshift-inducing exon between exons 10 and 11, not a cryptic exon. Bounded by
+    NEU-142, which shows the 50 per cent figure is a detection threshold set partly by
+    nonsense-mediated decay.
+- id: NEU-146
+  note: >
+    tier: correlation of an isoform with a neuropathological group, which is the tier the
+    neighbouring records NEU-144, NEU-145 and NEU-147 use for this same cohort; an earlier version
+    of this note claimed an isoform-specific biochemical or binding difference, and this assay
+    measures neither. The assay is BaseScope in situ hybridisation against the cryptic junction,
+    read as background-corrected foci frequency; the group sizes come from the figure legend on the
+    first cited line and the statistics from the body text on the second. Same paper as NEU-141 to
+    NEU-145, so this is an orthogonal assay within one laboratory rather than an independent
+    replication.
+- id: NEU-153
+  claim: >
+    The two companion papers disagree about the biochemistry: by electrophoretic mobility shift
+    assay with full-length recombinant TDP-43, Ma and colleagues found the protein bound the
+    reference and risk versions of the cryptic-exon probe with similar affinity, with a minor
+    reduction in affinity for the risk allele and a larger reduction for the repeat variant
+    rs56041637, and they say in the paper that this differs from what Brown and colleagues
+    reported and attribute the difference to their use of full-length protein against
+    RNA-recognition motifs alone.
+  note: >
+    An earlier version of this claim said lower affinity appeared only for the repeat variant,
+    which excluded the minor reduction the paper also reports for the risk allele. tier:
+    isoform-specific biochemical or binding difference, no organismal phenotype. This is the
+    recorded dispute between NEU-150 and this record: same variant, two recombinant proteins, two
+    assays, opposite answers about whether the cryptic-exon risk allele weakens TDP-43 binding. Ma
+    and Brown share no author. Both sets of authors state the question is unresolved.
+- id: NEU-155
+  note: >
+    tier: isoform-specific perturbation with phenotype. Molecular phenotype. The counterpart of
+    this record is NEU-151. The two experiments differ in the system (TDP43-null HEK 293T against
+    TDP-43-knockdown SH-SY5Y) and in the readout (RT-qPCR against quantified RT-PCR products),
+    either of which could explain the difference. An earlier version of this note said the two
+    differ in the number of variants tested, three against two, and that neither paper tests the
+    other's configuration: the other paper built the repeat construct as well, so the
+    configurations overlap and only the system and the readout separate them. This record shares a
+    cited line with NEU-152 but quotes a different span and states a different finding.
+- id: NEU-157
+  note: >
+    tier: between-study reproducibility of a cryptic-splicing catalogue. The lines read were the
+    January 2023 bioRxiv preprint deposited in PubMed Central; the journal DOI recorded here is
+    for the 2024 Science Translational Medicine version and its author list may differ. The 340
+    junctions were called, at that paper's L27, by MAJIQ across 233 genes out of 498 differential
+    splicing events. An earlier version of this note said that was a different pipeline and a
+    different cell model from the 179-event count in NEU-010: both are the same, the same splicing
+    analyser, the same custom workflow, the same engineered cell line and the same knockdown
+    method, and the two catalogue sizes differ because of event definition and library type
+    instead. Not independent of NEU-010: Brown and Wilkins are authors here, and Seddighi is an
+    author of NEU-010's paper.
+- id: NEU-160
+  note: >
+    tier: between-study reproducibility of a cryptic-splicing catalogue. The lines read were a
+    bioRxiv preprint; the recorded DOI is the preprint's and the preprint's own title line differs
+    from the title in its metadata record, so the version matters. The 16 per cent is a reanalysis
+    of two other groups' published datasets, not a new screen, and the comparison is between a
+    knockdown in cultured neurons and sorted nuclei from end-stage tissue, which differ in cell
+    type, disease stage and depth. This is the counterpart of NEU-157, which reads the same kind of
+    comparison the other way; the two use different denominators, junctions against transcripts.
+    An earlier version of this note said these authors share no author with NEU-157's paper: they
+    share three name strings, two of them visible in the byline of the version actually read, so
+    the two must not be presented as independent. The author string also renders a multi-word
+    surname as initials, "Morato, J. G." for "Garcia Morato, J.".
+- id: NEU-161
+  claim: >
+    The paper's introduction restates from two earlier studies that about 3 per cent of the
+    non-conserved cryptic exons appearing when TDP-43 splicing repression is lost are spliced in
+    frame, and so produce a neoepitope rather than a frameshift or a premature stop. That fraction
+    is the denominator a cryptic-peptide biomarker programme works inside, and it is a restatement
+    rather than a measurement made here.
+  note: >
+    tier: a fraction restated from earlier work, not measured here. The figure is stated in the
+    paper's introduction with citations to two earlier studies; an earlier version of this record
+    carried the restatement only in the note, leaving the claim, which is the only citable field,
+    asserting it as a finding. A sibling source in this chapter gives a different figure for mouse,
+    so the 3 per cent should not be carried as a cross-species constant. It is the selection
+    criterion that led to HDGFL2 and it bounds how many of the hundreds of cryptic events can be
+    read out as a protein.
+- id: NEU-164
+  claim: >
+    In blood the same assay loses its separation: plasma was assayed in 66 samples from 43
+    C9orf72 carriers alongside 30 disease-control samples, and in the 58 plasma samples with a
+    matched cerebrospinal-fluid measurement the two tracked closely overall and very closely
+    within carriers but not within the 30 controls, while the highest plasma concentrations after
+    symptomatic carriers were those of the normal-pressure-hydrocephalus controls, with no group
+    difference reaching significance.
+  note: >
+    An earlier version of this claim ran the correlation on the full 66-sample plasma cohort; the
+    correlation was run on 58 matched plasma samples and the 30 controls. tier: correlation of
+    isoform ratio with a phenotype only. The correlation figures on the second cited line are r =
+    0.83 across all matched pairs, r = 0.93 within C9orf72 carriers and r = 0.19, not significant,
+    within controls; the concentration comparison on the first cited line was not significant for
+    any group. The older control cohort was decades older than the presymptomatic carriers, so age
+    and group are confounded. This is the honest bound on the claim that the marker works in blood.
+- id: NEU-166
+  note: >
+    tier: a pointer to another laboratory's unquantified result. This is a statement about somebody
+    else's result, made in the discussion of the immunoassay paper and cited there; the chapter
+    should treat it as a pointer to that other work and not as this paper's measurement. No cohort
+    size, no detection rate and no assay detail are given at this line. The work referred to is
+    NEU-157's paper, by its own reference number, so a chapter reading NEU-157 and NEU-166 as two
+    confirmations would count one paper twice; an earlier version of this note said the
+    mass-spectrometry work in NEU-157's paper shares authors with neither this paper nor the work
+    referred to here, which had the relationship backwards.
+- id: NEU-169
+  claim: >
+    Cryptic exons are not weakly conserved sequence but unconserved sequence: per-exon
+    conservation scores for TDP-43-repressed cryptic exons were indistinguishable from randomly
+    sampled intronic sequence in the same genes and far below the adjacent annotated exons. Their
+    splice sites are weaker than those of the annotated neighbours, which are on average
+    significantly stronger, and at the same time far above random, which those authors read as
+    real but weaker sites.
+  note: >
+    An earlier version of this claim said the cryptic exons carry splice sites close in strength to
+    those of their annotated neighbours, which inverts the comparison: the source says the
+    canonical sites are on average significantly stronger and the cryptic ones far above random.
+    tier: sequence-level comparison of cryptic exons against two control sets. The measure is mean
+    PhyloP score per exon against intronic sequence from the cryptic-containing intron and the
+    adjacent annotated exons. The splice-site strength comparison is stated in the same paper's
+    discussion rather than at this line. This is the source that quantifies conservation of
+    cryptic exons as a class.
+- id: NEU-175
+  claim: >
+    FUS-mutant ALS has a splicing programme of its own with the opposite conservation signature:
+    in knock-in models, nuclear depletion of FUS by either knockout or a localisation-signal
+    mutation produced splicing changes enriched for retained introns that are evolutionarily
+    conserved and that sit mostly in genes encoding RNA-binding proteins. Retention
+    predominantly decreased rather than increased, and the two introns in FUS's own transcript
+    that the authors link to its autoregulation were among those less retained, while cassette
+    exons were not bound by FUS beyond chance.
+  note: >
+    An earlier version of this claim gave the direction of the retention change nowhere, which a
+    reader will assume to be an increase, and named one intron in FUS's own transcript where there
+    are two. tier: isoform-specific perturbation with phenotype. Molecular phenotype in knock-in
+    mouse and cell models. The contrast with TDP-43 is the point: conserved retained introns in
+    RNA-binding proteins against non-conserved cryptic cassette exons, so the absence of UNC13A
+    cryptic splicing in FUS cases is not an absence of mis-splicing. Humphrey, Brown, Isaacs and
+    Fratta are authors of this and of NEU-158's and NEU-174's papers, so the FUS null and the FUS
+    positive come from one group; an earlier version of this note named a fifth shared author,
+    Plagnol, who is not an author of this paper, and the conclusion holds on the four.
+- id: NEU-176
+  claim: >
+    TDP-43 holds its own transcript down by choosing where it ends: TDP-43 suppresses use of the
+    most proximal of the three polyadenylation signals in TARDBP and promotes splicing of
+    alternative introns within its last exon, which routes the message to nonsense-mediated decay.
+    In ALS motor neurons, especially those with TDP-43 mislocalised out of the nucleus, the
+    significant change was in the proportion of TARDBP message that was cytoplasmic, in two of
+    three genotype groups: total message did not increase, and the nuclear and cytoplasmic amounts
+    did not change significantly on their own.
+  note: >
+    An earlier version of this claim said cytoplasmic TARDBP message was increased, which the body
+    of the paper contradicts: the significant result is a proportion, not an amount. tier:
+    isoform-specific perturbation with phenotype. The record was anchored on the paper's abstract,
+    which is a single line in this document; the body text at that paper's L26, L56 and L58 to L59
+    carries the per-genotype analysis and its cohorts, so an earlier version of this note was wrong
+    to say no denominator can be given. This matters for the loss-of-function model because it
+    predicts that losing nuclear TDP-43 raises TARDBP message rather than lowering it, a feedback
+    the cryptic-exon account does not include.
+- id: NEU-177
+  note: >
+    tier: isoform-specific perturbation with phenotype. Anchored on the paper's abstract, which is
+    one line here; the paper's full text at L39 to L64 carries the mouse cohorts, so an earlier
+    version of this note was wrong that no group sizes or effect sizes are available. Young
+    heterozygotes were normal with no detectable disruption of autoregulation, which the authors
+    state, so the phenotype is age-dependent. The deletion removes several elements at once and
+    therefore does not isolate which of them carries the effect. One year conflict stands
+    unresolved: this record says 2026 while the corpus record and this record's own bibkey say
+    2025, and an advance-publication issue year would explain it, so the corpus cannot adjudicate
+    which is right.
+- id: NEU-179
+  claim: >
+    The loss-of-function account is contested, and the cryptic-exon story assumes one side of it:
+    forcing TDP-43 into the cytoplasm with a mutated localisation signal in iPSC-derived neurons
+    shifted APP splicing, with use of the junction specific to the 695-residue isoform falling by
+    32 per cent and the 751-specific junction rising by 24 per cent. Neither TDP-43 knockdown in
+    iPSC-derived neurons nor complete knockout in HeLa cells produced the shift, and both of those
+    nulls are this paper's reanalyses of other groups' datasets rather than its own experiments.
+  note: >
+    An earlier version of this claim gave the two nulls without their systems or their provenance:
+    the knockout null is in a non-neuronal line and neither null is an experiment in this paper.
+    tier: isoform-specific perturbation with phenotype. Molecular phenotype only. Read as a bioRxiv
+    preprint. The comparator is overexpression of a nuclear export signal, which controls for
+    cytoplasmic protein load but not for the amount of TDP-43 present, and the construct is
+    overexpressed rather than endogenous. This is the gain-of-function side of the dispute, against
+    the loss-of-function framing recorded in NEU-005 and relied on throughout the UNC13A and STMN2
+    records; its own L41, recorded at NEU-160, is the quantitative part of the argument. An earlier
+    version of this note said these authors share no author with the Brown, Ma, Irwin or Wong
+    groups recorded here: two of the four clauses are wrong. The senior author here appears in the
+    byline of NEU-141 to NEU-151's paper through its consortium entry and in the shorter byline of
+    the version read, a second name string matches that paper's longer byline, and two more match
+    NEU-152 to NEU-156's paper. The Irwin and Wong clauses do hold. The author string also renders
+    a multi-word surname as initials, "Morato, J. G." for "Garcia Morato, J.".
+- id: NEU-158
+  note: >
+    tier: between-study reproducibility of two screens of one cell line. This is the measurement of
+    reproducibility between screens rather than another screen, so no phenotype is measured and an
+    earlier version of this note claimed a correlation with one. The two datasets differ in library
+    preparation, one poly-A selected and one total RNA, which the authors give as the reason the
+    poly-A dataset yielded far more events, so the low overlap is partly a sensitivity difference
+    rather than a disagreement. The comparison against the 2015 report was made by re-aligning that
+    study's data and classifying its published exons, because it lacked biological replicates.
+    Shares a name string with NEU-010's paper, Fratta.
+- id: NEU-167
+  note: >
+    tier: correlation of a cryptic protein's amount with a neuropathological group. Groups were
+    assigned by neuropathological examination of autopsy brain, which is the strongest assignment
+    available and unlike the clinical assignment in NEU-162; an earlier version of this note
+    claimed an isoform-specific biochemical or binding difference, where what was done is an
+    immunoassay compared across autopsy-defined groups. The denominators on the first cited line
+    are 67 FTLD-TDP, 70 AD-TDP, 27 AD without TDP-43 pathology and 27 controls, of whom 26 had
+    amygdala and 25 frontal cortex available. Frontal cortex gave 0.82 for FTLD-TDP against
+    controls and no significant separation for AD-TDP, which the authors attribute to the scarcity
+    of TDP-43 pathology there. Different antibody, different assay and a different cohort from
+    NEU-162, but Ward and Gitler are authors of both this paper and the UNC13A and cryptic-peptide
+    papers recorded elsewhere here, so the two HDGFL2 results are not fully independent.
+- id: NEU-168
+  note: >
+    tier: cross-species overlap of two sets of called events. No phenotype is measured, and an
+    earlier version of this note claimed a correlation with one. The authors present this as a
+    replication of the 2015 report recorded at NEU-005, not as a new finding, and the datasets
+    differ in cell type between the species, so the absence of shared events is not a
+    position-by-position test in matched tissue. Shares a name string with NEU-010's paper, Fratta.
+- id: NEU-174
+  note: >
+    tier: matched comparison of two depletion screens by one pipeline. No phenotype is measured,
+    and an earlier version of this note claimed a correlation with one. This is the strongest
+    available support for treating cryptic-exon de-repression as specific to TDP-43 rather than
+    general to ALS-linked RNA-binding proteins, because the comparison was matched rather than
+    drawn from different studies. It is a knockdown comparison in cell lines and mouse brain, not a
+    comparison of patient tissue, so it does not by itself say what happens in FUS-mutant ALS.
+    Shares a name string with NEU-010's paper, Fratta.

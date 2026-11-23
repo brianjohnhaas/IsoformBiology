@@ -1,0 +1,282 @@
+claims:
+- id: NEU-261
+  claim: >
+    The journal version of the muscle RNA sequencing study reports 50 patients with genetically
+    undiagnosed rare muscle disorders, an overall diagnosis rate of 35 per cent, and the reference
+    panel the calls were made against: each patient's muscle transcriptome was compared with more
+    than 180 control skeletal muscle samples. A diagnosis here means a molecular diagnosis reached
+    either by validating a candidate splice-disrupting variant or by finding a splice-altering
+    variant in an exon or deep in an intron.
+  note: >
+    An earlier version of this claim said the journal version reports the same cohort and headline
+    figure as the preprint and adds the control panel. The preprint's abstract already carries that
+    panel, in almost the same words, and the two abstracts differ only in wording, so the panel is
+    not a journal-version addition; the claim also made a two-document comparison while this record
+    cites one document, so nothing in its own evidence could support it. Closes the file's lead
+    that the published version of the removed NEU-031 was not in the corpus. It is held as an
+    abstract-only pubmed record, doc 50091604, which lookup doi, lookup pmid and lookup title all
+    miss; it was found with search -s abstracts. meta.json carries no author list and no journal,
+    so both are RESOLVE_FROM_DOI. Prior testing: genetically undiagnosed on prior sequencing, with
+    candidate variants already in hand for part of the cohort; the abstract does not say how many.
+    tier: cohort measurement of assay performance; none of the three isoform tiers applies
+- id: NEU-264
+  claim: >
+    Of 7,507 ClinVar variants of uncertain significance that SpliceAI scored at 0.5 or above,
+    between 25.8 and 67.8 per cent sat in genes that 100 million uniquely mapping reads or fewer
+    would cover adequately in at least one of whole blood, lymphoblastoid cell lines, skeletal
+    muscle or cultured fibroblasts, the range depending on the stringency of the model rather than
+    on the read-coverage requirement, which was held fixed at eight-read junction support
+    throughout.
+  note: >
+    An earlier version of this claim attributed the spread to how stringently the coverage
+    requirement was set; the source holds that parameter fixed and attributes the spread to model
+    stringency, as this note already did. The spread of the estimate is a function of the model
+    parameters, not of biology, so the figure cannot be quoted as a single number. The variants
+    were most likely to fall in adequately covered genes in fibroblasts whatever the parameters.
+    Which classification those variants would then reach is chapter 10's; this record is only about
+    whether the assay can see them. tier: cohort measurement of assay performance; none of the
+    three isoform tiers applies
+- id: NEU-269
+  claim: >
+    Two ways of making a silent disease gene assayable in a skin biopsy were reported from the same
+    laboratory: direct transdifferentiation of dermal fibroblasts into neurons brought 193 of 516
+    (37.4 per cent) neurological silent genes into expression, while CRISPR transactivation raised
+    all 20 genes it was tested on by 6- to 90,000-fold, 17 of which then met the junction-coverage
+    requirement for splicing analysis. The two figures do not share a denominator: the 516 are the
+    neurological silent genes, and the 20 were chosen for variants the laboratory needed to assess.
+  note: >
+    An earlier version of this claim said the two were measured against each other, which the two
+    denominators do not allow. tier: assessment of two methods for making a silent gene assayable;
+    an earlier version of this note claimed an isoform-specific biochemical or binding difference,
+    where what is measured on the cited lines is gene expression induction and junction-read
+    coverage, and no binding or biochemical difference between isoforms is measured anywhere on
+    them. Transactivation drives whichever isoforms a given promoter produces, so it is not a
+    general substitute for the disease tissue; the authors show for PAK3 that the major neuronal
+    isoforms plus rare exon 6 and 7 isoforms were captured, judged against
+    induced-pluripotent-stem-cell-derived neurons by nanopore amplicon sequencing.
+- id: NEU-274
+  claim: >
+    A blood diagnostic pipeline built on 1,594 external control transcriptomes pooled from three
+    cohorts plus 49 unaffected family members - with the expression-outlier enrichment itself
+    computed against 899 of the external and 32 of the family controls - still left an average of
+    343 expression outlier genes per patient at an absolute Z score of 2 or more, which the
+    eleven filtering steps together brought down to fewer than ten on average across all cases.
+    The single filter restricting to under-expression outliers with phenotype matches and a nearby
+    deleterious rare variant is reported separately, as cutting the candidate list to less than 1
+    per cent of the initial outliers while leaving 80 per cent of cases with at least one candidate
+    gene.
+  note: >
+    An earlier version of this claim credited the drop below ten to phenotype matching plus a
+    nearby deleterious rare variant alone; the source attributes it to the filtering steps as a
+    whole and gives that one filter a different output. The 343 is all outliers, while that filter
+    is scoped to under-expression outliers only. The per-sample burden is the reason a yield figure
+    cannot be read without the calling rule: 343 candidates per patient is not a result, it is a
+    starting list. The authors also show the enrichment of case outliers in
+    loss-of-function-intolerant genes strengthens as the control set grows, which is the argument
+    for a large control panel. tier: cohort measurement of assay performance; none of the three
+    isoform tiers applies
+- id: NEU-278
+  claim: >
+    Two outlier-calling approaches were compared on GTEx data: replacing this method at a
+    false-discovery rate of 0.1 with principal-component analysis at an absolute Z score of 2
+    produced two orders of magnitude more outlier calls across all GTEx tissues, and on
+    artificially injected outliers in suprapubic skin dropped precision from 92 to 3 per cent while
+    buying a recall increase from 83 to 98 per cent.
+  note: >
+    An earlier version of this claim presented the comparison as two cutoffs on one method and
+    called the Z score of 2 commonly used, which the source does not; the comparator is a different
+    statistical model as well as a different threshold, and the source separately credits part of
+    the gap to the statistic itself. The two measurements also come from different panels, the
+    count across all GTEx tissues and the precision and recall from the injected-outlier benchmark
+    on suprapubic skin, where an earlier version put both under injected skin. This is the
+    false-positive burden per sample stated as a trade: a reader cannot evaluate any reported count
+    of aberrant splicing events without knowing which rule produced it. The precision figures come
+    from injected outliers in healthy-donor tissue, not from validated patient events, so tier:
+    assay performance measured on artificially injected outliers; an earlier version of this note
+    called it a cohort measurement. These authors are the method's developers, so the comparison is
+    not an independent benchmark.
+- id: NEU-279
+  claim: >
+    Outlier calls that appear in only one tissue of an individual are common for every method
+    tested: 22 per cent of the calls this method made at a nominal p of 10 to the minus 7
+    reappeared in another tissue of the same person at 10 to the minus 3, against 11 per cent for a
+    competing method, and tissue-specific calls were less enriched for rare splice-affecting
+    variants than replicated ones, which those authors say suggests a higher proportion of false
+    positives among the tissue-specific calls.
+  note: >
+    An earlier version of this claim stated the false-positive enrichment as a result; the source
+    states it as an inference and then undercuts the artefact reading, saying that inspection of
+    the raw reads for several such calls found them well supported and that further investigation
+    will be needed to understand the apparent excess. The excess is unexplained. Their own
+    recommendation for diagnostics is to require a rare variant or an independent functional assay
+    alongside the call, which is the argument behind NEU-298 and NEU-299. tier: cohort measurement
+    of assay performance; none of the three isoform tiers applies
+- id: NEU-282
+  claim: >
+    Monoallelic expression was tested by a funnel that starts far wider than it ends: a median of
+    35,521 heterozygous single-nucleotide variants per patient from exome sequencing, 7,622 of them
+    covered by more than ten RNA reads, 20 expressed from one allele only at a 5 per cent adjusted
+    significance and an allele frequency of 0.8 or more, and 6 of those rare.
+  note: >
+    An earlier version of this claim said at least ten reads where the source says more than ten,
+    and the inequality carries weight because the threshold is the assay's detection floor. The
+    chapter already carries this study's medians of one aberrantly expressed gene and five aberrant
+    splicing events; the six rare monoallelically expressed variants are the third arm and are
+    missing. Monoallelic expression is also the arm least sensitive to batch and tissue, because it
+    compares two alleles within one sample rather than one sample against others. tier: cohort
+    measurement of assay performance; none of the three isoform tiers applies
+- id: NEU-284
+  claim: >
+    Whole blood RNA sequencing of 94 individuals, representing 80 different diseases broadly
+    classified into 16 disease categories, of whom 88.8 per cent had had an uninformative exome,
+    identified and validated the causal gene in 7.5 per cent, 6 of 80 independent cases, and
+    improved candidate gene resolution in a further 16.7 per cent, 5 of the 30 cases for which
+    prior candidate lists existed, while 69 cases, 86 per cent, ended with no highly relevant
+    candidate.
+  note: >
+    An earlier version of this claim fused the source's "80 different diseases" and "80 independent
+    cases" into 80 independent rare diseases, which is the exact collapse this note warns against:
+    the two 80s are different quantities reported on different lines. Three different denominators
+    appear in one sentence of the source, 94 individuals, 80 independent cases and 30 cases with
+    prior candidates, and the chapter must keep them apart. Diagnosis means causal gene found and
+    separately validated; the 16.7 per cent is explicitly not a diagnosis. tier: cohort measurement
+    of assay performance; none of the three isoform tiers applies
+- id: NEU-288
+  claim: >
+    A second cohort reproduced the direction of the gradient on a different endpoint: 55 families
+    negative on exome or genome sequencing, sampled from activated peripheral blood cells, gave 71
+    per cent positive among the 7 families with a variant of uncertain significance, 40 per cent
+    among the 10 with a suspected gene but no candidate variant, and 5.2 per cent among the 38 with
+    no candidate and no suspected gene; overall the optimised workflow reached 20 per cent against
+    9 per cent for the conventional one, and 10 of the 11 positive cases became definitive
+    diagnoses.
+  note: >
+    An earlier version of this claim said this cohort showed the same gradient as NEU-287. The
+    direction replicates and the magnitude does not: this gradient is about 14-fold where NEU-287's
+    is about 22-fold, and the two measure different endpoints, positive rates here against a
+    diagnostic uplift there, with 10 of 11 positives becoming definitive diagnoses. Replicates
+    NEU-287's gradient in a different centre, a different blood preparation and a different set of
+    analytical additions, which makes the gradient a property of the ascertainment rather than of
+    one pipeline. The subgroup denominators are 7, 10 and 38, so only the lowest stratum is
+    reasonably precise. Both this and NEU-287 are Chinese cohorts; independence was verified from
+    the documents themselves rather than from the record metadata, with the affiliations placing
+    this one in Changsha and NEU-287 in Shanghai and the two bylines sharing no surname plus
+    initial. The authors note their no-candidate families averaged 1,198 phenotype-associated genes
+    to consider. tier: cohort measurement of assay performance; none of the three isoform tiers
+    applies
+- id: NEU-289
+  claim: >
+    Blood RNA sequencing added little that was new to a paediatric cohort that had already had
+    genome sequencing: of 134 probands, 5 of the 73 undiagnosed, about 7 per cent, gained at least
+    one plausible candidate gene and none a stated diagnosis, while among the 61 already diagnosed
+    it revised the DNA finding in one and added a second relevant gene beside a standing diagnosis
+    in another, with the DNA finding reinforced in 20.
+  note: >
+    An earlier version of this claim said the DNA finding was revised in 2 of the 61. The source's
+    2 of 61 covers one revision and one additional gene found beside a standing diagnosis, and the
+    document elsewhere calls that second gene a candidate with no DNA variant identified and
+    unclear zygosity; this note's "one revision was substantive" also implied more than one. The
+    revision is EPG5 to LZTR1 in a Noonan-like disorder. "Added little that was new" is this
+    record's framing rather than the source's, which says the study highlights both the benefits
+    and the limitations. The scarcest category of yield figure and the most bounding one, because
+    prior testing was genome sequencing with reanalysis at a 41 per cent diagnostic rate rather
+    than exome sequencing: the 7 per cent is a candidate rate, not a diagnostic rate, and must not
+    be set beside exome-negative diagnostic rates as though the two measured the same thing.
+    Shares authors with NEU-272, NEU-296 and NEU-297 (Hou, Marshall, Costain, Mendoza-Londono) and
+    with NEU-265 to NEU-267 and NEU-283 (Ramani, Cohn, Brudno, Dowling), all one centre. tier:
+    cohort measurement of assay performance; none of the three isoform tiers applies
+- id: NEU-290
+  claim: >
+    In a cohort of 5,412 individuals recruited with a diverse range of rare disorders, an
+    expression or splicing outlier in a gene relevant to the person's disorder was found in 20 per
+    cent of them; one of the three prioritisation strategies, a phenotype-driven one, returned 74
+    potential diagnoses which review split into 35 that were already known and 39 genuinely new
+    candidate diagnoses.
+  note: >
+    An earlier version of this claim called this the largest blood cohort assembled; nothing on the
+    cited lines or elsewhere in the document claims primacy, and the defensible scoped version is
+    NEU-270's, the largest blood cohort in the corpus. The gap between 20 per cent with an outlier
+    and 39 new candidates is the central caution the chapter needs: an outlier in a relevant gene
+    is not a diagnosis and these authors do not call it one. The 39 come from the phenotype-driven
+    arm alone; the other two arms returned 78 outliers in known haploinsufficient genes and 19
+    integrated with structural variant calls, and the three sets are not stated to be disjoint, so
+    they cannot be added. That 35 of the 74 were already-known diagnoses also shows the cohort was
+    not uniformly undiagnosed. Read as a medRxiv preprint; preprint: true. The recorded DOI is a
+    medRxiv-format identifier, not a journal one. Same paper as NEU-270. tier: cohort measurement
+    of assay performance; none of the three isoform tiers applies
+- id: NEU-293
+  claim: >
+    Two RNA arms together re-promoted a variant the exome analysis had set aside: in one patient a
+    missense variant of uncertain significance in ALDH18A1, seen in compound heterozygosity with a
+    nonsense variant, was among 18 rare variants expressed from one allele only, and the aberrant
+    expression analysis prioritised the same gene again; proteomics then showed protein reduced to
+    about 2 per cent, the plasma metabolite profile matched a proline-metabolism defect, and
+    supplementing proline rescued the patient fibroblasts' growth defect.
+  note: >
+    An earlier version of this claim attributed the re-promotion to monoallelic expression alone;
+    the source names two arms, aberrant expression and monoallelic expression, and this record sits
+    under a topic that exists to keep the two apart. The patient did not have the cutis laxa
+    phenotype then associated with the gene, which is why the variants had been dismissed; a later
+    report extending the phenotype to spastic paraplegia is what reconciled it. Shares doc
+    PMC5499207 L40 with NEU-282, which quotes the monoallelic-expression funnel; this record quotes
+    the validation of one case. The rescue is a metabolic supplementation, not an isoform-restricted
+    construct, so tier: single-case measurement from a named variant to its transcript consequence;
+    none of the three isoform tiers applies
+- id: NEU-294
+  claim: >
+    Auditing one pipeline against 40 patients whose diagnosis was already known showed which
+    variant classes that pipeline can and cannot see: aberrant splicing detected 7 of 8 cases with
+    a causal splicing variant, monoallelic expression recovered 3 of 6 patients with a missense
+    variant compound with a stop or frameshift, aberrant expression recovered 3 of 4 homozygous
+    stop variants, only 1 of 9 frameshift variants produced any detectable RNA defect, and for none
+    of the 14 genes where a missense variant was causal could an RNA defect be detected with that
+    pipeline.
+  note: >
+    An earlier version of this claim generalised the two negatives from this pipeline to RNA assays
+    as a class; the source scopes both to its own pipeline explicitly, and the chapter's bound rests
+    on this record. This is the sensitivity audit the chapter lacks and the cleanest explanation of
+    why yields are low: this transcriptome pipeline is nearly blind to missense variants and
+    largely blind to frameshifts, which the authors attribute to incomplete nonsense-mediated
+    decay. All five denominators are single digits, and they sum to 41 against 40 diagnosed cases,
+    so the source's classes are not disjoint; this record does not claim they are. A
+    positive-control design, so the figures are conditional on the diagnosis already being known.
+    tier: cohort measurement of assay performance; none of the three isoform tiers applies
+- id: NEU-297
+  claim: >
+    In that same 50-individual cohort one case turned on read length and on manual work: a neonate
+    with a de novo 69-kilobase duplication of the ATAD3 gene cluster whose breakpoints DNA
+    sequencing could not resolve because of homology across the cluster, where short-read RNA
+    sequencing of fibroblasts was uninformative and gave no fusion-supporting reads. The long-read
+    pipeline filtered the fusion transcript out on internal polyadenylation priming and its gene
+    fusion caller missed it too; manual review of the unfiltered alignments against a customised
+    genome recovered the full-length in-frame ATAD3A-ATAD3C fusion transcript with its exon-level
+    breakpoints, establishing the molecular diagnosis.
+  note: >
+    An earlier version of this claim credited the recovery to long reads, leaving the bound that the
+    pipeline discarded the transcript twice in this note, where it cannot be cited; per this file's
+    own rule a qualifier that lives in a note needs its own claim. So long reads reached what short
+    reads could not, but not unaided. In the same cohort's RUNX2 case short reads had already
+    detected the pseudoexon and long reads only fixed its boundaries, which is the weaker kind of
+    gain. Same paper as NEU-272 and NEU-296. tier: single-case measurement from a named variant to
+    its transcript consequence; none of the three isoform tiers applies
+- id: NEU-298
+  claim: >
+    In the 86-patient blood study that started from the transcriptome rather than from a candidate
+    variant, reverse-transcription PCR confirmed all 14 aberrant splicing events the sequencing had
+    found, with six of the 14 already reported by an earlier publication, and independently found
+    aberrant splicing in four further cases, in TERT, PRG4 and TAOK1, that the sequencing had not;
+    of the 38 variants of uncertain significance with no detected event, 15 could not be assessed
+    at all because the gene was too lowly expressed in blood.
+  note: >
+    An earlier version of this claim said confirmation ran in parallel rather than after the fact;
+    nothing on the cited line establishes parallel running, and part of the confirmation predates
+    this study, with six of the 14 and eighteen of the 51 variants of uncertain significance
+    previously assessed by RT-PCR in another publication. The source also does not say whether the
+    four extra cases fall inside or outside the 15 unassessable variants, and a within-document
+    grep for the three gene names returns only that line, so this record must not separate them;
+    an earlier version of this note called the four RNA sequencing false negatives rather than
+    confirmation failures, which is a separation the source does not state. Two failure rates
+    belong in the chapter: confirmation of a detected event failed in none of 14, and the assay
+    itself missed four events a targeted assay found. Whether a confirmed effect is required before
+    reporting is a classification question and belongs to chapter 10. tier: cohort measurement of
+    assay performance; none of the three isoform tiers applies

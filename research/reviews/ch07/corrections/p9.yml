@@ -1,0 +1,159 @@
+claims:
+- id: NEU-001
+  note: >
+    Review, cited as a review. tier: ratio of two isoforms in normal adult tissue, as stated by a
+    review. The ratio is the review's summary of earlier work rather than a measurement made in it.
+    The same review's N-terminal isoform percentages, one line away from this anchor, assign 54 per
+    cent to a class that long reads put under 3 per cent and look transposed; this record's claim
+    carries only the 3R:4R sentence, so it is unaffected, but anyone opening the anchor will find
+    those figures beside it. Note added 2026-11-23: the NEU-001 to NEU-038 block carried no note
+    field at all, so none of these records declared a tier.
+- id: NEU-002
+  note: >
+    Review, cited as a review. tier: structural and comparative statement collated by a review. The
+    rodent explanation is offered by the review as the reason for the species difference and is not
+    tested in it, so the chapter should attribute it. Note added 2026-11-23: this block carried no
+    note field at all.
+- id: NEU-003
+  claim: >
+    The FTDP-17 mutations N279K and delta-280K sit in the same polypurine enhancer of MAPT exon 10
+    and add or delete an AAG copy respectively, raising or lowering SF2/ASF binding, so that in
+    cultured cells two neighbouring changes push exon 10 inclusion in opposite directions. The
+    review restricts the SR-protein work it is summarising to cultured cells and reports that some
+    of those observations contradict each other, which it attributes to minigene size, cell type
+    and endogenous splicing-factor levels.
+  note: >
+    An earlier version of this claim stated the mechanism with no cell-culture scope and no
+    mention that the literature disagrees, both of which the cited line closes on. Review, cited as
+    a review. tier: isoform-specific biochemical or binding difference in cultured cells, no
+    organismal phenotype. Note added 2026-11-23: this block carried no note field at all.
+- id: NEU-004
+  note: >
+    Review, cited as a review. tier: inference from the existence of silent and intronic mutations
+    to the sufficiency of a ratio change, as argued by a review. The sufficiency argument is the
+    review's reasoning rather than an experiment, and the chapter should carry it as such. Note
+    added 2026-11-23: this block carried no note field at all.
+- id: NEU-005
+  claim: >
+    TDP-43's role here is negative: in mouse embryonic stem cells depleted of it, non-conserved
+    cryptic exons that it normally suppresses entered mRNAs, frequently disrupting translation and
+    triggering nonsense-mediated decay, and enforcing repression prevented the cell death that
+    followed. Those authors suggest that this repression is already impaired in ALS and
+    frontotemporal dementia cases.
+  note: >
+    An earlier version of this claim gave no species and no cell type, so a mouse embryonic
+    stem-cell result read as a general one; the abstract's own rescue result was recorded nowhere in
+    the block and is now in the claim. Abstract-only document. tier: isoform-specific perturbation
+    with a cellular phenotype, in one cell type of one species. This is the record the chapter's
+    whole loss-of-function framing rests on, which is why the scope matters. Note added 2026-11-23:
+    this block carried no note field at all.
+- id: NEU-006
+  claim: >
+    In STMN2 the pathogenic event is a change in RNA processing rather than a mutation: when TDP-43
+    levels fall, its binding to sites within the first intron is reduced, a cryptic polyadenylation
+    site there is used, and the gene produces a truncated transcript that is not functional.
+  note: >
+    An earlier version of this claim said the binding is lost, which states a stronger lesion than
+    the cited line supports: the line reports lowered TDP-43 reducing binding to sites, plural, and
+    the paper's discussion keeps that graded reading. tier: isoform-specific perturbation with a
+    molecular readout. Note added 2026-11-23: this block carried no note field at all.
+- id: NEU-015
+  note: >
+    Review, cited as a review. tier: mechanism as stated by a review. The weakening of the 3-prime
+    splice site is given here as a proposal, which the claim preserves; note that two abstract-only
+    primaries recorded elsewhere in this chapter describe the same substitution differently, one as
+    abrogating an exonic enhancer and one as creating an exonic silencer, so the chapter has three
+    framings of one nucleotide and should say so. Note added 2026-11-23: this block carried no note
+    field at all.
+- id: NEU-016
+  note: >
+    Review, cited as a review. tier: regulatory and mechanistic statement collated by a review. The
+    ordinal claims, first approved and third approved, are the review's and should be attributed:
+    NEU-196's source does not support calling the gene-replacement therapy approved at all, so the
+    chapter must not use these ordinals to imply a complete count of approvals. Note added
+    2026-11-23: this block carried no note field at all.
+- id: NEU-021
+  note: >
+    Review, cited as a review. tier: practitioners' summary of a regulatory basis and the debate
+    about it. The cited line also carries this review's own proof-of-concept clause, which an
+    earlier version of this record dropped while keeping the criticism; the chapter should carry
+    both halves, as it now does from NEU-210 and NEU-211 directly. Note added 2026-11-23: this
+    block carried no note field at all.
+- id: NEU-022
+  note: >
+    tier: tissue-level count of alternative splicing from EST evidence. Denominator caveat to carry
+    with the figure: the more than 40 per cent is over genes with at least 20 tissue-derived ESTs,
+    sampled at 20, not over all genes, which is on a line this record does not cite. NEU-126 and
+    NEU-127 are the long-read remeasurement of the same question and count a different quantity.
+    Note added 2026-11-23: this block carried no note field at all.
+- id: NEU-025
+  claim: >
+    A machine-learning estimate over exonic variants put the splice-disrupting fraction at
+    approximately 16 per cent of inherited disease exonic mutations and approximately 10 to 14 per
+    cent of cancer exonic mutations, a predicted rather than assayed share and of exonic variants
+    only. The authors add that the cancer set contains a large proportion of passenger variants,
+    which they say will almost certainly make their cancer figure a serious under-estimate of the
+    splicing-sensitive share of cancer driver mutations.
+  note: >
+    An earlier version of this claim gave the cancer figure as a symmetric estimate, dropping the
+    direction-bearing caveat the same line closes on. tier: predicted class fraction, not assayed.
+    Note added 2026-11-23: this block carried no note field at all.
+- id: NEU-026
+  note: >
+    tier: reporter-assay measurement of a class fraction. Denominator caveat to carry with the
+    figure: the panel is restricted to internal exons of 100 nucleotides or fewer, which the
+    authors say leaves half of human exons inaccessible, on a line this record does not cite. The
+    assay's own authors' statement of its limits is recorded at NEU-244, and every
+    reporter-measured fraction in this chapter has deep-intronic variants outside its denominator.
+    Note added 2026-11-23: this block carried no note field at all.
+- id: NEU-032
+  note: >
+    tier: cohort measurement of assay performance. Independence, recomputed from the bylines: this
+    paper and NEU-033's share fourteen authors with matching initials, and both are full text, so
+    these share authors rather than name strings. NEU-033's own claim calls its workflow "the same
+    approach", so a chapter must not set the 10 per cent of 48 here beside the 16 per cent of 205
+    there as two results; they are one consortium scaling up its own method. Nothing in this file
+    stated that relation before 2026-11-23. Note added 2026-11-23: this block carried no note field
+    at all.
+- id: NEU-033
+  note: >
+    tier: cohort measurement of assay performance. Independence, recomputed from the bylines: this
+    paper and NEU-032's share fourteen authors with matching initials, both full text, so these
+    share authors rather than name strings, and the two yields are one consortium's earlier and
+    later figures rather than two independent results. The denominators differ as well, 205
+    exome-inconclusive cases of 303 sequenced here against 48 there. Note added 2026-11-23: this
+    block carried no note field at all.
+- id: NEU-034
+  claim: >
+    Across 27 distinct splicing outcomes collated from short- and long-read data in a rare disorder
+    cohort, PacBio long-read RNA-seq recovered 18 variant-linked aberrant splicing events and three
+    normal outcomes, failed to capture four, three of those attributed by the authors to low or
+    absent coverage of the gene, and supported a further two only on a low number of reads.
+  note: >
+    An earlier version of this claim named three of the four categories on its cited line, so the
+    figures summed to 25 against the 27 the claim opens with; the fourth category, two events
+    supported by a low number of reads, was missing. tier: cohort measurement of assay performance.
+    Note added 2026-11-23: this block carried no note field at all.
+- id: NEU-035
+  claim: >
+    Variant interpretation now leans on tools whose accuracy has been measured against
+    experimentally characterised variants: on a benchmark whose positives are NF1 spliceogenic
+    variants and whose negatives are 64 experimentally validated intronic BRCA variants, SpliceAI
+    reached an ROC area under the curve of 0.972 for de novo or cryptic splice site prediction,
+    ahead of all seven other tools compared except SpliceRover at 0.924, from which the difference
+    was not statistically significant. The authors call that two-gene design a possible source of
+    selection bias and note the positives come from a single gene chosen for its unusually high
+    proportion of splice-affecting pathogenic variants.
+  note: >
+    An earlier version of this claim scoped the benchmark to NF1 spliceogenic variants, which drops
+    the other half of an ROC comparison and the authors' own caveat, and said every other tool
+    tested where seven were compared: an eighth was dropped before the comparison for a 24.7 per
+    cent missing-score rate. tier: method benchmark against experimentally characterised variants.
+    Note added 2026-11-23: this block carried no note field at all.
+- id: NEU-036
+  note: >
+    tier: method benchmark against a reporter assay. Independence: four name strings on this
+    byline, including its first and last author, also appear in the byline recorded at NEU-028, so
+    this is the SpliceAI team benchmarking its own successor model. That relation is recorded
+    elsewhere in this file but was on neither NEU-028 nor this record. Note added 2026-11-23: this
+    block carried no note field at all.

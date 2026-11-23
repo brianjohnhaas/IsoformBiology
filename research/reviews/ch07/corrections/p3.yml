@@ -1,0 +1,261 @@
+claims:
+- id: NEU-222
+  claim: >
+    The international cohort assembled for the COL6A1 intron 11 variant reached 44 patients, and
+    the paper breaks the ascertainment down explicitly: 4 were found by muscle RNA sequencing in
+    patients negative for a causative variant in COL6A1, COL6A2 and COL6A3, 27 by targeted Sanger
+    sequencing of that intron in further such patients, and 13 only after the variant was added to
+    diagnostic sequencing panels.
+  note: >
+    This is an ascertainment record, not a case record, so none of the three tier strings applies;
+    the reason to keep it is that the 4 / 27 / 13 split shows how a deep-intronic variant's
+    apparent frequency depends on whether anyone looks at that intron. tier: ascertainment
+    breakdown of a cohort. The author list in meta.json is truncated mid-name, so authors is left
+    as RESOLVE_FROM_DOI. Not independent of NEU-262: the author list as far as it could be read
+    carries Foley, Bolduc, Cummings, Lek and Donkervoort, who are also on that record's document.
+    An earlier version of this record's claim said "the same COL6A1 intron 11 variant" and its note
+    named NEU-221, both pointing at a record removed from this file on 2026-11-23; the independence
+    statement holds against NEU-262, which carries the same finding from the published abstract.
+    The lines read were a medRxiv preprint; no published version was found in the corpus by lookup
+    on its preprint DOI.
+- id: NEU-223
+  claim: >
+    One patient in that cohort was somatically mosaic for the COL6A1 intron 11 variant, carrying
+    the variant allele at a fractional abundance of about 20 per cent by droplet digital PCR,
+    which the authors read as roughly 40 per cent of cells, and in a fresh skin biopsy the
+    pseudoexon-containing transcripts were 7.2-fold lower than in a heterozygous patient, alongside
+    a milder phenotype the authors call consistent with Bethlem muscular dystrophy rather than
+    Ullrich. The paper states that additional samples would be needed to determine whether the
+    7.2-fold difference is statistically significant.
+  note: >
+    An earlier version of this record left the source's own statement about significance in this
+    note, where it cannot be cited. tier: correlation of isoform ratio with a phenotype only. n=1
+    mosaic patient against one or two heterozygous comparators. The comparison is between tissues
+    of different patients, not within one patient. The lines read were a medRxiv preprint.
+- id: NEU-224
+  note: >
+    tier: isoform-specific biochemical or binding difference, no organismal phenotype - this record
+    carries the mechanism and the transcript measurement; the phenotype is NEU-225. This is the
+    only record in the file that anchors the donor-creating, pseudoexon-inserting mechanism.
+    Attribution caveat: L16 states the mechanism while citing this group's own earlier reports,
+    reference 9 for the pseudoexon and references 10 and 11 for the inclusion level, so it is this
+    laboratory restating its own prior work rather than an independent statement; the primary,
+    Bolduc et al. JCI Insight 2019, is not in the corpus, which is recorded in the leads.
+    Measurement was by isoform-specific digital PCR, n=4 animals per genotype and tissue in
+    8-week-old males, against n=3 human biopsies. The same L16 says the pseudoexon is inserted in
+    about 50 per cent of transcripts from the +189T allele, which is the same quantity as the
+    roughly 25 per cent of total transcripts reported for heterozygous patients, expressed per
+    allele rather than per transcriptome; a chapter quoting both must say which denominator each
+    uses. Shares a laboratory with NEU-222, NEU-223 and NEU-262 (Bolduc and Bonnemann); an earlier
+    version of this note referred twice to NEU-221, a record removed from this file on 2026-11-23.
+    The lines read were a bioRxiv preprint and no published version was found in the corpus.
+- id: NEU-225
+  claim: >
+    In that mouse the humanized allele alone caused no phenotype relative to wild type, while the
+    alleles carrying the pseudoexon-creating variant gave weaker forelimb grip strength at most
+    ages tested between 4 and 20 weeks in both heterozygotes and homozygotes, with one muscle in
+    one sex at one age not reaching significance; tibialis anterior and gastrocnemius masses at 8
+    and 24 weeks were significantly lower in homozygotes but in heterozygotes the decrease did not
+    consistently reach significance, and body weights did not differ between any genotypes. That
+    the humanized allele alone is silent is what attributes the phenotype to the splicing change
+    rather than to the humanization.
+  note: >
+    An earlier version of this claim said grip strength was weaker at every age tested and dropped
+    the exception the source reports. tier: isoform-specific perturbation with phenotype. Bounding
+    result in the same paper, at its L37: the homozygous mice are milder than patients heterozygous
+    for the same variant, so the mouse does not reproduce the human severity. The statement that
+    the humanized allele alone is silent is from the paper's abstract line L12; the muscle and grip
+    measurements are at L29 and L33, with n greater than or equal to 4 per group. The lines read
+    were a bioRxiv preprint.
+- id: NEU-227
+  claim: >
+    Measured directly in nasal brushings from 13 subjects homozygous for one CFTR intron 9
+    (TG)mTn haplotype, the proportion of CFTR mRNA that retains exon 10 falls stepwise with tract
+    composition: 94.7 per cent for (TG)10T9 from three subjects, 88.0 per cent for (TG)10T7 from
+    two, 80.9 per cent for (TG)11T7 from five, 47.5 per cent for (TG)11T5 from one and 27.6 per
+    cent for (TG)12T5 from two, so the same tract produces a continuous range of residual correct
+    splicing rather than two classes, on groups small enough that two of the five points rest on
+    one and two subjects.
+  note: >
+    An earlier version of this claim gave the five percentages as a stepwise curve with the
+    per-genotype counts in this note only, so the curve could be quoted with no sign that two
+    points rest on one and two subjects. tier: correlation of isoform ratio with a phenotype only.
+    The measurement is an endogenous one in nasal brushings, per the paper's L7, which is its
+    value. The same L28 reports a standard deviation of 12.1 percentage points between the
+    (TG)12T5 subjects, and up to about 6 per cent variability in the spliced forms among the three
+    haplotypes without a T5. The subjects were selected as homozygous for the tract precisely to
+    remove the confounding of two different tracts in trans, so these are not the numbers a
+    compound heterozygote would show.
+- id: NEU-228
+  note: >
+    tier: correlation of a clinical measure with an inferred tract length. The isoform ratio is not
+    measured in this paper at all, only inferred from the tract length, so the splicing step in
+    this record is borrowed from NEU-227; an earlier version of this note claimed the isoform-ratio
+    tier while conceding in the next breath that the ratio is not measured here. The column mapping
+    for the sweat chloride row was read from the table header at L46 and L47 and the group sizes
+    from L48. The paper gives three different counts for the 5T group and a chapter must say which
+    it is using: 42 patients with 5T in the results text at L12, 39 in the clinical table at L48,
+    and 37 with 5T and a class I or II mutation in the discussion at L89. Single-centre
+    retrospective registry study. The paper states at its L87 that intron 9 phase was not confirmed
+    by parental testing, so that the 5T sits in cis with p.Arg117His is an assumption resting on
+    reported linkage disequilibrium. The 7T group was younger and younger at diagnosis, which the
+    authors say may account for some of the difference.
+- id: NEU-230
+  claim: >
+    In 548,300 individuals sequenced at one clinical laboratory, the CFTR T5 allele had a minor
+    allele frequency of 4.2 per cent, and when paired with a cystic fibrosis-causing variant the
+    three T5 haplotypes were enriched to graded degrees among people whose requisition reported a
+    personal or family history of cystic fibrosis or a CFTR-related disorder, relative to people
+    referred for hereditary cancer testing who had not requested CFTR analysis: odds ratio 6.9 for
+    TG11T5, 32.0 for TG12T5 and 78.8 for TG13T5, with TG13T5 homozygotes at 255.7 against 581.7
+    for carriers of two disease-causing variants, a difference the authors report as not
+    statistically distinguishable at p = 0.56, and with carriers of p.Arg117His excluded from the
+    analysis.
+  note: >
+    An earlier version of this claim contrasted the last two odds ratios without the p-value by
+    which the authors call them indistinguishable, and that p-value appeared in neither citable
+    field. tier: penetrance measurement in a referral population. The odds ratios are enrichment in
+    a referral population, not penetrance in a birth cohort, and the two referral groups differed
+    in sex ratio and in mean age at testing, 24.7 against 52.6 years. The exclusion of
+    p.Arg117His carriers, defined at the paper's L34, removes exactly the population NEU-228 and
+    NEU-229 study, so the two sets of figures are not about the same patients. The lines read were
+    a medRxiv preprint.
+- id: NEU-241
+  claim: >
+    The same audit put reporter measurements against measurements in patient tissue and found them
+    to agree more often than not but not always: for 91 variants in seven named
+    cancer-predisposition genes with both kinds of data, minigene and patient-derived RNA results
+    showed complete or high concordance in the predominant transcript in 89 per cent of cases, 81
+    of 91.
+  note: >
+    An earlier version of this record gave the 89 per cent as a general concordance figure; it is
+    measured on seven named cancer-predisposition genes, and neither field said so. tier:
+    concordance of a reporter assay against patient RNA. The comparison is for traditional
+    multi-exon minigene assays, drawn from a set of 673 variants across 14 studies, not for the
+    massively parallel assays in NEU-240, so the 89 per cent is not a warrant for reporter-based
+    library assays. The endpoint is the identity of the predominant transcript, not its quantity.
+    Same paper as NEU-240, NEU-249, NEU-258 and NEU-259, so those five records are one source; the
+    paper also notes at its L23 that patient RNA results themselves vary with tissue source, allele
+    expression bias and assay sensitivity, which is the reason a reporter is used at all.
+- id: NEU-244
+  claim: >
+    The systematic gap between a reporter and the real locus is stated by the benchmark's own
+    authors: the assays they used excluded deep-intronic variants, which they call an important
+    source of pathogenic splice disruption, because the lengths involved are hard to screen, and
+    plasmid-borne assays cannot register effects that come from transcription elongation rate or
+    nucleosome positioning. The same passage closes by defending the assay, saying it is generally
+    well correlated with patient material, has a sufficient track record to be accepted as
+    functional evidence, and may still correctly flag a variant even where it gets the outcome
+    wrong.
+  note: >
+    An earlier version of this record took the limitation half of the passage and omitted the
+    sentence it closes on; another record in the same range handles the identical situation
+    correctly, which is what made this a defect rather than a matter of emphasis. tier:
+    practitioners' own statement of a limitation. It is these authors' own account of their assay
+    rather than an external criticism, which is the honest way for the chapter to carry it. It
+    matters for the arithmetic of this section: every reporter-measured fraction in the chapter,
+    including the existing NEU-026 and the new NEU-239, has deep-intronic variants outside its
+    denominator, while NEU-226 measures only those. The same passage notes that in situ editing
+    approaches also rely on immortalised cancer cell lines whose splicing factor levels need not
+    match the relevant tissue. Same paper as NEU-242 and NEU-243, so the three are one source.
+- id: NEU-245
+  claim: >
+    Of the 24,445 variants in the extended acceptor region reported to ClinVar and the Leiden Open
+    Variation Database across 2,100 genes, 638 pathogenic variants lay outside the essential AG,
+    and within that subset creation was the largest single category: 41.9 per cent created a new AG
+    dinucleotide in the polypyrimidine tract, against 28.2 per cent that removed the pyrimidine at
+    position minus 3 and 16.6 per cent that removed one or more pyrimidines.
+  note: >
+    An earlier version of this claim said 11.7 per cent of the pathogenic variants lay outside the
+    essential AG, built on the wrong set: the 11.7 per cent is 5,463 of 30,042 pathogenic variants
+    in a different set, on two lines this record does not cite, and inside the extended-acceptor
+    set essentially every pathogenic variant is outside the essential dinucleotide by definition,
+    which made the sentence near-vacuous as well as wrong. tier: class measurement, with named
+    clinical examples in the same paper. The figures are taken from the results section rather than
+    the abstract, because the two differ: the abstract of the same paper gives 28.4 per cent for
+    loss of the minus 3 pyrimidine and 15.1 per cent for loss of polypyrimidine tract pyrimidines,
+    where the results give 28.2 and 16.6, and only the results state the denominator, n = 638. A
+    chapter quoting the abstract figures would carry numbers the paper's own results do not
+    reproduce. The denominator is pathogenic variants in the extended acceptor region outside the
+    essential AG, not all pathogenic splicing variants and not donor-side variants at all, so this
+    says nothing about gain against loss at the 5' splice site. The ascertainment is clinical
+    submission plus locus-specific curation, the two sources whose different reach the chapter's
+    spread of estimates turns on. The same results line reports that loss of one or more
+    pyrimidines was significantly less often pathogenic than AG-creation or minus 3 loss,
+    chi-squared 1,977.5 on 9 degrees of freedom, so the three mechanisms are not equally dangerous
+    per variant.
+- id: NEU-246
+  note: >
+    tier: class measurement of position against clinical classification. This answers the
+    predictability half of the splice-gain question for one variant class: gained acceptors are
+    predictable once position is used, and the window was defined on the same data in which 93.1
+    per cent of pathogenic variants fall, so the figure is descriptive of that set rather than a
+    validated threshold. The same paper's L11 also reports three distinct mechanisms by which an AG
+    variant mis-splices, including one in which losing a deep intronic AG switches a pseudoexon on,
+    so creation and destruction are not a clean dichotomy. The abstract's accompanying claim about
+    SpliceAI is not recorded here because it has not been read as a pair; an earlier version of
+    this note said the sentence carrying it is truncated in the corpus text, which is wrong, the
+    whole sentence is present and a figure legend repeats both numbers with both sample sizes, so a
+    real result was left out on a false belief about the corpus. Same source as NEU-245 but a
+    different line and a different finding.
+- id: NEU-251
+  claim: >
+    The same paper gives the general reason the older figures cannot be read at face value, that
+    estimates of this split are sparse and typically rest on clinically interpreted variants and so
+    inherit whatever biases current clinical practice has, and then declines to use the scope
+    differences to dismiss them: although the HGMD-derived roughly 30 per cent and the roughly 43
+    per cent from a different curation cover recessive as well as dominant disease and include
+    exonic variants, which its own de novo analysis of dominant disorders does not, those authors
+    say each of the two sits closer to their own 27 per cent than to the ClinVar figure of about 17
+    per cent, calling one consistent with their data and the other above their upper bound.
+  note: >
+    Direction matters here and an earlier version of this record had it inverted in both the claim
+    and this note: the source compares each database figure's distance from its own 27 per cent
+    against that figure's distance from the other database's 17 per cent, not against a third
+    figure's distance from 27. In the inverted form the statement is false for one of the two,
+    since 43 is 16 away from 27 while 17 is only 10 away. The line does not say the HGMD-derived
+    figures are incomparable with the trio estimate; it says they are closer to it than ClinVar's
+    is, and it lists the scope differences as something the agreement holds despite. tier: a
+    statement about comparability. The incomparability the chapter can assert from this paper is
+    the general one quoted here, plus the excluded variant classes in NEU-252. Anchor overlap to
+    declare: the existing NEU-030 cites this same line L55 for the four percentages, and NEU-250,
+    NEU-252 and NEU-253 are the same paper, so those records are one source. The same line also
+    shows both database figures are second-hand, attributed to Krawczak and colleagues in 2007,
+    whose 64 per cent of donor-site and 77.4 per cent of acceptor-site mutations being canonical is
+    where the roughly 30 per cent comes from, and to Caminsky and colleagues in 2014; neither was
+    measured by the paper that reports the spread.
+- id: NEU-253
+  claim: >
+    The same paper tested a handful of its candidate variants in a minigene and got a mixed result:
+    splicing changed for five of six likely diagnostic polypyrimidine tract variants and for the
+    likely diagnostic donor plus 5 variant, but not for one further likely diagnostic
+    polypyrimidine variant nor for one of uncertain significance, and the authors say they cannot
+    definitively state that what a minigene shows would hold in the patient's full genetic,
+    developmental and cellular context. The same passage closes by saying the assay is generally
+    well correlated with patient material and has a sufficient track record to be accepted as
+    functional evidence.
+  note: >
+    An earlier version of this record took the limitation half of the passage and dropped both the
+    sentence it closes on and the source's own "definitively". tier: method result on eight chosen
+    variants. The reason this belongs with the assay records rather than the fraction records is
+    that it gives the reporter-against-endogenous problem at the scale of individual variants: the
+    authors needed a minigene because neural tissue is not obtainable from these patients, and they
+    name the two limits that follow, lack of full endogenous genetic context and sensitivity to the
+    cell type used. Eight variants only, chosen as the potentially diagnostic ones, so this is not
+    a concordance rate. Same paper as NEU-250, NEU-251 and NEU-252, so those four are one source.
+- id: NEU-259
+  claim: >
+    The same audit measured each assay's calls against a common predictor and found them far apart:
+    99 per cent of the variants one assay reported as abnormally spliced carried a SpliceAI score
+    of 0.2 or more, where for the other massively parallel assays that proportion ran from 9 to 66
+    per cent, each proportion taken over the variants that assay called abnormally spliced.
+  note: >
+    An earlier version of this claim gave two percentages with no numerator, no denominator and no
+    assay named, in a section whose argument is that a fraction means nothing without its
+    ascertainment; the source names the assay on the cited line. tier: comparison of assay calls
+    against a predictor's scores. The comparison is indirect and its direction is not settled by
+    the data: a low proportion could mean the assay calls variants disruptive that a predictor
+    would miss, which is the point of running an assay, or that its calls are noise. The authors
+    read it as misclassification, and a chapter should attribute that reading rather than assert
+    it. The 0.2 threshold is one taken from a published recommendation, not derived here. Same
+    paper as NEU-240, NEU-241, NEU-249 and NEU-258, so these five are one source.
