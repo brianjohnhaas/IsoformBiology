@@ -18,7 +18,10 @@ Usage:
     python3 scripts/resolve_metadata.py --check research/04-technology-arc.yml
 
 Network: queries api.crossref.org, one DOI at a time, with a courtesy delay.
-Sends a generic User-Agent and no personal information.
+Sends a generic User-Agent carrying no name, handle, address or project URL.
+This claim was false once: the User-Agent embedded a personal GitHub handle
+while the docstring said it sent no personal information, and an agent
+refused to run the script because of it.
 """
 from __future__ import annotations
 
@@ -34,7 +37,13 @@ import urllib.parse
 import urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-UA = "IsoformBiology-metadata-resolver/1.0 (https://github.com/brianjohnhaas/IsoformBiology)"
+# Crossref asks automated clients to identify themselves, and its documentation
+# invites a contact address. This string deliberately carries neither a name nor
+# an address: the people running this project are not party to a bibliography
+# lookup, and a personal handle in a User-Agent is a personal detail sent to an
+# outside service. Crossref serves anonymous clients from its public pool, which
+# is slower and is the right trade here.
+UA = "IsoformBiology-metadata-resolver/1.0"
 PLACEHOLDER = re.compile(r"resolve[ _-]?from[ _-]?doi|unknown|TBD|\?\?\?", re.I)
 
 

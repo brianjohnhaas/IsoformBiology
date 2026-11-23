@@ -76,6 +76,16 @@ Record the evidence tier in `note:`, in these words:
 
 A tier-3 record needs a reason to exist. Do not fill a file with them.
 
+**Those three strings assume a record about biology.** A methods, annotation or
+measurement chapter has no isoform to perturb, and forcing one of the three
+strings onto such a record makes it read as a tier error to a later reviewer.
+Where none applies, write a descriptive tier instead, in the form `tier: <what
+was actually done>`, for example `tier: method assessment against known ground
+truth` or `tier: practitioners' own statement of a limitation`, and say in the
+note what the measurement was made on. A reviewer scoring tiers must accept a
+descriptive tier in those chapters and check it against what the source did,
+not against the list.
+
 **Numbers belong in `claim:`, not in `note:`.** The number gate indexes `claim:`
 and `topic:` only. A qualifier that lives in a `note:` cannot be cited, cannot be
 checked by a reader, and three such notes have turned out to be wrong.
