@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""No claim record may reuse 8 consecutive words from its own audit quote.
+"""No claim record may reuse 8 consecutive words from any audit quote in its file.
 
 This is the upstream half of `check_overlap.py`, and it exists because that gate
 alone is not enough.
@@ -14,6 +14,14 @@ then the source's wording reaches the book through a field nobody was watching.
 That is not hypothetical. When this check was first run across the whole book it
 found 75 such records in nine of the twelve research files. The three files it
 found nothing in are the three whose passes had already run it by hand.
+
+It checks each claim against EVERY quote in its file, not only its own, because
+the narrower check missed the thing it exists to catch. A records editor found a
+claim sharing an eleven-word run with a DIFFERENT record's quote and said so;
+widening the check then found another, and that one turned out to be two records
+of one finding read from a preprint copy and a published copy of the same work.
+A claim carrying another record's quote launders the source's wording exactly as
+efficiently as a claim carrying its own.
 
 A numeral and the noun it counts are exempt in practice rather than in code: a
 list of probe counts cannot be said another way, and the few records that trip
@@ -54,23 +62,31 @@ def main() -> int:
     checked = 0
     for path in paths:
         doc = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
-        for claim in doc.get("claims") or []:
+        records = doc.get("claims") or []
+        quotes = []
+        for other in records:
+            qw = words((other.get("evidence") or {}).get("quote", "") or "")
+            quotes.append((str(other.get("id", "?")),
+                           {tuple(qw[i:i + N]) for i in range(len(qw) - N + 1)}))
+        for claim in records:
             cid = str(claim.get("id", "?"))
             if cid in EXEMPT:
                 continue
             checked += 1
             cw = words(claim.get("claim", "") or "")
-            qw = words((claim.get("evidence") or {}).get("quote", "") or "")
-            grams = {tuple(qw[i:i + N]) for i in range(len(qw) - N + 1)}
-            hits = [" ".join(cw[i:i + N]) for i in range(len(cw) - N + 1)
-                    if tuple(cw[i:i + N]) in grams]
-            if hits:
+            cgrams = [tuple(cw[i:i + N]) for i in range(len(cw) - N + 1)]
+            for other_id, qgrams in quotes:
+                hits = [" ".join(g) for g in cgrams if g in qgrams]
+                if not hits:
+                    continue
                 bad += 1
+                whose = ("its own quote" if other_id == cid
+                         else f"the quote stored against {other_id}")
                 print(f"[{path.name} {cid}] claim reuses {len(hits)} "
-                      f"{N}-word span(s) from its own quote:")
+                      f"{N}-word span(s) from {whose}:")
                 for hit in dict.fromkeys(hits):
                     print(f"    {hit}")
-    print(f"\n{checked} claims checked, {bad} reusing their own quote at "
+    print(f"\n{checked} claims checked, {bad} reusing a stored quote at "
           f"{N} words ({len(EXEMPT)} exempt).")
     return 1 if bad else 0
 

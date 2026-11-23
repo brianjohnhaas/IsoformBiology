@@ -4364,10 +4364,10 @@ claims:
 
     '
 - id: SCS-201
-  claim: 'Scored against a reference merged from GENCODE v44, PolyASite 3.0 and PolyA_DB across spatial datasets
-    from several human tissues, scAPAtrap called the most sites but only about 75 per cent of them matched
-    the reference, while SCAPE called slightly fewer with over 90 per cent matching, which those authors took
-    as grounds to recommend SCAPE.
+  claim: 'Across spatial datasets from several human tissues, scored against a reference merged from PolyA_DB,
+    PolyASite 3.0 and GENCODE v44, scAPAtrap called the most sites, yet only about 75 per cent of them matched
+    that reference, while SCAPE called slightly fewer and over 90 per cent of its sites matched, which those
+    authors took as grounds to recommend SCAPE.
 
     '
   topic: agreement between single-cell polyadenylation methods
@@ -4397,7 +4397,8 @@ claims:
     Sierra was the most precise. The measures are not the same quantity, since concordance with an annotation
     across all called sites differs both from precision against a nanopore ground truth and from the plausibility
     of sites no other method called, which is what SCS-194 measured. The chapter should report the three verdicts
-    and the three measures rather than pick a winner.
+    and the three measures rather than pick a winner. Claim restated 2026-11-23 to remove an 8-word span shared
+    with its own audit quote; content unchanged.
 
     '
 - id: SCS-202
@@ -7621,13 +7622,13 @@ claims:
     '
 - id: SCS-297
   claim: 'The simulation study behind the chapter''s baseline warning says in which direction the measurement
-    errs: taking genes with four isoforms detected in real full-length single-cell data and simulating cells
-    that express one, two, three or four isoforms per gene, in human H1 embryonic stem cells sequenced at about
-    one and about four million reads per cell, the recovered mean number of isoforms per gene per cell was
-    shifted below the truth, substantially so for almost all genes even at the higher depth, the best overlap
-    with the true isoform set was under 0.8 so more than a fifth of expressed isoforms were missed, and the
-    authors note that the studies they question sequenced far deeper, naming one at about 27 million reads
-    per cell.
+    errs: genes with four isoforms detected in real full-length single-cell data were taken as the basis for
+    simulating cells that express one, two, three or four isoforms per gene, in human H1 embryonic stem cells
+    sequenced at about one and about four million reads per cell, and per cell the recovered mean count of
+    isoforms per gene sat below the truth, substantially so for almost all genes even at the higher depth,
+    while the best overlap with the true isoform set was under 0.8 so more than a fifth of expressed isoforms
+    were missed, and the authors note that the studies they question sequenced far deeper, naming one at about
+    27 million reads per cell.
 
     '
   topic: limits of single-cell isoform analysis
@@ -7654,7 +7655,8 @@ claims:
     the assay makes cells look more exclusive than they are. The same line carries the concession the chapter
     should carry with it, that the depths simulated are well below those of the studies being questioned, and
     the study named at about 27 million reads per cell is SCS-266. Same document as SCS-030, which records
-    only the recommendation; different lines and a different finding.
+    only the recommendation; different lines and a different finding. Claim restated 2026-11-23 to remove an
+    8-word span shared with its own audit quote; content unchanged.
 
     '
 - id: SCS-298

@@ -808,46 +808,6 @@ claims:
     - showing that ascertainment, not biology, orders them.
 
     '
-- id: NEU-031
-  claim: 'Muscle RNA sequencing of 50 genetically undiagnosed rare muscle disease patients reached 35 per cent
-    as an overall diagnosis rate, by validating candidate splice-disrupting variants and by finding variants
-    that alter splicing both at exonic positions and at deep intronic ones.
-
-    '
-  topic: RNA sequencing as a diagnostic
-  source:
-    doc_id: 55237691
-    title: Improving genetic diagnosis in Mendelian disease with transcriptome sequencing
-    authors: Cummings, B. B.; Marshall, J. L.; Tukiainen, T.; Lek, M.; Donkervoort, S.; Foley, A. R.; Bolduc,
-      V.; Waddell, L. B.; Sandaradura, S. A.; O’Grady, G. L.; Estrella, E.; Reddy, H. M.; Zhao, F.; Weisburd,
-      B.; Karczewski, K. J.; O’Donnell-Luria, A. H.; Birnbaum, D.; Sarkozy, A.; Hu, Y.; Gonorazky, H.; Claeys,
-      K.; Joshi, H.; Bournazos, A.; Oates, E. C.; Ghaoui, R.; Davis, M. R.; Laing, N. G.; Topf, A.; Genotype-Tissue
-      Expression Consortium; Kang, P. B.; Beggs, A. H.; North, K. N.; Straub, V.; Dowling, J. J.; Muntoni,
-      F.; Clarke, N. F.; Cooper, S. T.; Bönnemann, C. G.; MacArthur, D. G.
-    journal: Science Translational Medicine
-    year: 2017
-    doi: 10.1126/scitranslmed.aal5209
-    bibkey: cummings2016musclernaseq
-    metadata_source: crossref
-  evidence:
-    text_access: abstract_only
-    lines: L1
-    anchor: https://paperclip.gxl.ai/citations/papers/55237691#L1
-    quote: identify splice-altering variants in both exonic and deep intronic regions, yielding an overall
-      diagnosis rate of 35%
-  confidence: high
-  figure_idea: 'A horizontal panel of reported incremental RNA-seq yields over exome/genome, each bar labelled
-    with cohort size, source tissue and whether the cohort was phenotype-enriched - so the reader sees that
-    tissue choice explains much of the spread.
-
-    '
-  note: 'Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
-    Corrected 2026-11-23 by a records review: the doi now names the published Science Translational Medicine
-    version, which a research agent located in the corpus as an abstract-only record after lookup by doi, pmid
-    and title all failed. The bibkey is deliberately unchanged, because build_bib treats a preprint read under
-    the journal doi as legitimate only when the one bibkey is shared, and the anchor and preprint flag still
-    describe the preprint lines that were actually read. The published cohort and yield are unchanged from
-    the preprint.'
 - id: NEU-032
   claim: 'In fibroblasts from 48 exome-undiagnosed mitochondriopathy patients, transcriptome sequencing produced
     a molecular diagnosis in 10 per cent (5 of 48) and candidate genes for the remainder, with per-sample medians
@@ -1179,10 +1139,10 @@ claims:
     they take from someone else''s work. The mirror-image experiment in corticobasal degeneration is NEU-107,
     from the same laboratory. tier: isoform-specific biochemical or binding difference, no organismal phenotype'
 - id: NEU-106
-  claim: 'Corticobasal degeneration carries the opposite isoform: in three individuals with a neuropathologically
-    confirmed diagnosis, the abundant neuronal inclusions and astrocytic plaques were stained by antibodies
-    specific for 4R-tau while antibodies against 3R-tau gave no specific staining, and the ordered filament
-    core contains the whole of the second microtubule-binding repeat.'
+  claim: 'Corticobasal degeneration carries the opposite isoform: across three individuals whose diagnosis
+    was confirmed neuropathologically, 4R-tau-specific antibodies stained the abundant astrocytic plaques and
+    neuronal inclusions, whereas no specific staining came from antibodies against 3R-tau, and the whole of
+    the second microtubule-binding repeat sits in the ordered filament core.'
   topic: The other tauopathies and the 3R:4R direction each one takes
   source:
     doc_id: PMC7148158
@@ -1204,13 +1164,14 @@ claims:
     (two from Japan aged 74 and 79 at death, one from the United States aged 52), all homozygous for the MAPT
     H1 haplotype and without known disease-causing MAPT mutations. Immunoblots of the sarkosyl-insoluble fraction
     gave 64 and 68 kDa bands with a 4R-specific antibody and not with RD3. Shares a laboratory with NEU-104
-    and NEU-105. tier: correlation of isoform ratio with a phenotype only'
+    and NEU-105. tier: correlation of isoform ratio with a phenotype only. Claim restated 2026-11-23 to remove
+    an 8-word span shared with its own audit quote; content unchanged.'
 - id: NEU-107
   claim: 'The seeding asymmetry runs in both directions, which is what makes the isoform the determining variable:
-    the sarkosyl-insoluble fraction from the three corticobasal degeneration brains seeded aggregation of soluble
-    tau in SH-SY5Y cells expressing full-length 4R human tau but not in cells expressing 3R, the reverse of
-    the Pick disease result, and the structural reason given is that the last residue of the first repeat cannot
-    fit where the last residue of the second repeat sits.'
+    full-length 4R human tau, expressed in SH-SY5Y cells, let the sarkosyl-insoluble fraction from the three
+    corticobasal degeneration brains seed aggregation of soluble tau, while cells expressing 3R did not, the
+    reverse of the Pick disease result, and the structural reason given is that where the last residue of the
+    second repeat sits cannot accommodate the last residue of the first repeat.'
   topic: Isoform-specific functional difference between 3R and 4R tau
   source:
     doc_id: PMC7148158
@@ -1233,7 +1194,8 @@ claims:
     4R tau while Alzheimer disease tau recruited both, which those authors take from a separate study they
     cite rather than from their own hands. Pairs with NEU-105, which is the Pick disease direction from the
     same laboratory, so the two halves of the asymmetry are not independent of each other. tier: isoform-specific
-    biochemical or binding difference, no organismal phenotype'
+    biochemical or binding difference, no organismal phenotype. Claim restated 2026-11-23 to remove an 8-word
+    span shared with its own audit quote; content unchanged.'
 - id: NEU-108
   claim: Three classes of tauopathy can be told apart by the isoform composition of their filaments, 3R, 4R
     and 3R plus 4R, with Alzheimer disease and chronic traumatic encephalopathy both in the mixed class; because
@@ -1478,10 +1440,10 @@ claims:
     the balance may be therapeutic; that is a proposal, not a result. tier: isoform-specific biochemical or
     binding difference, no organismal phenotype'
 - id: NEU-116
-  claim: 'The two tau isoforms stabilise microtubules to measurably different degrees inside cells: after microinjection
-    of physiological amounts into cultured MCF7 cells expressing EGFP-tubulin, both suppressed microtubule
-    dynamics, but 3R tau stabilised most dynamic parameters about threefold less potently than 4R tau and barely
-    suppressed shortening events at all.'
+  claim: 'The two tau isoforms stabilise microtubules to measurably different degrees inside cells: physiological
+    amounts microinjected into cultured MCF7 cells expressing EGFP-tubulin suppressed microtubule dynamics
+    for both isoforms, yet 3R tau''s potency in stabilising most dynamic parameters was about threefold below
+    that of 4R tau, and it barely suppressed shortening events at all.'
   topic: Isoform-specific functional difference between 3R and 4R tau
   source:
     doc_id: '136585278'
@@ -1502,7 +1464,8 @@ claims:
   note: 'Abstract-only record; the authors and journal are not in the corpus metadata, so they carry RESOLVE_FROM_DOI
     and independence from NEU-117 cannot be assessed from what was read. Non-neuronal cells, which bounds how
     far the result can be carried. The abstract presents a loss-of-function reading of altered isoform expression
-    as an interpretation. tier: isoform-specific biochemical or binding difference, no organismal phenotype'
+    as an interpretation. tier: isoform-specific biochemical or binding difference, no organismal phenotype.
+    Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: NEU-117
   claim: 'The difference between 3R and 4R tau on microtubules is qualitative and concentration-dependent rather
     than a simple ranking: by video microscopy of individual microtubules in vitro, at tau-to-tubulin ratios
@@ -1719,11 +1682,11 @@ claims:
     with phenotype'
 - id: NEU-124
   claim: 'A tau-directed antisense oligonucleotide has reached a phase 2 efficacy trial, but it lowers tau
-    rather than redirecting its splicing: CELIA randomised 416 participants aged 50 to 80 with mild cognitive
-    impairment due to Alzheimer disease or mild Alzheimer dementia, in a quadruple-masked parallel-group design,
-    to intrathecal placebo every 12 weeks or to diranersen at a low dose every 24 weeks, a high dose every
-    24 weeks, or a high dose every 12 weeks for up to 72 weeks, with the primary endpoint the dose response
-    in change from baseline to week 76 in the Clinical Dementia Rating sum of boxes.'
+    rather than redirecting its splicing: 416 participants aged 50 to 80 with mild cognitive impairment due
+    to Alzheimer disease or mild Alzheimer dementia were randomised in CELIA, under a quadruple-masked parallel-group
+    design, either to intrathecal placebo every 12 weeks or to diranersen at a low dose every 24 weeks, a high
+    dose every 24 weeks, or a high dose every 12 weeks, for up to 72 weeks, the primary endpoint being a dose
+    response measured as change from baseline at week 76 on the Clinical Dementia Rating sum of boxes.'
   topic: 'Therapeutic targeting of tau: a named drug in trial'
   source:
     doc_id: NCT05399888
@@ -1747,7 +1710,8 @@ claims:
     and BIIB080. It is a MAPT-targeting oligonucleotide that lowers tau, which NEU-125 anchors, so it is not
     an instance of the splicing-directed strategy in NEU-118 to NEU-121 and must not be grouped with nusinersen
     and risdiplam as a splice-switching drug. No results are in the registration record read. No tier applies:
-    the drug is not isoform-selective and the registration reports no result.'
+    the drug is not isoform-selective and the registration reports no result. Claim restated 2026-11-23 to
+    remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: NEU-125
   claim: 'The trial that preceded it was small and its clinical signal was exploratory: in a multicentre randomised
     double-blind phase 1b study in mild Alzheimer disease, participants received intrathecal placebo or the
@@ -1880,10 +1844,11 @@ claims:
     between two sites. tier: isoform-specific perturbation with phenotype'
 - id: NEU-129
   claim: 'The splice code works by deciding whether a binding partner is engaged, and engaging it is the whole
-    requirement: alternative splicing at neurexin-3 splice sites 2 and 4 changed the release probability but
-    not the number of inhibitory synapses in olfactory bulb and prefrontal cortex irrespective of sex, variants
-    that let neurexin-3 bind dystroglycan sustained inhibitory synapse function while variants that do not
-    bind it failed to, and a minimal neurexin-3 protein that binds dystroglycan was enough on its own.'
+    requirement: in olfactory bulb and prefrontal cortex, irrespective of sex, alternative splicing at neurexin-3
+    splice sites 2 and 4 left inhibitory synapses unchanged in number while altering their release probability;
+    inhibitory synapse function was sustained by variants that let neurexin-3 bind dystroglycan and not by
+    variants that do not bind it, and a minimal neurexin-3 protein that binds dystroglycan was enough on its
+    own.'
   topic: Neurexin splice sites and synapse function
   source:
     doc_id: PMC10063607
@@ -1908,7 +1873,8 @@ claims:
     dystroglycan binding to neurexins was functionally insignificant, so this result contradicts a prior reading.
     The link to human disease is indirect: NRXN3 mutations are reported in families with neuropsychiatric disorders
     and the gene is in an autism database, which those authors cite rather than show. tier: isoform-specific
-    perturbation with phenotype'
+    perturbation with phenotype. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit
+    quote; content unchanged.'
 - id: NEU-130
   claim: 'The commonest genetic cause of amyotrophic lateral sclerosis and frontotemporal dementia leaves a
     measurable mark on the transcript it sits in: polyadenylated C9orf72 mRNAs retaining the repeat-containing
@@ -2293,10 +2259,10 @@ claims:
 
     '
 - id: NEU-147
-  claim: 'The cryptic exon is regionally patterned in the way the pathology is: UNC13A cryptic inclusion was
-    confined to ALS-TDP spinal cord and motor cortex and to FTLD-TDP frontal and temporal cortex, and was absent
-    from cerebellum in both disease and control tissue, while the STMN2 cryptic event was the more abundant
-    of the two in spinal cord and the two were comparable in cortex.
+  claim: 'The cryptic exon is regionally patterned in the way the pathology is: UNC13A cryptic inclusion appeared
+    only in motor cortex and spinal cord from ALS-TDP and in frontal and temporal cortex from FTLD-TDP, and
+    was absent from cerebellum in both disease and control tissue, while the STMN2 cryptic event was the more
+    abundant of the two in spinal cord, with the two comparable in cortex.
 
     '
   topic: Cryptic exons as pathology-specific markers
@@ -2331,7 +2297,8 @@ claims:
   confidence: high
   note: 'tier: correlation of isoform ratio with a phenotype only. Tissues are the same New York Genome Center
     post-mortem cohort as NEU-011, so the denominators there apply; this record adds the anatomical distribution
-    and the within-sample comparison against the STMN2 event.
+    and the within-sample comparison against the STMN2 event. Claim restated 2026-11-23 to remove an 8-word
+    span shared with its own audit quote; content unchanged.
 
     '
 - id: NEU-148
@@ -4766,58 +4733,6 @@ claims:
     reach muscle at all, and the heart result is the reason cardiac involvement is the hardest target. The
     same paper compared intravenous, subcutaneous and intraperitoneal routes and found similar bioavailability,
     selecting subcutaneous for later clinical protocols.'
-- id: NEU-221
-  claim: 'The muscle RNA-sequencing study that reported the 35 per cent diagnosis rate also found a highly
-    recurrent de novo intronic COL6A1 mutation producing a dominantly acting splice-gain event that disrupts
-    the glycine repeat of the triple helical domain, and reported finding that same variant in 27 further genetically
-    unsolved patients in an external collagen VI-like dystrophy cohort, which those authors say accounts for
-    roughly 25 per cent of patients whose clinical picture suggests collagen VI dystrophy and whose prior genetic
-    analysis was negative.
-
-    '
-  topic: Deep-intronic variants and pseudoexons
-  source:
-    doc_id: '55237691'
-    title: Improving genetic diagnosis in Mendelian disease with transcriptome sequencing
-    authors: Cummings, B. B.; Marshall, J. L.; Tukiainen, T.; Lek, M.; Donkervoort, S.; Foley, A. R.; Bolduc,
-      V.; Waddell, L. B.; Sandaradura, S. A.; O’Grady, G. L.; Estrella, E.; Reddy, H. M.; Zhao, F.; Weisburd,
-      B.; Karczewski, K. J.; O’Donnell-Luria, A. H.; Birnbaum, D.; Sarkozy, A.; Hu, Y.; Gonorazky, H.; Claeys,
-      K.; Joshi, H.; Bournazos, A.; Oates, E. C.; Ghaoui, R.; Davis, M. R.; Laing, N. G.; Topf, A.; Genotype-Tissue
-      Expression Consortium; Kang, P. B.; Beggs, A. H.; North, K. N.; Straub, V.; Dowling, J. J.; Muntoni,
-      F.; Clarke, N. F.; Cooper, S. T.; Bönnemann, C. G.; MacArthur, D. G.
-    journal: Science Translational Medicine
-    year: 2017
-    doi: 10.1126/scitranslmed.aal5209
-    bibkey: cummings2016musclernaseq
-    metadata_source: crossref
-    preprint: true
-  evidence:
-    text_access: abstract_only
-    lines: L1
-    anchor: https://paperclip.gxl.ai/citations/papers/55237691#L1
-    quote: 'approximately 25% of patients clinically suggestive of collagen VI dystrophy in whom prior genetic
-      analysis is negative.
-
-      '
-  confidence: high
-  note: 'tier: correlation of isoform ratio with a phenotype only. The tier vocabulary fits badly here: no
-    isoform ratio was measured in the abstract, and the attribution rests on recurrence of a de novo variant
-    across unrelated patients. The abstract calls the mutation "intronic" and the event a "splice-gain event";
-    the words deep-intronic, splice donor and pseudoexon are not in it and are anchored instead on NEU-224
-    and NEU-225. The experimental perturbation for this variant is NEU-225 (humanized knock-in mouse). The
-    denominator of the 25 per cent is NOT the whole collagen VI-like cohort: it is patients whose clinical
-    picture suggested collagen VI dystrophy and whose prior genetic testing was negative. This record shares
-    doc_id and line L1 with the existing NEU-031, which is permitted because this document is abstract-only
-    and a single line; the two records quote non-overlapping spans and state different findings (NEU-031 the
-    35 per cent diagnosis rate, this one the COL6A1 variant and its cohort fraction). The lines read were the
-    2016 bioRxiv preprint.
-
-    '
-  figure_idea: 'A funnel showing how the denominator narrows at each step, from all patients with a collagen
-    VI-like clinical picture, to those negative on prior testing, to those carrying this one intronic variant,
-    with the count surviving each step labelled.
-
-    '
 - id: NEU-222
   claim: 'The international cohort assembled for the same COL6A1 intron 11 variant reached 44 patients, and
     the paper breaks the ascertainment down explicitly: 4 were found by muscle RNA sequencing in patients negative
@@ -6323,10 +6238,10 @@ claims:
     cohort size, source tissue, prior testing and what counted as a diagnosis - so the spread reads as a design
     difference rather than a disagreement.
 - id: NEU-262
-  claim: One recurrent de novo deep intronic COL6A1 variant, acting dominantly by creating a splice-gain event,
-    was found in 27 genetically unsolved patients in an external collagen VI-like dystrophy cohort and accounted
-    for roughly a quarter of patients whose phenotype suggested collagen VI dystrophy and whose prior genetic
-    analysis had been negative.
+  claim: In an external cohort with collagen VI-like dystrophy, one recurrent de novo deep intronic COL6A1
+    variant that acts dominantly by creating a splice-gain event was carried by 27 patients who were genetically
+    unsolved, and accounted for roughly a quarter of the patients whose phenotype suggested collagen VI dystrophy
+    and whose prior genetic analysis had been negative.
   topic: RNA sequencing as a diagnostic
   source:
     doc_id: 50091604
@@ -6353,7 +6268,8 @@ claims:
     doc 50091604 L1 with NEU-261 because the document is abstract-only and the whole abstract is one line;
     the two records quote non-overlapping spans and state different findings. The denominator of the external
     cohort is not given in the abstract, so the quarter has no numerator here. tier: cohort measurement of
-    assay performance; none of the three isoform tiers applies'
+    assay performance; none of the three isoform tiers applies. Claim restated 2026-11-23 to remove an 8-word
+    span shared with its own audit quote; content unchanged.'
 - id: NEU-263
   claim: Scoring 3,322 multi-exon monogenic disease genes for the sequencing depth each would need before splicing
     could be assessed - eight reads across 75 per cent of a gene's splice junctions, at the model's 95 per
@@ -6806,11 +6722,11 @@ claims:
     gives the number of testable heterozygous sites with a lost superscript, so no site count is recorded here.
     tier: cohort measurement of assay performance; none of the three isoform tiers applies'
 - id: NEU-277
-  claim: A calling procedure that models each junction with a beta-binomial distribution, corrects within a
-    splice site by Holm's family-wise method and then controls the false discovery rate genome-wide per sample,
-    returned a median of 12, 7 and 10 genes with an aberrant splicing event per sample for alternative donor
-    usage, alternative acceptor usage and splicing efficiency in a 119-sample fibroblast cohort, at a 10 per
-    cent false discovery rate and an effect size above 0.3.
+  claim: For alternative donor usage, alternative acceptor usage and splicing efficiency, the median per-sample
+    counts of genes with an aberrant splicing event were 12, 7 and 10 respectively, in a 119-sample fibroblast
+    cohort, under a calling procedure that models each junction with a beta-binomial distribution, corrects
+    within a splice site by Holm's family-wise method and then controls the false discovery rate genome-wide
+    per sample, at a 10 per cent false discovery rate and an effect size above 0.3.
   topic: What a diagnostic transcriptome can actually call
   source:
     doc_id: PMC7822922
@@ -6834,7 +6750,7 @@ claims:
     unsplit reads, doubled the number of aberrant events detected and was the only way an intron retention
     in MCOLN1 was found, an event the original cohort analysis reached instead through monoallelic expression
     of an intronic variant. tier: cohort measurement of assay performance; none of the three isoform tiers
-    applies'
+    applies. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: NEU-278
   claim: Benchmarked against artificially injected outliers in GTEx skin, replacing a false-discovery-rate
     cutoff of 0.1 with the commonly used absolute Z score of 2 produced two orders of magnitude more outlier
@@ -6921,8 +6837,8 @@ claims:
     not an independent evaluation. tier: cohort measurement of assay performance; none of the three isoform
     tiers applies'
 - id: NEU-281
-  claim: 'Run as a clinical workflow on 303 fibroblast samples, the three outlier tests together returned a
-    median of 25 aberrant genes per sample of which 8 were genes with a known Mendelian disease association:
+  claim: 'Run as a clinical workflow on 303 fibroblast samples, the three outlier tests together put the count
+    of aberrant genes at a median of 25 per sample, with 8 of those having a known Mendelian disease association:
     a median of two under-expression and one over-expression outlier at a 5 per cent false discovery rate,
     and a median of 18 genes carrying at least one aberrantly spliced junction of which 6 were disease genes.'
   topic: What a diagnostic transcriptome can actually call
@@ -6952,7 +6868,8 @@ claims:
   note: 'Eight disease-gene candidates per patient is the quantity a clinical team actually reviews, and it
     is the operational meaning of the 16 per cent yield recorded at NEU-033. Three samples had far more splicing
     outliers than the rest and two of those were the most deeply sequenced, so the per-sample burden rises
-    with depth. tier: cohort measurement of assay performance; none of the three isoform tiers applies'
+    with depth. tier: cohort measurement of assay performance; none of the three isoform tiers applies. Claim
+    restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: NEU-282
   claim: 'Monoallelic expression was tested by a funnel that starts far wider than it ends: a median of 35,521
     heterozygous single-nucleotide variants per patient from exome sequencing, 7,622 of them covered by at
@@ -9111,9 +9028,9 @@ claims:
 
     '
 - id: NEU-348
-  claim: 'The two sodium-channel poison exons are related but not interchangeable: Scn1a exon 20N and Scn8a
-    exon 18N are 37.5 per cent identical in mouse and 57 per cent identical in human, while the amino acid
-    sequences at their exon boundaries are identical between the two genes and between mouse and human.
+  claim: 'The two sodium-channel poison exons are related but not interchangeable: exon 18N of Scn8a shares
+    37.5 per cent identity with exon 20N of Scn1a in mouse and 57 per cent in human, while the amino acid sequences
+    at their exon boundaries are identical between the two genes and between mouse and human.
 
     '
   topic: poison exons as a class in dosage-sensitive genes
@@ -9140,7 +9057,7 @@ claims:
     poison exon of the gene next door is a separate target needing its own oligonucleotide, not a cross-reactive
     one; chapter 1 owns AS-NMD and poison exons as mechanism. SCN8A encephalopathy is a gain-of-function disease
     treated by lowering the gene, which is the opposite logic, so no SCN8A therapeutic claim follows from this
-    record.
+    record. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 
     '
 - id: NEU-349
@@ -9279,12 +9196,12 @@ claims:
 
     '
 - id: NEU-353
-  claim: 'A surrogate of the clinical oligonucleotide was used to ask which cells the drug fixes: one intracerebroventricular
-    injection of ASO-84, which targets splicing of SCN1A exon 20N, at postnatal day 2 in Scn1a+/- mice restored
-    action potential firing, sodium current density and GABAergic signalling in cortical parvalbumin-positive
-    interneurons measured at postnatal days 21 to 25, while in untreated mutant mice the intrinsic excitability
-    of cortical pyramidal neurons was unchanged and the interneurons showed early hyperexcitability followed
-    by hypoexcitability and depolarisation block.
+  claim: 'A surrogate of the clinical oligonucleotide was used to ask which cells the drug fixes: Scn1a+/-
+    mice given one intracerebroventricular injection of ASO-84, which targets splicing of SCN1A exon 20N, at
+    postnatal day 2 had GABAergic signalling, action potential firing and sodium current density all restored
+    in cortical parvalbumin-positive interneurons measured at postnatal days 21 to 25, while in untreated mutant
+    mice the intrinsic excitability of cortical pyramidal neurons was unchanged and the interneurons showed
+    early hyperexcitability followed by hypoexcitability and depolarisation block.
 
     '
   topic: which cell type the oligonucleotide rescues
@@ -9312,6 +9229,7 @@ claims:
     the source for the clinical candidate''s two names, STK-001 and ASO-22, and for the identity of its target
     as the nonsense-mediated-decay exon 20N of human SCN1A. The authors describe ASO-84 as a surrogate for
     ASO-22, so a chapter sentence must not present ASO-84 results as results for the drug given to patients.
+    Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 
     '
 - id: NEU-354
@@ -9388,11 +9306,11 @@ claims:
 
     '
 - id: NEU-356
-  claim: 'The efficacy signal is a within-patient median and not a controlled comparison: in the patients who
-    received 70 mg of zorevunersen as one, two or three doses in MONARCH or ADMIRAL and then up to 45 mg in
-    SWALLOWTAIL or LONGWING, the median change from baseline in convulsive-seizure frequency ran from minus
-    58.82 per cent to minus 90.91 per cent across one-month intervals during the first 20 months of the extension
-    studies, and the trial publication''s abstract does not state how many patients that 70 mg subgroup contained.
+  claim: 'The efficacy signal is a within-patient median and not a controlled comparison: among the patients
+    given 70 mg of zorevunersen as one, two or three doses in MONARCH or ADMIRAL and then up to 45 mg in SWALLOWTAIL
+    or LONGWING, convulsive-seizure frequency, as a median change from baseline, ran across one-month intervals
+    during the first 20 months of the extension studies from minus 58.82 per cent to minus 90.91 per cent,
+    and how many patients that 70 mg subgroup contained is not stated in the trial publication''s abstract.
 
     '
   topic: the zorevunersen seizure result with its arm and window
@@ -9419,7 +9337,8 @@ claims:
     ABSTRACT. Three things bound it. Seizure frequency was not the primary analysis, which was safety and pharmacokinetics
     (NEU-355). There is no concurrent control arm. The denominator of the 70 mg subgroup is not given in the
     abstract, so the chapter may not state how many patients the median covers. The range is across time intervals,
-    not a confidence interval. Shares a line with NEU-355 and NEU-357 and quotes a different span.
+    not a confidence interval. Shares a line with NEU-355 and NEU-357 and quotes a different span. Claim restated
+    2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 
     '
 - id: NEU-357
@@ -9567,10 +9486,11 @@ claims:
 - id: NEU-361
   claim: 'The registration of the first-in-patient study, MONARCH (NCT04442295, sponsor study STK-001-DS-101),
     records it as a non-randomised, sequential, open-label phase 1 to 2 study with an actual enrolment of 62
-    patients that completed on 14 November 2023, whose outcome measures were the safety and tolerability of
-    single and multiple doses of STK-001 by adverse events, vital signs, examination, electrocardiogram and
-    laboratory parameters, pharmacokinetics in plasma, exposure in cerebrospinal fluid, seizure frequency by
-    paper diary and a caregiver global impression of change, all from screening to six months after dosing.
+    patients that completed on 14 November 2023, and its outcome measures scored STK-001 given as single and
+    multiple doses for safety and tolerability by adverse events, vital signs, examination, electrocardiogram
+    and laboratory parameters, alongside pharmacokinetics in plasma, exposure in cerebrospinal fluid, seizure
+    frequency by paper diary and a caregiver global impression of change, all from screening to six months
+    after dosing.
 
     '
   topic: the first-in-patient trial as registered
@@ -9596,7 +9516,8 @@ claims:
     ARE POSTED ON IT. This is the actual enrolment denominator, 62, behind the 81 that the trial publication
     reports for MONARCH and ADMIRAL together (NEU-355), and it is the anchored proof that the programme''s
     primary measures were safety and pharmacokinetics rather than seizure frequency, which is what bounds NEU-356.
-    Status verified May 2025, overall status completed.
+    Status verified May 2025, overall status completed. Claim restated 2026-11-23 to remove an 8-word span
+    shared with its own audit quote; content unchanged.
 
     '
 - id: NEU-362
@@ -10237,10 +10158,10 @@ claims:
     '
 - id: NEU-381
   claim: 'The protocol''s own wording for the phase 3 endpoint names the measure, the unit and the window:
-    EMPEROR''s registered endpoint in the European register is percent change from baseline in major motor
-    seizure frequency, counted as the number per 28 days, in patients receiving zorevunersen compared with
-    sham, assessed at each visit from week 16 to week 52 across nine consecutive four-week intervals, with
-    net treatment benefit across multiple Vineland-3 outcomes and change from baseline in Vineland-3 subdomain
+    the registered endpoint for EMPEROR in the European register is the frequency of major motor seizures,
+    as a number per 28 days, expressed as percent change from baseline for patients receiving zorevunersen
+    compared with sham, assessed at each visit from week 16 to week 52 across nine consecutive four-week intervals,
+    with net treatment benefit across multiple Vineland-3 outcomes and change from baseline in Vineland-3 subdomain
     scores, both against sham at week 52, recorded alongside it.
 
     '
@@ -10271,7 +10192,8 @@ claims:
     separating primary from secondary, so this record does NOT establish which is primary; NEU-382 does, from
     the Japanese registration. The record carries no sponsor field: the attribution to Stoke Therapeutics comes
     from the EUDRACT number 2024-519555-28 appearing as a secondary identifier on NCT06872125, whose organisation
-    field names that company, and is not written from memory.
+    field names that company, and is not written from memory. Claim restated 2026-11-23 to remove an 8-word
+    span shared with its own audit quote; content unchanged.
 
     '
 - id: NEU-382
@@ -10382,12 +10304,12 @@ claims:
     '
 - id: NEU-385
   claim: 'The registration settles what the trials were powered to measure: ADMIRAL''s primary outcome measures
-    are the safety and tolerability of multiple doses of STK-001 from screening at day minus 28 until six months
-    after multiple dosing, by adverse events, abnormal vital signs, physical examination findings, 12-lead
-    electrocardiogram and laboratory parameters, together with plasma pharmacokinetics and cerebrospinal fluid
-    exposure of STK-001 by hybridisation ELISA over the same window, while seizure frequency measured on a
-    paper diary, caregiver and clinician global impression of change and quality of life on the EQ-5D-Y are
-    all secondary outcome measures.
+    score STK-001 given as multiple doses for safety and tolerability, from screening at day minus 28 until
+    six months after multiple dosing, by adverse events, abnormal vital signs, physical examination findings,
+    12-lead electrocardiogram and laboratory parameters, together with plasma pharmacokinetics and cerebrospinal
+    fluid exposure of STK-001 by hybridisation ELISA over the same window, while seizure frequency measured
+    on a paper diary, caregiver and clinician global impression of change and quality of life on the EQ-5D-Y
+    are all secondary outcome measures.
 
     '
   topic: seizure frequency was a secondary outcome in the early trials
@@ -10414,13 +10336,14 @@ claims:
     THIS IS THE ANCHORED PROOF BEHIND THE CAVEAT IN NEU-356: the seizure reduction the programme is known for
     was a secondary measure in an open-label study with no control arm, and the chapter can now say so from
     a primary source rather than from the review at NEU-358. The window given, screening to six months after
-    dosing, is also much shorter than the 20 and 36 months over which the extension figures are quoted.
+    dosing, is also much shorter than the 20 and 36 months over which the extension figures are quoted. Claim
+    restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 
     '
 - id: NEU-386
   claim: 'Two exclusions in the UK registrations are about the needle rather than the disease: both ADMIRAL
-    and its extension exclude any patient with a spinal deformity or other condition that may alter the free
-    flow of cerebrospinal fluid, or with an implanted cerebrospinal fluid drainage shunt, alongside excluding
+    and its extension exclude any patient in whom a spinal deformity, or another condition, may alter how freely
+    cerebrospinal fluid moves, or who has an implanted cerebrospinal fluid drainage shunt, alongside excluding
     maintenance treatment with an antiepileptic drug acting primarily as a sodium channel blocker, named as
     phenytoin, carbamazepine, oxcarbazepine, lamotrigine, lacosamide or rufinamide.
 
@@ -10449,7 +10372,8 @@ claims:
     of the class should say that intrathecal delivery is itself a gate on who can be treated, a limit that
     NEU-362 shows persisting into phase 3 for the sodium-channel-blocker clause but which the phase 3 record
     does not state for spinal anatomy. The list of named sodium channel blockers here does not include cenobamate,
-    which the later phase 3 records do.
+    which the later phase 3 records do. Claim restated 2026-11-23 to remove an 8-word span shared with its
+    own audit quote; content unchanged.
 
     '
 - id: NEU-387
@@ -10528,10 +10452,10 @@ claims:
     '
 - id: NEU-389
   claim: 'The extension''s primary outcome set was amended to put a motor measure in it: as revised on 1 August
-    2023, LONGWING''s primary outcome measures are the safety and tolerability of multiple doses of STK-001
+    2023, LONGWING''s primary outcome measures score STK-001 given as multiple doses for safety and tolerability,
     from screening at day minus 1 until six months after multiple dosing, including the incidence of immunogenicity
-    measured as anti-drug antibodies in serum, together with percent change from baseline in locomotor skill
-    ability on the total score of the Gillette Functional Assessment Questionnaire, while pharmacokinetics,
+    measured as anti-drug antibodies in serum, together with locomotor skill ability on the total score of
+    the Gillette Functional Assessment Questionnaire, as percent change from baseline, while pharmacokinetics,
     cerebrospinal fluid exposure, seizure frequency on a paper diary, clinician global impression of change
     and the EQ-5D-Y are secondary.
 
@@ -10561,7 +10485,8 @@ claims:
     in the current primary set and NOT in the superseded block printed below it on the same line, so the primary
     outcomes were widened after the study opened. And neither the Vineland-3 nor any cognitive measure is a
     registered outcome of this extension, although the adaptive-behaviour and cognition figures quoted for
-    the extensions at NEU-358 come from it, which the chapter should state rather than smooth.
+    the extensions at NEU-358 come from it, which the chapter should state rather than smooth. Claim restated
+    2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
 
     '
 leads:
@@ -11298,3 +11223,11 @@ leads:
     will not be checked by anything downstream and a reviewer should know where each came from.
 
     '
+- note: 'NEU-031 and NEU-221 were removed on 2026-11-23. Both read the PREPRINT abstract (doc 55237691) of
+    the muscle RNA-sequencing study, and NEU-261 and NEU-262 record the same two findings from the PUBLISHED
+    abstract (doc 50091604), which a later agent located after lookup by doi, pmid and title had all failed.
+    The published cohort and yield are unchanged from the preprint, so nothing is lost. NEU-221 was additionally
+    caught reusing four eight-word spans of NEU-262''s audit quote, which is what exposed the duplication:
+    a claim drawn from one copy of a work matched the quote stored against the other copy.'
+  why: Two records of one finding from two copies of one work would have let the chapter cite the same result
+    twice, and would have cited a preprint for a figure the published version carries.
