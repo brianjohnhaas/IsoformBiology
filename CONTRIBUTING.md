@@ -24,21 +24,26 @@ traced to the lines it came from.
 
 **Depth is set by the subject, and the book is sized like a book.** A specialist
 scientific book of this kind runs 70,000 to 85,000 words. This one stands at
-about 48,000, so the chapters that have not had a deepening pass are still
+about 49,000, so the chapters that have not had a deepening pass are still
 expected to grow several times over rather than be polished at their current
 length.
+
+Count words with `scripts/wordcount.py chapters/*.qmd`, which is the project's
+only definition of a word count and exists because three different hand counts
+of the same chapter disagreed by several hundred words. It excludes front
+matter, code, table rows, div fences and captions, and counts headings.
 
 Working targets, not gates:
 
 | Unit | Now | Target |
 |---|---|---|
-| Whole book | about 48,000 words | 70,000 to 85,000 |
+| Whole book | about 49,000 words | 70,000 to 85,000 |
 | Chapter, not yet deepened | 1,150 to 2,350 words | 5,500 to 6,500 |
 | Section | 150 to 350 words | 600 to 750 |
 | Claim records | 906 | roughly 1,500 |
 
-Four chapters are now at target or past it: 12 at 5,131 words, 5 at 6,389, 2 at
-7,108 and 3 at 11,576. Chapters 2 and 3 are a deliberate exception to the
+Four chapters are now at target or past it: 12 at 5,315 words, 5 at 6,634, 2 at
+7,539 and 3 at 11,861. Chapters 2 and 3 are a deliberate exception to the
 per-chapter target. "Across the tree of life" is the part of the book most worth growing, so
 depth there is limited by the evidence rather than by a word count, and the
 selection criterion is how well a case is evidenced rather than how many cases
