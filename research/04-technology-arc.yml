@@ -1040,11 +1040,15 @@ claims:
     quote: RNA can hybridize to double-stranded DNA in the presence of 70% formamide by displacing the identical
       DNA strand
   confidence: high
-  note: 'Readout: the presence and size of a displacement loop on a micrograph. The cited line does not mention
-    adenovirus, and this paper is not an adenovirus paper; that the 1977 leader mapping in TECH-003 used this
-    geometry is the researcher''s inference from the two descriptions, not a statement in this source. Abstract-only;
-    metadata resolved from Crossref for doi 10.1073/pnas.73.7.2294. tier: none of the three evidence tiers
-    applies; this is a method record, not a case record.'
+  note: 'Readout: not stated on the cited line, which reports physical chemistry - rates of R-loop formation,
+    the strand-separation temperature, and stability to removal of the formamide and to restriction digestion.
+    Electron microscopy is never mentioned on the line, so no micrograph readout may be asserted from it. The
+    cited line does not mention adenovirus, and this paper is not an adenovirus paper; that the 1977 leader
+    mapping in TECH-003 used this geometry is the researcher''s inference from the two descriptions, not a
+    statement in this source. Abstract-only; metadata resolved from Crossref for doi 10.1073/pnas.73.7.2294.
+    tier: none of the three evidence tiers applies; this is a method record, not a case record. Corrected 2026-11-23
+    against a records review: the micrograph readout is removed from the note, because the cited abstract does
+    not mention electron microscopy at all.'
 - id: TECH-104
   claim: 'A 1977 R-loop study of adenovirus nuclear RNA sets out the inference chain the assay supported: the
     length of an RNA that hybridises fixes the size of the loop it makes in proportion, the RNA molecules themselves
@@ -1126,13 +1130,17 @@ claims:
     quote: Subsequent cDNA sequencing efforts have characterized the majority of the splice sites at the nucleotide
       sequence level
   confidence: high
-  note: 'Readout being described: a sequencing ladder settling positions that micrographs had only bounded.
-    This sentence is a retrospective statement inside a long-read paper, and the paper''s own nanopore results
-    belong to chapter 5, so only this sentence should be taken from it. Full text read. Same source as TECH-107,
-    different line and different claim. One author (Akusjarvi) also appears on doc 133298029, which is recorded
-    only in this file''s leads. tier: none of the three evidence tiers applies; this is a method record, not
-    a case record. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content
-    unchanged.'
+  note: 'Readout being described: complementary DNA sequencing characterising splice sites at nucleotide level
+    after the electron-microscopic characterisation. The cited line does not say the micrographs only bounded
+    those positions; it says the opposite, that the electron-microscopic map has passed the test of time with
+    surprising accuracy and that this paper''s own long-read result verifies it. This sentence is a retrospective
+    statement inside a long-read paper, and the paper''s own nanopore results belong to chapter 5, so only
+    this sentence should be taken from it. Full text read. Same source as TECH-107, different line and different
+    claim. One author (Akusjarvi) also appears on doc 133298029, which is recorded only in this file''s leads.
+    tier: none of the three evidence tiers applies; this is a method record, not a case record. Claim restated
+    2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged. Corrected 2026-11-23
+    against a records review: the note''s gloss that micrographs had only bounded the positions is removed,
+    because the cited line states the contrary.'
 - id: TECH-107
   claim: One feature of the adenovirus map, a third poly(A) site between the E3A and E3B regions, had been
     observed only with the electron microscope, and the 2021 authors report detecting a low abundance of messages
@@ -1154,11 +1162,15 @@ claims:
     anchor: https://paperclip.gxl.ai/citations/papers/PMC7851563#L37
     quote: A third poly(A) site between E3A and E3B has been observed only with the electron microscope
   confidence: high
-  note: 'Readout: a branch position on a micrograph, set against a later low-abundance detection that the authors
-    themselves qualify. The limiting case of the chapter''s argument: where one assay is the only positive
-    report, the claim keeps that assay''s resolution. The qualifier matters and must survive into prose - the
-    later evidence is reported as ''might correspond'', not as confirmation. Full text read. Same source as
-    TECH-106. tier: none of the three evidence tiers applies; this is a method record, not a case record.'
+  note: 'Readout: the feature is a third poly(A) site, so what a micrograph reports here is where a hybrid
+    ends, not a branch; the cited line says only that it has been observed with the electron microscope, attributing
+    that to the earlier work, and sets it against a later low-abundance detection that the authors themselves
+    qualify. The limiting case of the chapter''s argument: where one assay is the only positive report, the
+    claim keeps that assay''s resolution. The qualifier matters and must survive into prose - the later evidence
+    is reported as ''might correspond'', not as confirmation. Full text read. Same source as TECH-106. tier:
+    none of the three evidence tiers applies; this is a method record, not a case record. Corrected 2026-11-23
+    against a records review: ''a branch position on a micrograph'' is corrected, since the feature is a poly(A)
+    site.'
 - id: TECH-108
   claim: A historical analysis of how biological entities come to be discovered places the 1977 electron-microscopic
     observation inside a project whose stated aim was to determine which adenovirus genes were transcribed
@@ -1188,9 +1200,10 @@ claims:
     it as a later recollection reported by a historian and not as a contemporaneous record. Full text read.
     tier: none of the three evidence tiers applies; this is a method record, not a case record.'
 - id: TECH-109
-  claim: 'The same analysis states what the result cost: it ended the concept that messenger RNA is universally
-    colinear with the gene encoding it, leaving colinearity as a property of bacterial messages and non-colinearity
-    as the eukaryotic case.'
+  claim: 'The same analysis states what the result cost: the substantiation of the 1977 observation, together
+    with the independent parallel discoveries of the Roberts team, ended the concept that messenger RNA is
+    universally colinear with the gene encoding it, leaving colinearity as a property of bacterial messages
+    and non-colinearity as the eukaryotic case.'
   topic: what the 1977 result was taken to mean - the assumption it displaced
   source:
     doc_id: PMC10965645
@@ -1213,7 +1226,9 @@ claims:
     line, different claim. No contemporaneous published account of resistance to the 1977 result was found
     in this corpus, so this record carries the interpretive consequence and nothing about the reception; the
     searches run are listed in this file''s leads. Full text read. tier: none of the three evidence tiers applies;
-    this is a method record, not a case record.'
+    this is a method record, not a case record. Corrected 2026-11-23 against a records review: the singular
+    ''the result'' is replaced by the two things the historian makes the dismissal follow from jointly, the
+    substantiation step and the second group''s parallel discoveries.'
 - id: TECH-110
   claim: 'Sequencing the exon-intron boundaries of the chicken ovalbumin gene did not by itself fix the splice
     points: because directly repeated sequences sit at those boundaries, the authors state that nucleotide
@@ -1245,7 +1260,7 @@ claims:
   claim: A second group sequencing the junctions of the same chicken ovalbumin gene found a short partial sequence
     homology at every intron-exon junction and suggested it is the signal a splicing enzyme reads, while reporting
     no evidence of strong Watson-Crick base pairing between adjacent junctions.
-  topic: sequencing as the arbiter - an independent sequence survey of the same gene's junctions
+  topic: sequencing as the arbiter - a second group's sequence survey of the same gene's junctions
   source:
     doc_id: '128558357'
     title: Nucleotide sequence homology at 12 intron-exon junctions in the chick ovalbumin gene
@@ -1262,17 +1277,23 @@ claims:
     quote: A short partial sequence homology is present at all intron-exon junctions, or splice points, in
       the chick ovalbumin gene
   confidence: high
-  note: 'Readout: a sequencing ladder, compared across junctions. Independent of TECH-110: no shared authors
-    per Crossref, different journal, same gene and same year, which makes the pair a replication rather than
-    a companion paper. The number of junctions, twelve, appears in the paper''s title and not in the abstract
-    line cited, so the claim does not state it. Abstract-only; metadata resolved from Crossref for doi 10.1038/275510a0.
-    tier: none of the three evidence tiers applies; this is a method record, not a case record.'
+  note: 'Readout: not stated on the cited line, which reports only the sequence homology at the junctions and
+    the absence of strong base pairing between them; the cited abstract never says this group sequenced anything.
+    The recorded authors strings of this record and TECH-110 share no name, compared entry by entry, and the
+    journal differs while the gene and the year do not; whether two disjoint bylines are two laboratories cannot
+    be read off an abstract, so this is a byline comparison and not an established independence, and on that
+    basis the pair reads as a replication rather than a companion paper. The number of junctions, twelve, appears
+    in the paper''s title and not in the abstract line cited, so the claim does not state it. Abstract-only;
+    metadata resolved from Crossref for doi 10.1038/275510a0. tier: none of the three evidence tiers applies;
+    this is a method record, not a case record. Corrected 2026-11-23 against a records review: the sequencing-ladder
+    readout is removed, since the cited abstract does not say this group sequenced anything, and the independence
+    claim is restated as a byline comparison in both the note and the topic.'
 - id: TECH-112
-  claim: Direct sequencing of the capped 5' ends of one adenovirus 2 early message resolved four major and
-    three to four minor termini and aligned them to individual nucleotides numbered 325, 326, 327 and 329 from
-    one end of the known viral DNA sequence, inside the region that electron microscopy and S1-nuclease gel
-    mapping had been able to identify only as a region.
-  topic: sequencing as the arbiter - a nucleotide position inside a region the geometry could only bound
+  claim: Direct sequencing of the capped 5' ends of one adenovirus 2 early message identified four major and
+    three to four minor 5'-terminal sequences, and aligned the four major termini with nucleotides 325, 326,
+    327 and 329 from one end of the known viral DNA sequence, inside the region that electron microscopy and
+    S1-nuclease gel mapping had mapped as the 5' end of that message.
+  topic: sequencing as the arbiter - a nucleotide position inside the region the earlier assays had mapped
   source:
     doc_id: '121984577'
     title: Nucleotide sequences and mapping of novel heterogenous 5'-termini of adenovirus 2 early region 4
@@ -1294,7 +1315,10 @@ claims:
     paper electrophoresis and homochromatography, then read as a sequence. The record exists because this paper
     states the relation between the two generations of assay in one sentence: a region from the physical assays,
     a nucleotide from the sequence. Abstract-only; metadata resolved from Crossref for doi 10.1093/nar/9.7.1675.
-    tier: none of the three evidence tiers applies; this is a method record, not a case record.'
+    tier: none of the three evidence tiers applies; this is a method record, not a case record. Corrected 2026-11-23
+    against a records review: only the four major termini are now placed at the four numbered nucleotides,
+    and the gloss that the earlier assays could identify the site ''only as a region'' is dropped from the
+    claim and the topic as the researcher''s own.'
 - id: TECH-113
   claim: A cell-free reaction removed the first intervening sequence from an adenovirus 2 major late precursor
     synthesised in a HeLa whole-cell extract and joined the first leader to the second, and the requirements
@@ -1399,9 +1423,10 @@ claims:
     record, not a case record.'
 - id: TECH-117
   claim: 'A HeLa nuclear-extract system removed the first intervening sequence from up to 90 per cent of an
-    input human beta-globin precursor, and the same work showed the fidelity to be substrate-dependent: splicing
-    needed neither correct 5'' and 3'' ends nor a poly(A) tail nor a cap, but without a cap only 30 to 40 per
-    cent of the precursor was spliced accurately and aberrantly cleaved RNAs appeared alongside it.'
+    input human beta-globin precursor under optimal conditions, and the same work showed the fidelity to be
+    substrate-dependent: splicing needed neither correct 5'' and 3'' ends nor a poly(A) tail nor a cap, but
+    without a cap only approximately 30 to 40 per cent of the precursor was spliced accurately and aberrantly
+    cleaved RNAs appeared alongside it.'
   topic: in-vitro splicing - efficiency, and a fidelity that depended on the substrate's cap
   source:
     doc_id: '135795392'
@@ -1420,11 +1445,14 @@ claims:
       of aberrantly cleaved RNAs are also detected
   confidence: high
   note: 'Readout: not stated in the abstract, which says only that the aberrant species were detected. The
-    90 per cent and the 30 to 40 per cent come from the same abstract line as the quoted span. Same laboratory
-    as TECH-119, with the same four authors in a different order, and a senior author in common with TECH-121
-    and TECH-122, so these are not independent results. Abstract-only; metadata resolved from Crossref for
-    doi 10.1016/0092-8674(84)90049-7. tier: none of the three evidence tiers applies; this is a method record,
-    not a case record.'
+    90 per cent and the 30 to 40 per cent come from the same abstract line as the quoted span. Same four authors
+    as TECH-119, in a different order. Two authors are shared with TECH-121 and TECH-122, not one: the byline
+    Ruskin, B. appears here, as first author of TECH-119''s source and as first author of TECH-121 and TECH-122''s
+    source, and M. R. Green is on all of them. These are not independent results. Abstract-only; metadata resolved
+    from Crossref for doi 10.1016/0092-8674(84)90049-7. tier: none of the three evidence tiers applies; this
+    is a method record, not a case record. Corrected 2026-11-23 against a records review: ''under optimal conditions''
+    is restored to the 90 per cent and ''approximately'' to the 30 to 40 per cent, and the note now records
+    two shared authors including a first author rather than one senior author.'
 - id: TECH-118
   claim: 'The system earned its place by reproducing a disease pattern: beta-thalassaemia splicing mutations
     placed in the first intervening sequence of human beta-globin caused the same abnormal splicing events
@@ -1453,9 +1481,11 @@ claims:
 - id: TECH-119
   claim: 'Three physical properties at once marked the excised first intervening sequence of a human beta-globin
     precursor as unusual: it migrated anomalously on polyacrylamide gels, reverse transcription was blocked
-    near the intron''s 3'' end, and a nuclease-resistant component mapped to that same site; the authors then
-    placed that structure, a branched adenosine, 28 to 37 nucleotides upstream of the 3'' end.'
-  topic: in-vitro splicing - the lariat identified by three physical anomalies rather than by sequence
+    near the intron''s 3'' end, and a nuclease-resistant component mapped to that same site, which the authors
+    say appears to be a modified adenosine carrying an RNA branch. On those results and on other structural
+    studies not in the abstract they then propose a 2''-5'' linkage to the adenosine of an RNase T1 oligonucleotide
+    that lies 28 to 37 nucleotides upstream of the intron''s 3'' end, which would make the intron a lariat.'
+  topic: in-vitro splicing - three physical anomalies, and the lariat proposed from them
   source:
     doc_id: '135660941'
     title: Excision of an intact intron as a novel lariat structure during pre-mRNA splicing in vitro
@@ -1473,17 +1503,22 @@ claims:
       the 3' end of IVS1
   confidence: high
   note: 'Readout: a band running at the wrong size on a polyacrylamide gel, plus a stop in a reverse-transcription
-    ladder. The chapter''s clearest case of a structure established by how a molecule moves rather than by
-    what it reads as. Same laboratory and the same four authors as TECH-117 and TECH-118; TECH-120 is the independent
-    counterpart. Abstract-only; metadata resolved from Crossref for doi 10.1016/0092-8674(84)90553-1. tier:
-    none of the three evidence tiers applies; this is a method record, not a case record. Claim restated 2026-11-23
-    to remove an 8-word span shared with its own audit quote; content unchanged.'
+    ladder. The chapter''s clearest case of a structure proposed from how a molecule moves rather than from
+    what it reads as. Same laboratory and the same four authors as TECH-117 and TECH-118; TECH-120 is the counterpart
+    under a disjoint byline. Abstract-only; metadata resolved from Crossref for doi 10.1016/0092-8674(84)90553-1.
+    tier: none of the three evidence tiers applies; this is a method record, not a case record. Claim restated
+    2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged. Corrected 2026-11-23
+    against a records review: the placement of the branched adenosine is restored to the proposal the abstract
+    calls it, and 28 to 37 nucleotides is restored to the span of the RNase T1 oligonucleotide containing it
+    rather than a position range for the adenosine; the topic and this note no longer call the structure established.'
 - id: TECH-120
   claim: 'The same two anomalies turned up in intact cells of another organism: four forms of the excised yeast
-    actin intron were recovered from yeast carrying an ADC1-actin fusion on a multicopy plasmid, two of which
-    ran unusually slowly through polyacrylamide gels, one of those two also carrying the same block to reverse
-    transcription, with the branch sitting at the third adenosine of the conserved UACUAAC sequence.'
-  topic: in-vitro splicing - the same anomalous mobility found in cells, by a different laboratory
+    actin intron were recovered from the poly(A)-minus RNA of yeast carrying an ADC1-actin fusion on a multicopy
+    plasmid, two of which ran unusually slowly through polyacrylamide gels, one of those two also stopping
+    reverse transcription at the conserved UACUAAC sequence. Separately, analysis of the major species of excised
+    intron labelled in vivo put the branch at the third adenosine of that sequence; the abstract does not say
+    whether that major species is the slow-migrating, blocked form.'
+  topic: in-vitro splicing - the same anomalous mobility found in cells, under a disjoint byline
   source:
     doc_id: '135660925'
     title: Lariat structures are in vivo intermediates in yeast pre-mRNA splicing
@@ -1501,13 +1536,21 @@ claims:
       to reverse transcription
   confidence: high
   note: 'Readout: gel mobility and a reverse-transcription block, as in TECH-119, but on RNA taken from cells
-    rather than from an extract, and from a multicopy plasmid construct rather than the native locus. Independent
-    of TECH-117 to TECH-119: different laboratory, different organism, no shared authors per Crossref. The
-    argument that the in-vitro intermediate is not an artefact of the tube rests on this cross-organism comparison,
-    which TECH-121 and TECH-122 then complicate, since the same comparison shows the two systems differ in
-    which branch point they choose. tier: none of the three evidence tiers applies; this is a method record,
-    not a case record. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote;
-    content unchanged.'
+    rather than from an extract, and from a multicopy plasmid construct rather than the native locus. The recorded
+    authors strings here and in TECH-117 to TECH-119 share no name, compared entry by entry, and the organism
+    and the system differ; whether two disjoint bylines are two laboratories cannot be read off an abstract,
+    so treat this as a byline comparison rather than an established independence. The argument that the in-vitro
+    intermediate is not an artefact of the tube rests on this cross-organism comparison, and TECH-121 and TECH-122
+    do not touch it. They are a different comparison, one yeast substrate in two extracts and in yeast cells
+    against this record''s yeast intron in yeast cells set beside a human intron in a human extract, and their
+    own abstract concludes that yeast and higher eukaryotes splice by the same basic pathway, lariat included,
+    differing in the specificity of the components. What that pair qualifies is branch-site choice and substrate
+    requirements, and any inference that an extract scoring as accurate is using the cell''s chemistry. tier:
+    none of the three evidence tiers applies; this is a method record, not a case record. Claim restated 2026-11-23
+    to remove an 8-word span shared with its own audit quote; content unchanged. Corrected 2026-11-23 against
+    a records review: the poly(A)-minus fraction is named, the branch location is separated from the reverse-transcription
+    block because the abstract never equates the two molecules, and the note no longer says TECH-121 and TECH-122
+    complicate this result or make the same comparison; the topic no longer asserts a different laboratory.'
 - id: TECH-121
   claim: 'A yeast pre-mRNA was spliced accurately in a HeLa extract, yet the extract branched it elsewhere:
     compared with the conserved TACTAAC sequence used in yeast both in cells and in yeast extracts, the branches
@@ -1532,10 +1575,16 @@ claims:
   confidence: high
   note: 'Readout: branch positions mapped on the lariat species; the abstract does not describe the method
     further. The chapter''s use is narrow and important - an extract that scores as accurate on the one measure
-    a gel reports can still be using different chemistry. Shares a senior author (Green) with TECH-117 to TECH-119,
-    so this is not an independent laboratory. Abstract-only; metadata resolved from Crossref for doi 10.1073/pnas.83.7.2022.
-    tier: none of the three evidence tiers applies; this is a method record, not a case record. Claim restated
-    2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
+    a gel reports can still be using different chemistry. Two authors are shared with TECH-117 to TECH-119,
+    not one: the byline Ruskin, B. is first author here and an author of TECH-117''s source and first author
+    of TECH-119''s source, and M. R. Green is on all of them, so this is not an independent laboratory. The
+    same abstract concludes that yeast and higher eukaryotes splice by the same basic pathway, lariat included,
+    differing in the specificity of the components, so this record qualifies branch-site choice and substrate
+    requirements and not whether the lariat is real. Abstract-only; metadata resolved from Crossref for doi
+    10.1073/pnas.83.7.2022. tier: none of the three evidence tiers applies; this is a method record, not a
+    case record. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content
+    unchanged. Corrected 2026-11-23 against a records review: the note now records two shared authors including
+    a first author, and states that this paper''s own conclusion keeps the lariat shared between the two systems.'
 - id: TECH-122
   claim: 'The mismatch had a sharp test: yeast pre-mRNAs lacking the TACTAAC box are not spliced in yeast cells
     or in yeast extracts, and the same mutant pre-mRNAs were spliced accurately in the HeLa extract, so the
@@ -1561,8 +1610,13 @@ claims:
     spans, different findings - that one is where the branch went, this one which substrates were accepted.
     The abstract says these mutants are ''not spliced'', which is a splicing result and not a statement about
     viability, so prose must not call them lethal. This is the strongest available answer to what the cell-free
-    systems could not reproduce. tier: none of the three evidence tiers applies; this is a method record, not
-    a case record.'
+    systems could not reproduce. Two authors are shared with TECH-117 to TECH-119, including the first author,
+    Ruskin. This abstract''s own conclusion is that yeast and higher eukaryotes splice by the same basic pathway,
+    lariat included, differing in component specificity, so this record and TECH-121 qualify substrate requirements
+    and branch-site choice rather than the reality of the lariat, and they leave TECH-120''s lariat-in-cells
+    result untouched. tier: none of the three evidence tiers applies; this is a method record, not a case record.
+    Corrected 2026-11-23 against a records review: the note now records the shared authors with TECH-117 to
+    TECH-119 and what this pair does and does not qualify.'
 - id: TECH-123
   claim: A plant precursor from the ribulose bisphosphate carboxylase small-subunit gene, carrying both its
     introns, was processed in a HeLa nuclear extract with both introns removed in an ordered fashion and the
@@ -1617,11 +1671,11 @@ claims:
     what each experiment found. tier: none of the three evidence tiers applies; this is a method record, not
     a case record.'
 - id: TECH-125
-  claim: 'An independent group reached the same conclusion with two other plant introns, from a wheat amylase
-    gene and a pea legumin gene: both were accurately spliced in a HeLa nuclear extract at the predicted junctions,
-    with lariat RNAs seen as intermediates and as final products, and the branch points mapped to adenosines
-    in sequences resembling the animal consensus.'
-  topic: in-vitro splicing - independent replication with two other plant introns
+  claim: 'A second group, whose byline shares no author with the first, reached the same conclusion with two
+    other plant introns, from a wheat amylase gene and a pea legumin gene: both were accurately spliced in
+    a HeLa nuclear extract at the predicted junctions, with lariat RNAs seen as intermediates and as final
+    products, and the branch points mapped to adenosines in sequences resembling the animal consensus.'
+  topic: in-vitro splicing - replication with two other plant introns, under a disjoint byline
   source:
     doc_id: '38135318'
     title: Accurate in vitro splicing of two pre-mRNA plant introns in a HeLa cell nuclear extract.
@@ -1638,10 +1692,14 @@ claims:
     quote: The plant introns were accurately spliced and the predicted splice junctions were used
   confidence: high
   note: 'Readout: lariat species identified among the reaction products; the abstract does not say how they
-    were resolved. Independent of TECH-123 and TECH-124: different laboratory, different genes, no shared authors
-    per Crossref, same year and same kind of extract, which makes this the replication half of the pair. Abstract-only;
-    metadata resolved from Crossref for doi 10.1002/j.1460-2075.1986.tb04563.x. tier: none of the three evidence
-    tiers applies; this is a method record, not a case record.'
+    were resolved. The recorded authors strings here and in TECH-123 and TECH-124 share no name, compared entry
+    by entry, and the genes differ while the year and the kind of extract do not; whether two disjoint bylines
+    are two laboratories cannot be read off an abstract, so treat this as a byline comparison rather than an
+    established independence. On that basis it is the replication half of the pair. Abstract-only; metadata
+    resolved from Crossref for doi 10.1002/j.1460-2075.1986.tb04563.x. tier: none of the three evidence tiers
+    applies; this is a method record, not a case record. Corrected 2026-11-23 against a records review: the
+    independence assertion is restated as a byline comparison, which is all an abstract can support in the
+    claim, the topic and this note.'
 - id: TECH-126
   claim: 'The RNA blot was published as a transfer technique: electrophoretically separated RNA is coupled
     covalently to treated paper, and specific bands are then found by hybridisation to a 32P-labelled DNA probe
@@ -1828,9 +1886,13 @@ claims:
   note: 'Readout: the spliced RNAs recovered from the transfected construct, analysed for which exons they
     contain; the abstract does not name the method. This is the assay design the chapter needs for the step
     from existence to regulation, because the construct is the same in every cell and only the cellular context
-    varies. Same laboratory as TECH-133 and one author in common. Abstract-only; metadata resolved from Crossref
-    for doi 10.1016/0092-8674(87)90617-9. tier: isoform-specific biochemical or binding difference, no organismal
-    phenotype'
+    varies. Same laboratory as TECH-133, and this paper''s entire two-author byline, Breitbart and Nadal-Ginard,
+    is a subset of TECH-133''s six-author byline, so they are one programme and not two independent results.
+    Abstract-only; metadata resolved from Crossref for doi 10.1016/0092-8674(87)90617-9. tier: a transfected
+    construct carrying the combinatorial troponin T exons, read out as which exons appear in the spliced RNA
+    in muscle and non-muscle cells. Corrected 2026-11-23 against a records review: the biology tier string
+    is replaced by a descriptive tier, because no binding or biochemical property of an isoform was measured,
+    and the shared byline is corrected from one author to the whole of it.'
 - id: TECH-133
   claim: 'Complementary DNA cloning and genomic sequencing at the rat skeletal fast troponin T gene gave a
     minimum of 10 and potentially 64 distinct messages from small exons with a characteristic split-codon structure,
@@ -1856,9 +1918,13 @@ claims:
       control by trans-acting factors
   confidence: high
   note: 'Readout: the sequences of four cloned complementary DNAs compared against the genomic sequence. Recorded
-    for the inference rather than for the muscle biology. Same laboratory as TECH-132, one author in common,
-    so treat them as one programme rather than two independent results. Abstract-only; metadata resolved from
-    Crossref for doi 10.1016/0092-8674(85)90062-5. tier: correlation of isoform ratio with a phenotype only'
+    for the inference rather than for the muscle biology. Same laboratory as TECH-132, whose entire two-author
+    byline, Breitbart and Nadal-Ginard, is a subset of this paper''s six-author byline, so treat them as one
+    programme rather than two independent results. Abstract-only; metadata resolved from Crossref for doi 10.1016/0092-8674(85)90062-5.
+    tier: four cloned complementary DNAs compared against the genomic sequence of one gene; no isoform ratio
+    was measured. Corrected 2026-11-23 against a records review: the biology tier string is replaced by a descriptive
+    tier, because no isoform ratio was measured, and the shared byline is corrected from one author to the
+    whole of TECH-132''s.'
 - id: TECH-134
   claim: A series of mutant calcitonin and calcitonin-gene-related-peptide transcription units, transfected
     into HeLa and F9 cells, showed that cis-active elements lying close to the 3' splice junction specific
@@ -1888,13 +1954,16 @@ claims:
     mutation, which is why the record sits in this chapter rather than with the biology. Same laboratory as
     TECH-005 and TECH-006 and an author in common with TECH-135, so this extends that programme rather than
     replicating it independently. Abstract-only; metadata resolved from Crossref for doi 10.1038/341076a0.
-    tier: isoform-specific biochemical or binding difference, no organismal phenotype Claim restated 2026-11-23
-    to remove an 8-word span shared with its own audit quote; content unchanged.'
+    tier: mutant transcription units transfected into two cell lines, read out as which messages the cells
+    produced Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
+    Corrected 2026-11-23 against a records review: the biology tier string is replaced by a descriptive tier,
+    because what was measured is which messages transfected cells produced from mutant constructs.'
 - id: TECH-135
   claim: Hybridisation analysis at the calcitonin gene placed the calcitonin and pseudo-calcitonin sequences
-    on one chromosome together and within the same nuclear RNA transcripts, and showed both messages to be
-    functional and to encode different polypeptides, a set of results the authors call compatible with their
-    proposed model in which alternative RNA splicing of a single transcript yields the two products.
+    on one chromosome together and within the same nuclear RNA transcripts. The abstract states separately,
+    with no method attached, that both messages are functional and encode different polypeptides, and the authors
+    call the set of results compatible with their proposed model in which alternative RNA splicing of the gene's
+    transcript or transcripts yields the two products.
   topic: establishing regulation - the hybridisation result offered against the two-gene explanation
   source:
     doc_id: '124587518'
@@ -1917,14 +1986,16 @@ claims:
     keeps it: the authors present the result as compatible with a proposed model, not as a demonstration, so
     prose must not say the two-gene explanation was ruled out. Same laboratory as TECH-005, TECH-006 and TECH-134,
     with authors in common; this is the earliest paper of that series in this corpus. Abstract-only; metadata
-    resolved from Crossref for doi 10.1073/pnas.79.6.1717. tier: isoform-specific biochemical or binding difference,
-    no organismal phenotype Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote;
-    content unchanged.'
+    resolved from Crossref for doi 10.1073/pnas.79.6.1717. tier: hybridisation analysis of genomic clones and
+    nuclear RNA Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content
+    unchanged. Corrected 2026-11-23 against a records review: the claim no longer credits the hybridisation
+    analysis with the functionality result, which is a separate sentence with no method attached, the singular
+    transcript is restored to the abstract''s ''transcript or transcripts'', and the biology tier string is
+    replaced by a descriptive tier.'
 - id: TECH-136
-  claim: 'By 1981 the wording that became the field''s term was in use for a choice of route rather than a
-    choice of gene: the two 3'' splice sites of one human growth hormone intervening sequence are called alternate
-    splicing pathways, and the peptides of different sizes they generate are reported as present in normal
-    pituitaries.'
+  claim: 'By 1981 the phrase was in use for a choice of splicing route: the two 3'' splice sites of one human
+    growth hormone intervening sequence are called alternate splicing pathways, and the peptides of different
+    sizes they generate are reported as present in normal pituitaries.'
   topic: vocabulary - the wording used in 1981 for a choice of route
   source:
     doc_id: '120239491'
@@ -1942,13 +2013,16 @@ claims:
     quote: These alternate splicing pathways generate hGH peptides of different sizes which are found in normal
       pituitaries
   confidence: high
-  note: 'A dated usage, not a claim about where the term entered the literature. This is the earliest instance
-    found under the searches run in this pass, all of which matched abstract text only, so an earlier use inside
-    a paper body would not have been found; the searches are listed in this file''s leads. The paper''s title
-    uses the words ''possible alternative splicing''. Shares doc 120239491 and line L1 with TECH-129; single-line
+  note: 'A dated usage, not a claim about where the term entered the literature. Readout: none; this record
+    is about the wording on the line and not about a measurement. This is the earliest instance found under
+    the searches run in this pass, all of which matched abstract text only, so an earlier use inside a paper
+    body would not have been found; the searches are listed in this file''s leads. The paper''s title uses
+    the words ''possible alternative splicing''. Shares doc 120239491 and line L1 with TECH-129; single-line
     abstract, non-overlapping spans, different findings - that one is the S1 result, this one the wording and
     the presence of both products in normal tissue. tier: none of the three evidence tiers applies; this is
-    a method record, not a case record.'
+    a method record, not a case record. Corrected 2026-11-23 against a records review: the clause about the
+    wording becoming the field''s term is dropped as a statement about the term''s later career that no cited
+    line carries, and the contrast ''rather than a choice of gene'' is dropped as the researcher''s own.'
 - id: TECH-137
   claim: 'A 1981 account by the group that had done the R-loop mapping applies the term to a structural pattern
     its assays could see: every adenovirus transcriptional unit gives rise to a family of related RNAs whose
@@ -1980,10 +2054,10 @@ claims:
     applies; this is a method record, not a case record. Claim restated 2026-11-23 to remove an 8-word span
     shared with its own audit quote; content unchanged.'
 - id: TECH-138
-  claim: 'By 1987 a research paper could open by defining the term rather than introducing it: alternative
+  claim: 'One 1987 paper opens with a definitional statement rather than an introduction of the term: alternative
     RNA splicing is described there as a ubiquitous process by which a single gene can encode more than one
     protein isoform.'
-  topic: vocabulary - the definition in use by 1987
+  topic: vocabulary - one 1987 paper's opening definition
   source:
     doc_id: '135911473'
     title: Developmentally induced, muscle-specific trans factors control the differential splicing of alternative
@@ -2001,17 +2075,21 @@ claims:
     quote: Alternative RNA splicing is a ubiquitous process permitting single genes to encode multiple protein
       isoforms
   confidence: high
-  note: 'A dated usage by one group, not a claim about the field as a whole. Shares doc 135911473 and line
-    L1 with TECH-132; single-line abstract, non-overlapping spans, and the claims differ - that one is the
-    transfection result, this one the wording and what the wording asserts. Useful because the definition is
-    cast in terms of protein isoforms, which is a stronger claim than the structural statement in TECH-131
-    and TECH-137. tier: none of the three evidence tiers applies; this is a method record, not a case record.
-    Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
+  note: 'A dated usage by one group, not a claim about the field as a whole. Readout: none; this record is
+    about the wording on the line and not about a measurement. Shares doc 135911473 and line L1 with TECH-132;
+    single-line abstract, non-overlapping spans, and the claims differ - that one is the transfection result,
+    this one the wording and what the wording asserts. Useful because the definition is cast in terms of protein
+    isoforms, which is a stronger claim than the structural statement in TECH-131 and TECH-137. tier: none
+    of the three evidence tiers applies; this is a method record, not a case record. Claim restated 2026-11-23
+    to remove an 8-word span shared with its own audit quote; content unchanged. Corrected 2026-11-23 against
+    a records review: ''by 1987 a research paper could open by defining the term'' is narrowed to the one paper
+    on the cited line and in the topic, since the state of a literature cannot be read off one abstract''s
+    first sentence.'
 - id: TECH-139
-  claim: 'In 1989 one group stated the distinction the two phrases encode as an asymmetry of knowledge: for
-    constitutive splicing of primary transcripts a good deal was known about sequence requirements and biochemical
-    mechanisms, whereas for alternative RNA-processing events inside complex transcription units, very little
-    was known about either the sequences or the mechanisms behind them.'
+  claim: 'In 1989 one group stated the distinction the two phrases encode as an asymmetry of knowledge: information
+    about the sequence requirements and biochemical mechanisms of constitutive splicing of primary transcripts
+    had been increasing, whereas for alternative RNA-processing events inside complex transcription units,
+    very little was known about either the sequences or the mechanisms behind them.'
   topic: vocabulary - constitutive splicing set against alternative RNA processing, 1989
   source:
     doc_id: '139011269'
@@ -2031,12 +2109,14 @@ claims:
       events in complex transcription units
   confidence: high
   note: 'This is the contrast the vocabulary carries, stated by practitioners rather than by a later review,
-    and it is one group''s framing rather than a survey of the field. The phrase ''alternative RNA processing''
-    appears here applied to events in a complex transcription unit; whether its coiners meant it to cover more
-    than splice-site choice is not stated on this line and must not be asserted from it. Shares doc 139011269
-    and line L1 with TECH-134; single-line abstract, non-overlapping spans, different claims. tier: none of
-    the three evidence tiers applies; this is a method record, not a case record. Claim restated 2026-11-23
-    to remove an 8-word span shared with its own audit quote; content unchanged.'
+    and it is one group''s framing rather than a survey of the field. Readout: none; this record is about the
+    wording on the line and not about a measurement. The phrase ''alternative RNA processing'' appears here
+    applied to events in a complex transcription unit; whether its coiners meant it to cover more than splice-site
+    choice is not stated on this line and must not be asserted from it. Shares doc 139011269 and line L1 with
+    TECH-134; single-line abstract, non-overlapping spans, different claims. tier: none of the three evidence
+    tiers applies; this is a method record, not a case record. Claim restated 2026-11-23 to remove an 8-word
+    span shared with its own audit quote; content unchanged. Corrected 2026-11-23 against a records review:
+    ''a good deal was known'' is replaced by the source''s ''increasing information''.'
 - id: TECH-141
   claim: 'Practitioners building a real-time PCR readout for splice variants opened by saying that getting
     an accurate number out of the older assays had been both laborious and limited in principle, and they used
@@ -2242,11 +2322,10 @@ claims:
     '
 - id: TECH-147
   claim: 'A transfected construct and the gene it was cut from can disagree about the same exon: the Dlg4 exon
-    18 reporter in mouse N2a cells included the exon in 27 per cent of its mRNA, against 66 per cent for the
-    endogenous Dlg4 transcript, and those authors offer as possible reasons the different promoter, regulatory
-    elements left out of the construct, or decay of the skipped form.
-
-    '
+    18 reporter included the exon in 27 per cent of its mRNA in mouse N2a cells, against 66 per cent reported
+    for the endogenous Dlg4 transcript, a figure the cited line carries with no cell type and with a citation
+    to those authors'' own earlier work; they offer as possible reasons the different promoter, regulatory
+    elements left out of the construct, or decay of the skipped form.'
   topic: minigene assays - a measured discrepancy between construct and endogenous exon, by the people who
     built it
   source:
@@ -2273,8 +2352,8 @@ claims:
     and does not state where the endogenous 66 per cent was measured, so the two figures must not be written
     as a same-cell comparison. The three explanations the authors give are stated by them as possibilities,
     not established. Same laboratory as TECH-148, TECH-149 and TECH-150, which cite other lines of this paper.
-
-    '
+    Corrected 2026-11-23 against a records review: the claim now scopes the 27 per cent to N2a and states that
+    the 66 per cent carries no cell type on its line, instead of leaving that caveat to this note.'
   figure_idea: 'Two bars for one exon - inclusion in the construct and inclusion in the gene - with the three
     candidate reasons for the gap labelled on the gap itself rather than on the bars.
 
@@ -2336,14 +2415,13 @@ claims:
     quote: CELF4 that were successfully depleted by RNAi but did not affect endogenous exon 18, may be false
       positives that target the reporter RNA
   confidence: high
-  note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype - applied to the
-    negative result: an RNAi perturbation with an isoform-resolved RT-PCR readout on the endogenous exon and
-    no effect. Physical readout: percent-spliced-in of endogenous exon 18 by RT-PCR after siRNA knockdown,
-    against the fluorescence ratio of the reporter. The authors also offer alternative readings, that CELF4
-    may act on this exon in untested contexts, so the claim must stay at "did not reproduce in these cells"
-    rather than "is not a regulator". Same laboratory as TECH-147, TECH-148, TECH-150.
-
-    '
+  note: 'tier: an RNAi knockdown of a candidate regulator with an isoform-resolved RT-PCR readout on the endogenous
+    exon, returning no change. Physical readout: percent-spliced-in of endogenous exon 18 by RT-PCR after siRNA
+    knockdown, against the fluorescence ratio of the reporter. The authors also offer alternative readings,
+    that CELF4 may act on this exon in untested contexts, so the claim must stay at "did not reproduce in these
+    cells" rather than "is not a regulator". Same laboratory as TECH-147, TECH-148, TECH-150. Corrected 2026-11-23
+    against a records review: the canonical biochemical-or-binding tier string is replaced by a descriptive
+    tier, because no biochemical or binding difference between isoforms was measured.'
 - id: TECH-150
   claim: 'Clones carrying the same splicing reporter gave different readouts for reasons outside the splicing:
     percent-spliced-in of the endogenous Dlg4 exon was similar across the clones and did not track the reporter''s
@@ -2491,13 +2569,13 @@ claims:
     quote: our minigenes do not contain all the sequences in introns 2 and 3, our results suggest that PTBP1
       represses exon 3
   confidence: high
-  note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype - an siRNA perturbation
-    with an isoform-resolved readout on a construct, no phenotype. Physical readout: RT-PCR products from four
-    transfected BIM minigenes, included and skipped forms resolved by size, after siRNA knockdown of PTBP1
-    in K562 cells. The useful content for chapter 4 is the authors'' own reasoning about what their construct
-    could not exclude, not the PTBP1 result.
-
-    '
+  note: 'tier: an siRNA knockdown of PTBP1 read out as exon 3 inclusion in four transfected BIM minigenes,
+    returning no change in any of them. Physical readout: RT-PCR products from four transfected BIM minigenes,
+    included and skipped forms resolved by size, after siRNA knockdown of PTBP1 in K562 cells. The useful content
+    for chapter 4 is the authors'' own reasoning about what their construct could not exclude, not the PTBP1
+    result. Corrected 2026-11-23 against a records review: the canonical biochemical-or-binding tier string
+    is replaced by a descriptive tier, because what was done is a knockdown and not a measurement of a binding
+    or biochemical difference.'
 - id: TECH-155
   claim: 'What a transfected splicing construct reports depends on the promoter in the plasmid: these authors
     report that whether the fibronectin EDI exon responds to the SR proteins SF2/ASF and 9G8 depends critically
@@ -2535,10 +2613,8 @@ claims:
     '
 - id: TECH-156
   claim: 'The whole published minigene literature was small enough to tabulate: the curators of a splicing
-    resource compiled every minigene described in the literature up to their 2005 release and arrived at 82
-    entries, carrying 97 ascribed regulatory sequences between them.
-
-    '
+    resource compiled every minigene described in the literature and arrived at 82 entries, carrying 97 ascribed
+    regulatory sequences between them.'
   topic: minigene assays - the size of the minigene literature, counted
   source:
     doc_id: PMC1347394
@@ -2559,9 +2635,10 @@ claims:
     - this is a curation count, read from the resource paper. Same document as TECH-179; different line, different
     finding. The curators'' definition of a minigene is given on the same line (a genomic fragment carrying
     the alternative exon, surrounding introns and flanking constitutive exons cloned into an expression vector),
-    which is worth keeping with the number.
-
-    '
+    which is worth keeping with the number. Corrected 2026-11-23 against a records review: the release-year
+    clause is dropped from the claim, because no cited line gives a cut-off date and the document''s year is
+    2005 online but 2006 in the issue, which is the side the bibliography will print; the figure_idea on this
+    record still says 2005 and needs the same fix by hand.'
   figure_idea: 'One axis: cumulative count of experimentally characterised alternative exons per year as a
     curated literature count, with the 2005 minigene total marked. The point is the order of magnitude a one-construct-at-a-time
     assay reached in two decades.
@@ -2712,10 +2789,8 @@ claims:
     '
 - id: TECH-161
   claim: 'Linkage is not the universal case: the same authors note that some genes show nearly independent
-    splicing at several sites even in complicated tissues, in which case one or two pairwise interactions account
-    for whatever departure from independence there is.
-
-    '
+    splicing at several sites even in complicated tissues, and that in such cases one or two pairwise interactions
+    may account for whatever departure from independence there is.'
   topic: combinatorial wall - the bound, that some loci do splice nearly independently
   source:
     doc_id: PMC1785386
@@ -2735,11 +2810,14 @@ claims:
   note: 'No tier applies: assay-property record. This is the contradiction to record beside TECH-157 and TECH-159:
     whether the joint distribution departs from the product of the marginals is a property of the locus and
     the stage, not a general fact, and the fetal CACNA1G population in TECH-157 is itself described as nearly
-    independent. Confidence is medium because the line attributes the observation to three citations, one of
-    which is these authors'' own earlier paper (TECH-157), so it is a statement about the literature rather
-    than a result of this paper. Physical readout: none of its own.
-
-    '
+    independent. Confidence is medium because the line opens this paper''s minimal-linkage methods section
+    and motivates a fitting strategy rather than reporting a result, and it attributes the observation to three
+    citations which resolve at L120, L129 and L131 to these authors'' own earlier paper (TECH-157), a Dscam
+    paper this pass did not record, and a further paper of the same group. The only independent support for
+    the bound is the Dscam paper, so this contradicts the linkage claim as a bound but is not a disagreement
+    between groups and must not be written as one. Physical readout: none of its own. Corrected 2026-11-23
+    against a records review: the modal ''may'' is restored to the claim and the note now says the line is
+    methods motivation whose three citations are mostly the same laboratory.'
 - id: TECH-162
   claim: 'The gap between an event-level and a molecule-level measurement has been quantified at one locus:
     across a cohort of 13 paediatric precursor-B acute lymphoblastic leukaemia samples, with up to 3,000 molecules
@@ -2774,10 +2852,14 @@ claims:
     into PCR colonies, each colony descended from one template; the exon content of each colony is read by
     scanning the slide after each of several rounds of hybridisation with exon- and junction-specific fluorescent
     probes, so the output is one exon map per molecule. The 0.946, <0.82, <0.25 and >0.88 figures are in the
-    figure legend at L41 and the 0.815 and 0.244 figures in the text at L42. Same laboratory as TECH-163, TECH-164,
-    and independent of the Agnew-group records TECH-157 to TECH-161 and TECH-167 to TECH-168.
-
-    '
+    figure legend at L41 and the 0.815 and 0.244 figures in the text at L42. On the polony side of panels 3B
+    and 3C the count excludes, or recounts as a different variant, molecules that would give rise to a different
+    protein product (L41, L43), which is why pooling in panel 3D restores agreement; without that, the 0.244
+    reads as a raw measurement discrepancy rather than a partly definitional one, so cite this record together
+    with TECH-163 or not at all. Same laboratory as TECH-163, TECH-164, and independent of the Agnew-group
+    records TECH-157 to TECH-161 and TECH-167 to TECH-168. Corrected 2026-11-23 against a records review: the
+    note now records the protein-product exclusion on the polony side, which is what makes the 0.244 partly
+    definitional.'
   figure_idea: 'Two scatter plots side by side for one gene: bulk event-level estimate on one axis against
     molecule-counted estimate on the other, once for the gene total and once for a single variant, with the
     identity line on both. The subject is that the two agree where the question is a gene and diverge where
@@ -2845,13 +2927,13 @@ claims:
 
     '
 - id: TECH-165
-  claim: 'A single-molecule splicing assay was calibrated against a defined input: spiking a wild-type c-myb
+  claim: A single-molecule splicing assay was calibrated in two separate experiments. Spiking a wild-type c-myb
     template with an exon 8A-containing template at known molar ratios, the assay picked out a single alternative
-    molecule against upwards of 5,000 wild-type molecules, and counting stayed linear over a wide concentration
-    range with an r-squared of 0.99.
-
-    '
-  topic: combinatorial wall - what the molecule-counting readout could resolve, measured on known mixtures
+    molecule against upwards of 5,000 wild-type molecules. Separately, seeding wild-type plasmid alone at several
+    different amounts, the colony count stayed linear over a wide concentration range with an r-squared of
+    0.99.
+  topic: combinatorial wall - what the molecule-counting readout could resolve, and its linearity, measured
+    separately
   source:
     doc_id: PMC3154906
     title: Single Molecule Analysis of c-myb Alternative Splicing Reveals Novel Classifiers for Precursor B-ALL
@@ -2869,13 +2951,15 @@ claims:
       wild type c-myb transcripts
   confidence: high
   note: 'No tier applies: assay-property record. Physical readout: counts of PCR colonies positive for an exon-specific
-    probe, from cDNA mixtures of known composition; the amplified region spans exons 6 to 11, so the molecule
-    read is a stretch of the transcript rather than the whole of it. This is the defined-input calibration
-    for the molecule-level assay, the counterpart of TECH-143 for the bulk assay. Same laboratory as TECH-162
-    to TECH-164. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content
-    unchanged.
-
-    '
+    probe; the amplified region spans exons 6 to 11, so the molecule read is a stretch of the transcript rather
+    than the whole of it. The 1-in-5,000 sensitivity came from cDNA mixtures of known composition (Figure 2B);
+    the r-squared of 0.99 came from seeding wild-type plasmid alone at different amounts (Figure 2C), with
+    no alternative template and no mixture ratio. This is the defined-input calibration for the molecule-level
+    assay, the counterpart of TECH-143 for the bulk assay. Same laboratory as TECH-162 to TECH-164. Claim restated
+    2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged. Corrected 2026-11-23
+    against a records review: the two experiments are separated in the claim, because the linearity figure
+    came from wild-type plasmid alone and not from the spiked mixtures, and the topic no longer says the linearity
+    was measured on known mixtures.'
 - id: TECH-166
   claim: 'One route to splice combinations was framed as a counting problem: digital polony exon profiling
     was presented as a way to watch, transcript by transcript, which exons are included and in what combinations,
@@ -3035,11 +3119,11 @@ claims:
     scheme could enable, not an experiment they ran - their own demonstration covered the adenovirus E1A gene
     and a beta-actin reference transcript - so the chapter must present 324 as a projected ceiling. Physical
     readout: counts of rolling-circle products on a slide, identified by which of the serial probe hybridisations
-    lit them; the same line records that the fluorescent readout confirms only the presence of exons and loses
-    their order within a transcript. Different line and different claim from TECH-009 and TECH-169. Claim restated
-    2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
-
-    '
+    lit them; L62, which this record does not cite, records that the fluorescent readout confirms only the
+    presence of exons and loses their order within a transcript. Different line and different claim from TECH-009
+    and TECH-169. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content
+    unchanged. Corrected 2026-11-23 against a records review: the order-lost statement is re-attributed to
+    L62, which is not the cited line.'
   figure_idea: 'Assay generation on one axis against number of loci surveyable in one experiment on the other,
     as a step function from one locus per experiment to the designed ceilings of the targeted assays. The axis
     label that matters is "loci per experiment", not "year".
@@ -3152,10 +3236,8 @@ claims:
 - id: TECH-174
   claim: 'The same study shows that a size difference on a gel is not an isoform: thyroid peroxidase runs as
     a closely spaced doublet near 105 and 100 kilodaltons, both bands reacted with all three antisera to exon
-    10, so both contain the exon 10 polypeptide and the authors conclude the size difference comes from post-translational
-    modification rather than from the splice.
-
-    '
+    10, so both contain the exon 10 polypeptide, which the authors take as suggesting the size difference arises
+    from post-translational modification rather than from the splice.'
   topic: protein-level assays - what a gel band could not establish
   source:
     doc_id: '78387049'
@@ -3180,9 +3262,8 @@ claims:
     This is the record for the chapter''s point that an electrophoretic mobility difference is a mass difference
     and nothing more until an isoform-specific reagent is applied to it. Shares the L1 anchor with TECH-173;
     different span, different finding. text_access: abstract_only; authors and journal resolved from the DOI
-    record via api.crossref.org.
-
-    '
+    record via api.crossref.org. Corrected 2026-11-23 against a records review: ''conclude'' is replaced by
+    the abstract''s own ''suggesting''.'
   figure_idea: 'One lane with two closely spaced bands, drawn twice: once labelled with the inference a size
     difference invites, once with what the antibody test returned. The subject is that the same picture supports
     both readings until a second assay is run.
@@ -3313,13 +3394,14 @@ claims:
       collection of 168 genes
   confidence: high
   note: 'No tier applies: curation record. Physical readout: none - the unit is a published report retrieved
-    by literature search. The merging and manual review step is the curators'' own acknowledgement that the
-    raw hits did not agree with each other, though the abstract does not say what the disagreements were. 168
-    genes over 44 species is a plant count and must not be carried over to any mammalian figure; the abstract
-    notes separately that the plant total is much smaller than the mammalian one. text_access: abstract_only;
-    authors and journal resolved from the DOI record via api.crossref.org.
-
-    '
+    by literature search. The abstract reports careful merging and manual review of the search results but
+    does not say what those steps changed, so it must not be read as the curators conceding that their raw
+    hits disagreed; de-duplication of two search sets is as plausible a reading. 168 genes over 44 species
+    is a plant count and must not be carried over to any mammalian figure; the abstract notes separately that
+    the plant total is much smaller than the mammalian one. text_access: abstract_only; authors and journal
+    resolved from the DOI record via api.crossref.org. Corrected 2026-11-23 against a records review: the note
+    no longer reads the curation sentence as an admission that the raw hits disagreed, which the abstract does
+    not say.'
 - id: TECH-179
   claim: 'The curators of a splicing resource name the mismatch they had to build around: their literature-curated
     and computationally derived data sets differ in how far annotation goes and in the vocabularies they use,
@@ -3349,13 +3431,14 @@ claims:
     which is the concrete answer to how the field kept track; and the same paper states at L15 that literature-derived
     sets carry biological information but are small while computational sets are large and carry none. Both
     of those are anchored lines in this document that were not given their own records in this pass - see leads.
-    Same document as TECH-156; different line, different finding.
-
-    '
+    Same document as TECH-156; different line, different finding. Corrected 2026-11-23 against a records review:
+    the note now records that this document''s year is 2005 online and 2006 in the issue, which is the side
+    the bibliography will print; the claim carries no release-year clause to drop, and the bibkey collision
+    with TECH-219 is already resolved to stamm2005asd.'
 - id: TECH-181
-  claim: 'An EST was a read off one end of a cloned cDNA: the sequencing reaction started in the plasmid vector
-    and ran into either the 5'' or the 3'' end of the insert, so one clone yielded one partial read of one
-    end of one transcript and never the whole molecule.'
+  claim: 'An EST was a single-strand read taken off a cloned cDNA: the sequencing reaction typically began
+    in the plasmid vector and could run into either the 5'' or the 3'' terminal sequence of the insert, so
+    a single read covered one end of the clone and never the whole molecule.'
   topic: ESTs - the generating process, read by read
   source:
     doc_id: PMC1431573
@@ -3379,7 +3462,10 @@ claims:
     It is the fact that makes every EST-era splice-variant call an inference from fragments: a variant is called
     from two reads that each cover part of a transcript, so an artefact at one clone end becomes a structural
     difference between transcripts. First of four records on this document (TECH-181 L13, TECH-182 L14, TECH-183
-    L17, TECH-184 L10); all four lines and findings differ.'
+    L17, TECH-184 L10); all four lines and findings differ. Corrected 2026-11-23 against a records review:
+    the either/or on the cited line is about what one read can include, not a cap of one read per clone, so
+    the claim no longer says a clone yielded one read; paired reads off one clone were routine, and TECH-187
+    measures the chimeric-clone rate by mapping both ends of the same clone.'
   figure_idea: Two cDNA clones of the same gene drawn as a vector circle with an insert, the read arrow starting
     inside the vector and dying partway into the insert, one clone read from the 5' side and one from the 3'.
     Beside them, the splice-variant call that the two partial reads support, and the one they cannot distinguish
@@ -3415,8 +3501,10 @@ claims:
     of four records on this document; see TECH-181.'
 - id: TECH-183
   claim: Across more than 900 mouse EST libraries holding at least 100 entries each, the combined steps of
-    reverse transcription and of choosing which clones to sequence introduced systematic bias into which transcripts
-    a library sampled, and the bias was present even in libraries that had been neither normalised nor subtracted.
+    reverse transcription and of choosing which clones to sequence can introduce significant bias into which
+    transcripts a library samples, and those authors report that libraries which had been neither normalised
+    nor subtracted are subject to it too, while noting that a library with a tight, short distribution of insert
+    lengths is typically relatively unbiased.
   topic: ESTs - library-construction bias measured across libraries
   source:
     doc_id: PMC1431573
@@ -3440,13 +3528,15 @@ claims:
     and its threshold; the bias claim and the statement that unnormalised libraries are also affected are on
     the same line, and the statement that even non-normalised libraries are affected is on L19, which is cited
     with it. This is the record the chapter 4 leads block asked for, and TECH-186 is the one that measures
-    an artefact''s effect on splice-variant calls directly. Third of four records on this document; see TECH-181.'
+    an artefact''s effect on splice-variant calls directly. Third of four records on this document; see TECH-181.
+    Corrected 2026-11-23 against a records review: the source''s ''can introduce'' is restored and the unbiased
+    library class named at L19 is carried into the claim.'
 - id: TECH-184
   claim: Those authors conclude that the transcript-sampling biases they characterised throw up false positive
     candidates for genes called tissue-specific, cell-type-specific or developmental-stage-specific in their
     activity or their processing, a source of error they describe as significant and, until then, under-appreciated,
-    and that comparing dissimilar EST libraries without correcting for the biases yields statistically significant
-    but biologically meaningless differences.
+    and that comparing dissimilar EST libraries without correcting for the biases will likely yield differences
+    that are statistically significant but biologically meaningless.
   topic: ESTs - library bias as a named source of false positives
   source:
     doc_id: PMC1431573
@@ -3471,7 +3561,8 @@ claims:
     calls, so ''processing'' here is mainly 3'' processing. Their own transfer argument, on L35, is that the
     effect applies to any measured quantity that depends on transcript size. The sentence is a conclusion of
     the authors, so the chapter should attribute it. Fourth of four records on this document; see TECH-181.
-    Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
+    Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
+    Corrected 2026-11-23 against a records review: ''yields'' is replaced by the source''s ''will likely''.'
 - id: TECH-185
   claim: 'Measured against a curated reference set of known human transcripts, the Merck EST collection carried
     error classes that mis-assign which end of a transcript a read came from: reversed clones at about 5 per
@@ -3799,10 +3890,11 @@ claims:
     cannot be quoted without saying which set it is over. First of two records on this document (TECH-194 and
     TECH-195); different spans, different findings.'
 - id: TECH-195
-  claim: Checking apparently non-canonical splice sites against genomic sequence resolved them into three groups
-    rather than one. Of 171 human non-canonical EST-supported splice pairs, 156 could be matched to high-throughput
-    genomic sequence, and among those 61 were errors that corrected to canonical GT-AG, 79 were genuine GC-AG
-    pairs and six were AT-AC pairs.
+  claim: Checking apparently non-canonical splice sites against genomic sequence split them between record
+    errors and minor-class introns. Of 171 human non-canonical EST-supported splice pairs, 156 had a clear
+    match in high-throughput genomic sequence, and among those the abstract gives 79 GC-AG pairs, 61 errors
+    that corrected to canonical GT-AG and six AT-AC pairs, which account for 146 of the 156, plus three further
+    classes; it also reclassifies one of the 79 and two of the six as corrected errors.
   topic: spliced alignment - non-canonical junctions resolved into errors and minor-class introns
   source:
     doc_id: '161029505'
@@ -3830,7 +3922,10 @@ claims:
     EST alignments verified only the exonic part of a splice site, so the dinucleotides had to be checked against
     genomic sequence from the high-throughput genome project. For the chapter the usable point is that a non-canonical
     junction in the EST record was about as likely to be an error as to be a GC-AG intron, and that real AT-AC
-    introns were a handful either way. Second of two records on this document; see TECH-194.'
+    introns were a handful either way. Second of two records on this document; see TECH-194. Corrected 2026-11-23
+    against a records review: the claim no longer reads as exhaustive, since the three classes sum to 146 of
+    156 and three further classes exist, and ''genuine'' is dropped because the abstract corrects one of the
+    79 itself.'
 - id: TECH-196
   claim: More than half of all human donor splice sites have another potential donor site three to six nucleotides
     away. The source gives no denominator for the donor-site set it counted, so the figure stands as a proportion
@@ -3899,7 +3994,7 @@ claims:
     as many ESTs as the corresponding UniGene build. The source does not say whether the two projects drew
     on identical input sets, so the factor is a difference between two published builds rather than a controlled
     comparison.'
-  topic: clustering - the same data, two gene partitions
+  topic: clustering - two published builds, two gene partitions of EST data
   source:
     doc_id: '22470486'
     title: 'A Comprehensive Approach to Clustering of Expressed Human Gene Sequence: The Sequence Tag Alignment
@@ -3927,7 +4022,9 @@ claims:
     and the abstract does not state that the two builds used the same EST input. For the chapter this is the
     mechanism by which a clustering choice changes a variant count without any new data: merge two loci and
     their separate transcripts become alternative isoforms of one gene; split one locus and a real isoform
-    pair is lost. Second of two records on this document; see TECH-197.'
+    pair is lost. Second of two records on this document; see TECH-197. Corrected 2026-11-23 against a records
+    review: the topic no longer says ''the same data'', which the claim itself denies and which a gate-indexed
+    field would carry into the book.'
   figure_idea: One EST set, two partitions drawn above and below it, with a locus that one project merges and
     the other splits, and underneath each partition the splice-variant call that follows from it.
 - id: TECH-199
@@ -4028,14 +4125,15 @@ claims:
     the count of transcripts actually observed in the evidence, so the gap between the enumerable and the observed
     is the picture.
 - id: TECH-202
-  claim: The aligner could manufacture a terminal exon out of a poly(A) tail, and the rate differed by two
-    orders of magnitude between programs. In the six-program comparison, best alignments whose 3' exon was
-    at least 75 per cent adenosine, and which a non-consensus intron typically linked to the remainder of the
-    gene, accounted for 15.5 per cent of all mRNA alignments and 22.1 per cent of the RefSeq mRNA subset under
-    Sim4, against 0.98 and 1.67 per cent under BLAT, 0.04 and 0.02 per cent under GMAP, and 0.01 and 0.00 per
-    cent under Splign. The authors state they suspect such segments are mis-aligned poly(A) tails rather than
-    demonstrating it.
-  topic: spliced alignment - a false terminal exon rate, measured per program
+  claim: A program could report a 3' exon made mostly or entirely of adenosines, which those authors suspect
+    is in many cases a poly(A) tail that should never have been aligned, and the rate of that differed by about
+    three orders of magnitude between programs. Of the six programs compared, best alignments whose 3' exon
+    was at least 75 per cent adenosine accounted for 15.5 per cent of all mRNAs and 22.1 per cent of the RefSeq
+    mRNA subset under Sim4, 2.12 and 2.72 per cent under SPA, 0.98 and 1.67 under BLAT, 0.57 and 0.31 under
+    Spidey, 0.04 and 0.02 under GMAP, and 0.01 and 0.00 under Splign. They report separately that such a 3'
+    exon often has a non-consensus intron between it and the remainder of the gene, which is an accompanying
+    observation and not a criterion of the count.
+  topic: spliced alignment - a suspected false terminal exon rate, measured per program
   source:
     doc_id: PMC2440734
     title: 'Splign: algorithms for computing spliced alignments with identification of paralogs'
@@ -4047,8 +4145,8 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L32,L33,L35,L36
-    anchor: https://paperclip.gxl.ai/citations/papers/PMC2440734#L32,L33,L35,L36
+    lines: L32-L36
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2440734#L32-L36
     quote: the programs to report 3' exons consisting mostly or entirely of 'A' residues, often connected to
       the rest of the gene by a non-consensus intron
   confidence: high
@@ -4057,13 +4155,19 @@ claims:
     the table caption and the two table rows, so the percentages are in the cited range. The denominators are
     the 218,641 human mRNA set of TECH-192 and its RefSeq subset, and the threshold is the authors'' own: A-content
     of 75 per cent or higher in the 3'' exon of the best alignment. These authors say they suspect such segments
-    are mis-aligned poly(A) tails rather than proving it, and the chapter should carry that hedge; the diagnostic
-    they rely on is that the resulting intron is non-consensus, which they define on the same line as donor-acceptor
-    pairs other than GT/AG, GC/AG and AT/AC. The comparison is run by the authors of the best-performing program,
-    and Sim4 was additionally handicapped as described in TECH-192, but the figure that matters for the chapter
-    does not depend on the ranking: an alternative last exon called from EST evidence could be an artefact
-    of whichever aligner produced the alignment. Third of three records on this document; see TECH-192. Claim
-    restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
+    are mis-aligned poly(A) tails rather than proving it, and the chapter should carry that hedge; they also
+    report that such a 3'' exon often has a non-consensus intron joining it to the rest of the gene, which
+    they define on the same line as donor-acceptor pairs other than GT/AG, GC/AG and AT/AC, but the table counts
+    A-content only, so that is an accompanying observation and not a criterion of the count. The comparison
+    is run by the authors of the best-performing program, and Sim4 was additionally handicapped as described
+    in TECH-192, but the figure that matters for the chapter does not depend on the ranking: an alternative
+    last exon called from EST evidence could be an artefact of whichever aligner produced the alignment. Third
+    of three records on this document; see TECH-192. Claim restated 2026-11-23 to remove an 8-word span shared
+    with its own audit quote; content unchanged. Corrected 2026-11-23 against a records review: two orders
+    of magnitude becomes about three, the two omitted programs Spidey and SPA are named, the percentages are
+    labelled as per cent of mRNAs rather than of alignments, and the non-consensus intron is demoted from criterion
+    to observation; the cited range is extended to L34, which carries the program names (a patch of claim,
+    topic and note alone will not carry that).'
   figure_idea: 'One axis of false-terminal-exon rate with one bar per aligner on the same mRNA set, and the
     poly(A) mechanism drawn once beside it: a read''s tail aligned to a genomic A-rich stretch, with the gap
     between it and the real last exon reported as an intron.'
@@ -4102,7 +4206,7 @@ claims:
     human RefSeq genes, intron retention was seen in 36 per cent of genes when any EST observation counted,
     and in fewer than 5 per cent once the authors required a variant at above 5 per cent frequency within its
     cluster at better than 95 per cent confidence.
-  topic: thresholds - one event class, two defensible numbers seven-fold apart
+  topic: thresholds - one event class, two defensible numbers more than seven-fold apart
   source:
     doc_id: '141190147'
     title: Selecting for Functional Alternative Splices in ESTs
@@ -4129,7 +4233,9 @@ claims:
     clustering variants by mutually exclusive structure. Intron retention is also the class most exposed to
     the pre-mRNA and genomic-DNA contamination of TECH-186 and the unprocessed clones of TECH-187, so part
     of the 36 per cent is library artefact rather than a low-frequency real event. Note for the records review:
-    TECH-013 states the 17 to 28 per cent without this 6,400-gene RefSeq denominator.'
+    TECH-013 states the 17 to 28 per cent without this 6,400-gene RefSeq denominator. Corrected 2026-11-23
+    against a records review: the topic''s ''seven-fold'' becomes ''more than seven-fold'', because the second
+    figure is an upper bound of fewer than 5 per cent.'
   figure_idea: 'One gene set, two bars per event class: the count at any-EST-evidence and the count under the
     above-5-per-cent, above-95-per-cent-confidence rule, with intron retention and cassette exons side by side
     so the reader sees the rule bites hardest on the class most exposed to artefact.'
@@ -4172,8 +4278,8 @@ claims:
 - id: TECH-206
   claim: At the other end of the range, an EST-alignment pipeline that counted any EST cluster differing from
     the RefSeq reference at one or more splice sites as a variant reported alternative splicing in 3,490 of
-    4,322 screened genes, or 81 per cent, from the same kind of data that produced the 35 to 42 per cent estimates.
-  topic: thresholds - the same data at a one-difference inclusion rule
+    4,322 screened genes, or 81 per cent. The abstract does not name the EST collection it screened.
+  topic: thresholds - a one-difference inclusion rule and the prevalence it returns
   source:
     doc_id: '136375998'
     title: Identification of alternatively spliced mRNA variants related to cancers by genome-wide ESTs alignment
@@ -4199,7 +4305,9 @@ claims:
     RefSeq genes), the papers are two years apart, and this abstract does not name the EST source it screened,
     so the only difference that is certainly present is the support rule. The paper''s downstream result, that
     2,149 of 26,812 variants looked tumour-associated by Fisher''s exact test and 383 survived Bonferroni correction,
-    is disease work owned elsewhere and is not claimed here.'
+    is disease work owned elsewhere and is not claimed here. Corrected 2026-11-23 against a records review:
+    the clause attributing the input to the same kind of data as the 35 to 42 per cent estimates is dropped
+    from the claim and from the topic, since the abstract names no EST collection.'
 - id: TECH-207
   claim: Some groups required support from more than one library rather than more than one read. In a study
     of overlapping donor sites, a pair of competing sites counted as genuinely alternatively spliced only if
@@ -4264,10 +4372,11 @@ claims:
     offered for estimating tissue specificity, which is where TECH-184''s library bias would enter.'
 - id: TECH-209
   claim: 'Practitioners who built an EST-based splicing catalogue stated the method''s own wall in their conclusion:
-    having mapped over 580,000 chicken ESTs with a quality-controlled EXONERATE est2genome pipeline and estimated
-    alternative splicing in 50 to 60 per cent of the chicken gene set at about 2.3 transcripts per spliced
-    gene, they wrote that fully characterising alternative splicing demands both a wide range of tissues and
-    a great many sequenced transcripts. No support threshold is stated for the 50 to 60 per cent range.'
+    having mapped over 580,000 chicken ESTs with a quality-controlled EXONERATE est2genome pipeline, and reported
+    that their EST data suggest alternative splicing may occur in some 50 to 60 per cent of the chicken gene
+    set at about 2.3 transcripts for each gene that undergoes it, they wrote that fully characterising alternative
+    splicing demands both a wide range of tissues and a great many sequenced transcripts. No support threshold
+    is stated for the 50 to 60 per cent range.'
   topic: thresholds - a practitioner's statement that breadth of sampling sets the answer
   source:
     doc_id: '116579547'
@@ -4293,14 +4402,16 @@ claims:
     range itself is reported as a range with no threshold attached, which is part of why it is quoted here
     as a practitioner''s limitation rather than as a prevalence estimate. The est2genome model is the alignment
     model the chapter can name for this era; the original est2genome and sim4 papers are not in the corpus.
-    Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
+    Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
+    Corrected 2026-11-23 against a records review: ''estimated'' is replaced by the abstract''s ''suggests
+    ... may occur in some''.'
 - id: TECH-210
-  claim: A head-to-head assessment of EST-era splicing databases found that precision, not recall, was where
-    they failed. Tested against known splicing patterns, ECgene recovered 81.3 to 81.6 per cent of them but
-    with specificity as low as 5.9 per cent; a method that instead required every individual exon and intron
+  claim: A head-to-head assessment of EST-era splicing databases reported sensitivity far above specificity.
+    Tested against known splicing patterns, ECgene was found to recover 81.3 to 81.6 per cent of them with
+    specificity that can fall to 5.9 per cent; a method that instead required every individual exon and intron
     of a reported pattern to have support from the expressed sequences reached 84.9 per cent sensitivity at
-    38.9 per cent specificity on the same dataset. Specificity here is measured against a reference set of
-    known patterns, so it bounds precision from below rather than measuring it.
+    38.9 per cent specificity on the same dataset. Figures are given for ECgene alone; ASD, SpliceNest and
+    the ClusterMerge software are reported as outperformed without individual numbers.
   topic: thresholds - sensitivity and specificity of a published variant catalogue
   source:
     doc_id: '110563679'
@@ -4323,12 +4434,16 @@ claims:
     and none of the three tier phrases in the brief fits it. Abstract-only; authors and journal are RESOLVE_FROM_DOI.
     This is the published comparison between EST-era resources that the chapter needs, and the two caveats
     are both important. The numbers come from the authors of the competing method, so the comparison is interested;
-    and ''specificity'' here is measured against a set of known patterns, which means a predicted pattern absent
-    from that reference set counts as a false positive even if it is real, so 5.9 per cent is a lower bound
-    on precision rather than a verdict that 94 per cent of ECgene''s output is wrong. The abstract states that
-    the same approach also outperformed ASD, SpliceNest and the ClusterMerge software, without giving their
-    individual figures. The mechanism of their fix is the item 4 answer: per-exon and per-intron support, because
-    an erroneous sequence is usually inconsistent with the others at the locus.'
+    and the abstract gives no definition of ''specificity''. The reading that it is measured against the reference
+    set of known patterns, so that a predicted pattern absent from that set counts as a false positive even
+    if real and 5.9 per cent is therefore a lower bound on precision, is this record''s own inference and is
+    not stated anywhere in the source, which is why it has been taken out of the claim. The abstract states
+    that the same approach also outperformed ASD, SpliceNest and the ClusterMerge software, without giving
+    their individual figures. The mechanism of their fix is the item 4 answer: per-exon and per-intron support,
+    because an erroneous sequence is usually inconsistent with the others at the locus. Corrected 2026-11-23
+    against a records review: the plural ''databases ... they failed'' is scoped to ECgene, which is the only
+    resource with figures, and the specificity definition is moved out of the claim because it is not in the
+    source.'
   figure_idea: A sensitivity-against-specificity plane with one point per EST-era resource and per support
     rule, so the reader sees that moving the support threshold moves a catalogue along a curve rather than
     toward a single correct answer.
@@ -4371,12 +4486,12 @@ claims:
     count at the bottom, annotated at each step with what the step requires, so the reader sees that the filter
     removes noise and coverage together.
 - id: TECH-212
-  claim: The statistical filter and the conservation filter broadly agreed. In the analysis that reduced EST-derived
-    alternative splicing to 17 to 28 per cent of 6,400 human RefSeq genes, variants surviving the above-5-per-cent,
-    above-95-per-cent-confidence selection were conserved across species in mouse ESTs at a significantly higher
-    rate than the rest, and validated against the GenBank mRNA collection at a significantly higher rate as
-    well.
-  topic: conservation filter - two independent filters converging on the same subset
+  claim: The statistical filter and the conservation filter picked out overlapping sets. In the analysis that
+    reduced EST-derived alternative splicing to 17 to 28 per cent of 6,400 human RefSeq genes, the variants
+    surviving the above-5-per-cent, above-95-per-cent-confidence selection showed a significantly higher rate
+    of conservation in mouse ESTs and a significantly higher rate of validation against the GenBank mRNA collection;
+    the line names no comparison group and gives no effect size.
+  topic: conservation filter - a frequency threshold and a conservation requirement selecting overlapping sets
   source:
     doc_id: '141190147'
     title: Selecting for Functional Alternative Splices in ESTs
@@ -4400,14 +4515,17 @@ claims:
     higher rates'', so the claim must stay at direction and must not acquire a number. The conservation comparison
     is against mouse ESTs, which is transcriptome-level conservation as in TECH-211 and not genomic alignment,
     so it inherits the same mouse-coverage limit. What makes this the pivot of the section is that it is one
-    dataset in which a frequency threshold and a conservation requirement select overlapping sets without either
-    having been used to define the other. Claim restated 2026-11-23 to remove an 8-word span shared with its
-    own audit quote; content unchanged.'
+    dataset in which a frequency threshold and a conservation requirement select overlapping sets; the abstract
+    does not say whether either criterion entered the definition of the other. Claim restated 2026-11-23 to
+    remove an 8-word span shared with its own audit quote; content unchanged. Corrected 2026-11-23 against
+    a records review: the supplied comparator ''than the rest did'' is dropped from the claim and ''independent''
+    is dropped from the topic and this note, neither being in the abstract.'
 - id: TECH-213
   claim: The conservation filter's own chance pass rate was measured with a null control. Taking random intronic
     regions bounded by canonical splice dinucleotides as pseudoexons and putting them through the identical
-    conservation test, those authors found average conservation in rat of between 0.05 and 0.15, so of every
-    100 mouse candidate exons tested for rat conservation, 5 to 15 would be expected to pass by chance alone.
+    conservation test, those authors found that the average conservation of pseudoexons in rat depended on
+    their length and usually fell in the interval 0.05 to 0.15, so of every 100 mouse candidate exons tested
+    for rat conservation, 5 to 15 would be expected to pass by chance alone.
   topic: conservation filter - the chance pass rate, measured on pseudoexons
   source:
     doc_id: PMC2711938
@@ -4433,16 +4551,19 @@ claims:
     to mouse cassette exons not conserved in human or dog, because the authors treat human or dog conservation
     as sufficient to call an exon real. The chapter''s use is that this number is the price of the filter in
     the other direction: a conservation test at one divergence passes a measurable fraction of sequence that
-    was never an exon. First of three records on this document (TECH-213 L28, TECH-214 L18, TECH-215 L32,L43).'
+    was never an exon. First of three records on this document (TECH-213 L28, TECH-214 L18, TECH-215 L32,L43).
+    Corrected 2026-11-23 against a records review: the source''s ''usually belonged to the interval'' and the
+    length dependence are restored to the claim instead of living only in this note.'
   figure_idea: Two overlaid distributions of conservation score, real cassette exons and length-matched pseudoexons,
     with a candidate threshold drawn through both so the shaded overlap is the chance-pass rate.
 - id: TECH-214
-  claim: 'Those authors argue that conservation between two close species cannot establish that an exon is
-    functional, for a reason internal to the method: inside a region of DNA that is conserved for other reasons,
-    chance activation of cryptic splice sites produces an exon that looks conserved, and separately, an exon
-    missing from a sparse EST collection in an outgroup species cannot be inferred absent from its genome.
-    Both errors inflate the apparent number of functional lineage-specific exons.'
-  topic: conservation filter - why conservation is not evidence of function
+  claim: 'Those authors argue that conservation between two close species may not be sufficient to claim an
+    exon functional, for a reason internal to the method: inside a region of DNA conserved for other reasons,
+    chance activation of cryptic splice sites would create an exon that only seems conserved, and separately,
+    an exon missing from a sparse EST collection in an outgroup species may not be absent from that species''
+    genome. Both possibilities, they write, would over-estimate the number of functional rodent-specific exons.'
+  topic: conservation filter - why those authors say conservation between close species may not be enough to
+    claim function
   source:
     doc_id: PMC2711938
     title: Rodent-specific alternative exons are more frequent in rapidly evolving genes and in paralogs
@@ -4466,14 +4587,17 @@ claims:
     it as settled. They also note that the earlier approach discarded mouse exons that could not be aligned
     to rat at all, so some conservation follows by construction. The argument cuts against the conservation
     filter from the side opposite to the usual one: the standard worry is that the filter discards real isoforms,
-    and this is the worry that it admits unreal ones. Second of three records on this document; see TECH-213.'
+    and this is the worry that it admits unreal ones. Second of three records on this document; see TECH-213.
+    Corrected 2026-11-23 against a records review: ''cannot establish'' becomes the source''s ''may not be
+    sufficient'' and ''lineage-specific'' is narrowed back to the source''s ''rodent-specific'', in the claim
+    and in the topic.'
 - id: TECH-215
   claim: The same study separates the two kinds of species-specific exon. The frequency of exons found only
-    in mouse was the same across every group of genes, which those authors explain by most of them not being
-    real; the frequency of exons conserved in mouse and rat but absent from human and dog instead rose from
-    slowly to rapidly evolving genes and was higher in duplicated genes, and after their pseudoexon correction
-    the estimated number of real rodent-specific exons was non-negligible in every gene group, which those
-    authors read as evidence of exon birth.
+    in mouse was the same across every group of genes, which those authors say may be explained by most of
+    them not being real; the frequency of exons conserved in mouse and rat but absent from human and dog instead
+    rose from slowly to rapidly evolving genes and was higher in duplicated genes, and after their pseudoexon
+    correction the estimated number of real rodent-specific exons was non-negligible in every gene group, which
+    those authors read as evidence of exon birth.
   topic: conservation filter - lineage-specific exons that a filter demanding conservation outside rodents
     would discard
   source:
@@ -4506,7 +4630,8 @@ claims:
     one paper does. Independence note: Mironov and Gelfand are authors here and also authors of the 1999 analysis
     that produced the chapter''s 35 per cent figure (TECH-010), so the first genome-scale EST estimate and
     this critique of conservation filtering are not independent. Third of three records on this document; see
-    TECH-213.'
+    TECH-213. Corrected 2026-11-23 against a records review: ''which those authors explain by'' becomes the
+    source''s ''may be explained by'', the modal the stored quote had kept all along.'
 - id: TECH-216
   claim: The first release of one EST-era database reported 30,793 alternative splice relationships in human,
     obtained by aligning expressed sequences in detail against the genomic sequence. The unit, an alternative
@@ -4531,19 +4656,23 @@ claims:
   confidence: high
   note: 'tier: none of the three tiers applies; this is a measurement or method record, not an isoform case,
     and none of the three tier phrases in the brief fits it. Abstract-only; authors and journal are RESOLVE_FROM_DOI.
-    The unit is an alternative splice relationship, which the abstract does not define further, so the 30,793
-    cannot be converted into genes or into events as other resources count them. The ''30-60% of genes reported
-    to have multiple isoforms'' in the same abstract is these authors summarising other groups'' published
+    The unit is an alternative splice relationship, which the abstract does not define further and does not
+    tie to a gene count, so the 30,793 cannot be converted into genes. It must not be read as a different unit
+    from the ''events'' of TECH-217: that later paper uses both words for one figure, ''nearly 90 000 distinct
+    alternative splicing events'' at L6 and ''89 078 distinct alternative splicing relationships'' at L20,
+    so the apparent difference of unit between the two releases is a wording variation. The ''30-60% of genes
+    reported to have multiple isoforms'' in the same abstract is these authors summarising other groups'' published
     estimates, not a result of this work, and must not be cited to this paper. Pairs with TECH-217, the later
     release of the same project. That the two are the same project is stated by the later paper itself, which
     opens by saying it has expanded the ASAP database; this paper''s own author list was not readable in this
     corpus. The two are not independent sources. Claim restated 2026-11-23 to remove an 8-word span shared
-    with its own audit quote; content unchanged.'
+    with its own audit quote; content unchanged. Corrected 2026-11-23 against a records review: the note no
+    longer implies that this release counted a different unit from the later one, because the later paper calls
+    one figure both ''events'' and ''relationships'' a sentence apart.'
 - id: TECH-217
   claim: Three years later the same project reported nearly 90,000 distinct human alternative-splicing events,
     about a threefold expansion over its own previous release, on top of genome-wide analyses for 15 animal
-    species and splice-site conservation across 17 aligned genomes. The unit on this line is a distinct alternative-splicing
-    event, where the first release counted alternative splice relationships.
+    species and conservation of splice sites across 17 aligned genomes.
   topic: databases - the same resource, three years and threefold apart
   source:
     doc_id: PMC1669709
@@ -4562,25 +4691,28 @@ claims:
       90 000 distinct alternative splicing events
   confidence: high
   note: 'tier: none of the three tiers applies; this is a measurement or method record, not an isoform case,
-    and none of the three tier phrases in the brief fits it. Full text. The unit changed as well as the number:
-    the first release reported 30,793 ''alternative splice relationships'' (TECH-216) and this one reports
-    ''distinct alternative splicing events'', and neither paper defines the two against each other, so the
-    threefold figure is the authors'' own comparison of their own two releases and the chapter should say so;
-    L20, cited in TECH-218, states the same expansion as 89,078 alternative splicing relationships within 11,717
-    UniGene clusters, which is the unit the first release used. The introduction of this paper cites 40 to
-    70 per cent as the then-current range for the fraction of alternatively spliced human genes, attributed
-    to three other studies, which is background and is not a finding of this work. Same project as TECH-216,
-    by this paper''s own statement.'
+    and none of the three tier phrases in the brief fits it. Full text. The number moved but the unit did not:
+    this paper calls the figure ''distinct alternative splicing events'' at L6 and ''89 078 distinct alternative
+    splicing relationships'' within 11,717 UniGene clusters at L20, which is the wording the first release
+    used (TECH-216), so the two records count the same unit and the wording difference between the releases
+    is a variation and not a change of unit. The threefold figure is these authors'' own comparison of their
+    own two releases and the chapter should say so. The introduction of this paper cites 40 to 70 per cent
+    as the then-current range for the fraction of alternatively spliced human genes, attributed to three other
+    studies, which is background and is not a finding of this work. Same project as TECH-216, by this paper''s
+    own statement. Corrected 2026-11-23 against a records review: the claim''s closing sentence asserting a
+    unit mismatch against TECH-216 is removed and the variation in wording is recorded here instead, because
+    the paper itself calls one figure both ''events'' and ''relationships''.'
   figure_idea: A timeline of one resource's successive releases with its reported event total at each, and
     underneath, the size of the expressed-sequence collection it was built from, so the reader sees the catalogue
     tracking the archive.
 - id: TECH-218
-  claim: Inside one release of one database, the prevalence figure moves with the coverage requirement and
-    nothing else. The release holding 89,078 human alternative splicing relationships across 11,717 UniGene
-    clusters reported alternative splicing in 53 per cent of the 22,220 multi-exon genes it covered, and in
-    75 per cent (10,202 of 13,690) once the gene set was restricted to genes with at least one mRNA sequence,
-    which those authors note generally have higher EST coverage.
-  topic: databases - one release, two prevalence figures, one coverage rule apart
+  claim: Inside one release of one database, the prevalence figure moves with the gene set. The release holding
+    89,078 human alternative splicing relationships across 11,717 UniGene clusters reported alternative splicing
+    in 53 per cent of the 22,220 multi-exon genes it covered, and in 75 per cent (10,202 of 13,690) once the
+    gene set was narrowed to genes carrying at least one mRNA sequence, a restriction those authors give as
+    a proxy both for a likely full-length gene model and for higher EST coverage. The second set is a subset
+    of the first, so this is not a threshold moved over one fixed gene set.
+  topic: databases - one release, two prevalence figures over a set and a subset of it
   source:
     doc_id: PMC1669709
     title: 'The ASAP II database: analysis and comparative genomics of alternative splicing in 15 animal species'
@@ -4599,23 +4731,27 @@ claims:
   note: 'tier: none of the three tiers applies; this is a measurement or method record, not an isoform case,
     and none of the three tier phrases in the brief fits it. Full text. This is the cleanest demonstration
     in the file of the chapter''s argument, because the two figures are in one sentence of one paper over one
-    dataset: the only thing that changes between 53 and 75 per cent is whether a gene is required to have an
-    mRNA sequence, which the authors give as a proxy for a likely full-length gene model and higher EST coverage.
-    Both denominators are stated and are different, 22,220 and 13,690, so neither percentage can be quoted
-    without its gene set. The authors draw the conclusion themselves on the same line: detection keeps growing
-    with EST and mRNA counts, the field is far from saturation, and far more experimental data would be needed
-    for a complete catalogue. This line also gives the expansion in the same unit as the first release''s 30,793,
-    which L6 states as events rather than relationships. Second of two records on this document (TECH-217 L6,
-    TECH-218 L20); different lines, different findings.'
+    dataset: what changes between 53 and 75 per cent is the gene set, narrowed to genes required to carry at
+    least one mRNA sequence, which the authors give as a proxy both for a likely full-length gene model and
+    for higher EST coverage, and the narrowed set is a subset of the wider one rather than the same set under
+    a moved threshold. Both denominators are stated and are different, 22,220 and 13,690, so neither percentage
+    can be quoted without its gene set. The authors draw the conclusion themselves on the same line: detection
+    keeps growing with EST and mRNA counts, the field is far from saturation, and far more experimental data
+    would be needed for a complete catalogue. This line gives the expansion as 89,078 alternative splicing
+    relationships where L6 gives the same figure as nearly 90,000 distinct alternative splicing events, so
+    the two words name one unit and not two. Second of two records on this document (TECH-217 L6, TECH-218
+    L20); different lines, different findings. Corrected 2026-11-23 against a records review: the at-least-one-mRNA
+    rule is given both of the properties the source attaches to it, the ''and nothing else'' is removed, and
+    the comparison is no longer described as a controlled threshold comparison, since the second gene set is
+    a subset of the first.'
   figure_idea: Two bars from one paper, 53 and 75 per cent, each labelled with its gene-set size and the one
     requirement that separates them, placed beside the chapter's 1999-to-2008 column so the reader sees a within-study
     spread as wide as the between-study one.
 - id: TECH-219
-  claim: 'By its next release that consortium had named the two halves: the computational component, AltSplice,
-    held events, introns and exons that are alternatively spliced, splicing patterns per isoform and peptide
-    sequences per isoform, everything in it generated by examining gene-transcript alignments, while AEdb held
-    the manually curated literature component, including experimentally characterised regulatory elements and
-    minigene constructs.'
+  claim: 'The ASD consortium''s resource was built in two named halves: AltSplice, the computational component,
+    held alternatively spliced introns and exons, events, splicing patterns per isoform and peptide sequences
+    per isoform, all of it generated by examining gene-transcript alignments, while AEdb held the manually
+    curated literature component, including experimentally characterised regulatory elements and minigene constructs.'
   topic: databases - what AltSplice contained and how it was generated
   source:
     doc_id: PMC1347394
@@ -4642,13 +4778,16 @@ claims:
     The 76 per cent of genes figure in the introduction of this paper is array data attributed to another study
     and is not a finding here. This paper states that it is the continuation and upgrade of the 2004 ASD release,
     which was read (doc 136528481) but is not recorded in this file; see the leads for what that abstract adds.
-    Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
+    Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.
+    Corrected 2026-11-23 against a records review: the claim no longer dates the naming of the two halves to
+    this release, since the cited line does not place it there and cites the 2004 release, and the unanchored
+    ''that consortium'' is replaced by the ASD consortium named on the line.'
 - id: TECH-221
-  claim: 'Splicing-sensitive microarrays began in budding yeast and not with alternative splicing: the stated
-    design goal of this one was to tell spliced from unspliced RNA at each intron-containing yeast gene, they
-    were used to read out the genome-wide splicing consequences of losing each of 18 different mRNA processing
-    factors, and gene-specific indexes were introduced to absorb the changes in transcription and decay that
-    came with those losses.'
+  claim: 'An early splicing-sensitive microarray was built for yeast and not for alternative splicing: the
+    stated design goal of this one was to tell spliced from unspliced RNA at each intron-containing yeast gene,
+    it was used to measure what the loss of 18 different mRNA processing factors did to splicing genome-wide,
+    and gene-specific indexes were used to accommodate the changes in transcription and decay that came with
+    those losses.'
   topic: arrays - an early splicing-sensitive array and what it was designed to discriminate
   source:
     doc_id: '175452550'
@@ -4675,7 +4814,10 @@ claims:
     journal are absent from meta.json and were read from the reference list of PMC1896007 at L102, not supplied
     from memory; the writing pass should treat them as corpus-read rather than crossref-resolved. Not independent
     of TECH-248 to TECH-258: Tyson A. Clark is first author of both this paper and the 2007 Affymetrix exon-array
-    survey.'
+    survey. Corrected 2026-11-23 against a records review: the priority claim ''began in budding yeast'' is
+    dropped, since the cited line makes none and the strongest wording anywhere in the corpus is ''one of the
+    earliest attempts''; ''budding yeast'' is reduced to the line''s ''yeast''; the indexes are described as
+    used rather than introduced; and the claim no longer implies the 18 factors were lost one at a time.'
 - id: TECH-222
   claim: 'The yeast splicing array''s calls were checked against a one-locus assay rather than taken on their
     own: quantitative PCR confirmed what the array had indicated, namely that introns whose branchpoint lies
@@ -4950,10 +5092,12 @@ claims:
     sequencing quantification needs very deep data because exons are short, and they restricted the comparison
     to genes with enough tags.'
 - id: TECH-231
-  claim: 'The artefact has a stated magnitude and a stated scope: alternative splicing events are overestimated
-    12-fold, those authors report, and that figure applies to genes differentially expressed between the samples
-    compared rather than to genes in general, the effect being strongly reduced though not absent when few
-    genes change.'
+  claim: 'The artefact has a stated magnitude and a narrower demonstrated scope: those authors report in their
+    abstract that the bias inflates the count of alternative splicing events twelve-fold among genes whose
+    expression differs between the samples compared, but the only figure in the body that rounds to 12 is an
+    11.9-fold reduction in significant alternative exons achieved by their nonlinear correction for genes changing
+    at least 4-fold, on one test dataset; they also state that the effect is strongly reduced, though not absent,
+    when few genes change.'
   topic: arrays - the size of the overestimation and the genes it applies to
   source:
     doc_id: PMC2760813
@@ -4966,8 +5110,8 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L5,L46
-    anchor: https://paperclip.gxl.ai/citations/papers/PMC2760813#L5,L46
+    lines: L5,L43,L46
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC2760813#L5,L43,L46
     quote: This effect is substantial and results in a 12-fold overestimation of alternative splicing events
       in genes that are differentially expressed.
   confidence: high
@@ -4975,12 +5119,17 @@ claims:
     not an isoform case. Physical readout: Affymetrix human and mouse exon-array intensities across many tissues.
     What was ratioed against what: the count of exons called alternatively spliced before correction against
     the count after, within bins of absolute gene-fold change. The 12-fold figure appears in the abstract line
-    of this full-text record; the body lines read here, L43 and L44, describe the correction and a corrected-against-uncorrected
-    count binned by gene-fold change but do not restate the 12-fold number, and no line read here says how
-    the 12-fold ratio was computed or over which exon set, so a chapter sentence must attribute it as the authors''
-    own summary figure and not restate it as a count. TECH-018 already records the failure of the assumption
-    from L11; this record adds only the magnitude and its scope. Claim restated 2026-11-23 to remove an 8-word
-    span shared with its own audit quote; content unchanged.'
+    of this full-text record; L43 does give a basis: the only figure in the paper that rounds to 12 is COSIE
+    reducing the count of significant alternative exons by a factor of 11.9 for genes changing at least 4-fold,
+    against 4.4 overall, on the universal-reference-against-brain-reference test dataset, with the linear correction
+    giving six-fold and three-fold on the same split. So the demonstrated scope is narrower than ''genes that
+    are differentially expressed'', and the abstract''s 12-fold is the authors'' own summary figure and must
+    be attributed as such. TECH-018 already records the failure of the assumption from L11; this record adds
+    only the magnitude and its scope. Claim restated 2026-11-23 to remove an 8-word span shared with its own
+    audit quote; content unchanged. Corrected 2026-11-23 against a records review: the claim now carries the
+    narrower demonstrated scope, the 11.9-fold reduction for genes changing at least 4-fold on one test dataset,
+    and the note no longer says no line gives a basis; the cited range is extended to L43, which carries that
+    figure (a patch of claim, topic and note alone will not carry that).'
 - id: TECH-232
   claim: 'The artefact is reproducible across species because probe sequence is conserved: mouse and human
     homologous probeset response slopes correlated at Pearson 0.426 as measured from tissue-panel data and
@@ -5162,10 +5311,12 @@ claims:
     itself.'
 - id: TECH-238
   claim: As implemented for the Affymetrix human exon junction array, the splicing index is the background-corrected
-    intensity of a single probe divided by that gene's estimated expression index, and an event is called only
-    when two one-sided t-tests per probe, summarised to a probeset p-value by Fisher's method, put the skip
-    probeset and at least one of the three include probesets below a default cutoff of 0.001 with opposite
-    directions of change between the sample groups.
+    intensity of a single probe divided by that gene's estimated expression index; two one-sided t-tests per
+    probe are summarised to a probeset p-value by Fisher's method, and an event is called only where probesets
+    targeting competing isoforms show opposite trends. For an exon-skipping event, which those authors give
+    as one example of that rule, this means requiring the skip probeset together with one or more of the three
+    include probesets to fall below a default cutoff of 0.001, with opposite directions of change between the
+    sample groups.
   topic: arrays - the splicing index as implemented, and the rule that turns it into an event call
   source:
     doc_id: PMC2804303
@@ -5190,7 +5341,10 @@ claims:
     selecting the subset of exon probes whose intensities correlate across samples and fitting them to the
     Li-Wong model, so the denominator deliberately excludes probes that look alternatively spliced, as at TECH-235.
     The opposite-direction requirement is the part worth the chapter''s attention: a designed platform can
-    demand that the include and skip probes disagree, which a single ratio cannot.'
+    demand that the include and skip probes disagree, which a single ratio cannot. Corrected 2026-11-23 against
+    a records review: the skip-plus-one-of-three-include geometry is demoted to the authors'' own example of
+    the general opposite-trends rule, which is how the cited line presents it and which does not hold for the
+    other event classes the pipeline reports.'
 - id: TECH-239
   claim: 'The alternatives to the splicing index each changed one assumption and kept the rest: ANOSVA, which
     the array''s manufacturer recommended, tests whether all interaction terms of a two-way analysis of variance
@@ -5447,8 +5601,8 @@ claims:
     lines each compared on-array against the normal glial line FGG, on two-colour arrays carrying 38,425 splice
     junctions across 2,145 cancer-related genes, the evidence ANOSVA reported for differential splicing rose
     with the gene''s estimated differential-expression fold change while the rank-based method''s evidence
-    did not, and those authors argue from that dependence that ANOSVA''s differential-splicing estimates carry
-    a bias and are substantially too high.'
+    showed little dependency on it, and those authors argue from that dependence that ANOSVA''s differential-splicing
+    estimates carry a bias and are substantially too high.'
   topic: arrays - the overestimation replicated on a different platform
   source:
     doc_id: arx_1104.3016
@@ -5475,13 +5629,17 @@ claims:
     independently on two-colour printed junction arrays from a different group, so it is a property of comparing
     two probes and not of one vendor''s product. Those authors also state their own method''s cost, that it
     detects only changes large enough to reverse a rank. Claim restated 2026-11-23 to remove an 8-word span
-    shared with its own audit quote; content unchanged.'
+    shared with its own audit quote; content unchanged. Corrected 2026-11-23 against a records review: ''did
+    not'' becomes the source''s ''has little dependency''.'
 - id: TECH-248
-  claim: On a prototype human exon array, of the 32 brain-enriched probesets with the most significant splicing-index
-    p values, 84.4 per cent, showed clear enrichment in brain tissues by RT-PCR with primers in flanking exons;
-    21 of the top 23 ranked instead by magnitude of change, 91.3 per cent, showed clear brain-specific patterns;
-    and across the whole project 72 of 84 predicted tissue-enriched probesets were confirmed, 86 per cent.
-  topic: arrays - the RT-PCR validation rate, with its denominator and its criterion
+  claim: On a prototype human exon array, 27 of the 32 brain-enriched probesets with the most significant splicing-index
+    p values, 84.4 per cent, were scored as clearly enriched in the brain tissues by RT-PCR from primers placed
+    in the flanking exons; 21 of the top 23 ranked instead by magnitude of change, 91.3 per cent, showed clear
+    brain-specific patterns; and across the whole project 72 of 84 predicted tissue-enriched probesets were
+    confirmed, 86 per cent. The cited line states no rule for what counts as clear, accounts for at most 55
+    of the 84, and says the size difference between the skip and the include product matched the exon's size
+    in nearly all cases rather than in all.
+  topic: arrays - the RT-PCR validation rate, with its denominators and no stated criterion
   source:
     doc_id: PMC1896007
     title: Discovery of tissue-specific exons using comprehensive human exon microarrays
@@ -5500,15 +5658,21 @@ claims:
       in flanking exons.
   confidence: high
   note: 'tier: none of the three case tiers applies; this is a measurement-argument record about an assay,
-    not an isoform case. Physical readout: agarose gels of RT-PCR products amplified with primers in constitutive
-    exons flanking the predicted region, scored by eye. Criterion: a clear higher-molecular-weight band in
-    the six brain tissues, with the size difference between skip and include products matching the size of
-    the exon the probeset was designed to detect; those authors also note a commonly seen artefact band just
-    below the larger product, a heteroduplex of the two forms. What was ratioed against what: on the array,
-    probeset intensity over transcript-cluster expression, brain against non-brain. The denominators are top-ranked
-    candidates after the filtering at TECH-236 and the eligibility restrictions at TECH-249, not a random sample
-    of array calls, so 84.4 and 86 per cent bound the best case and not the average call. This is the platform
-    vendor validating its own prototype.'
+    not an isoform case. Physical readout: gels of RT-PCR products amplified with primers in exons flanking
+    the predicted region; L71 and L88, which this record does not cite, describe the gel, 2.5 per cent agarose
+    stained with ethidium bromide and primers in well annotated exons flanking the region, and no line read
+    states how a gel was scored, so the scoring rule is unstated. The cited line states no rule for what counts
+    as clear enrichment: it says the higher molecular weight band present in the six brain tissues indicates
+    inclusion, and that in nearly all cases the size difference between the skip and the include product is
+    identical to the size of the exon the probeset was designed to detect. It also notes a commonly observed
+    artefact band just below the larger product, a heteroduplex of the two forms. What was ratioed against
+    what: on the array, probeset intensity over transcript-cluster expression, brain against non-brain. The
+    denominators are top-ranked candidates after the filtering at TECH-236 and the eligibility restrictions
+    at TECH-249, not a random sample of array calls, so 84.4 and 86 per cent bound the best case and not the
+    average call. This is the platform vendor validating its own prototype. Corrected 2026-11-23 against a
+    records review: the dropped numerator 27 is restored to the claim, the ''in nearly all cases'' qualifier
+    and the absence of a stated criterion are moved out of this note and into the claim, and the gel scoring
+    is attributed to the uncited lines L71 and L88, and the topic no longer promises a criterion.'
 - id: TECH-249
   claim: 'That validation rate is bounded by what was eligible to be tested: only internal events with constitutive
     flanking exons were tried, nothing was tested at the extreme edges of transcript clusters, and no probeset
@@ -5631,8 +5795,15 @@ claims:
     it is a statement about which events the probe set can represent at all. This bounds TECH-019, which carries
     the blind spot from a 2008 RNA-seq paper''s general remark that the variably included region is often small:
     here the designers give the threshold, 17 nucleotides, and say they did try to cover larger shifts by splitting
-    exons into multiple regions. A chapter sentence saying arrays could not see alternative splice sites at
-    all would be wrong against this line.'
+    exons into multiple regions. The 17 bounds the minimum length of a probe selection region that could be
+    given a probe pair; it is not a probe length and not a detection limit. A chapter sentence saying arrays
+    could not see alternative splice sites at all is unsupported by this line rather than refuted by it. The
+    line states design intent, that the array should be able to detect such changes, and nothing in this paper
+    demonstrates the detection, since its validation work was on cassette exons and offers only an indirect
+    correlation proxy. The splitting was applied only where sequence evidence already showed the alternative
+    edges, so it inherits the annotation dependence. Corrected 2026-11-23 against a records review: the note
+    no longer treats a chapter sentence about arrays missing alternative splice sites as refuted rather than
+    unsupported, since nothing in the paper demonstrates the detection.'
 - id: TECH-253
   claim: The same designers left exon-exon junction probes off the array on purpose, reasoning that a junction
     design can only enumerate junctions that have already been observed, that even the fullest list of splice
@@ -5780,8 +5951,8 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L43
-    anchor: https://paperclip.gxl.ai/citations/papers/PMC1896007#L43
+    lines: L43,L44
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC1896007#L43,L44
     quote: a gene that expresses multiple isoforms in the same proportion in each tissue tested will not be
       detected as differential alternative splicing.
   confidence: high
@@ -5791,7 +5962,10 @@ claims:
     blind to any constant. This is the practitioner''s own account the chapter prefers, and it is the reason
     an array-era prevalence figure and an RNA-seq-era prevalence figure count different things even when both
     are quoted as percentages of genes that are alternatively spliced. The same line also records that cross-hybridising
-    probesets and genes changing more than ten-fold were filtered out of these comparisons, as at TECH-236.'
+    probesets and genes changing more than ten-fold were filtered out of these comparisons, as at TECH-236.
+    Corrected 2026-11-23 against a records review: the cited range is extended to L44, which carries the 72.8
+    per cent and its denominator of 12,139 detected genes; L43 alone does not (a patch of claim, topic and
+    note alone will not carry that, so the lines and anchor must be extended by hand).'
 - id: TECH-258
   claim: 'What the designed array could establish that EST data could not was the existence of exons absent
     from the sequence databases: 287 of the 2,161 brain-enriched probesets were supported only by gene-prediction
@@ -5831,7 +6005,7 @@ claims:
     expression of alternatively spliced exons and of whole isoforms from high-throughput sequencing of cDNA
     fragments and assesses confidence in those estimates, detects differentially regulated exons or isoforms,
     and gained accuracy from incorporating the mRNA fragment length distribution of paired-end data.
-  topic: short-read RNA-seq - the historical shift from a designed ratio to an estimate with an interval
+  topic: short-read RNA-seq - the historical shift from a designed ratio to an estimate with a stated confidence
   source:
     doc_id: '97989760'
     title: Analysis and design of RNA sequencing experiments for identifying isoform regulation
@@ -5858,11 +6032,14 @@ claims:
     so the claim does not either. Scope is deliberately narrow: research/ALLOCATION.md gives the statistical
     properties of PSI estimation to chapter 1, so this record states only the historical move and makes no
     claim about estimator behaviour. Abstract-only; authors and journal were read from a corpus reference list
-    at bio_7f6a8ea76d24, since meta.json carries neither.'
+    at bio_7f6a8ea76d24, since meta.json carries neither. Corrected 2026-11-23 against a records review: the
+    topic''s ''interval'' is replaced by the abstract''s ''assesses confidence'', since the word interval appears
+    nowhere in the source and the topic is a gate-indexed field.'
 - id: TECH-261
-  claim: 'The community assessment of spliced alignment ran 26 alignment protocols from nine development teams
-    over the same libraries of 76-nucleotide paired-end reads: 1.3 billion reads from the human K562 cell line,
-    110 million from mouse brain, and two simulated human transcriptomes of 80 million reads each.'
+  claim: 'The community assessment of spliced alignment ran 26 alignment protocols over the same data: 76-nucleotide
+    paired-end reads comprising 1.3 billion from the human K562 cell line, 110 million from mouse brain, and
+    two simulated human transcriptomes of 80 million reads each. Nine development teams contributed alignments
+    and the assessors added two versions of TopHat themselves, so not all 26 protocols came from the nine teams.'
   topic: spliced alignment - what the RGASP alignment assessment measured
   source:
     doc_id: PMC4018468
@@ -5883,14 +6060,17 @@ claims:
   confidence: high
   note: 'tier: method assessment, not an isoform-specific perturbation. Companion to the RGASP transcript assessment
     already cited as TECH-030 and TECH-031; same consortium, overlapping author list, so the two are not independent.
-    The count of 26 protocols is at L31 and the data description at L33.'
+    The count of 26 protocols is at L31 and the data description at L33. Corrected 2026-11-23 against a records
+    review: the claim no longer attributes all 26 protocols to the nine development teams, since the assessors
+    added two TopHat versions of their own.'
   figure_idea: A single library (one dataset, one read length) fanning out into 26 alignment outputs, with
     the x axis the fraction of read pairs placed; the point is the spread of a software-dependent quantity
     on fixed input, not which program wins.
 - id: TECH-262
-  claim: Run on the same six K562 samples, the protocols differed in how much of the library they placed at
-    all, from 68.4 to 95.1 per cent of 76-base read pairs, with a mean of 91.5 per cent and a standard deviation
-    of 5.4 points.
+  claim: Across the K562 samples, the protocols differed in how much of the library they placed at all, from
+    68.4 to 95.1 per cent of 76-base read pairs, with a mean of 91.5 per cent and a standard deviation of 5.4
+    points. The metrics were averaged over the six K562 datasets, but a subset of those samples was not processed
+    by PALMapper or ReadsMap, so not every protocol saw all six.
   topic: spliced alignment - how much of a library enters the analysis is software-dependent
   source:
     doc_id: PMC4018468
@@ -5904,13 +6084,16 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L36
-    anchor: https://paperclip.gxl.ai/citations/papers/PMC4018468#L36
+    lines: L36,L80
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4018468#L36,L80
     quote: There were major differences among protocols in the alignment yield (68.4–95.1% of K562 read pairs;
       mean = 91.5%, s.d. = 5.4)
   confidence: high
   note: 'tier: method assessment. Averaged over the six K562 samples (two biological replicates each of whole-cell,
-    cytoplasmic and nuclear poly(A)+ RNA, L71). The spread is across protocols, not across samples.'
+    cytoplasmic and nuclear poly(A)+ RNA, L71). The spread is across protocols, not across samples. Corrected
+    2026-11-23 against a records review: the claim no longer says every protocol was run on the same six K562
+    samples, since the paper records at L80 that a subset was not processed by two of them; the cited range
+    is extended to L80 (a patch of claim, topic and note alone will not carry that).'
 - id: TECH-263
   claim: On the first simulated human transcriptome of 80 million 76-base reads, the four best-performing aligners
     placed 96.3 to 98.4 per cent of spliced reads at the correct locus, but aligned every base of the read
@@ -5935,7 +6118,9 @@ claims:
   confidence: high
   note: 'tier: method assessment. The four programmes are GSNAP, GSTRUCT, MapSplice and STAR. Simulation 1
     carried 20 per cent of signal from novel isoforms, substitutions at 0.001 per base pair and indels at 0.0005
-    (L73); simulation 2 was harsher and the same four did worse (L44).'
+    (L73); simulation 2 was harsher, and the methods L44 names as losing performance on it are MapSplice, PASS
+    and TopHat, not these four. Corrected 2026-11-23 against a records review: the note no longer says the
+    same four programs degraded on the second simulation, which names a different set.'
 - id: TECH-264
   claim: 'Splices near a read end were the ones that failed: accuracy rose when the assessment was limited
     to splices falling between positions 20 and 57 of the 76-base reads, and most protocols lost sensitivity
@@ -6013,8 +6198,8 @@ claims:
 - id: TECH-267
   claim: 'Giving the aligner an annotation traded one error for another: on the 80 million simulated 76-base
     reads, protocols supplied with Ensembl annotation recovered nearly all known junctions of transcripts that
-    were actually expressed, and also placed reads at thousands of annotated junctions that the simulated transcriptome
-    never expressed.'
+    were actually expressed, and most of those protocols also put reads on thousands of annotated junctions
+    that the simulated transcriptome never expressed.'
   topic: spliced alignment - annotation-guided versus de novo junction discovery
   source:
     doc_id: PMC4018468
@@ -6035,7 +6220,9 @@ claims:
   confidence: high
   note: 'tier: method assessment. Measurable only because the simulation knows which annotated junctions were
     expressed. The effect was worst for TopHat2, PALMapper and STAR; for discovery of junctions absent from
-    the annotation, GSTRUCT and MapSplice were best (same line).'
+    the annotation, GSTRUCT and MapSplice were best (same line). Corrected 2026-11-23 against a records review:
+    the source''s ''most of these protocols'' is restored to the second half of the claim, which had been left
+    unqualified.'
 - id: TECH-268
   claim: 'Every protocol scattered reads over more genes than had produced them: the 80 million 76-base reads
     of the first simulation originated in 16,554 Ensembl genes, yet every protocol placed primary alignments
@@ -6062,10 +6249,13 @@ claims:
     This is the same failure mode that Robert and Watson quantify at the gene level in TECH-285. Claim restated
     2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: TECH-269
-  claim: 'A program that trims a read end rather than failing on it looks more accurate per base and places
-    less of the library: PASS and SMALT truncated extensively, while TopHat, which does not truncate, averaged
-    84 per cent yield on the 76-base K562 data against 90 per cent for MapSplice.'
-  topic: spliced alignment - soft clipping and truncation as an accuracy-yield trade
+  claim: 'Truncating a read end rather than failing on it raises the share of the library that gets placed,
+    at the cost of placing it only partly: the programs that can truncate reported more primary alignments
+    free of mismatches partly because they can output an incomplete alignment instead of failing, and TopHat,
+    which does not truncate, averaged 84 per cent yield on the 76-base K562 data against 90 per cent for MapSplice,
+    which those authors attribute, with a ''likely'', to that lack of truncation. Yield here is defined as
+    the percentage of read pairs mapped, not of bases.'
+  topic: spliced alignment - truncation as a trade between placing a read whole and placing it at all
   source:
     doc_id: PMC4018468
     title: Systematic evaluation of spliced alignment programs for RNA-seq data
@@ -6078,14 +6268,22 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L38
-    anchor: https://paperclip.gxl.ai/citations/papers/PMC4018468#L38
+    lines: L34,L38
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4018468#L34,L38
     quote: The mapping yield of TopHat was particularly low (mean yield of 84% on K562 data, compared to 90%
       for MapSplice
   confidence: high
-  note: 'tier: method assessment. The authors attribute TopHat''s low yield to the absence of read truncation.
-    The complementary artefact is at L50: programs that do not truncate (BAGET, GEM, MapSplice, PALMapper,
-    TopHat) produced an excess of mismatches at read termini.'
+  note: 'tier: method assessment. The authors attribute TopHat''s low yield to a lack of read truncation and
+    hedge it with ''likely''. L38 lists GSNAP, GSTRUCT, MapSplice, PASS, SMALT and STAR as the methods that
+    can truncate read ends. L50 says BAGET, GEM, MapSplice, PALMapper and TopHat produced an excess of mismatches
+    at read termini while other methods avoided that bias by truncating reads, so MapSplice appears on both
+    lists and the paper''s own two lines disagree about it; that L50 list must not be glossed as the non-truncating
+    programs. Corrected 2026-11-23 against a records review: the direction is reversed to the one the paper
+    states, that truncation raises the fraction of the library placed, the authors'' ''likely'' is restored,
+    yield is defined as read pairs rather than bases, the topic no longer calls this an accuracy-yield trade,
+    and the note no longer calls the L50 list the non-truncating programs; the cited range is extended to L34,
+    the figure legend that defines yield as the percentage of read pairs mapped (a patch of claim, topic and
+    note alone will not carry that).'
 - id: TECH-270
   claim: 'Reporting three or more splices in one 76-base read is where the aligners separated: recall for alignments
     spanning three or more introns reached 79.3 per cent for the annotation-guided TopHat2 protocol on the
@@ -6189,10 +6387,12 @@ claims:
   note: 'tier: practitioners'' own statement of a limitation, which the chapter brief prefers over a retrospective.
     Written in 2013, before long reads were routine, and the same sentence anticipates them.'
 - id: TECH-274
-  claim: 'Strand is not a property of an unstranded library''s reads: five of the evaluated programs emitted
-    no strand tag at all, and for the unstranded simulated data the assessors had to infer each transcript''s
-    strand from the dinucleotides at its inferred intron ends, a route unavailable for an unspliced transcript.'
-  topic: library preparation - why an unstranded library loses information the assembler needs
+  claim: 'A missing strand tag is a property of a program''s output and not of the library: five of the evaluated
+    programs emitted no XS tag at all, so the assessors post-processed those programs'' alignments to add one,
+    from alignment orientation and read number for the strand-specific K562 data, and from the dinucleotides
+    at the ends of each inferred intron for the simulated data, a route that needs at least one exon junction
+    and so is unavailable for an unspliced transcript.'
+  topic: library preparation - a missing strand tag as a property of a program's output
   source:
     doc_id: PMC4018468
     title: Systematic evaluation of spliced alignment programs for RNA-seq data
@@ -6212,11 +6412,15 @@ claims:
   note: 'tier: method assessment. The K562 libraries were strand-specific and the mouse brain library was not
     (L71). L88 states that for the simulated data only exons of spliced transcripts were required to be on
     the correct strand, because a single-exon transcript''s orientation cannot be predicted reliably unless
-    the library is strand-specific.'
+    the library is strand-specific. Corrected 2026-11-23 against a records review: the claim no longer presents
+    the missing tag as a property of an unstranded library, and the post-processing is described as applying
+    to the strand-specific data too, by a different route, and the topic no longer says an unstranded library
+    loses the information.'
 - id: TECH-275
-  claim: In blood libraries sequenced by both routes to about 50 million reads, paired and totalling 302 bases,
-    the ratio of splice-junction read support between ribosomal-depleted and poly(A)-selected libraries rose
-    with transcription length, so which junctions a short-read library supports depends on the enrichment step.
+  claim: In blood libraries sequenced by both routes to a comparable depth of about 50 million reads, the ratio
+    of splice-junction read support between ribosomal-depleted and poly(A)-selected libraries rose with transcription
+    length, so which junctions a short-read library supports depends on the enrichment step. The blood data
+    are a public dataset for which this paper states no read length and no layout.
   topic: library preparation - poly(A) selection against ribosomal depletion, measured on junctions
   source:
     doc_id: PMC13339413
@@ -6230,17 +6434,26 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L24,L46
-    anchor: https://paperclip.gxl.ai/citations/papers/PMC13339413#L24,L46
+    lines: L24,L46,L48
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC13339413#L24,L46,L48
     quote: in blood, where rRNA-depleted and poly(A)+ libraries were sequenced at similar depths, the junction
       support ratio increases with transcription length
   confidence: high
-  note: 'tier: measurement that resolves junctions rather than genes. The blood arm is the clean comparison
-    because both enrichment routes were sequenced to similar depth; the skeletal-muscle arm had ribosomal-depleted
-    libraries at about 100 million read pairs against about 52 million for poly(A), which confounds it. Read
-    length from L46. Chapter 5 already cites this paper as LR-059 for a different finding at L17; this record
-    uses different lines and states a different result. Its bibkey natrajgayathri2026polya is flagged in chapter
-    5''s leads as a guessed surname split.'
+  note: 'tier: a gene-level comparison of splice-junction read support between two enrichment protocols on
+    the same tissue. The junction counts were aggregated to gene-level metrics by transcript-to-gene mapping
+    and the analysis was restricted to highly expressed genes, so this is not a per-junction measurement. The
+    blood arm is the clean comparison because both enrichment routes were sequenced to similar depth; the skeletal-muscle
+    arm had ribosomal-depleted libraries at about 100 million read pairs against about 52 million for poly(A),
+    which confounds it. The 302-base total read length and the paired layout at L46 belong to the authors''
+    own skeletal-muscle libraries; the blood data are the public SRA dataset SRP127360 (L48), for which no
+    read length and no layout given for it, and a grep of the document for a read length found none. Chapter
+    5 already cites this paper as LR-059 for a different finding at L17; this record uses different lines and
+    states a different result. Its bibkey natrajgayathri2026polya is flagged in chapter 5''s leads as a guessed
+    surname split. Corrected 2026-11-23 against a records review: the 302-base read length and the paired layout
+    are removed from the claim, because they belong to the authors'' own skeletal-muscle libraries and not
+    to the public blood dataset, and the tier no longer claims a junction-resolving measurement where the metric
+    was aggregated to gene level; the cited range is extended to L48, which identifies the blood data as a
+    public dataset (a patch of claim, topic and note alone will not carry that).'
 - id: TECH-276
   claim: 'Coverage along a transcript is not uniform and the non-uniformity is set by the enrichment step:
     across two cohorts of 23 skeletal-muscle libraries each, paired reads totalling 302 bases at about 110
@@ -6291,10 +6504,13 @@ claims:
     quote: poly(A) + RNA-Seq failed to detect many novel and cryptic splicing events that were readily captured
       by rRNA-depleted RNA-Seq
   confidence: high
-  note: 'tier: isoform-resolving measurement in the same four patients, which is the strongest design in this
-    paper. Depth is not matched in this arm: ribosomal-depleted libraries about 100 million read pairs against
+  note: 'tier: a within-patient comparison of splicing-event detection between two enrichment protocols, on
+    short reads; the strongest design in this paper. The authors state at L40 that the study is limited by
+    short-read data, which cannot resolve full-length transcript isoforms, so no tier claiming isoform resolution
+    applies. Depth is not matched in this arm: ribosomal-depleted libraries about 100 million read pairs against
     about 52 million for poly(A) (L24), so part of the difference is depth. The paper does not report how many
-    events were missed.'
+    events were missed. Corrected 2026-11-23 against a records review: the isoform-resolving tier is replaced
+    by a descriptive one, because the paper states its short reads cannot resolve full-length isoforms.'
 - id: TECH-278
   claim: The authors who identified random-hexamer priming bias stated that non-uniform read placement directly
     degrades the comparison of an alternatively spliced exon against a constitutively spliced one, and showed
@@ -6349,8 +6565,8 @@ claims:
 - id: TECH-280
   claim: 'Most reads that look like PCR duplicates are not: computationally identified single-end duplicates
     ran from 36 to 74 per cent of reads across the bulk libraries, were explained largely by sampling and fragmentation
-    bias rather than amplification, and removing them raised the false discovery rate by about two percentage
-    points in the two TruSeq datasets.'
+    bias rather than by amplification, and in the authors'' simulations built from those data, removing them
+    raised the false discovery rate by about two percentage points in the two TruSeq datasets.'
   topic: library preparation - PCR duplication and what removing duplicates does
   source:
     doc_id: PMC4860583
@@ -6363,14 +6579,19 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L15,L28
-    anchor: https://paperclip.gxl.ai/citations/papers/PMC4860583#L15,L28
+    lines: L15,L26,L28
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC4860583#L15,L26,L28
     quote: For the bulk data, it ranges from 36–74% and for the single cell data from 6–94%
   confidence: high
   note: 'tier: measurement at gene level, not isoform level, which is the main limit on using it in this chapter.
     Five datasets across Smart-Seq, TruSeq and UMI-seq on Universal Human Reference RNA, Human Brain Reference
     RNA and single HCT116 cells; power and false-discovery simulations were run after downsampling to 3 million
-    mapped reads for bulk and 1 million for single cells (L26). Read length is not stated in the lines read.'
+    mapped reads for bulk and 1 million for single cells (L26). Read length is not stated in the lines read.
+    Corrected 2026-11-23 against a records review: the false-discovery figure is labelled in the claim as coming
+    from the authors'' simulations, where the qualifier had lived only in this note; the cited range is extended
+    to L26, which states that the power and false-discovery analyses were simulated from the estimated gene-expression
+    distributions of the five datasets after downsampling (a patch of claim, topic and note alone will not
+    carry that).'
 - id: TECH-281
   claim: 'Strand specificity is measured as leakage onto the wrong strand and varies by protocol: in a compendium
     of 13 strand-specific libraries built from Saccharomyces cerevisiae poly(A) RNA the four best protocols
@@ -6397,12 +6618,18 @@ claims:
   note: 'tier: method assessment on a single-cell-type yeast poly(A) sample at gene level, so the isoform consequence
     is the authors'' argument at L14 rather than their measurement. The antisense fraction is a strand-specificity
     proxy that assumes most yeast genes have no antisense transcription, which the authors state as a conservative
-    assumption at L33. Sequencing was 76 bases or shorter (L51 discusses reducing read length below 76 bases).'
+    assumption at L33. Read lengths are stated directly at L28: 51 or 76 bases in these authors'' own libraries
+    and 36 bases in the published data they included. What matters more is on the same line - to compare libraries
+    of different read lengths they sampled the first 36 bases of every read, with all comparisons at 2.5 million
+    sampled reads per library unless noted. Corrected 2026-11-23 against a records review: the inferred read
+    length is replaced by the lengths the paper states directly, and by the fact that every comparison was
+    run on the first 36 bases of each read.'
 - id: TECH-282
-  claim: The same in-vitro-transcribed RNA from 1,062 human cDNAs, sequenced as 100-base paired reads after
-    either poly(A) selection or Ribo-Zero depletion, gave different transcript-reconstruction accuracy, with
-    poly(A) selection worse across every algorithm tested and both protocols an order of magnitude worse than
-    the realistic simulation.
+  claim: 'The same in-vitro-transcribed RNA from 1,062 human cDNAs, sequenced as 100-base paired reads after
+    either poly(A) selection or Ribo-Zero depletion, gave different transcript-reconstruction accuracy: poly(A)
+    selection apparently caused more problems across the board than Ribo-Zero, in those authors'' own words,
+    with no per-algorithm breakdown given on the cited line, and both protocols were an order of magnitude
+    worse than the realistic simulation.'
   topic: library preparation - an enrichment choice measured directly on reconstruction accuracy
   source:
     doc_id: PMC4673975
@@ -6423,7 +6650,9 @@ claims:
   note: 'tier: isoform-resolving measurement against known ground truth, which is what makes it usable where
     the gene-level library comparisons are not. The same paper states at L18 that no protocol then known avoided
     severe deviation from uniform coverage within a single transcript. Library depth for the in-vitro-transcription
-    data is not stated in the lines read; the simulated datasets were 50 million paired-end reads (L30).'
+    data is not stated in the lines read; the simulated datasets were 50 million paired-end reads (L30). Corrected
+    2026-11-23 against a records review: ''across the board'' is no longer hardened into a per-algorithm universal
+    and the authors'' ''apparently'' is restored.'
 - id: TECH-283
   claim: In the 2008 human survey of 12 to 29 million 32-base cDNA fragments per sample across ten tissues
     and five cell lines, a unique genomic position was found for about 60 per cent of reads when two mismatches
@@ -6477,10 +6706,11 @@ claims:
     count of zero by at least one of the twelve pipelines, which the authors call undetectable by that method
     (L39). Insert size 250 bases, zero errors, Ensembl GRCh38, longest transcript per gene (L139).'
 - id: TECH-285
-  claim: 'The genes short reads cannot quantify are gene families and their pseudogenes: in the 100-base paired-end
-    human simulation the 843 problem genes were enriched for paralogues at Fisher''s exact p equal to 0.00012,
-    2,431 of 4,847 data-derived multi-map groups contained at least one pseudogene, and re-analysing five real
-    mouse lung-cancer RNA-seq datasets left 27.8 to 43.9 per cent of reads unassignable to a single gene.'
+  claim: The genes short reads cannot quantify are gene families and their pseudogenes. In the 100-base paired-end
+    human simulation, the 843 genes that at least one of the tested methods gave a read count below 100 were
+    enriched for paralogues at Fisher's exact p equal to 0.00012. In the separate re-analysis of five real
+    mouse lung-cancer RNA-seq datasets, 2,431 of 4,847 multi-map groups contained at least one pseudogene,
+    and 27.8 to 43.9 per cent of reads could not be assigned to a single gene.
   topic: multi-mapping - how it varies with gene family, and what it looks like on real data
   source:
     doc_id: PMC4558956
@@ -6501,12 +6731,16 @@ claims:
     the lines read, so the 27.8 to 43.9 per cent range is not length-attributable; the paralogue enrichment
     comes from the 100-base paired-end human simulation, while the 4,847 multi-map groups and their pseudogene
     fraction come from the mouse re-analysis, so the three numbers in this claim are not all from one dataset.
-    The affected families named are DAZ, RBMY1, CT47A, GAGE, TSPY, USP17, NPIP and TBC1D3.'
+    The affected families named are DAZ, RBMY1, CT47A, GAGE, TSPY, USP17, NPIP and TBC1D3. Corrected 2026-11-23
+    against a records review: the multi-map-group figures are moved out of the human-simulation frame and attributed
+    to the mouse re-analysis they come from, where the correction had lived only in this note.'
 - id: TECH-286
-  claim: 'Longer reads did not resolve gene families: across 21,459 paralogous human genes, trimming one set
-    of SEQC paired-end reads in silico to 100, 75 and 50 bases gave equal numbers of reads mapped to those
-    genes, with only the 25-base set differing, a result the authors report as a surprise.'
-  topic: multi-mapping - read length does not buy placement at paralogues
+  claim: 'Longer reads did not change how many reads reached gene families: across 21,459 paralogous human
+    genes, trimming one set of SEQC paired-end reads in silico to 100, 75 and 50 bases gave equal total numbers
+    of reads mapped to those genes, with only the 25-base set differing, a result the authors report as a surprise.
+    What was counted is the total number of reads mapped to those genes and not whether a read landed on the
+    correct paralogue, so equal totals are consistent with equally wrong placement.'
+  topic: multi-mapping - read length does not change how many reads reach paralogues
   source:
     doc_id: PMC4531809
     title: The impact of read length on quantification of differentially expressed genes and splice junction
@@ -6526,10 +6760,14 @@ claims:
   confidence: high
   note: 'tier: measurement at gene level on real reads trimmed in silico, which controls everything except
     length. Negative result, and it cuts against the chapter''s own read-length argument: length buys junction
-    detection (TECH-287) and isoform assignment (TECH-034) but not placement among paralogues. Samples are
-    the SEQC Universal Human Reference RNA and Human Brain Reference RNA, three paired-end replicates each,
-    aligned with STAR to hg19. The paper gives the untrimmed read length as 101 bases in its abstract (L10)
-    and as 100 bases in its methods (L66); the trimmed conditions are 100, 75, 50 and 25 bases either way.'
+    detection (TECH-287) and isoform assignment (TECH-034) but not the number of reads reaching paralogous
+    genes; whether placement among paralogues improves was not measured here. Samples are the SEQC Universal
+    Human Reference RNA and Human Brain Reference RNA, three paired-end replicates each, aligned with STAR
+    to hg19. The paper gives the untrimmed read length as 101 bases in its abstract (L10) and as 100 bases
+    in its methods (L66); the trimmed conditions are 100, 75, 50 and 25 bases either way. Corrected 2026-11-23
+    against a records review: ''resolve'' and ''placement among paralogues'' are removed, because what was
+    measured is the total number of reads mapped to paralogous genes, and this note no longer says length does
+    not buy placement.'
 - id: TECH-287
   claim: 'Changing nothing but the read length changes the junction catalogue: from one set of SEQC paired-end
     reads trimmed in silico to 25, 50, 75 and 100 bases, only about 8 to 9 per cent of known junctions and
@@ -6695,11 +6933,12 @@ claims:
     record the headline recovery figures and the two failure modes from the same paper. Detection was lower
     still for non-coding RNAs.'
 - id: TECH-293
-  claim: Transcript ends were effectively unrecoverable from 76-nucleotide paired-end data, so the assessment
-    had to let predicted first and terminal exons differ from the annotation at their outer edges; without
-    that relaxation, agreement between predicted and annotated transcription start and polyadenylation positions
-    was extremely rare.
-  topic: 'assembly - the structures short reads cannot resolve: transcript boundaries'
+  claim: The assessment let predicted first and terminal exons differ from the annotation at their outer edges
+    because, as those authors write citing the literature, RNA-seq is known to fix poorly where a transcript
+    starts and ends, which they name alongside biological variation as impairing the identification of transcript
+    boundaries; without that relaxation, agreement between predicted and annotated transcription start and
+    polyadenylation positions was extremely rare in their data.
+  topic: assembly - why the assessment relaxed transcript boundaries
   source:
     doc_id: PMC3851240
     title: Assessment of transcript reconstruction methods for RNA-seq
@@ -6719,8 +6958,16 @@ claims:
   confidence: high
   note: 'tier: method assessment, and a statement about the assessment''s own scoring rule rather than a counted
     result; the paper reports it as a Supplementary observation and gives no number in the line read. It matters
-    because every recovery figure from this assessment, including TECH-030, was computed under the relaxed
-    boundary rule and so overstates how completely a transcript was reconstructed.'
+    because every transcript-recovery figure from this assessment, including TECH-030, was computed under the
+    relaxed boundary rule and so overstates how completely a transcript was reconstructed. That statement now
+    has its own record, TECH-300, anchored on the methods lines that carry the rule; it must be cited from
+    there and not from this note. ''Every recovery figure'' would be over-broad, because at exon level the
+    flexible mode held only unless stated otherwise and fixed-mode analyses were also run, and nucleotide-level
+    scoring ignores boundaries under a separate rule at L92. Corrected 2026-11-23 against a records review:
+    the claim no longer asserts that transcript ends were measured to be unrecoverable, since the cited line
+    gives this as a known shortcoming drawn from the literature and names biological variation as a second
+    cause, and the note''s universal is narrowed to transcript-recovery figures and handed to the new record
+    TECH-300.'
 - id: TECH-294
   claim: Ten differential-splicing tools run on the same two human datasets, 28 prostate samples of 90-base
     paired reads and 100 hepatocellular-carcinoma samples of 100-base paired reads, reported between 0 and
@@ -6745,16 +6992,22 @@ claims:
       and limma (35%) in the PCa data set
   confidence: high
   note: 'tier: method assessment on identical input, which is the strongest available evidence that the short-read
-    answer was pipeline-dependent. All tools were given the same annotation, so disagreement is not an annotation
-    effect (L156). The overlap of two versions of one tool reached above 92 per cent for SUPPA, which bounds
-    how much of the disagreement is noise. Briefings in Bioinformatics labels the paper a Review Article but
-    the authors ran every analysis themselves. The prostate reads were truncated to 80 bases for rMATS only
-    (L69).'
+    answer was pipeline-dependent. L156 says the same complete annotation file was used for every method except
+    DiffSplice, which uses no annotation at all, so disagreement is not purely an annotation effect but one
+    of the ten tools was not given the annotation. The overlap of two versions of one tool reached above 92
+    per cent for SUPPA, which bounds how much of the disagreement is noise. Briefings in Bioinformatics labels
+    the paper a Review Article but the authors ran every analysis themselves. The prostate reads were truncated
+    to 80 bases for rMATS only (L69). Corrected 2026-11-23 against a records review: the note no longer says
+    all tools were given the same annotation, because the cited line excepts DiffSplice, which uses none.'
 - id: TECH-295
   claim: 'Whether two event-based tools agree depends on the event class: on simulated libraries of 30, 100
-    and 300 million single-end 100-base reads from a leukaemia cell line and its drug-resistant subclone, matched
-    exon-skipping events gave percent-spliced-in correlations above 0.8 and often above 0.9 between rMATS,
-    MISO and SUPPA2, while retained-intron events fell below 0.5 for rMATS against MISO and rMATS against SUPPA2.'
+    and 300 million reads derived from a leukaemia cell line and its drug-resistant subclone, matched significant
+    exon-skipping, alternative-3''-site and alternative-5''-site events gave percent-spliced-in R-squared above
+    0.8 for most comparisons among rMATS, MISO and SUPPA2, with above 0.9 reached for the rMATS-against-MISO
+    pair alone on exon skipping, while retained-intron events fell below 0.5 for MISO against rMATS and for
+    rMATS against SUPPA2. Taking all events rather than matched significant ones, the same line gives 0.24
+    for MISO against rMATS and 0.23 for SUPPA2 against rMATS. No read length and no layout are stated for the
+    simulated libraries.'
   topic: the size of the wall - agreement between pipelines depends on what is compared
   source:
     doc_id: PMC8236165
@@ -6778,7 +7031,11 @@ claims:
     these authors compared the values of events the tools both called, while Mehmood and colleagues compared
     which genes the tools ranked highest, and the two questions give different answers. No shared authors;
     these authors cite the Mehmood comparison (L66). Reads were simulated with Flux Simulator from StringTie
-    quantifications of real libraries, so the ground truth is a model, not a measurement.'
+    quantifications of real libraries, so the ground truth is a model, not a measurement. Corrected 2026-11-23
+    against a records review: the above-0.9 figure is scoped to the single tool pair it belongs to, the above-0.8
+    statement keeps the source''s ''for most comparisons'' and its three event classes, the values are labelled
+    as R-squared, the all-events coefficients are added, and the single-end 100-base layout is removed because
+    it is stated only for the real libraries.'
 - id: TECH-296
   claim: 'Two pipelines can agree on a transcript''s structure and still disagree on its abundance: in the
     RGASP assessment of 76-nucleotide paired-end libraries at about 100 million read pairs per sample, expression
@@ -6837,10 +7094,12 @@ claims:
     record from this paper after TECH-028 and TECH-029, on different lines and a different claim. Claim restated
     2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: TECH-298
-  claim: 'Most catalogued alternative events were not resolvable in the library that produced the near-universality
-    estimate: of about 105,000 events of eight types compiled from human cDNA and EST data, reads supporting
-    both alternative isoforms were seen for more than a third, in samples of 12 to 29 million 32-base fragments.'
-  topic: the size of the wall - how many annotated events a 32-base library could see both sides of
+  claim: 'In the library that produced the near-universality estimate, more than a third of the catalogued
+    events had reads seen for both of their alternative isoforms: the catalogue held about 105,000 events of
+    eight types compiled from human cDNA and EST data, and the samples were 12 to 29 million 32-base fragments.
+    That fraction is a lower bound on what was observed, so it supports no statement about most of the events
+    in either direction, and what the source reports is non-observation rather than an inability to resolve.'
+  topic: the size of the wall - how many annotated events had both isoforms observed in a 32-base library
   source:
     doc_id: PMC2593745
     title: Alternative Isoform Regulation in Human Tissue Transcriptomes
@@ -6860,7 +7119,10 @@ claims:
   note: 'tier: measurement that resolves events rather than genes. The authors state the fraction only as more
     than a third and refer to a figure for the breakdown by event type, so the chapter should not sharpen it.
     The denominator is an event catalogue built from cDNA and EST data, which carries the EST-era biases recorded
-    in TECH-013 and TECH-014, so it is not a catalogue of all events.'
+    in TECH-013 and TECH-014, so it is not a catalogue of all events. Corrected 2026-11-23 against a records
+    review: the claim no longer turns ''more than a third observed'' into ''most were not resolvable'', which
+    sharpens a lower bound in the wrong direction, and ''not resolvable'' is replaced by the source''s ''not
+    observed''.'
 - id: TECH-299
   claim: The dataset behind the near-universality estimate had a single anonymous donor per tissue, with six
     donors for cerebellar cortex alone to gauge individual variation, and its authors state that detecting
@@ -6887,6 +7149,47 @@ claims:
     are single individuals and five are cell lines, so no tissue except cerebellar cortex has biological replication.
     The depth statement is made about novel exon discovery, where the paper reports 1,413 high-confidence novel
     exons at an estimated false discovery rate below 1.5 per cent.'
+- id: TECH-300
+  claim: 'Transcript recovery in that community assessment was scored under a relaxed boundary rule: a predicted
+    spliced transcript counted as correct if all its splice sites matched the reference while its start and
+    end sites were free to differ from it, and a gene counted as correct if at least one of its annotated isoforms
+    was. The methods state no alternative at those two levels, and the sentence that reports the best methods''
+    transcript-level sensitivity by species says the flexible evaluation mode for first and terminal exons
+    was in force. The matching exon-level relaxation, under which a first or terminal exon needed only its
+    internal border predicted correctly and an exon making up an unspliced transcript counted as correct when
+    a prediction covered at least 60 per cent of it, held only unless stated otherwise, and some analyses were
+    also run in a fixed mode requiring exact matches. So the rule governs that assessment''s transcript-recovery
+    figures rather than every figure in the paper.'
+  topic: assembly - the scoring rule behind the RGASP transcript-recovery figures
+  source:
+    doc_id: PMC3851240
+    title: Assessment of transcript reconstruction methods for RNA-seq
+    authors: The RGASP Consortium; Steijger, T.; Abril, J. F.; Engström, P. G.; Kokocinski, F.; Hubbard, T.
+      J.; Guigó, R.; Harrow, J.; Bertone, P.
+    journal: Nature Methods
+    year: 2013
+    doi: 10.1038/nmeth.2714
+    bibkey: steijger2013assessment
+    metadata_source: crossref
+  evidence:
+    text_access: full_text
+    lines: L61,L93,L94
+    anchor: https://paperclip.gxl.ai/citations/papers/PMC3851240#L61,L93,L94
+    quote: transcript start and end sites were allowed to differ between reference and prediction, but splice
+      sites were required to match exactly
+  confidence: high
+  note: 'tier: a statement of the assessment''s own scoring rule, read from its methods, rather than a counted
+    result. Physical readout: none; this record says how a recovery percentage was defined. L93 carries the
+    exon-level rule, the 60 per cent single-exon threshold and the fixed-mode comparison; L94 carries the transcript-level
+    rule quoted here and the gene-level one-isoform rule; L61 carries the figures recorded as TECH-030, 56
+    to 59 per cent in C. elegans, 43 per cent in D. melanogaster and 21 per cent in H. sapiens, with the statement
+    that the flexible evaluation mode was in force for first and terminal exons. Two limits the claim keeps:
+    the exon-level relaxation held only unless stated otherwise and fixed-mode analyses were also run, and
+    nucleotide-level scoring ignores strand and exact boundaries under a separate rule stated at L92, which
+    this record does not cite, so ''every transcript-recovery figure'' is exact while ''every recovery figure''
+    would be over-broad. L49, cited by TECH-293, gives the authors'' reason for the relaxation. Written 2026-11-23
+    because this statement previously existed only in TECH-293''s note, and a note cannot be cited. Same document
+    as TECH-030, TECH-031, TECH-292, TECH-293 and TECH-296; different lines and a different finding.'
 leads:
 - note: 'Abstract-only records in this corpus expose no `authors` or `journal` field: meta.json carries only
     title, doi, pmid, pmcid, pub_year and the abstract, and `paperclip sql "SELECT id, authors, journal_title
