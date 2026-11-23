@@ -41,6 +41,18 @@ else writes the book prose from your records and will never see the source text.
   `search -s abstracts`, then a keyword `search -s papers`, then a grep for a
   distinctive phrase, and prefer `grep --source abstracts "<exact title phrase>"`,
   which has been the fastest route of all.
+- **`paperclip sql` with an `ILIKE` title match is the route that works.** One
+  agent used it to find **six papers `lookup title` had reported absent**,
+  including two published versions it had been told to look for. Try it before
+  concluding a paper is not held.
+- **A corpus-wide `grep` can silently miss a token that is in a document it
+  covers.** An agent ran `grep --exhaustive "<token>" /papers/` and got "No
+  matches across corpus", then ran `grep -c "<token>"` against one document's own
+  `content.lines` and got 25 hits, in a document the corpus holds and that agent
+  had just read. **A corpus grep returning nothing looks exactly like a clean
+  negative and is not one.** Scope every such negative as "not found by corpus
+  grep", and where a negative matters, re-run it inside the specific documents.
+  A within-document grep is the reliable kind.
 - **Semantic search fails under load.** When every `search` prints "semantic
   search was too slow or failed; results are from keyword search only", title-word
   queries still work and conceptual ones often do not. Say so in your report, and

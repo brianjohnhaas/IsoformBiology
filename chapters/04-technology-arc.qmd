@@ -70,8 +70,8 @@ licensed was therefore the narrow one, that a transcript can be discontinuous.
 
 What that claim displaced was the assumption that a message runs colinear with
 the gene encoding it. A historian of the period records the dismissal of
-universal colinearity as following from two things together. Those were the
-substantiation of the hybrid observation and a second group's parallel
+universal colinearity as following from two things taken together. Those were
+the substantiation of the hybrid observation and a second group's parallel
 discoveries [@fry2024anomaly]. The same account places the observation itself
 inside a transcription-mapping project rather than in an experiment designed
 to find it [@fry2024anomaly].
@@ -411,8 +411,8 @@ case, in which a factor that came out of the reporter screen was depleted
 successfully. Depletion produced no change in the endogenous exon
 [@zheng2013screening]. Reporter variability in that system was suspected to
 come from where and in how many copies the construct had integrated, rather
-than from trans-factor levels. That correlation was near zero
-[@zheng2013screening].
+than from trans-factor levels. The correlation with trans-factor levels was
+near zero [@zheng2013screening].
 
 The construct's promoter decides part of the readout. Swapping promoters on
 one reporter changed which splice site was chosen, including whether the exon
@@ -546,270 +546,275 @@ came from rather than by splicing. One analysis put that at 21 per cent of
 alternatively spliced genes, with a conservative lower bound of 6
 [@nembaware2004transcriptisoforms].
 
-The threshold is where the published numbers actually differ, and the cleanest
-demonstration is inside one release of one database. The release holding 89,078
-human relationships across 11,717 clusters reported alternative splicing in 53
-per cent of the 22,220 multi-exon genes it covered, and in 75 per cent, 10,202
-of 13,690, once the gene set was restricted to genes with at least one mRNA
-sequence [@kim2006asapii]. Those authors attach two properties to that
-restriction, a gene model likely to be full length and generally higher EST
-coverage, and the second figure is a subset of the first rather than the same
-genes under a different support rule. Elsewhere the rule is explicit and
-different: one study accepted a pair of competing sites only when each was
-supported by a protein, a full-length mRNA, or ESTs from two or more independent
-clone libraries [@ermakova2007humangenome], and another reports support per
-transcript instead of a prevalence at all [@pospisil2004splicedatabase]. A
-chicken EST survey states the practitioner's version, that breadth of tissue
-sampling sets the answer [@tang2007alternatesplicing], and one published
-catalogue reports its own sensitivity and specificity rather than a headline
-fraction [@wong2008splicingpatterns].
+The threshold is where the published numbers actually differ. The cleanest
+demonstration is inside one release of one database. The release holding
+89,078 human relationships across 11,717 clusters reported alternative
+splicing in 53 per cent of the 22,220 multi-exon genes it covered. It reported
+75 per cent, 10,202 of 13,690, once the gene set was restricted to genes with
+at least one mRNA sequence [@kim2006asapii]. Those authors attach two
+properties to that restriction, a gene model likely to be full length and
+generally higher EST coverage. The second figure is a subset of the first,
+rather than the same genes under a different support rule. Elsewhere the rule
+is explicit and different. One study accepted a pair of competing sites only
+when each was supported by a protein, a full-length mRNA, or ESTs from two or
+more independent clone libraries [@ermakova2007humangenome]. Another reports
+support per transcript instead of a prevalence at all
+[@pospisil2004splicedatabase]. A chicken EST survey states the practitioner's
+version, that breadth of tissue sampling sets the answer
+[@tang2007alternatesplicing]. One published catalogue reports its own
+sensitivity and specificity rather than a headline fraction
+[@wong2008splicingpatterns].
 
 Conservation was offered as the arbiter, and its yield was low. Combining mRNA
-and EST evidence with whole-genome alignment found at least one event conserved
-in both the human and mouse transcriptome at 1,964 of 19,156 loci, 10 per cent,
-which those authors call a lower bound [@sugnet2003humanmouse]. The statistical
-and conservation filters broadly agreed, since variants surviving the
-five-per-cent selection were conserved in mouse ESTs and validated against
+and EST evidence with whole-genome alignment found at least one event
+conserved in both the human and mouse transcriptome at 1,964 of 19,156 loci,
+10 per cent. Those authors call that a lower bound [@sugnet2003humanmouse].
+The statistical and conservation filters broadly agreed. Variants surviving
+the five-per-cent selection were conserved in mouse ESTs and validated against
 GenBank mRNAs at significantly higher rates than the rest [@kan2002selecting].
 
-The filter's own chance pass rate was then measured. Taking random intronic
-regions bounded by canonical dinucleotides as pseudoexons and running them
-through the identical test, average conservation in rat usually fell between
-0.05 and 0.15 and depended on length, so those authors calculate that of every
+The filter's own chance pass rate was then measured. Random intronic regions
+bounded by canonical dinucleotides were taken as pseudoexons and run through
+the identical test. Average conservation in rat usually fell between 0.05 and
+0.15, and depended on length. Those authors therefore calculate that of every
 100 mouse candidate exons tested for rat conservation, 5 to 15 would pass by
 chance [@nurtdinov2009rodentexons]. The same group argues that conservation
-between two close species may not be sufficient to claim an exon is functional,
-because chance activation of cryptic sites inside an already-conserved region
-manufactures a conserved-looking exon, and because an exon missing from a sparse
-outgroup EST collection cannot be inferred absent from its genome
-[@nurtdinov2009rodentexons]. Both errors would over-estimate the number of
-functional rodent-specific exons.
+between two close species may not be sufficient to claim an exon is
+functional. Their first reason is that chance activation of cryptic sites
+inside an already-conserved region manufactures a conserved-looking exon.
+Their second is that an exon missing from a sparse outgroup EST collection
+cannot be inferred absent from its genome [@nurtdinov2009rodentexons]. Both
+errors would over-estimate the number of functional rodent-specific exons.
 
 They also separate the two kinds of species-specific exon, and the direction
 matters. Exons found only in mouse occur at the same frequency across every
-group of genes, which those authors explain by most of them not being real,
-while exons conserved in mouse and rat but absent from human and dog rise from
-slowly to rapidly evolving genes and are commoner in duplicated genes
-[@nurtdinov2009rodentexons]. After their own pseudoexon correction the estimated
-number of real rodent-specific exons stays non-negligible in every group, which
-they read as evidence of exon birth [@nurtdinov2009rodentexons]. So discarding
-exons seen in one genome only removes little that is real, while demanding
-conservation outside the rodent lineage removes the class carrying that
-signature.
+group of genes, which those authors explain by most of them not being real.
+Exons conserved in mouse and rat but absent from human and dog rise from
+slowly to rapidly evolving genes, and are commoner in duplicated genes
+[@nurtdinov2009rodentexons]. After their own pseudoexon correction the
+estimated number of real rodent-specific exons stays non-negligible in every
+group. They read that as evidence of exon birth [@nurtdinov2009rodentexons].
+So discarding exons seen in one genome only removes little that is real, while
+demanding conservation outside the rodent lineage removes the class carrying
+that signature.
 
 The databases that held all this were literature-curated before they were
-computational. One was assembled from protein annotation, by analysing Swiss-Prot
-entries and clustering proteins that could arise from one gene, and held about
-1,700 sequences [@gelfand1999asdb]. A plant census meant searching GenBank and
-PubMed for every reported gene and then merging and reviewing the hits, which
-yielded 168 genes across 44 species [@zhou2003pasdb]. The curators of a later
-resource name the mismatch they had to build around, that their literature and
-computational sets differ in how far annotation goes and in the vocabularies
-they use, so the interfaces absorb the heterogeneity rather than reconcile it
-[@stamm2005asd]. That resource's computational half held events, introns, exons
-and per-isoform peptide sequences, all generated from gene-transcript
-alignments, beside a manually curated literature half
-[@stamm2005asd]. Counting units differed too: one project's first release
-reported 30,793 alternative splice relationships
-[@lee2003annotationproject] and its next reported nearly 90,000 distinct events,
-a threefold expansion, where the later paper uses both words for the same
-quantity [@kim2006asapii].
+computational. One was assembled from protein annotation, by analysing
+Swiss-Prot entries and clustering proteins that could arise from one gene.
+That database held about 1,700 sequences in all [@gelfand1999asdb]. A plant
+census meant searching GenBank and PubMed for every reported gene, then
+merging and reviewing the hits. That yielded 168 genes across 44 species
+[@zhou2003pasdb]. The curators of a later resource name the mismatch they had
+to build around. Their literature and computational sets differ in how far
+annotation goes and in the vocabularies they use. The interfaces therefore
+absorb the heterogeneity rather than reconcile it [@stamm2005asd]. That
+resource's computational half held events, introns, exons and per-isoform
+peptide sequences, all generated from gene-transcript alignments, beside a
+manually curated literature half [@stamm2005asd]. Counting units differed too,
+with one project's first release reporting 30,793 alternative splice
+relationships [@lee2003annotationproject]. Its next reported nearly 90,000
+distinct events, a threefold expansion. The later paper uses both words for
+the same quantity [@kim2006asapii].
 
 ## Arrays and the designed survey {#sec-arrays}
 
-Arrays moved the measurement from discovery to a designed survey, and the design
-step is where the method's character sits. Splicing-sensitive arrays did not
-begin with alternative splicing at all. One of the earliest was built in budding
-yeast to tell spliced from unspliced RNA at each intron-containing gene, and it
-was used to read the genome-wide consequences of losing each of 18 mRNA
-processing factors, with gene-specific indexes absorbing the changes in
+Arrays moved the measurement from discovery to a designed survey, and the
+design step is where the method's character sits. Splicing-sensitive arrays
+did not begin with alternative splicing at all. One of the earliest was built
+in budding yeast, to tell spliced from unspliced RNA at each intron-containing
+gene. It was used to read the genome-wide consequences of losing each of 18
+mRNA processing factors. Gene-specific indexes absorbed the changes in
 transcription and decay those losses brought [@clark2002splicingspecific]. Its
-calls were checked against a one-locus assay rather than taken alone, and
-quantitative PCR confirmed what the array had indicated about introns whose
+calls were checked against a one-locus assay rather than taken alone.
+Quantitative PCR confirmed what the array had indicated about introns whose
 branchpoint sits close to the 3' splice site [@clark2002splicingspecific]. A
-later group describing that design calls it a printed two-colour array carrying
-oligonucleotides against exon, intron and junction regions, reporting a
-splice-junction index and an intron-accumulation index, each being the relevant
-probe signal divided by the gene-level signal
-[@gaidatzis2009overestimation]. Carrying the approach to vertebrate alternative
-splicing made the design annotation-dependent by construction, since the
+later group describing that design calls it a printed two-colour array,
+carrying oligonucleotides against exon, intron and junction regions. It
+reports a splice-junction index and an intron-accumulation index, each being
+the relevant probe signal divided by the gene-level signal
+[@gaidatzis2009overestimation]. Carrying the approach to vertebrate
+alternative splicing made the design annotation-dependent by construction. The
 oligonucleotides are chosen from gene models that already encode which
 alternatives exist [@srinivasan2005splicingsensitive].
 
-The surveys that followed were large and fixed in advance. Junction microarrays
-carried a probe for each junction between adjacent exons across more than 10,000
-multi-exon human genes, measured over 52 tissues and cell lines, and their
-authors concluded that at least 74 per cent of such genes are alternatively
-spliced [@johnson2003genomewide]. Combining exon-body probes with junction
-probes on one platform made tissue-specific splicing quantitative for thousands
-of exons in mouse [@pan2004revealing]. One human compendium designed arrays
-monitoring 203,672 exons and 178,351 junctions across 17,939 genes
-[@castle2008differential].
+The surveys that followed were large and fixed in advance. Junction
+microarrays carried a probe for each junction between adjacent exons, across
+more than 10,000 multi-exon human genes. They were measured over 52 tissues
+and cell lines. Their authors concluded that at least 74 per cent of such
+genes are alternatively spliced [@johnson2003genomewide]. Combining exon-body
+probes with junction probes on one platform made tissue-specific splicing
+quantitative for thousands of exons in mouse [@pan2004revealing]. One human
+compendium designed arrays monitoring 203,672 exons and 178,351 junctions
+across 17,939 genes [@castle2008differential].
 
-What a fixed probe set costs is visible in what went into one. A prototype human
-exon array was built by projecting four gene-prediction programs together with
-RefSeq and GenBank mRNAs and dbEST sequences onto the November 2002 assembly,
-parsing the union into probe selection regions of median length 119 base pairs,
-and the design as built held 1.4 million such regions and upwards of 9.6 million
-unique probes [@clark2007tissuespecific]. Its designers left junction probes off
-on purpose, reasoning that a junction design can only enumerate junctions
-already observed and that the fullest list then available remained substantially
-incomplete [@clark2007tissuespecific]. The next generation put eight probes on
-each probeset and covered 315,137 exons and 260,488 junctions, a set chosen to
-cover the events for which mRNA or EST evidence already existed
+What a fixed probe set costs is visible in what went into one. A prototype
+human exon array was built by projecting four gene-prediction programs,
+together with RefSeq and GenBank mRNAs and dbEST sequences, onto the November
+2002 assembly. The union was parsed into probe selection regions of median
+length 119 base pairs. The design as built held 1.4 million such regions and
+upwards of 9.6 million unique probes [@clark2007tissuespecific]. Its designers
+left junction probes off on purpose. Their reasoning was that a junction
+design can only enumerate junctions already observed, and that the fullest
+list then available remained substantially incomplete
+[@clark2007tissuespecific]. The next generation put eight probes on each
+probeset, and covered 315,137 exons and 260,488 junctions. That set was chosen
+to cover the events for which mRNA or EST evidence already existed
 [@shen2009madsplus].
 
-The blind spot the chapter inherited needs restating against the designers' own
-account. A 2008 RNA-seq survey noted that alternative 5' and 3' splice sites
-shift the message by a region often too small to interrogate with a probe
-[@wang2008alternative]. The array's designers had addressed exactly that,
-splitting overlapping exons with different edges into separate probe regions so
-that shifts in site usage could be seen, and they state the limit: no region
-shorter than 17 nucleotides could be given a probe, so splice sites shifted by
-less than 17 nucleotides were left out of the design
-[@clark2007tissuespecific]. That line is a statement of design intent. Nothing in
-that paper demonstrates the detection, since its own validation focused on
-cassette exons, so the claim that arrays could not see shifted splice sites is
-unsupported rather than refuted.
+The blind spot the chapter inherited needs restating against the designers'
+own account. A 2008 RNA-seq survey noted a problem with alternative 5' and 3'
+splice sites. They shift the message by a region often too small to
+interrogate with a probe [@wang2008alternative]. The array's designers had
+addressed exactly that, splitting overlapping exons with different edges into
+separate probe regions so that shifts in site usage could be seen. They also
+state the limit: no region shorter than 17 nucleotides could be given a probe.
+Splice sites shifted by less than 17 nucleotides were therefore left out of
+the design [@clark2007tissuespecific]. That line is a statement of design
+intent. Nothing in that paper demonstrates the detection, since its own
+validation focused on cassette exons. The claim that arrays could not see
+shifted splice sites is therefore unsupported rather than refuted.
 
 Underneath every splicing call sat a measurement whose physics differs from
-gene-level measurement. On exon arrays a probeset stands for one exon or part of
-one and is generally four oligonucleotides that often overlap substantially,
-and the closer spacing made it harder to select probes of similar GC content, so
-melting temperatures vary more and neighbouring probes' signals are less
-independent [@gaidatzis2009overestimation]. Probe affinity is written into the
-standard model as a per-probe term, and the model's authors name bad probes,
-false annotation and alternative splicing itself as the routine sources of
-outliers that robust estimation exists to absorb [@laajala2009probelevel]. A
-gene-level index therefore has to be computed from a selected subset of a gene's
-probes, because some are saturated by background, some cross-hybridise and some
-fall in alternatively spliced regions [@xing2006probeselection]. Even background
-subtraction is a modelling choice with a measurable cost, and replacing a
-GC-matching default with a sequence model raised the variation explained in
-background response from 0.07, 0.24 and 0.25 to 0.24, 0.30 and 0.35 in three
-tissues [@kapur2007exonarrays].
+gene-level measurement. On exon arrays a probeset stands for one exon or part
+of one, and is generally four oligonucleotides that often overlap
+substantially. The closer spacing made it harder to select probes of similar
+GC content. Melting temperatures therefore vary more, and neighbouring probes'
+signals are less independent [@gaidatzis2009overestimation]. Probe affinity is
+written into the standard model as a per-probe term. The model's authors name
+bad probes, false annotation and alternative splicing itself as the routine
+sources of outliers that robust estimation exists to absorb
+[@laajala2009probelevel]. A gene-level index therefore has to be computed from
+a selected subset of a gene's probes. Some are saturated by background, some
+cross-hybridise and some fall in alternatively spliced regions
+[@xing2006probeselection]. Even background subtraction is a modelling choice
+with a measurable cost. Replacing a GC-matching default with a sequence model
+raised the variation explained in background response from 0.07, 0.24 and 0.25
+to 0.24, 0.30 and 0.35 in three tissues [@kapur2007exonarrays].
 
-Cross-hybridisation was measured rather than assumed. In a dilution series
-replacing labelled mouse RNA stepwise with labelled Drosophila RNA, the
+Cross-hybridisation was measured rather than assumed, in a dilution series
+replacing labelled mouse RNA stepwise with labelled Drosophila RNA. The
 all-Drosophila condition identified fewer than 4 per cent of probes as
-cross-hybridising, and those were removed [@gaidatzis2009overestimation]. Probe
-response is also partly predictable from sequence, and a positional dinucleotide
-model found CG-rich probes to under-respond and AT-rich probes to over-respond
-[@gaidatzis2009overestimation].
+cross-hybridising, and those were removed [@gaidatzis2009overestimation].
+Probe response is also partly predictable from sequence. A positional
+dinucleotide model found CG-rich probes to under-respond and AT-rich probes to
+over-respond [@gaidatzis2009overestimation].
 
-The metric that carried the era is a difference of logarithms. For one probeset
-the splicing index is its log expression change between two samples minus the
-gene's log expression change, which decouples exon inclusion from transcription
-only under two assumptions, that a change in a gene's expression moves most of
-its exons and that alternative splicing happens less often than constitutive
-inclusion [@gaidatzis2009overestimation]. As implemented on one junction array,
-the index is a single probe's background-corrected intensity divided by the
-gene's estimated expression index, and an event is called when two one-sided
-tests per probe, summarised by Fisher's method, put the skip probeset and at
-least one include probeset below a cutoff with opposite directions of change
+The metric that carried the era is a difference of logarithms. For one
+probeset the splicing index is its log expression change between two samples,
+minus the gene's log expression change. That decouples exon inclusion from
+transcription only under two assumptions. The first is that a change in a
+gene's expression moves most of its exons. The second is that alternative
+splicing happens less often than constitutive inclusion
+[@gaidatzis2009overestimation]. As implemented on one junction array, the
+index is a single probe's background-corrected intensity divided by the gene's
+estimated expression index. An event is called from two one-sided tests per
+probe, summarised by Fisher's method. Those must put the skip probeset and at
+least one include probeset below a cutoff, with opposite directions of change
 [@shen2009madsplus].
 
 The first assumption was then shown not to hold. The relationship between a
 gene's expression change and the spread of its exons' splicing indices appears
-on real exon-array data, and those authors propose an arithmetic reason rather
-than a biological one: probe response curves differ and are nonlinear, so as a
-gene's expression rises its probes' signals drift apart, and a gene-level
-estimate pools enough probes for that to average out while an exon level built
-from four sometimes-overlapping probes does not
-[@gaidatzis2009overestimation]. They report alternative splicing events
-overestimated 12-fold, with that figure applying to genes differentially
-expressed between the samples compared rather than to genes in general
-[@gaidatzis2009overestimation]. A cross-platform test separated artefact from
-biology, since the same analysis on deep sequencing of three mouse tissues showed
-none of the relationship [@gaidatzis2009overestimation]. The artefact also
-reproduces across species because probe sequence is conserved, with homologous
-response slopes correlating at 0.426 measured and 0.588 predicted, so a
-cross-species comparison can report conserved events where none exist
-[@gaidatzis2009overestimation]. Those same authors state the limit of their own
-explanation: predicted and observed slopes correlate at 0.528 in mouse and 0.468
-in human, weakly enough that they cannot exclude some biological contribution
-[@gaidatzis2009overestimation].
+on real exon-array data. Those authors propose an arithmetic reason rather
+than a biological one. Probe response curves differ and are nonlinear, so as a
+gene's expression rises its probes' signals drift apart. A gene-level estimate
+pools enough probes for that to average out, while an exon level built from
+four sometimes-overlapping probes does not [@gaidatzis2009overestimation].
+They report alternative splicing events overestimated 12-fold. That figure
+applies to genes differentially expressed between the samples compared, rather
+than to genes in general [@gaidatzis2009overestimation]. A cross-platform test
+separated artefact from biology, since the same analysis on deep sequencing of
+three mouse tissues showed none of the relationship
+[@gaidatzis2009overestimation]. The artefact also reproduces across species
+because probe sequence is conserved, with homologous response slopes
+correlating at 0.426 measured and 0.588 predicted. A cross-species comparison
+can therefore report conserved events where none exist
+[@gaidatzis2009overestimation]. Those same authors state the limit of their
+own explanation. Predicted and observed slopes correlate at 0.528 in mouse and
+0.468 in human, weakly enough that they cannot exclude some biological
+contribution [@gaidatzis2009overestimation].
 
 The alternatives each changed one assumption and kept the rest. One tests
-whether all interaction terms of a two-way analysis of variance are zero,
-another scales the index by within-group variance, a third rebuilds the
-gene-level estimate from only a gene's least variant exons, and a fourth models
-an exon's expected behaviour against a robust gene estimate and calls splicing
+whether all interaction terms of a two-way analysis of variance are zero, and
+another scales the index by within-group variance. A third rebuilds the
+gene-level estimate from only a gene's least variant exons. A fourth models an
+exon's expected behaviour against a robust gene estimate, and calls splicing
 where the fit is departed from [@gaidatzis2009overestimation]. That fourth
-replaced the ratio with an outlier test, scoring an exon by the median residual
-of its probes divided by their median absolute deviation, a formulation built
-for experiments without replication [@laajala2009probelevel]. Its own authors
-report assessing it on simulated data, a panel of 11 human tissues and 10
-matched colon pairs, with output including exons confirmed by RT-PCR but no
-confirmed fraction given [@purdom2008firma]. A statistician's account names what
-each method rests on, with the index and the analysis-of-variance test both
-depending on probe intensity rising linearly with concentration, and a
-generative alternative limited by design to two isoforms
-[@gelfond2011rankchange]. Which test the platform's manufacturer stood behind is
-reported two ways in the literature, and the two accounts should not be read as
+replaced the ratio with an outlier test, scoring an exon by the median
+residual of its probes divided by their median absolute deviation. The
+formulation was built for experiments without replication
+[@laajala2009probelevel]. Its own authors report assessing it on simulated
+data, a panel of 11 human tissues and 10 matched colon pairs. The output
+includes exons confirmed by RT-PCR, with no confirmed fraction given
+[@purdom2008firma]. A statistician's account names what each method rests on.
+The index and the analysis-of-variance test both depend on probe intensity
+rising linearly with concentration, and a generative alternative is limited by
+design to two isoforms [@gelfond2011rankchange]. Which test the platform's
+manufacturer stood behind is reported two ways in the literature, and the two
+accounts should not be read as
 agreeing [@gaidatzis2009overestimation; @laajala2009probelevel].
 
 Simulation put a number on what the linearity assumption costs. Over 1,000
 simulations with no true differential splicing, the analysis-of-variance test
-gave false-positive rates of 0.063 and 0.057 under linear response and 0.165 and
-0.194 once a logistic response spanning the array's dynamic range was imposed,
-against 0.000 to 0.010 for a rank-based alternative
-[@gelfond2011rankchange]. The same confounding then appeared on real data from a
-different platform, where the evidence that test reported rose with a gene's
-estimated fold change while the rank-based method's did not
+gave false-positive rates of 0.063 and 0.057 under linear response. They rose
+to 0.165 and 0.194 once a logistic response spanning the array's dynamic range
+was imposed. A rank-based alternative gave 0.000 to 0.010
+[@gelfond2011rankchange]. The same confounding then appeared on real data from
+a different platform. The evidence that test reported rose with a gene's
+estimated fold change, while the rank-based method's did not
 [@gelfond2011rankchange].
 
 Head to head, the methods separate mainly by how many exons of a gene are
-spliced. At a noise level those authors take as typical, with one differentially
-spliced exon per gene all eight procedures scored 0.94 to 0.99 area under the
-curve, and with five the probe-level method held at 0.92 or above while the
-others fell to 0.79 to 0.88 [@laajala2009probelevel]. Ranked against
+spliced. At a noise level those authors take as typical, with one
+differentially spliced exon per gene, all eight procedures scored 0.94 to 0.99
+area under the curve. With five the probe-level method held at 0.92 or above,
+while the others fell to 0.79 to 0.88 [@laajala2009probelevel]. Ranked against
 RT-PCR-confirmed exons in a colon-cancer dataset, the best-ranking confirmed
-exon came 4th, 5th, 26th, 28th, 35th, 50th and 82nd depending on the method,
-while the probe-level procedure placed two confirmed exons in its top ten
-[@laajala2009probelevel]. In both of those comparisons the winning method is the
-evaluating authors' own, which is worth saying because it is not true of every
-comparison in this literature.
+exon came 4th, 5th, 26th, 28th, 35th, 50th and 82nd depending on the method.
+The probe-level procedure placed two confirmed exons in its top ten
+[@laajala2009probelevel]. In both of those comparisons the winning method is
+the evaluating authors' own. That is worth saying because it is not true of
+every comparison in this literature.
 
 Validation rates bound the whole era, and the two that exist are not
 comparable. On a prototype exon array, 27 of the 32 brain-enriched probesets
 with the most significant index values showed clear enrichment by RT-PCR, 84.4
-per cent, 21 of the top 23 ranked by magnitude did so, and 72 of 84 predicted
-tissue-enriched probesets were confirmed across the project, 86 per cent
-[@clark2007tissuespecific]. That rate is bounded by what was eligible: only
+per cent. Of the top 23 ranked by magnitude, 21 did so. Across the project, 72
+of 84 predicted tissue-enriched probesets were confirmed, 86 per cent
+[@clark2007tissuespecific]. That rate is bounded by what was eligible. Only
 internal events with constitutive flanking exons were tried, nothing at the
-edges of transcript clusters, and no probeset mapping to an annotated alternative
-polyadenylation region, terminal exon or start site
-[@clark2007tissuespecific]. The larger figure is the weaker one. A junction-array
-analysis reports 88.5 per cent, 153 of 173 events tested, cites it as
-unpublished data, and states no criterion for calling an event validated
-[@shen2009madsplus].
+edges of transcript clusters. No probeset was tried that mapped to an
+annotated alternative polyadenylation region, terminal exon or start site
+[@clark2007tissuespecific]. The larger figure is the weaker one. A
+junction-array analysis reports 88.5 per cent, 153 of 173 events tested. It
+cites that as unpublished data, and states no criterion for calling an event
+validated [@shen2009madsplus].
 
 Underneath every splicing call sat a present-or-absent call with its own error
-rate. Scoring exon probesets as present and intron probesets as absent across 71
-constitutively expressed housekeeping genes gave a median sensitivity of 0.88
-and a median specificity of 0.82 at one cutoff [@clark2007tissuespecific]. And a
-good deal was discarded before any index was read, including about 6.8 per cent
-of probesets for mapping to more than one location, leaving 10,148 probesets with
-significant brain-against-non-brain differences of which 2,161 in 1,097 genes
-were brain-enriched [@clark2007tissuespecific].
+rate. Exon probesets were scored as present and intron probesets as absent,
+across 71 constitutively expressed housekeeping genes. That gave a median
+sensitivity of 0.88 and a median specificity of 0.82 at one cutoff
+[@clark2007tissuespecific]. And a good deal was discarded before any index was
+read, including about 6.8 per cent of probesets for mapping to more than one
+location. That left 10,148 probesets with significant brain-against-non-brain
+differences, of which 2,161 in 1,097 genes were brain-enriched
+[@clark2007tissuespecific].
 
 The headline number from the designed era needs its definition attached. Of
 19,221 transcript clusters entered, 12,139 were detected in at least two of 16
-tissues, and 8,837 of those had at least one probeset passing the index test in
+tissues. Of those, 8,837 had at least one probeset passing the index test in
 at least one of 120 pairwise comparisons, which is 72.8 per cent
 [@clark2007tissuespecific]. Those authors state what their design could not
-count: because the index registers only a change between samples compared, a
-gene expressing several isoforms in the same proportions everywhere returns
-nothing, so the figure counts genes with tissue-variable exon usage rather than
+count. The index registers only a change between samples compared, so a gene
+expressing several isoforms in the same proportions everywhere returns
+nothing. The figure counts genes with tissue-variable exon usage rather than
 genes with more than one isoform [@clark2007tissuespecific].
 
 What the designed survey could establish that EST data could not was the
 existence of exons absent from the sequence databases. Of 2,161 brain-enriched
-probesets, 287 were supported only by gene-prediction algorithms and by no cDNA
-sequence at all, several were verified in brain transcripts by cloning and
-sequencing, and the analysis reported 17 novel exons in 11 genes together with
-six previously unseen arrangements of annotated exons
+probesets, 287 were supported only by gene-prediction algorithms and by no
+cDNA sequence at all. Several were verified in brain transcripts by cloning
+and sequencing. The analysis reported 17 novel exons in 11 genes, together
+with six previously unseen arrangements of annotated exons
 [@clark2007tissuespecific]. A designed probe set can only ask about what was
 designed in, and that is the one thing it could ask that a sequence database
 could not.
@@ -822,16 +827,16 @@ tissues. They yielded a junction census of about 145,000 distinct splices, with
 roughly 3,500 genes expressing one or more alternate internal splice
 [@mortazavi2008mapping].
 
-A parallel human study reported 94,241 splice junctions from two cell lines, of
-which only 4,096 were previously unidentified. Exon skipping was the most
+A parallel human study reported 94,241 splice junctions from two cell lines,
+of which only 4,096 were previously unidentified. Exon skipping was the most
 prevalent form of alternative splicing [@sultan2008globalview]. The companion
 study behind the near-universality claim sequenced 12 to 29 million 32-base
-cDNA fragments per sample, from ten human tissues and five mammary epithelial
-or breast cancer cell lines [@wang2008alternative].
+cDNA fragments per sample. The material was ten human tissues and five mammary
+epithelial or breast cancer cell lines [@wang2008alternative].
 
-The most-quoted figure needs its provenance attached, because the claim that
-about 95 per cent of multi-exon human genes are alternatively spliced is not a
-pure RNA-seq result. Its source states that the estimate came from combining
+The most-quoted figure needs its provenance attached. The claim that about 95
+per cent of multi-exon human genes are alternatively spliced is not a pure
+RNA-seq result. Its source states that the estimate came from combining
 mRNA-Seq with EST and cDNA sequence data [@pan2008deepsurveying].
 
 The companion number is an extrapolation over a stated denominator. Multi-exon
@@ -854,41 +859,41 @@ What that figure counts, and under which conditions, is taken up in
 @sec-how-functional.
 
 The instrument also stopped being one thing. Which junctions a short-read
-library supports depends on how the RNA was enriched before sequencing. In blood
-libraries sequenced both ways to about 50 million paired reads, the ratio of
-junction read support between ribosomal-depleted and poly(A)-selected libraries
-rose with transcription length [@natrajgayathri2026polya]. Coverage along a
-transcript is not uniform either, and the non-uniformity is set by the same
-step, with ribosomal-depleted libraries showing a lower coefficient of variation
-than poly(A)-selected ones for transcripts above 5 kilobases
+library supports depends on how the RNA was enriched before sequencing. In
+blood libraries sequenced both ways to about 50 million paired reads, the
+ratio of junction read support between ribosomal-depleted and poly(A)-selected
+libraries rose with transcription length [@natrajgayathri2026polya]. Coverage
+along a transcript is not uniform either, and the non-uniformity is set by the
+same step. Ribosomal-depleted libraries showed a lower coefficient of
+variation than poly(A)-selected ones for transcripts above 5 kilobases
 [@natrajgayathri2026polya]. On four muscle biopsies split between the two
 protocols, the poly(A)-selected libraries missed many of the novel and cryptic
-events in one long gene that the depleted libraries of the same patients
-reported [@natrajgayathri2026polya]. Measured directly on reconstruction
-accuracy, the same in vitro transcribed RNA gave different accuracy under the
-two routes, with poly(A) selection worse across every algorithm tested
+events in one long gene. The depleted libraries of the same patients reported
+them [@natrajgayathri2026polya]. Measured directly on reconstruction accuracy,
+the same in vitro transcribed RNA gave different accuracy under the two
+routes, with poly(A) selection worse across every algorithm tested
 [@hayer2015benchmark].
 
 Three more preparation choices leave signatures in the data. Random-hexamer
 priming leaves a nucleotide-composition bias over the first 13 positions of a
-read, reproducible across organisms and laboratories, and the authors who
+read, reproducible across organisms and laboratories. The authors who
 identified it stated that non-uniform read placement directly degrades the
 comparison of an alternatively spliced exon against a constitutive one
 [@hansen2010biases]. Fragmentation leaves a reproducible footprint rather than
-random breakpoints, with the variance in where reads start on spike-in
-transcripts predicting it in other samples of the same protocol at mean
-r-squared 0.77 and 0.85 [@parekh2016impact]. And most reads that look like PCR
-duplicates are not, since computationally identified single-end duplicates ran
-from 36 to 74 per cent of reads, were explained largely by sampling and
-fragmentation bias, and removing them raised the false discovery rate by about
-two percentage points in two datasets [@parekh2016impact].
+random breakpoints. The variance in where reads start on spike-in transcripts
+predicts it in other samples of the same protocol, at mean r-squared 0.77 and
+0.85 [@parekh2016impact]. And most reads that look like PCR duplicates are
+not. Computationally identified single-end duplicates ran from 36 to 74 per
+cent of reads, and were explained largely by sampling and fragmentation bias.
+Removing them raised the false discovery rate by about two percentage points
+in two datasets [@parekh2016impact].
 
 Strand information is a fourth, and it is what an unstranded library does not
-have. Measured as leakage onto the wrong strand, the four best protocols in one
-compendium put 0.47 to 0.63 per cent of reads antisense to known transcripts,
-and those authors name resolving overlapping transcripts and the boundaries of
-adjacent genes on opposite strands as what strand information buys
-[@levin2010comprehensive].
+have. Measured as leakage onto the wrong strand, the four best protocols in
+one compendium put 0.47 to 0.63 per cent of reads antisense to known
+transcripts. Those authors name resolving overlapping transcripts, and the
+boundaries of adjacent genes on opposite strands, as what strand information
+buys [@levin2010comprehensive].
 
 ## Short reads could not reconstruct a molecule {#sec-short-read-limit}
 
@@ -898,100 +903,102 @@ fragments only. Recovering whole isoform structures from a fragment mixture was
 posed as a separate inference task [@xing2004multiassembly].
 
 Short reads inherited that problem, and the Cufflinks authors state the
-limitation in their own opening paragraph: assembly and abundance estimation are
-hard because a read generally cannot be attributed to one isoform
+limitation in their own opening paragraph. Assembly and abundance estimation
+are hard because a read generally cannot be attributed to one isoform
 [@trapnell2010transcript]. They also record what they had done instead in
-earlier work, which was to quantify genes without allocating reads among
+earlier work. That was to quantify genes without allocating reads among
 alternative isoforms, while still reporting evidence that several forms were
 co-expressed [@trapnell2010transcript].
 
 Before any of that, a read has to be placed. A community assessment of spliced
 alignment ran 26 protocols from nine development teams, with two further
-versions added by the assessors themselves, over 76-nucleotide paired-end data
-from a human cell line, mouse brain and two simulated transcriptomes
-[@engstrom2013systematic]. On identical input, yield ranged from 68.4 to 95.1 per
-cent of read pairs, mean 91.5 with a standard deviation of 5.4
-[@engstrom2013systematic]. A program that truncates a read end rather than
-failing on it places more of the library, at the cost of placing it partially,
-and the program that does not truncate had a lower yield for that reason
+versions added by the assessors themselves. The input was 76-nucleotide
+paired-end data from a human cell line, mouse brain and two simulated
+transcriptomes [@engstrom2013systematic]. On identical input, yield ranged
+from 68.4 to 95.1 per cent of read pairs, mean 91.5 with a standard deviation
+of 5.4 [@engstrom2013systematic]. A program that truncates a read end rather
+than failing on it places more of the library, at the cost of placing it
+partially. The program that does not truncate had a lower yield for that
+reason [@engstrom2013systematic].
+
+Right locus is not the same as right boundary. Between 96.3 and 98.4 per cent
+of spliced reads were placed at the correct location. Every base was correct
+for only 60.3 to 89.3 per cent [@engstrom2013systematic]. Accuracy improves
+when the splice sits away from a read's ends, and most protocols lose
+sensitivity below about five supporting reads. A junction count is therefore a
+thresholded quantity rather than an observation [@engstrom2013systematic].
+Novel junctions are also largely method-specific, with 52 to 54 per cent of
+one program pair's novel junctions absent from every other mapper
+[@engstrom2013systematic]. Annotation changes the picture in both directions.
+It recovers nearly all expressed known junctions, while also placing reads at
+thousands of annotated junctions that most protocols reported where the
+simulated transcriptome never expressed them [@engstrom2013systematic].
+Linking more than two exons inside one read was recovered at 79.3 per cent
+with annotation, and 72.1 per cent as the best annotation-free figure. Two
+programs never reported more than one splice at all [@engstrom2013systematic].
+
+Reads also disperse, and every protocol placed primary alignments across more
+genes than had produced the reads. In that assessment 80 million reads
+originated in 16,554 genes, with alignments landing across upwards of 17,800.
+The assessors attribute that excess largely to pseudogenes
+[@engstrom2013systematic]. The assessors' own list of what remained unsolved
+names multi-mapped read placement and false exon junctions
 [@engstrom2013systematic].
 
-Right locus is not right boundary. Between 96.3 and 98.4 per cent of spliced
-reads were placed at the correct location, while every base was correct for only
-60.3 to 89.3 per cent [@engstrom2013systematic]. Accuracy improves when the
-splice sits away from a read's ends, and most protocols lose sensitivity below
-about five supporting reads, so a junction count is a thresholded quantity rather
-than an observation [@engstrom2013systematic]. Novel junctions are also largely
-method-specific, with 52 to 54 per cent of one program pair's novel junctions
-absent from every other mapper [@engstrom2013systematic]. Annotation changes the
-picture in both directions, recovering nearly all expressed known junctions
-while also placing reads at thousands of annotated junctions that most protocols
-reported where the simulated transcriptome never expressed them
-[@engstrom2013systematic]. Linking more than two exons inside one read was
-recovered at 79.3 per cent with annotation and 72.1 per cent as the best
-annotation-free figure, and two programs never reported more than one splice at
-all [@engstrom2013systematic].
-
-Reads also disperse. Every protocol placed primary alignments across more genes
-than had produced the reads, with 80 million reads originating in 16,554 genes
-and alignments landing across upwards of 17,800, an excess the assessors
-attribute largely to pseudogenes [@engstrom2013systematic]. The assessors' own
-list of what remained unsolved names multi-mapped read placement and false exon
-junctions [@engstrom2013systematic].
-
 Multi-mapping has been quantified from several directions. In the 2008 32-base
-human library about 60 per cent of reads were unique to the genome and 4 per cent
-unique to junctions, so by those authors' own arithmetic about two thirds could
-be assigned unambiguously to individual genes [@wang2008alternative]. On perfect
-100-base pairs from 19,654 genes, 4.33 and 2.97 per cent were non-unique under
-two aligners, with 843 genes under-counted and 586 assigned zero
-[@robert2015errors]. The affected genes are families and pseudogenes, and on real
-mouse data 27.8 to 43.9 per cent of reads could not be assigned
-[@robert2015errors]. Read length does not fix the hardest part, since across
-21,459 paralogous human genes three read lengths gave equal numbers of reads
-mapped to those genes, which those authors report as a surprise
+human library about 60 per cent of reads were unique to the genome and 4 per
+cent unique to junctions. By those authors' own arithmetic about two thirds
+could be assigned unambiguously to individual genes [@wang2008alternative]. On
+perfect 100-base pairs from 19,654 genes, 4.33 and 2.97 per cent were
+non-unique under two aligners, with 843 genes under-counted and 586 assigned
+zero [@robert2015errors]. The affected genes are families and pseudogenes, and
+on real mouse data 27.8 to 43.9 per cent of reads could not be assigned
+[@robert2015errors]. Read length does not fix the hardest part. Across 21,459
+paralogous human genes, three read lengths gave equal numbers of reads mapped
+to those genes, which those authors report as a surprise
 [@chhangawala2015impact]. Equal totals are consistent with equally wrong
 placement, so what that measures is read count rather than correct assignment.
-Read length does change the junction catalogue, where only 8 to 9 per cent of
-known and 1 to 2 per cent of novel junctions were found at all four lengths
-tested [@chhangawala2015impact].
+Read length does change the junction catalogue. Only 8 to 9 per cent of known
+and 1 to 2 per cent of novel junctions were found at all four lengths tested
+[@chhangawala2015impact].
 
-Assembly is where the reads become models, and the step is not determinate. The
-assembler's own description says so: fragment alignments become nodes in an
-overlap graph, the graph is decomposed into the fewest chains explaining the
-reads, and because that minimum decomposition is not guaranteed unique it
-chooses among equally parsimonious assemblies by weighting edges with a
+Assembly is where the reads become models, and the step is not determinate.
+The assembler's own description says so: fragment alignments become nodes in
+an overlap graph, and the graph is decomposed into the fewest chains
+explaining the reads. That minimum decomposition is not guaranteed unique, so
+it chooses among equally parsimonious assemblies by weighting edges with a
 percent-spliced-in value [@trapnell2010transcript]. An independent benchmark
-locates the false positives in that step, since local evidence is assembled into
+locates the false positives in that step. Local evidence is assembled into
 global transcripts in every way consistent with the short reads, and intron
 signal present at some level almost everywhere becomes long exons
 [@hayer2015benchmark].
 
-Measured against known structures, the error rate is substantial. On in vitro
-transcribed RNA from 1,062 human cDNAs where 95 per cent of transcripts had only
-one form, every algorithm tested predicted false transcripts numbering at least
-20 per cent of the true ones, and missed at least about a quarter of the true
-ones [@hayer2015benchmark]. Accuracy does not improve with coverage in the
-expected direction either, and on a realistic simulation stratified into
-coverage bins precision often fell as coverage rose
+Measured against known structures, the error rate is substantial. The input
+was in vitro transcribed RNA from 1,062 human cDNAs, where 95 per cent of
+transcripts had only one form. On that input every algorithm tested predicted
+false transcripts numbering at least 20 per cent of the true ones, and missed
+at least about a quarter of the true ones [@hayer2015benchmark]. Accuracy does
+not improve with coverage in the expected direction either, and on a realistic
+simulation stratified into coverage bins precision often fell as coverage rose
 [@hayer2015benchmark]. Depth does not rescue the human case, where transcript
 detection stayed low despite exonic coverage above 4,000 read pairs per
-kilobase, and at least one consistent isoform was recovered for more than half
-of highly expressed genes in fly and worm against only more than 35 per cent in
+kilobase. At least one consistent isoform was recovered for more than half of
+highly expressed genes in fly and worm, against only more than 35 per cent in
 human [@steijger2013assessment].
 
 The community assessment of reconstruction found best-method transcript-level
-recovery falling as the genome got more complex, at 56 to 59 per cent of spliced
-protein-coding transcripts in *C. elegans*, 43 per cent in *D. melanogaster* and
-21 per cent in *H. sapiens* [@steijger2013assessment]. Those figures were scored
-under a relaxed rule, because transcript ends were effectively unrecoverable
-from 76-nucleotide paired-end data, so predicted first and terminal exons were
-allowed to differ from the annotation at their outer edges and a transcript
-counted as recovered when its splice sites matched with both ends free
-[@steijger2013assessment]. The same assessment separated the two failure modes
-and found both active. For most transcripts not every constituent exon was
-detected, and even where all exons were reported the methods frequently could not
-link them into a complete isoform [@steijger2013assessment].
+recovery falling as the genome got more complex, at 56 to 59 per cent of
+spliced protein-coding transcripts in *C. elegans*, 43 per cent in *D.
+melanogaster* and 21 per cent in *H. sapiens* [@steijger2013assessment]. Those
+figures were scored under a relaxed rule, because transcript ends were
+effectively unrecoverable from 76-nucleotide paired-end data. Predicted first
+and terminal exons were allowed to differ from the annotation at their outer
+edges. A transcript counted as recovered when its splice sites matched with
+both ends free [@steijger2013assessment]. The same assessment separated the
+two failure modes and found both active. For most transcripts not every
+constituent exon was detected, and even where all exons were reported the
+methods frequently could not link them into a complete isoform
+[@steijger2013assessment].
 
 Read length buys assignment, and the amount is measurable. Comparing two
 Illumina paired-end libraries from the same cell line, 25.04 per cent of
@@ -1013,13 +1020,13 @@ agreement either, with correlations against an orthogonal platform running from
 0.34 to 0.68 across methods [@steijger2013assessment].
 
 An incomplete model set produces a wrong answer rather than a missing one. The
-Cufflinks authors report that restricting their analysis to known isoforms would
-have given an incorrect abundance for a known isoform of one gene and would have
-missed the novel start site that dominates before differentiation
+Cufflinks authors report that restricting their analysis to known isoforms
+would have given an incorrect abundance for a known isoform of one gene and
+would have missed the novel start site that dominates before differentiation
 [@trapnell2010transcript]. And of roughly 105,000 catalogued events of eight
 types, reads supporting both alternative forms were observed for more than a
 third in the library behind the near-universality estimate
-[@wang2008alternative], which leaves fewer than two thirds and is a statement
+[@wang2008alternative]. That leaves fewer than two thirds, and is a statement
 about what was observed rather than about what was resolvable.
 
 Depth does not substitute for length, since reads that map to several places

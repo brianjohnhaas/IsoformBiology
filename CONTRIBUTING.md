@@ -23,10 +23,27 @@ traced to the lines it came from.
 ## How deep a section goes
 
 **Depth is set by the subject, and the book is sized like a book.** A specialist
-scientific book of this kind runs 70,000 to 85,000 words. This one stands at
-about 59,000, so the chapters that have not had a deepening pass are still
-expected to grow several times over rather than be polished at their current
-length.
+scientific book of this kind runs 70,000 to 85,000 words, which is the figure
+this file carried while the book stood at about 59,000. It is now about 67,000
+with six chapters still to deepen, and **the target has been raised to 105,000
+to 115,000 because the evidence set the length rather than the other way
+round.**
+
+The reasoning, so that a later maintainer can disagree with it on the merits.
+The deepening pass turns reviewed claim records into prose at a measured rate of
+**about 41 words of prose per record**, from the one chapter deepened under the
+current process. The six undeepened chapters hold or are about to hold roughly
+1,600 reviewed records between them, which projects to **something over 44,000
+further words.** Trimming to 85,000 would mean dropping about a quarter of the
+records, and the records are not padding: the review passes found that **the
+defect in this book is never arithmetic and almost always a sentence about the
+evidence**, so the sentences that carry a figure's denominator, its cohort, its
+prior testing and its author overlap are the ones that make the book worth
+reading rather than the ones to cut.
+
+This file's own rule decides it. A chapter is finished when its subject is
+covered, not when it hits a number, and a word-count target that fights that
+rule is the wrong target.
 
 Count words with `scripts/wordcount.py chapters/*.qmd`, which is the project's
 only definition of a word count and exists because three different hand counts
@@ -37,20 +54,29 @@ Working targets, not gates:
 
 | Unit | Now | Target |
 |---|---|---|
-| Whole book | about 59,000 words | 70,000 to 85,000 |
-| Chapter, not yet deepened | 1,150 to 2,350 words | 5,500 to 6,500 |
+| Whole book | about 67,000 words | 105,000 to 115,000 |
+| Chapter, not yet deepened | 1,680 to 2,550 words | 8,000 to 11,000 |
 | Section | 150 to 350 words | 600 to 750 |
-| Claim records | 1,064 | roughly 1,500 |
+| Claim records | 1,957 | roughly 2,600 |
 
-Five chapters are now at target or past it: 12 at 5,669 words, 5 at 6,634, 2 at
-7,539, 6 at 10,070 and 3 at 12,906. Chapters 2, 3 and 6 are a deliberate
-exception to the per-chapter target. "Across the tree of life" is the part of the book most worth growing, so
-depth there is limited by the evidence rather than by a word count, and the
-selection criterion is how well a case is evidenced rather than how many cases
-are covered.
+Six chapters are now at or past the per-chapter target: 12 at 5,669 words, 5 at
+6,634, 2 at 7,539, 4 at 9,546, 6 at 10,070 and 3 at 12,906. Chapters 2, 3 and 6
+are a deliberate exception to it. "Across the tree of life" is the part of the
+book most worth growing, so depth there is limited by the evidence rather than
+by a word count, and the selection criterion is how well a case is evidenced
+rather than how many cases are covered.
 
-At the current rate of about one claim record per fifty words of prose, a
-chapter at target needs on the order of 120 records rather than 35.
+**The per-record rate is now measured rather than estimated.** Chapter 4 went
+from 1,708 words to 9,546 from 231 reviewed records, which is **41 words of prose
+per record**, and the earlier guess of fifty was close enough to keep using for
+planning. A chapter at the raised target needs on the order of **220 records**
+rather than 120.
+
+**One thing the rate does not capture.** A record that survives review unchanged
+and a record that review corrects cost the same to write from and are worth
+very different amounts. Across the fifteen review blocks run so far, **zero
+arithmetic errors and about 140 defects**, every one of them a sentence about the
+evidence rather than about biology. Budget the review, not just the research.
 
 ### There was a cap, and it was an accident
 
