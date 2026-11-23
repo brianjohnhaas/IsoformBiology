@@ -32,7 +32,16 @@ def tex(s: str) -> str:
     return re.sub(r"\b([A-Z]{2,}[0-9]*|[A-Z][a-z]*[0-9]+)\b", r"{\1}", s)
 
 
-PERSONAL_NAME = re.compile(r"^[^,]+,\s*(?:[A-Z]\.|[A-Z]$)")
+# "Lastname, A. B." is the house form, and two real exceptions have to pass.
+# An initial can be a non-ASCII capital, because Crossref returns bylines with
+# Z-caron and similar, and an author can have one name and no family name at
+# all. A mononym written as "Meena" was failing this check and the only fixes
+# available were to invent initials for a real person or to brace their name as
+# though it were an institution. Both are worse than widening the rule.
+PERSONAL_NAME = re.compile(
+    r"^[^,]+,\s*(?:\w\.|\w$)"          # Lastname, A.  /  Lastname, A
+    r"|^[^\s,.;]{2,}$",                  # a single-name author
+    re.UNICODE)
 # A corporate author is recognised positively, so that a personal name written
 # in the wrong order is not silently braced into an institution. That happened:
 # a research pass recorded "Yu Hu; Li Fang" instead of "Hu, Y.; Fang, L.", and
@@ -41,7 +50,9 @@ PERSONAL_NAME = re.compile(r"^[^,]+,\s*(?:[A-Z]\.|[A-Z]$)")
 CORPORATE = re.compile(
     r"Consortium|Administration|Collaborat|Initiative|Network|Project|Group\b"
     r"|Center|Centre|Institute|Program(me)?\b|Committee|Society|Working Party"
-    r"|\bInc\b|\bLtd\b|\bLLC\b|on behalf of|Amgen|Genentech", re.I)
+    r"|\bInc\b|\bLtd\b|\bLLC\b|\bGmbH\b|\bAG\b|\bSA\b|on behalf of"
+    r"|Amgen|Genentech|Biogen|Novartis|Roche|Ionis|Stoke|Sarepta|Pfizer"
+    r"|Therapeutics|Pharmaceutical", re.I)
 
 
 def author_format_problems(sources: dict) -> list[str]:
