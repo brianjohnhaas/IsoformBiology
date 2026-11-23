@@ -930,6 +930,7 @@ claims:
     doi: 10.64898/2026.10.08.757673
     bibkey: jaganathan2026spliceai2
     metadata_source: crossref
+    preprint: true
   evidence:
     text_access: full_text
     lines: L8
@@ -997,8 +998,11 @@ claims:
 - id: NEU-101
   claim: 'The tau isoform composition of the inclusions differs between tauopathies rather than being shared:
     in Pick disease brains, both familial and sporadic, only 3R-tau inclusions had been found until several
-    groups also reported 4R-tau inclusions, while in progressive supranuclear palsy and corticobasal degeneration
-    the majority of cases show up-regulated 4R-tau.'
+    groups also reported 4R-tau inclusions, while for progressive supranuclear palsy and corticobasal degeneration
+    this review reports only that the majority of cases show up-regulated 4R-tau, naming neither inclusion
+    composition nor an assay for those two diseases.
+
+    '
   topic: The other tauopathies and the 3R:4R direction each one takes
   source:
     doc_id: PMC2483273
@@ -1018,9 +1022,13 @@ claims:
   confidence: high
   note: 'Review, cited as a review: both the Pick 4R observation and the PSP and corticobasal statements rest
     on a single reference in this review (its [63]), which was not read, so the two are not independent of
-    each other. The assay is inclusion composition by staining, not an mRNA ratio. The same line also reports
-    an increased 3R:4R ratio in Down syndrome brain, but explicitly as the authors'' own unpublished observation,
-    so that is not recorded. tier: correlation of isoform ratio with a phenotype only'
+    each other. Inclusion composition by staining is the assay for the Pick statement only; for PSP and corticobasal
+    degeneration the review names no assay, and an earlier version of this record asserted the staining assay
+    for all three. The same line also reports an increased 3R:4R ratio in Down syndrome brain, but explicitly
+    as the authors'' own unpublished observation, so that is not recorded. tier: correlation of isoform ratio
+    with a phenotype only
+
+    '
   figure_idea: A single 3R:4R axis with a band at one for normal adult brain, and each tauopathy placed on
     it by the isoform found in its inclusions, with the assay named beside each marker so inclusion staining,
     soluble protein and transcript ratio are not read as one measurement.
@@ -1167,11 +1175,13 @@ claims:
     and NEU-105. tier: correlation of isoform ratio with a phenotype only. Claim restated 2026-11-23 to remove
     an 8-word span shared with its own audit quote; content unchanged.'
 - id: NEU-107
-  claim: 'The seeding asymmetry runs in both directions, which is what makes the isoform the determining variable:
-    full-length 4R human tau, expressed in SH-SY5Y cells, let the sarkosyl-insoluble fraction from the three
-    corticobasal degeneration brains seed aggregation of soluble tau, while cells expressing 3R did not, the
-    reverse of the Pick disease result, and the structural reason given is that where the last residue of the
-    second repeat sits cannot accommodate the last residue of the first repeat.'
+  claim: 'The seeding asymmetry runs in both directions: full-length 4R human tau, expressed in SH-SY5Y cells,
+    let the sarkosyl-insoluble fraction from the three corticobasal degeneration brains seed aggregation of
+    soluble tau, while cells expressing 3R did not, the reverse of the Pick disease result, and the structural
+    reason the authors suggest is that where the last residue of the second repeat sits cannot accommodate
+    the last residue of the first repeat.
+
+    '
   topic: Isoform-specific functional difference between 3R and 4R tau
   source:
     doc_id: PMC7148158
@@ -1190,12 +1200,15 @@ claims:
     quote: seeded aggregation of soluble tau in SH-SY5Y cells expressing full-length 4R, but not 3R, human
       tau
   confidence: high
-  note: 'The same line reports that in primary neurons corticobasal-degeneration tau recruited only soluble
-    4R tau while Alzheimer disease tau recruited both, which those authors take from a separate study they
-    cite rather than from their own hands. Pairs with NEU-105, which is the Pick disease direction from the
-    same laboratory, so the two halves of the asymmetry are not independent of each other. tier: isoform-specific
-    biochemical or binding difference, no organismal phenotype. Claim restated 2026-11-23 to remove an 8-word
-    span shared with its own audit quote; content unchanged.'
+  note: 'The structural explanation is offered as a proposal in the source, and an earlier version of this
+    record''s opening clause presented the asymmetry as establishing the isoform as the determining variable,
+    which goes beyond what the source states. The same line reports that in primary neurons corticobasal-degeneration
+    tau recruited only soluble 4R tau while Alzheimer disease tau recruited both, which those authors take
+    from a separate study they cite rather than from their own hands. Pairs with NEU-105, which is the Pick
+    disease direction from the same laboratory, so the two halves of the asymmetry are not independent of each
+    other. tier: isoform-specific biochemical or binding difference, no organismal phenotype
+
+    '
 - id: NEU-108
   claim: Three classes of tauopathy can be told apart by the isoform composition of their filaments, 3R, 4R
     and 3R plus 4R, with Alzheimer disease and chronic traumatic encephalopathy both in the mixed class; because
@@ -1351,10 +1364,14 @@ claims:
     to chapter 10. No tier applies: this record is a measurement of isoform proportions with no phenotype attached
     to it.'
 - id: NEU-113
-  claim: 'Two splicing factors act on tau exon 10 by binding the pre-mRNA itself: a MAPT pre-mRNA spanning
-    exons 9 to 11 with its full intervening introns pulled RSRC1 down from post-mortem human prefrontal cortex
-    lysate at 41.62 per cent of the input protein (p < 0.001) and RBM11 at 11.11 per cent (p < 0.01), against
-    minimal and non-significant recovery of THOC3 at 5.77 per cent and SNRNP25 at 4.77 per cent.'
+  claim: 'Two splicing factors bind a tau pre-mRNA bait: a MAPT pre-mRNA spanning exons 9 to 11 with its full
+    intervening introns pulled RSRC1 down from post-mortem human prefrontal cortex lysate at 41.62 per cent
+    of the input protein (p < 0.001) and RBM11 at 11.11 per cent (p < 0.01), against minimal and non-significant
+    recovery of THOC3 at 5.77 per cent and SNRNP25 at 4.77 per cent. That the two factors regulate exon 10
+    through that interaction is what those authors suggest from the binding rather than a result measured on
+    this line.
+
+    '
   topic: Tau exon 10 trans-acting factors
   source:
     doc_id: bio_facc27446c19
@@ -1376,11 +1393,14 @@ claims:
       proteins
   confidence: high
   note: 'preprint: true, as for NEU-109. The bait is a minigene transcript, not endogenous pre-mRNA, and the
-    lysate is human brain. Overexpressing either factor in SH-SY5Y cells changed both the 4R:3R and the exon-2
-    ratios, which is at that paper''s L41 in a figure caption rather than in body text, so it is not claimed
-    here. These two factors were selected from a correlational screen, so the pull-down is a validation of
-    a candidate rather than an unbiased search. tier: isoform-specific biochemical or binding difference, no
-    organismal phenotype'
+    lysate is human brain. The only regulation evidence in the paper is that overexpressing either factor in
+    SH-SY5Y cells changed both the 4R:3R and the exon-2 ratios, which sits at that paper''s L41 in a figure
+    caption rather than in body text and is therefore not claimed here; an earlier version of this record asserted
+    the regulatory mechanism while declining to anchor it. These two factors were selected from a correlational
+    screen, so the pull-down is a validation of a candidate rather than an unbiased search. tier: isoform-specific
+    biochemical or binding difference, no organismal phenotype
+
+    '
 - id: NEU-114
   claim: 'The N-terminal isoforms are not distributed evenly across the lesions they form: 2N tau was absent
     from the glial pathology of both Alzheimer disease and progressive supranuclear palsy, the astrocytic tufts
@@ -1461,11 +1481,15 @@ claims:
     quote: 3-repeat tau stabilized most dynamic parameters about threefold less potently than 4-repeat tau
       and had only a minimal ability to suppress shortening events
   confidence: high
-  note: 'Abstract-only record; the authors and journal are not in the corpus metadata, so they carry RESOLVE_FROM_DOI
-    and independence from NEU-117 cannot be assessed from what was read. Non-neuronal cells, which bounds how
-    far the result can be carried. The abstract presents a loss-of-function reading of altered isoform expression
-    as an interpretation. tier: isoform-specific biochemical or binding difference, no organismal phenotype.
-    Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
+  note: 'Abstract-only record. Independence from NEU-117 is not an open question: the two bylines now carried
+    in these records share three name strings. Because both records are abstract-only, a shared name string
+    is weaker evidence than a verified laboratory, but the chapter must not present these two as independent.
+    An earlier version of this note said independence could not be assessed, which is stale in the dangerous
+    direction. Non-neuronal cells, which bounds how far the result can be carried. The abstract presents a
+    loss-of-function reading of altered isoform expression as an interpretation. tier: isoform-specific biochemical
+    or binding difference, no organismal phenotype
+
+    '
 - id: NEU-117
   claim: 'The difference between 3R and 4R tau on microtubules is qualitative and concentration-dependent rather
     than a simple ranking: by video microscopy of individual microtubules in vitro, at tau-to-tubulin ratios
@@ -1490,11 +1514,13 @@ claims:
     quote: all 3R isoforms reduced microtubule growth rates relative to the no-tau control, whereas all 4R
       isoforms increased them
   confidence: high
-  note: 'Abstract-only record; authors and journal are not in the corpus metadata and carry RESOLVE_FROM_DOI,
-    so whether this shares a laboratory with NEU-116 cannot be checked from what was read, and the two should
-    not be presented as independent without that check. This bounds NEU-116: the threefold gap there is not
-    a constant, and at high occupancy the sign of the 3R effect reverses. tier: isoform-specific biochemical
-    or binding difference, no organismal phenotype'
+  note: 'Abstract-only record. The two bylines now carried in this record and in NEU-116 share three name strings,
+    so the two must not be presented as independent; an earlier version of this note said the check could not
+    be made. Because both records are abstract-only, a shared name string is weaker evidence than a verified
+    laboratory. This bounds NEU-116: the threefold gap there is not a constant, and at high occupancy the sign
+    of the 3R effect reverses. tier: isoform-specific biochemical or binding difference, no organismal phenotype
+
+    '
 - id: NEU-118
   claim: 'Small molecules that push MAPT exon 10 out can be made to work in patient neurons: in induced-pluripotent-stem-cell-derived
     cortical neurons from a frontotemporal dementia patient carrying the tau-P301L mutation, 96 hours of PTC-700
@@ -1625,11 +1651,13 @@ claims:
     is the contrast with NEU-124 and NEU-125. The htau model''s baseline 3R excess is cited by those authors
     to earlier work, including their own. tier: isoform-specific perturbation with phenotype'
 - id: NEU-122
-  claim: 'Raising 4R tau on its own is enough to produce a disease phenotype in human neurons, which bounds
-    the claim that only the ratio matters: a splice-switching antisense oligonucleotide shifting 3R to 4R,
-    applied at 3.5 micromolar to the medium of cortical neurons derived from three control induced-pluripotent-stem-cell
-    lines for ten days, significantly raised 4R tau protein and significantly raised tau phosphorylation at
-    Ser404 and at Ser202/Thr205, reproducing what VCP-mutant neurons show.'
+  claim: 'A splice-switching antisense oligonucleotide that shifts 3R tau to 4R, applied at 3.5 micromolar
+    to the medium of cortical neurons derived from three control induced-pluripotent-stem-cell lines for ten
+    days, significantly raised 4R tau protein and significantly raised tau phosphorylation at Ser404 and at
+    Ser202/Thr205, reproducing what VCP-mutant neurons show. Because the oligonucleotide lowers 3R as it raises
+    4R, what was tested is a shift in the ratio rather than an increase in one isoform on its own.
+
+    '
   topic: Isoform-specific functional difference between 3R and 4R tau
   source:
     doc_id: PMC10907086
@@ -1650,9 +1678,14 @@ claims:
   confidence: high
   note: 'Three control lines, no animal. The oligonucleotide is a 2''-O-methoxyethyl phosphorothioate that
     those authors took from earlier work in human-tau-expressing mice and in stem-cell-derived astrocytes.
-    VCP-mutant neurons had raised 4R tau with total tau unchanged, so the comparison is a ratio shift in both
-    arms. This cuts against reading NEU-115 as showing that neither isoform is harmful alone: here an excess
-    of 4R, with no change in total tau, is sufficient. tier: isoform-specific perturbation with phenotype'
+    Total tau unchanged is reported for the VCP-mutant line arm only; in the oligonucleotide arm total tau
+    was blotted but no result for it is stated in the text or the caption. The paper''s own words for the outcome
+    are an increase in 4R tau and 4R tau dominance, never an isolated 4R increase. Reviewed 2026-11-23: an
+    earlier version of this record presented the experiment as raising 4R alone with total tau unchanged, and
+    offered it as the bound on reading the phenotype as a ratio. It is not that bound, because the experiment
+    is itself a ratio shift. tier: isoform-specific perturbation with phenotype
+
+    '
 - id: NEU-123
   claim: 'The same 3R-to-4R shift drove the rest of the cascade: cortical neurons from three control lines
     treated with the splice-switching oligonucleotide showed significantly larger early endosomes and lysosomes
@@ -1770,25 +1803,31 @@ claims:
     quote: Cerebellar hemisphere was the most transcriptionally complex tissue (22,522 distinct isoforms; 3,726
       unique); liver was the least diverse (12,435 distinct isoforms; 1,039 unique)
   confidence: high
-  note: 'Shares no author with the chapter''s existing EST-era source for the same comparison (NEU-022, Yeo,
-    Holste, Kreiman and Burge), so the brain ranking is independently reproduced. The two do not measure the
-    same thing: the earlier work counted the fraction of a tissue''s genes showing at least one alternative
-    splicing event, this one counts distinct expressed isoforms passing an expression threshold, so a difference
-    in rank is not automatically a contradiction. On liver the two do differ in rank: liver was second of the
-    tissues compared on EST evidence and last of these nine. The nine tissues here do not include testis, which
-    was third in the earlier ranking, so the earlier top three cannot be checked. The data are a reanalysis
-    of Nanopore reads generated by the GTEx long-read study, not new sequencing, and the counts depend on the
-    threshold: at a counts-per-million cut-off of ten the range narrows to 3,815 in liver against 7,916 in
-    cerebellar hemisphere. Not a case record; it is the measurement argument this agent was assigned.'
+  note: 'No shared name string was found between this byline and the chapter''s existing EST-era source for
+    the same comparison (NEU-022, Yeo, Holste, Kreiman and Burge), which is a name-string check rather than
+    a verified check of laboratories. The two do not measure the same thing: the earlier work counted the fraction
+    of a tissue''s genes showing at least one alternative splicing event, this one counts distinct expressed
+    isoforms passing an expression threshold, so a difference in rank is not automatically a contradiction.
+    On liver the two do differ in rank: liver was second of the tissues compared on EST evidence and last of
+    these nine. The nine tissues here do not include testis, which was third in the earlier ranking, so the
+    earlier top three cannot be checked. The data are a reanalysis of Nanopore reads generated by the GTEx
+    long-read study, not new sequencing, and the counts depend on the threshold: at a counts-per-million cut-off
+    of ten the range narrows to 3,815 in liver against 7,916 in cerebellar hemisphere, which is on that paper''s
+    L12 rather than on the line this record cites. Not a case record; it is the measurement argument this agent
+    was assigned. tier: tissue-level count of expressed isoforms at a stated expression threshold
+
+    '
   figure_idea: Nine tissues ranked twice on one page, once by fraction of genes with an event on EST evidence
     and once by distinct expressed isoforms on long reads, with lines joining each tissue's two positions so
     the stable brain rank and the moving liver rank are both visible.
 - id: NEU-127
-  claim: 'What separates the brain from the other tissues is less its total than what only it expresses: cerebellar
-    hemisphere uniquely expressed 3,726 isoforms, 53.1 per cent as many as the 7,023 isoforms shared by all
-    nine tissues, 2.2 times the next largest set and 19.7 times the 189 unique to heart left ventricle, and
-    only 30.9 per cent of those 3,726 were annotated as protein-coding against 64.8 per cent of the 671 unique
-    to skeletal muscle.'
+  claim: 'Cerebellar hemisphere leads the nine tissues on what only it expresses as well as on its total: it
+    uniquely expressed 3,726 isoforms, 53.1 per cent as many as the 7,023 isoforms shared by all nine tissues,
+    2.2 times the next largest set and 19.7 times the 189 unique to heart left ventricle, and only 30.9 per
+    cent of those 3,726 were annotated as protein-coding against 64.8 per cent of the 671 unique to skeletal
+    muscle.
+
+    '
   topic: Is the brain the tissue that splices most
   source:
     doc_id: PMC12679790
@@ -1803,15 +1842,20 @@ claims:
     metadata_source: crossref
   evidence:
     text_access: full_text
-    lines: L47
+    lines: L47,L48
     anchor: https://paperclip.gxl.ai/citations/papers/PMC12679790#L47
     quote: Cerebellar hemisphere uniquely expressed 3,726 isoforms—more than half (53.1%) of the number of
       isoforms expressed across all nine tissues
   confidence: high
-  note: Uniqueness here means unique among these nine tissues at these thresholds, not unique in the body,
-    and three of the nine are brain regions, which raises the bar for an isoform to count as cerebellum-specific
-    rather than lowering it. The protein-coding fractions are from that paper's L48. Cell-type resolution within
-    brain belongs to chapter 8; this is a tissue-level comparison. Not a case record.
+  note: 'An earlier version of this claim set the unique set against the total as a contrast, which the paper
+    does not draw: cerebellar hemisphere holds both the highest total and the largest unique set. Uniqueness
+    here means unique among these nine tissues at these thresholds, not unique in the body, and three of the
+    nine are brain regions, which raises the bar for an isoform to count as cerebellum-specific rather than
+    lowering it. The protein-coding fractions are from that paper''s L48, which this record now cites alongside
+    L47. Cell-type resolution within brain belongs to chapter 8; this is a tissue-level comparison. Not a case
+    record. tier: tissue-level count of expressed isoforms at a stated expression threshold
+
+    '
 - id: NEU-128
   claim: 'Two neurexin splice sites act as a hierarchical code rather than as independent switches: rescuing
     neurexin-3 conditional knockout neurons showed that a variant lacking the splice site 4 insert restores
@@ -1838,10 +1882,13 @@ claims:
   confidence: high
   note: 'Mouse, olfactory bulb granule-cell-to-mitral-cell synapses in dissociated culture and in vivo, with
     the medial prefrontal cortex showing the same dependence on splice site 2. Only neurexin-3 alpha supports
-    the function; the beta form does not. Shares its senior author with the splice-site-4 knock-in case already
-    recorded for chapter 2 as CEL-024, so the two are not independent laboratories. The splice-site-4 knock-in
-    result itself belongs to chapter 2 and is not re-recorded here; what is recorded here is the interaction
-    between two sites. tier: isoform-specific perturbation with phenotype'
+    the function; the beta form does not. Shares its senior author with two records already written for chapter
+    2, CEL-024 and CEL-025, so none of the three is an independent laboratory; an earlier version of this note
+    named only CEL-024. The splice-site-4 knock-in result itself belongs to chapter 2 and is not re-recorded
+    here; what is recorded here is the interaction between two sites. tier: isoform-specific perturbation with
+    phenotype
+
+    '
 - id: NEU-129
   claim: 'The splice code works by deciding whether a binding partner is engaged, and engaging it is the whole
     requirement: in olfactory bulb and prefrontal cortex, irrespective of sex, alternative splicing at neurexin-3

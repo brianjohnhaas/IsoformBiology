@@ -50,10 +50,19 @@ def main() -> int:
         patch = yaml.safe_load(pathlib.Path(path).read_text(encoding="utf-8")) or {}
         for new in patch.get("claims") or []:
             cid = new["id"]
+            if not ({"claim", "topic", "note"} & set(new)):
+                print(f"  [NO-OP] {cid} carries no claim, topic or note")
+                continue
             old = by_id.get(cid)
             if old is None:
                 print(f"  [MISSING] {cid} is not in {target.name}")
                 missing += 1
+                continue
+            if "claim" not in new:
+                for field in ("topic", "note"):
+                    if field in new:
+                        old[field] = new[field]
+                patched += 1
                 continue
             old_claim = old.get("claim", "") or ""
             new_claim = new.get("claim", "") or ""
@@ -65,8 +74,11 @@ def main() -> int:
                 problems.append(
                     f"  [{cid}] digits lost {lost_d} gained {gain_d}; "
                     f"hedges lost {lost_h} gained {gain_h}")
-            old["claim"] = new_claim
-            for field in ("topic", "note"):
+            # Only fields the patch actually carries are written. This used to
+            # assign `claim` unconditionally, so a patch correcting a record's
+            # note alone silently blanked its claim: four records in chapter 7
+            # lost their claim text that way and had to be restored from git.
+            for field in ("claim", "topic", "note"):
                 if field in new:
                     old[field] = new[field]
             patched += 1
