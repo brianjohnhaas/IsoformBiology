@@ -2044,10 +2044,12 @@ claims:
     big tau being a peripheral-nervous-system isoform but does not itself measure peripheral tissue. No tier
     applies: this is an exon-level expression measurement with no phenotype attached to it.'
 - id: NEU-141
-  claim: 'The cryptic exon is a threshold phenomenon rather than a graded one: in SH-SY5Y neuroblastoma cells
-    carrying a doxycycline-inducible short hairpin against TDP-43, the UNC13A cryptic exon became detectable
-    only once more than 50 per cent of TDP-43 had been lost, while the analogous frameshift exon in the sister
-    gene UNC13B was not robustly detected until more than 90 per cent had gone.
+  claim: 'The two cryptic events have different detection points in one knockdown series: in SH-SY5Y neuroblastoma
+    cells carrying a doxycycline-inducible short hairpin against TDP-43, the UNC13A cryptic exon became detectable
+    once more than 50 per cent of TDP-43 had been lost, while the analogous frameshift exon in the sister gene
+    UNC13B was not robustly detected until more than 90 per cent had gone. In the same paper''s other series,
+    cryptic exon expression instead correlated with the degree of knockdown, and those authors attribute the
+    apparent floor to nonsense-mediated decay rather than to a threshold in splicing.
 
     '
   topic: TDP-43 dose thresholds for cryptic exon detection
@@ -2080,12 +2082,14 @@ claims:
     quote: detected only after more than 50% TDP-43 loss, whereas UNC13B FSE and intron retention were not
       robustly detected until more than 90% of TDP-43 expression
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. The phenotype measured here is molecular - cryptic
-    exon inclusion and UNC13A transcript and protein level - not an organismal one. The graded knockdown series
-    was run in SH-SY5Y cells with three biological replicates, so the per cent figures are a cell-line calibration
-    and not a threshold measured in neurons or in tissue. The UNC13B event is an annotated frameshift-inducing
-    exon between exons 10 and 11, not a cryptic exon. Bounded by NEU-142, which shows the 50 per cent figure
-    is a detection threshold set partly by nonsense-mediated decay.
+  note: 'An earlier version of this record presented the result as a threshold phenomenon rather than a graded
+    one, which the paper does not claim and which its other series contradicts; the caveat survived only in
+    this note. tier: molecular readout of cryptic exon inclusion across a graded knockdown series. The phenotype
+    measured here is molecular, cryptic exon inclusion and UNC13A transcript and protein level, not an organismal
+    one. The graded knockdown series was run in SH-SY5Y cells with three biological replicates, so the per
+    cent figures are a cell-line calibration and not a threshold measured in neurons or in tissue. The UNC13B
+    event is an annotated frameshift-inducing exon between exons 10 and 11, not a cryptic exon. Bounded by
+    NEU-142, which shows the 50 per cent figure is a detection threshold set partly by nonsense-mediated decay.
 
     '
   figure_idea: 'Residual TDP-43 on the x axis from 100 per cent down to zero, with cryptic-event inclusion
@@ -2298,7 +2302,9 @@ claims:
     quote: significantly higher frequency in FTLD-TDP relative to both neurologically normal controls (Kruskal–Wallis
       test, P = 0.021) and non-TDP FTLD (FTLD-TAU) (P = 0.010)
   confidence: high
-  note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype. The assay is BaseScope
+  note: 'tier: correlation of an isoform with a neuropathological group, which is the tier the neighbouring
+    records NEU-144, NEU-145 and NEU-147 use for this same cohort; an earlier version of this note claimed
+    an isoform-specific biochemical or binding difference, and this assay measures neither. The assay is BaseScope
     in situ hybridisation against the cryptic junction, read as background-corrected foci frequency; the group
     sizes come from the figure legend on the first cited line and the statistics from the body text on the
     second. Same paper as NEU-141 to NEU-145, so this is an orthogonal assay within one laboratory rather than
@@ -2556,9 +2562,10 @@ claims:
 - id: NEU-153
   claim: 'The two companion papers disagree about the biochemistry: by electrophoretic mobility shift assay
     with full-length recombinant TDP-43, Ma and colleagues found the protein bound the reference and risk versions
-    of the cryptic-exon probe with similar affinity, lower affinity appearing only for the repeat variant rs56041637,
-    and they say in the paper that this differs from what Brown and colleagues reported and attribute the difference
-    to their use of full-length protein against RNA-recognition motifs alone.
+    of the cryptic-exon probe with similar affinity, with a minor reduction in affinity for the risk allele
+    and a larger reduction for the repeat variant rs56041637, and they say in the paper that this differs from
+    what Brown and colleagues reported and attribute the difference to their use of full-length protein against
+    RNA-recognition motifs alone.
 
     '
   topic: UNC13A risk variants and the causal splicing step
@@ -2582,10 +2589,11 @@ claims:
     quote: these in vitro binding results are somewhat different from those reported in the accompanying Article
       by Brown and colleagues
   confidence: high
-  note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype. This is the recorded
-    dispute between NEU-150 and this record: same variant, two recombinant proteins, two assays, opposite answers
-    about whether the cryptic-exon risk allele weakens TDP-43 binding. Ma and Brown share no author. Both sets
-    of authors state the question is unresolved.
+  note: 'An earlier version of this claim said lower affinity appeared only for the repeat variant, which excluded
+    the minor reduction the paper also reports for the risk allele. tier: isoform-specific biochemical or binding
+    difference, no organismal phenotype. This is the recorded dispute between NEU-150 and this record: same
+    variant, two recombinant proteins, two assays, opposite answers about whether the cryptic-exon risk allele
+    weakens TDP-43 binding. Ma and Brown share no author. Both sets of authors state the question is unresolved.
 
     '
 - id: NEU-154
@@ -2650,10 +2658,12 @@ claims:
     quote: The other variants also contributed to mis-splicing, but in a non-additive way
   confidence: high
   note: 'tier: isoform-specific perturbation with phenotype. Molecular phenotype. The counterpart of this record
-    is NEU-151. The two experiments differ in the system (TDP43-null HEK 293T against TDP-43-knockdown SH-SY5Y),
-    in the number of variants tested (three against two) and in the readout (RT-qPCR against quantified RT-PCR
-    products), any of which could explain the difference; neither paper tests the other''s configuration. This
-    record shares a cited line with NEU-152 but quotes a different span and states a different finding.
+    is NEU-151. The two experiments differ in the system (TDP43-null HEK 293T against TDP-43-knockdown SH-SY5Y)
+    and in the readout (RT-qPCR against quantified RT-PCR products), either of which could explain the difference.
+    An earlier version of this note said the two differ in the number of variants tested, three against two,
+    and that neither paper tests the other''s configuration: the other paper built the repeat construct as
+    well, so the configurations overlap and only the system and the readout separate them. This record shares
+    a cited line with NEU-152 but quotes a different span and states a different finding.
 
     '
 - id: NEU-156
@@ -2722,12 +2732,14 @@ claims:
     quote: Of the 340 pathological splice junctions that we identified in TDP-43 KD iNeurons, 230 were detected
       in FACS-sorted post-mortem neuronal nuclei
   confidence: high
-  note: 'tier: correlation of isoform ratio with a phenotype only. The lines read were the January 2023 bioRxiv
-    preprint deposited in PubMed Central; the journal DOI recorded here is for the 2024 Science Translational
-    Medicine version and its author list may differ. The 340 junctions were called, at that paper''s L27, by
-    MAJIQ across 233 genes out of 498 differential splicing events, which is a different pipeline and a different
-    cell model from the 179-event count in NEU-010, so the two catalogue sizes are not directly comparable.
-    Not independent of NEU-010: Brown and Wilkins are authors here, and Seddighi is an author of NEU-010''s
+  note: 'tier: between-study reproducibility of a cryptic-splicing catalogue. The lines read were the January
+    2023 bioRxiv preprint deposited in PubMed Central; the journal DOI recorded here is for the 2024 Science
+    Translational Medicine version and its author list may differ. The 340 junctions were called, at that paper''s
+    L27, by MAJIQ across 233 genes out of 498 differential splicing events. An earlier version of this note
+    said that was a different pipeline and a different cell model from the 179-event count in NEU-010: both
+    are the same, the same splicing analyser, the same custom workflow, the same engineered cell line and the
+    same knockdown method, and the two catalogue sizes differ because of event definition and library type
+    instead. Not independent of NEU-010: Brown and Wilkins are authors here, and Seddighi is an author of NEU-010''s
     paper.
 
     '
@@ -2760,12 +2772,13 @@ claims:
     quote: 11 cryptic splicing events were shared between datasets 3 and 4 (Fig. 1c). Of the 26 human cryptic
       exons reported by Ling, 12 were seen
   confidence: high
-  note: 'tier: correlation of isoform ratio with a phenotype only. This is the measurement of reproducibility
-    between screens rather than another screen. The two datasets differ in library preparation - one poly-A
-    selected, one total RNA - which the authors give as the reason the poly-A dataset yielded far more events,
-    so the low overlap is partly a sensitivity difference rather than a disagreement. The comparison against
-    the 2015 report was made by re-aligning that study''s data and classifying its published exons, because
-    it lacked biological replicates. Shares Fratta with NEU-010''s paper.
+  note: 'tier: between-study reproducibility of two screens of one cell line. This is the measurement of reproducibility
+    between screens rather than another screen, so no phenotype is measured and an earlier version of this
+    note claimed a correlation with one. The two datasets differ in library preparation, one poly-A selected
+    and one total RNA, which the authors give as the reason the poly-A dataset yielded far more events, so
+    the low overlap is partly a sensitivity difference rather than a disagreement. The comparison against the
+    2015 report was made by re-aligning that study''s data and classifying its published exons, because it
+    lacked biological replicates. Shares a name string with NEU-010''s paper, Fratta.
 
     '
 - id: NEU-159
@@ -2830,20 +2843,23 @@ claims:
     quote: only 16% of the mRNA species that displayed aberrant splicing in TDP-43-negative ALS/FTLD-TDP brain
       nuclei were affected by TDP-43 KD
   confidence: high
-  note: 'tier: correlation of isoform ratio with a phenotype only. The lines read were a bioRxiv preprint;
-    the recorded DOI is the preprint''s and the preprint''s own title line differs from the title in its metadata
-    record, so the version matters. The 16 per cent is a reanalysis of two other groups'' published datasets,
-    not a new screen, and the comparison is between a knockdown in cultured neurons and sorted nuclei from
-    end-stage tissue, which differ in cell type, disease stage and depth. This is the counterpart of NEU-157,
+  note: 'tier: between-study reproducibility of a cryptic-splicing catalogue. The lines read were a bioRxiv
+    preprint; the recorded DOI is the preprint''s and the preprint''s own title line differs from the title
+    in its metadata record, so the version matters. The 16 per cent is a reanalysis of two other groups'' published
+    datasets, not a new screen, and the comparison is between a knockdown in cultured neurons and sorted nuclei
+    from end-stage tissue, which differ in cell type, disease stage and depth. This is the counterpart of NEU-157,
     which reads the same kind of comparison the other way; the two use different denominators, junctions against
-    transcripts. These authors share no author with NEU-157''s paper.
+    transcripts. An earlier version of this note said these authors share no author with NEU-157''s paper:
+    they share three name strings, two of them visible in the byline of the version actually read, so the two
+    must not be presented as independent. The author string also renders a multi-word surname as initials,
+    "Morato, J. G." for "Garcia Morato, J.".
 
     '
 - id: NEU-161
-  claim: 'Only a small minority of cryptic exons can ever yield a detectable peptide: about 3 per cent of the
-    non-conserved cryptic exons that appear when TDP-43 splicing repression is lost are spliced in frame and
-    so produce a neoepitope rather than a frameshift or a premature stop, which is the denominator any cryptic-peptide
-    biomarker programme works inside.
+  claim: 'The paper''s introduction restates from two earlier studies that about 3 per cent of the non-conserved
+    cryptic exons appearing when TDP-43 splicing repression is lost are spliced in frame, and so produce a
+    neoepitope rather than a frameshift or a premature stop. That fraction is the denominator a cryptic-peptide
+    biomarker programme works inside, and it is a restatement rather than a measurement made here.
 
     '
   topic: The TDP-43 cryptic splicing catalogue and its reproducibility
@@ -2864,10 +2880,12 @@ claims:
     anchor: https://paperclip.gxl.ai/citations/papers/PMC10878965#L21
     quote: of which about 3% produce in-frame neoepitopes
   confidence: high
-  note: 'tier: correlation of isoform ratio with a phenotype only. The figure is stated in the paper''s introduction
-    with citations to two earlier studies rather than being measured here, so it is a restatement; the chapter
-    should attribute it as such. It is the selection criterion that led to HDGFL2 and it bounds how many of
-    the hundreds of cryptic events can be read out as a protein.
+  note: 'tier: a fraction restated from earlier work, not measured here. The figure is stated in the paper''s
+    introduction with citations to two earlier studies; an earlier version of this record carried the restatement
+    only in the note, leaving the claim, which is the only citable field, asserting it as a finding. A sibling
+    source in this chapter gives a different figure for mouse, so the 3 per cent should not be carried as a
+    cross-species constant. It is the selection criterion that led to HDGFL2 and it bounds how many of the
+    hundreds of cryptic events can be read out as a protein.
 
     '
 - id: NEU-162
@@ -2942,10 +2960,11 @@ claims:
 
     '
 - id: NEU-164
-  claim: 'In blood the same assay loses its separation: across 66 plasma samples from 43 C9orf72 carriers and
-    30 disease-control samples, plasma ratios tracked matched cerebrospinal-fluid ratios closely overall and
-    very closely within carriers but not within controls, and the highest plasma concentrations after symptomatic
-    carriers were those of the normal-pressure-hydrocephalus controls, with no group difference reaching significance.
+  claim: 'In blood the same assay loses its separation: plasma was assayed in 66 samples from 43 C9orf72 carriers
+    alongside 30 disease-control samples, and in the 58 plasma samples with a matched cerebrospinal-fluid measurement
+    the two tracked closely overall and very closely within carriers but not within the 30 controls, while
+    the highest plasma concentrations after symptomatic carriers were those of the normal-pressure-hydrocephalus
+    controls, with no group difference reaching significance.
 
     '
   topic: Cryptic-exon products as fluid biomarkers
@@ -2966,11 +2985,13 @@ claims:
     anchor: https://paperclip.gxl.ai/citations/papers/PMC10878965#L76,L77
     quote: individuals with NPH had the next-highest concentrations (mean 4.8 ng ml−1, s.d. 9.5, range 0
   confidence: high
-  note: 'tier: correlation of isoform ratio with a phenotype only. The correlation figures on the second cited
-    line are r = 0.83 across all matched pairs, r = 0.93 within C9orf72 carriers and r = 0.19, not significant,
-    within controls; the concentration comparison on the first cited line was not significant for any group.
-    The older control cohort was decades older than the presymptomatic carriers, so age and group are confounded.
-    This is the honest bound on the claim that the marker works in blood.
+  note: 'An earlier version of this claim ran the correlation on the full 66-sample plasma cohort; the correlation
+    was run on 58 matched plasma samples and the 30 controls. tier: correlation of isoform ratio with a phenotype
+    only. The correlation figures on the second cited line are r = 0.83 across all matched pairs, r = 0.93
+    within C9orf72 carriers and r = 0.19, not significant, within controls; the concentration comparison on
+    the first cited line was not significant for any group. The older control cohort was decades older than
+    the presymptomatic carriers, so age and group are confounded. This is the honest bound on the claim that
+    the marker works in blood.
 
     '
 - id: NEU-165
@@ -3028,11 +3049,13 @@ claims:
     quote: another group was also able to detect the presence of cryptic HDGFL2 in CSF of presymptomatic C9orf72
       mutation carriers
   confidence: high
-  note: 'tier: correlation of isoform ratio with a phenotype only. This is a statement about somebody else''s
+  note: 'tier: a pointer to another laboratory''s unquantified result. This is a statement about somebody else''s
     result, made in the discussion of the immunoassay paper and cited there; the chapter should treat it as
     a pointer to that other work and not as this paper''s measurement. No cohort size, no detection rate and
-    no assay detail are given at this line. The mass-spectrometry work in NEU-157''s paper shares authors with
-    neither this paper nor, necessarily, the work referred to here.
+    no assay detail are given at this line. The work referred to is NEU-157''s paper, by its own reference
+    number, so a chapter reading NEU-157 and NEU-166 as two confirmations would count one paper twice; an earlier
+    version of this note said the mass-spectrometry work in NEU-157''s paper shares authors with neither this
+    paper nor the work referred to here, which had the relationship backwards.
 
     '
 - id: NEU-167
@@ -3063,14 +3086,16 @@ claims:
     quote: an area under the receiver operating characteristic curve (AUC) of 0.85 and 0.92 for AD-TDP and
       FTLD-TDP, respectively
   confidence: high
-  note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype. Groups were assigned
+  note: 'tier: correlation of a cryptic protein''s amount with a neuropathological group. Groups were assigned
     by neuropathological examination of autopsy brain, which is the strongest assignment available and unlike
-    the clinical assignment in NEU-162. The denominators on the first cited line are 67 FTLD-TDP, 70 AD-TDP,
-    27 AD without TDP-43 pathology and 27 controls, of whom 26 had amygdala and 25 frontal cortex available.
-    Frontal cortex gave 0.82 for FTLD-TDP against controls and no significant separation for AD-TDP, which
-    the authors attribute to the scarcity of TDP-43 pathology there. Different antibody, different assay and
-    a different cohort from NEU-162, but Ward and Gitler are authors of both this paper and the UNC13A and
-    cryptic-peptide papers recorded elsewhere here, so the two HDGFL2 results are not fully independent.
+    the clinical assignment in NEU-162; an earlier version of this note claimed an isoform-specific biochemical
+    or binding difference, where what was done is an immunoassay compared across autopsy-defined groups. The
+    denominators on the first cited line are 67 FTLD-TDP, 70 AD-TDP, 27 AD without TDP-43 pathology and 27
+    controls, of whom 26 had amygdala and 25 frontal cortex available. Frontal cortex gave 0.82 for FTLD-TDP
+    against controls and no significant separation for AD-TDP, which the authors attribute to the scarcity
+    of TDP-43 pathology there. Different antibody, different assay and a different cohort from NEU-162, but
+    Ward and Gitler are authors of both this paper and the UNC13A and cryptic-peptide papers recorded elsewhere
+    here, so the two HDGFL2 results are not fully independent.
 
     '
 - id: NEU-168
@@ -3095,17 +3120,19 @@ claims:
     anchor: https://paperclip.gxl.ai/citations/papers/PMC5446763#L75,L93
     quote: No cryptic splicing events were shared between human and mouse as previously reported
   confidence: high
-  note: 'tier: correlation of isoform ratio with a phenotype only. The authors present this as a replication
-    of the 2015 report recorded at NEU-005, not as a new finding, and the datasets differ in cell type between
-    the species, so the absence of shared events is not a position-by-position test in matched tissue. Shares
-    Fratta with NEU-010''s paper.
+  note: 'tier: cross-species overlap of two sets of called events. No phenotype is measured, and an earlier
+    version of this note claimed a correlation with one. The authors present this as a replication of the 2015
+    report recorded at NEU-005, not as a new finding, and the datasets differ in cell type between the species,
+    so the absence of shared events is not a position-by-position test in matched tissue. Shares a name string
+    with NEU-010''s paper, Fratta.
 
     '
 - id: NEU-169
   claim: 'Cryptic exons are not weakly conserved sequence but unconserved sequence: per-exon conservation scores
     for TDP-43-repressed cryptic exons were indistinguishable from randomly sampled intronic sequence in the
-    same genes and far below the adjacent annotated exons, even though the same exons carry splice sites close
-    in strength to those of their annotated neighbours.
+    same genes and far below the adjacent annotated exons. Their splice sites are weaker than those of the
+    annotated neighbours, which are on average significantly stronger, and at the same time far above random,
+    which those authors read as real but weaker sites.
 
     '
   topic: Why the mouse does not show the human cryptic-exon programme
@@ -3125,10 +3152,13 @@ claims:
     quote: We found no difference between cryptic exons and matched intronic sequences (Fig. 4a), and a much
       lower conservation level than adjacent annotated exons
   confidence: high
-  note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype. The measure is
-    mean PhyloP score per exon against two control sets, intronic sequence from the cryptic-containing intron
-    and the adjacent annotated exons. The splice-site strength comparison is stated in the same paper''s discussion
-    rather than at this line. This is the source that quantifies conservation of cryptic exons as a class.
+  note: 'An earlier version of this claim said the cryptic exons carry splice sites close in strength to those
+    of their annotated neighbours, which inverts the comparison: the source says the canonical sites are on
+    average significantly stronger and the cryptic ones far above random. tier: sequence-level comparison of
+    cryptic exons against two control sets. The measure is mean PhyloP score per exon against intronic sequence
+    from the cryptic-containing intron and the adjacent annotated exons. The splice-site strength comparison
+    is stated in the same paper''s discussion rather than at this line. This is the source that quantifies
+    conservation of cryptic exons as a class.
 
     '
   figure_idea: 'Three stacked distributions of per-exon conservation score - annotated exons, cryptic exons,
@@ -3302,19 +3332,21 @@ claims:
     anchor: https://paperclip.gxl.ai/citations/papers/PMC5446763#L94
     quote: our algorithm only classified 3 in mouse and 1 in human as cryptic exons
   confidence: high
-  note: 'tier: correlation of isoform ratio with a phenotype only. This is the strongest available support
-    for treating cryptic-exon de-repression as specific to TDP-43 rather than general to ALS-linked RNA-binding
+  note: 'tier: matched comparison of two depletion screens by one pipeline. No phenotype is measured, and an
+    earlier version of this note claimed a correlation with one. This is the strongest available support for
+    treating cryptic-exon de-repression as specific to TDP-43 rather than general to ALS-linked RNA-binding
     proteins, because the comparison was matched rather than drawn from different studies. It is a knockdown
     comparison in cell lines and mouse brain, not a comparison of patient tissue, so it does not by itself
-    say what happens in FUS-mutant ALS. Shares Fratta with NEU-010''s paper.
+    say what happens in FUS-mutant ALS. Shares a name string with NEU-010''s paper, Fratta.
 
     '
 - id: NEU-175
   claim: 'FUS-mutant ALS has a splicing programme of its own with the opposite conservation signature: in knock-in
     models, nuclear depletion of FUS by either knockout or a localisation-signal mutation produced splicing
     changes enriched for retained introns that are evolutionarily conserved and that sit mostly in genes encoding
-    RNA-binding proteins, including an intron in FUS itself that the authors link to its autoregulation, while
-    cassette exons were not bound by FUS beyond chance.
+    RNA-binding proteins. Retention predominantly decreased rather than increased, and the two introns in FUS''s
+    own transcript that the authors link to its autoregulation were among those less retained, while cassette
+    exons were not bound by FUS beyond chance.
 
     '
   topic: FUS, SOD1, C9orf72 and FTLD-TAU as comparison groups
@@ -3338,18 +3370,23 @@ claims:
     quote: nuclear depletion of FUS through either knockout or NLS mutation leads to a set of splicing changes
       enriched in conserved intron retention events
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Molecular phenotype in knock-in mouse and cell
-    models. The contrast with TDP-43 is the point: conserved retained introns in RNA-binding proteins against
-    non-conserved cryptic cassette exons, so the absence of UNC13A cryptic splicing in FUS cases is not an
-    absence of mis-splicing. Humphrey, Brown, Isaacs, Plagnol and Fratta are authors of this and of NEU-158''s
-    and NEU-174''s papers, so the FUS null and the FUS positive come from one group.
+  note: 'An earlier version of this claim gave the direction of the retention change nowhere, which a reader
+    will assume to be an increase, and named one intron in FUS''s own transcript where there are two. tier:
+    isoform-specific perturbation with phenotype. Molecular phenotype in knock-in mouse and cell models. The
+    contrast with TDP-43 is the point: conserved retained introns in RNA-binding proteins against non-conserved
+    cryptic cassette exons, so the absence of UNC13A cryptic splicing in FUS cases is not an absence of mis-splicing.
+    Humphrey, Brown, Isaacs and Fratta are authors of this and of NEU-158''s and NEU-174''s papers, so the
+    FUS null and the FUS positive come from one group; an earlier version of this note named a fifth shared
+    author, Plagnol, who is not an author of this paper, and the conclusion holds on the four.
 
     '
 - id: NEU-176
   claim: 'TDP-43 holds its own transcript down by choosing where it ends: TDP-43 suppresses use of the most
     proximal of the three polyadenylation signals in TARDBP and promotes splicing of alternative introns within
-    its last exon, which routes the message to nonsense-mediated decay, and in ALS motor neurons, especially
-    those with TDP-43 mislocalised out of the nucleus, cytoplasmic TARDBP message was increased.
+    its last exon, which routes the message to nonsense-mediated decay. In ALS motor neurons, especially those
+    with TDP-43 mislocalised out of the nucleus, the significant change was in the proportion of TARDBP message
+    that was cytoplasmic, in two of three genotype groups: total message did not increase, and the nuclear
+    and cytoplasmic amounts did not change significantly on their own.
 
     '
   topic: TDP-43 autoregulation and the loss-of-function model
@@ -3371,11 +3408,13 @@ claims:
     quote: TDP-43 inhibits the selection of the most proximal PAS and induces splicing of multiple alternative
       introns in TARDBP mRNA
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. The record is anchored on the paper''s abstract,
-    which is a single line in this document; the cell-level measurement in ALS motor neurons is stated there
-    without a cohort size, so no denominator can be given. This matters for the loss-of-function model because
-    it predicts that losing nuclear TDP-43 raises TARDBP message rather than lowering it, a feedback the cryptic-exon
-    account does not include.
+  note: 'An earlier version of this claim said cytoplasmic TARDBP message was increased, which the body of
+    the paper contradicts: the significant result is a proportion, not an amount. tier: isoform-specific perturbation
+    with phenotype. The record was anchored on the paper''s abstract, which is a single line in this document;
+    the body text at that paper''s L26, L56 and L58 to L59 carries the per-genotype analysis and its cohorts,
+    so an earlier version of this note was wrong to say no denominator can be given. This matters for the loss-of-function
+    model because it predicts that losing nuclear TDP-43 raises TARDBP message rather than lowering it, a feedback
+    the cryptic-exon account does not include.
 
     '
 - id: NEU-177
@@ -3404,10 +3443,13 @@ claims:
       spinal cord TDP-43 protein levels and a reduction in motor neuron numbers
   confidence: high
   note: 'tier: isoform-specific perturbation with phenotype. Anchored on the paper''s abstract, which is one
-    line here, so no group sizes or effect sizes are available for the claim. Young heterozygotes were normal
-    with no detectable disruption of autoregulation, which the authors state, so the phenotype is age-dependent.
+    line here; the paper''s full text at L39 to L64 carries the mouse cohorts, so an earlier version of this
+    note was wrong that no group sizes or effect sizes are available. Young heterozygotes were normal with
+    no detectable disruption of autoregulation, which the authors state, so the phenotype is age-dependent.
     The deletion removes several elements at once and therefore does not isolate which of them carries the
-    effect.
+    effect. One year conflict stands unresolved: this record says 2026 while the corpus record and this record''s
+    own bibkey say 2025, and an advance-publication issue year would explain it, so the corpus cannot adjudicate
+    which is right.
 
     '
 - id: NEU-178
@@ -3447,7 +3489,9 @@ claims:
   claim: 'The loss-of-function account is contested, and the cryptic-exon story assumes one side of it: forcing
     TDP-43 into the cytoplasm with a mutated localisation signal in iPSC-derived neurons shifted APP splicing,
     with use of the junction specific to the 695-residue isoform falling by 32 per cent and the 751-specific
-    junction rising by 24 per cent, changes that TDP-43 knockdown and knockout did not produce at all.
+    junction rising by 24 per cent. Neither TDP-43 knockdown in iPSC-derived neurons nor complete knockout
+    in HeLa cells produced the shift, and both of those nulls are this paper''s reanalyses of other groups''
+    datasets rather than its own experiments.
 
     '
   topic: TDP-43 autoregulation and the loss-of-function model
@@ -3473,15 +3517,19 @@ claims:
     quote: a 32% decrease in the usage of the APP695-specific splice junction in TDP-43 deltaNLS  relative
       to NES
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Molecular phenotype only. Read as a bioRxiv preprint.
-    The comparator is overexpression of a nuclear export signal, which controls for cytoplasmic protein load
-    but not for the amount of TDP-43 present, and the construct is overexpressed rather than endogenous. This
-    is the gain-of-function side of the dispute, against the loss-of-function framing recorded in NEU-005 and
-    relied on throughout the UNC13A and STMN2 records; its own L41, recorded at NEU-160, is the quantitative
-    part of the argument. The paper that introduced the cryptic-peptide fluid assay states the dispute from
-    the other side, saying a gain-of-function mechanism has been proposed while emerging evidence supports
-    loss of cryptic-splicing repression. These authors share no author with the Brown, Ma, Irwin or Wong groups
-    recorded here.
+  note: 'An earlier version of this claim gave the two nulls without their systems or their provenance: the
+    knockout null is in a non-neuronal line and neither null is an experiment in this paper. tier: isoform-specific
+    perturbation with phenotype. Molecular phenotype only. Read as a bioRxiv preprint. The comparator is overexpression
+    of a nuclear export signal, which controls for cytoplasmic protein load but not for the amount of TDP-43
+    present, and the construct is overexpressed rather than endogenous. This is the gain-of-function side of
+    the dispute, against the loss-of-function framing recorded in NEU-005 and relied on throughout the UNC13A
+    and STMN2 records; its own L41, recorded at NEU-160, is the quantitative part of the argument. An earlier
+    version of this note said these authors share no author with the Brown, Ma, Irwin or Wong groups recorded
+    here: two of the four clauses are wrong. The senior author here appears in the byline of NEU-141 to NEU-151''s
+    paper through its consortium entry and in the shorter byline of the version read, a second name string
+    matches that paper''s longer byline, and two more match NEU-152 to NEU-156''s paper. The Irwin and Wong
+    clauses do hold. The author string also renders a multi-word surname as initials, "Morato, J. G." for "Garcia
+    Morato, J.".
 
     '
 - id: NEU-181
@@ -3552,7 +3600,10 @@ claims:
     paper it contradicts is the source of NEU-181. The two were published a year apart in the same journal
     and the author lists cannot be compared from meta.json, so independence cannot be established here. A chapter
     sentence that asserts either mechanism alone would be taking a side the literature as recorded has not
-    settled.'
+    settled. Independence, settled from the two records'' own crossref source blocks rather than from meta.json:
+    NEU-181 is Cartegni and Krainer and this record is Kashima and Manley, which share no author, so the contradiction
+    this pair records is between independent groups. An earlier version of this note said authorship could
+    not be established from the corpus.'
 - id: NEU-183
   claim: 'The element the approved oligonucleotide would later be aimed at was found by dissection rather than
     by inspection: a sequence immediately downstream of the exon 7 5-prime splice site, inside SMN2 intron
@@ -3656,9 +3707,10 @@ claims:
     ladder in NEU-184 into a prediction for an individual.'
 - id: NEU-186
   claim: 'Risdiplam''s pharmacodynamic effect was read in blood rather than in motor neurons: in FIREFISH Part
-    1, median blood SMN protein at twelve months was 3.0 times baseline in the four infants on 0.08 mg per
-    kilogram per day and 1.9 times baseline in the 17 on 0.2 mg per kilogram per day, rising from medians of
-    1.31 to 3.05 and from 2.54 to 5.66 nanograms per millilitre respectively.
+    1, median blood SMN protein at twelve months was 3.0 times baseline in the four infants whose final dose
+    at month 12 was 0.08 mg per kilogram per day and 1.9 times baseline in the 17 whose final dose at month
+    12 was 0.2 mg per kilogram per day, rising from medians of 1.31 to 3.05 and from 2.54 to 5.66 nanograms
+    per millilitre respectively.
 
     '
   topic: 'trial: FIREFISH Part 1 (risdiplam, type 1 SMA)'
@@ -3679,18 +3731,25 @@ claims:
     anchor: https://paperclip.gxl.ai/citations/papers/12571092#L1
     quote: median of 3.0 times and 1.9 times the baseline values in the low-dose and high-dose cohorts, respectively
   confidence: high
-  note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype, because the measurement
-    is protein in blood and not in the affected tissue. Read from the trial publication''s abstract, which
-    is abstract-only in the corpus, PMID 33626251; no author list or journal in meta.json, so both are RESOLVE_FROM_DOI
-    and the bibkey is title-derived. The blood SMN concentration was one of the stated primary outcomes of
-    Part 1 together with safety, pharmacokinetics and dose selection, which matters because the sitting result
-    in NEU-189 was not. Shares the L1 anchor with no other record here; NEU-189 takes the sitting figure from
-    the FDA review instead.'
+  note: 'An earlier version of this claim named the two groups by a constant daily dose; the source says twice
+    that the figure is the final dose reached at month 12 after escalation, and the FDA review likewise describes
+    the cohort as reaching the selected pivotal dose within the first 12 months. tier: isoform-specific biochemical
+    or binding difference, no organismal phenotype, because the measurement is protein in blood and not in
+    the affected tissue. Read from the trial publication''s abstract, which is abstract-only in the corpus,
+    PMID 33626251; no author list or journal in meta.json, so both are RESOLVE_FROM_DOI and the bibkey is title-derived.
+    The blood SMN concentration was one of the stated primary outcomes of Part 1 together with safety, pharmacokinetics
+    and dose selection, which matters because the sitting result in NEU-189 was not. NEU-189 takes the sitting
+    figure from the FDA review instead.
+
+    '
 - id: NEU-187
-  claim: 'The nusinersen approval rested on an interim analysis rather than the published final one: the FDA
-    summary review records a motor-milestone responder result of 21 of 52 treated infants (40 per cent) against
-    0 of 30 sham-procedure controls (p less than 0.0001) in the double-blind sham-controlled infantile-onset
-    trial the application calls Study CS3B, in patients with two SMN2 copies.
+  claim: 'The nusinersen approval rested on an interim rather than the published final analysis, and on a sensitivity
+    version of that interim: the FDA summary review''s headline motor-milestone responder result of 21 of 52
+    treated infants (40 per cent) against 0 of 30 sham-procedure controls (p less than 0.0001), in the double-blind
+    sham-controlled infantile-onset trial the application calls Study CS3B in patients with two SMN2 copies,
+    is the analysis including patients who died or withdrew after baseline. The prespecified interim set was
+    the 78 subjects with a Day 183 visit at the June 2016 cut-off, 51 on nusinersen and 27 on sham, in whom
+    the responder rates were 41 per cent against 0.
 
     '
   topic: 'trial: ENDEAR / CS3B (nusinersen, infantile-onset SMA)'
@@ -3709,15 +3768,21 @@ claims:
     quote: with 21/52 (40%) of nusinersen-treated patients who met a motor milestone development responder
       definition, vs. 0/30 (0%) of sham-procedure controls
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Read from an FDA summary review, which is the
-    primary for what the approval rested on. A case-insensitive search of this review for ''ENDEAR'' and for
-    the registration number NCT02193074 returned no hits, so the identification of Study CS3B with the trial
-    published as ENDEAR is not anchored in either document and the chapter must not equate them without a linking
-    source. The denominators differ from the published final analysis recorded in NEU-017 (37 of 73 against
-    0 of 37), which is consistent with an interim cut; the two must not be mixed, and a chapter sentence about
-    what the regulator saw should use these numbers while a sentence about the trial''s final result should
-    use NEU-017''s. The same review line says secondary endpoints were presented descriptively according to
-    the analysis plan, so they do not support a treatment-effect claim.'
+  note: 'An earlier version of this record read the 52 and 30 denominators as the prespecified interim set.
+    There are three number sets, not two: the review''s headline sensitivity analysis, the review''s prespecified
+    interim of 51 against 27, and the publication''s own interim, which reports 21 of 51 (41 per cent) against
+    0 of 27. The 51 and 27 match exactly between review and publication, which anchors the identification numerically.
+    The claim had also carried no timepoint where the document gives one, the Day 183 visit in a 13-month trial.
+    tier: isoform-specific perturbation with phenotype. Read from an FDA summary review, which is the primary
+    for what the approval rested on. A case-insensitive search of this review for ''ENDEAR'' and for the registration
+    number NCT02193074 returned no hits, so the identification of Study CS3B with the trial published as ENDEAR
+    is not anchored in either document and the chapter must not equate them without a linking source. A case-insensitive
+    search of the same review for ''accelerated approval'' and for ''Subpart H'' also returns nothing, so the
+    approval type is not anchored here. The published final analysis recorded in NEU-017 gives 37 of 73 against
+    0 of 37; the three sets must not be mixed. The same review line says secondary endpoints were presented
+    descriptively according to the analysis plan, so they do not support a treatment-effect claim.
+
+    '
 - id: NEU-188
   claim: 'CHERISH randomised 126 children whose symptoms began after six months of age in a 2:1 ratio to intrathecal
     nusinersen 12 mg or a sham procedure on days 1, 29, 85 and 274, and its primary endpoint, least-squares
@@ -3751,7 +3816,11 @@ claims:
     the 2:1 ratio, so the arm sizes must not be stated as 84 and 42. The scale runs 0 to 66 and the result
     is a 5.9-point difference on it, which is the number the chapter should carry rather than the secondary
     responder percentages, since those were 57 per cent against 26 per cent at a threshold of 3 points and
-    are a different quantity.'
+    are a different quantity. The per-arm sizes are available for the same interim analysis in a document two
+    other records in this block cite, 84 on nusinersen and 42 controls; an earlier version of this note said
+    they must not be stated. The review''s responder figures are 57 per cent against 21 per cent at 15 months
+    where the publication''s final analysis gives 57 against 26, which is the same interim-against-final trap
+    as NEU-187 and is recorded nowhere else.'
 - id: NEU-189
   claim: 'The FIREFISH Part 1 sitting figure, taken from the regulator''s review rather than from a later review
     restating it: 7 of the 21 infants enrolled (33 per cent) and 7 of the 17 in the high-dose cohort (41 per
@@ -3840,6 +3909,7 @@ claims:
     same document.'
 - id: NEU-192
   claim: 'SUNFISH Part 2 met its primary endpoint by a small margin and failed four of its six key secondaries:
+    in 120 patients randomised to risdiplam against 60 to placebo, of whom 115 and 59 had MFM32 data at baseline,
     least-squares mean change in the MFM32 at month 12 was 1.36 points (95 per cent confidence interval 0.61
     to 2.11) on risdiplam against minus 0.19 (minus 1.22 to 0.84) on placebo, a difference of 1.55 points (0.30
     to 2.81, p equal to 0.0156), while of the six key secondary endpoints tested in a gatekeeping hierarchy
@@ -3865,14 +3935,17 @@ claims:
     quote: Change from baseline at Month 12, LS Mean (95% CI) 1.36 (0.61, 2.11) -0.19 (-1.22, 0.84) Mean (95%
       CI) 1.55 (0.30, 2.81)
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Read from the results table of the FDA summary
-    review. The four failed secondaries are in the same table as the significant primary and belong in the
-    same sentence as it; a chapter that reports only the primary would overstate this trial. The gatekeeping
-    procedure is why nominal and adjusted p values differ and the adjusted ones are the ones to quote: forced
-    vital capacity fell in both arms, by 5.16 against 3.11 percentage points of predicted. The regulator''s
-    own narrative line calls the primary difference ''relatively small but statistically significant''. The
-    120 and 60 denominators are the randomised arms from NEU-191; the table''s baseline rows show 115 and 59
-    with MFM32 data.'
+  note: 'An earlier version of this claim carried no denominator at all; the randomised arms lived in NEU-191
+    and the baseline rows in this note. tier: isoform-specific perturbation with phenotype. Read from the results
+    table of the FDA summary review. The four failed secondaries are in the same table as the significant primary
+    and belong in the same sentence as it; a chapter that reports only the primary would overstate this trial.
+    The gatekeeping procedure is why nominal and adjusted p values differ and the adjusted ones are the ones
+    to quote: forced vital capacity fell in both arms, by 5.16 against 3.11 percentage points of predicted.
+    The regulator''s own narrative line calls the primary difference ''relatively small but statistically significant''.
+    The same review reports at its L125 that excluding either of two Polish sites would lose significance on
+    the primary, which this record does not claim.
+
+    '
 - id: NEU-193
   claim: 'Presymptomatic nusinersen was tested without a control arm: NURTURE gave nusinersen to 15 children
     with two SMN2 copies and 10 with three before symptoms appeared, and at a median age of 4.9 years at last
@@ -3976,10 +4049,13 @@ claims:
     primary finding, and the primaries here are NEU-193, NEU-194 and NEU-197. Its value to the chapter is the
     shape of the evidence base: every presymptomatic trial is single-arm, so the claim that timing dominates
     rests on cohort comparisons. The same line notes that babies with two SMN2 copies in NURTURE and SPR1NT
-    met most motor milestones but with delays and some need for ventilatory or feeding support.'
+    met most motor milestones but with delays and some need for ventilatory or feeding support. Scope that
+    must travel with the statement: the review identified three single-arm interventional studies, NURTURE,
+    RAINBOWFISH and SPR1NT, among prospective studies published up to December 2023, so an earlier version
+    of this note went beyond it in saying every presymptomatic trial is single-arm.'
 - id: NEU-196
-  claim: 'One approved SMA therapy does not act on splicing at all: it delivers SMN complementary DNA in an
-    adeno-associated virus serotype 9 vector, and in the first trial of that approach 15 infants with type
+  claim: 'One SMA therapy does not act on splicing at all: it delivers SMN complementary DNA in an adeno-associated
+    virus serotype 9 vector, and in the trial reported here, registered as NCT02122952, 15 infants with type
     1 disease received one intravenous dose, 3 at 6.7 times ten to the thirteenth and 12 at 2.0 times ten to
     the fourteenth vector genomes per kilogram, with safety as the primary outcome; none of the 15 had died
     or come to need permanent ventilation by 20 months of age, where a historical cohort put survival at 8
@@ -4006,15 +4082,18 @@ claims:
     quote: all 15 patients were alive and event-free at 20 months of age, as compared with a rate of survival
       of 8%
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Abstract-only record, PMID 29091557; no author
-    list or journal in meta.json, so both are RESOLVE_FROM_DOI and the bibkey is title-derived. Recorded only
-    as the comparison that makes the splicing drugs'' mechanism legible: this approach supplies a gene rather
-    than redirecting a splice choice, and the claim says so. The abstract never names the drug, so neither
-    the generic nor the trade name is anchored here; NEU-197''s source names it onasemnogene abeparvovec. The
-    chapter''s existing NEU-016 calls risdiplam the third approved SMA therapy, so this one must not also be
-    called the third. The trial is single-arm with safety as its primary outcome and the survival comparison
-    is with a historical cohort, so it is not evidence of superiority over either splicing drug. The motor
-    results in the same abstract are explicitly exploratory.'
+  note: 'An earlier version of this claim called the therapy approved and called this the first trial of that
+    approach; the abstract says neither, names no drug, and gives the registration the claim now carries. No
+    document in this block states an approval type, date or basis for this therapy. tier: isoform-specific
+    perturbation with phenotype. Abstract-only record, PMID 29091557; no author list or journal in meta.json,
+    so both are RESOLVE_FROM_DOI and the bibkey is title-derived. Recorded only as the comparison that makes
+    the splicing drugs'' mechanism legible: this approach supplies a gene rather than redirecting a splice
+    choice, and the claim says so. The abstract never names the drug, so neither the generic nor the trade
+    name is anchored here; NEU-197''s source names it onasemnogene abeparvovec. The trial is single-arm with
+    safety as its primary outcome and the survival comparison is with a historical cohort, so it is not evidence
+    of superiority over either splicing drug. The motor results in the same abstract are explicitly exploratory.
+
+    '
 - id: NEU-197
   claim: 'Presymptomatic gene replacement was tested in SPR1NT, a single-arm phase 3 trial in which all 14
     children with two SMN2 copies dosed at six weeks of life or earlier sat independently for at least 30 seconds
@@ -4055,8 +4134,9 @@ claims:
     work indirectly by occupying cis-regulatory elements or breaking inhibitory structures, while small molecules
     act directly at the interface between U1 small nuclear ribonucleoprotein and the 5-prime splice site, and
     solution structures of risdiplam, branaplam and two related compounds place all of them on an RNA helix
-    epitope containing an unpaired adenine in a G-2 A-1 G+1 U+2 motif, stabilising the bulged adenine so that
-    a weak splice site is read as a strong one.
+    epitope containing an unpaired adenine in a G-2 A-1 G+1 U+2 motif. Those authors report that the four contact
+    the epitope similarly to the prototype compound for which bulge repair was established, which they say
+    suggests the mechanism generalises.
 
     '
   topic: how a small molecule shifts a splice choice
@@ -4078,12 +4158,15 @@ claims:
     quote: small molecule splicing modifiers act directly at the interface between U1 snRNP and the 5′-splice
       site to modify 5′-splice site selection
   confidence: high
-  note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype. Read from the paper''s
-    own abstract and introduction. The structures are of compounds bound to an RNA duplex formed between U1
-    small nuclear RNA and the splice site, so the mechanism is biophysical and the record claims no cellular
-    or organismal outcome. The generalisation across scaffolds is these authors'' reading of their four structures
-    plus a published fifth, so a chapter sentence should attribute it rather than state it as settled. This
-    is the mechanistic basis for why one small molecule can act on both SMN2 and HTT, which NEU-199 records.'
+  note: 'An earlier version of this claim stated the generalised mechanism as what the four compounds do; the
+    abstract says only that they contact the epitope similarly, suggesting the bulge-repair mechanism can be
+    generalised, and the mechanism itself was established for the prototype. tier: isoform-specific biochemical
+    or binding difference, no organismal phenotype. Read from the paper''s own abstract and introduction. The
+    structures are of compounds bound to an RNA duplex formed between U1 small nuclear RNA and the splice site,
+    so the mechanism is biophysical and the record claims no cellular or organismal outcome. This is the mechanistic
+    basis for why one small molecule can act on both SMN2 and HTT, which NEU-199 records.
+
+    '
   figure_idea: 'A weak 5-prime splice site with an unpaired adenine bulging out of the duplex it forms with
     U1 small nuclear RNA, and the same site with a small molecule wedged in, so the reader sees that the drug
     is not editing sequence but holding a shape.
@@ -4118,12 +4201,14 @@ claims:
     quote: By promoting inclusion of a pseudoexon in the primary transcript, branaplam lowers mHTT protein
       levels in HD patient cells, in an HD mouse model
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Read from the paper''s abstract and introduction.
-    The off-target observation is the important part for this chapter and for chapter 12: the HTT effect was
-    itself discovered as an off-target effect of an SMN2 drug, and the authors state that branaplam induces
-    further splicing changes they had not previously reported. The blood samples came from an SMA trial, NCT02268552,
-    so the human data here are pharmacodynamic rather than clinical. Several authors are shared with NEU-200,
-    which reports the clinical trial that followed, so the two are not independent.'
+  note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype. Read from the paper''s
+    abstract and introduction. The off-target observation is the important part for this chapter and for chapter
+    12: the HTT effect was itself discovered as an off-target effect of an SMN2 drug, and the authors state
+    that branaplam induces further splicing changes they had not previously reported. The blood samples came
+    from an SMA trial, NCT02268552, so the human data here are pharmacodynamic rather than clinical. Several
+    authors are shared with NEU-200, which reports the clinical trial that followed, so the two are not independent.
+    Tier corrected 2026-11-23: the measured outcome is a protein quantity and nothing else, and the file already
+    qualifies this tier the same way at NEU-183, NEU-186 and NEU-202.'
 - id: NEU-200
   claim: 'The Huntington programme stopped on toxicity rather than on futility: in the randomised phase 2b
     trial VIBRANT-HD, peripheral neuropathy appeared, as a sign or a symptom or both, in 18 of the 21 participants
@@ -4221,7 +4306,11 @@ claims:
     what the approved drug does at its clinical dose; a chapter sentence must say so. The result is one compound
     at one concentration for 30 hours in one cell type, so it does not establish that off-target splicing is
     dose-dependent as a property of the class. The ISS-N1 discovery paper behind NEU-183 is abstract-only with
-    no author list in meta.json, so whether these are the same authors cannot be established from the corpus.'
+    no author list in meta.json, so whether these are the same authors cannot be established from the corpus.
+    Independence, settled from the two records'' own crossref source blocks rather than from meta.json: this
+    byline and NEU-183''s share two authors and are one laboratory, so this off-target result is not an independent
+    test of the discovery paper''s oligonucleotide, and an earlier version of this note said authorship could
+    not be established from the corpus.'
   figure_idea: 'Two counts from the same experiment: the intended splicing change at SMN2 exon 7, and the number
     of unintended splicing changes elsewhere, plotted against oligonucleotide length or concentration - so
     the reader sees specificity as a dose-dependent quantity.
@@ -4278,14 +4367,16 @@ claims:
     anchor: https://paperclip.gxl.ai/citations/fda/fda_ca7816e187dc#L48
     quote: The median increase after 48 weeks was 0.1% of normal, i.e., one part in 1000
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Read from the golodirsen Office Director decisional
-    memorandum, which restates the eteplirsen result as the precedent it was evaluating; the same numbers appear
-    in the casimersen review''s summary of the eteplirsen prescribing information, so they are the labelled
-    figures rather than one reviewer''s calculation. Study 301 was externally controlled with every patient
-    on open-label eteplirsen, so there was no placebo arm; the 0.22 to 0.32 per cent of normal reported elsewhere
-    in the eteplirsen review is the same paired baseline-against-week-48 comparison under different ways of
-    handling values below the assay''s limit of quantification, not a between-arm difference. The denominator
-    to carry is 12 evaluable of 13 biopsied.'
+  note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype. Read from the golodirsen
+    Office Director decisional memorandum, which restates the eteplirsen result as the precedent it was evaluating;
+    the same numbers appear in the casimersen review''s summary of the eteplirsen prescribing information,
+    so they are the labelled figures rather than one reviewer''s calculation. Study 301 was externally controlled
+    with every patient on open-label eteplirsen, so there was no placebo arm; the 0.22 to 0.32 per cent of
+    normal reported elsewhere in the eteplirsen review is the same paired baseline-against-week-48 comparison
+    under different ways of handling values below the assay''s limit of quantification, not a between-arm difference.
+    The denominator to carry is 12 evaluable of 13 biopsied. Tier corrected 2026-11-23: the measured outcome
+    is a protein quantity and nothing else, and the file already qualifies this tier the same way at NEU-183,
+    NEU-186 and NEU-202.'
 - id: NEU-205
   claim: 'Two assays of the same muscle gave answers the reviewer judged not to agree: in eteplirsen Study
     201/202 the sponsor''s immunohistochemistry was reported as rising from 1.1 plus or minus 1.3 per cent
@@ -4312,12 +4403,19 @@ claims:
     anchor: https://paperclip.gxl.ai/citations/fda/fda_269d14f43e60#L138
     quote: the lack of concordance between the IHC and the Western Blot results is “striking”
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Read from the FDA summary review for NDA 206488.
-    This is the single most useful record in the file for the measurement argument, because it holds both numbers,
-    the denominators behind them and the regulator''s judgement that they do not agree. The 17.4 per cent is
-    a count of positive fibres and the 0.93 per cent is a quantity of protein; NEU-206 records why those are
-    not the same thing and cannot be compared. The review also notes that FDA did not verify the integrity
-    of the immunohistochemistry results.'
+  note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype; an earlier version
+    of this note claimed a phenotype where the measured outcome is a protein quantity in muscle and nothing
+    else, and the file already qualifies this tier the same way at NEU-183, NEU-186 and NEU-202. Read from
+    the FDA summary review for NDA 206488. This is the single most useful record in the file for the measurement
+    argument, because it holds both numbers, the denominators behind them and the regulator''s judgement that
+    they do not agree. The 17.4 per cent is a count of positive fibres and the 0.93 per cent is a quantity
+    of protein; NEU-206 records why those are not the same thing and cannot be compared. The document is internally
+    ambiguous about the 0.93 per cent: the line this record cites calls it a mean increase of only 0.93 per
+    cent of normal dystrophin, while its L433 and L441 use the same figure as the Week-180 level. This record
+    follows the level reading, and a chapter sentence must say which it means. The review also notes that FDA
+    did not verify the integrity of the immunohistochemistry results.
+
+    '
   figure_idea: 'The same cohort scored two ways on one axis - per cent dystrophin-positive fibres against per
     cent of normal dystrophin by western blot - with a line connecting each patient''s two values, so the reader
     sees that the disagreement is structural and not noise.
@@ -4352,7 +4450,10 @@ claims:
     which stresses the point twice. It is the reason a 2013 publication of the same study could report dystrophin-positive
     fibres ''increased to 23% of normal'' and later 52 and 43 per cent at week 48 while the protein quantity
     was under 1 per cent. Any chapter table of the four drugs'' dystrophin figures must state the assay for
-    each row or it will read as an error.'
+    each row or it will read as an error. Attribution to correct: this document is a composite of the Commissioner''s
+    decision, the board recommendation and one official''s appeal, and the cited line sits in the appeal sections
+    in the first person, so the statement is that official''s rather than the reviewing regulator''s. NEU-215
+    carries the same caveat in the reviewing office''s voice.'
 - id: NEU-207
   claim: 'Golodirsen serves patients amenable to exon 53 skipping, about 8 per cent of the Duchenne population,
     and in Study 4053-101 dystrophin in the 25 treated patients rose from a baseline of 0.095 per cent of normal
@@ -4378,19 +4479,23 @@ claims:
     quote: an average increase of +0.924% in dystrophin protein from a baseline of 0.095% of normal dystrophin
       levels to 1.019% of normal
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Read from the FDA medical review for NDA 211970.
-    Two things in this record bound it: most baseline measurements were below the assay''s limit of quantification,
-    so the change is computed against values the assay could not read, and the absence of a correlation with
-    treatment duration is the reviewer''s own observation. The trial had an untreated group, but those patients
-    had deletions not amenable to exon 53 skipping, so it is not a control arm for the biomarker. The 8 per
-    cent figure is stated in the review''s background; the viltolarsen review puts the same group at 8 to 10
-    per cent.'
+  note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype. Read from the FDA
+    medical review for NDA 211970. Two things in this record bound it: most baseline measurements were below
+    the assay''s limit of quantification, so the change is computed against values the assay could not read,
+    and the absence of a correlation with treatment duration is the reviewer''s own observation. The trial
+    had an untreated group, but those patients had deletions not amenable to exon 53 skipping, so it is not
+    a control arm for the biomarker. The 8 per cent figure is stated in the review''s background; the viltolarsen
+    review puts the same group at 8 to 10 per cent. Tier corrected 2026-11-23: the measured outcome is a protein
+    quantity and nothing else, and the file already qualifies this tier the same way at NEU-183, NEU-186 and
+    NEU-202.'
 - id: NEU-208
-  claim: 'Viltolarsen was measured three ways and the answers differ: after 24 weekly doses in 8 patients per
-    dose group, the median increase in truncated dystrophin was 4.6 per cent of normal at 40 milligrams per
-    kilogram per week and 3.8 per cent at 80 by the primary western blot endpoint, but 1.7 and 1.9 per cent
-    respectively by mass spectrometry as a secondary endpoint, and the reviewer supported approval of the higher
-    dose on the marginally higher mass spectrometry value.
+  claim: 'Viltolarsen''s dystrophin was measured by two assays that disagree by roughly twofold on the same
+    samples: after 24 weekly doses in 8 patients per dose group, the median increase in truncated dystrophin
+    was 4.6 per cent of normal at 40 milligrams per kilogram per week and 3.8 per cent at 80 by the primary
+    western blot endpoint, normalised to myosin heavy chain, but 1.7 and 1.9 per cent respectively by mass
+    spectrometry as a secondary endpoint, and the reviewer supported approval of the higher dose on the marginally
+    higher mass spectrometry value. A third endpoint in the same review, immunofluorescence counting of dystrophin-positive
+    myofibres, gave mean increases of 12.8 and 33.0 per cent at week 25.
 
     '
   topic: 'DMD exon skipping: how dystrophin was measured'
@@ -4409,19 +4514,26 @@ claims:
     quote: the median increase in truncated dystrophin with 40 mg/kg/week and 80 mg/kg/week viltolarsen is
       4.6% and 3.8% of normal, respectively
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Read from the FDA medical review for NDA 212154.
-    The two assays differ by roughly twofold on the same samples and in opposite rank order between doses,
-    which is the strongest evidence in this file that the dystrophin biomarker is assay-dependent; the review
-    also reports immunofluorescence counts of dystrophin-positive fibres as a further endpoint. The denominator
+  note: 'An earlier version of this claim promised three measurements and quantified two, and omitted the normalisation
+    that the western blot medians depend on: a different normalisation in the same review gives 0.30 and 0.6
+    per cent at baseline rising to 5.7 and 5.9 per cent. tier: isoform-specific biochemical or binding difference,
+    no organismal phenotype, since the measured outcome is a protein quantity in muscle and nothing else. Read
+    from the FDA medical review for NDA 212154. The two-assay gap is the strongest evidence in this file that
+    the dystrophin biomarker is assay-dependent. The reversal in rank order between the two doses must not
+    be presented as a dose effect: the same review states that there was no dose related difference in dystrophin
+    production at the 40 and 80 mg/kg/week dose, and an earlier version of this note called it an opposite
+    rank order between doses without that sentence. The trial is Study NS-065/NCNP-01-201. The denominator
     is 8 patients per dose, which is the smallest of the four programmes. The same review states that mutations
-    amenable to exon 53 skipping are thought to comprise 8 to 10 per cent of the Duchenne population.'
+    amenable to exon 53 skipping are thought to comprise 8 to 10 per cent of the Duchenne population.
+
+    '
 - id: NEU-209
   claim: 'Casimersen''s approval figure is a between-arm difference rather than a within-patient change: at
     an interim analysis of study 4045-301 after 48 weeks of double-blind treatment, 27 of the first 43 patients
-    to reach the timepoint were on casimersen and 16 on placebo, and muscle biopsy showed a mean dystrophin
-    difference of 0.59 per cent of normal and a 1.6 per cent increase in exon 45 skipping, both statistically
-    significant, with the trial''s 6-minute walk test data not yet available and exon-45-amenable mutations
-    put at about 8 per cent of Duchenne patients.
+    to reach the timepoint were on casimersen and 16 on placebo, and western blot of muscle biopsy showed a
+    mean dystrophin difference of 0.59 per cent of normal and a 1.6 per cent increase in exon 45 skipping,
+    both statistically significant, with the trial''s 6-minute walk test data not yet available and exon-45-amenable
+    mutations put at about 8 per cent of Duchenne patients.
 
     '
   topic: 'DMD exon skipping: the dystrophin numbers'
@@ -4440,17 +4552,25 @@ claims:
     quote: casimersen increased dystrophin protein in muscle biopsy tissue in a small (0.59% of normal levels)
       but statistically significant manner compared to placebo
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Read from the FDA medical review for NDA 213026.
-    The exon 45 skipping figure is the only direct measurement of target engagement in human muscle among these
-    four records, and it is 1.6 per cent, which should be read against the dystrophin figure rather than instead
-    of it. The whole application covered 35 unique patients on placebo and 65 on casimersen; the 27 against
-    16 are the interim biopsy subset and are the denominators for the 0.59 per cent. The review states plainly
-    that whether the increase translates into clinical benefit is unknown until the ongoing studies finish.'
+  note: 'An earlier version of this claim said muscle biopsy showed the difference without naming the assay;
+    the review quantifies by western blot and titles its tables accordingly. tier: isoform-specific biochemical
+    or binding difference, no organismal phenotype, since the review states the 6-minute walk data were not
+    available, so no organismal outcome was measured. Read from the FDA medical review for NDA 213026. Study
+    4045-301 is ESSENCE, named as such in two documents in this block, so this record and NEU-214 are the interim
+    and the final analysis of one trial and a chapter must not read them as two trials. The exon 45 skipping
+    figure is the only direct measurement of target engagement in human muscle among these four records, and
+    it is 1.6 per cent, which should be read against the dystrophin figure rather than instead of it. The whole
+    application covered 35 unique patients on placebo and 65 on casimersen; the 27 against 16 are the interim
+    biopsy subset and are the denominators for the 0.59 per cent. The review states plainly that whether the
+    increase translates into clinical benefit is unknown until the ongoing studies finish.
+
+    '
 - id: NEU-210
   claim: 'One side of the dystrophin argument, in the regulator''s own words: the Director of the Office of
     Drug Evaluation I set the bar at functional protein of roughly 10 per cent of normal before any increase
     could be called reasonably likely to predict clinical benefit, reasoning from Becker dystrophy as a model,
-    and that within the eteplirsen trials higher dystrophin levels were not associated with better function.
+    and offered plots and calculations that he interprets as showing that within the eteplirsen trials higher
+    dystrophin levels were not associated with better function.
 
     '
   topic: 'the dystrophin surrogate: the disagreement'
@@ -4469,14 +4589,18 @@ claims:
     anchor: https://paperclip.gxl.ai/citations/fda/fda_269d14f43e60#L36,L40
     quote: Dr. Unger concludes that functional protein in the range of 10% of normal levels would be needed
   confidence: high
-  note: 'tier: regulatory judgement on whether a biomarker is reasonably likely to predict benefit. Read from
-    the FDA summary review for NDA 206488, which reproduces both positions. The 10 per cent threshold is an
-    extrapolation from Becker dystrophy, which the Commissioner''s decision calls a rational extrapolation
-    in the absence of a validated surrogate but an extrapolation nonetheless. Elsewhere the same document reports
-    the view that at least 3 per cent of normal is inadequate and a minimum of about 10 per cent may be needed,
-    and that Study 301''s 0.22 to 0.32 per cent is an order of magnitude below that. Paired with NEU-211, which
-    is the opposing position from the same document; the two share the L40 anchor, quote different spans and
-    state opposite positions.'
+  note: 'An earlier version of this claim dropped the source''s "that he interprets as showing", which matters
+    because the paired NEU-211 records the Center Director offering post-hoc calculations she regarded as supporting
+    the opposite direction. tier: regulatory judgement on whether a biomarker is reasonably likely to predict
+    benefit. Read from the FDA summary review for NDA 206488, which reproduces both positions. The 10 per cent
+    threshold is an extrapolation from Becker dystrophy, which the Commissioner''s decision calls a rational
+    extrapolation in the absence of a validated surrogate but an extrapolation nonetheless. Elsewhere the same
+    document reports the view that at least 3 per cent of normal is inadequate and a minimum of about 10 per
+    cent may be needed, and that Study 301''s 0.22 to 0.32 per cent is an order of magnitude below that. Paired
+    with NEU-211, which is the opposing position from the same document; the two share the L40 anchor, quote
+    different spans and state opposite positions.
+
+    '
 - id: NEU-211
   claim: 'The other side, from the same document: the Center Director held that no particular dystrophin threshold
     could be named on any rational basis, citing assay validation, the difficulty of knowing whether the protein
@@ -4508,7 +4632,10 @@ claims:
     than resolving the science. The same line records that the Acting Chief Scientist fundamentally agreed
     with the dissent in NEU-210 and that Dr Jenkins concurred with it as well, so three of the four named senior
     officials opposed approval while the Center Director did not. NEU-210 cites L36 and L40 of the same document
-    for the opposing position and quotes L36, so the two records share L40 but not a quoted span.'
+    for the opposing position and quotes L36, so the two records share L40 but not a quoted span. The count
+    of officials who opposed the approval lives only in this note and so cannot be cited: three named officials
+    opposed it, one of whom would have declined it outright, against one in favour, with the Commissioner deferring.
+    A claim is needed if the chapter is to carry the count.'
 - id: NEU-212
   claim: 'The second of the four approvals was first refused: the Office Director''s decisional memorandum
     of 19 August 2019 on golodirsen records a complete response action, and states that the review division''s
@@ -4540,7 +4667,11 @@ claims:
     and the chapter must not say the drug was refused outright. The same memorandum records that the Division
     regarded the question as a settled matter and that the memorandum''s author considered 0.9 per cent increases
     to have no evidence of clinical benefit while conceding that no one can name the critical threshold. This
-    is the clearest single statement that the later approvals rest on the first one.'
+    is the clearest single statement that the later approvals rest on the first one. The approval date does
+    appear, twice, in a document already cited in this block, which gives it as 2019 and corroborates it with
+    a December 2019 prescribing-information version; an earlier version of this note said no date appears in
+    any document read here. A second regulatory document in the block gives the year as 2020, so the chapter
+    should use 2019 or report both.'
 - id: NEU-213
   claim: 'The third approval says the same of itself: the viltolarsen review recommends accelerated approval
     on the precedent of the eteplirsen and golodirsen approvals, having stated that the applicant did not provide
@@ -4569,14 +4700,19 @@ claims:
     evidence is inadequate on its own terms and that the determination has been made at Agency level, so the
     approval follows. The same review notes that a confirmatory study at 80 milligrams per kilogram per week
     was ongoing. Taken with NEU-212, three of the four approvals are documented as resting on the first, which
-    is what makes the confirmatory results in NEU-214 and NEU-215 load-bearing.'
+    is what makes the confirmatory results in NEU-214 and NEU-215 load-bearing. The three precedents are anchorable
+    in a document in this block, which names eteplirsen in 2016, golodirsen in 2019 and viltolarsen in 2020
+    and then says the chosen surrogate is consistent with those used for their accelerated approvals. As records,
+    however, only two are carried here, so an earlier version of this note overstated what the chapter can
+    cite from the records alone.'
 - id: NEU-214
   claim: 'The confirmatory trial for two of the four did not meet its endpoint: ESSENCE enrolled 225 ambulatory
     boys amenable to exon 53 or exon 45 skipping, randomised 2:1 to golodirsen or casimersen at 30 milligrams
     per kilogram or to placebo, and in the 138 analysed in the combined treatment group against 74 on placebo
     the primary endpoint, change from baseline in 4-step ascend velocity at week 96, differed by 0.06 steps
     per second (95 per cent confidence interval minus 0.05 to 0.16, P equal to 0.309), while dystrophin by
-    western blot differed by 0.69 percentage points of normal (P less than 0.001).
+    western blot at week 96 differed by 0.69 percentage points of normal unadjusted (0.28 to 1.10, P less than
+    0.001) and by 1.25 percentage points adjusted for muscle content (0.20 to 2.31, P equal to 0.020).
 
     '
   topic: 'the dystrophin surrogate: the confirmatory results'
@@ -4596,15 +4732,22 @@ claims:
     anchor: https://paperclip.gxl.ai/citations/papers/1001693627#L1
     quote: The primary endpoint was not met in ESSENCE
   confidence: medium
-  note: 'tier: isoform-specific perturbation with phenotype. Read from a conference topline abstract presented
-    at the 2026 MDA Clinical and Scientific Conference, not from a trial publication and not from a regulatory
-    document; that is the weakest provenance of any trial figure in this file and the chapter must say so.
-    The treatment groups are pooled across two drugs and two target exons, which the abstract states. The abstract
-    also reports a prognostically defined subgroup of 74 against 35 favouring treatment at P equal to 0.010,
-    but labels it a post-hoc analysis, so it cannot be reported as a trial result. ESSENCE is named as the
-    proposed confirmatory study for golodirsen in the regulatory-interaction table of the document behind NEU-215,
-    so its status as a confirmatory trial is anchored there rather than in this abstract. This is the record
-    that makes the dystrophin-surrogate dispute in NEU-210 and NEU-211 testable rather than rhetorical.'
+  note: 'An earlier version of this claim gave the dystrophin difference without its timepoint, without the
+    adjusted figure and without the word unadjusted. tier: isoform-specific perturbation with phenotype. Read
+    from a conference topline abstract presented at the 2026 MDA Clinical and Scientific Conference, not from
+    a trial publication and not from a regulatory document; that is the weakest provenance of any trial figure
+    in this file and the chapter must say so. The crossref author field for this record is a garbled initialism
+    rather than an author list and will not build a bibliography entry; it needs resolving before the chapter
+    cites it. The treatment groups are pooled across two drugs and two target exons, which the abstract states.
+    The abstract also reports a prognostically defined subgroup of 74 against 35 favouring treatment at P equal
+    to 0.010, but labels it a post-hoc analysis, so it cannot be reported as a trial result. ESSENCE is study
+    4045-301, so this record is the final analysis of the trial whose interim analysis NEU-209 records, and
+    the two must not be read as two trials. Its status as the confirmatory study is anchored in two documents
+    in this block, for golodirsen and for casimersen, rather than only in the regulatory-interaction table
+    behind NEU-215. This is the record that makes the dystrophin-surrogate dispute in NEU-210 and NEU-211 testable
+    rather than rhetorical.
+
+    '
   figure_idea: 'One panel per drug with two axes: the dystrophin change the approval rested on, and the functional
     endpoint measured later, so the reader sees the surrogate move and the function not move in the same trial.
 
@@ -4711,11 +4854,12 @@ claims:
     each other without their denominators. The second explanation matters for this chapter specifically: some
     exceptions are splicing exceptions, where the transcript is not what the genomic deletion predicts.'
 - id: NEU-218
-  claim: 'Target engagement was checked in tissue rather than inferred from dose: spinal cord from three patients
-    who died during the phase 2 nusinersen study CS3A carried more than 11 micrograms of drug per gram, with
-    a range of 11.9 to 31.8, at doses of 6 to 12 milligrams, above the 5 to 10 micrograms per gram the reviewers
-    took as the therapeutic range from transgenic mice, in which 1 to 10 micrograms per gram produced 50 to
-    90 per cent SMN2 exon 7 inclusion.
+  claim: 'A splicing drug''s concentration was measured in the tissue it is meant to act on: spinal cord from
+    three patients who died during the phase 2 nusinersen study CS3A carried more than 11 micrograms of drug
+    per gram, with a range of 11.9 to 31.8, at doses of 6 to 12 milligrams, above the 5 to 10 micrograms per
+    gram the reviewers give as the targeted therapeutic range in central nervous system tissue. The same review
+    separately gives 1 to 10 micrograms per gram as the concentration producing 50 to 90 per cent SMN2 exon
+    7 inclusion in transgenic mice.
 
     '
   topic: delivery and target engagement
@@ -4734,24 +4878,31 @@ claims:
     quote: Target tissue concentrations of spinal cord tissue (lumbar, thoracic, and cervical regions) taken
       from 3 deceased patients in Phase 2 Study CS3A
   confidence: high
-  note: 'tier: drug concentration measured in the target tissue at autopsy, against an exon-inclusion dose-response
-    from mice. Read from the FDA clinical pharmacology review for NDA 209531. This is the only measurement
-    in this file of a splicing drug''s concentration in the tissue it is meant to act on, and it is from three
-    autopsies, which is the denominator to carry. The target range is derived from a mouse model, so the comparison
-    is mouse-calibrated. The same review records that nusinersen is fully bioavailable in cerebrospinal fluid
-    by direct intrathecal injection, with a cerebrospinal fluid volume of distribution of 0.4 litres against
-    29 litres in plasma and a cerebrospinal fluid half-life of 135 to 177 days against 85 days in plasma, which
-    is the pharmacological reason the drug is given into the spine rather than systemically.'
+  note: 'An earlier version of this claim attributed the 5 to 10 microgram range to transgenic mice: the document
+    gives the mouse range as 1 to 10 and the therapeutic range as 5 to 10, and never says where the second
+    came from, so the mouse provenance was this record''s inference. The claim also opened by saying target
+    engagement was checked in tissue, where the line reports a drug concentration only and no exon inclusion
+    was measured in human tissue. tier: drug concentration measured in the target tissue at autopsy, against
+    an exon-inclusion dose-response from mice. Read from the FDA clinical pharmacology review for NDA 209531.
+    This is the only measurement in this file of a splicing drug''s concentration in the tissue it is meant
+    to act on, and it is from three autopsies, which is the denominator to carry. Time since last dose is not
+    given. The same review records that nusinersen is fully bioavailable in cerebrospinal fluid by direct intrathecal
+    injection, with a cerebrospinal fluid volume of distribution of 0.4 litres against 29 litres in plasma
+    and a cerebrospinal fluid half-life of 135 to 177 days against 85 days in plasma, which is the pharmacological
+    reason the drug is given into the spine rather than systemically.
+
+    '
   figure_idea: 'A concentration axis with the mouse dose-response band for exon 7 inclusion, the range the
     reviewers adopted as therapeutic, and the three measured human spinal cord values - so the reader sees
     how a human dose is justified from a mouse curve.
 
     '
 - id: NEU-219
-  claim: 'For muscle the limit is distribution rather than chemistry: in mdx mice, 2-prime-O-methyl phosphorothioate
-    oligonucleotide levels and half-life differed between muscle groups, with heart showing the lowest levels
-    but the longest half-life at about 46 days, and levels were higher in dystrophin-deficient fibres than
-    in healthy ones, which produced correspondingly higher exon skipping in the diseased muscle.
+  claim: 'An oligonucleotide''s delivery to muscle is uneven between muscle groups and between healthy and
+    diseased fibres: in mdx mice, 2-prime-O-methyl phosphorothioate oligonucleotide levels and half-life differed
+    between muscle groups, with heart showing the lowest levels but the longest half-life at about 46 days,
+    and levels were higher in dystrophin-deficient fibres than in healthy ones, which produced correspondingly
+    higher exon skipping in the diseased muscle.
 
     '
   topic: delivery and target engagement
@@ -4773,16 +4924,21 @@ claims:
     quote: Oligonucleotide levels and half-life differed for specific muscle groups, with heart muscle showing
       the lowest levels but longest half-life
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype, in a mouse model. Read from the paper''s abstract.
+  note: 'An earlier version of this claim opened by saying the limit for muscle is distribution rather than
+    chemistry; the source makes no comparison between the two as limiting factors, and that lead was also in
+    tension with this note, which says the chemistry differs from the approved drugs. tier: isoform-specific
+    biochemical or binding difference, no organismal phenotype, in a mouse model. Read from the paper''s abstract.
     This is mouse data with a different oligonucleotide chemistry from the approved morpholino drugs, so it
     bounds the delivery problem rather than describing the approved drugs'' biodistribution; a chapter sentence
     must say both. The finding that uptake is higher in damaged fibres is the mechanism by which these drugs
     reach muscle at all, and the heart result is the reason cardiac involvement is the hardest target. The
     same paper compared intravenous, subcutaneous and intraperitoneal routes and found similar bioavailability,
-    selecting subcutaneous for later clinical protocols.'
+    selecting subcutaneous for later clinical protocols.
+
+    '
 - id: NEU-222
-  claim: 'The international cohort assembled for the same COL6A1 intron 11 variant reached 44 patients, and
-    the paper breaks the ascertainment down explicitly: 4 were found by muscle RNA sequencing in patients negative
+  claim: 'The international cohort assembled for the COL6A1 intron 11 variant reached 44 patients, and the
+    paper breaks the ascertainment down explicitly: 4 were found by muscle RNA sequencing in patients negative
     for a causative variant in COL6A1, COL6A2 and COL6A3, 27 by targeted Sanger sequencing of that intron in
     further such patients, and 13 only after the variant was added to diagnostic sequencing panels.
 
@@ -4819,11 +4975,14 @@ claims:
   confidence: high
   note: 'This is an ascertainment record, not a case record, so none of the three tier strings applies; the
     reason to keep it is that the 4 / 27 / 13 split shows how a deep-intronic variant''s apparent frequency
-    depends on whether anyone looks at that intron. The author list in meta.json is truncated mid-name, so
-    authors is left as RESOLVE_FROM_DOI. Not independent of NEU-221: the author list as far as it could be
-    read carries Foley, Bolduc, Cummings, Lek and Donkervoort, who are also on NEU-221, and the intron 11 variant
-    here is the one that paper reported. The lines read were a medRxiv preprint; no published version was found
-    in the corpus by lookup on its preprint DOI.
+    depends on whether anyone looks at that intron. tier: ascertainment breakdown of a cohort. The author list
+    in meta.json is truncated mid-name, so authors is left as RESOLVE_FROM_DOI. Not independent of NEU-262:
+    the author list as far as it could be read carries Foley, Bolduc, Cummings, Lek and Donkervoort, who are
+    also on that record''s document. An earlier version of this record''s claim said "the same COL6A1 intron
+    11 variant" and its note named NEU-221, both pointing at a record removed from this file on 2026-11-23;
+    the independence statement holds against NEU-262, which carries the same finding from the published abstract.
+    The lines read were a medRxiv preprint; no published version was found in the corpus by lookup on its preprint
+    DOI.
 
     '
 - id: NEU-223
@@ -4831,7 +4990,8 @@ claims:
     variant allele at a fractional abundance of about 20 per cent by droplet digital PCR, which the authors
     read as roughly 40 per cent of cells, and in a fresh skin biopsy the pseudoexon-containing transcripts
     were 7.2-fold lower than in a heterozygous patient, alongside a milder phenotype the authors call consistent
-    with Bethlem muscular dystrophy rather than Ullrich.
+    with Bethlem muscular dystrophy rather than Ullrich. The paper states that additional samples would be
+    needed to determine whether the 7.2-fold difference is statistically significant.
 
     '
   topic: Deep-intronic variants and pseudoexons
@@ -4863,10 +5023,10 @@ claims:
 
       '
   confidence: medium
-  note: 'tier: correlation of isoform ratio with a phenotype only. n=1 mosaic patient against one or two heterozygous
-    comparators, and the paper states at L103 that additional samples would be needed to determine statistical
-    significance of the 7.2-fold difference. The comparison is between tissues of different patients, not within
-    one patient. The lines read were a medRxiv preprint.
+  note: 'An earlier version of this record left the source''s own statement about significance in this note,
+    where it cannot be cited. tier: correlation of isoform ratio with a phenotype only. n=1 mosaic patient
+    against one or two heterozygous comparators. The comparison is between tissues of different patients, not
+    within one patient. The lines read were a medRxiv preprint.
 
     '
 - id: NEU-224
@@ -4901,26 +5061,27 @@ claims:
   confidence: high
   note: 'tier: isoform-specific biochemical or binding difference, no organismal phenotype - this record carries
     the mechanism and the transcript measurement; the phenotype is NEU-225. This is the only record in the
-    file that anchors the donor-creating, pseudoexon-inserting mechanism, which is why NEU-221''s claim does
-    not use those words. Attribution caveat: L16 states the mechanism while citing this group''s own earlier
-    reports, reference 9 for the pseudoexon and references 10 and 11 for the inclusion level, so it is this
-    laboratory restating its own prior work rather than an independent statement; the primary, Bolduc et al.
-    JCI Insight 2019, is not in the corpus, which is recorded in the leads. Measurement was by isoform-specific
-    digital PCR, n=4 animals per genotype and tissue in 8-week-old males, against n=3 human biopsies. The same
-    L16 says the pseudoexon is inserted in about 50 per cent of transcripts from the +189T allele, which is
-    the same quantity as the roughly 25 per cent of total transcripts reported for heterozygous patients, expressed
-    per allele rather than per transcriptome; a chapter quoting both must say which denominator each uses.
-    Shares a laboratory with NEU-221 to NEU-223 (Bolduc and Bonnemann). The lines read were a bioRxiv preprint
-    and no published version was found in the corpus.
+    file that anchors the donor-creating, pseudoexon-inserting mechanism. Attribution caveat: L16 states the
+    mechanism while citing this group''s own earlier reports, reference 9 for the pseudoexon and references
+    10 and 11 for the inclusion level, so it is this laboratory restating its own prior work rather than an
+    independent statement; the primary, Bolduc et al. JCI Insight 2019, is not in the corpus, which is recorded
+    in the leads. Measurement was by isoform-specific digital PCR, n=4 animals per genotype and tissue in 8-week-old
+    males, against n=3 human biopsies. The same L16 says the pseudoexon is inserted in about 50 per cent of
+    transcripts from the +189T allele, which is the same quantity as the roughly 25 per cent of total transcripts
+    reported for heterozygous patients, expressed per allele rather than per transcriptome; a chapter quoting
+    both must say which denominator each uses. Shares a laboratory with NEU-222, NEU-223 and NEU-262 (Bolduc
+    and Bonnemann); an earlier version of this note referred twice to NEU-221, a record removed from this file
+    on 2026-11-23. The lines read were a bioRxiv preprint and no published version was found in the corpus.
 
     '
 - id: NEU-225
   claim: 'In that mouse the humanized allele alone caused no phenotype relative to wild type, while the alleles
-    carrying the pseudoexon-creating variant gave weaker forelimb grip strength at every age tested between
-    4 and 20 weeks in both heterozygotes and homozygotes; tibialis anterior and gastrocnemius masses at 8 and
-    24 weeks were significantly lower in homozygotes but in heterozygotes the decrease did not consistently
-    reach significance, and body weights did not differ between any genotypes. That the humanized allele alone
-    is silent is what attributes the phenotype to the splicing change rather than to the humanization.
+    carrying the pseudoexon-creating variant gave weaker forelimb grip strength at most ages tested between
+    4 and 20 weeks in both heterozygotes and homozygotes, with one muscle in one sex at one age not reaching
+    significance; tibialis anterior and gastrocnemius masses at 8 and 24 weeks were significantly lower in
+    homozygotes but in heterozygotes the decrease did not consistently reach significance, and body weights
+    did not differ between any genotypes. That the humanized allele alone is silent is what attributes the
+    phenotype to the splicing change rather than to the humanization.
 
     '
   topic: Deep-intronic variants and pseudoexons
@@ -4944,11 +5105,12 @@ claims:
 
       '
   confidence: high
-  note: 'tier: isoform-specific perturbation with phenotype. Bounding result in the same paper, at its L37:
-    the homozygous mice are milder than patients heterozygous for the same variant, so the mouse does not reproduce
-    the human severity. The statement that the humanized allele alone is silent is from the paper''s abstract
-    line L12; the muscle and grip measurements are at L29 and L33, with n greater than or equal to 4 per group.
-    The lines read were a bioRxiv preprint.
+  note: 'An earlier version of this claim said grip strength was weaker at every age tested and dropped the
+    exception the source reports. tier: isoform-specific perturbation with phenotype. Bounding result in the
+    same paper, at its L37: the homozygous mice are milder than patients heterozygous for the same variant,
+    so the mouse does not reproduce the human severity. The statement that the humanized allele alone is silent
+    is from the paper''s abstract line L12; the muscle and grip measurements are at L29 and L33, with n greater
+    than or equal to 4 per group. The lines read were a bioRxiv preprint.
 
     '
 - id: NEU-226
@@ -4997,9 +5159,10 @@ claims:
 - id: NEU-227
   claim: 'Measured directly in nasal brushings from 13 subjects homozygous for one CFTR intron 9 (TG)mTn haplotype,
     the proportion of CFTR mRNA that retains exon 10 falls stepwise with tract composition: 94.7 per cent for
-    (TG)10T9, 88.0 per cent for (TG)10T7, 80.9 per cent for (TG)11T7, 47.5 per cent for (TG)11T5 and 27.6 per
-    cent for (TG)12T5, so the same tract produces a continuous range of residual correct splicing rather than
-    two classes.
+    (TG)10T9 from three subjects, 88.0 per cent for (TG)10T7 from two, 80.9 per cent for (TG)11T7 from five,
+    47.5 per cent for (TG)11T5 from one and 27.6 per cent for (TG)12T5 from two, so the same tract produces
+    a continuous range of residual correct splicing rather than two classes, on groups small enough that two
+    of the five points rest on one and two subjects.
 
     '
   topic: Synonymous, intronic and modifier variants acting through splicing
@@ -5022,14 +5185,14 @@ claims:
 
       '
   confidence: medium
-  note: 'tier: correlation of isoform ratio with a phenotype only. The measurement is an endogenous one in
-    nasal brushings, per the paper''s L7, which is its value, but the groups are tiny: per its L28 the (TG)10T9
-    average is from three subjects, (TG)10T7 from two and (TG)11T7 from five, while the (TG)11T5 figure rests
-    on a single subject and the (TG)12T5 average on two, with a standard deviation of 12.1 percentage points
-    between them. The same L28 reports up to about 6 per cent variability in the spliced forms among the three
-    haplotypes without a T5. The subjects were selected as homozygous for the tract precisely to remove the
-    confounding of two different tracts in trans, so these are not the numbers a compound heterozygote would
-    show.
+  note: 'An earlier version of this claim gave the five percentages as a stepwise curve with the per-genotype
+    counts in this note only, so the curve could be quoted with no sign that two points rest on one and two
+    subjects. tier: correlation of isoform ratio with a phenotype only. The measurement is an endogenous one
+    in nasal brushings, per the paper''s L7, which is its value. The same L28 reports a standard deviation
+    of 12.1 percentage points between the (TG)12T5 subjects, and up to about 6 per cent variability in the
+    spliced forms among the three haplotypes without a T5. The subjects were selected as homozygous for the
+    tract precisely to remove the confounding of two different tracts in trans, so these are not the numbers
+    a compound heterozygote would show.
 
     '
 - id: NEU-228
@@ -5060,15 +5223,17 @@ claims:
 
       '
   confidence: high
-  note: 'tier: correlation of isoform ratio with a phenotype only, and the isoform ratio is not measured here
-    at all, only inferred from the tract length, so the splicing step in this record is borrowed from NEU-227.
-    The column mapping for the sweat chloride row was read from the table header at L46 and L47 and the group
-    sizes from L48. The paper gives three different counts for the 5T group and a chapter must say which it
-    is using: 42 patients with 5T in the results text at L12, 39 in the clinical table at L48, and 37 with
-    5T and a class I or II mutation in the discussion at L89. Single-centre retrospective registry study. The
-    paper states at its L87 that intron 9 phase was not confirmed by parental testing, so that the 5T sits
-    in cis with p.Arg117His is an assumption resting on reported linkage disequilibrium. The 7T group was younger
-    and younger at diagnosis, which the authors say may account for some of the difference.
+  note: 'tier: correlation of a clinical measure with an inferred tract length. The isoform ratio is not measured
+    in this paper at all, only inferred from the tract length, so the splicing step in this record is borrowed
+    from NEU-227; an earlier version of this note claimed the isoform-ratio tier while conceding in the next
+    breath that the ratio is not measured here. The column mapping for the sweat chloride row was read from
+    the table header at L46 and L47 and the group sizes from L48. The paper gives three different counts for
+    the 5T group and a chapter must say which it is using: 42 patients with 5T in the results text at L12,
+    39 in the clinical table at L48, and 37 with 5T and a class I or II mutation in the discussion at L89.
+    Single-centre retrospective registry study. The paper states at its L87 that intron 9 phase was not confirmed
+    by parental testing, so that the 5T sits in cis with p.Arg117His is an assumption resting on reported linkage
+    disequilibrium. The 7T group was younger and younger at diagnosis, which the authors say may account for
+    some of the difference.
 
     '
 - id: NEU-229
@@ -5097,17 +5262,16 @@ claims:
   note: 'Recorded as its own claim rather than folded into NEU-228''s note, because the lung-function contrast
     is the figure most likely to be quoted and it is the one that did not reach significance; the sweat chloride
     and pancreatic status differences did. Same paper and same authors as NEU-228, so this is an internal bound,
-    not independent replication.
-
-    '
+    not independent replication. tier: clinical measure in a genotype group.'
 - id: NEU-230
   claim: 'In 548,300 individuals sequenced at one clinical laboratory, the CFTR T5 allele had a minor allele
     frequency of 4.2 per cent, and when paired with a cystic fibrosis-causing variant the three T5 haplotypes
     were enriched to graded degrees among people whose requisition reported a personal or family history of
     cystic fibrosis or a CFTR-related disorder, relative to people referred for hereditary cancer testing who
     had not requested CFTR analysis: odds ratio 6.9 for TG11T5, 32.0 for TG12T5 and 78.8 for TG13T5, with TG13T5
-    homozygotes at 255.7 against 581.7 for carriers of two disease-causing variants, all with carriers of p.Arg117His
-    excluded from the analysis.
+    homozygotes at 255.7 against 581.7 for carriers of two disease-causing variants, a difference the authors
+    report as not statistically distinguishable at p = 0.56, and with carriers of p.Arg117His excluded from
+    the analysis.
 
     '
   topic: Synonymous, intronic and modifier variants acting through splicing
@@ -5131,11 +5295,13 @@ claims:
 
       '
   confidence: high
-  note: 'This is a penetrance measurement rather than an isoform case, so the tier strings do not apply. The
-    odds ratios are enrichment in a referral population, not penetrance in a birth cohort, and the two referral
-    groups differed in sex ratio and in mean age at testing, 24.7 against 52.6 years. The exclusion of p.Arg117His
-    carriers, defined at the paper''s L34, removes exactly the population NEU-228 and NEU-229 study, so the
-    two sets of figures are not about the same patients. The lines read were a medRxiv preprint.
+  note: 'An earlier version of this claim contrasted the last two odds ratios without the p-value by which
+    the authors call them indistinguishable, and that p-value appeared in neither citable field. tier: penetrance
+    measurement in a referral population. The odds ratios are enrichment in a referral population, not penetrance
+    in a birth cohort, and the two referral groups differed in sex ratio and in mean age at testing, 24.7 against
+    52.6 years. The exclusion of p.Arg117His carriers, defined at the paper''s L34, removes exactly the population
+    NEU-228 and NEU-229 study, so the two sets of figures are not about the same patients. The lines read were
+    a medRxiv preprint.
 
     '
   figure_idea: 'The T5-containing genotypes on one axis ordered by measured exon 10 retention from NEU-227,
@@ -5254,9 +5420,10 @@ claims:
     the bibkey is title-derived. Rod function was decreased only in the Prpf3-T494M line. Contradicted in part
     by NEU-236, which finds photoreceptor defects independent of the pigment epithelium. Shares line L1 with
     NEU-234, which is permitted here because the document is a single-line abstract; the two quote non-overlapping
-    spans and state different things.
-
-    '
+    spans and state different things. Independence, recomputed from the bylines now in these records: this
+    byline shares Bujakowska, K. and Bhattacharya, S. S. with NEU-235, so the mouse pigment-epithelium result
+    and the no-fundus-phenotype result are not independent of each other, and it shares Bhattacharya, S. S.
+    with NEU-237 as well.'
 - id: NEU-234
   claim: 'Those authors open by saying the route from a mutation in a gene used by every cell to a disease
     confined to the eye had not been worked out, which is the question the retina-restricted phenotype of the
@@ -5324,9 +5491,9 @@ claims:
     contradicting it: the two read the same Prpf31 heterozygote differently, the earlier paper reporting no
     fundus degeneration and the later one reporting pigment-epithelium changes at one year, and the difference
     may be age at examination and method. Abstract-only: no author list or journal in meta.json, so both are
-    RESOLVE_FROM_DOI and the bibkey is title-derived.
-
-    '
+    RESOLVE_FROM_DOI and the bibkey is title-derived. Independence, recomputed from the bylines now in these
+    records: this byline shares Bujakowska, K. and Bhattacharya, S. S. with NEU-233, so the result this note
+    calls in tension with NEU-233 comes from a byline overlapping it rather than from an independent group.'
 - id: NEU-236
   claim: 'Human induced pluripotent stem cell retinal organoids carrying the PRPF8 p.Tyr2334Asn variant developed
     photoreceptor defects including a thinner outer segment layer, with only minor changes in messenger RNA
@@ -5361,12 +5528,12 @@ claims:
     component and the readouts are organoid morphology and transcriptome-wide splicing. This is the record
     that bounds NEU-233: the mouse models point at the pigment epithelium and these authors conclude from a
     human neural-retina model that the photoreceptor damage arises independently of it, so the two systems
-    disagree about which cell type is primary and a chapter should say so rather than choose. Whether the two
-    groups are independent could not be checked, because the author lists for NEU-233 and NEU-235 are not in
-    the corpus and are marked RESOLVE_FROM_DOI. The lines read were a bioRxiv preprint; the corpus records
-    a 2026 published version at 10.1038/s41598-026-40376-y that was not read.
-
-    '
+    disagree about which cell type is primary and a chapter should say so rather than choose.  The lines read
+    were a bioRxiv preprint; the corpus records a 2026 published version at 10.1038/s41598-026-40376-y that
+    was not read. Independence, recomputed from the bylines now in these records: this byline shares no author
+    with NEU-233, NEU-235 or NEU-237, so the organoid result is the independent leg of the disagreement. An
+    earlier version of this note said the check could not be made because the other records'' author lists
+    are not in the corpus; the lists are in the records, and the answer is the opposite of what that note implied.'
 - id: NEU-237
   claim: 'The incomplete penetrance of PRPF31 disease tracks a linked common variant rather than the mutation
     itself: the number of copies of an MSR1 minisatellite next to the promoter varies between three and four
@@ -5402,9 +5569,9 @@ claims:
     variant, the same shape of explanation as the CFTR tract in NEU-227 to NEU-230. The 50 to 115-fold figure
     is an in vitro measurement, which is the word the paper uses, not a measurement in patient retina, and
     the absence of the four-copy allele among symptomatic carriers is an observed absence in a finite sample
-    whose size was not read.
-
-    '
+    whose size was not read. Independence, recomputed from the bylines now in these records: this byline shares
+    Bhattacharya, S. S. with both NEU-233 and NEU-235, so three of the four retinal records share a senior
+    author.'
 - id: NEU-238
   claim: 'Missense variants make up about half the causal alleles in Stargardt disease, and when 18 synonymous
     or missense ABCA4 variants drawn from 5,579 biallelic Stargardt probands - 15 of them picked because SpliceAI
@@ -5518,14 +5685,12 @@ claims:
     the shape of the assay''s own score distribution against its own threshold, assessed with Hartigan''s dip
     test, and the authors also compare the assay calls against SpliceAI predictions, so a predictor sits inside
     part of the evaluation. The paper''s clinical calibration and its mapping onto ACMG evidence strength belong
-    to chapter 10.
-
-    '
+    to chapter 10. Same paper as NEU-241, NEU-249, NEU-258 and NEU-259, so these five are one source.'
 - id: NEU-241
   claim: 'The same audit put reporter measurements against measurements in patient tissue and found them to
-    agree more often than not but not always: for 91 variants with both kinds of data, minigene and patient-derived
-    RNA results showed complete or high concordance in the predominant transcript in 89 per cent of cases,
-    81 of 91.
+    agree more often than not but not always: for 91 variants in seven named cancer-predisposition genes with
+    both kinds of data, minigene and patient-derived RNA results showed complete or high concordance in the
+    predominant transcript in 89 per cent of cases, 81 of 91.
 
     '
   topic: Massively parallel splicing assays and the size of the class
@@ -5549,12 +5714,14 @@ claims:
 
       '
   confidence: high
-  note: 'The comparison is for traditional multi-exon minigene assays, drawn from a set of 673 variants across
-    14 studies, not for the massively parallel assays in NEU-240, so the 89 per cent is not a warrant for reporter-based
-    library assays. The endpoint is the identity of the predominant transcript, not its quantity. Same paper
-    and authors as NEU-240, so these two records are not independent of each other; the paper also notes at
-    its L23 that patient RNA results themselves vary with tissue source, allele expression bias and assay sensitivity,
-    which is the reason a reporter is used at all.
+  note: 'An earlier version of this record gave the 89 per cent as a general concordance figure; it is measured
+    on seven named cancer-predisposition genes, and neither field said so. tier: concordance of a reporter
+    assay against patient RNA. The comparison is for traditional multi-exon minigene assays, drawn from a set
+    of 673 variants across 14 studies, not for the massively parallel assays in NEU-240, so the 89 per cent
+    is not a warrant for reporter-based library assays. The endpoint is the identity of the predominant transcript,
+    not its quantity. Same paper as NEU-240, NEU-249, NEU-258 and NEU-259, so those five records are one source;
+    the paper also notes at its L23 that patient RNA results themselves vary with tissue source, allele expression
+    bias and assay sensitivity, which is the reason a reporter is used at all.
 
     '
 - id: NEU-242
@@ -5587,9 +5754,8 @@ claims:
     says so directly at its L50: the tools estimate different quantities, some the change in probability that
     a base is a splice site and some the change in inclusion of a defined exon, while the assays measure steady-state
     isoform abundance, so the scores are not interchangeable. The benchmark covers five genes only, which the
-    authors give as a limitation.
-
-    '
+    authors give as a limitation. tier: practitioners'' own statement of a limitation. Same paper as NEU-243
+    and NEU-244, so the three are one source.'
 - id: NEU-243
   claim: 'Part of the disagreement is annotation rather than biology: in that benchmark, including or excluding
     an alternative splice form from the gene model changed SpliceAI''s prediction for more than 10 per cent
@@ -5620,14 +5786,16 @@ claims:
   note: 'The authors call the 18.0 per cent a conservative projection from GTEx junction usage, not a measured
     count of misannotated genes, and the per-variant effect was observed at two exons only. The direction is
     not simply that more annotation is better: at one of those two exons the more comprehensive annotation
-    gave worse agreement with the measurements. Same paper as NEU-242.
-
-    '
+    gave worse agreement with the measurements. Same paper as NEU-242. tier: practitioners'' own statement
+    of a limitation. Same paper as NEU-242 and NEU-244, so the three are one source.'
 - id: NEU-244
   claim: 'The systematic gap between a reporter and the real locus is stated by the benchmark''s own authors:
     the assays they used excluded deep-intronic variants, which they call an important source of pathogenic
     splice disruption, because the lengths involved are hard to screen, and plasmid-borne assays cannot register
-    effects that come from transcription elongation rate or nucleosome positioning.
+    effects that come from transcription elongation rate or nucleosome positioning. The same passage closes
+    by defending the assay, saying it is generally well correlated with patient material, has a sufficient
+    track record to be accepted as functional evidence, and may still correctly flag a variant even where it
+    gets the outcome wrong.
 
     '
   topic: Massively parallel splicing assays and the size of the class
@@ -5648,20 +5816,23 @@ claims:
 
       '
   confidence: high
-  note: 'No tier: this is a statement of method limits, and it is these authors'' own account of their assay
-    rather than an external criticism, which is the honest way for the chapter to carry it. It matters for
-    the arithmetic of this section: every reporter-measured fraction in the chapter, including the existing
-    NEU-026 and the new NEU-239, has deep-intronic variants outside its denominator, while NEU-226 measures
-    only those. The same passage notes that in situ editing approaches also rely on immortalised cancer cell
-    lines whose splicing factor levels need not match the relevant tissue.
+  note: 'An earlier version of this record took the limitation half of the passage and omitted the sentence
+    it closes on; another record in the same range handles the identical situation correctly, which is what
+    made this a defect rather than a matter of emphasis. tier: practitioners'' own statement of a limitation.
+    It is these authors'' own account of their assay rather than an external criticism, which is the honest
+    way for the chapter to carry it. It matters for the arithmetic of this section: every reporter-measured
+    fraction in the chapter, including the existing NEU-026 and the new NEU-239, has deep-intronic variants
+    outside its denominator, while NEU-226 measures only those. The same passage notes that in situ editing
+    approaches also rely on immortalised cancer cell lines whose splicing factor levels need not match the
+    relevant tissue. Same paper as NEU-242 and NEU-243, so the three are one source.
 
     '
 - id: NEU-245
-  claim: 'Among 24,445 variants in the extended acceptor region reported to ClinVar and the Leiden Open Variation
-    Database across 2,100 genes, only 11.7 per cent of the pathogenic variants lay outside the essential AG,
-    and within that subset of 638 creation was the largest single category: 41.9 per cent created a new AG
-    dinucleotide in the polypyrimidine tract, against 28.2 per cent that removed the pyrimidine at position
-    minus 3 and 16.6 per cent that removed one or more pyrimidines.
+  claim: 'Of the 24,445 variants in the extended acceptor region reported to ClinVar and the Leiden Open Variation
+    Database across 2,100 genes, 638 pathogenic variants lay outside the essential AG, and within that subset
+    creation was the largest single category: 41.9 per cent created a new AG dinucleotide in the polypyrimidine
+    tract, against 28.2 per cent that removed the pyrimidine at position minus 3 and 16.6 per cent that removed
+    one or more pyrimidines.
 
     '
   topic: Splice-gain against splice-loss
@@ -5685,16 +5856,20 @@ claims:
 
       '
   confidence: high
-  note: 'The figures are taken from the results section rather than the abstract, because the two differ: the
-    abstract of the same paper gives 28.4 per cent for loss of the minus 3 pyrimidine and 15.1 per cent for
-    loss of polypyrimidine tract pyrimidines, where the results give 28.2 and 16.6, and only the results state
-    the denominator, n = 638. A chapter quoting the abstract figures would carry numbers the paper''s own results
-    do not reproduce. The denominator is pathogenic variants in the extended acceptor region outside the essential
-    AG, not all pathogenic splicing variants and not donor-side variants at all, so this says nothing about
-    gain against loss at the 5'' splice site. The ascertainment is clinical submission plus locus-specific
-    curation, the two sources whose different reach the chapter''s spread of estimates turns on. No tier: class
-    measurement, with named clinical examples in the same paper. The same results line reports that loss of
-    one or more pyrimidines was significantly less often pathogenic than AG-creation or minus 3 loss, chi-squared
+  note: 'An earlier version of this claim said 11.7 per cent of the pathogenic variants lay outside the essential
+    AG, built on the wrong set: the 11.7 per cent is 5,463 of 30,042 pathogenic variants in a different set,
+    on two lines this record does not cite, and inside the extended-acceptor set essentially every pathogenic
+    variant is outside the essential dinucleotide by definition, which made the sentence near-vacuous as well
+    as wrong. tier: class measurement, with named clinical examples in the same paper. The figures are taken
+    from the results section rather than the abstract, because the two differ: the abstract of the same paper
+    gives 28.4 per cent for loss of the minus 3 pyrimidine and 15.1 per cent for loss of polypyrimidine tract
+    pyrimidines, where the results give 28.2 and 16.6, and only the results state the denominator, n = 638.
+    A chapter quoting the abstract figures would carry numbers the paper''s own results do not reproduce. The
+    denominator is pathogenic variants in the extended acceptor region outside the essential AG, not all pathogenic
+    splicing variants and not donor-side variants at all, so this says nothing about gain against loss at the
+    5'' splice site. The ascertainment is clinical submission plus locus-specific curation, the two sources
+    whose different reach the chapter''s spread of estimates turns on. The same results line reports that loss
+    of one or more pyrimidines was significantly less often pathogenic than AG-creation or minus 3 loss, chi-squared
     1,977.5 on 9 degrees of freedom, so the three mechanisms are not equally dangerous per variant.
 
     '
@@ -5733,16 +5908,17 @@ claims:
 
       '
   confidence: high
-  note: 'This answers the predictability half of the splice-gain question for one variant class: gained acceptors
-    are predictable once position is used, and the window was defined on the same data in which 93.1 per cent
-    of pathogenic variants fall, so the figure is descriptive of that set rather than a validated threshold.
-    The same paper''s L11 also reports three distinct mechanisms by which an AG variant mis-splices, including
-    one in which losing a deep intronic AG switches a pseudoexon on, so creation and destruction are not a
-    clean dichotomy. The abstract''s accompanying claim that SpliceAI reaches 95 per cent sensitivity at 69
-    per cent specificity on this class is not recorded here, because the results passage at that paper''s L55
-    states the 95 per cent sensitivity figure with a SpliceAI acceptor delta cutoff of 0.48 and the sentence
-    is truncated in the corpus text before the matching specificity, so the pair could not be read together.
-    Same source as NEU-245 but a different line and a different finding.
+  note: 'tier: class measurement of position against clinical classification. This answers the predictability
+    half of the splice-gain question for one variant class: gained acceptors are predictable once position
+    is used, and the window was defined on the same data in which 93.1 per cent of pathogenic variants fall,
+    so the figure is descriptive of that set rather than a validated threshold. The same paper''s L11 also
+    reports three distinct mechanisms by which an AG variant mis-splices, including one in which losing a deep
+    intronic AG switches a pseudoexon on, so creation and destruction are not a clean dichotomy. The abstract''s
+    accompanying claim about SpliceAI is not recorded here because it has not been read as a pair; an earlier
+    version of this note said the sentence carrying it is truncated in the corpus text, which is wrong, the
+    whole sentence is present and a figure legend repeats both numbers with both sample sizes, so a real result
+    was left out on a false belief about the corpus. Same source as NEU-245 but a different line and a different
+    finding.
 
     '
 - id: NEU-247
@@ -5855,9 +6031,7 @@ claims:
     the five whose scores did not separate aberrant from natural splicing on this test. What follows is a caution
     about the score as a continuous measure, not a refutation of the 513 calls, which were made by requiring
     an effect in two independent assays. No tier: assay audit. Same paper as NEU-240, NEU-241, NEU-258 and
-    NEU-259.
-
-    '
+    NEU-259. Same paper as NEU-240, NEU-241, NEU-258 and NEU-259, so these five are one source.'
 - id: NEU-250
   claim: 'The de novo burden analysis compared its own estimate against a clinical database on matched positions
     and found them incompatible: against its 27 per cent for non-canonical positions, with a 95 per cent confidence
@@ -5897,22 +6071,21 @@ claims:
     Scope: de novo mutations in dominant developmental disorders on one side and ClinVar submissions on the
     other, non-canonical splice-region positions only, with exonic missense excluded from both sides. The existing
     NEU-029 and NEU-030 cite this paper''s L21 and L55; this record is its L54 and is a different finding,
-    the quantified ascertainment gap rather than the list of disagreeing estimates.
-
-    '
+    the quantified ascertainment gap rather than the list of disagreeing estimates. Same paper as NEU-251,
+    NEU-252 and NEU-253, so those four are one source.'
   figure_idea: 'One axis of non-canonical share, with the trio-based estimate shown as a point with its 18
     to 39 per cent interval and each database-derived estimate as a point beside it, so the reader sees that
     two of them sit outside the interval rather than near it.
 
     '
 - id: NEU-251
-  claim: 'The same paper gives the general reason the older figures cannot be read at face value - that estimates
-    of this split are sparse and typically rest on clinically interpreted variants, and so inherit whatever
-    biases current clinical practice has - and then declines to use the scope differences to dismiss them:
-    although the HGMD-derived roughly 30 per cent and the roughly 43 per cent from a different curation cover
-    recessive as well as dominant disease and include exonic variants, which its own de novo analysis of dominant
-    disorders does not, those authors say both sit closer to their 27 per cent than the ClinVar figure of about
-    17 per cent does.
+  claim: 'The same paper gives the general reason the older figures cannot be read at face value, that estimates
+    of this split are sparse and typically rest on clinically interpreted variants and so inherit whatever
+    biases current clinical practice has, and then declines to use the scope differences to dismiss them: although
+    the HGMD-derived roughly 30 per cent and the roughly 43 per cent from a different curation cover recessive
+    as well as dominant disease and include exonic variants, which its own de novo analysis of dominant disorders
+    does not, those authors say each of the two sits closer to their own 27 per cent than to the ClinVar figure
+    of about 17 per cent, calling one consistent with their data and the other above their upper bound.
 
     '
   topic: Why the published fractions do not converge
@@ -5938,16 +6111,19 @@ claims:
 
       '
   confidence: high
-  note: 'Direction matters here and is easy to get backwards: this line does NOT say the HGMD-derived figures
-    are incomparable with the trio estimate. It says the opposite, that they are closer to it than ClinVar''s
-    is, and it lists the scope differences as something the agreement holds despite. The incomparability the
-    chapter can assert from this paper is the general one quoted here, that such estimates rest on clinically
-    interpreted variants, plus the excluded variant classes in NEU-252. Anchor overlap to declare: the existing
-    NEU-030 cites this same line L55 for the four percentages. The same line also shows both database figures
-    are second-hand, attributed to Krawczak and colleagues in 2007, whose 64 per cent of donor-site and 77.4
-    per cent of acceptor-site mutations being canonical is where the roughly 30 per cent comes from, and to
-    Caminsky and colleagues in 2014; neither was measured by the paper that reports the spread. No tier: a
-    statement about comparability.
+  note: 'Direction matters here and an earlier version of this record had it inverted in both the claim and
+    this note: the source compares each database figure''s distance from its own 27 per cent against that figure''s
+    distance from the other database''s 17 per cent, not against a third figure''s distance from 27. In the
+    inverted form the statement is false for one of the two, since 43 is 16 away from 27 while 17 is only 10
+    away. The line does not say the HGMD-derived figures are incomparable with the trio estimate; it says they
+    are closer to it than ClinVar''s is, and it lists the scope differences as something the agreement holds
+    despite. tier: a statement about comparability. The incomparability the chapter can assert from this paper
+    is the general one quoted here, plus the excluded variant classes in NEU-252. Anchor overlap to declare:
+    the existing NEU-030 cites this same line L55 for the four percentages, and NEU-250, NEU-252 and NEU-253
+    are the same paper, so those records are one source. The same line also shows both database figures are
+    second-hand, attributed to Krawczak and colleagues in 2007, whose 64 per cent of donor-site and 77.4 per
+    cent of acceptor-site mutations being canonical is where the roughly 30 per cent comes from, and to Caminsky
+    and colleagues in 2014; neither was measured by the paper that reports the spread.
 
     '
 - id: NEU-252
@@ -5983,15 +6159,15 @@ claims:
     one number: each excludes a different variant class, and here the excluded classes are named by the authors
     themselves. The reasons they give for the exclusions are practical - no comprehensive catalogue of branchpoints
     or splicing elements, prediction at those sites not accurate, and some sites not covered by exome sequencing.
-    No tier: a statement of scope.
-
-    '
+    No tier: a statement of scope. Same paper as NEU-250, NEU-251 and NEU-253, so those four are one source.'
 - id: NEU-253
   claim: 'The same paper tested a handful of its candidate variants in a minigene and got a mixed result: splicing
     changed for five of six likely diagnostic polypyrimidine tract variants and for the likely diagnostic donor
     plus 5 variant, but not for one further likely diagnostic polypyrimidine variant nor for one of uncertain
-    significance, and the authors say they cannot state that what a minigene shows would hold in the patient''s
-    full genetic, developmental and cellular context.
+    significance, and the authors say they cannot definitively state that what a minigene shows would hold
+    in the patient''s full genetic, developmental and cellular context. The same passage closes by saying the
+    assay is generally well correlated with patient material and has a sufficient track record to be accepted
+    as functional evidence.
 
     '
   topic: Massively parallel splicing assays and the size of the class
@@ -6017,11 +6193,14 @@ claims:
 
       '
   confidence: high
-  note: 'The reason this belongs with the assay records rather than the fraction records is that it gives the
-    reporter-against-endogenous problem at the scale of individual variants: the authors needed a minigene
-    because neural tissue is not obtainable from these patients, and they name the two limits that follow,
-    lack of full endogenous genetic context and sensitivity to the cell type used. Eight variants only, chosen
-    as the potentially diagnostic ones, so this is not a concordance rate. No tier: method result.
+  note: 'An earlier version of this record took the limitation half of the passage and dropped both the sentence
+    it closes on and the source''s own "definitively". tier: method result on eight chosen variants. The reason
+    this belongs with the assay records rather than the fraction records is that it gives the reporter-against-endogenous
+    problem at the scale of individual variants: the authors needed a minigene because neural tissue is not
+    obtainable from these patients, and they name the two limits that follow, lack of full endogenous genetic
+    context and sensitivity to the cell type used. Eight variants only, chosen as the potentially diagnostic
+    ones, so this is not a concordance rate. Same paper as NEU-250, NEU-251 and NEU-252, so those four are
+    one source.
 
     '
 - id: NEU-254
@@ -6058,9 +6237,8 @@ claims:
     and size-restricted. Two consequences for the chapter: the 10 per cent is a measurement of how often a
     variant classified by its amino-acid change acts through splicing, which is the assignment''s item 3 answered
     directly; and it cannot be compared with any estimate whose denominator includes synonymous variants. No
-    tier: class measurement.
-
-    '
+    tier: class measurement. Same paper as NEU-255, NEU-256 and NEU-257, and as the existing NEU-026 and NEU-027,
+    so those six are one source.'
 - id: NEU-255
   claim: 'The same assay was checked against patient material: of 32 exonic splicing mutations it had called,
     26, about 81 per cent, were confirmed in RNA from patient lymphoblastoid cell lines, fibroblasts, whole
@@ -6092,9 +6270,8 @@ claims:
     a confirmation rate for positives and says nothing about how many real splicing mutations the assay missed.
     The samples were not matched to the tissue in which each disease manifests, and 13 tissue samples in total
     were available per the paper''s L50. It is a weaker design than NEU-241''s minigene-against-patient comparison
-    but on the chapter''s own assay.
-
-    '
+    but on the chapter''s own assay. tier: reporter-library measurement of splicing effect. Same paper as NEU-254,
+    NEU-256 and NEU-257, and as the existing NEU-026 and NEU-027, so those six are one source.'
 - id: NEU-256
   claim: 'The same assay''s own stated reach is half the problem: only exons shorter than 100 nucleotides could
     be tested, and with the average internal human exon around 130 nucleotides the authors say half of human
@@ -6126,9 +6303,8 @@ claims:
     variants in the shorter half of human internal exons, measured in a construct that does not carry the real
     flanking context. The authors draw the opposite emphasis from the same facts, arguing at this line that
     the high concordance with patient tissue shows the construct holds most of what matters, so the chapter
-    should report both readings rather than only the limitation. No tier: method limits.
-
-    '
+    should report both readings rather than only the limitation. No tier: method limits. Same paper as NEU-254,
+    NEU-255 and NEU-257, and as the existing NEU-026 and NEU-027, so those six are one source.'
 - id: NEU-257
   claim: 'The one-third figure is not only a summary of earlier work but a prediction, and not an independent
     voice in the debate: the introduction of the massively parallel assay paper gives it as the share of inherited
@@ -6162,9 +6338,8 @@ claims:
     whose own record there notes it shares the senior author Fairbrother, so three of the figures a chapter
     might line up as separate estimates come from one group. Checked and NOT true of soukarieh2016exonic, whose
     author list in research/06-cancer.yml runs Soukarieh, Gaildrat, Hamieh, Drouet, Baert-Desurmont, Frebourg,
-    Tosi and Martins, with no shared author. No tier: a statement about provenance and independence.
-
-    '
+    Tosi and Martins, with no shared author. No tier: a statement about provenance and independence. Same paper
+    as NEU-254, NEU-255 and NEU-256, and as the existing NEU-026 and NEU-027, so those six are one source.'
 - id: NEU-258
   claim: 'Where three multiplexed assays can be compared on the same variant class they do not agree. Among
     variants at the canonical donor and acceptor dinucleotides, where splicing disruption is the expected outcome
@@ -6202,9 +6377,7 @@ claims:
     five of them predicted spliceogenic with no observed effect. The expectation that canonical dinucleotide
     variants disrupt splicing is itself an assumption, which is why the comparison is informative rather than
     decisive: a chapter can say the assays differ on a class where they should agree, not that one is right.
-    No tier: assay comparison.
-
-    '
+    No tier: assay comparison. Same paper as NEU-240, NEU-241, NEU-249 and NEU-259, so these five are one source.'
   figure_idea: 'Three assays side by side on the same positional classes - canonical dinucleotides, splice
     region, elsewhere - with the proportion each called disruptive, so the reader sees that the disagreement
     is largest where it should be smallest.
@@ -6213,7 +6386,8 @@ claims:
 - id: NEU-259
   claim: 'The same audit measured each assay''s calls against a common predictor and found them far apart:
     99 per cent of the variants one assay reported as abnormally spliced carried a SpliceAI score of 0.2 or
-    more, where for the other massively parallel assays that proportion ran from 9 to 66 per cent.
+    more, where for the other massively parallel assays that proportion ran from 9 to 66 per cent, each proportion
+    taken over the variants that assay called abnormally spliced.
 
     '
   topic: Massively parallel splicing assays and the size of the class
@@ -6236,20 +6410,24 @@ claims:
 
       '
   confidence: high
-  note: 'The comparison is indirect and its direction is not settled by the data: a low proportion could mean
-    the assay calls variants disruptive that a predictor would miss, which is the point of running an assay,
-    or that its calls are noise. The authors read it as misclassification, and a chapter should attribute that
-    reading rather than assert it. The 0.2 threshold is one taken from a published recommendation, not derived
-    here. Same paper as NEU-240, NEU-241 and NEU-258, so these four are one source.
+  note: 'An earlier version of this claim gave two percentages with no numerator, no denominator and no assay
+    named, in a section whose argument is that a fraction means nothing without its ascertainment; the source
+    names the assay on the cited line. tier: comparison of assay calls against a predictor''s scores. The comparison
+    is indirect and its direction is not settled by the data: a low proportion could mean the assay calls variants
+    disruptive that a predictor would miss, which is the point of running an assay, or that its calls are noise.
+    The authors read it as misclassification, and a chapter should attribute that reading rather than assert
+    it. The 0.2 threshold is one taken from a published recommendation, not derived here. Same paper as NEU-240,
+    NEU-241, NEU-249 and NEU-258, so these five are one source.
 
     '
 - id: NEU-261
-  claim: 'The journal version of the muscle RNA sequencing study reports the same cohort and the same headline
-    figure as the preprint - 50 patients with genetically undiagnosed rare muscle disorders, an overall diagnosis
-    rate of 35 per cent - and adds the reference panel the calls were made against: each patient''s muscle
-    transcriptome was compared with more than 180 control skeletal muscle samples. A diagnosis here means a
-    molecular diagnosis reached either by validating a candidate splice-disrupting variant or by finding a
-    splice-altering variant in an exon or deep in an intron.'
+  claim: 'The journal version of the muscle RNA sequencing study reports 50 patients with genetically undiagnosed
+    rare muscle disorders, an overall diagnosis rate of 35 per cent, and the reference panel the calls were
+    made against: each patient''s muscle transcriptome was compared with more than 180 control skeletal muscle
+    samples. A diagnosis here means a molecular diagnosis reached either by validating a candidate splice-disrupting
+    variant or by finding a splice-altering variant in an exon or deep in an intron.
+
+    '
   topic: RNA sequencing as a diagnostic
   source:
     doc_id: 50091604
@@ -6272,15 +6450,18 @@ claims:
     quote: an analysis framework focused on the detection of transcript-level changes that are unique to the
       patient compared to more than 180 control skeletal muscle samples
   confidence: high
-  note: 'Closes the file''s lead that the published version of NEU-031 was not in the corpus. It is held as
-    an abstract-only pubmed record, doc 50091604, which lookup doi, lookup pmid and lookup title all miss;
-    it was found with search -s abstracts. meta.json carries no author list and no journal, so both are RESOLVE_FROM_DOI.
-    Deliberately shares bibkey cummings2016musclernaseq with NEU-031 because it is the same work: build_bib.py
-    treats a preprint read under the journal DOI as the legitimate one-work-two-documents case only if the
-    one bibkey is shared. NEU-031 must therefore have its doi: field changed from 10.1101/074153 to 10.1126/scitranslmed.aal5209,
-    or verify_claims.py will report one key with two DOIs. Prior testing: genetically undiagnosed on prior
-    sequencing, with candidate variants already in hand for part of the cohort; the abstract does not say how
-    many. tier: cohort measurement of assay performance; none of the three isoform tiers applies'
+  note: 'An earlier version of this claim said the journal version reports the same cohort and headline figure
+    as the preprint and adds the control panel. The preprint''s abstract already carries that panel, in almost
+    the same words, and the two abstracts differ only in wording, so the panel is not a journal-version addition;
+    the claim also made a two-document comparison while this record cites one document, so nothing in its own
+    evidence could support it. Closes the file''s lead that the published version of the removed NEU-031 was
+    not in the corpus. It is held as an abstract-only pubmed record, doc 50091604, which lookup doi, lookup
+    pmid and lookup title all miss; it was found with search -s abstracts. meta.json carries no author list
+    and no journal, so both are RESOLVE_FROM_DOI. Prior testing: genetically undiagnosed on prior sequencing,
+    with candidate variants already in hand for part of the cohort; the abstract does not say how many. tier:
+    cohort measurement of assay performance; none of the three isoform tiers applies
+
+    '
   figure_idea: A horizontal bar per published cohort - diagnostic yield on one axis, each bar labelled with
     cohort size, source tissue, prior testing and what counted as a diagnosis - so the spread reads as a design
     difference rather than a disagreement.
@@ -6352,10 +6533,13 @@ claims:
   figure_idea: Four stacked bars, one per biosample, each split into reachable and unreachable fractions of
     the same 3,322-gene denominator, with the junction-coverage threshold written on the axis.
 - id: NEU-264
-  claim: Of 7,507 ClinVar variants of uncertain significance that SpliceAI scored at 0.5 or above, between
+  claim: 'Of 7,507 ClinVar variants of uncertain significance that SpliceAI scored at 0.5 or above, between
     25.8 and 67.8 per cent sat in genes that 100 million uniquely mapping reads or fewer would cover adequately
     in at least one of whole blood, lymphoblastoid cell lines, skeletal muscle or cultured fibroblasts, the
-    range depending on how stringent the coverage requirement was set.
+    range depending on the stringency of the model rather than on the read-coverage requirement, which was
+    held fixed at eight-read junction support throughout.
+
+    '
   topic: Tissue choice sets what a diagnostic transcriptome can see
   source:
     doc_id: PMC8874219
@@ -6375,11 +6559,15 @@ claims:
     quote: Between 25.8% (1,940/7,507) and 67.8% (5,086/7,507) of variants predicted to impact splicing are
       expected to be adequately covered by 100 M uniquely mapping reads
   confidence: high
-  note: 'The spread of the estimate is a function of the model parameters, not of biology, so the figure cannot
-    be quoted as a single number. The variants were most likely to fall in adequately covered genes in fibroblasts
-    whatever the parameters. Which classification those variants would then reach is chapter 10''s; this record
-    is only about whether the assay can see them. tier: cohort measurement of assay performance; none of the
-    three isoform tiers applies'
+  note: 'An earlier version of this claim attributed the spread to how stringently the coverage requirement
+    was set; the source holds that parameter fixed and attributes the spread to model stringency, as this note
+    already did. The spread of the estimate is a function of the model parameters, not of biology, so the figure
+    cannot be quoted as a single number. The variants were most likely to fall in adequately covered genes
+    in fibroblasts whatever the parameters. Which classification those variants would then reach is chapter
+    10''s; this record is only about whether the assay can see them. tier: cohort measurement of assay performance;
+    none of the three isoform tiers applies
+
+    '
 - id: NEU-265
   claim: In muscle biopsies from a 25-patient neuromuscular cohort, 9,932 protein-coding genes were expressed
     above 1 RPKM in patient muscle biopsies but only 71 per cent of those were above 1 RPKM in blood, and of
@@ -6509,11 +6697,14 @@ claims:
   figure_idea: A ranked bar chart of disease categories by the proportion of their genes that no accessible
     tissue can assay, with the 30 per cent whole-panel line drawn across it.
 - id: NEU-269
-  claim: 'Two ways of making a silent disease gene assayable in a skin biopsy were measured against each other
-    in the same laboratory: direct transdifferentiation of dermal fibroblasts into neurons brought 193 of 516
-    (37.4 per cent) neurological silent genes into expression, while CRISPR transactivation raised all 20 genes
-    it was tested on by 6- to 90,000-fold, 17 of which then met the junction-coverage requirement for splicing
-    analysis.'
+  claim: 'Two ways of making a silent disease gene assayable in a skin biopsy were reported from the same laboratory:
+    direct transdifferentiation of dermal fibroblasts into neurons brought 193 of 516 (37.4 per cent) neurological
+    silent genes into expression, while CRISPR transactivation raised all 20 genes it was tested on by 6- to
+    90,000-fold, 17 of which then met the junction-coverage requirement for splicing analysis. The two figures
+    do not share a denominator: the 516 are the neurological silent genes, and the 20 were chosen for variants
+    the laboratory needed to assess.
+
+    '
   topic: Tissue choice sets what a diagnostic transcriptome can see
   source:
     doc_id: PMC11339655
@@ -6539,12 +6730,16 @@ claims:
     quote: Transdifferentiation of HDFs directly to neurons led to expression of 193/516 (37.4%) of SMGs implicated
       in neurological disease
   confidence: high
-  note: 'Transactivation drives whichever isoforms a given promoter produces, so it is not a general substitute
-    for the disease tissue; the authors show for PAK3 that the major neuronal isoforms plus rare exon 6 and
-    7 isoforms were captured, judged against induced-pluripotent-stem-cell-derived neurons by nanopore amplicon
-    sequencing. The 20-gene transactivation result is a selected panel chosen for variants the laboratory needed
-    to assess, not a random sample of the 1,436. tier: isoform-specific biochemical or binding difference,
-    no organismal phenotype'
+  note: 'An earlier version of this claim said the two were measured against each other, which the two denominators
+    do not allow. tier: assessment of two methods for making a silent gene assayable; an earlier version of
+    this note claimed an isoform-specific biochemical or binding difference, where what is measured on the
+    cited lines is gene expression induction and junction-read coverage, and no binding or biochemical difference
+    between isoforms is measured anywhere on them. Transactivation drives whichever isoforms a given promoter
+    produces, so it is not a general substitute for the disease tissue; the authors show for PAK3 that the
+    major neuronal isoforms plus rare exon 6 and 7 isoforms were captured, judged against induced-pluripotent-stem-cell-derived
+    neurons by nanopore amplicon sequencing.
+
+    '
 - id: NEU-270
   claim: Across 5,412 individuals with rare disorders sequenced from blood, 59.6 per cent of 3,849 diagnostic-grade
     disease genes reached a median of 5 transcripts per million, but the figure per disease panel ran from
@@ -6677,11 +6872,16 @@ claims:
     rather than an independent one. No perturbation was done, so tier: single-case measurement from a named
     variant to its transcript consequence; none of the three isoform tiers applies'
 - id: NEU-274
-  claim: A blood diagnostic pipeline built on 1,594 external control transcriptomes pooled from three cohorts
+  claim: 'A blood diagnostic pipeline built on 1,594 external control transcriptomes pooled from three cohorts
     plus 49 unaffected family members - with the expression-outlier enrichment itself computed against 899
     of the external and 32 of the family controls - still left an average of 343 expression outlier genes per
-    patient at an absolute Z score of 2 or more, which only phenotype matching plus a nearby deleterious rare
-    variant brought down to fewer than ten.
+    patient at an absolute Z score of 2 or more, which the eleven filtering steps together brought down to
+    fewer than ten on average across all cases. The single filter restricting to under-expression outliers
+    with phenotype matches and a nearby deleterious rare variant is reported separately, as cutting the candidate
+    list to less than 1 per cent of the initial outliers while leaving 80 per cent of cases with at least one
+    candidate gene.
+
+    '
   topic: What a diagnostic transcriptome can actually call
   source:
     doc_id: PMC6634302
@@ -6703,10 +6903,15 @@ claims:
     anchor: https://paperclip.gxl.ai/citations/papers/PMC6634302#L26,L30,L67
     quote: We observed an average of 343 outliers per sample (|Z-score| ≥ 2
   confidence: high
-  note: 'The per-sample burden is the reason a yield figure cannot be read without the calling rule: 343 candidates
+  note: 'An earlier version of this claim credited the drop below ten to phenotype matching plus a nearby deleterious
+    rare variant alone; the source attributes it to the filtering steps as a whole and gives that one filter
+    a different output. The 343 is all outliers, while that filter is scoped to under-expression outliers only.
+    The per-sample burden is the reason a yield figure cannot be read without the calling rule: 343 candidates
     per patient is not a result, it is a starting list. The authors also show the enrichment of case outliers
     in loss-of-function-intolerant genes strengthens as the control set grows, which is the argument for a
-    large control panel. tier: cohort measurement of assay performance; none of the three isoform tiers applies'
+    large control panel. tier: cohort measurement of assay performance; none of the three isoform tiers applies
+
+    '
   figure_idea: 'A funnel for a single patient: outlier genes at each filtering step, drawn for expression,
     splicing and allele-specific expression side by side on one log axis.'
 - id: NEU-275
@@ -6799,9 +7004,12 @@ claims:
     of an intronic variant. tier: cohort measurement of assay performance; none of the three isoform tiers
     applies. Claim restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: NEU-278
-  claim: Benchmarked against artificially injected outliers in GTEx skin, replacing a false-discovery-rate
-    cutoff of 0.1 with the commonly used absolute Z score of 2 produced two orders of magnitude more outlier
-    calls and dropped precision from 92 to 3 per cent, buying a recall increase from 83 to 98 per cent.
+  claim: 'Two outlier-calling approaches were compared on GTEx data: replacing this method at a false-discovery
+    rate of 0.1 with principal-component analysis at an absolute Z score of 2 produced two orders of magnitude
+    more outlier calls across all GTEx tissues, and on artificially injected outliers in suprapubic skin dropped
+    precision from 92 to 3 per cent while buying a recall increase from 83 to 98 per cent.
+
+    '
   topic: What a diagnostic transcriptome can actually call
   source:
     doc_id: PMC7822922
@@ -6820,19 +7028,28 @@ claims:
     quote: a drastic drop in precision (3% vs. 92% with FRASER) for a small increase in recall (98% vs. 83%
       with FRASER
   confidence: high
-  note: 'This is the false-positive burden per sample stated as a trade: a reader cannot evaluate any reported
-    count of aberrant splicing events without knowing which of these two rules produced it. The precision figures
-    come from injected outliers, not from validated patient events. These authors are the method''s developers,
-    so the comparison is not an independent benchmark. tier: cohort measurement of assay performance; none
-    of the three isoform tiers applies'
+  note: 'An earlier version of this claim presented the comparison as two cutoffs on one method and called
+    the Z score of 2 commonly used, which the source does not; the comparator is a different statistical model
+    as well as a different threshold, and the source separately credits part of the gap to the statistic itself.
+    The two measurements also come from different panels, the count across all GTEx tissues and the precision
+    and recall from the injected-outlier benchmark on suprapubic skin, where an earlier version put both under
+    injected skin. This is the false-positive burden per sample stated as a trade: a reader cannot evaluate
+    any reported count of aberrant splicing events without knowing which rule produced it. The precision figures
+    come from injected outliers in healthy-donor tissue, not from validated patient events, so tier: assay
+    performance measured on artificially injected outliers; an earlier version of this note called it a cohort
+    measurement. These authors are the method''s developers, so the comparison is not an independent benchmark.
+
+    '
   figure_idea: A precision-recall curve with the two operating points marked - false-discovery-rate 0.1 and
     absolute Z score 2 - and the resulting per-sample call count written beside each.
 - id: NEU-279
-  claim: 'Outlier calls that appear in only one tissue of an individual are common for every method tested
-    and are enriched for false positives: 22 per cent of the calls this method made at a nominal p of 10 to
-    the minus 7 reappeared in another tissue of the same person at 10 to the minus 3, against 11 per cent for
-    a competing method, and tissue-specific calls were less enriched for rare splice-affecting variants than
-    replicated ones.'
+  claim: 'Outlier calls that appear in only one tissue of an individual are common for every method tested:
+    22 per cent of the calls this method made at a nominal p of 10 to the minus 7 reappeared in another tissue
+    of the same person at 10 to the minus 3, against 11 per cent for a competing method, and tissue-specific
+    calls were less enriched for rare splice-affecting variants than replicated ones, which those authors say
+    suggests a higher proportion of false positives among the tissue-specific calls.
+
+    '
   topic: What a diagnostic transcriptome can actually call
   source:
     doc_id: PMC7822922
@@ -6850,11 +7067,14 @@ claims:
     anchor: https://paperclip.gxl.ai/citations/papers/PMC7822922#L34
     quote: 22% of the outliers reported by FRASER at the nominal P value of 10−7 were also found at the nominal
   confidence: high
-  note: 'The authors inspected several such singleton calls in the raw reads and found them well supported,
-    so these are not alignment artefacts; the excess is unexplained. Their own recommendation for diagnostics
-    is to require a rare variant or an independent functional assay alongside the call, which is the argument
-    behind NEU-298 and NEU-299. tier: cohort measurement of assay performance; none of the three isoform tiers
-    applies'
+  note: 'An earlier version of this claim stated the false-positive enrichment as a result; the source states
+    it as an inference and then undercuts the artefact reading, saying that inspection of the raw reads for
+    several such calls found them well supported and that further investigation will be needed to understand
+    the apparent excess. The excess is unexplained. Their own recommendation for diagnostics is to require
+    a rare variant or an independent functional assay alongside the call, which is the argument behind NEU-298
+    and NEU-299. tier: cohort measurement of assay performance; none of the three isoform tiers applies
+
+    '
 - id: NEU-280
   claim: Replacing three partly redundant splicing metrics with a single intron-excision index and retuning
     the filters cut the number of splicing outliers called on 16,213 GTEx samples by roughly tenfold while
@@ -6919,9 +7139,11 @@ claims:
     restated 2026-11-23 to remove an 8-word span shared with its own audit quote; content unchanged.'
 - id: NEU-282
   claim: 'Monoallelic expression was tested by a funnel that starts far wider than it ends: a median of 35,521
-    heterozygous single-nucleotide variants per patient from exome sequencing, 7,622 of them covered by at
-    least ten RNA reads, 20 expressed from one allele only at a 5 per cent adjusted significance and an allele
-    frequency of 0.8 or more, and 6 of those rare.'
+    heterozygous single-nucleotide variants per patient from exome sequencing, 7,622 of them covered by more
+    than ten RNA reads, 20 expressed from one allele only at a 5 per cent adjusted significance and an allele
+    frequency of 0.8 or more, and 6 of those rare.
+
+    '
   topic: Aberrant expression and monoallelic expression as separate findings
   source:
     doc_id: PMC5499207
@@ -6943,11 +7165,15 @@ claims:
     quote: In median per sample, 35,521 heterozygous SNVs were detected by WES, of which 7,622 were sufficiently
       covered by RNA-seq to call MAE
   confidence: high
-  note: 'The chapter already carries this study''s medians of one aberrantly expressed gene and five aberrant
-    splicing events; the six rare monoallelically expressed variants are the third arm and are missing. Monoallelic
-    expression is also the arm least sensitive to batch and tissue, because it compares two alleles within
-    one sample rather than one sample against others. tier: cohort measurement of assay performance; none of
-    the three isoform tiers applies'
+  note: 'An earlier version of this claim said at least ten reads where the source says more than ten, and
+    the inequality carries weight because the threshold is the assay''s detection floor. The chapter already
+    carries this study''s medians of one aberrantly expressed gene and five aberrant splicing events; the six
+    rare monoallelically expressed variants are the third arm and are missing. Monoallelic expression is also
+    the arm least sensitive to batch and tissue, because it compares two alleles within one sample rather than
+    one sample against others. tier: cohort measurement of assay performance; none of the three isoform tiers
+    applies
+
+    '
 - id: NEU-283
   claim: Total RNA sequencing of muscle biopsies from 25 patients with monogenic neuromuscular disorders who
     were negative on exome sequencing, a gene panel or both resolved 36 per cent of them, 9 of 25 - genetic
@@ -6977,11 +7203,13 @@ claims:
     tissue, which are the two conditions under which yield is highest; the figure should not be read as a general
     rate. tier: cohort measurement of assay performance; none of the three isoform tiers applies'
 - id: NEU-284
-  claim: Whole blood RNA sequencing of 94 individuals spanning 80 independent rare diseases and 16 disease
-    categories, of whom 88.8 per cent had had an uninformative exome, identified and validated the causal gene
-    in 7.5 per cent - 6 of the 80 independent cases - and improved candidate gene resolution in a further 16.7
-    per cent, 5 of the 30 cases for which prior candidate lists existed, while 69 cases, 86 per cent, ended
-    with no highly relevant candidate.
+  claim: 'Whole blood RNA sequencing of 94 individuals, representing 80 different diseases broadly classified
+    into 16 disease categories, of whom 88.8 per cent had had an uninformative exome, identified and validated
+    the causal gene in 7.5 per cent, 6 of 80 independent cases, and improved candidate gene resolution in a
+    further 16.7 per cent, 5 of the 30 cases for which prior candidate lists existed, while 69 cases, 86 per
+    cent, ended with no highly relevant candidate.
+
+    '
   topic: Diagnostic yield with its denominators
   source:
     doc_id: PMC6634302
@@ -7004,10 +7232,14 @@ claims:
     quote: (gene matching HPO terms for the symptoms of the proband) in 5/30 cases with candidate gene information
       (16.7%)
   confidence: high
-  note: 'Three different denominators appear in one sentence of the source - 94 individuals, 80 independent
-    cases, 30 cases with prior candidates - and the chapter must keep them apart. Diagnosis means causal gene
-    found and separately validated; the 16.7 per cent is explicitly not a diagnosis. tier: cohort measurement
-    of assay performance; none of the three isoform tiers applies'
+  note: 'An earlier version of this claim fused the source''s "80 different diseases" and "80 independent cases"
+    into 80 independent rare diseases, which is the exact collapse this note warns against: the two 80s are
+    different quantities reported on different lines. Three different denominators appear in one sentence of
+    the source, 94 individuals, 80 independent cases and 30 cases with prior candidates, and the chapter must
+    keep them apart. Diagnosis means causal gene found and separately validated; the 16.7 per cent is explicitly
+    not a diagnosis. tier: cohort measurement of assay performance; none of the three isoform tiers applies
+
+    '
 - id: NEU-285
   claim: A pan-European consortium applying one standardised transcriptome workflow to 521 RNA sequencing datasets,
     from a mixture of tissues that varied between the contributing centres, covering 248 undiagnosed families
@@ -7114,12 +7346,14 @@ claims:
   figure_idea: Two bars on the same axis - prior candidate present, prior candidate absent - from one cohort
     and one tissue, with the denominators printed inside the bars.
 - id: NEU-288
-  claim: 'An independent cohort showed the same gradient: 55 families negative on exome or genome sequencing,
-    sampled from activated peripheral blood cells, gave 71 per cent positive among the 7 families with a variant
-    of uncertain significance, 40 per cent among the 10 with a suspected gene but no candidate variant, and
-    5.2 per cent among the 38 with no candidate and no suspected gene; overall the optimised workflow reached
-    20 per cent against 9 per cent for the conventional one, and 10 of the 11 positive cases became definitive
-    diagnoses.'
+  claim: 'A second cohort reproduced the direction of the gradient on a different endpoint: 55 families negative
+    on exome or genome sequencing, sampled from activated peripheral blood cells, gave 71 per cent positive
+    among the 7 families with a variant of uncertain significance, 40 per cent among the 10 with a suspected
+    gene but no candidate variant, and 5.2 per cent among the 38 with no candidate and no suspected gene; overall
+    the optimised workflow reached 20 per cent against 9 per cent for the conventional one, and 10 of the 11
+    positive cases became definitive diagnoses.
+
+    '
   topic: Diagnostic yield with its denominators
   source:
     doc_id: PMC12781863
@@ -7139,18 +7373,27 @@ claims:
     quote: The optimized workflow improved diagnostic yield by 2.2‐fold (20% vs. 9%). Stratified analysis revealed
       positive rates of 71% (VUS), 40% (suspected‐gene/variant‐negative), and 5.2% (unsolved/no‐candidate)
   confidence: high
-  note: 'Replicates NEU-287''s gradient in a different centre, a different blood preparation and a different
-    set of analytical additions, which makes the gradient a property of the ascertainment rather than of one
-    pipeline. The subgroup denominators are 7, 10 and 38, so only the lowest stratum is reasonably precise.
-    Both this and NEU-287 are Chinese cohorts; the affiliations read place this one in Changsha and NEU-287
-    in Shanghai, and the two author lists share no individual. The authors note their no-candidate families
-    averaged 1,198 phenotype-associated genes to consider. tier: cohort measurement of assay performance; none
-    of the three isoform tiers applies'
+  note: 'An earlier version of this claim said this cohort showed the same gradient as NEU-287. The direction
+    replicates and the magnitude does not: this gradient is about 14-fold where NEU-287''s is about 22-fold,
+    and the two measure different endpoints, positive rates here against a diagnostic uplift there, with 10
+    of 11 positives becoming definitive diagnoses. Replicates NEU-287''s gradient in a different centre, a
+    different blood preparation and a different set of analytical additions, which makes the gradient a property
+    of the ascertainment rather than of one pipeline. The subgroup denominators are 7, 10 and 38, so only the
+    lowest stratum is reasonably precise. Both this and NEU-287 are Chinese cohorts; independence was verified
+    from the documents themselves rather than from the record metadata, with the affiliations placing this
+    one in Changsha and NEU-287 in Shanghai and the two bylines sharing no surname plus initial. The authors
+    note their no-candidate families averaged 1,198 phenotype-associated genes to consider. tier: cohort measurement
+    of assay performance; none of the three isoform tiers applies
+
+    '
 - id: NEU-289
-  claim: 'Blood RNA sequencing added almost nothing new to a paediatric cohort that had already had genome
+  claim: 'Blood RNA sequencing added little that was new to a paediatric cohort that had already had genome
     sequencing: of 134 probands, 5 of the 73 undiagnosed, about 7 per cent, gained at least one plausible candidate
-    gene and none a stated diagnosis, while among the 61 already diagnosed it reinforced the DNA finding in
-    20 and revised it in 2.'
+    gene and none a stated diagnosis, while among the 61 already diagnosed it revised the DNA finding in one
+    and added a second relevant gene beside a standing diagnosis in another, with the DNA finding reinforced
+    in 20.
+
+    '
   topic: Diagnostic yield with its denominators
   source:
     doc_id: PMC12215727
@@ -7171,18 +7414,27 @@ claims:
     anchor: https://paperclip.gxl.ai/citations/papers/PMC12215727#L20
     quote: Additionally, ~7% (5/73) of undiagnosed cases had at least one plausible candidate gene identified
   confidence: high
-  note: 'The scarcest category of yield figure and the most bounding one, because prior testing was genome
-    sequencing rather than exome sequencing: the 7 per cent is a candidate rate, not a diagnostic rate, and
-    must not be set beside exome-negative diagnostic rates as though the two measured the same thing. One revision
-    was substantive: EPG5 to LZTR1 in a Noonan-like disorder. Shares authors with NEU-272, NEU-296 and NEU-297
-    (Hou, Marshall, Costain, Mendoza-Londono) and with NEU-265 to NEU-267 and NEU-283 (Ramani, Cohn, Brudno,
-    Dowling), all one centre. tier: cohort measurement of assay performance; none of the three isoform tiers
-    applies'
+  note: 'An earlier version of this claim said the DNA finding was revised in 2 of the 61. The source''s 2
+    of 61 covers one revision and one additional gene found beside a standing diagnosis, and the document elsewhere
+    calls that second gene a candidate with no DNA variant identified and unclear zygosity; this note''s "one
+    revision was substantive" also implied more than one. The revision is EPG5 to LZTR1 in a Noonan-like disorder.
+    "Added little that was new" is this record''s framing rather than the source''s, which says the study highlights
+    both the benefits and the limitations. The scarcest category of yield figure and the most bounding one,
+    because prior testing was genome sequencing with reanalysis at a 41 per cent diagnostic rate rather than
+    exome sequencing: the 7 per cent is a candidate rate, not a diagnostic rate, and must not be set beside
+    exome-negative diagnostic rates as though the two measured the same thing. Shares authors with NEU-272,
+    NEU-296 and NEU-297 (Hou, Marshall, Costain, Mendoza-Londono) and with NEU-265 to NEU-267 and NEU-283 (Ramani,
+    Cohn, Brudno, Dowling), all one centre. tier: cohort measurement of assay performance; none of the three
+    isoform tiers applies
+
+    '
 - id: NEU-290
-  claim: In the largest blood cohort assembled, 5,412 individuals recruited with rare disorders, an expression
-    or splicing outlier in a gene relevant to the person's disorder was found in 20 per cent of them; one of
-    the three prioritisation strategies, a phenotype-driven one, returned 74 potential diagnoses which review
+  claim: 'In a cohort of 5,412 individuals recruited with a diverse range of rare disorders, an expression
+    or splicing outlier in a gene relevant to the person''s disorder was found in 20 per cent of them; one
+    of the three prioritisation strategies, a phenotype-driven one, returned 74 potential diagnoses which review
     split into 35 that were already known and 39 genuinely new candidate diagnoses.
+
+    '
   topic: Diagnostic yield with its denominators
   source:
     doc_id: med_530d6f638abe
@@ -7206,14 +7458,18 @@ claims:
     quote: 'the 74 potential diagnoses were classified into: - 35 known diagnoses with 28 involving at least
       one canonical splice variant - 39 candidate diagnoses'
   confidence: high
-  note: 'The gap between 20 per cent with an outlier and 39 new candidates is the central caution the chapter
-    needs: an outlier in a relevant gene is not a diagnosis and these authors do not call it one. The 39 come
-    from the phenotype-driven arm alone; the other two arms returned 78 outliers in known haploinsufficient
-    genes and 19 integrated with structural variant calls, and the three sets are not stated to be disjoint,
-    so they cannot be added. That 35 of the 74 were already-known diagnoses also shows the cohort was not uniformly
-    undiagnosed. Read as a medRxiv preprint; preprint: true. The recorded DOI is a medRxiv-format identifier,
-    not a journal one. Same paper as NEU-270. tier: cohort measurement of assay performance; none of the three
-    isoform tiers applies'
+  note: 'An earlier version of this claim called this the largest blood cohort assembled; nothing on the cited
+    lines or elsewhere in the document claims primacy, and the defensible scoped version is NEU-270''s, the
+    largest blood cohort in the corpus. The gap between 20 per cent with an outlier and 39 new candidates is
+    the central caution the chapter needs: an outlier in a relevant gene is not a diagnosis and these authors
+    do not call it one. The 39 come from the phenotype-driven arm alone; the other two arms returned 78 outliers
+    in known haploinsufficient genes and 19 integrated with structural variant calls, and the three sets are
+    not stated to be disjoint, so they cannot be added. That 35 of the 74 were already-known diagnoses also
+    shows the cohort was not uniformly undiagnosed. Read as a medRxiv preprint; preprint: true. The recorded
+    DOI is a medRxiv-format identifier, not a journal one. Same paper as NEU-270. tier: cohort measurement
+    of assay performance; none of the three isoform tiers applies
+
+    '
 - id: NEU-291
   claim: Taking blood RNA sequencing rather than a candidate variant as the starting point, a study of 86 individuals
     found aberrant splicing linked to a variant of uncertain significance in 14 of the 48 who had one, and
@@ -7275,11 +7531,14 @@ claims:
     Numerators of four and two are too small to generalise. tier: cohort measurement of assay performance;
     none of the three isoform tiers applies'
 - id: NEU-293
-  claim: 'Monoallelic expression re-promoted a variant the exome analysis had set aside: in one patient a missense
+  claim: 'Two RNA arms together re-promoted a variant the exome analysis had set aside: in one patient a missense
     variant of uncertain significance in ALDH18A1, seen in compound heterozygosity with a nonsense variant,
-    was among 18 rare variants expressed from one allele only; proteomics then showed protein reduced to about
-    2 per cent, the plasma metabolite profile matched a proline-metabolism defect, and supplementing proline
-    rescued the patient fibroblasts'' growth defect.'
+    was among 18 rare variants expressed from one allele only, and the aberrant expression analysis prioritised
+    the same gene again; proteomics then showed protein reduced to about 2 per cent, the plasma metabolite
+    profile matched a proline-metabolism defect, and supplementing proline rescued the patient fibroblasts''
+    growth defect.
+
+    '
   topic: Aberrant expression and monoallelic expression as separate findings
   source:
     doc_id: PMC5499207
@@ -7301,18 +7560,25 @@ claims:
     quote: Patient fibroblasts showed a growth defect that was rescued by supplementation of proline, validating
       impaired proline metabolism as the underlying molecular cause
   confidence: high
-  note: 'The patient did not have the cutis laxa phenotype then associated with the gene, which is why the
-    variants had been dismissed; a later report extending the phenotype to spastic paraplegia is what reconciled
-    it. Shares doc PMC5499207 L40 with NEU-282, which quotes the monoallelic-expression funnel; this record
-    quotes the validation of one case. The rescue is a metabolic supplementation, not an isoform-restricted
-    construct, so tier: single-case measurement from a named variant to its transcript consequence; none of
-    the three isoform tiers applies'
+  note: 'An earlier version of this claim attributed the re-promotion to monoallelic expression alone; the
+    source names two arms, aberrant expression and monoallelic expression, and this record sits under a topic
+    that exists to keep the two apart. The patient did not have the cutis laxa phenotype then associated with
+    the gene, which is why the variants had been dismissed; a later report extending the phenotype to spastic
+    paraplegia is what reconciled it. Shares doc PMC5499207 L40 with NEU-282, which quotes the monoallelic-expression
+    funnel; this record quotes the validation of one case. The rescue is a metabolic supplementation, not an
+    isoform-restricted construct, so tier: single-case measurement from a named variant to its transcript consequence;
+    none of the three isoform tiers applies
+
+    '
 - id: NEU-294
-  claim: 'Auditing the pipeline against 40 patients whose diagnosis was already known showed which variant
-    classes an RNA assay can and cannot see: aberrant splicing detected 7 of 8 cases with a causal splicing
+  claim: 'Auditing one pipeline against 40 patients whose diagnosis was already known showed which variant
+    classes that pipeline can and cannot see: aberrant splicing detected 7 of 8 cases with a causal splicing
     variant, monoallelic expression recovered 3 of 6 patients with a missense variant compound with a stop
     or frameshift, aberrant expression recovered 3 of 4 homozygous stop variants, only 1 of 9 frameshift variants
-    produced any detectable RNA defect, and none of the 14 genes where a missense variant was causal did.'
+    produced any detectable RNA defect, and for none of the 14 genes where a missense variant was causal could
+    an RNA defect be detected with that pipeline.
+
+    '
   topic: What a diagnostic transcriptome can actually call
   source:
     doc_id: PMC5499207
@@ -7333,11 +7599,16 @@ claims:
     anchor: https://paperclip.gxl.ai/citations/papers/PMC5499207#L43
     quote: only one of the 9 frame-shift variants did lead to a detectable RNA defect
   confidence: high
-  note: 'This is the sensitivity audit the chapter lacks and the cleanest explanation of why yields are low:
-    a transcriptome is nearly blind to missense variants and largely blind to frameshifts, which the authors
-    attribute to incomplete nonsense-mediated decay. All five denominators are single digits. A positive-control
-    design, so the figures are conditional on the diagnosis already being known. tier: cohort measurement of
-    assay performance; none of the three isoform tiers applies'
+  note: 'An earlier version of this claim generalised the two negatives from this pipeline to RNA assays as
+    a class; the source scopes both to its own pipeline explicitly, and the chapter''s bound rests on this
+    record. This is the sensitivity audit the chapter lacks and the cleanest explanation of why yields are
+    low: this transcriptome pipeline is nearly blind to missense variants and largely blind to frameshifts,
+    which the authors attribute to incomplete nonsense-mediated decay. All five denominators are single digits,
+    and they sum to 41 against 40 diagnosed cases, so the source''s classes are not disjoint; this record does
+    not claim they are. A positive-control design, so the figures are conditional on the diagnosis already
+    being known. tier: cohort measurement of assay performance; none of the three isoform tiers applies
+
+    '
   figure_idea: A horizontal bar per causal variant class - splice, nonsense, frameshift, missense, compound
     heterozygous - showing the fraction with a detectable RNA defect, denominators written on each bar.
 - id: NEU-295
@@ -7415,11 +7686,15 @@ claims:
   figure_idea: 'A matrix of the two long-read comparisons: rows for the failure modes each reports, columns
     for the two studies, so the reader sees which bound is replicated and which appears once.'
 - id: NEU-297
-  claim: 'In that same 50-individual cohort one case turned on read length: a neonate with a de novo 69-kilobase
-    duplication of the ATAD3 gene cluster whose breakpoints DNA sequencing could not resolve because of homology
-    across the cluster, where short-read RNA sequencing of fibroblasts was uninformative and gave no fusion-supporting
-    reads, and long reads recovered the full-length in-frame ATAD3A-ATAD3C fusion transcript with its exon-level
-    breakpoints, establishing the molecular diagnosis.'
+  claim: 'In that same 50-individual cohort one case turned on read length and on manual work: a neonate with
+    a de novo 69-kilobase duplication of the ATAD3 gene cluster whose breakpoints DNA sequencing could not
+    resolve because of homology across the cluster, where short-read RNA sequencing of fibroblasts was uninformative
+    and gave no fusion-supporting reads. The long-read pipeline filtered the fusion transcript out on internal
+    polyadenylation priming and its gene fusion caller missed it too; manual review of the unfiltered alignments
+    against a customised genome recovered the full-length in-frame ATAD3A-ATAD3C fusion transcript with its
+    exon-level breakpoints, establishing the molecular diagnosis.
+
+    '
   topic: Long reads in diagnosis, and where they do not help
   source:
     doc_id: PMC13786605
@@ -7439,19 +7714,22 @@ claims:
     anchor: https://paperclip.gxl.ai/citations/papers/PMC13786605#L92,L148
     quote: SR RNA-seq was uninformative due to misalignment and absence of fusion-supporting reads
   confidence: high
-  note: 'The bound is tight and the chapter should keep it: the automated long-read pipeline itself discarded
-    this transcript twice, once by an internal-polyadenylation filter and once by the gene-fusion caller, and
-    it was recovered only by manual review of the unfiltered alignments against a custom genome build. So long
-    reads reached what short reads could not, but not unaided. In the same cohort''s RUNX2 case short reads
-    had already detected the pseudoexon and long reads only fixed its boundaries, which is the weaker kind
-    of gain. Same paper as NEU-272 and NEU-296. tier: single-case measurement from a named variant to its transcript
-    consequence; none of the three isoform tiers applies'
+  note: 'An earlier version of this claim credited the recovery to long reads, leaving the bound that the pipeline
+    discarded the transcript twice in this note, where it cannot be cited; per this file''s own rule a qualifier
+    that lives in a note needs its own claim. So long reads reached what short reads could not, but not unaided.
+    In the same cohort''s RUNX2 case short reads had already detected the pseudoexon and long reads only fixed
+    its boundaries, which is the weaker kind of gain. Same paper as NEU-272 and NEU-296. tier: single-case
+    measurement from a named variant to its transcript consequence; none of the three isoform tiers applies
+
+    '
 - id: NEU-298
-  claim: 'Confirmation ran in parallel rather than after the fact in the 86-patient blood study that started
-    from the transcriptome rather than from a candidate variant: reverse-transcription PCR confirmed all 14
-    aberrant splicing events the sequencing had found, and independently found aberrant splicing in four further
-    cases, in TERT, PRG4 and TAOK1, that the sequencing had not; of the 38 variants of uncertain significance
-    with no detected event, 15 could not be assessed at all because the gene was too lowly expressed in blood.'
+  claim: 'In the 86-patient blood study that started from the transcriptome rather than from a candidate variant,
+    reverse-transcription PCR confirmed all 14 aberrant splicing events the sequencing had found, with six
+    of the 14 already reported by an earlier publication, and independently found aberrant splicing in four
+    further cases, in TERT, PRG4 and TAOK1, that the sequencing had not; of the 38 variants of uncertain significance
+    with no detected event, 15 could not be assessed at all because the gene was too lowly expressed in blood.
+
+    '
   topic: Confirming a candidate splicing diagnosis
   source:
     doc_id: PMC11382415
@@ -7470,12 +7748,19 @@ claims:
     quote: RT-PCR was able to validate aberrant splicing in four additional cases with variants in TERT, PRG4
       and TAOK1
   confidence: high
-  note: 'Two separate failure rates belong in the chapter: confirmation of a detected event failed in none
-    of 14, and the assay itself missed four events a targeted assay found. The four extra are RNA sequencing
-    false negatives, not confirmation failures, and the chapter should not merge them. Whether a confirmed
-    effect is required before reporting is a classification question and belongs to chapter 10; what the lines
-    support here is only that confirmation was attempted in parallel. tier: cohort measurement of assay performance;
-    none of the three isoform tiers applies'
+  note: 'An earlier version of this claim said confirmation ran in parallel rather than after the fact; nothing
+    on the cited line establishes parallel running, and part of the confirmation predates this study, with
+    six of the 14 and eighteen of the 51 variants of uncertain significance previously assessed by RT-PCR in
+    another publication. The source also does not say whether the four extra cases fall inside or outside the
+    15 unassessable variants, and a within-document grep for the three gene names returns only that line, so
+    this record must not separate them; an earlier version of this note called the four RNA sequencing false
+    negatives rather than confirmation failures, which is a separation the source does not state. Two failure
+    rates belong in the chapter: confirmation of a detected event failed in none of 14, and the assay itself
+    missed four events a targeted assay found. Whether a confirmed effect is required before reporting is a
+    classification question and belongs to chapter 10. tier: cohort measurement of assay performance; none
+    of the three isoform tiers applies
+
+    '
 - id: NEU-299
   claim: A protocol built around short-term cultured peripheral blood mononuclear cells with and without cycloheximide,
     so that transcripts normally destroyed by nonsense-mediated decay survive to be seen, covered up to 80
