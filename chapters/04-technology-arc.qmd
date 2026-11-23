@@ -246,7 +246,7 @@ coordinated across physiologically different muscles [@bucher1989troponint].
 
 Solution hybridisation with nuclease protection was the more quantitative
 alternative to RNA blot analysis. Its own practitioners recorded the catch,
-which concerned a locus making several mRNAs by alternative splicing. There
+which showed up at a locus making several mRNAs by alternative splicing. There
 the protected-fragment pattern from a uniformly labelled cRNA probe became
 hard to interpret [@nucleaseprotection1989solution].
 
@@ -941,8 +941,8 @@ Reads also disperse, and every protocol placed primary alignments across more
 genes than had produced the reads. In that assessment 80 million reads
 originated in 16,554 genes, with alignments landing across upwards of 17,800.
 The assessors attribute that excess largely to pseudogenes
-[@engstrom2013systematic]. The assessors' own list of what remained unsolved
-names multi-mapped read placement and false exon junctions
+[@engstrom2013systematic]. Their own list of what remained unsolved names
+multi-mapped read placement and false exon junctions
 [@engstrom2013systematic].
 
 Multi-mapping has been quantified from several directions. In the 2008 32-base
