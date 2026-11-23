@@ -59,6 +59,11 @@ else writes the book prose from your records and will never see the source text.
   scope your negative results as "not found by keyword search" rather than as
   absence. There is also a rate limit of roughly 25 calls per 60 seconds, shared
   across every agent running at once, and corpus `grep` has its own.
+- **`paperclip cat` on `content.lines` truncates, and the truncation looks like a
+  short document.** A plain `cat` returns a preview plus a usage hint, and three
+  documents came back at 25 to 31 lines for bodies of 101, 200 and 181 lines. A
+  reviewer who reads that as the whole document will report a line as absent when
+  it is present. Use `cat --full`, or a line range.
 - **A document's body is `papers/<id>/content.lines`, not `papers/<id>`.**
   `cat papers/PMC123 --lines 1-8` fails with "Cannot read path".
   A read failure here looks exactly like a missing document.
