@@ -246,9 +246,9 @@ first.
 ## One patient, one drug {#sec-nof1}
 
 The endpoint of isoform-level diagnosis is a drug designed for one genome.
-Proof-of-concept experiments in cell lines from a single patient were the basis
-for launching an n-of-1 study of the splice-modulating oligonucleotide milasen,
-within one year of first contact with that patient [@kim2019milasen].
+Cell lines from one patient supplied the proof of concept, and a
+single-patient trial of the splice-modulating oligonucleotide milasen opened
+on that evidence within a year of first contact with her [@kim2019milasen].
 
 The clinical result was partial, with seizure frequency and duration falling to
 half their pre-treatment values. The drug did not impede progressive brain

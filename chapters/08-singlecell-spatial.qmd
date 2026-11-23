@@ -62,10 +62,10 @@ higher. About seven in ten genes carry isoforms whose variation across
 development, region or subtype is not explained by variation in the gene's own
 expression [@joglekar2024singlecell].
 
-A single-cell long-read atlas of human CD8 T cells found about half of the
-isoforms differentially expressed within a cluster coming from genes that were
-also differentially expressed at gene level. Those authors read the remainder
-as isoform-specific regulation [@tzaban2025rna].
+A single-cell long-read atlas of human CD8 T cells found that about half the
+isoforms differing between cells of one cluster sat in genes whose totals
+differed as well. Those authors read the remainder as isoform-specific
+regulation [@tzaban2025rna].
 
 Cell type matters more than tissue for one of those two quantities, and the two
 contribute comparably for the other. How widely a gene spreads its expression

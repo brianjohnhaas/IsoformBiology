@@ -138,13 +138,13 @@ isoform was present [@miller2022longreadproteogenomics]. Both results point the
 same way, and both are the protein-side return on @sec-three-axes.
 
 What the resulting numbers look like for one important gene is sobering. The
-first top-down study to cover both KRAS4A and KRAS4B completely characterised 39
-proteoforms across colorectal cancer cell lines and primary tumours
-[@adams2022krasproteoforms]. Among them was a KRAS4B lacking the C185 residue
-and its C-terminal modifications, which failed to reach the plasma membrane and
-reduced MAPK pathway activation [@adams2022krasproteoforms]. Proteoform
-resolution is not bookkeeping when one entry in the list is a form of the
-protein that no longer signals.
+first top-down study to cover both KRAS4A and KRAS4B fully characterised 39
+proteoform species, drawing on colorectal cancer cell lines together with
+tumours taken from patients [@adams2022krasproteoforms]. Among them was a
+KRAS4B lacking the C185 residue and its C-terminal modifications, which failed
+to reach the plasma membrane and reduced MAPK pathway activation
+[@adams2022krasproteoforms]. Proteoform resolution is not bookkeeping when one
+entry in the list is a form of the protein that no longer signals.
 
 Two pieces of infrastructure exist for this, and both describe the distance
 still to go. The community programme states its own scale. Assuming 5,000 human
@@ -425,6 +425,44 @@ disagreement is partly neighbours arguing over shared samples. What survives is
 narrower than the review-level claim. A splice form can contribute to antigen
 loss, the dominant mechanism in the one deeply sequenced series was genetic, and
 nobody has shown a drug inducing the splice form rather than enriching it.
+
+### CD20, the same argument with a cleaner experiment
+
+The neighbouring target gives the mechanism a better test, from partly the same
+authorship. CD20 transcripts differ in which untranslated first exon they carry,
+and that choice decides whether the protein appears at all. Lymphoma cells with
+MS4A1 knocked out and re-supplied with a single variant made CD20 protein only
+from the V3 cassette. Cells given V1 or V2 had no detectable CD20, while
+carrying raised levels of their own transcript [@ang2023cd20utr].
+
+What makes this sharper than CD19 is that the consequence depends on the drug.
+Those same V1 cells, with no CD20 visible by flow cytometry, were killed as
+efficiently as V3 cells by CD20-directed CAR T cells. They were spared by the
+bispecific antibody mosunetuzumab exactly as knockout cells were
+[@ang2023cd20utr]. One splicing change removed the target for one class of CD20
+therapy and left it standing for another.
+
+The splicing step can be pushed back the other way. A vivo-morpholino aimed at
+the junction between intron 2 and exon 3a shifted transcripts toward V3 and V4
+in three B-cell lines and raised CD20 protein. Knockout cells re-supplied with
+an intron-free V3 cassette regained rituximab sensitivity and stopped
+responding to the morpholino, which ties the effect to splicing rather than to
+anything else the oligomer does [@ang2023cd20utr].
+
+The patient evidence is thinner than the mechanism. Four follicular lymphomas
+were CD20-positive before mosunetuzumab and CD20-negative at relapse. Two had
+simply lost CD20 mRNA, and of the two showing the shift toward V1, one also
+carried an out-of-frame mutation [@ang2023cd20utr]. That leaves one patient in
+whom the splicing shift is the only available explanation, and no proportion can
+be read off four people.
+
+A second CD20 escape isoform points the wrong way entirely. The
+exon-4-to-6-skipped transcript, which lacks the rituximab epitope, was
+strongly detected in the four of fifteen paediatric leukaemia marrows with the
+most surface CD20, and was absent or minimal in the seven CD20-low and four
+CD20-negative samples [@kermani2026cd20nono]. An antigen-escape isoform should
+do the opposite. Neither paper addresses the other, and the two were read from
+a preprint and a journal article respectively.
 
 ### BRAF, and whether it is a splicing case at all
 

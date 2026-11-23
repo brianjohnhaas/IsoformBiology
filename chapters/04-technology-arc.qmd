@@ -115,10 +115,10 @@ what that does to a decade of published estimates.
 ## Arrays and the designed survey {#sec-arrays}
 
 Arrays moved the measurement from discovery to a designed survey. Junction
-microarrays monitored every exon-exon junction in more than 10,000 multi-exon
-human genes across 52 tissues and cell lines. Their authors concluded that at
-least 74 per cent of human multi-exon genes are alternatively spliced
-[@johnson2003genomewide].
+microarrays carried a probe for each splice junction across a set of more than
+10,000 human genes with multiple exons, measured over 52 tissues and cell
+lines. Their authors concluded that at least 74 per cent of human multi-exon
+genes are alternatively spliced [@johnson2003genomewide].
 
 Combining exon-body probes with splice-junction probes on one platform made
 tissue-specific alternative splicing quantitative for thousands of exons in

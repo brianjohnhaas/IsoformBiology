@@ -48,26 +48,25 @@ def shingles(ws: list[str], n: int) -> set[tuple[str, ...]]:
 
 
 def load_quotes() -> list[tuple[str, str, str]]:
-    """Return (area_file, claim_id, quote). Hand-rolled so pyyaml isn't required."""
+    """Return (area_file, claim_id, quote), parsed as YAML.
+
+    This used to be a hand-rolled line scanner, to avoid depending on pyyaml.
+    It read only the FIRST line of any quote that pyyaml had wrapped across
+    several, so most stored quotes were being compared at a fraction of their
+    length and the gate passed on overlaps that were really there. One was
+    found the day this was fixed: a chapter sentence shared eight words with a
+    quote whose match fell on the second line. CI already installs pyyaml.
+    """
+    import yaml
+
     out = []
     for path in sorted((ROOT / "research").glob("*.yml")):
-        claim_id = "?"
-        for raw in path.read_text(encoding="utf-8").splitlines():
-            m = re.match(r"\s*-?\s*id:\s*(\S+)", raw)
-            if m:
-                claim_id = m.group(1).strip("\"'")
-            m = re.match(r"\s*quote:\s*(?:[>|][-+]?\s*)?(.*)", raw)
-            if m:
-                q = m.group(1).strip().strip("\"'")
-                if q:
-                    out.append((path.name, claim_id, q))
-                else:
-                    out.append((path.name, claim_id, "__BLOCK__"))
-                continue
-            # continuation lines of a block scalar
-            if out and out[-1][2] == "__BLOCK__" and raw.startswith(" " * 8):
-                out[-1] = (out[-1][0], out[-1][1], raw.strip())
-    return [(a, c, q) for a, c, q in out if q != "__BLOCK__"]
+        doc = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        for claim in doc.get("claims") or []:
+            quote = ((claim.get("evidence") or {}).get("quote") or "").strip()
+            if quote:
+                out.append((path.name, str(claim.get("id", "?")), quote))
+    return out
 
 
 def strip_markup(text: str) -> str:

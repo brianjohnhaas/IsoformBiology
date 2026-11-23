@@ -68,8 +68,8 @@ variants.
 
 Allelic expression does not bridge the two either. In GTEx v8 the correlation
 between allelic imbalance and splicing-QTL genotype was essentially nil, and
-the consortium concluded that genetic splicing variation in cis is not strongly
-reflected in gene-level allelic expression data [@aguet2019gtex]. Gene-level
+the consortium concluded that gene-level allelic expression data carry little
+trace of nearby genetic variation in splicing [@aguet2019gtex]. Gene-level
 allelic expression is a good proxy for expression QTLs and a poor one for
 splicing QTLs.
 
